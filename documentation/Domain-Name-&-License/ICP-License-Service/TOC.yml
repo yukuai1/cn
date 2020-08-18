@@ -93,8 +93,6 @@ items:
         href: FAQ/Problem-summary.md
       - name: 备案拦截排查
         href: FAQ/Intercept-troubleshooting.md
-      - name: 备案密码找回办法
-        href: FAQ/ICP-Filing-Password-Recovery-Method.md
       - name: 公安局备案常见问题
         href: FAQ/Public-Security-Bureau-Filing-Common-Problems.md
       - name: 经营性ICP备案
