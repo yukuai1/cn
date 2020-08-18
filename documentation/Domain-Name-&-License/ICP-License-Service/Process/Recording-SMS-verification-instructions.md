@@ -42,7 +42,7 @@
 
 2.在短信核验页下方短信核验页签下，根据下述要求填写短信验证码、手机号码、证件号码后6位等信息，填写完成后单击提交。
 
-![img](documentation/Domain-Name-&-License/Image-Domain/ZMC-Image-Domain/message-check-1.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200818/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/message-check-1.png)
 
 手机号：
 您需根据自身角色填写主体负责人或网站负责人在备案信息中手机号码（非应急联系电话），不同备案场景下需要验证的负责人不同，详情请参见需要短信核验的备案类型。
@@ -57,11 +57,11 @@
 
 3、确认短信核验结果。
 
-![img](documentation/Domain-Name-&-License/Image-Domain/ZMC-Image-Domain/message-check-complete-1.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200818/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/message-check-complete-1.png)
 
 如系统提示您的短信核验完成，请等待其他核验人进行短信核验，说明您的备案订单中还有其他需验证的手机号码，请联系其他负责人及时完成核验。如超过24小时未核验，工信部系统将会驳回您的备案订单。
 
-![img](documentation/Domain-Name-&-License/Image-Domain/ZMC-Image-Domain/message-check-another-1.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200818/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/message-check-another-1.png)
 
 **短信重发操作步骤**
 
@@ -71,7 +71,7 @@
 
 2.在短信核验页下方单击短信重发，在短信重发页签下参考下述要求填写手机号码、证件号码后6位。填写完成后单击提交 ，提交后即可重新获取短信验证码。
 
-![img](documentation/Domain-Name-&-License/Image-Domain/ZMC-Image-Domain/message-check-again-1.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200818/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/message-check-again-1.png)
 
 手机号：
 您需根据自身角色填写主体负责人或网站负责人在备案信息中手机号码（非应急联系电话），不同备案场景下需要验证的负责人不同，详情请参见需要短信核验的备案类型。
@@ -84,6 +84,6 @@
 
 提交成功后,系统将显示如下界面。
 
-![img](documentation/Domain-Name-&-License/Image-Domain/ZMC-Image-Domain/message-check-code-1.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200818/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/message-check-code-1.png)
 
 4.查看手机获取到的验证码并完成验证。
