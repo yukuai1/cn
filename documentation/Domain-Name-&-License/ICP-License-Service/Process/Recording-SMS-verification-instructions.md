@@ -42,7 +42,7 @@
 
 2.在短信核验页下方短信核验页签下，根据下述要求填写短信验证码、手机号码、证件号码后6位等信息，填写完成后单击提交。
 
-= 插入图片 -1 =
+![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032802/image/ICP-License-Service/Addition-Website-cn-2.png)
 
 手机号：
 您需根据自身角色填写主体负责人或网站负责人在备案信息中手机号码（非应急联系电话），不同备案场景下需要验证的负责人不同，详情请参见需要短信核验的备案类型。
@@ -57,11 +57,11 @@
 
 3、确认短信核验结果。
 
-= 插入图片-complete =
+![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032802/image/ICP-License-Service/Addition-Website-cn-2.png)
 
 如系统提示您的短信核验完成，请等待其他核验人进行短信核验，说明您的备案订单中还有其他需验证的手机号码，请联系其他负责人及时完成核验。如超过24小时未核验，工信部系统将会驳回您的备案订单。
 
-= 插入图片- another =
+![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032802/image/ICP-License-Service/Addition-Website-cn-2.png)
 
 **短信重发操作步骤**
 
@@ -69,9 +69,9 @@
 
 1.进入[工信部备案管理系统](https://beian.miit.gov.cn/#/Integrated/ComplaintA)，单击短信核验。
 
-2.在短信核验页下方短信核验页签下，根据下述要求填写短信验证码、手机号码、证件号码后6位等信息，填写完成后单击提交。
+2.在短信核验页下方单击短信重发，在短信重发页签下参考下述要求填写手机号码、证件号码后6位。填写完成后单击提交 ，提交后即可重新获取短信验证码。
 
-= 插入图片 =
+![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032802/image/ICP-License-Service/Addition-Website-cn-2.png)
 
 手机号：
 您需根据自身角色填写主体负责人或网站负责人在备案信息中手机号码（非应急联系电话），不同备案场景下需要验证的负责人不同，详情请参见需要短信核验的备案类型。
@@ -79,10 +79,11 @@
 证件号码后6位：
 请填写本次备案的个人证件（身份证、护照、港澳居民来往内地通行证等）号码后6位。
 
+
 3.查看提交结果。
 
 提交成功后,系统将显示如下界面。
 
-= 插入图片-code =
+![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032802/image/ICP-License-Service/Addition-Website-cn-2.png)
 
 4.查看手机获取到的验证码并完成验证。
