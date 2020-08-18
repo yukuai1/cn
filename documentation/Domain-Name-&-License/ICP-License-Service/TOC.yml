@@ -165,7 +165,7 @@ items:
          href: Data-download/Government-Website-domain.md
   - name: 流程帮助
     items:
-       - name: 工信部短信验证说明
+       - name: 工信部短信核验说明
          href: Process/Recording-SMS-verification-instructions.md
        - name: 关于网站备案域名核验功能说明
          href: Process/Verification-function-description.md
