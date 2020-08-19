@@ -14,7 +14,7 @@
 
 - 镜像
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 目前支持 **标准镜像** 。镜像类型包括CentOS6.6、7.1、7.2和7.5，Ubuntu14.04、16.04和18.04。详见[镜像使用说明](../Operation-Guide/Image/Description-Image.md)。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 目前支持 **标准镜像** 。镜像类型包括CentOS6.6、7.1、7.2，7.5，Ubuntu14.04、16.04、18.04和Windows（2016标准版64位中文版）。详见[镜像使用说明](../Operation-Guide/Image/Description-Image.md)。
 
 - 存储
 
