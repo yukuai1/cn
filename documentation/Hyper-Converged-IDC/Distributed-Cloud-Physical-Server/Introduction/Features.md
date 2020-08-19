@@ -9,7 +9,7 @@
 - **灵活计费方式：**
 支持包年包月和按配置2种计费方式，用户可按需购买，节约成本。详见[计费规则](../Pricing/Billing-Rules.md)。
 - **丰富镜像资源：**
-支持CentOS（6.6、7.1、7.2和7.5）和Ubuntu（18.04、16.04和14.04），以及多种常用应用软件的安装。详见[镜像支持系统](../Operation-Guide/Image/Description-Image.md)。
+支持CentOS（6.6、7.1、7.2和7.5）,Ubuntu（18.04、16.04和14.04）和Windows（2016标准版64位中文版），以及多种常用应用软件的安装。详见[镜像支持系统](../Operation-Guide/Image/Description-Image.md)。
 - **4种磁盘种类：**
 SAS、SATA、NVME、SSD，4种硬盘合理搭配集成于分布式云物理服务器，给用户提供高速、可靠的存储空间。
 - **提供NO RAID、RAID0、RAID1和RAID10四种模式：**
