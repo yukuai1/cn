@@ -18,7 +18,7 @@
 
       ![](../../../../image/Internet-Middleware/JCS-for-Kafka/kafka-003.png)
 
-      ![](C:\Users\yinxingtao\Desktop\image\kafka-004.png)
+      ![](../../../../image/Internet-Middleware/JCS-for-Kafka/kafka-004.png)
 
 ## 网络问题
 
@@ -28,7 +28,7 @@
 
    如下显示是正确的：
 
-   ![](C:\Users\yinxingtao\Desktop\image\kafka-001.png)
+   ![](../../../../image/Internet-Middleware/JCS-for-Kafka/kafka-001.png)
 
 2. 消息队列 kafka 版支持外网访问吗？
 
