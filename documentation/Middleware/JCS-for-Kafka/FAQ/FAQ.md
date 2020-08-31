@@ -16,7 +16,7 @@
 
     - 如果是调整某个topic的日志保存时间，可以通过kafka-manager进行调整。
 
-      ![](../../../image/Internet-Middleware/JCS-for-Kafka/kafka-003.png)
+      ![](../../../../image/Internet-Middleware/JCS-for-Kafka/kafka-003.png)
 
       ![](C:\Users\yinxingtao\Desktop\image\kafka-004.png)
 
