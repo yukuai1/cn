@@ -16,7 +16,7 @@
 
     - 如果是调整某个topic的日志保存时间，可以通过kafka-manager进行调整。
 
-      ![](C:\Users\yinxingtao\Desktop\image\kafka-003.png)
+      ![](../../../image/Internet-Middleware/JCS-for-Kafka/kafka-003.png)
 
       ![](C:\Users\yinxingtao\Desktop\image\kafka-004.png)
 
@@ -70,4 +70,14 @@
    - 如果consumer比partition少，一个consumer会对应于多个partitions，这里主要合理分配consumer数和partition数，否则会导致partition里面的数据被取的不均匀 。最好partiton数目是consumer数目的整数倍，所以partition数目很重要，比如取24，就很容易设定consumer数目 。
    - 如果consumer从多个partition读到数据，不保证数据间的顺序性，kafka只保证在一个partition上数据是有序的，但多个partition，根据你读的顺序会有不同。
    - 增减consumer，broker，partition会导致rebalance，所以rebalance后consumer对应的partition会发生变化
+
+
+
+
+
+
+
+
+
+
 
