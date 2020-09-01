@@ -108,26 +108,6 @@ items:
          href: Protocol/Assist-in-changing-the-filing-information-service-online-terms-of-service.md
        - name: 信息安全管理协议
          href: Protocol/Information-Security-Management-Protocol.md
-  - name: 文档下载
-    items:
-      - name: 网站核验单信息
-        href: Loading/Website-verification-information.md
-      - name: 上海互联网信息服务备案承诺书
-        href: Loading/Website-shanghai-internet-service-commitment.md     
-      - name: 核验单样例
-        href: Loading/Verification-sample.md
-      - name: 常用资料下载
-        items:
-          - name: 各省备案授权书
-            href: Loading/Common-data/Provincial-filing-authorization.md
-          - name: 全国核验单下载
-            href: Loading/Common-data/National-verification-checklist-download.md
-          - name: 广东省个人核验单下载
-            href: Loading/Common-data/Guangdong-Province-Personal-Verification-Checklist-Download.md
-          - name: 广东省单位核验单下载
-            href: Loading/Common-data/Guangdong-Province-Unit-verification-form-download.md
-          - name: 政府网站备案说明
-            href: Loading/Common-data/Government-Website-Description.md
   - name: 资料下载
     items:
        - name: 核验单信息
