@@ -432,6 +432,12 @@ items:
     href: Iov-Mobility-Service-Terms-Of-Service.md  
   - name: 车主出行服务等级协议（SLA）
     href: Iov-Mobility-Service-Level-Agreements-SLA.md
-
-    
+  - name: 分布式数据库TiDB服务条款
+    href: JCS-For-TiDB-Terms-Of-Service.md
+  - name: 分布式数据库TiDB服务等级协议（SLA）
+    href: JCS-For-TiDB-Level-Agreement-SLA.md 
+  - name: 分析型云数据库JCHDB服务条款
+    href: JCS-For-JCHDB-Terms-Of-Service.md
+  - name: 分析型云数据库JCHDB服务等级协议（SLA）
+    href: JCS-For-JCHDB-Service-Level-Agreement-SLA.md
     
