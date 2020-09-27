@@ -10,6 +10,8 @@
 
 [管理证书](listener-management#user-content-5)
 
+[配置HSTS](listener-management#user-content-6)
+
 ## 添加监听器
 <div id="user-content-1"></div>
 
@@ -131,3 +133,12 @@
 
 1. 通过监听器列表页-操作栏，点击**更多**弹出管理证书对话框。
 2. 在管理证书对话框中，可配置一个HTTPS/TLS监听绑定多个证书，操作详见[证书管理](../Operation-Guide/Certificates-Management.md)。
+
+## 配置HSTS
+<div id="user-content-6"></div>
+HSTS（HTTP Strict Transport Security，严格传输安全协议）是一种Web安全策略机制，通过强制客户使用HTTPS与服务器进行通信，降低客户端第一次访问服务器被劫持的风险。
+网站开启全站HTTPS访问后，需要将所有的HTTP请求重定向到HTTPS，如果您在浏览器输入或直接单击HTTP链接，则服务器会将该HTTP请求重定向到HTTPS。该操作过程中HTTP请求可能被劫持，导致重定向后的请求未发送到服务器。HSTS通过在服务器返回的HTTP响应中返回HSTS header信息，以强制客户端在HSTS Header过期时间内访问网站域名时使用HTTPS，增加网站的安全性。
+
+     注意：HSTS对子域名不生效。
+
+1. 您可在创建HTTPS监听器及编辑HTTPS监听器时开启HSTS功能。
