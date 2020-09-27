@@ -141,6 +141,6 @@ HSTS（HTTP Strict Transport Security，严格传输安全协议）是一种Web�
 
      注意：HSTS对子域名不生效。
 
-1. 您可在创建HTTPS监听器及编辑HTTPS监听器时开启HSTS功能。
+1. 您可在创建HTTPS监听器及编辑HTTPS监听器时配置HSTS功能。
   - HSTS：HSTS开关，默认为关闭
   - 过期时间：HSTS Header的过期时间，开启HSTS后显示本参数。缺省为31536000秒（1年），范围为1-94608000秒（3年）
