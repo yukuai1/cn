@@ -2,7 +2,7 @@
 可以通过控制台购买云数据库 RDS 实例
 
 # 压缩包测试 
-[download](../../../../image/userReportOpenApiTest.7z)
+[download](../../image/userReportOpenApiTest.7z)
 
 ## 前提条件
 - 已经开通云数据库 RDS 权限
