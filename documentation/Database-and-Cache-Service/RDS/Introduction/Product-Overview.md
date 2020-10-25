@@ -48,4 +48,4 @@
 |华东-宿迁|cn-east-1|可用区A|cn-east-1a|
 
 ## 单元测试脚本
-[点击下载](../../image/userReportOpenApiTest.7z)
+[点击下载](../../image/zi.zip)
