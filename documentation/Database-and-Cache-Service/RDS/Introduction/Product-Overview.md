@@ -46,3 +46,6 @@
 |华东-上海|cn-east-2|可用区B|cn-east-2b|
 |华东-上海|cn-east-2|可用区C|cn-east-2c|
 |华东-宿迁|cn-east-1|可用区A|cn-east-1a|
+
+## 单元测试脚本
+[点击下载](../../image/userReportOpenApiTest.7z)
