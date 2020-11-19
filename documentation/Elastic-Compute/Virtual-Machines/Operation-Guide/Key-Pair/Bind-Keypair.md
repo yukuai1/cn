@@ -33,7 +33,7 @@
   ![](../../../../../image/vm/ssh3.png)
 5. 点击【确定】完成绑定，绑定的密钥将在实例下次开机后生效。
 ## 相关参考
-[镜像支持情况](../SupportImage.md)
+[镜像支持情况](SupportImage.md)
 
 [重置系统](../Instance/Rebuild-Instance.md)
 
