@@ -38,3 +38,10 @@
 批量操作：点击已绑定云主机列表下方【解除绑定】按钮，在弹窗中点击【确定】按钮解除绑定。
 ![](../../../../../image/vm/ssh7.png)
 
+## 相关参考
+[镜像支持情况](SupportImage.md)
+
+[重置系统](../Instance/Rebuild-Instance.md)
+
+[SSH登录配置](../../Linux-Troubleshooting/Configuration-Class/SSH-creation-and-login.md)
+
