@@ -43,5 +43,3 @@
 
 [重置系统](../Instance/Rebuild-Instance.md)
 
-[SSH登录配置](../../Linux-Troubleshooting/Configuration-Class/SSH-creation-and-login.md)
-
