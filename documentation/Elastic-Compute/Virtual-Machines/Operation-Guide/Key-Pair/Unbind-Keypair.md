@@ -37,9 +37,12 @@
 
 批量操作：点击已绑定云主机列表下方【解除绑定】按钮，在弹窗中点击【确定】按钮解除绑定。
 ![](../../../../../image/vm/ssh7.png)
+解除绑定后，密码登录状态不会发生改变，若想将密码登录状态由禁止切换为允许，请进行[重置密码](../Instance/Reset-Password.md)。
 
 ## 相关参考
 [镜像支持情况](SupportImage.md)
 
 [重置系统](../Instance/Rebuild-Instance.md)
+
+[重置密码](../Instance/Reset-Password.md)
 
