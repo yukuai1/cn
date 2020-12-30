@@ -4,15 +4,11 @@
 
 登录服务商后台发布下载类服务：选择服务管理-->发布服务，选择下载类交付类型，设置服务名称，选择服务类型、是否绑定域名产品，选择接入方式后填写回调地址，完成后点击 “下一步”。
 
-![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/下载类发布.jpg）
+![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/下载类发布2.jpg）
                                            
 
 
 2.编辑服务基本信息
-
-![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/镜像类发布3.jpg）
-
- 
 
 2.1服务图标：商品列表页面和详情页面展示的商品图片，图片尺寸：208x208，大小：不超过200k，格式：jpg,jpeg 或 png
 
@@ -28,27 +24,19 @@
 
 3.编辑服务业务信息
 
-![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/镜像类发布4.jpg）
-
-
-
 3.1服务类目：请根据所发布的商品版本类型设置价格种类(价格类型确认后不可修改)。
 
 3.2产品参数：请根据所发布的产品在各参数中填写正确的信息，如适用的系统版本、交付方式。计费设置、依托的云产品、交付时间、质保时间、标签等。完成后点击“下一步”，编辑服务销售信息。
 
 4.编辑服务销售信息
 
-![image](https://github.com/jdcloudcom/cn/blob/edit/documentation/Marketplace/Marketplace/MarketPlace-Image/下载类发布1.jpg）
-
-
-
 4.1用户信息：如选择是，用户在下单时需同意将用户信息（手机号、邮箱）同步给服务商，否则无法下单。
 
 4.2是否隐藏：选择【否，在服务平台列表正常显示，所有用户可见】（如不想被检索到，可选择“是”）。
 
-4.3是否支持退款：三方服务商可选择服务是否支持退款，自研服务商退款由平台先支付，如若不支持退款，。
+4.3是否支持退款：服务商可选择是否支持退款。
 
-4.4计费方式：可按照商品销售模式选择相应的计费方式，可按周期、按账户数量、或按照数量计费。同时编辑收费版本，设置收费项目名称、生产参数及添加额外计费项等。
+4.4计费方式：可按照商品销售模式选择相应的计费方式，同时编辑收费版本，设置收费项目名称、生产参数及添加额外计费项等。
 
 完成后勾选同意并签署《京东云市场入驻及服务协议》，可选择“暂存”或”发布服务”。
 
