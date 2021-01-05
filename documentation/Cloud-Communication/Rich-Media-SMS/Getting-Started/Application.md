@@ -3,22 +3,22 @@
 
 **创建应用：**<br>
 登录京东云账号后，进入富媒体短信服务，在左侧菜单中选择 “应用管理”，在打开的页面中点击 “创建应用” 按钮。<br>
-![应用列表](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-003.png)<br><br>
+![应用列表](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-003a.png)<br><br>
 
 在弹出的创建应用界面中填写应用名称和应用描述，信息填写完成后点击确定，页面会跳转到应用列表，您在应用列表可以看到你刚才添加成功的应用。<br>
 ![创建应用](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-004.png)<br><br>
 
 **管理应用：**<br>
 在应用列表页面上，您可以查看该应用的短信使用情况，停用、启用、编辑或删除该应用。<br>
- ![管理应用](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-005.png)<br><br>
+ ![管理应用](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-005a.png)<br><br>
 应用创建后为启用状态，此时您可以进行停用操作，列表中应用的状态将变为 ‘停用’ ，停用后京东云将停止该应用的富媒体短信服务。<br>
 如果您想继续是用该应用可点击 ‘启用’，启用后将可正常使用富媒体短信服务。<br><br>
 
 **应用设置**<br>
 点击应用名称后，进入到该应用的设置页面。<br>
- ![应用设置](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-006.png)<br>
+ ![应用设置](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-006a.png)<br>
  通用设置界面可配置短信状态回执地址，京东云收到运营商回执信息后，会及时将回执信息推送到指定的回执地址。<br><br>
  
 **屏蔽名单**<br>
 在屏蔽名单中的号码，将不会收到任何类型的短信。<br>
- ![屏蔽名单](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-007.png)
+ ![屏蔽名单](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-007a.png)
