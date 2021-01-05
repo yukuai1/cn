@@ -9,10 +9,10 @@
 ![应用管理](../../../../image/Text-Message/dx-010.png)<br><br>
 
 创建应用后，在短信签名TAB页，点选 ‘创建签名’，如下图<br>
-![创建签名](../../../../image/Text-Message/dx-011.png)<br><br>
+![创建签名](../../../../image/Text-Message/dx-011a.png)<br><br>
 
 根据提示内容填写并上传资料证明， 点击提交后等待运营人员进行签名审核。<br>
-![创建签名](../../../../image/Text-Message/dx-012.png)<br><br>
+![创建签名](../../../../image/Text-Message/dx-012a.png)<br><br>
 
 提交审核后您可以在短信签名列表页查看审核状态，审核通过后启用状态的短信签名可用于短信发送。<br>
-![查看状态](../../../../image/Text-Message/dx-013.png)
+![查看状态](../../../../image/Text-Message/dx-013a.png)
