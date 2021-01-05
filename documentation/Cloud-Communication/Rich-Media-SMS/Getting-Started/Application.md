@@ -3,7 +3,7 @@
 
 **创建应用：**<br>
 登录京东云账号后，进入富媒体短信服务，在左侧菜单中选择 “应用管理”，在打开的页面中点击 “创建应用” 按钮。<br>
-![应用列表](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-003a.png)<br><br>
+![应用列表](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-003a.PNG)<br><br>
 
 在弹出的创建应用界面中填写应用名称和应用描述，信息填写完成后点击确定，页面会跳转到应用列表，您在应用列表可以看到你刚才添加成功的应用。<br>
 ![创建应用](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-004.png)<br><br>
