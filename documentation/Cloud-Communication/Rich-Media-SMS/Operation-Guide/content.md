@@ -4,10 +4,10 @@
 ![创建应用](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-003.png)<br><br>
 
 创建应用后，在短信内容TAB页，点选 ‘创建短信内容’，如下图<br>
-![创建应用](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-008.png)<br><br>
+![创建应用](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-008a.png)<br><br>
 
 点击 “创建短信内容” 后进入到富媒体短信内容创建页面。<br>
-![短信内容创建](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-009.png)<br><br>
+![短信内容创建](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-009a.png)<br><br>
 
 **短信主题：**<br>
 手机用户收到富媒体短信时显示的主题内容，位于短信首行。<br>
@@ -21,7 +21,7 @@
 可选择该应用下已创建资质，也可点击 “创建资质” 按钮跳转到添加资质界面进行创建。<br><br>
 **添加素材：**<br>
 您可以上传文本、图片、音频、视频，点击上传后，附件将进入到右侧编辑区域，可以多次上传附件，但文件总量不能超过 1.9MB。<br>
-![添加素材](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-011.png)<br><br>
+![添加素材](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-011a.png)<br><br>
 附件要求如下：<br>
 文本要求：<br>
 第一个文本内容必须以【签名】开始，如：【京东云】为您定制短信服务<br>
@@ -39,10 +39,10 @@
 
 **短信内容编辑：**<br>
 上传后的附件都会在短信内容编辑区显示，您可以通过调节附件上下位置进行排版，点击“预览”按钮可以预览短信效果。<br> 
- ![短信内容编辑](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-012.png)<br><br>
+ ![短信内容编辑](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-012a.png)<br><br>
 注：不通手机机型显示会有所不同：<br>
 - iOS预览居左显示，短信标题加粗<br>
 - Android预览居左显示，短信标题加粗，每个短信内容之间有数字分隔<br><br>
 
 短信编辑完成后，点击保存返回列表页。提交审批后您可以在短信列表页查看审核状态，审核通过后的短信，才能用于发送。<br>
-![短信内容列表](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-013.png)
+![短信内容列表](../../../../image/Cloud-Communication/Rich-Media-SMS/rms-013a.png)
