@@ -1047,8 +1047,8 @@
       <td></td>
    </tr>
    <tr>
-      <td rowspan="23">存储优化</td>
-      <td rowspan="13">IO</td>
+      <td rowspan="24">存储优化</td>
+      <td rowspan="14">IO</td>
       <td>s.i3.2xlarge</td>
       <td>8</td>
       <td>32</td>
