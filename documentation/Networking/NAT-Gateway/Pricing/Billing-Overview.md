@@ -1,9 +1,9 @@
 # 计费概述
 
 ## 收费项目
-NAT 网关服务费用包含两部分：网关费用（按小时计费）和访问Internet的公网带宽费用（按配置计费）。NAT网关绑定的弹性公网IP不计费，弹性公网IP从NAT网关解绑后将开始计费，公网IP的计费请参见[公网IP产品定价](https://docs.jdcloud.com/elastic-ip/billing-overview)。
+NAT 网关服务费用包含两部分：网关费用（按小时计费）和公网带宽费用（按配置计费）。NAT网关绑定的弹性公网IP不计费，弹性公网IP从NAT网关解绑后将开始计费，公网IP的计费请参见[公网IP产品定价](https://docs.jdcloud.com/elastic-ip/billing-overview)。
 
-NAT网关费用和访问Internet的带宽费用请参见[价格总览](Price-Overview.md)
+NAT网关费用和公网带宽费用请参见[价格总览](Price-Overview.md)
 
 ## 欠费说明
 当您的账户中余额加可用于支付该付费网络资源的代金券的总和不足以支付下一计费周期费用时，导致扣款不成功，您的付费网络资源的状态会变为欠费；
