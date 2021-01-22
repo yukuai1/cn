@@ -50,7 +50,7 @@ items:
           - name: 启停NAT网关
             href: Operation-Guide/Nat-Gateway-Management/Start-Stop-Nat-Gateway.md
           - name:  管理NAT网关绑定的公网IP
-            href: Operation-Guide/Nat-Gateway-Management/ip.md
+            href: Operation-Guide/Nat-Gateway-Management/Management-IP.md
       - name: 查看NAT网关监控信息
         items:
           - name: 查看NAT网关监控信息
