@@ -1,6 +1,6 @@
 # 管理NAT网关绑定的公网IP
 
-NAT网关支持绑定或解绑多个公网IP，满足客户在公网IP受攻击时换IP、单个公网IP导致源端口耗尽等场景需求。
+NAT网关支持绑定或解绑多个公网IP，满足客户在公网IP受攻击时换IP、单个公网IP导致源端口耗尽等场景需求。仅当NAT网关公网带宽大于20Mbps时，支持配置多公网IP。
 
 1. 打开私有网络控制台 https://cns-console.jdcloud.com/host/vpc/list
 
