@@ -5,8 +5,8 @@
 
 [迁移后不修改公网IP](Migration-From-Instance-To-Nat-Gateway#user-content-2)
 
-注：
 
+       注意：
        1. 迁移瞬间，已有的TCP连接会中断，应用重新连接即可恢复，新建连接不受影响
 
        2. 如果用户使用多个NAT实例，可以根据实际流量和连接数情况，考虑用一个或多个NAT网关替换
