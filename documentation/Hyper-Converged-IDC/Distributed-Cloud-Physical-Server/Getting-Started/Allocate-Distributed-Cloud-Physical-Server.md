@@ -6,7 +6,7 @@
 
 - 节点与运营商
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 当前提供 **华东-台州（电信1）** 边缘节点，更多节点还在筹备中。选择最靠近您的节点，可降低访问延时、提高下载速度。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 当前提供 **华东-济南（联通1）** 边缘节点，更多节点还在筹备中。选择最靠近您的节点，可降低访问延时、提高下载速度。
 
 - 规格
 
@@ -38,7 +38,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 带宽计费模式 ：支持按固定带宽-包年包月、按固定带宽-按配置、加入共享带宽3种计费方式。（注意：按配置计费实例不支持与按固定带宽-包年包月弹性公网IP关联购买）。</br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 线路 ：目前边缘节点支持单线，目前已上线节点支持电信。</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 线路 ：目前边缘节点支持单线，目前已上线节点支持联通。</br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 带宽 ：用户可选择带宽范围为1Mbps到10000Mbps的公网带宽速率，根据不同节点该带宽最大值可能会不同，请根据实际节点合理选择。</br>
 
@@ -58,7 +58,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 带宽计费模式 ：支持按固定带宽-包年包月、按固定带宽-按配置、加入共享带宽3种计费方式。（注意：按配置计费实例不支持与按固定带宽-包年包月弹性公网IP关联购买）。</br>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 线路 ：目前边缘节点支持单线，目前已上线节点支持电信。</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 线路 ：目前边缘节点支持单线，目前已上线节点支持联通。</br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 带宽 ：用户可选择带宽范围为1Mbps到10000Mbps的公网带宽速率，根据不同节点该带宽最大值可能会不同，请根据实际节点合理选择。</br>
 
