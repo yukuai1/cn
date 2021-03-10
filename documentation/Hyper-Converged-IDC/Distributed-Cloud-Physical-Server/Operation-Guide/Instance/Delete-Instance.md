@@ -5,7 +5,7 @@
 - 按配置计费的实例支持删除操作。</br>
 
 ### 操作步骤
-1、访问[实例控制台](https://cps-edge-console.jdcloud.com/instance/list)，或访问[京东智联云控制台](https://console.jdcloud.com/overview)点击左侧导航栏“智能IDC”-"分布式云物理服务器"进入实例列表页。</br>
+1、访问[实例控制台](https://cps-edge-console.jdcloud.com/instance/list)，或访问[京东云控制台](https://console.jdcloud.com/overview)点击左侧导航栏“智能IDC”-"分布式云物理服务器"进入实例列表页。</br>
 
 2、选择实例所在节点。</br>
 
