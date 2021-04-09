@@ -2,7 +2,7 @@
 
 [查看系统监控指标](Operation-Guide#user-content-1)
 
-[配置自定义监控指标)](Operation-Guide#user-content-2)
+[配置自定义监控指标](Operation-Guide#user-content-2)
 
 
 ## 查看系统监控
