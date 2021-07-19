@@ -7,14 +7,16 @@ items:
   items:
     - name: 立即购买
       href: https://docs.jdcloud.com/cn/?act=0
+      btnstyle: red
     - name: 免费适用
       href: https://docs.jdcloud.com/cn/?act=0
+      btnstyle: red
     - name: 立即使用
       href: https://docs.jdcloud.com/cn/?act=0
+      btnstyle: white
 - name: 学习路线
   items:
     - name: 了解
-      icon: Pricing/Billing-Overview.md
       items:
         - name: 产品介绍1
           items:
@@ -47,7 +49,6 @@ items:
             - name: 应用场景
               href: https://docs.jdcloud.com/cn/?act=0
     - name: 使用
-      icon: Pricing/Billing-Overview.md
       items:
         - name: 最佳实践
           items:
@@ -80,7 +81,6 @@ items:
             - name: 应用场景
               href: https://docs.jdcloud.com/cn/?act=0
     - name: 开发
-      icon: Pricing/Billing-Overview.md
       items:
         - name: 操作指南1
           items:
