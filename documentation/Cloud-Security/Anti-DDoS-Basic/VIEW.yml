@@ -7,10 +7,8 @@ items:
   items:
     - name: 立即购买
       href: https://docs.jdcloud.com/cn/?act=0
-      btnstyle: red
     - name: 免费适用
       href: https://docs.jdcloud.com/cn/?act=0
-      btnstyle: red
     - name: 立即使用
       href: https://docs.jdcloud.com/cn/?act=0
       btnstyle: white
