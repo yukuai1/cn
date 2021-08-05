@@ -3,7 +3,7 @@
 
 使用Windows Server IIS搭建的FTP服务器在上传文件夹或者文件的时候，如果文件夹或者文件名称中英文混和，则会出现以下错误提示框：
 
-![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/FTP报Error code 451处理方法01.png)
+"![](../../../../../image/Elastic-Compute/Virtual-Machine/Windows/FTP报Error code 451处理方法01.png)"
 
 ## 处理步骤
 
