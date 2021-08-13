@@ -1,10 +1,13 @@
 name: 云主机概览
 items:
 - name: 云主机概述
-  desc: 云主机（Virtual Machines,VM）是京东智联云提供的一种基础计算服务单元，提供处理能力可弹性伸缩的计算服务。云主机涉及多种概念，如下图所示，包括实例规格（vCPU及内存）、操作系统、磁盘、网络、安全等，每种资源都提供多种配置选项，您可以根据实际需要进行选择。
+  desc: 云主机（Virtual Machines,VM）是京东云提供的一种管理便捷、安全可靠的云计算服务单元。您无需为硬件的购买和维护投入精力，可随时创建和释放多台云主机，快速部署应用，并且可根据业务需要扩展计算能力，按需付费，节约成本，帮助您更高效稳定的开展业务。
   items:
     - name: 立即购买
       href: https://cns-console.jdcloud.com/host/compute/create
+    - name: 产品价格
+      href: https://www.jdcloud.com/cn/calculator/calHost
+      btnstyle: white
 - name: 学习路线
   items:
     - name: 了解
@@ -31,6 +34,21 @@ items:
               href: https://docs.jdcloud.com/cn/virtual-machines/billing-rules
             - name: 价格总览
               href: https://docs.jdcloud.com/cn/virtual-machines/price-overview
+        - name: 关联资源概述
+          items:
+            - name: 镜像概述
+              href: https://docs.jdcloud.com/cn/virtual-machines/image-overview
+            - name: 存储概述
+              href: https://docs.jdcloud.com/cn/virtual-machines/strorage-overview
+            - name: 网络概述
+              href: https://docs.jdcloud.com/cn/virtual-machines/network-overview
+            - name: 密钥概述
+              href: https://docs.jdcloud.com/cn/virtual-machines/keypair-overview
+            - name: 安全组概述
+              href: https://docs.jdcloud.com/cn/virtual-machines/security-group-overview
+            - name: 监控概述
+              href: https://docs.jdcloud.com/cn/virtual-machines/monitoring-overview
+        
         - name: API参考
           items:
             - name: 接口概览
@@ -38,168 +56,58 @@ items:
             - name: 更新历史
               href: https://docs.jdcloud.com/cn/virtual-machines/api/changelog?content=API     
             - name: 云主机创建示例
-              href: https://docs.jdcloud.com/cn/virtual-machines/api/create_vm_sample?content=API
-              
-    - name: 操作指南
+              href: https://docs.jdcloud.com/cn/virtual-machines/api/create_vm_sample?content=API    
+    - name: 使用
       items:
-        - name: 实例
+        - name: 入门指南
+            - name: 创建前准备
+              href: https://docs.jdcloud.com/cn/virtual-machines/account-preparation-linux
+            - name: 创建Linux实例
+              href: https://docs.jdcloud.com/cn/virtual-machines/create-linux-instance
+            - name: 创建Windows实例
+              href: https://docs.jdcloud.com/cn/virtual-machines/create-windows-instance
+            - name: 登录Linux实例
+              href: https://docs.jdcloud.com/cn/virtual-machines/connect-to-linux-instance
+            - name: 登录Windows实例
+              href: https://docs.jdcloud.com/cn/virtual-machines/connect-to-windows-instance
+        - name: 使用进阶
           items:
             - name: 创建实例
               href: https://docs.jdcloud.com/cn/virtual-machines/create-instance
-            - name: 重置密码
-              href: https://docs.jdcloud.com/cn/virtual-machines/reset-password
-            - name: 启动实例
-              href: https://docs.jdcloud.com/cn/virtual-machines/start-instance
-            - name: 停止实例
-              href: https://docs.jdcloud.com/cn/virtual-machines/stop-instance
-            - name: 重启实例
-              href: https://docs.jdcloud.com/cn/virtual-machines/reboot-instance
-            - name: 重置系统
-              href: https://docs.jdcloud.com/cn/virtual-machines/rebuild-instance
-            - name: 调整配置
-              href: https://docs.jdcloud.com/cn/virtual-machines/resize-instance
-            - name: 查找实例
-              href: https://docs.jdcloud.com/cn/virtual-machines/search-instance
-            - name: 重启动到期/欠费实例
-              href: https://docs.jdcloud.com/cn/virtual-machines/restart-overdue-or-arrear-instance
-            - name: 实例停机不计费
-              href: https://docs.jdcloud.com/cn/virtual-machines/uncharged_for_stopped_vm
-            - name: 从配置转换为包年包月
-              href: https://docs.jdcloud.com/cn/virtual-machines/switch-from-postpaid-to-prepaid
-            - name: 删除实例
-              href: https://docs.jdcloud.com/cn/virtual-machines/delete-instance
-            - name: GPU云主机
-              href: https://docs.jdcloud.com/cn/virtual-machines/gpu-vm
-            - name: vGPU云主机
-              href: https://docs.jdcloud.com/cn/virtual-machines/vgpu-vm
-            - name: 创建裸金属云主机
-              href: https://docs.jdcloud.com/cn/virtual-machines/create-bm-instance
-        - name: 实例模板
-          items:
-            - name: 实例模板概述
-              href: https://docs.jdcloud.com/cn/virtual-machines/instance-template-overview
-            - name: 删除实例模板
-              href: https://docs.jdcloud.com/cn/virtual-machines/delete-instance-template
-            - name: 创建实例模板
-              href: https://docs.jdcloud.com/cn/virtual-machines/create-instance-template
-        - name: 镜像
-          items:
-            - name: 镜像概述
-              href: https://docs.jdcloud.com/cn/virtual-machines/image-overview
-            - name: 镜像类型
-              href: https://docs.jdcloud.com/cn/virtual-machines/image-type
             - name: 制作私有镜像
               href: https://docs.jdcloud.com/cn/virtual-machines/create-private-image
-            - name: 镜像类型转换
-              href: https://docs.jdcloud.com/cn/virtual-machines/convert-image
-            - name: 复制镜像
-              href: https://docs.jdcloud.com/cn/virtual-machines/copy-image
-            - name: 导入私有镜像
-              href: https://docs.jdcloud.com/cn/virtual-machines/import-private-image
-            - name: 共享私有镜像
-              href: https://docs.jdcloud.com/cn/virtual-machines/share-image
-            - name: 导出镜像
-              href: https://docs.jdcloud.com/cn/virtual-machines/export-private-image
-            - name: 删除私有镜像
-              href: https://docs.jdcloud.com/cn/virtual-machines/delete-private-image
-            - name: 官方镜像系统组件
-              href: https://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image
-            - name: 官方镜像更新记录
-              href: https://docs.jdcloud.com/cn/virtual-machines/public-image-update-record
-        - name: 实例抵扣券
-          items:
-            - name: 实例抵扣券概述
-              href: https://docs.jdcloud.com/cn/virtual-machines/instancevoucher-overview
-            - name: 价格及计费规则
-              href: https://docs.jdcloud.com/cn/virtual-machines/price-and-billing-rules-of-instancevoucher
-            - name: 购买实例抵扣券
-              href: https://docs.jdcloud.com/cn/virtual-machines/purchase-instancevoucher
-            - name: 管理实例抵扣券
-              href: https://docs.jdcloud.com/cn/virtual-machines/manage-instancevoucher
-            - name: 查看抵抗明细
-              href: https://docs.jdcloud.com/cn/virtual-machines/check-usage-of-instancevoucher
-            - name: 查看预留资源
-              href: https://docs.jdcloud.com/cn/virtual-machines/reserved-resources
-        - name: 存储
-          items:
-            - name: 存储概述
-              href: https://docs.jdcloud.com/cn/virtual-machines/strorage-overview
-            - name: 存储类型
-              href: https://docs.jdcloud.com/cn/virtual-machines/storage-type
             - name: 创建云硬盘
               href: https://docs.jdcloud.com/cn/virtual-machines/create-cloud-disk
-            - name: 扩容云硬盘
-              href: https://docs.jdcloud.com/cn/virtual-machines/resize-cloud-disk
             - name: 创建快照
               href: https://docs.jdcloud.com/cn/virtual-machines/create-snapshot
-            - name: 恢复云硬盘
-              href: https://docs.jdcloud.com/cn/virtual-machines/roll-back-cloud-disk
-            - name: 挂载云硬盘
-              href: https://docs.jdcloud.com/cn/virtual-machines/attach-cloud-disk
-            - name: 卸载云硬盘
-              href: https://docs.jdcloud.com/cn/virtual-machines/detach-cloud-disk
-            - name: 云硬盘加密
-              href: https://docs.jdcloud.com/cn/virtual-machines/encryption-of-cloud-disk
-        - name: 网络
-          items:
-            - name: 网络概述
-              href: https://docs.jdcloud.com/cn/virtual-machines/network-overview
-            - name: 绑定弹性网卡
-              href: https://docs.jdcloud.com/cn/virtual-machines/attach-eni
-            - name: 解绑弹性网卡
-              href: https://docs.jdcloud.com/cn/virtual-machines/detach-eni
-            - name: 分配辅助内网IP
-              href: https://docs.jdcloud.com/cn/virtual-machines/assign-secondary-ips
             - name: 绑定弹性公网IP
               href: https://docs.jdcloud.com/cn/virtual-machines/associate-elastic-ip
-            - name: 修改私有网络配置
-              href: https://docs.jdcloud.com/cn/virtual-machines/modify-vpc-attribute
-        - name: 密钥
-          items:
-            - name: 密钥概述
-              href: https://docs.jdcloud.com/cn/virtual-machines/keypair-overview
-            - name: 创建密钥
-              href: https://docs.jdcloud.com/cn/virtual-machines/create-keypair
-            - name: 绑定密钥
-              href: https://docs.jdcloud.com/cn/virtual-machines/bind-keypair
-        - name: 安全组
-          items:
-            - name: 安全组概述
-              href: https://docs.jdcloud.com/cn/virtual-machines/security-group-overview
-            - name: 安全组规则
-              href: https://docs.jdcloud.com/cn/virtual-machines/security-group-rules
+            - name: 绑定弹性网卡
+              href: https://docs.jdcloud.com/cn/virtual-machines/attach-eni
             - name: 创建安全组
               href: https://docs.jdcloud.com/cn/virtual-machines/create-security-group
-            - name: 安全组绑定云主机
-              href: https://docs.jdcloud.com/cn/virtual-machines/associate-security-group
-            - name: 配置安全组入站规则
-              href: https://docs.jdcloud.com/cn/virtual-machines/configurate-inbound-rules
-            - name: 配置安全组出站规则
-              href: https://docs.jdcloud.com/cn/virtual-machines/configurate-outbound-rules
-        - name: 标签
+        - name: 运维与监控
           items:
-            - name: 标签概述
-              href: https://docs.jdcloud.com/cn/virtual-machines/tag-overview
-            - name: 根据标签筛选
-              href: https://docs.jdcloud.com/cn/virtual-machines/filter-by-tag
-            - name: 编辑标签
-              href: https://docs.jdcloud.com/cn/virtual-machines/edit-tag
-        - name: 监控
-          items:
-            - name: 监控概述
-              href: https://docs.jdcloud.com/cn/virtual-machines/monitoring-overview
-            - name: 获取监控数据
-              href: https://docs.jdcloud.com/cn/virtual-machines/get-monitor-data
-            - name: 设置报警
+            - name: 设置事件通知
+              href: https://docs.jdcloud.com/cn/virtual-machines/event-overview
+            - name: 设置监控报警
               href: https://docs.jdcloud.com/cn/virtual-machines/set-alarm
-        - name: 事件
+    - name: 开发
+      items:
+        - name: API文档
           items:
-            - name: 自动镜像策略
-              href: https://docs.jdcloud.com/cn/virtual-machines/autoimagepolicy
-        - name: 自动任务策略
-          items:
-            - name: 自动镜像策略
-              href: https://docs.jdcloud.com/cn/virtual-machines/autoimagepolicy      
+            - name: 接口概览
+              href: https://docs.jdcloud.com/cn/virtual-machines/api/overview?content=API
+            - name: 描述实例规格
+              href: https://docs.jdcloud.com/cn/virtual-machines/api/describeinstancetypes?content=API
+            - name: 云主机创建示例
+              href: https://docs.jdcloud.com/cn/virtual-machines/api/create_vm_sample?content=API
+            - name: 创建实例
+              href: https://docs.jdcloud.com/cn/virtual-machines/api/createinstances?content=API
+            - name: 制作私有镜像
+              href: https://docs.jdcloud.com/cn/virtual-machines/api/createimage?content=API
+            - name: 创建密钥
+              href: https://docs.jdcloud.com/cn/virtual-machines/api/createkeypair?content=API
 - name: 常见问题
   items:
     - name: 使用centos私有镜像创建云主机后无法获取内网IP解决办法
