@@ -47,16 +47,7 @@ items:
             - name: 安全组概述
               href: https://docs.jdcloud.com/cn/virtual-machines/security-group-overview
             - name: 监控概述
-              href: https://docs.jdcloud.com/cn/virtual-machines/monitoring-overview
-        
-        - name: API参考
-          items:
-            - name: 接口概览
-              href: https://docs.jdcloud.com/cn/virtual-machines/api/overview?content=API
-            - name: 更新历史
-              href: https://docs.jdcloud.com/cn/virtual-machines/api/changelog?content=API     
-            - name: 云主机创建示例
-              href: https://docs.jdcloud.com/cn/virtual-machines/api/create_vm_sample?content=API    
+              href: https://docs.jdcloud.com/cn/virtual-machines/monitoring-overview 
     - name: 使用
       items:
         - name: 入门指南
