@@ -25,8 +25,6 @@ items:
               href: https://docs.jdcloud.com/cn/virtual-machines/benefits
             - name: 产品功能
               href: https://docs.jdcloud.com/cn/virtual-machines/features
-            - name: 实例规格类型
-              href: https://docs.jdcloud.com/cn/virtual-machines/instance-type-family
             - name: 应用场景
               href: https://docs.jdcloud.com/cn/virtual-machines/application-scenarios
             - name: 使用限制
@@ -84,16 +82,14 @@ items:
               href: https://docs.jdcloud.com/cn/virtual-machines/rebuild-instance
             - name: 制作镜像
               href: https://docs.jdcloud.com/cn/virtual-machines/create-private-image
-            - name: 创建云硬盘
+            - name: 挂载云硬盘。。。。。。。。。。
               href: https://docs.jdcloud.com/cn/virtual-machines/create-cloud-disk
-            - name: 创建快照
-              href: https://docs.jdcloud.com/cn/virtual-machines/create-snapshot
             - name: 绑定弹性公网IP
               href: https://docs.jdcloud.com/cn/virtual-machines/associate-elastic-ip
             - name: 安全组典型规则配置
               href: https://docs.jdcloud.com/cn/virtual-machines/typical-configuration
-            - name: 查看实例监控
-              href: https://docs.jdcloud.com/cn/virtual-machines/get-monitor-data
+            - name: 监控与报警
+              href: https://docs.jdcloud.com/cn/virtual-machines/monitoring-overview
             - name: 账号访问控制
               href: https://docs.jdcloud.com/cn/iam/features
         - name: 使用进阶
@@ -106,11 +102,11 @@ items:
               href: https://docs.jdcloud.com/cn/virtual-machines/attach-eni
             - name: 扩容云硬盘
               href: https://docs.jdcloud.com/cn/virtual-machines/resize-cloud-disk
-            - name: 创建实例启动模板
+            - name: 创建实例模板
               href: https://docs.jdcloud.com/cn/virtual-machines/create-instance-template
             - name: 实例元数据
               href: https://docs.jdcloud.com/cn/virtual-machines/instance-metadata
-            - name: 实例启动自定义
+            - name: 实例启动脚本
               href: https://docs.jdcloud.com/cn/virtual-machines/userdata
             - name: 设置事件通知
               href: https://docs.jdcloud.com/cn/virtual-machines/event-overview
@@ -124,14 +120,12 @@ items:
               href: https://docs.jdcloud.com/cn/virtual-machines/api/overview?content=API
             - name: 描述实例规格
               href: https://docs.jdcloud.com/cn/virtual-machines/api/describeinstancetypes?content=API
-            - name: 云主机创建示例
-              href: https://docs.jdcloud.com/cn/virtual-machines/api/create_vm_sample?content=API
             - name: 创建实例
               href: https://docs.jdcloud.com/cn/virtual-machines/api/createinstances?content=API
-            - name: 制作私有镜像
-              href: https://docs.jdcloud.com/cn/virtual-machines/api/createimage?content=API
-            - name: 创建密钥
-              href: https://docs.jdcloud.com/cn/virtual-machines/api/createkeypair?content=API
+            - name: Java SDK使用说明
+              href: https://docs.jdcloud.com/cn/sdk/java
+            - name: CLI使用说明
+              href: https://docs.jdcloud.com/cn/cli/usage
 - name: 常见问题
   items:
     - name: 实例FAQ
