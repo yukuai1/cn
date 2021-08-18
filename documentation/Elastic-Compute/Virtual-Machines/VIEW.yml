@@ -1,0 +1,127 @@
+name: DDoS 基础防护概览
+items:
+- name: 内容安全
+  linkname: 查看产品>
+  linkurl: https://docs.jdcloud.com/cn/?act=0
+  desc: 内容安全是用于检测网站和APP内不良信息的安全检测服务。内容安全基于深度学习技术，支持包含图片、文本、视频、语音等多媒体检测服务，可以智能识别涉黄、涉政、涉恐、辱骂、违法等违规内容。内容安全可以帮助客户大幅提升审核效率，规避违规内容带来的风险，保护业务健康发展。
+  items:
+    - name: 立即购买
+      href: https://docs.jdcloud.com/cn/?act=0
+    - name: 免费适用
+      href: https://docs.jdcloud.com/cn/?act=0
+    - name: 立即使用
+      href: https://docs.jdcloud.com/cn/?act=0
+      btnstyle: white
+- name: 学习路线
+  items:
+    - name: 了解
+      items:
+        - name: 产品介绍1
+          items:
+            - name: 产品概述
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 产品优势
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 产品功能
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 应用场景
+              href: https://docs.jdcloud.com/cn/?act=0
+        - name: 产品介绍2
+          items:
+            - name: 产品概述
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 产品优势
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 产品功能
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 应用场景
+              href: https://docs.jdcloud.com/cn/?act=0
+        - name: 产品介绍3
+          items:
+            - name: 产品概述
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 产品优势
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 产品功能
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 应用场景
+              href: https://docs.jdcloud.com/cn/?act=0
+    - name: 使用
+      items:
+        - name: 最佳实践
+          items:
+            - name: 流量包管理
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 快速接入
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 适用服务
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 应用场景
+              href: https://docs.jdcloud.com/cn/?act=0
+        - name: 最佳实践2
+          items:
+            - name: 产品概述
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 产品优势
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 产品功能
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 应用场景
+              href: https://docs.jdcloud.com/cn/?act=0
+        - name: 最佳实践3
+          items:
+            - name: 产品概述
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 产品优势
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 产品功能
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 应用场景
+              href: https://docs.jdcloud.com/cn/?act=0
+    - name: 开发
+      items:
+        - name: 操作指南1
+          items:
+            - name: 流量包管理
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 快速接入
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 适用服务
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 应用场景
+              href: https://docs.jdcloud.com/cn/?act=0
+        - name: 操作指南2
+          items:
+            - name: 产品概述
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 产品优势
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 产品功能
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 应用场景
+              href: https://docs.jdcloud.com/cn/?act=0
+        - name: 操作指南3
+          items:
+            - name: 产品概述
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 产品优势
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 产品功能
+              href: https://docs.jdcloud.com/cn/?act=0
+            - name: 应用场景
+              href: https://docs.jdcloud.com/cn/?act=0
+- name: 常见问题
+  items:
+    - name: 内容安全支持哪些场景的检测？
+      href: https://docs.jdcloud.com/cn/?act=0
+    - name: 内容安全服务检测的准确率如何？
+      href: https://docs.jdcloud.com/cn/?act=0
+    - name: 内容安全服务是否支持自定义策略？
+      href: https://docs.jdcloud.com/cn/?act=0
+    - name: 内容安全如何接入系统？
+      href: https://docs.jdcloud.com/cn/?act=0
+    - name: 是否支持免费试用？
+      href: https://docs.jdcloud.com/cn/?act=0
+    - name: VPC路由表传播路由达到配额上限后，路由传播的新增路
+      href: https://docs.jdcloud.com/cn/?act=0
+
