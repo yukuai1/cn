@@ -22,6 +22,8 @@ items:
   items:
     - name: 计费概述
       href: Pricing/Billing-Overview.md
+    - name: 计费概述2
+      href: Pricing/Billing-Overview2.md
 - name: 入门指南
   items:
     - name: DDoS基础防护能力获取
