@@ -10,15 +10,14 @@
 
 2. 在左侧的导航菜单中，选择【资源监控】及查看的云资源类型，例如【云主机】。进入到云资源列表，可以查看到已购买或者创建的云资源。
 
-   ![](../img/vm_list.png)
+   ![](../../../../image/Cloud-Monitor/img/vm_list.png)
 
 3. 找到您需要查看监控的资源，点击名称或操作列下的监控图表按钮，进入监控页面。
 
-   ![](../img/vm_monitoring.png)
-
+   ![](../../../../image/Cloud-Monitor//img/vm_monitoring.png)
 4. 在上图中，点击【报警规则】，切换至报警规则列表页面。
 
-   ![](../img/vm_rule.png)
+   ![](../../../../image/Cloud-Monitor/img/vm_rule.png)
 
 5. 点击【添加报警规则】按钮，打开报警规则页面，配置如下信息：
 
@@ -26,9 +25,9 @@
    - 触发条件：配置监控指标、监控周期、统计方式、报警阈值等信息。
    - 通知对象：选择发生报警时，通知给谁，可以指定某个联系人，也可以选择某个联系组。
 
-   ![](../img/add_rule_1.png)
+   ![](../../../../image/Cloud-Monitor/img/add_rule_1.png)
 
-   ![](../img/add_rule_2.png)
+   ![](../../../../image/Cloud-Monitor/img/add_rule_2.png)
 
 
 
