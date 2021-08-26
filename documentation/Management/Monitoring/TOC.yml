@@ -20,14 +20,10 @@ items:
       href: Pricing/Billing-Overview.md
 - name: 入门指南
   items:
-    - name: 入门指南概述
-      href: Getting-Started/getting-started-overview.md
+    - name: 监控概览
+      href: Getting-Started/monitoring_overview.md
     - name: 资源监控
-      items:
-        - name: 查看监控图表
-          href: Getting-Started/View-monitoring-cahrt.md
-        - name: 添加报警规则
-          href: Getting-Started/CreateRule.md 
+      href: Getting-Started/resource_monitoring.md
     - name: 使用Dashboard
       href: Getting-Started/use-dashboard.md
     - name: 使用自定义监控
