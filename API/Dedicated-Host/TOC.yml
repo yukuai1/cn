@@ -1,0 +1,21 @@
+name: 专有宿主机
+  href:
+  items:
+  - name: 接口概览
+    href: overview.md
+  - name: 接口信息
+    items:
+      - name: 专有宿主机相关接口
+        items:
+          - name: 创建专有宿主机
+            href: Dedicated-Host/allocDedicatedHosts.md
+          - name: 查询一个或多个专有宿主机
+            href: Dedicated-Host/describeDedicatedHosts.md
+          - name: 修改专有宿主机
+            href: Dedicated-Host/modifyDedicatedHostAttribute.md
+          - name: 删除专有宿主机
+            href: Dedicated-Host/releaseDedicatedHost.md
+      - name: 规格类型
+        items:
+          - name: 查询专有宿主机规格
+            href: Host-Type/describeDedicatedHostType.md
