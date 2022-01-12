@@ -580,8 +580,61 @@
       <td>1.65</td>
       <td>--</td>
       <td></td>
+       
+       
   <tr>
-      <td rowspan="10">密集</td>
+     <td rowspan="10">密集</td>
+      <td>c.c4.large</td>
+      <td>2</td>
+      <td>4</td>
+      <td>195.5</td>
+      <td>195.5</td>
+      <td>0.41</td>
+      <td>0.41</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.c4.xlarge</td>
+      <td>4</td>
+      <td>4</td>
+      <td>391</td>
+      <td>391</td>
+      <td>0.81</td>
+      <td>0.81</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.c4.2xlarge</td>
+      <td>8</td>
+      <td>8</td>
+      <td>782</td>
+      <td>782</td>
+      <td>1.63</td>
+      <td>1.63</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.c4.3xlarge</td>
+      <td>12</td>
+      <td>12</td>
+      <td>1173</td>
+      <td>1173</td>
+      <td>2.44</td>
+      <td>2.44</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>c.c4.4xlarge</td>
+      <td>16</td>
+      <td>16</td>
+      <td>1564</td>
+      <td>1564</td>
+      <td>3.26</td>
+      <td>3.26</td>
+      <td></td>
+   </tr>     
+       
+  <tr>
       <td>c.c2.large</td>
       <td>2</td>
       <td>2</td>
@@ -631,56 +684,8 @@
       <td>3.54</td>
       <td></td>
    </tr>
-   <tr>
-      <td>c.c4.large</td>
-      <td>2</td>
-      <td>4</td>
-      <td>195.5</td>
-      <td>195.5</td>
-      <td>0.41</td>
-      <td>0.41</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>c.c4.xlarge</td>
-      <td>4</td>
-      <td>4</td>
-      <td>391</td>
-      <td>391</td>
-      <td>0.81</td>
-      <td>0.81</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>c.c4.2xlarge</td>
-      <td>8</td>
-      <td>8</td>
-      <td>782</td>
-      <td>782</td>
-      <td>1.63</td>
-      <td>1.63</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>c.c4.3xlarge</td>
-      <td>12</td>
-      <td>12</td>
-      <td>1173</td>
-      <td>1173</td>
-      <td>2.44</td>
-      <td>2.44</td>
-      <td></td>
-   </tr>
-   <tr>
-      <td>c.c4.4xlarge</td>
-      <td>16</td>
-      <td>16</td>
-      <td>1564</td>
-      <td>1564</td>
-      <td>3.26</td>
-      <td>3.26</td>
-      <td></td>
-   </tr>
+   
+   
 </tr>
 
 <tr>
@@ -1488,52 +1493,12 @@
       <td></td>
    </tr>
    <tr>
-     <td>t.c2.large</td>
-      <td>2</td>
-      <td>4</td>
-      <td>96</td>
-      <td>--</td>
-      <td>0.33</td>
-      <td>--</td>
-      <td></td>
-   </tr>
-   <tr>
-     <td>t.g2.large</td>
-      <td>2</td>
-      <td>8</td>
-      <td>180</td>
-      <td>--</td>
-      <td>0.63</td>
-      <td>--</td>
-      <td></td>
-   </tr>
-   <tr>
      <td>t.e2.xlarge</td>
       <td>4</td>
       <td>4</td>
       <td>187</td>
       <td>--</td>
       <td>0.65</td>
-      <td>--</td>
-      <td></td>
-   </tr>
-   <tr>
-     <td>t.c2.xlarge</td>
-      <td>4</td>
-      <td>8</td>
-      <td>252</td>
-      <td>--</td>
-      <td>0.88</td>
-      <td>--</td>
-      <td></td>
-   </tr>
-   <tr>
-     <td>t.g2.xlarge</td>
-      <td>4</td>
-      <td>16</td>
-      <td>422</td>
-      <td>--</td>
-      <td>1.47</td>
       <td>--</td>
       <td></td>
    </tr>
@@ -1548,12 +1513,52 @@
       <td></td>
    </tr>
    <tr>
+     <td>t.c2.large</td>
+      <td>2</td>
+      <td>4</td>
+      <td>96</td>
+      <td>--</td>
+      <td>0.33</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+   <tr>
+     <td>t.c2.xlarge</td>
+      <td>4</td>
+      <td>8</td>
+      <td>252</td>
+      <td>--</td>
+      <td>0.88</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+   <tr>
      <td>t.c2.2xlarge</td>
       <td>8</td>
       <td>16</td>
       <td>504</td>
       <td>--</td>
       <td>1.75</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+   <tr>
+     <td>t.g2.large</td>
+      <td>2</td>
+      <td>8</td>
+      <td>180</td>
+      <td>--</td>
+      <td>0.63</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+   <tr>
+     <td>t.g2.xlarge</td>
+      <td>4</td>
+      <td>16</td>
+      <td>422</td>
+      <td>--</td>
+      <td>1.47</td>
       <td>--</td>
       <td></td>
    </tr>
