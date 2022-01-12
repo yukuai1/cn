@@ -5,17 +5,31 @@ name: 专有宿主机
     href: overview.md
   - name: 接口信息
     items:
-      - name: 专有宿主机相关接口
+      - name: 专有宿主机
         items:
-          - name: 创建专有宿主机
+          - name: allocDedicatedHosts
             href: Dedicated-Host/allocDedicatedHosts.md
-          - name: 查询一个或多个专有宿主机
+          - name: describeDedicatedHosts
             href: Dedicated-Host/describeDedicatedHosts.md
-          - name: 修改专有宿主机
+          - name: modifyDedicatedHostAttribute
             href: Dedicated-Host/modifyDedicatedHostAttribute.md
-          - name: 删除专有宿主机
+          - name: releaseDedicatedHost
             href: Dedicated-Host/releaseDedicatedHost.md
+      - name: 专有资源池
+        items:
+          - name: allocDedicatedPool
+            href: Dedicated-Pool/allocDedicatedPool.md
+          - name: describeDedicatedPools
+            href: Dedicated-Pool/describeDedicatedPools.md
+          - name: modifyDedicatedPoolAttribute
+            href: Dedicated-Pool/modifyDedicatedPoolAttribute.md
+          - name: releaseDedicatedPool
+            href: Dedicated-Pool/releaseDedicatedPool.md
       - name: 规格类型
         items:
-          - name: 查询专有宿主机规格
+          - name: describeDedicatedHostType
             href: Host-Type/describeDedicatedHostType.md
+      - name: 配额
+        items:
+          - name: describeQuotas
+            href: Quota/describeQuotas.md
