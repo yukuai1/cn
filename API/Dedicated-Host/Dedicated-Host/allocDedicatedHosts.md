@@ -5,6 +5,8 @@
 创建一台或多台指定机型的专有宿主机。<br>
 
 
+详细操作说明请参考帮助文档：[创建专有宿主机](https://docs.jdcloud.com/cn/dedicated-host/create-dh)
+
 ## 接口说明
 - 创建专有宿主机必须指定专有资源池。
 
