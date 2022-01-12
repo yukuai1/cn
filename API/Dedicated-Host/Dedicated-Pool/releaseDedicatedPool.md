@@ -4,6 +4,8 @@
 ## 描述
 删除单个专有资源池。<br>
 
+详细操作说明请参考帮助文档：[删除专有资源池](https://docs.jdcloud.com/cn/dedicated-host/delete-dp)
+
 ### 接口描述
 - 专有资源池中必须没有专有宿主机时才可释放。
 - 如出现不能删除的情况请 [提交工单](https://ticket.jdcloud.com/applyorder/submit) 或联系京东云客服。
