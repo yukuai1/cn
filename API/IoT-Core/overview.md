@@ -12,7 +12,7 @@ v2
 ## API
 |接口名称|请求方式|功能描述|
 |---|---|---|
-|**addDevice**|POST|注册单个设备并返回秘钥信息|
+|**addDevice**|POST|注册单个设备并返回秘钥信息 |
 |**createProduct**|POST|新建产品|
 |**deleteProduct**|DELETE|删除产品|
 |**describeProduct**|GET|查看产品|
