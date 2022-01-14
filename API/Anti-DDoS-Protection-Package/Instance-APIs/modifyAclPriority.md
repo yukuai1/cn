@@ -1,41 +1,41 @@
-# deleteProtectedIp
+# modifyAclPriority
 
 
 ## 描述
-删除防护包防护 IP
+修改访问控制规则优先级
 
 ## 请求方式
-POST
+PATCH
 
 ## 请求地址
-https://antipro.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:deleteProtectedIp
+https://antipro.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/acl/{aclId}:modifyAclPriority
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**regionId**|String|True| |地域 Id, DDoS 防护包目前支持华北-北京, 华东-宿迁, 华东-上海|
 |**instanceId**|String|True| |防护包实例 Id|
+|**aclId**|String|True| |访问控制规则 Id|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**protectedIpSpec**|[ProtectedIpSpec](deleteprotectedip#protectedipspec)|True| |删除防护包防护 IP 请求参数|
+|**modifyAclPrioritySpec**|[ModifyAclPrioritySpec](modifyaclpriority#modifyaclpriorityspec)|True| |修改访问控制规则请求参数|
 
-### <div id="protectedipspec">ProtectedIpSpec</div>
+### <div id="modifyaclpriorityspec">ModifyAclPrioritySpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**ip**|String[]|True| |被防护 IP 列表|
+|**priority**|Integer|True| |规则优先级|
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](deleteprotectedip#result)| |
 |**requestId**|String| |
-|**error**|[Error](deleteprotectedip#error)| |
+|**error**|[Error](modifyaclpriority#error)| |
 
 ### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|[Err](deleteprotectedip#err)| |
+|**err**|[Err](modifyaclpriority#err)| |
 ### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
@@ -43,11 +43,6 @@ https://antipro.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:del
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### <div id="result">Result</div>
-|名称|类型|描述|
-|---|---|---|
-|**code**|Integer|删除防护 IP 结果, 0: 删除失败, 1: 删除成功|
-|**message**|String|删除失败时给出具体原因|
 
 ## 返回码
 |返回码|描述|

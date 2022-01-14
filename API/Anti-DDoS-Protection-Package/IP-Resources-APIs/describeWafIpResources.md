@@ -1,14 +1,14 @@
-# describeCcsIpResources
+# describeWafIpResources
 
 
 ## 描述
-查询 DDoS 防护包可防护的托管区公网 IP
+查询 DDoS 防护包可防护的Web应用防护墙 IP
 
 ## 请求方式
 GET
 
 ## 请求地址
-https://antipro.jdcloud-api.com/v1/regions/{regionId}/ccsIpResources
+https://antipro.jdcloud-api.com/v1/regions/{regionId}/wafIpResources
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -24,14 +24,14 @@ https://antipro.jdcloud-api.com/v1/regions/{regionId}/ccsIpResources
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describeccsipresources#result)| |
+|**result**|[Result](describewafipresources#result)| |
 |**requestId**|String| |
-|**error**|[Error](describeccsipresources#error)| |
+|**error**|[Error](describewafipresources#error)| |
 
 ### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|[Err](describeccsipresources#err)| |
+|**err**|[Err](describewafipresources#err)| |
 ### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
@@ -42,7 +42,7 @@ https://antipro.jdcloud-api.com/v1/regions/{regionId}/ccsIpResources
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dataList**|[IpResource[]](describeccsipresources#ipresource)| |
+|**dataList**|[IpResource[]](describewafipresources#ipresource)| |
 |**currentCount**|Integer|当前页数量|
 |**totalCount**|Integer|总数|
 |**totalPage**|Integer|总页数|

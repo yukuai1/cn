@@ -1,14 +1,14 @@
-# deleteProtectedIp
+# describePortSets
 
 
 ## 描述
-删除防护包防护 IP
+查询实例的端口库列表
 
 ## 请求方式
-POST
+GET
 
 ## 请求地址
-https://antipro.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:deleteProtectedIp
+https://antipro.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/portSets
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -18,24 +18,21 @@ https://antipro.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:del
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**protectedIpSpec**|[ProtectedIpSpec](deleteprotectedip#protectedipspec)|True| |删除防护包防护 IP 请求参数|
+|**pageNumber**|Integer|False|1|页码|
+|**pageSize**|Integer|False|10|分页大小|
 
-### <div id="protectedipspec">ProtectedIpSpec</div>
-|名称|类型|是否必需|默认值|描述|
-|---|---|---|---|---|
-|**ip**|String[]|True| |被防护 IP 列表|
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](deleteprotectedip#result)| |
+|**result**|[Result](describeportsets#result)| |
 |**requestId**|String| |
-|**error**|[Error](deleteprotectedip#error)| |
+|**error**|[Error](describeportsets#error)| |
 
 ### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|[Err](deleteprotectedip#err)| |
+|**err**|[Err](describeportsets#err)| |
 ### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
@@ -46,8 +43,17 @@ https://antipro.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:del
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**code**|Integer|删除防护 IP 结果, 0: 删除失败, 1: 删除成功|
-|**message**|String|删除失败时给出具体原因|
+|**dataList**|[PortSet[]](describeportsets#portset)| |
+|**currentCount**|Integer|当前页数量|
+|**totalCount**|Integer|实例总数|
+|**totalPage**|Integer|总页数|
+### <div id="portset">PortSet</div>
+|名称|类型|描述|
+|---|---|---|
+|**id**|String|端口库 Id|
+|**name**|String|端口库名称|
+|**port**|String[]|端口或端口范围的数组|
+|**remark**|String|备注|
 
 ## 返回码
 |返回码|描述|

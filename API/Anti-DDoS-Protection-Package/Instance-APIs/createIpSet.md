@@ -1,14 +1,14 @@
-# modifyInstance
+# createIpSet
 
 
 ## 描述
-升级防护包实例
+创建实例的 IP 库
 
 ## 请求方式
-PATCH
+POST
 
 ## 请求地址
-https://antipro.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
+https://antipro.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/ipSets
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -18,26 +18,26 @@ https://antipro.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**modifyInstanceSpec**|[ModifyInstanceSpec](modifyinstance#modifyinstancespec)|True| |升级防护包实例请求参数|
+|**ipSetSpec**|[IpSetSpec](createipset#ipsetspec)|True| |创建实例的 IP 库请求参数|
 
-### <div id="modifyinstancespec">ModifyInstanceSpec</div>
+### <div id="ipsetspec">IpSetSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**ipNum**|Integer|True| |可防护 IP 数量, 1, 5, 10, 50, 100, 1000(不限), 可升级, 不可降级|
-|**bpGbps**|Integer|True| |保底带宽: 10, 20, 30, 50, 单位: Gbps, 可升级, 不可降级|
-|**epGbps**|Integer|True| |弹性带宽: 0, 10, 20, 单位: Gbps, 可升级, 可降级|
+|**name**|String|True| |IP 黑白名单名称|
+|**ip**|String[]|True| |IP 或 IP 段的数组|
+|**remark**|String|True| |备注|
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](modifyinstance#result)| |
+|**result**|[Result](createipset#result)| |
 |**requestId**|String| |
-|**error**|[Error](modifyinstance#error)| |
+|**error**|[Error](createipset#error)| |
 
 ### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|[Err](modifyinstance#err)| |
+|**err**|[Err](createipset#err)| |
 ### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
@@ -48,7 +48,7 @@ https://antipro.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**instanceId**|String|升级的防护包实例 Id|
+|**ipSetId**|String|创建的IP库 Id|
 
 ## 返回码
 |返回码|描述|
