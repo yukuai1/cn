@@ -25,5 +25,5 @@ Kafka上的消息数据的最小单位，一个Topic可以包含多个分区。�
 每个consumer都属于一个特定的group组，一个group组可以包含多个Consumer。
 
 ### 发布/订阅模型
-Group和Topic的对应关系是N : N，即一个Group可以同时订阅多个Topic，一个Topic也可以被多个Group同时订阅。
-虽然一个Topic可以被多个Group同时订阅，但该Topic的消息只能被同一个Group内的任意一个Consumer消费。
+* Group和Topic的对应关系是N : N，即一个Group可以同时订阅多个Topic，一个Topic也可以被多个Group同时订阅。
+* 虽然一个Topic可以被多个Group同时订阅，但该Topic的消息只能被同一个Group内的任意一个Consumer消费。
