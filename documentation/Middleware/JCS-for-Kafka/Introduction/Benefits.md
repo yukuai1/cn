@@ -1,5 +1,7 @@
 ## 产品优势
 
+消息队列Kafka版针对开源的Apache Kafka提供全托管服务，彻底解决开源产品长期以来的痛点。使用消息队列Kafka版，您只需专注于业务开发，无需部署运维。相较于开源Apache Kafka，消息队列Kafka版成本更低、弹性更强、可靠性更高。
+
 ### 即开即用
 消息队列Kafka版完全兼容开源Apache Kafka，无需部署维护软硬件设施，用户分钟级即可成功创建出Kafka实例。
 * 兼容开源：消息队列Kafka版100%兼容开源Apache Kafka，您可以直接使用开源Apache Kafka客户端与消息队列Kafka版通讯。消息队列Kafka版目前支持0.10.x~2.6.x的开源版本。
