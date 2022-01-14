@@ -1,14 +1,14 @@
-# describeIpResources
+# describeWafIpResources
 
 
 ## 描述
-查询基础防护已防护的公网 IP 的安全信息列表. 包括私有网络的弹性公网 IP(运营商级 NAT 保留地址除外), 云物理服务器的公网 IP 和弹性公网 IP. (已废弃, 建议使用 <a href='http://docs.jdcloud.com/anti-ddos-basic/api/describeelasticipresources'>describeElasticIpResources</a>, <a href='http://docs.jdcloud.com/anti-ddos-basic/api/describecpsipresources'>describeCpsIpResources</a> 接口)
+查询基础防护已防护的Web应用防火墙 IP 的安全信息
 
 ## 请求方式
 GET
 
 ## 请求地址
-https://baseanti.jdcloud-api.com/v1/regions/{regionId}/ipResources
+https://baseanti.jdcloud-api.com/v1/regions/{regionId}/wafIpResources
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -17,20 +17,22 @@ https://baseanti.jdcloud-api.com/v1/regions/{regionId}/ipResources
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
+|**pageNumber**|Integer|False|1|页码|
+|**pageSize**|Integer|False|10|分页大小|
 |**ip**|String|False| |IP 模糊匹配|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describeipresources#result)| |
+|**result**|[Result](describewafipresources#result)| |
 |**requestId**|String| |
-|**error**|[Error](describeipresources#error)| |
+|**error**|[Error](describewafipresources#error)| |
 
 ### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|[Err](describeipresources#err)| |
+|**err**|[Err](describewafipresources#err)| |
 ### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
@@ -41,8 +43,10 @@ https://baseanti.jdcloud-api.com/v1/regions/{regionId}/ipResources
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dataList**|[IpResource[]](describeipresources#ipresource)| |
-|**totalCount**|Integer| |
+|**dataList**|[IpResource[]](describewafipresources#ipresource)| |
+|**currentCount**|Integer|当前页数量|
+|**totalCount**|Integer|总数|
+|**totalPage**|Integer|总页数|
 ### <div id="ipresource">IpResource</div>
 |名称|类型|描述|
 |---|---|---|
