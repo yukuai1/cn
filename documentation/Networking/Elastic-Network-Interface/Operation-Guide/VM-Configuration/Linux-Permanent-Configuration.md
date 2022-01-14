@@ -2,7 +2,7 @@
 
 本文将介绍如何在Linux中配置弹性网卡，Linux包括多种镜像类型，且不同版本的镜像配置弹性网卡步骤稍有不同，本文以CentOS和Ubuntu两种镜像为例，对有差异的版本分别进行详细介绍。
 
-- [配置CentOS 6.9或CentOS 7.6](linux-permanent-configuration#user-content-1)
+- [配置CentOS 6.9、CentOS 7.6或CentOS 8.2](linux-permanent-configuration#user-content-1)
 - [配置Ubuntu 14.04、Ubuntu 16.04](linux-permanent-configuration#user-content-2)
 - [配置Ubuntu 18.04](linux-permanent-configuration#user-content-3)
 
@@ -30,7 +30,7 @@
 
 
 
-### 配置CentOS 6.9或CentOS 7.6
+### 配置CentOS 6.9、CentOS 7.6或CentOS 8.2
 <div id="user-content-1"></div>
 
 步骤1：通过ssh登录云主机1
@@ -50,11 +50,15 @@ vi /etc/sysconfig/network-scripts/[ifcfg-eth1]
 步骤4：在网卡配置文件中加入配置信息：
 
 ```
-DEVICE=[eth1]                   #弹性网卡名称，本例中为eth1
+#弹性网卡名称，本例中为eth1
+DEVICE=[eth1]                  
 NM_CONTROLLED=yes
 ONBOOT=yes
-IPADDR=[10.0.16.3]              #弹性网卡的主IP
-NETMASK=[255.255.240.0]         #弹性网卡IP的子网掩码
+#弹性网卡的主IP
+IPADDR=[10.0.16.3]              
+#弹性网卡IP的子网掩码
+NETMASK=[255.255.240.0]         
+NAME=[eth1]           
 ```
 
 步骤5：配置路由，执行以下命令打开文件：
@@ -66,8 +70,10 @@ vi /etc/sysconfig/network-scripts/[route-eth1]
 步骤6：在文件中增加命令行，添加路由规则，本例如下，具体需根据您网络配置实际情况填写：
 
 ```
-default via [10.0.16.1] dev [eth1] table [1000] pref [100]          #配置网关
-[10.0.16.0/20] dev [eth1] src [10.0.16.3] table [1000]              #配置路由
+#配置网关
+default via [10.0.16.1] dev [eth1] table [1000] pref [100]
+#配置路由
+[10.0.16.0/20] dev [eth1] src [10.0.16.3] table [1000]              
 ```
 
 步骤7：配置策略路由规则，执行以下命令打开文件：
@@ -82,31 +88,40 @@ vi /etc/sysconfig/network-scripts/[rule-eth1]
 from [10.0.16.3] table [1000]			
 ```
 
-CentOS 7.6需额外执行以下命令，使上述步骤中新增的配置文件能够被执行：
+CentOS 7.6及CentOS 8.2需额外执行以下命令，使上述步骤中新增的配置文件能够被执行：
 
 ```
-yum install NetworkManager-config-routing-rules           # 安装服务
-systemctl enable NetworkManager-dispatcher.service        # 使服务随云主机启动
-systemctl start NetworkManager-dispatcher.service         # 启动服务
+# 安装服务
+yum install NetworkManager-config-routing-rules
+# 使服务随云主机启动
+systemctl enable NetworkManager-dispatcher.service
+# 启动服务
+systemctl start NetworkManager-dispatcher.service         
 ```
 
 步骤9：执行以下命令重启网络服务：
 
-CentOS6.9
+CentOS 6.9
 ```
 service network restart
 ```
 
-CantOS 7.6
+CentOS 7.6
 ``` 
 systemctl restart network
 ```
-
+CentOS 8.2
+```
+nmcli c up eth0
+nmcli c up eth1
+```
 步骤10：验证配置：登录云主机2，通过云主机2分别ping云主机1的主/辅网卡IP，若均能ping通则表示配置成功。
 
 ```
-ping [10.0.32.5]          # ping主网卡IP
-ping [10.0.16.3]          # ping弹性网卡IP
+# ping主网卡IP
+ping [10.0.32.5]
+# ping弹性网卡IP
+ping [10.0.16.3]          
 ```
 
 
@@ -140,10 +155,13 @@ vi /etc/network/interfaces.d/[51-eth1].cfg
 步骤4：将以下命令添加到上述文件中，本例中添加的弹性网卡是eth1，具体配置信息根据实际情况进行配置：
 
 ```
-auto [eth1]                     # 弹性网卡名称
+# 弹性网卡名称
+auto [eth1]                     
 iface [eth1] inet static
-address [172.16.64.3]           # 弹性网卡的主IP
-netmask [255.255.240.0]         # 弹性网卡IP的子网掩码
+# 弹性网卡的主IP
+address [172.16.64.3]
+# 弹性网卡IP的子网掩码
+netmask [255.255.240.0]         
 
 # 配置默认网关
 up ip route add default via [172.16.64.1] dev [eth1] table [100]
@@ -171,8 +189,10 @@ systemctl restart networking
 步骤6：验证配置：登录云主机2，通过云主机2分别ping云主机1的主/辅网卡IP，若均能ping通则表示配置成功。
 
 ```
-ping [172.16.0.4]       # ping主网卡IP
-ping [172.16.64.3]      # ping弹性网卡IP
+# ping主网卡IP
+ping [172.16.0.4] 
+# ping弹性网卡IP
+ping [172.16.64.3]      
 ```
 
 
@@ -230,7 +250,9 @@ netplan --debug apply
 步骤6：验证配置，使用云主机2分别ping 云主机1的主/辅网卡IP，若均能ping通则表示配置成功。
 
 ```
-ping [172.16.0.4]             # ping主网卡IP
-ping [172.16.64.3]            # ping弹性网卡IP
+# ping主网卡IP
+ping [172.16.0.4] 
+# ping弹性网卡IP
+ping [172.16.64.3]            
 ```
 
