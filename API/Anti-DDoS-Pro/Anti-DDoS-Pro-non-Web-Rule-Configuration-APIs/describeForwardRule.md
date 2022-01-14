@@ -50,7 +50,8 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/forw
 |**protocol**|String|TCP 或 UDP|
 |**cname**|String|规则的 CNAME|
 |**originType**|String|回源类型: ip 或者 domain|
-|**serviceIp**|String|高防 IP|
+|**serviceIp**|String|该规则使用中的高防 IP|
+|**serviceIpConfig**|[ServiceIpConfig](describeforwardrule#serviceipconfig)|已配置的高防 IP 列表|
 |**port**|Integer|端口号|
 |**algorithm**|String|转发规则. <br>- wrr: 带权重的轮询<br>- rr:  不带权重的轮询<br>- sh:  源地址hash|
 |**originAddr**|[OriginAddrItem[]](describeforwardrule#originaddritem)| |
@@ -64,6 +65,16 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/forw
 |**ip**|String|回源ip|
 |**weight**|Integer|权重|
 |**inJdCloud**|Boolean|是否为京东云内公网ip|
+### <div id="serviceipconfig">ServiceIpConfig</div>
+|名称|类型|描述|
+|---|---|---|
+|**serviceIps**|[ServiceIpConfigItem[]](describeforwardrule#serviceipconfigitem)|已配置的高防IP列表|
+### <div id="serviceipconfigitem">ServiceIpConfigItem</div>
+|名称|类型|描述|
+|---|---|---|
+|**serviceIp**|String|高防IP|
+|**securityStatus**|String|安全状态. <br>- SAFE: 安全<br>- CLEANING: 清洗中<br>- BLOCKING: 封禁中|
+|**useStatus**|Integer|使用状态, 1: 使用中, 0: 备用候选|
 
 ## 返回码
 |返回码|描述|
