@@ -55,7 +55,7 @@
         - name: Windows分区、格式化和创建文件系统
           href: Getting-Started/Cloud-Disk/Windows-Partition.md
           
-    - name: 扩容文件系统
+    - name: 云硬盘扩容
       items:
         - name: 云硬盘扩容概述
           href: Getting-Started/Cloud-Disk/Expand-Filesystem/Cloud-Disk-Expansion-Overview.md
