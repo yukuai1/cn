@@ -30,9 +30,9 @@
 
 ## 三、填写主体信息
 
-1、填写真实有效的主体信息，最关键的是您的备案密码，您的申请接入资料提交至管局审核，备案密码错误会被通信管理局直接驳回，为了不影响您的备案进度，请务必输入正确的备案密码，再根据要求填写主体负责人信息，填写完成后点“下一步”按钮
+1、根据要求填写真实有效的主体信息及主体负责人信息，填写完成后点“下一步”按钮。
 
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/New-Access-Without-Subject-cn-5.png)
+![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/Addition-Website-Without-Subject-cn-5.png)
 
 ## 四、填写网站信息
 
