@@ -11,4 +11,4 @@
 
 ```
 
-![规格变更](../../../../image/Internet-Middleware/JCS-for-Kafka/规格变更.png)
+![规格变更](../../../../image/Internet-Middleware/JCS-for-Kafka/kafka规格变更.jpg)
