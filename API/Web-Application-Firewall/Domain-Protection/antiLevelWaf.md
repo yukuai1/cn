@@ -26,7 +26,8 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |---|---|---|---|---|
 |**wafInstanceId**|String|True| |WAF实例id|
 |**domain**|String|True| |域名|
-|**wafLevel**|Integer|False| |0表示宽松，1表示正常，2表示严格|
+|**wafLevel**|Integer|False| |0表示宽松，1表示正常，2表示严格, 3表示自定义|
+|**usrPolicy**|Long|False| |自定义规则集id，wafLevel为3时可以设置|
 
 ## 返回参数
 |名称|类型|描述|

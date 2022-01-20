@@ -48,16 +48,20 @@ items:
     href: JCS-For-TiDB-Terms-Of-Service.md
   - name: 分布式数据库TiDB服务等级协议（SLA）
     href: JCS-For-TiDB-Level-Agreement-SLA.md
-  - name: 分析型云数据库JCHDB服务条款
+  - name: 分析型云数据库ClickHouse服务条款
     href: JCS-For-JCHDB-Terms-Of-Service.md
-  - name: 分析型云数据库JCHDB服务等级协议（SLA）
+  - name: 分析型云数据库ClickHouse服务等级协议（SLA）
     href: JCS-For-JCHDB-Level-Agreement-SLA.md 
   - name: 数据仓库JDW服务条款
     href: JCS-For-Greenplum-Terms-Of-Service.md
   - name: 数据仓库JDW服务等级协议（SLA）
     href: JCS-For-Greenplum-Level-Agreement-SLA.md
   - name: 数据库审计服务条款
-    href: Database-Audit-Terms-Of-Service.md   
+    href: Database-Audit-Terms-Of-Service.md  
+  - name: 数据库备份服务条款
+    href: DBS-Service-Terms.md
+  - name: 数据库备份服务等级协议（SLA）
+    href: DBS-Service-Level-Agreement-SLA.md    
   - name: 云主机安全服务协议
     href: Cloud-Host-Security-Service-Clause.md
   - name: 云主机安全等级协议（SLA）
@@ -123,7 +127,7 @@ items:
   - name: 专线服务条款
     href: Direct-Connection-Terms-Of-Service.md
   - name: 专线服务等级协议（SLA）
-    href: Direct-Connection-Level-Agreements-SLA.md    
+    href: Direct-Connect-SLA.md    
   - name: API中心服务条款
     href: API-Center-Service-Terms-Of-Service.md   
   - name: API中心用户服务协议
@@ -212,10 +216,6 @@ items:
     href: Recommended-Rebate-User-Agreement.md
   - name: 授权委托书
     href: Power-Of-Attorney.md
-  - name: Minecraft我的世界教育版-演示版服务协议
-    href: MEE-Demo-Service-Terms-Of-Service.md
-  - name: Minecraft我的世界教育版-软件使用许可及服务协议
-    href: MEE-China-Related-Agreement.md  
   - name: 云托管机柜租赁服务条款
     href: Cloud-Cabinet-Service-Terms-Of-Service.md
   - name: 云托管机柜租赁服务等级协议（SLA）
@@ -476,5 +476,8 @@ items:
     href: JDCloud-Mail.md  
   - name: 京美建站服务条款
     href: JDCloud-Site.md   
-    
+  - name: 实名认证服务条款
+    href: Real-Name-Authentication.md
+  - name: 实名认证服务等级协议（SLA）
+    href: Real-Name-Authentication-SLA.md 
     
