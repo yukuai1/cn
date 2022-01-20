@@ -43,12 +43,12 @@
    </tr>
     	<tr>
      	<td rowspan="3">华南-广州<br>cn-south-1</td>
-     	<td>可用区B<br>cn-east-2a</td>
+     	<td>可用区B<br>cn-south-1b</td>
 	   	<td>广州</td>
    </tr>
       </tr>
     	<tr>
-     	<td>可用区C<br>cn-east-2b</td>
+     	<td>可用区C<br>cn-south-1c</td>
 	   	<td>广州</td>
    </tr>
    </tbody>
