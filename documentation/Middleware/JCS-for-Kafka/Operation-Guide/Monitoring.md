@@ -26,3 +26,22 @@
 | topic数       | 个   | kafka.instance.topic.number               |Number of topics |
 | 磁盘使用率     | %  | kafka.instance.disk.usage                 |Disk usage|
 | cpu使用率      | %  | kafka.instance.container.cpu.util    |Cpu usage|
+
+### Topic监控
+
+| 监控指标                 | 单位 | metric                                |说明|
+| ---------------------- | ---- | ------------------------------------ |--------------|
+| 消息生产流量       | bytes/s   | kafka.topic.messages.produce.rate                | Message production rate |
+| 消息消费流量         | bytes/s   | kafka.topic.messages.consume.rate          |Message consumption rate|
+| 生产TPS        | 条/秒  | kafka.topic.produce.tps            |Production TPS|
+| 生产消息总数      | 条   | kafka.instance.topic.number               |produced message number|
+| 占用磁盘容量    | byte  | kafka.topic.messages.size                 |Data capacity|
+
+
+### ConsumerGroup监控
+
+| 监控指标                 | 单位 | metric                                |说明|
+| ---------------------- | ---- | ------------------------------------ |--------------|
+| 未消费消息总数     | 条  | kafka.topic.cgid.messages.number.backlog              | Total number of unconsumed messages |
+| 消费TPS        | bytes/s   |  kafka.topic.cgid.messages.tps       |Consumption TPS|
+| 消费总数        | 条 | kafka.messages.consume.number         |Total number of consumed messages|
