@@ -20,6 +20,7 @@ https://baseanti.jdcloud-api.com/v1/regions/{regionId}/elasticIpResources
 |---|---|---|---|---|
 |**pageNumber**|Integer|False|1|页码|
 |**pageSize**|Integer|False|10|分页大小|
+|**ip**|String|False| |IP 模糊匹配|
 
 
 ## 返回参数
@@ -51,7 +52,7 @@ https://baseanti.jdcloud-api.com/v1/regions/{regionId}/elasticIpResources
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|公网 IP 所在区域编码|
-|**resourceType**|Integer|公网 IP 类型或绑定资源类型. <br>- 0: 未知类型,<br>- 1: 弹性公网 IP(IP 为弹性公网 IP, 绑定资源类型未知),<br>- 10: 弹性公网 IP(IP 为弹性公网 IP, 但未绑定资源),<br>- 11: 云主机,<br>- 12: 负载均衡,<br>- 13: 原生容器实例,<br>- 14: 原生容器 Pod,<br>- 2: 云物理服务器公网 IP,<br>- 4: 托管区公网 IP|
+|**resourceType**|Integer|公网 IP 类型或绑定资源类型. <br><br>- 0: 未知类型<br><br>- 1: 弹性公网 IP(IP 为弹性公网 IP, 绑定资源类型未知)<br><br>- 10: 弹性公网 IP(IP 为弹性公网 IP, 但未绑定资源)<br><br>- 11: 云主机<br><br>- 12: 负载均衡<br><br>- 13: 原生容器实例<br><br>- 14: 原生容器 Pod<br><br>- 2: 云物理服务器公网 IP<br><br>- 3: Web应用防火墙公网 IP<br><br>- 4: 托管区公网 IP"<br>|
 |**ip**|String|公网 IP 地址|
 |**bandwidth**|Long|带宽上限, 单位 Mbps|
 |**cleanThresholdBps**|Long|每秒请求流量|

@@ -17,6 +17,8 @@ v1
 |**createBlackListRuleOfWebRule**|POST|添加网站类规则的黑名单规则|
 |**createCCProtectionRuleOfWebRule**|POST|添加网站类规则的 CC 防护规则|
 |**createCustomPage**|POST|添加自定义页面|
+|**createDispatchRule**|POST|添加防护调度规则|
+|**createDispatchRules**|POST|批量添加防护调度规则|
 |**createForwardRule**|POST|添加非网站类规则|
 |**createForwardRules**|POST|批量添加非网站类规则|
 |**createInstance**|POST|新购或升级高防实例|
@@ -29,18 +31,19 @@ v1
 |**deleteBlackListRuleOfWebRule**|DELETE|删除网站类规则的黑名单规则, 批量操作时 webBlackListRuleId 传多个, 以 ',' 分隔, 返回 result.code 为 1 表示操作成功, 为 0 时可能全部失败, 也可能部分失败|
 |**deleteCCProtectionRuleOfWebRule**|DELETE|删除网站规则的 CC 防护规则|
 |**deleteCustomPage**|DELETE|删除自定义页面, 使用中的不允许删除|
+|**deleteDispatchRule**|DELETE|删除防护调度规则|
 |**deleteForwardRule**|DELETE|删除非网站规则, 批量操作时, 返回 result.code 为 1 表示操作成功, 为 0 时可能全部失败, 也可能部分失败|
 |**deleteIpSet**|DELETE|删除实例的 IP 黑白名单. 支持批量操作, 批量操作时 ipSetId 传多个, 以 ',' 分隔. IP 黑白名单规则被引用时不允许删除|
 |**deleteJsPageOfWebRule**|DELETE|删除网站类规则允许插入 JS 指纹的页面。支持批量操作, 批量操作时 jsPageId 传多个, 以 ',' 分隔|
 |**deleteWebRule**|DELETE|删除网站规则。支持批量操作, 批量操作时 webRuleId 传多个, 以 ',' 分隔, 返回 result.code 为 1 表示操作成功, 为 0 时可能全部失败, 也可能部分失败|
 |**deleteWhiteListRuleOfWebRule**|DELETE|删除网站类规则的白名单规则, 批量操作时 webWhiteListRuleId 传多个, 以 ',' 分隔, 返回 result.code 为 1 表示操作成功, 为 0 时可能全部失败, 也可能部分失败|
 |**describeAlarmConfig**|GET|查询告警配置|
-|**describeAttackStatistics**|GET|查询攻击次数及流量峰值|
-|**describeAttackTypeCount**|GET|查询各类型攻击次数|
+|**describeAttackStatistics**|GET|查询攻击次数及流量峰值<br>参数 serviceIp 优先级大于 instanceId.<br>- 指定 serviceIp 参数时, 忽略 instanceId 参数, 统计 ip 相关攻击<br>- 未指定 serviceIp 时, 统计 instanceId 指定实例相关攻击<br>- serviceIp 和 instanceId 均未指定时, 统计用户所有攻击记录<br>CC攻击为实例级别, 查询类型 type 为 cc 时, 参数 serviceIp 无效<br>|
+|**describeAttackTypeCount**|GET|查询各类型攻击次数<br>参数 serviceIp 优先级大于 instanceId.<br>- 指定 serviceIp 参数时, 忽略 instanceId 参数, 统计 ip 相关攻击<br>- 未指定 serviceIp 时, 统计 instanceId 指定实例相关攻击<br>- serviceIp 和 instanceId 均未指定时, 统计用户所有攻击记录<br>|
 |**describeBlackListRuleOfForwardRule**|GET|查询转发规则的黑名单规则|
 |**describeBlackListRuleOfWebRule**|GET|查询网站类规则的黑名单规则|
 |**describeBlackListRulesOfWebRule**|GET|查询网站类规则的黑名单规则列表|
-|**describeBusinessGraph**|GET|业务流量报表|
+|**describeBusinessGraph**|GET|业务流量报表        <br>参数 serviceIp 优先级大于 instanceId.<br>- 指定 serviceIp 参数时, 忽略 instanceId 参数, 查询 ip 相关报表<br>- 未指定 serviceIp 时, 查询 instanceId 指定实例相关报表<br>- serviceIp 和 instanceId 均未指定时, 查询用户所有实例报表<br>|
 |**describeCCAttackLogDetails**|GET|查询 CC 攻击日志详情.<br>- 参数 attackId 优先级高于 instanceId, attackId 不为空时, 忽略 instanceId<br>|
 |**describeCCAttackLogs**|GET|查询 CC 攻击日志|
 |**describeCCGraph**|GET|CC 防护流量报表|
@@ -49,27 +52,32 @@ v1
 |**describeCCProtectionRuleOfWebRule**|GET|查询网站类规则的 CC 防护规则|
 |**describeCCProtectionRulesOfWebRule**|GET|查询网站类规则的 CC 防护规则列表|
 |**describeCcsIpList**|GET|查询用户可设置为网站类规则回源 IP 的京东云托管区公网 IP 资源|
-|**describeConnStatGraph**|GET|新建与并发连接数统计报表|
+|**describeConnStatGraph**|GET|新建与并发连接数统计报表        <br>参数 serviceIp 优先级大于 instanceId.<br>- 指定 serviceIp 参数时, 忽略 instanceId 参数, 查询 ip 相关报表<br>- 未指定 serviceIp 时, 查询 instanceId 指定实例相关报表<br>- serviceIp 和 instanceId 均未指定时, 查询用户所有实例报表<br>|
 |**describeCpsIpList**|GET|查询用户可设置为网站类规则回源 IP 的京东云云物理服务器公网 IP 资源|
 |**describeCustomPages**|GET|查询自定义页面列表|
 |**describeDDoSAttackLogs**|GET|查询 DDoS 攻击日志, 仅能查询非BGP实例的攻击记录, 同时查询BGP和非BGP实例请使用 <a href='http://docs.jdcloud.com/anti-ddos-pro/api/describeDDoSIpAttackLogs'>describeDDoSIpAttackLogs</a>|
-|**describeDDoSGraph**|GET|DDos 防护流量报表|
-|**describeDDoSIpAttackLogs**|GET|查询高防IP的 DDoS 攻击日志, 仅BGP实例返回的是IP级别的攻击记录, 非BGP实例返回的仍是实例级别的攻击记录(serviceIp 字段为空)|
+|**describeDDoSGraph**|GET|DDos 防护流量报表<br>参数 serviceIp 优先级大于 instanceId.<br>- 指定 serviceIp 参数时, 忽略 instanceId 参数, 查询 ip 相关报表<br>- 未指定 serviceIp 时, 查询 instanceId 指定实例相关报表<br>- serviceIp 和 instanceId 均未指定时, 查询用户所有实例报表<br>|
+|**describeDDoSIpAttackLogs**|GET|查询高防IP的 DDoS 攻击日志, 仅BGP实例返回的是IP级别的攻击记录, 非BGP实例返回的仍是实例级别的攻击记录(serviceIp 字段为空)<br>参数 serviceIp 优先级大于 instanceId.<br>- 指定 serviceIp 参数时, 忽略 instanceId 参数, 查询 ip 相关攻击记录.<br>- 未指定 serviceIp 时, 查询 instanceId 指定实例相关攻击记录.<br>- serviceIp 和 instanceId 均未指定时, 查询用户所有攻击记录<br>|
+|**describeDispatchRules**|GET|查询某个实例下的防护调度规则|
 |**describeForwardRule**|GET|查询非网站类规则|
 |**describeForwardRules**|GET|查询某个实例下的非网站转发配置|
 |**describeFwdGraph**|GET|转发流量报表|
 |**describeGeoAreas**|GET|查询非网站类转发规则的防护规则 Geo 拦截可设置区域编码|
 |**describeInstance**|GET|查询实例|
 |**describeInstanceAcl**|GET|查询实例全局访问控制配置，包括全局的IP黑白名单和geo拦截配置|
+|**describeInstanceIdByResourceId**|GET|根据高防计费资源ID查询对应的实例Id, 调用 <a href='http://docs.jdcloud.com/anti-ddos-pro/api/createInstance'>createInstance</a> 接口成功后，跟据message字段返回的计费资源Id查询对应的高防实例ID, 需要高防实例实际创建成功以后才可查询得到|
 |**describeInstances**|GET|查询实例列表|
 |**describeIpSet**|GET|查询实例的 IP 黑白名单|
 |**describeIpSetUsage**|GET|查询实例的 IP 黑白名单用量信息|
 |**describeIpSets**|GET|查询实例的 IP 黑白名单库列表|
 |**describeJsPagesOfWebRule**|GET|查询网站类规则允许插入JS指纹的页面|
 |**describeNameList**|GET|查询高防实例名称列表|
+|**describeOriginWhiteIpList**|GET|查询高防实例回源 IP 白名单列表|
+|**describeProtectionOutline**|GET|查询高防实例防护概要|
 |**describeProtectionRuleOfForwardRule**|GET|查询非网站类转发规则的防护规则|
 |**describeProtectionStatistics**|GET|查询高防实例防护统计信息|
 |**describeServiceIpList**|GET|查询实例高防 IP 列表|
+|**describeStatusGraph**|GET|高防返回客户端状态码报表|
 |**describeVpcIpList**|GET|查询用户可设置为网站类规则回源 IP 的京东云云内弹性公网 IP 资源|
 |**describeWebRule**|GET|查询网站类规则|
 |**describeWebRuleBlackListGeoAreas**|GET|查询网站类转发规则 Geo 模式的黑名单可设置区域编码|
@@ -112,6 +120,7 @@ v1
 |**modifyCCProtectionRuleOfWebRule**|PATCH|修改网站类规则的 CC 防护规则|
 |**modifyCertInfo**|POST|编辑网站规则证书信息|
 |**modifyCustomPage**|PUT|修改自定义页面|
+|**modifyDispatchRule**|PATCH|更新防护调度规则|
 |**modifyEPB**|POST|更新实例弹性防护带宽|
 |**modifyForwardRule**|PATCH|更新非网站类规则|
 |**modifyInstanceAcl**|POST|修改实例全局访问控制配置，包括全局的IP黑白名单和geo拦截配置|
@@ -126,6 +135,8 @@ v1
 |**modifyWhiteListRuleOfForwardRule**|PATCH|修改转发规则的白名单规则|
 |**modifyWhiteListRuleOfWebRule**|PATCH|修改网站类规则的白名单规则|
 |**recoverInstanceAcl**|POST|实例全局访问控制配置可以恢复到上一次下发成功的配置时，调用此接口回滚到上一次下发成功的配置|
+|**switchDispatchRuleOrigin**|POST|防护调度规则切换成回源状态|
+|**switchDispatchRuleProtect**|POST|防护调度规则切换成防御状态|
 |**switchForwardRuleOrigin**|POST|非网站类规则切换成回源状态。支持批量操作, 批量操作时 forwardRuleId 传多个, 以 ',' 分隔, 返回 result.code 为 1 表示操作成功, 为 0 时可能全部失败, 也可能部分失败|
 |**switchForwardRuleProtect**|POST|非网站类规则切换成防御状态。支持批量操作, 批量操作时 forwardRuleId 传多个, 以 ',' 分隔, 返回 result.code 为 1 表示操作成功, 为 0 时可能全部失败, 也可能部分失败|
 |**switchWebRuleOrigin**|POST|网站类规则切换成回源状态。支持批量操作, 批量操作时 webRuleId 传多个, 以 ',' 分隔, 返回 result.code 为 1 表示操作成功, 为 0 时可能全部失败, 也可能部分失败|
