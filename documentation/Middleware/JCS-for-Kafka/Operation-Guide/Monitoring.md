@@ -12,4 +12,4 @@
 
 5. 单击右上方“设置报警规则”，可跳转至云监控页面进行报警规则的设置。</br>
 
-![查询1](../../../../image/Internet-Middleware/JCS-for-Kafka/kafkadetail.jpg)
+![查询1](../../../../image/Internet-Middleware/JCS-for-Kafka/kafka监控.jpg)
