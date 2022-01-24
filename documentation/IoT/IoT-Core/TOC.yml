@@ -47,10 +47,10 @@
         href: Operation-Guide/Thing-Model/Create-Thing-Model.md    
       - name: 创建规则引擎
         href: Operation-Guide/Rule-Engine/Create-Rule.md
-  - name: 开发服务
-    items:
-      - name: 固件升级
-        href: Development/OTA/OTA.md          
+#  - name: 开发服务
+#    items:
+#      - name: 固件升级
+#        href: Development/OTA/OTA.md          
   - name: 设备开发指南
     items:
       - name: Device SDK 介绍
