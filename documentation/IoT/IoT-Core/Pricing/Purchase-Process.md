@@ -12,7 +12,7 @@
 
 4. 登录物联网引擎控制台, 进入服务开通页，阅读相关产品信息与服务协议后，点击“立即开通”
 
-![IoT-Engine-Service-Open](../../../../image/IoT/IoT-Engine/Service-Open.png)
+![IoT-Engine-Service-Open](../../../../image/IoT/IoT-Engine/Service_Open.png)
 
 5. 在实例创建页面，填写您的设备接入量，实例名称，想要部署的私有网络，子网，及购买时长等信息
 

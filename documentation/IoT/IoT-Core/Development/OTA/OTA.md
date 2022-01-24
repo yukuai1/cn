@@ -13,7 +13,7 @@
 
 2. 选择左侧导航栏中 **开发服务** -> **固件升级**，进入固件升级页面
 
-   ![固件升级首页](../../../../../image/IoT/IoT-Engine/OTA/OTA-list.png)
+   ![固件升级首页](../../../../../image/IoT/IoT-Engine/OTA/OTA-list01.png)
 
 3. 点击页面上方的 **添加固件**，在添加固件对话框中，输入固件信息并上传固件。
 
@@ -33,7 +33,7 @@
 
 4. 在固件列表中，点击某一固件操作列中的**批量升级**，可创建批量升级任务，向设备推送固件升级消息。
 
-   ![批量升级1](../../../../../image/IoT/IoT-Engine/OTA/OTA-update01.png)
+   ![批量升级1](../../../../../image/IoT/IoT-Engine/OTA/OTA-update1.png)
 
    ![批量升级2](../../../../../image/IoT/IoT-Engine/OTA/OTA-update02.png)
 
@@ -54,7 +54,7 @@
 
 5. 在固件列表中，点击某一固件操作列中的**批次查看**，可以查看本次升级任务的具体进度和结果。
 
-   ![批次查看1](../../../../../image/IoT/IoT-Engine/OTA/OTA-batch01.png)
+   ![批次查看1](../../../../../image/IoT/IoT-Engine/OTA/OTA-batch1.png)
 
    ![批次查看2](../../../../../image/IoT/IoT-Engine/OTA/OTA-batch02.png)
 

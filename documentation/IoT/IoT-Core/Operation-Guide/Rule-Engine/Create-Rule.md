@@ -8,7 +8,7 @@
 2. 左侧到导航选择 **管理** -> **规则引擎**
 3. 点击页面上方的 **创建规则引擎**
 
-![create-rule](../../../../../image/IoT/IoT-Engine/Create_Rule.png)
+![create-rule](../../../../../image/IoT/IoT-Engine/CreateRule.png)
 
 ## 数据转发
 
@@ -18,7 +18,7 @@
 
 1. 点击页面上的 **编写脚本**，进行处理规则引擎转发的规则逻辑编写
 
-![scrpit](../../../../../image/IoT/IoT-Engine/Script-ProcessData.png)
+![scrpit](../../../../../image/IoT/IoT-Engine/Script_ProcessData.png)
 
 - 脚本所用的为 JavaScript 语言
 - 所有的数据都会经过 脚本 进行处理，然后进行数据转发

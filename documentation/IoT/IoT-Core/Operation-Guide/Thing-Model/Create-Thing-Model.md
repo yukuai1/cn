@@ -10,7 +10,7 @@
 4. 点击 物模型功能 -> **添加功能** 按钮
 5. 在弹出对话框中，定义适合该产品的功能信息。您可为产品自定义属性、服务和事件。
 
-![Create-Ting-Model](../../../../../image/IoT/IoT-Engine/Ting-Model-Creation.png)
+![Create-Ting-Model](../../../../../image/IoT/IoT-Engine/Create_ThingModel.png)
 
 
 6. 设置参数完成后，单击 **确认**，完成单条功能的添加。
