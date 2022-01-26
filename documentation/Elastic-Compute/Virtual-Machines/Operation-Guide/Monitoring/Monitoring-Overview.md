@@ -2,12 +2,7 @@
 实例监控与告警为您提供实时实例监控管理服务，支持不同监控维度，在实例成功创建后即开始采集数据，以图表方式直观展现，方便您掌握实例资源使用情况、运行状态等信息，同时您可设置不同的报警规则，当触发该类条件后则触发报警通知，使您轻松定位故障。
 ## 监控项 
 京东云为实例提供以下监控指标，按采集上报的前提条件来区分，可以分为三类：
-* 第一类：由实例所在宿主机采集，不依赖于云主机内监控插件，此类指标共有4个，中英文展示名具有后缀‘（Host）’，包括：
-  * 磁盘读吞吐量（Host）：vm.disk.bytes.read
-  * 磁盘写吞吐量（Host）：vm.disk.bytes.write
-  * 网络入带宽（Host）：vm.network.bytes.incoming
-  * 网络出带宽（Host）：vm.network.bytes.outgoing
-
+* 第一类：由实例所在宿主机采集，不依赖于云主机内监控插件，中英文展示名具有后缀‘（Host）’
  <table>
 	<thead>
     <tr>
@@ -48,10 +43,7 @@
 	</tbody>
 </table>
 
-* 第二类：由云主机内官方系统组件采集，所有历史版本组件均支持采集，只要不对组件进行卸载均可获取数据，此类指标共有2个，包括：
-  * CPU使用率：vm.cpu.util
-  * 内存使用率：vm.memory.usage
-
+* 第二类：由云主机内官方系统组件采集，所有历史版本组件均支持采集，只要不对组件进行卸载均可获取数据
 <table>
 	<thead>
     <tr>
@@ -84,7 +76,7 @@
 
 * 第三类：由云主机内官方系统组件采集，其中包含基础指标以及扩展指标，对JCS-Agent组件具有最低版本要求。**如无法在监控页面查看到此类指标说明您当前环境内的系统组件版本过低，请参照 [下方文档](monitoring-overview#user-content-1) 进行安装。**
   * 基础指标具有较高的通用性，上报的指标类型不支持调整，仅不低于'3.0.989'版本的JCS-Agent组件支持采集
-  * 扩展指标具有更详尽的信息，您可以根据不同业务场景下的需求，在配置文件中自定义上报的指标类型，仅不低于'3.0.1086'版本的JCS-Agent组件支持采集，您可以参照[下方文档](monitoring-overview#user-content-2)完成扩展指标的配置。
+  * 扩展指标具有更详尽的信息，您可以根据不同业务场景的需求，自定义上报的指标类型，仅不低于'3.0.1086'版本的JCS-Agent组件支持采集，您可以参照[下方文档](monitoring-overview#user-content-2)完成配置。
   
 
 <table>
@@ -250,7 +242,7 @@
         <td> cpu在用户态进程(user)和低优先级进程(nice)占cpu总运行时间的百分比</td>
 	<td> % </td>   
         <td rowspan="2"> 不低于'3.0.1086'版本的JCS-Agent</td>
-        <td rowspan="2"> 维度：云主机ID（以‘resourceId‘为tag上报）<br>仅Linux系统有此组指标？</td> 
+        <td rowspan="2"> 维度：云主机ID（以‘resourceId‘为tag上报）<br>仅Linux系统有此组指标</td> 
     </tr>
     <tr>
         <td> io cpu使用率  <br>vm.cpu.cores.iowait</td>
@@ -322,23 +314,47 @@
   `
   wmic process where caption="MonitorPlugin.exe" get caption,commandline /value
   `
-  
-<div id="user-content-2"></div>
-* 扩展指标上报配置说明：
+## 扩展指标上报配置方法
   * 确认JCS-Agent组件版本不低于'3.0.1086'
   * 移至监控插件目录下
   `
     cd /usr/local/share/jcloud/agent/plugins/MonitorPlugin-[version]
   `
-  * 创建配置文件“Extended.cfg”
-  
+  * 创建名称为“Extended.cfg”的配置文件,您可以参考下方示例，根据需求自定义参数
+    * "namespace"：上报至云监控中自定义监控的命名空间（长度不可超过255字节，只允许英文、数字、下划线_、点., [0-9][a-z] [A-Z] [. _ ]）
+    * "metrics"：上报至云监控的扩展指标，目前支持的扩展指标类别包含：?"cpu", "disk-io", "netstat"
+```
+{
+  "agent": {
+   	"namespace":"vm_extend_metric" 
+  }, 
+  "metrics": {
+  	"disk-io": {"measurement-white-list": [
+		"vm.disk.dev.io.util", 
+		"vm.disk.dev.io.await" ]},
+  	"netstat": {"measurement-white-list": [
+		"vm.netstat.tcp.last_ack", 
+		"vm.netstat.tcp.syn_recv", 
+		"vm.netstat.tcp.fin_wait1", 
+		"vm.netstat.tcp.fin_wait2",
+		"vm.netstat.tcp.closing", 
+		"vm.netstat.tcp.time_wait", 
+		"vm.netstat.tcp.retrans_segs" ]}, 
+	  "cpu": {
+		"measurement-white-list": [
+			"vm.cpu.cores.user", 
+			"vm.cpu.cores.iowait" ]}}
+}
+```
   * 重启监控插件，插件进程将在5分钟内自动拉起，并开始采集、上报扩展指标（插件升级期间基础指标可能存在短暂缺失）
-  `
-     ps -ef | grep -i MonitorPlugin  //查看监控进程id
-   ` 
-  `
-     kill [pid]       //kill MonitorPlugin对应的进程id
-   `
+    * 查看监控进程id：
+    `
+      ps -ef | grep -i MonitorPlugin 
+    ` 
+    * 杀死进程：
+    `
+      kill [pid]       
+    `
   
 ## 监控数据说明
 * 监控数据采集周期为10s，最小展示间隔为1min；
