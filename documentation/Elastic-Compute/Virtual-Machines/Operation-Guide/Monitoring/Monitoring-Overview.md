@@ -2,20 +2,92 @@
 实例监控与告警为您提供实时实例监控管理服务，支持不同监控维度，在实例成功创建后即开始采集数据，以图表方式直观展现，方便您掌握实例资源使用情况、运行状态等信息，同时您可设置不同的报警规则，当触发该类条件后则触发报警通知，使您轻松定位故障。
 ## 监控项 
 京东云为实例提供以下监控指标，按采集上报的前提条件来区分，可以分为三类：
-* 由实例所在宿主机采集，不依赖于云主机内监控插件，此类指标共有4个，中英文展示名具有后缀‘（Host）’，包括：
+* 第一类：由实例所在宿主机采集，不依赖于云主机内监控插件，此类指标共有4个，中英文展示名具有后缀‘（Host）’，包括：
   * 磁盘读吞吐量（Host）：vm.disk.bytes.read
   * 磁盘写吞吐量（Host）：vm.disk.bytes.write
   * 网络入带宽（Host）：vm.network.bytes.incoming
   * 网络出带宽（Host）：vm.network.bytes.outgoing
-* 由云主机内官方系统组件采集，所有历史版本组件均支持采集，只要不对组件进行卸载均可获取数据，此类指标共有2个，包括：
+
+ <table>
+	<thead>
+    <tr>
+	<th colspan="2">监控指标</th>
+	<th>指标含义</th>
+	<th>单位</th>
+	<th>上报依赖</th>
+	<th>说明</th>
+    </tr>		
+	</thead>
+	<tbody>
+    <tr>
+        <td rowspan="2">磁盘</td>
+        <td> 磁盘读吞吐量（Host）  <br>vm.disk.bytes.read</td>
+        <td> 磁盘每秒读取的字节数（全部磁盘）</td>
+        <td> Bps </td>
+        <td rowspan="2"> 无</td>
+        <td rowspan="2"> 维度：无<br>宿主机采集，实例整体磁盘吞吐</td>   
+    </tr>
+    <tr>
+        <td> 磁盘写吞吐量（Host）  <br>vm.disk.bytes.write</td>
+        <td> 磁盘每秒写入的字节数（全部磁盘）</td>
+        <td> Bps </td>
+    </tr>
+    <tr>
+        <td rowspan="2">网络</td>
+        <td> 网络入带宽（Host）  <br>vm.network.bytes.incoming</td>
+        <td> 网卡每秒接收的比特数（全部网卡之和）</td>
+        <td> bps </td>
+        <td rowspan="2"> 无</td>
+        <td rowspan="2"> 维度：无<br>宿主机采集，实例整体网络带宽，不分区网卡和内外网</td>   
+    </tr>
+    <tr>
+        <td> 网络出带宽（Host）  <br>vm.network.bytes.outgoing</td>
+        <td> 网卡每秒发送的比特数（全部网卡之和）</td>
+        <td> bps </td>
+    </tr>	
+	</tbody>
+</table>
+
+* 第二类：由云主机内官方系统组件采集，所有历史版本组件均支持采集，只要不对组件进行卸载均可获取数据，此类指标共有2个，包括：
   * CPU使用率：vm.cpu.util
   * 内存使用率：vm.memory.usage
-* 由云主机内官方系统组件采集，仅不低于'3.0.989'版本的JCS-Agent组件支持采集。下表中除以上6个指标外的其他指标均为此分类，**如无法在监控页面查看到此类指标说明您当前环境内的系统组件版本过低，请参照 [下方文档](monitoring-overview#user-content-1) 进行安装。**
 
 <table>
 	<thead>
     <tr>
-		<th colspan="2">监控指标</th>
+	<th colspan="2">监控指标</th>
+	<th>指标含义</th>
+	<th>单位</th>
+	<th>上报依赖</th>
+	<th>说明</th>
+    </tr>		
+	</thead>
+	<tbody>
+    <tr>
+        <td>CPU</td>
+        <td> CPU使用率   <br>vm.cpu.util</td>
+        <td> 非空闲vCPU所占的百分比</td>
+        <td> % </td>
+        <td> 官方镜像内置的Agent，所有版本均支持此指标采集</td>
+        <td> 维度：无</td>   
+    </tr>	
+    <tr>
+        <td>内存</td>
+        <td> 内存使用率   <br>vm.memory.usage</td>
+        <td> 已用内存量占总内存总量百分比</td>
+        <td> % </td>
+        <td> 官方镜像内置的Agent，所有版本均支持此指标采集</td>
+        <td> 维度：无</td>   
+    </tr>	
+	</tbody>
+</table>
+
+* 第三类：由云主机内官方系统组件采集，其中包含基础指标以及扩展指标，基础指标具有较高的通用性，仅不低于'3.0.989'版本的JCS-Agent组件支持采集；扩展指标具有更详尽的信息，可以满足您在不同业务场景下的需求，仅不低于'3.0.1086'版本的JCS-Agent组件支持采集。**如无法在监控页面查看到此类指标说明您当前环境内的系统组件版本过低，请参照 [下方文档](monitoring-overview#user-content-1) 进行安装。**
+
+<table>
+	<thead>
+    <tr>
+	<th colspan="2">基础监控指标</th>
       	<th>指标含义</th>
       	<th>单位</th>
         <th>上报依赖</th>
@@ -24,14 +96,7 @@
 	</thead>
 	<tbody>
     <tr>
-        <td rowspan="4">CPU</td>
-        <td> CPU使用率   <br>vm.cpu.util</td>
-        <td> 非空闲vCPU所占的百分比</td>
-        <td> % </td>
-        <td> 官方镜像内置的Agent，所有版本均支持此指标采集</td>
-        <td> 维度：无</td>   
-    </tr>
-    <tr>
+	<td rowspan="3">CPU</td>
         <td> CPU平均负载（1min）  <br>vm.avg.load1</td>
         <td> 采样时刻过去1分钟的系统平均负载</td>
         <td> 无 </td>
@@ -49,14 +114,7 @@
         <td> 无 </td>
     </tr>
     <tr>
-        <td rowspan="2">内存</td>
-        <td> 内存使用率   <br>vm.memory.usage</td>
-        <td> 已用内存量占总内存总量百分比</td>
-        <td> % </td>
-        <td> 官方镜像内置的Agent，所有版本均支持此指标采集</td>
-        <td> 维度：无</td>   
-    </tr>
-    <tr>
+	<td>内存</td>
         <td> 内存使用量   <br>vm.memory.used.bytes</td>
         <td> 系统已用内存情况</td>
         <td> Bytes </td>
@@ -64,19 +122,7 @@
         <td> 维度：无</td>   
     </tr>
     <tr>
-        <td rowspan="9">磁盘</td>
-        <td> 磁盘读吞吐量（Host）  <br>vm.disk.bytes.read</td>
-        <td> 磁盘每秒读取的字节数（全部磁盘）</td>
-        <td> Bps </td>
-        <td rowspan="2"> 无</td>
-        <td rowspan="2"> 维度：无<br>宿主机采集，实例整体磁盘吞吐</td>   
-    </tr>
-    <tr>
-        <td> 磁盘写吞吐量（Host）  <br>vm.disk.bytes.write</td>
-        <td> 磁盘每秒写入的字节数（全部磁盘）</td>
-        <td> Bps </td>
-    </tr>
-    <tr>
+	<td rowspan="7">磁盘</td>
         <td> 磁盘读吞吐量  <br>vm.disk.dev.bytes.read</td>
         <td> 磁盘每秒读取的字节数</td>
         <td> Bps </td>
@@ -115,19 +161,7 @@
         <td> % </td>
     </tr>  
     <tr>
-        <td rowspan="7">网络</td>
-        <td> 网络入带宽（Host）  <br>vm.network.bytes.incoming</td>
-        <td> 网卡每秒接收的比特数（全部网卡之和）</td>
-        <td> bps </td>
-        <td rowspan="2"> 无</td>
-        <td rowspan="2"> 维度：无<br>宿主机采集，实例整体网络带宽，不分区网卡和内外网</td>   
-    </tr>
-    <tr>
-        <td> 网络出带宽（Host）  <br>vm.network.bytes.outgoing</td>
-        <td> 网卡每秒发送的比特数（全部网卡之和）</td>
-        <td> bps </td>
-    </tr>
-    <tr>
+        <td rowspan="5">网络</td>
         <td> 网络入带宽  <br>vm.network.dev.bytes.in</td>
         <td> 网卡每秒接收的比特数</td>
         <td> bps </td>
@@ -193,13 +227,81 @@
         <td> 	GPU内存使用量</td>
         <td> Bytes </td>
     </tr>     
+	</tbody>
+</table>
+ 
+ <table>
+	<thead>
+    <tr>
+	<th colspan="2">扩展监控指标</th>
+	<th>指标含义</th>
+	<th>单位</th>
+	<th>上报依赖</th>
+	<th>说明</th>
+    </tr>		
 	</thead>
-</table> 
+	<tbody>
+     <tr>
+	<td rowspan="2">CPU</td>
+        <td> 用户CPU使用率  <br>vm.cpu.cores.user</td>
+        <td> cpu在用户态进程(user)和低优先级进程(nice)占cpu总运行时间的百分比</td>
+	<td> % </td>   
+        <td rowspan="2"> 不低于'3.0.1086'版本的JCS-Agent</td>
+        <td rowspan="2"> 维度：云主机ID（以‘resourceId‘为tag上报）<br>仅Linux系统有此组指标？</td> 
+    </tr>
+    <tr>
+        <td> io cpu使用率  <br>vm.cpu.cores.iowait</td>
+        <td> 等待io操作的时间占cpu总运行时间的百分比</td>
+        <td> % </td>
+    </tr>
+     <tr>
+	<td rowspan="2">磁盘</td>
+        <td> 磁盘IO繁忙百分比  <br>vm.disk.dev.io.util </td>
+        <td> 磁盘IO繁忙百分比</td>
+	<td> % </td>   
+        <td rowspan="2"> 不低于'3.0.1086'版本的JCS-Agent</td>
+     	<td rowspan="2"> 维度：设备文件名（以'devName'为tag上报）如：<br>* Linux：'devName'='/vda','/vdb1', ...<br>* Windows：‘devName’='C','D', ...<br>Linux系统如磁盘有分区，则按分区统计上报，若无分区则按磁盘统计上报；Windows系统均按盘符统计上报</td>  
+    </tr>
+     <tr>
+        <td> 磁盘IO等待百分比  <br>vm.disk.dev.io.await </td>
+        <td> 磁盘IO等待百分比</td>
+	<td> % </td>   
+    </tr>		
+     <tr>
+	<td rowspan="6">网络连接状态</td>
+        <td> last_ack  <br>vm.netstat.tcp.last_ack  </td>
+        <td> last_ack状态下的TCP链接数</td>
+	<td rowspan="6"> Count </td>   
+        <td rowspan="6"> 不低于'3.0.1086'版本的JCS-Agent</td>
+     	<td rowspan="6"> 维度：云主机ID（以‘resourceId‘为tag上报）</td> 
+    </tr>
+     <tr>
+        <td> syn_recv <br>vm.netstat.tcp.syn_recv </td>
+        <td> syn_recv状态下的TCP链接数</td> 
+    </tr>
+     <tr>
+        <td> fin_wait1  <br>vm.netstat.tcp.fin_wait1 </td>
+        <td> fin_wait1 状态下的TCP链接数</td> 
+    </tr>
+     <tr>
+        <td> fin_wait2 <br>vm.netstat.tcp.fin_wait2</td>
+        <td> fin_wait2状态下的TCP链接数</td>
+    </tr>
+    <tr>
+        <td> closing  <br>vm.netstat.tcp.closing </td>
+        <td> closing 状态下的TCP链接数</td>  
+    </tr>
+    <tr>
+        <td> time_wait <br>vm.netstat.tcp.time_wait</td>
+        <td> time_wait状态下的TCP链接数</td>
+    </tr>
+		
+	</tbody>
+</table>
  
- 
- 
- 
-<div id="user-content-1"></div>
+ 		
+
+
 
 ## 监控插件安装说明
 
