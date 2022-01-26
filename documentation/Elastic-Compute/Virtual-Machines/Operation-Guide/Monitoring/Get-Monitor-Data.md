@@ -10,7 +10,7 @@
 * “维度”包含您所选指标所对应的各个维度项，例如：
   * CPU和TCP相关指标主要以云主机id作为查询维度，请在resourceId选择需要查询的云主机id
   * 支持多选磁盘IO指标可指定devName（磁盘分区）作分区查询，并且可按分组聚合方式进行展示。如不指定将默认展示多个磁盘分区指标的平均值
-![](https://cf.jd.com/download/attachments/725349374/disk.io.util.png?version=1&modificationDate=1643201103618&api=v2)
+![3](https://cf.jd.com/download/attachments/725349374/disk.io.util.png?version=1&modificationDate=1643201103618&api=v2)
 
 
 ## 操作步骤
