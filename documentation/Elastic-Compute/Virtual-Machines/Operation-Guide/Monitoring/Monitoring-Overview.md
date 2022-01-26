@@ -305,6 +305,7 @@
  		
  
 <div id="user-content-1"></div>
+
 ## 监控插件安装说明
 
 云主机监控数据的采集和上报依赖于官方镜像系统组件'JCS-Agent'中的'MonitorPlugin'插件，官方镜像在2019年5月-7月期间进行升级默认安装了升级工具'ifrit'以实现JCS-Agent的自动升级。<br>
@@ -325,10 +326,12 @@
 <div id="user-content-2"></div>
 * 扩展指标上报配置说明：
   * 确认JCS-Agent组件版本不低于'3.0.1086'
-  * 移至监控插件目录，并在当前目录下创建配置文件“Extended.cfg”
+  * 移至监控插件目录下
   `
-     cd /usr/local/share/jcloud/agent/plugins/MonitorPlugin-[version]
+    cd /usr/local/share/jcloud/agent/plugins/MonitorPlugin-[version]
   `
+  * 创建配置文件“Extended.cfg”
+  
   * 重启监控插件，插件进程将在5分钟内自动拉起，并开始采集、上报扩展指标（插件升级期间基础指标可能存在短暂缺失）
   `
      ps -ef | grep -i MonitorPlugin  //查看监控进程id
