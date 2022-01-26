@@ -84,7 +84,7 @@
 
 * 第三类：由云主机内官方系统组件采集，其中包含基础指标以及扩展指标，对JCS-Agent组件具有最低版本要求。**如无法在监控页面查看到此类指标说明您当前环境内的系统组件版本过低，请参照 [下方文档](monitoring-overview#user-content-1) 进行安装。**
   * 基础指标具有较高的通用性，上报的指标类型不支持调整，仅不低于'3.0.989'版本的JCS-Agent组件支持采集
-  * 扩展指标具有更详尽的信息，您可以根据不同业务场景下的需求，在配置文件中自定义上报的指标类型，仅不低于'3.0.1086'版本的JCS-Agent组件支持采集，您可以参照[下方文档]完成扩展指标的配置。
+  * 扩展指标具有更详尽的信息，您可以根据不同业务场景下的需求，在配置文件中自定义上报的指标类型，仅不低于'3.0.1086'版本的JCS-Agent组件支持采集，您可以参照[下方文档](monitoring-overview#user-content-2)完成扩展指标的配置。
   
 
 <table>
@@ -303,9 +303,8 @@
 </table>
  
  		
-
-
-
+ 
+<div id="user-content-1"></div>
 ## 监控插件安装说明
 
 云主机监控数据的采集和上报依赖于官方镜像系统组件'JCS-Agent'中的'MonitorPlugin'插件，官方镜像在2019年5月-7月期间进行升级默认安装了升级工具'ifrit'以实现JCS-Agent的自动升级。<br>
@@ -322,9 +321,11 @@
   `
   wmic process where caption="MonitorPlugin.exe" get caption,commandline /value
   `
+  
+<div id="user-content-2"></div>
 * 扩展指标上报配置说明：
   * 确认JCS-Agent组件版本不低于'3.0.1086'
-  * 移至以下监控插件目录，并在当前目录下创建配置文件“Extended.cfg”
+  * 移至监控插件目录，并在当前目录下创建配置文件“Extended.cfg”
   `
      cd /usr/local/share/jcloud/agent/plugins/MonitorPlugin-[version]
   `
