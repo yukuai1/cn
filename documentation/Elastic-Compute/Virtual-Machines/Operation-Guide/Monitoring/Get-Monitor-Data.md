@@ -1,5 +1,5 @@
 # 获取实例的监控数据
-根据三大类监控指标类型，京东云为您提供获取实例监控数据的对应入口
+根据三大类监控指标类型，京东云为您提供获取实例监控数据的对应入口。各类别所包含的监控指标以及相关说明，您可以参考[监控与报警概述][6] 
 * 第一类：随实例创建成功后，即可获取实例CPU、内存使用率等监控情况，无需进行手动开通。
   * 京东云控制台云主机实例详情页
   * 京东云控制台云监控对应实例详情页
@@ -41,5 +41,6 @@
   [3]: https://cms-console.jdcloud.com/serverMonitor
   [4]: https://console.jdcloud.com/
   [5]: https://console.jdcloud.com/
+  [6]: https://docs.jdcloud.com/cn/virtual-machines/monitoring-overview
   
   
