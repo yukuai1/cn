@@ -82,7 +82,10 @@
 	</tbody>
 </table>
 
-* 第三类：由云主机内官方系统组件采集，其中包含基础指标以及扩展指标，基础指标具有较高的通用性，仅不低于'3.0.989'版本的JCS-Agent组件支持采集；扩展指标具有更详尽的信息，可以满足您在不同业务场景下的需求，仅不低于'3.0.1086'版本的JCS-Agent组件支持采集。**如无法在监控页面查看到此类指标说明您当前环境内的系统组件版本过低，请参照 [下方文档](monitoring-overview#user-content-1) 进行安装。**
+* 第三类：由云主机内官方系统组件采集，其中包含基础指标以及扩展指标，对JCS-Agent组件具有最低版本要求。**如无法在监控页面查看到此类指标说明您当前环境内的系统组件版本过低，请参照 [下方文档](monitoring-overview#user-content-1) 进行安装。**
+  * 基础指标具有较高的通用性，上报的指标类型不支持调整，仅不低于'3.0.989'版本的JCS-Agent组件支持采集
+  * 扩展指标具有更详尽的信息，您可以根据不同业务场景下的需求，在配置文件中自定义上报的指标类型，仅不低于'3.0.1086'版本的JCS-Agent组件支持采集，您可以参照[下方文档]完成扩展指标的配置。
+  
 
 <table>
 	<thead>
@@ -319,6 +322,19 @@
   `
   wmic process where caption="MonitorPlugin.exe" get caption,commandline /value
   `
+* 扩展指标上报配置说明：
+  * 确认JCS-Agent组件版本不低于'3.0.1086'
+  * 移至以下监控插件目录，并在当前目录下创建配置文件“Extended.cfg”
+  `
+     cd /usr/local/share/jcloud/agent/plugins/MonitorPlugin-[version]
+  `
+  * 重启监控插件，插件进程将在5分钟内自动拉起，并开始采集、上报扩展指标（插件升级期间基础指标可能存在短暂缺失）
+  `
+     ps -ef | grep -i MonitorPlugin  //查看监控进程id
+   ` 
+  `
+     kill [pid]       //kill MonitorPlugin对应的进程id
+   `
   
 ## 监控数据说明
 * 监控数据采集周期为10s，最小展示间隔为1min；
