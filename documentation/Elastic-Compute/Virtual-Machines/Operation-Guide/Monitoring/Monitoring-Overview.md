@@ -183,49 +183,49 @@
         <td> GPU功耗   </td>
         <td>Wt</td> 
         <td>GPU功耗 </td>
-        <td>gpu_index<br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br>/td>
+        <td>gpu_index <br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
     </tr>
     <tr>
         <td>vm.gpu.temperature</td>
         <td> GPU温度   </td>
         <td>℃</td> 
         <td>GPU温度 </td>
-        <td>gpu_index<br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br>/td>
+        <td>gpu_index <br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
     </tr>
     <tr>
         <td>vm.gpu.util.gpu</td>
         <td> GPU核心使用率   </td>
         <td>%</td> 
         <td>GPU核心使用率 </td>
-        <td>gpu_index<br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br>/td>
+        <td>gpu_index <br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
     </tr>
     <tr>
         <td>vm.gpu.util.encoder</td>
         <td> GPU编码器使用率   </td>
         <td>%</td> 
         <td>GPU编码器使用率 </td>
-        <td>gpu_index<br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br>/td>
+        <td>gpu_index <br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
     </tr>
     <tr>
         <td>vm.gpu.util.decoder</td>
         <td> GPU解码器使用率   </td>
         <td>%</td> 
         <td>GPU解码器使用率 </td>
-        <td>gpu_index<br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br>/td>
+        <td>gpu_index <br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
     </tr>	
     <tr>
         <td>vm.gpu.util.mem</td>
         <td> GPU内存使用率   </td>
         <td>%</td> 
         <td>GPU内存使用率 </td>
-        <td>gpu_index<br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br>/td>
+        <td>gpu_index <br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
     </tr>	
     <tr>
         <td>vm.gpu.used.mem.bytes</td>
         <td> GPU内存使用量   </td>
         <td>Bytes</td> 
         <td>GPU内存使用量 </td>
-        <td>gpu_index<br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br>/td>
+        <td>gpu_index <br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
     </tr>	
 	</tbody>
 </table> 
