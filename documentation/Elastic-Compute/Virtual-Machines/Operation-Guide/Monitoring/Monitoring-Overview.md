@@ -220,7 +220,7 @@
         <td> GPU内存使用量</td>
         <td> Bytes </td>
     </tr>
-    <td rowspan="6">网络连接状态</td>
+    <td rowspan="6">TCP连接数</td>
         <td> last_ack  <br>vm.netstat.tcp.last_ack  </td>
         <td> last_ack状态下的TCP链接数</td>
 	<td> Count </td>   
