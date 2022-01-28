@@ -229,27 +229,27 @@
     </tr>
      <tr>
         <td> syn_recv <br>vm.netstat.tcp.syn_recv </td>
-        <td> syn_recv状态下的TCP链接数</td> 
+        <td> 处于syn_recv状态下的TCP连接数</td> 
 	<td> Count </td> 
     </tr>
      <tr>
         <td> fin_wait1  <br>vm.netstat.tcp.fin_wait1 </td>
-        <td> fin_wait1 状态下的TCP链接数</td> 
+        <td> 处于fin_wait1 状态下的TCP连接数</td> 
 	<td> Count </td> 
     </tr>
      <tr>
         <td> fin_wait2 <br>vm.netstat.tcp.fin_wait2</td>
-        <td> fin_wait2状态下的TCP链接数</td>
+        <td> 处于fin_wait2状态下的TCP连接数</td>
 	<td> Count </td> 
     </tr>
     <tr>
         <td> closing  <br>vm.netstat.tcp.closing </td>
-        <td> closing 状态下的TCP链接数</td>  
+        <td> 处于closing 状态下的TCP连接数</td>  
 	<td> Count </td> 
     </tr>
     <tr>
         <td> time_wait <br>vm.netstat.tcp.time_wait</td>
-        <td> time_wait状态下的TCP链接数</td>
+        <td> 处于time_wait状态下的TCP连接数</td>
 	<td> Count </td> 
     </tr>		
 	</tbody>
