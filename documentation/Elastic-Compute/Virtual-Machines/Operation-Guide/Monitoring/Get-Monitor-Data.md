@@ -4,7 +4,7 @@
   * 京东云控制台云监控对应实例详情页
 
 ### 获取实例的扩展指标监控数据
-在[京东云控制台云监控的自定义监控页面][7]，您可以获取更加详尽的云主机实例信息，包括CPU、磁盘IO等扩展指标数据，相关说明您可以参考[监控项][8]
+在[京东云控制台云监控的自定义监控页面][7]，您可以获取更加详尽的云主机实例信息，包括磁盘IO、TCP连接数等扩展指标数据，相关说明您可以参考[监控项][8]
 * “命名空间”对应您在配置文件“Extended.cfg”中自定义的参数"namespace" 
 * “监控指标”应您在配置文件中“Extended.cfg”中自定义的监控项"metrics"
 * “维度”包含您所选指标所对应的各个维度项，例如：
@@ -25,8 +25,8 @@
 
 ### 京东云控制台云监控的自定义监控页
 1. 访问 [云监控-云主机监控控制台][3]，或访问 [京东云控制台][5] 点击左侧导航栏 **云监控-资源监控-自定义监控** 进入自定义监控页。
-2. 依次选择"地域"、"命名空间"、"监控指标"、"分组聚合方式"（非必选）、"维度"，即可获取实例的自定义监控数据。
-
+2. 根据需求配置地域、命名空间、监控指标、分组聚合方式、维度信息，各字段的含义说明请参考[查看监控图][9]
+3. 支持切换时间段以及更改聚合方式，您可以在右侧查看指标对应的趋势图信息。
 
   [1]: https://cns-console.jdcloud.com/host/compute/list
   [2]: https://console.jdcloud.com/
@@ -36,6 +36,7 @@
   [6]: https://docs.jdcloud.com/cn/virtual-machines/monitoring-overview
   [7]: https://cms-console.jdcloud.com/monitor/custom
   [8]: https://docs.jdcloud.com/cn/virtual-machines/monitoring-overview
+  [9]: https://docs.jdcloud.com/cn/monitoring/chart-view
   
   
 
