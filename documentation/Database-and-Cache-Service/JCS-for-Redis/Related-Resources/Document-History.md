@@ -21,14 +21,14 @@
 
 | 动态名称 | 动态描述  | 发布时间	  | 相关文档   |
 |   :---  |  :---   |  :---  |:---  |
-|  支持配置副本AOF开关   |  创建实例时和创建成功后，从副本的AOF开关支持用户配置。  |   2021-09   |   [副本持久化](../Operation-Guide/Instance-Management/AOFSwitch.md)    |
-|  优化价格展示方式    | 变配时、创建时，优化价格展示方式。   |  2021-09      |   -  |
-|  支持在创建时自定义 DB数量    |  对于Proxy架构的实例，在创建时支持自定义 DB数量。   |   2021-08   |   -  |
-|  提供一键平滑升级2.8到4.0   | 对于Redis2.8架构的实例，可支持一键升级2.8到4.0升级。   |   2021-08  |  [升级实例版本](../Operation-Guide/Instance-Management/UpgradeInstanceVersion.md)   |
-|  提供failover主从切换监控和通知	|   4.0提供了主从节点的异常监控，并可以在监控报警中，配置failover通知。	|   2021-07	|  [节点异常监控](../Operation-Guide/Monitoring/Node-Notice.md)  |  
-|  提高故障切换速度	|   代理和master节点同时故障时，优先拉起代理节点，更快恢复流量。	|   2021-07  |   -   |   
-
-
+|  支持配置副本AOF开关   |  创建实例时和创建成功后，从副本的AOF开关支持用户配置。        |   2021-09   |   [副本持久化](../Operation-Guide/Instance-Management/AOFSwitch.md)    |
+|  优化价格展示方式      |  变配时、创建时，优化价格展示方式。                          |  2021-09    |   -  |
+|  提供IP占用数量预估    |  在创建、变配环节，增加vpc检查和提供IP占用数量。              |   2021-08   |   -  |
+|  在创建实例时支持自定义 DB数量    |  对于Proxy架构的实例，在创建时支持自定义 DB数量。   |   2021-08   |   -  |
+|  提供一键平滑升级2.8到4.0        | 对于Redis2.8架构的实例，可支持一键升级2.8到4.0升级。|   2021-08  |  [升级实例版本](../Operation-Guide/Instance-Management/UpgradeInstanceVersion.md)   |
+|  提供failover主从切换监控和通知	|   4.0提供了主从节点的异常监控，并可以在监控报警中，配置failover通知。	|   2021-07	|  [节点异常监控](../Operation-Guide/Monitoring/Node-Notice.md)  | 
+|  提高故障切换速度	     |   代理和master节点同时故障时，优先拉起代理节点，更快恢复流量。	|   2021-07  |   -   |   
+  
 ## 2021年Q2
 | 动态名称 | 动态描述  | 发布时间	  | 相关文档   |
 |   :---  |  :---   |  :---  |:---  |
