@@ -341,6 +341,9 @@
 ## 扩展指标上报配置说明
 扩展指标包含更加详尽的信息，能够满足您在不同场景下的监控需求，您可以按照下方步骤进行操作，确保数据能够正常采集并且上报
   * 确认JCS-Agent组件版本不低于'3.0.1086'
+  `
+    ps -ef|grep MonitorPlugin
+  `
   * 移至监控插件目录下
   `
     cd /usr/local/share/jcloud/agent/plugins/MonitorPlugin-[version]
