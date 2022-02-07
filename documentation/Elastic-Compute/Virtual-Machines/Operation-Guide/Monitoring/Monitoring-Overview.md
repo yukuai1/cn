@@ -147,28 +147,28 @@
         <td>网络入带宽</td>
         <td>bps</td> 
         <td>网卡每秒接收的比特数（网卡整体数据指标，不分区内外网）</td>
-        <td>devName <br>* Linux/Windows:'devName'='eth0','eth1', ...</td>
+        <td>devName <br>* Linux/Windows:'devName'='eth0', ...</td>
     </tr>
     <tr>
         <td> vm.network.dev.bytes.out </td>
         <td>网络出带宽</td>
         <td>bps</td> 
         <td> 网卡每秒发送的比特数（网卡整体数据指标，不分区内外网）</td>
-        <td>devName <br>* Linux/Windows:'devName'='eth0','eth1', ...</td>
+        <td>devName <br>* Linux/Windows:'devName'='eth0', ...</td>
     </tr>
     <tr>
         <td>vm.network.dev.packets.in </td>
         <td> 网络入包量</td>
         <td>pps</td> 
         <td> 网卡每秒入包量（网卡整体数据指标，不分区内外网）</td>
-        <td>devName <br>* Linux/Windows:'devName'='eth0','eth1', ...</td>
+        <td>devName <br>* Linux/Windows:'devName'='eth0', ...</td>
     </tr>
     <tr>
         <td>vm.network.dev.packets.out </td>
         <td> 网络出包量 </td>
         <td>pps</td> 
         <td>网卡每秒出包量</td>
-        <td>devName <br>* Linux/Windows:'devName'='eth0','eth1', ...</td>
+        <td>devName <br>* Linux/Windows:'devName'='eth0', ...</td>
     </tr>
     <tr>
         <td>vm.netstat.tcp.established </td>
@@ -183,49 +183,49 @@
         <td> GPU功耗   </td>
         <td>Wt</td> 
         <td>GPU功耗 </td>
-        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
+        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’, ...<br></td>
     </tr>
     <tr>
         <td>vm.gpu.temperature</td>
         <td> GPU温度   </td>
         <td>℃</td> 
         <td>GPU温度 </td>
-        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
+        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’, ...<br></td>
     </tr>
     <tr>
         <td>vm.gpu.util.gpu</td>
         <td> GPU核心使用率   </td>
         <td>%</td> 
         <td>GPU核心使用率 </td>
-        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
+        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’, ...<br></td>
     </tr>
     <tr>
         <td>vm.gpu.util.encoder</td>
         <td> GPU编码器使用率   </td>
         <td>%</td> 
         <td>GPU编码器使用率 </td>
-        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
+        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’, ...<br></td>
     </tr>
     <tr>
         <td>vm.gpu.util.decoder</td>
         <td> GPU解码器使用率   </td>
         <td>%</td> 
         <td>GPU解码器使用率 </td>
-        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
+        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’, ...<br></td>
     </tr>	
     <tr>
         <td>vm.gpu.util.mem</td>
         <td> GPU内存使用率   </td>
         <td>%</td> 
         <td>GPU内存使用率 </td>
-        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
+        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’, ...<br></td>
     </tr>	
     <tr>
         <td>vm.gpu.used.mem.bytes</td>
         <td> GPU内存使用量   </td>
         <td>Bytes</td> 
         <td>GPU内存使用量 </td>
-        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
+        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’, ...<br></td>
     </tr>	
 	</tbody>
 </table> 
@@ -319,6 +319,62 @@
 	</body>
 </table>
  		
+ ## 监控数据说明
+* 监控数据采集周期为10s，最小展示间隔为1min。
+* 不同指标的默认聚合方式不同，可在监控图中查看各指标的聚合方式。
+* 统计周期默认支持1小时、6小时、12小时、1天、3天、7天及14天，此外还支持您设置统计周期，最短为1分钟最长为一个月。
+* 不同统计周期监控值会做对应聚合，例如6小时统计周期情况下，监控图上间隔5分钟显示一个监控值，该监控值为对应统计周期内采集值的聚合，当前仅支持以默认聚合方式查询。
+* 监控数据最长保存30天，用户在控制台可直接可以观察30天的监控数据。
+
+## 监控指标单位
+单位是监控指标的基本度量，下方为云监控所支持的指标单位：
+<table>
+	<thead>
+    <tr>
+	<th>单位</th>
+	<th>说明</th>
+    </tr>
+	</thead>
+	<body>
+    <tr>
+	<td>%</td>
+	<td>百分比</td>
+    </tr>
+    <tr>
+	<td>Bytes</td>
+	<td>字节数，用于表示数据的大小。1Byte = 8bit</td>
+    </tr>
+    <tr>
+	<td>Bps</td>
+	<td>每秒字节数（bytes per second）</td>
+    </tr>
+    <tr>
+	<td>bps</td>
+	<td>每秒比特数（bits per second）</td>
+    </tr>
+    <tr>
+	<td>pps</td>
+	<td>每秒包数（packets per second）</td>
+    </tr>
+    <tr>
+	<td>Count</td>
+	<td>次数</td>
+    </tr>
+    <tr>
+	<td>Count/s</td>
+	<td>每秒操作的次数（counts per second）</td>
+    </tr>
+    <tr>
+	<td>Wt</td>
+	<td>电功率，每秒消耗的电能</td>
+    </tr>
+    <tr>
+	<td>℃</td>
+	<td>摄氏度</td>
+    </tr>
+	</body>
+</table>
+ 
  
 <div id="user-content-1"></div>
 
@@ -349,8 +405,8 @@
     cd /usr/local/share/jcloud/agent/plugins/MonitorPlugin-[version]
   `
   * 创建名称为“Extended.cfg”的配置文件,您可以参考下方示例，根据需求自定义参数
-    * "namespace"：上报至云监控中自定义监控的命名空间（长度不可超过255字节，只允许英文、数字、下划线_、点., [0-9][a-z] [A-Z] [. _ ]）
-    * "metrics"：上报至云监控的扩展指标，目前支持的扩展指标类别包含："cpu", "disk-io", "netstat"
+    * "namespace"：命名空间包含自定义的扩展指标，不同命名空间的指标彼此独立（长度不可超过255字节，只允许英文、数字、下划线_、点., [0-9][a-z] [A-Z] [. _ ]）
+    * "metrics"：上报至云监控的扩展指标，目前支持的扩展指标类别包含："cpu", "disk-io", "netstat" 
 ```
 {
   "agent": {
@@ -384,17 +440,6 @@
       kill [pid]       
     `
   
-## 监控数据说明
-* 监控数据采集周期为10s，最小展示间隔为1min。
-* 不同指标的默认聚合方式不同，可在监控图中查看各指标的聚合方式。
-* 统计周期默认支持1小时、6小时、12小时、1天、3天、7天及14天，此外还支持您设置统计周期，最短为1分钟最长为一个月。
-* 不同统计周期监控值会做对应聚合，例如6小时统计周期情况下，监控图上间隔5分钟显示一个监控值，该监控值为对应统计周期内采集值的聚合，当前仅支持以默认聚合方式查询。
-* 监控数据最长保存30天，用户在控制台可直接可以观察30天的监控数据。
 
-## 其他
-* bps表示每秒传输bit数，ps为per second，意同/s；
-* Bps表示每秒传输Byte数，ps为per second，意同/s；
-* Kbps=1000bps，KBps=1000Bps。
-  
  
    
