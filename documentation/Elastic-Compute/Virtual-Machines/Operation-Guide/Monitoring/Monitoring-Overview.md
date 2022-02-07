@@ -4,7 +4,7 @@
 ## 监控指标
 京东云监控服务为您提供主机实例的CPU、内存、磁盘、网络等类型的监控指标，其中云主机监控指标分为基础指标以及扩展指标：
 * 基础指标具有较高的通用性，能满足您平时对监控数据的需求，上报的指标类型不支持调整 
-* 扩展指标具有更详尽的信息，您可以根据不同业务场景的需求，自定义上报的指标类型，您可以参照[下方文档](monitoring-overview#user-content-2)进行配置
+* 扩展指标具有更详尽的信息，您可以根据不同业务场景的需求，自定义上报的指标类型，您可以参照[下方文档](monitoring-overview#user-content-1)进行配置
 
 ### 基础指标 
 <table>
@@ -374,9 +374,6 @@
     </tr>
 	</body>
 </table>
- 
- 
-<div id="user-content-1"></div>
 
 ## 监控插件安装说明
 
@@ -394,6 +391,9 @@
   `
   wmic process where caption="MonitorPlugin.exe" get caption,commandline /value
   `
+  
+<div id="user-content-1"></div>
+
 ## 扩展指标上报配置说明
 扩展指标包含更加详尽的信息，能够满足您在不同场景下的监控需求，您可以按照下方步骤进行操作，确保数据能够正常采集并且上报
   * 确认JCS-Agent组件版本不低于'3.0.1086'
