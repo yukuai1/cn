@@ -83,49 +83,49 @@
 	<td> 磁盘读吞吐量</td>
 	<td> Bps </td>
         <td> 磁磁盘每秒读取的字节数</td>
-        <td> devName <br>* Linux：'devName'='/vda','/vdb1', ...<br>* Windows：‘devName’='C','D', ...<br></td>   
+        <td> devName <br>* Linux:'devName'='/vda','/vdb1', ...<br>* Windows:‘devName’='C','D', ...<br></td>   
     </tr>
     <tr>
         <td>vm.disk.dev.bytes.write</td>
 	<td>磁盘写吞吐量</td>
 	<td> Bps </td>
         <td> 磁盘每秒写入的字节数</td>
-        <td> devName <br>* Linux：'devName'='/vda','/vdb1', ...<br>* Windows：‘devName’='C','D', ...<br></td> 
+        <td> devName <br>* Linux:'devName'='/vda','/vdb1', ...<br>* Windows:‘devName’='C','D', ...<br></td> 
     </tr>	
     <tr>
         <td> vm.disk.dev.io.read</td>
         <td> 磁盘读IOPS </td>
         <td> Count/s</td> 
         <td> 磁盘每秒读请求数量</td>
-        <td> devName <br>* Linux：'devName'='/vda','/vdb1', ...<br>* Windows：‘devName’='C','D', ...<br></td>
+        <td> devName <br>* Linux:'devName'='/vda','/vdb1', ...<br>* Windows:‘devName’='C','D', ...<br></td>
     </tr> 
     <tr>
         <td> vm.disk.dev.io.write</td>
         <td> 磁盘写IOPS </td>
         <td>Count/s</td> 
         <td>磁盘每秒写请求数量</td>
-        <td>devName <br>* Linux：'devName'='/vda','/vdb1', ...<br>* Windows：‘devName’='C','D', ...<br></td>
+        <td>devName <br>* Linux:'devName'='/vda','/vdb1', ...<br>* Windows:‘devName’='C','D', ...<br></td>
     </tr>
     <tr>
         <td>vm.disk.dev.used</td>
         <td> 磁盘使用率 </td>
         <td>%</td>
         <td>磁盘已使用空间容量</td> 
-        <td> mountPoint <br>* Linux：'mountPoint'='/','/mnt', ...<br>* Windows：‘mountPoint’='C','D', ...<br></td>
+        <td> mountPoint <br>* Linux:'mountPoint'='/','/mnt', ...<br>* Windows:‘mountPoint’='C','D', ...<br></td>
     </tr>
     <tr>
         <td> vm.disk.dev.used.bytes</td>
         <td>磁盘使用量 </td>
         <td>Bytes </td> 
         <td>磁盘已使用空间容量</td>
-         <td> mountPoint <br>* Linux：'mountPoint'='/','/mnt', ...<br>* Windows：‘mountPoint’='C','D', ...<br></td>
+         <td> mountPoint <br>* Linux:'mountPoint'='/','/mnt', ...<br>* Windows:‘mountPoint’='C','D', ...<br></td>
     </tr>
     <tr>
         <td> vm.disk.dev.inode.used</td>
         <td>磁盘inode使用率</td>
         <td>%</td> 
         <td>磁盘文件系统inode使用百分比</td>
-         <td> mountPoint <br>* Linux：'mountPoint'='/','/mnt', ...<br>* Windows：‘mountPoint’='C','D', ...<br></td>
+         <td> mountPoint <br>* Linux:'mountPoint'='/','/mnt', ...<br>* Windows:‘mountPoint’='C','D', ...<br></td>
     </tr>
     <tr>
         <td rowspan="7">网络</td>
@@ -147,35 +147,35 @@
         <td>网络入带宽</td>
         <td>bps</td> 
         <td>网卡每秒接收的比特数（网卡整体数据指标，不分区内外网）</td>
-        <td>devName <br>* Linux/Windows：'devName'='eth0','eth1', ...</td>
+        <td>devName <br>* Linux/Windows:'devName'='eth0','eth1', ...</td>
     </tr>
     <tr>
         <td> vm.network.dev.bytes.out </td>
         <td>网络出带宽</td>
         <td>bps</td> 
         <td> 网卡每秒发送的比特数（网卡整体数据指标，不分区内外网）</td>
-        <td>devName <br>* Linux/Windows：'devName'='eth0','eth1', ...</td>
+        <td>devName <br>* Linux/Windows:'devName'='eth0','eth1', ...</td>
     </tr>
     <tr>
         <td>vm.network.dev.packets.in </td>
         <td> 网络入包量</td>
         <td>pps</td> 
         <td> 网卡每秒入包量（网卡整体数据指标，不分区内外网）</td>
-        <td>devName <br>* Linux/Windows：'devName'='eth0','eth1', ...</td>
+        <td>devName <br>* Linux/Windows:'devName'='eth0','eth1', ...</td>
     </tr>
     <tr>
         <td>vm.network.dev.packets.out </td>
         <td> 网络出包量 </td>
         <td>pps</td> 
         <td>网卡每秒出包量</td>
-        <td>devName <br>* Linux/Windows：'devName'='eth0','eth1', ...</td>
+        <td>devName <br>* Linux/Windows:'devName'='eth0','eth1', ...</td>
     </tr>
     <tr>
         <td>vm.netstat.tcp.established </td>
         <td> TCP连接数  </td>
         <td>Count</td> 
         <td>处于 ESTABLISHED 状态的 TCP 连接数量</td>
-        <td>无/td>
+        <td>无</td>
     </tr>
     <tr>
         <td rowspan="7">GPU</td>
@@ -183,49 +183,49 @@
         <td> GPU功耗   </td>
         <td>Wt</td> 
         <td>GPU功耗 </td>
-        <td>gpu_index <br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
+        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
     </tr>
     <tr>
         <td>vm.gpu.temperature</td>
         <td> GPU温度   </td>
         <td>℃</td> 
         <td>GPU温度 </td>
-        <td>gpu_index <br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
+        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
     </tr>
     <tr>
         <td>vm.gpu.util.gpu</td>
         <td> GPU核心使用率   </td>
         <td>%</td> 
         <td>GPU核心使用率 </td>
-        <td>gpu_index <br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
+        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
     </tr>
     <tr>
         <td>vm.gpu.util.encoder</td>
         <td> GPU编码器使用率   </td>
         <td>%</td> 
         <td>GPU编码器使用率 </td>
-        <td>gpu_index <br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
+        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
     </tr>
     <tr>
         <td>vm.gpu.util.decoder</td>
         <td> GPU解码器使用率   </td>
         <td>%</td> 
         <td>GPU解码器使用率 </td>
-        <td>gpu_index <br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
+        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
     </tr>	
     <tr>
         <td>vm.gpu.util.mem</td>
         <td> GPU内存使用率   </td>
         <td>%</td> 
         <td>GPU内存使用率 </td>
-        <td>gpu_index <br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
+        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
     </tr>	
     <tr>
         <td>vm.gpu.used.mem.bytes</td>
         <td> GPU内存使用量   </td>
         <td>Bytes</td> 
         <td>GPU内存使用量 </td>
-        <td>gpu_index <br>* Linux/Windows：'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
+        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’,’2’,’3’, ...<br></td>
     </tr>	
 	</tbody>
 </table> 
@@ -264,14 +264,14 @@
         <td>磁盘IO繁忙百分比</td>
         <td>%</td> 
         <td>磁盘IO繁忙百分比</td>
-        <td>devName <br>* Linux：'devName'='/vda','/vdb1', ...<br>* Windows：‘devName’='C','D', ...<br></td>
+        <td>devName <br>* Linux:'devName'='/vda','/vdb1', ...<br>* Windows:‘devName’='C','D', ...<br></td>
     </tr>
     <tr>
         <td> vm.disk.dev.io.await </td>
         <td>磁盘IO等待百分比</td>
         <td>%</td> 
         <td>磁盘IO等待百分比</td>
-        <td>devName <br>* Linux：'devName'='/vda','/vdb1', ...<br>* Windows：‘devName’='C','D', ...<br></td>
+        <td>devName <br>* Linux:'devName'='/vda','/vdb1', ...<br>* Windows:‘devName’='C','D', ...<br></td>
     </tr>
    <tr>
    	<td rowspan="6">TCP连接数</td>
