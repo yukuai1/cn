@@ -26,7 +26,7 @@
 
 2）、域名处填写您需要接入的备案域名。
 
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/New-Access-Without-Subject-cn-4.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220209/documentation/Domain-Name-%26-License/Image-Domain/add-1.png)
 
 ## 三、填写主体信息
 
