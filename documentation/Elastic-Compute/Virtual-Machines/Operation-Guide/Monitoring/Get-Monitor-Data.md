@@ -4,7 +4,7 @@
   * 京东云控制台云监控对应实例详情页
 
 ### 获取实例的扩展指标监控数据
-在[京东云控制台云监控的自定义监控页面][7]，您可以获取更加详尽的云主机实例信息，包括磁盘IO、TCP连接数等扩展指标数据，相关说明您可以参考[监控指标][8]
+在[京东云控制台云监控的自定义监控页面][7]，您可以获取更加详尽的云主机实例信息，包括磁盘IO、TCP连接数等扩展指标数据，相关说明您可以参考[监控指标][6]
 * “命名空间”对应您在配置文件“Extended.cfg”中自定义的参数"namespace" 
 * “监控指标”应您在配置文件中“Extended.cfg”中自定义的监控项"metrics"
 * “维度”包含您所选指标所对应的各个维度项，例如：
@@ -31,11 +31,8 @@
   [1]: https://cns-console.jdcloud.com/host/compute/list
   [2]: https://console.jdcloud.com/
   [3]: https://cms-console.jdcloud.com/serverMonitor
-  [4]: https://console.jdcloud.com/
-  [5]: https://console.jdcloud.com/
   [6]: https://docs.jdcloud.com/cn/virtual-machines/monitoring-overview
   [7]: https://cms-console.jdcloud.com/monitor/custom
-  [8]: https://docs.jdcloud.com/cn/virtual-machines/monitoring-overview
   [9]: https://docs.jdcloud.com/cn/monitoring/chart-view
   
   
