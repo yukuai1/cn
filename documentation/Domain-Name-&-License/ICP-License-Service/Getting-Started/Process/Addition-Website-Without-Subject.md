@@ -20,11 +20,8 @@
 
 2、 填写验证备案信息，根据实际信息选择填写，填写后点“验证”按钮进入下一步
 
-注：
-
-1）、证件号码处勾选“主体信息已经备案”;
-
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/Addition-Website-Without-Subject-cn-4.png)
+注：请注意勾选“主体信息已经备案”并填写正确的主体备案号;
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220209/documentation/Domain-Name-%26-License/Image-Domain/add-1.png)
 
 ## 三、填写主体信息
 
@@ -34,9 +31,9 @@
 
 ## 四、填写网站信息
 
-1、根据要求填写网站信息，每个网站只可填写1个域名且此域名是已备案成功的域名。
+1、根据要求填写网站信息，每个网站只可填写1个域名。
 
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/Addition-Website-Without-Subject-cn-6.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220209/documentation/Domain-Name-%26-License/Image-Domain/without-object-1.png)
 
 2、填写网站负责人信息，此负责人需完成后续备案拍照等工作，请根据实际情况填写，若网站负责人与主体负责人为同一人，可勾选“同主体负责人”，点“下一步”；如有多个网站提交申请，在填写完网站信息可单击“继续添加网站”页面。
 

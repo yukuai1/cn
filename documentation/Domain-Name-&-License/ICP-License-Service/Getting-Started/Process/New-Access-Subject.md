@@ -18,7 +18,7 @@
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/New-Access-Subject-cn-3.png)
 
-2、 请认真核对已备案成功主体信息是否有变更，若有变更信息需以提交工单的方式提交变更备案，若无变更，点击下一步。
+2、 请认真核对已备案成功主体信息是否有变更，若有变更信息需先做主体变更备案（请参考主体变更帮助文档）。
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/New-Access-Subject-cn-4.png)
 
@@ -26,7 +26,7 @@
 
 1、根据要求填写网站信息，每个网站只可填写1个域名且此域名是已备案成功的域名。
 
- ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/New-Access-Subject-cn-5.png)
+ ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220209/documentation/Domain-Name-%26-License/Image-Domain/with-object-add-1.png)
 
 2、填写网站负责人信息，此负责人需完成后续备案拍照等工作，请根据实际情况填写，若网站负责人与主体负责人为同一人，可勾选“同主体负责人”，点“下一步”；如有多个网站提交申请，在填写完网站信息可单击“继续添加网站”页面。
 
