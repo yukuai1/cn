@@ -2,9 +2,9 @@
 实例监控与报警为您提供实时实例监控管理服务，支持不同监控维度，在实例成功创建后即开始采集数据，以图表方式直观展现，方便您掌握实例资源使用情况、运行状态等信息，同时您可设置不同的报警规则，当触发该类条件后则触发报警通知，使您轻松定位故障。
 
 ## 监控指标
-京东云监控服务为您提供云主机实例的CPU、内存、磁盘、网络等类型的监控指标，其中云主机监控指标分为基础指标以及扩展指标：
+京东云为您提供云主机实例的CPU、内存、磁盘、网络等类型的监控指标，其中云主机监控指标分为基础指标和扩展指标：
 * **基础指标**具有较高的通用性，能满足您平时对监控数据的需求，上报的指标种类不支持调整，可在云主机详情页或 云监控-资源监控-云主机 下查看监控数据；
-* **扩展指标**是对基础指标的细节补充，可以满足某些特殊场景的监控需求，您需要按需自行配置上报的指标种类，此类指标会上报至 [云监控-自定义监控](https://docs.jdcloud.com/cn/monitoring/custom-monitoring-overview) 服务中，您可以参照 [下方文档](monitoring-overview#user-content-1) 进行配置，监控数据查看方式请参见 [获取实例监控数据](https://docs.jdcloud.com/cn/virtual-machines/get-monitor-data)。
+* **扩展指标**是对基础指标的细节补充，可以满足某些特殊场景的监控需求，您需要按需自行配置上报的指标种类，此类指标会上报至 [云监控-自定义监控](https://docs.jdcloud.com/cn/monitoring/custom-monitoring-overview) 服务中，您可以参照下方 [扩展指标配置说明](monitoring-overview#user-content-1) 进行配置，监控数据查看方式请参见 [获取实例监控数据](https://docs.jdcloud.com/cn/virtual-machines/get-monitor-data)。
 
 ### 基础指标 
 <table>
@@ -143,7 +143,7 @@
         <td>网络入带宽</td>
         <td>bps</td> 
         <td>网卡每秒接收的比特数</td>
-        <td rowspan="4">网卡：devName <br><li type='disc'>Linux/Windows：'devName'='eth0','eth1', ...</li><br>不区分内外网 </td>
+        <td rowspan="4">网卡：devName <br><li type='disc'>Linux/Windows：'devName'='eth0','eth1', ...</li> </td>
     </tr>
     <tr>
         <td> vm.network.dev.bytes.out </td>
@@ -176,7 +176,7 @@
         <td> GPU功耗   </td>
         <td>Wt</td> 
         <td>GPU功耗 </td>
-        <td rowspan="7">GPU卡：gpu_index <br><li type='disc'>Linux/Windows:'gpu_index'='0','1', ...</li><br></td>
+        <td rowspan="7">GPU卡：gpu_index <br><li type='disc'>Linux/Windows:'gpu_index'='0','1', ...</li></td>
     </tr>
     <tr>
         <td>vm.gpu.temperature</td>
@@ -233,17 +233,17 @@
     <tr>
     	<td rowspan="2">CPU</td>
         <td>vm.cpu.cores.user</td>
-	<td> 用户CPU使用率 </td>
+	<td> CPU使用率（user） </td>
         <td> % </td>
-        <td> cpu在用户态进程和低优先级进程的时间占cpu总运行时间的百分比<br>仅Linux系统有此组指标</td>    
+        <td> CPU在用户态进程和低优先级进程的时间百分比<br>仅Linux系统有此指标</td>    
 	<td> 实例 </td>
     </tr>
     <tr>
         <td>vm.cpu.cores.iowait</td>
-	<td> io cpu使用率</td>
+	<td> CPU使用率（iowait）</td>
         <td> % </td>
-        <td> 等待io操作的时间占cpu总运行时间的百分比<br>仅Linux系统有此组指标</td>    
-	<td>resourceId </td>
+        <td> CPU由于系统IO而处于等待状态的时间百分比<br>仅Linux系统有此指标</td>    
+	<td>实例</td>
     </tr>	  	  
       <tr>
 	<td rowspan="2">磁盘</td>
@@ -251,14 +251,13 @@
         <td>磁盘IO繁忙百分比</td>
         <td>%</td> 
         <td>磁盘IO繁忙百分比</td>
-        <td>devName <br>* Linux:'devName'='/vda','/vdb1', ...<br>* Windows:‘devName’='C','D', ...<br></td>
+        <td rowspan="2">设备名：devName <br><li type='disc'>Linux:'devName'='/vda','/vdb1', ...</li> <li type='disc'>Windows:‘devName’='C','D', ...</li><br> Linux系统如磁盘有分区，则按分区统计上报，若无分区则按磁盘统计上报；Windows系统均按盘符统计上报。</td>
     </tr>
     <tr>
         <td> vm.disk.dev.io.await </td>
         <td>磁盘IO等待百分比</td>
         <td>%</td> 
         <td>磁盘IO等待百分比</td>
-        <td>devName <br>* Linux:'devName'='/vda','/vdb1', ...<br>* Windows:‘devName’='C','D', ...<br></td>
     </tr>
    <tr>
    	<td rowspan="6">TCP连接数</td>
@@ -266,51 +265,119 @@
         <td> last_ack </td>
         <td>Count</td> 
         <td>处于last_ack状态下的TCP连接数量</td>
-        <td>resourceId</td>
+        <td>实例</td>
    </tr>	
      <tr>
         <td>vm.netstat.tcp.syn_recv </td>
         <td>  syn_recv </td>
         <td>Count</td> 
         <td>处于syn_recv状态下的TCP连接数</td>
-        <td>resourceId</td>
+        <td>实例</td>
    </tr>
      <tr>
         <td>vm.netstat.tcp.fin_wait1 </td>
         <td> fin_wait1 </td>
         <td>Count</td> 
         <td>处于fin_wait1状态下的TCP连接数量</td>
-        <td>resourceId</td>
+        <td>实例</td>
    </tr>
      <tr>
         <td>vm.netstat.tcp.fin_wait2 </td>
         <td> fin_wait2 </td>
         <td>Count</td> 
         <td>处于fin_wait2状态下的TCP连接数量</td>
-        <td>resourceId</td>
+        <td>实例</td>
    </tr>
    <tr>
         <td>vm.netstat.tcp.closing </td>
         <td> closing </td>
         <td>Count</td> 
         <td>处于closing状态下的TCP连接数量</td>
-        <td>resourceId</td>
+        <td>实例</td>
    </tr>
    <tr>
         <td>vm.netstat.tcp.time_wait </td>
         <td> time_wait</td>
         <td>Count</td> 
         <td>处于time_wait状态下的TCP连接数量</td>
-        <td>resourceId</td>
+        <td>实例</td>
    </tr>
 	</body>
 </table>
- 		
+
+<div id="user-content-1"></div>
+
+## 扩展指标配置说明
+您可以按照下方步骤配置扩展指标：
+  * 确认JCS-Agent组件版本不低于'3.0.1086'，如低于此版本请参考下方【监控插件安装说明】部分安装或更新插件。
+```
+    ps -ef|grep MonitorPlugin
+```
+  * 登录云主机，进入监控插件目录
+```
+    cd /usr/local/share/jcloud/agent/plugins/MonitorPlugin-[version]
+```
+  * 创建名称为“Extended.cfg”的配置文件，然后参考下方配置示例，根据需求自定义上报的监控指标，其中：
+    * "namespace"：为上报至云监控自定义监控的命名空间，可自定义。
+    > namespace长度不可超过255字节，只允许英文、数字、下划线_、点., [0-9][a-z] [A-Z] [. _ ]）。
+    * "metrics"：为上报至云监控的扩展指标，目前支持的扩展指标类别包扩："cpu", "disk-io", "netstat" 。
+```
+{
+	"agent": {
+		"namespace": "vm_extend_metric"
+	},
+	"metrics": {
+		"disk-io": {
+			"measurement-white-list": [
+				"vm.disk.dev.io.util",
+				"vm.disk.dev.io.await"
+			]
+		},
+		"netstat": {
+			"measurement-white-list": [
+				"vm.netstat.tcp.last_ack",
+				"vm.netstat.tcp.syn_recv",
+				"vm.netstat.tcp.fin_wait1",
+				"vm.netstat.tcp.fin_wait2",
+				"vm.netstat.tcp.closing",
+				"vm.netstat.tcp.time_wait",
+				"vm.netstat.tcp.retrans_segs"
+			]
+		},
+		"cpu": {
+			"measurement-white-list": [
+				"vm.cpu.cores.user",
+				"vm.cpu.cores.iowait"
+			]
+		}
+	}
+}
+```
+  * 重启监控插件（查找进程id，kill后插件将在5分钟内自动拉起），随后即以上述配置开始采集和上报扩展指标（插件升级期间基础指标可能存在短暂缺失）。
+```
+      ps -ef | grep -i MonitorPlugin  //查看监控进程id
+      kill [pid]  //指定进程id kill   
+```
+ ## 监控插件安装说明
+
+云主机监控数据的采集和上报依赖于官方镜像系统组件'JCS-Agent'中的'MonitorPlugin'插件，当前官方镜像均默认安装'ifrit'工具，实现对JCS-Agent的自动升级。
+如您基础指标或扩展指标监控数据缺失，可能是由于JCS-Agent/ifrit状态异常或版本过低，请确认JCS-Agent/ifrit状态及版本。
+
+> 注意：<br>
+> 'MonitorPlugin'插件版本需不低于“3.0.1086”才支持扩展指标的上报
+
+* 关于安装JCS-Agent及Ifrit，您可以参考：[官方镜像系统组件-'JCS-Agent'](https://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image#user-content-1)
+* JCS-Agent版本查看方式：
+  * Linux：` ps -ef|grep MonitorPlugin`
+  * Windows：`wmic process where caption="MonitorPlugin.exe" get caption,commandline /value`
+  
+ 
  ## 监控数据说明
-* 监控数据采集周期为10s，最小展示间隔为1min。
-* 不同指标的默认聚合方式不同，可在监控图中查看各指标的聚合方式。
-* 统计周期默认支持1小时、6小时、12小时、1天、3天、7天及14天，此外还支持您设置统计周期，最短为1分钟最长为一个月。
-* 不同统计周期监控值会做对应聚合，例如6小时统计周期情况下，监控图上间隔5分钟显示一个监控值，该监控值为对应统计周期内采集值的聚合，当前仅支持以默认聚合方式查询。
+* 名称中有“（Host）”字样的指标为云主机所在宿主机采集并上报，其余指标均为系统组件采集上报；
+* 所有网络监控指标均不区分内外网，即为内网+外网的整体数据；
+* 监控数据采集周期为10s，最小展示间隔为1min；
+* 不同指标的默认聚合方式不同，可在监控图中查看各指标的聚合方式；
+* 统计周期默认支持1小时、6小时、12小时、1天、3天、7天及14天，此外还支持您设置统计周期，最短为1分钟，最长为一个月。不同统计周期监控值会做对应聚合，例如6小时统计周期情况下，监控图上间隔5分钟显示一个监控值，该监控值为对应统计周期内采集值的聚合，当前仅支持以默认聚合方式查询；
 * 监控数据最长保存30天，用户在控制台可直接可以观察30天的监控数据。
 
 ## 监控指标单位
@@ -362,71 +429,14 @@
 	</body>
 </table>
 
-## 监控插件安装说明
 
-云主机监控数据的采集和上报依赖于官方镜像系统组件'JCS-Agent'中的'MonitorPlugin'插件，当前官方镜像均默认安装'ifrit'工具，实现对JCS-Agent的自动升级。
-
-如果您当前实例没有安装JCS-Agent，或是JCS-Agent版本过低不支持自动升级，请您检查是否卸载了早期系统组件cloud-init和QGA，确认后再安装ifrit（安装完成约10分钟，将自动安装最新版本的JCS-Agent）。
-
-* 关于安装Ifrit以及cloud-init和QGA的卸载，您可以参考：[官方镜像系统组件-JCS-Agent](https://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image#user-content-1)
-* JCS-Agent版本查看方式：
-  * Linux：
-  `
-   ps -ef|grep MonitorPlugin
-  `
-  * Windows：
-  `
-  wmic process where caption="MonitorPlugin.exe" get caption,commandline /value
-  `
   
-<div id="user-content-1"></div>
+## 相关参考
+[官方镜像系统组件](https://docs.jdcloud.com/cn/virtual-machines/default-agent-in-public-image)
 
-## 扩展指标上报配置说明
-扩展指标包含更加详尽的信息，能够满足您在不同场景下的监控需求，您可以按照下方步骤进行操作，确保数据能够正常采集并且上报
-  * 确认JCS-Agent组件版本不低于'3.0.1086'
-  `
-    ps -ef|grep MonitorPlugin
-  `
-  * 移至监控插件目录下
-  `
-    cd /usr/local/share/jcloud/agent/plugins/MonitorPlugin-[version]
-  `
-  * 创建名称为“Extended.cfg”的配置文件,您可以参考下方示例，根据需求自定义参数
-    * "namespace"：命名空间包含自定义的扩展指标，不同命名空间的指标彼此独立（长度不可超过255字节，只允许英文、数字、下划线_、点., [0-9][a-z] [A-Z] [. _ ]）
-    * "metrics"：上报至云监控的扩展指标，目前支持的扩展指标类别包含："cpu", "disk-io", "netstat" 
-```
-{
-  "agent": {
-   	"namespace":"vm_extend_metric" 
-  }, 
-  "metrics": {
-  	"disk-io": {"measurement-white-list": [
-		"vm.disk.dev.io.util", 
-		"vm.disk.dev.io.await" ]},
-  	"netstat": {"measurement-white-list": [
-		"vm.netstat.tcp.last_ack", 
-		"vm.netstat.tcp.syn_recv", 
-		"vm.netstat.tcp.fin_wait1", 
-		"vm.netstat.tcp.fin_wait2",
-		"vm.netstat.tcp.closing", 
-		"vm.netstat.tcp.time_wait", 
-		"vm.netstat.tcp.retrans_segs" ]}, 
-	  "cpu": {
-		"measurement-white-list": [
-			"vm.cpu.cores.user", 
-			"vm.cpu.cores.iowait" ]}}
-}
-```
-  * 重启监控插件，插件进程将在5分钟内自动拉起，并开始采集、上报扩展指标（插件升级期间基础指标可能存在短暂缺失）
-    * 查看监控进程id：
-    `
-      ps -ef | grep -i MonitorPlugin 
-    ` 
-    * 杀死进程：
-    `
-      kill [pid]       
-    `
-  
+[获取实例监控数据](https://docs.jdcloud.com/cn/virtual-machines/get-monitor-data)
+
+[云监控-自定义监控](https://docs.jdcloud.com/cn/monitoring/custom-monitoring-overview)
 
  
    
