@@ -2,9 +2,9 @@
 实例监控与报警为您提供实时实例监控管理服务，支持不同监控维度，在实例成功创建后即开始采集数据，以图表方式直观展现，方便您掌握实例资源使用情况、运行状态等信息，同时您可设置不同的报警规则，当触发该类条件后则触发报警通知，使您轻松定位故障。
 
 ## 监控指标
-京东云监控服务为您提供主机实例的CPU、内存、磁盘、网络等类型的监控指标，其中云主机监控指标分为基础指标以及扩展指标：
-* 基础指标具有较高的通用性，能满足您平时对监控数据的需求，上报的指标类型不支持调整 
-* 扩展指标具有更详尽的信息，您可以根据不同业务场景的需求，自定义上报的指标类型，您可以参照[下方文档](monitoring-overview#user-content-1)进行配置
+京东云监控服务为您提供云主机实例的CPU、内存、磁盘、网络等类型的监控指标，其中云主机监控指标分为基础指标以及扩展指标：
+* **基础指标**具有较高的通用性，能满足您平时对监控数据的需求，上报的指标种类不支持调整，可在云主机详情页或 云监控-资源监控-云主机 下查看监控数据；
+* **扩展指标**是对基础指标的细节补充，可以满足某些特殊场景的监控需求，您需要按需自行配置上报的指标种类，此类指标会上报至 [云监控-自定义监控](https://docs.jdcloud.com/cn/monitoring/custom-monitoring-overview) 服务中，您可以参照 [下方文档](monitoring-overview#user-content-1) 进行配置，监控数据查看方式请参见 [获取实例监控数据](https://docs.jdcloud.com/cn/virtual-machines/get-monitor-data)。
 
 ### 基础指标 
 <table>
@@ -15,7 +15,7 @@
         <th>指标中文名</th>
       	<th>单位</th>
       	<th>说明</th>
-        <th>维度</th>
+        <th>上报维度</th>
     </tr>
 	</thead>
 	<tbody>
@@ -25,28 +25,28 @@
 	<td>CPU使用率</td>
 	<td> % </td>
         <td> 非空闲vCPU所占的百分比</td>
-        <td> 无 </td>   
+        <td> 实例 </td>   
     </tr>
     <tr>
         <td>vm.avg.load1</td>
 	<td> CPU平均负载（1min）</td>
 	<td> 无 </td>    
-        <td> 1分钟内的系统平均负载<br>仅Linux系统有此组指标</td>
-        <td> 无</td>
+        <td> 1分钟内的系统平均负载<br>仅Linux系统有此指标</td>
+        <td> 实例</td>
     </tr>
     <tr>
         <td>vm.avg.load5</td>
 	<td> CPU平均负载（5min）</td>
 	<td> 无 </td>     
-        <td> 5分钟内的系统平均负载<br>仅Linux系统有此组指标</td>
-	<td> 无 </td>
+        <td> 5分钟内的系统平均负载<br>仅Linux系统有此指标</td>
+	<td> 实例 </td>
     </tr>
     <tr>
         <td>vm.avg.load15</td>
 	<td> CPU平均负载（15min）</td>
         <td> 无 </td>
-        <td> 15分钟内的系统平均负载<br>仅Linux系统有此组指标 </td>    
-	<td> 无</td>
+        <td> 15分钟内的系统平均负载<br>仅Linux系统有此指标 </td>    
+	<td> 实例</td>
     </tr>
     <tr>
         <td rowspan="2">内存</td>
@@ -54,128 +54,121 @@
 	<td>内存使用率</td>
 	<td> % </td>
         <td> 已用内存量占总内存总量百分比</td>
-        <td> 无 </td>   
+        <td> 实例 </td>   
     </tr>
     <tr>
         <td>vm.memory.used.bytes</td>
 	<td>内存使用量</td>
 	<td> Bytes </td>
-        <td> 系统已用内存情况</td>
-        <td> 无 </td>   
+        <td> 系统已用内存容量</td>
+        <td> 实例 </td>   
     </tr>
     <tr>
         <td rowspan="9">磁盘</td>
         <td>vm.disk.bytes.read</td>
-	<td>磁盘读吞吐量（Host）</td>
+	<td>磁盘读吞吐量（Host）<sup>*</sup></td>
 	<td> Bps </td>
         <td> 全部磁盘每秒读取的字节数</td>
-        <td> 无 </td>   
+        <td> 实例 </td>   
     </tr>
     <tr>
         <td>vm.disk.bytes.write</td>
-	<td>磁盘写吞吐量（Host）</td>
+	<td>磁盘写吞吐量（Host）<sup>*</sup></td>
 	<td> Bps </td>
         <td> 全部磁盘每秒写入的字节数</td>
-        <td> 无 </td>   
+        <td> 实例 </td>   
     </tr>
     <tr>
         <td>vm.disk.dev.bytes.read</td>
 	<td> 磁盘读吞吐量</td>
 	<td> Bps </td>
-        <td> 磁磁盘每秒读取的字节数</td>
-        <td> devName <br>* Linux:'devName'='/vda','/vdb1', ...<br>* Windows:‘devName’='C','D', ...<br></td>   
+        <td> 磁盘每秒读取的字节数</td>
+        <td rowspan="4"> 设备文件名：devName <br><li type='disc'>Linux：'devName'='/vda','/vdb1', ...</li> <li type='disc'>Windows：‘devName’='C','D', ...</li><br> Linux系统如磁盘有分区，则按分区统计上报，若无分区则按磁盘统计上报；Windows系统均按盘符统计上报。</td>
     </tr>
     <tr>
         <td>vm.disk.dev.bytes.write</td>
 	<td>磁盘写吞吐量</td>
 	<td> Bps </td>
         <td> 磁盘每秒写入的字节数</td>
-        <td> devName <br>* Linux:'devName'='/vda','/vdb1', ...<br>* Windows:‘devName’='C','D', ...<br></td> 
     </tr>	
     <tr>
         <td> vm.disk.dev.io.read</td>
         <td> 磁盘读IOPS </td>
         <td> Count/s</td> 
         <td> 磁盘每秒读请求数量</td>
-        <td> devName <br>* Linux:'devName'='/vda','/vdb1', ...<br>* Windows:‘devName’='C','D', ...<br></td>
     </tr> 
     <tr>
         <td> vm.disk.dev.io.write</td>
         <td> 磁盘写IOPS </td>
         <td>Count/s</td> 
         <td>磁盘每秒写请求数量</td>
-        <td>devName <br>* Linux:'devName'='/vda','/vdb1', ...<br>* Windows:‘devName’='C','D', ...<br></td>
     </tr>
     <tr>
         <td>vm.disk.dev.used</td>
         <td> 磁盘使用率 </td>
         <td>%</td>
         <td>磁盘已使用空间容量</td> 
-        <td> mountPoint <br>* Linux:'mountPoint'='/','/mnt', ...<br>* Windows:‘mountPoint’='C','D', ...<br></td>
+        <td rowspan="3"> 挂载点：mountPoint <br><li type='disc'>Linux:'mountPoint'='/','/mnt', ...</li> <li type='disc'>Windows:‘mountPoint’='C','D', ...</li><br> Linux系统按挂载点统计上报；Windows系统按盘符统计上报
+仅Linux系统提供'磁盘inode使用率'指标</td>
     </tr>
     <tr>
         <td> vm.disk.dev.used.bytes</td>
         <td>磁盘使用量 </td>
         <td>Bytes </td> 
         <td>磁盘已使用空间容量</td>
-         <td> mountPoint <br>* Linux:'mountPoint'='/','/mnt', ...<br>* Windows:‘mountPoint’='C','D', ...<br></td>
     </tr>
     <tr>
         <td> vm.disk.dev.inode.used</td>
         <td>磁盘inode使用率</td>
         <td>%</td> 
-        <td>磁盘文件系统inode使用百分比</td>
-         <td> mountPoint <br>* Linux:'mountPoint'='/','/mnt', ...<br>* Windows:‘mountPoint’='C','D', ...<br></td>
+        <td>磁盘文件系统inode使用百分比<br>仅Linux系统有此指标</td>
     </tr>
     <tr>
         <td rowspan="7">网络</td>
         <td>vm.network.bytes.incoming </td>
-        <td>网络入带宽（Host）</td>
+        <td>网络入带宽（Host）<sup>*</sup></td>
         <td>bps</td> 
-        <td>全部网卡每秒接收的比特数（为实例整体网络带宽，不分区网卡和内外网）</td>
-        <td>无</td>
+        <td>全部网卡每秒接收的比特数</td>
+        <td>实例</td>
     </tr>
     <tr>
         <td>vm.network.bytes.outgoing</td>
-        <td> 网络出带宽（Host）</td>
+        <td> 网络出带宽（Host）<sup>*</sup></td>
         <td>bps</td> 
-        <td>全部网卡每秒接收的比特数（为实例整体网络带宽，不分区网卡和内外网</td>
-        <td>无</td>
+        <td>全部网卡每秒接收的比特数</td>
+        <td>实例</td>
     </tr>
     <tr>
         <td> vm.network.dev.bytes.in </td>
         <td>网络入带宽</td>
         <td>bps</td> 
-        <td>网卡每秒接收的比特数（网卡整体数据指标，不分区内外网）</td>
-        <td>devName <br>* Linux/Windows:'devName'='eth0', ...</td>
+        <td>网卡每秒接收的比特数</td>
+        <td rowspan="4">网卡：devName <br><li type='disc'>Linux/Windows：'devName'='eth0','eth1', ...</li><br>不区分内外网 </td>
     </tr>
     <tr>
         <td> vm.network.dev.bytes.out </td>
         <td>网络出带宽</td>
         <td>bps</td> 
-        <td> 网卡每秒发送的比特数（网卡整体数据指标，不分区内外网）</td>
-        <td>devName <br>* Linux/Windows:'devName'='eth0', ...</td>
+        <td> 网卡每秒发送的比特数</td>
     </tr>
     <tr>
         <td>vm.network.dev.packets.in </td>
         <td> 网络入包量</td>
         <td>pps</td> 
-        <td> 网卡每秒入包量（网卡整体数据指标，不分区内外网）</td>
-        <td>devName <br>* Linux/Windows:'devName'='eth0', ...</td>
+        <td> 网卡每秒入包量</td>
     </tr>
     <tr>
         <td>vm.network.dev.packets.out </td>
         <td> 网络出包量 </td>
         <td>pps</td> 
         <td>网卡每秒出包量</td>
-        <td>devName <br>* Linux/Windows:'devName'='eth0', ...</td>
     </tr>
     <tr>
         <td>vm.netstat.tcp.established </td>
         <td> TCP连接数  </td>
         <td>Count</td> 
         <td>处于 ESTABLISHED 状态的 TCP 连接数量</td>
-        <td>无</td>
+        <td>实例</td>
     </tr>
     <tr>
         <td rowspan="7">GPU</td>
@@ -183,49 +176,43 @@
         <td> GPU功耗   </td>
         <td>Wt</td> 
         <td>GPU功耗 </td>
-        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’, ...<br></td>
+        <td rowspan="7">GPU卡：gpu_index <br><li type='disc'>Linux/Windows:'gpu_index'='0','1', ...</li><br></td>
     </tr>
     <tr>
         <td>vm.gpu.temperature</td>
         <td> GPU温度   </td>
         <td>℃</td> 
         <td>GPU温度 </td>
-        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’, ...<br></td>
     </tr>
     <tr>
         <td>vm.gpu.util.gpu</td>
         <td> GPU核心使用率   </td>
         <td>%</td> 
         <td>GPU核心使用率 </td>
-        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’, ...<br></td>
     </tr>
     <tr>
         <td>vm.gpu.util.encoder</td>
         <td> GPU编码器使用率   </td>
         <td>%</td> 
         <td>GPU编码器使用率 </td>
-        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’, ...<br></td>
     </tr>
     <tr>
         <td>vm.gpu.util.decoder</td>
         <td> GPU解码器使用率   </td>
         <td>%</td> 
         <td>GPU解码器使用率 </td>
-        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’, ...<br></td>
     </tr>	
     <tr>
         <td>vm.gpu.util.mem</td>
         <td> GPU内存使用率   </td>
         <td>%</td> 
         <td>GPU内存使用率 </td>
-        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’, ...<br></td>
     </tr>	
     <tr>
         <td>vm.gpu.used.mem.bytes</td>
         <td> GPU内存使用量   </td>
         <td>Bytes</td> 
         <td>GPU内存使用量 </td>
-        <td>gpu_index <br>* Linux/Windows:'gpu_index‘=’0’,’1’, ...<br></td>
     </tr>	
 	</tbody>
 </table> 
@@ -239,7 +226,7 @@
 	<th>指标中文名</th>
 	<th>单位</th>
 	<th>说明</th>
-	<th>维度</th>
+	<th>上报维度</th>
   </tr>
 	  </thead>
 	  <tbody>
@@ -249,7 +236,7 @@
 	<td> 用户CPU使用率 </td>
         <td> % </td>
         <td> cpu在用户态进程和低优先级进程的时间占cpu总运行时间的百分比<br>仅Linux系统有此组指标</td>    
-	<td> resourceId </td>
+	<td> 实例 </td>
     </tr>
     <tr>
         <td>vm.cpu.cores.iowait</td>
