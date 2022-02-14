@@ -14,9 +14,13 @@
 2. 找到您所需要查看监控数据的实例，点击实例名称进入实例详情页。
 3. 点击 **监控** 标签切换至监控选项，及可查看实例监控数据。
 
+![](https://github.com/nick889547/cn/blob/branch-01/image/Elastic-Compute/Virtual-Machine/%E4%B8%BB%E6%9C%BA%E5%AE%9E%E4%BE%8B%E7%9B%91%E6%8E%A7%E9%A1%B5.png?raw=true)
+
 #### 云监控-资源监控-云主机监控页查看
 1. 访问 [云监控-云主机监控控制台][3]，或访问 [京东云控制台][2] 点击左侧导航栏 **云监控-资源监控-云主机** 进入云主机监控页。
 2. 找到您所需要查看监控数据的实例，点击操作项内的 **监控图表** 进入监控详情页，即可获取实例监控数据，同时还可设置报警规则。
+
+![](https://github.com/nick889547/cn/blob/branch-01/image/Elastic-Compute/Virtual-Machine/%E4%BA%91%E4%B8%BB%E6%9C%BA%E7%9B%91%E6%8E%A7%E5%AE%9E%E4%BE%8B%E9%A1%B5.png?raw=true)
 
 ### 扩展指标
 #### 云监控-自定义监控查看
@@ -32,6 +36,7 @@
       * 磁盘IO指标可指定'devName'（磁盘分区）查询，同时选择多个'devName'会在图表中以不同颜色区分展示，如勾选“聚合”将按照所选的“分组聚合方式”对指标进行聚合。如缺省'devName'将以“分组聚合方式”对该维度下的多条数据进行聚合。
 3. 可切换或指定查询时间，在右侧查看指标对应的监控趋势图。
 
+![](https://github.com/nick889547/cn/blob/branch-01/image/Elastic-Compute/Virtual-Machine/%E8%87%AA%E5%AE%9A%E4%B9%89%E7%9B%91%E6%8E%A7%E9%A1%B5%E9%9D%A2.png?raw=true)
 
 
   [1]: https://cns-console.jdcloud.com/host/compute/list
