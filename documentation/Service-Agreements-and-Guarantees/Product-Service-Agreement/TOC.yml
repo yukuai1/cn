@@ -479,5 +479,7 @@ items:
   - name: 实名认证服务条款
     href: Real-Name-Authentication.md
   - name: 实名认证服务等级协议（SLA）
-    href: Real-Name-Authentication-SLA.md 
+    href: Real-Name-Authentication-SLA.md
+  - name: 云电脑服务条款
+    href: Cloud-Computer-Of-Service.md
     
