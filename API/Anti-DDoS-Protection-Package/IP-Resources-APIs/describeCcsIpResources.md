@@ -24,33 +24,33 @@ https://antipro.jdcloud-api.com/v1/regions/{regionId}/ccsIpResources
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](describeccsipresources#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](describeccsipresources#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](describeccsipresources#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dataList**|IpResource[]| |
+|**dataList**|[IpResource[]](describeccsipresources#ipresource)| |
 |**currentCount**|Integer|当前页数量|
 |**totalCount**|Integer|总数|
 |**totalPage**|Integer|总页数|
-### IpResource
+### <div id="ipresource">IpResource</div>
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|公网 IP 所在区域|
-|**resourceType**|Integer|公网 IP 类型或绑定资源类型. <br>- 0: 未知类型,<br>- 1: 弹性公网 IP(IP 为弹性公网 IP, 绑定资源类型未知),<br>- 10: 弹性公网 IP(IP 为弹性公网 IP, 但未绑定资源),<br>- 11: 云主机,<br>- 12: 负载均衡,<br>- 13: 原生容器实例,<br>- 14: 原生容器 Pod,<br>- 2: 云物理服务器公网 IP,<br>- 4: 托管区公网 IP|
+|**resourceType**|Integer|公网 IP 类型或绑定资源类型. <br><br>- 0: 未知类型<br><br>- 1: 弹性公网 IP(IP 为弹性公网 IP, 绑定资源类型未知)<br><br>- 10: 弹性公网 IP(IP 为弹性公网 IP, 但未绑定资源)<br><br>- 11: 云主机<br><br>- 12: 负载均衡<br><br>- 13: 原生容器实例<br><br>- 14: 原生容器 Pod<br><br>- 2: 云物理服务器公网 IP<br><br>- 3: Web应用防火墙 IP<br><br>- 4: 托管区公网 IP<br>|
 |**ip**|String|公网 IP 地址|
 |**bandwidth**|Integer|带宽上限, 单位 Mbps|
 |**cleanThresholdBps**|Long|请求流量清洗触发值, 单位 bps/s|

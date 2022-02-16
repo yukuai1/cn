@@ -14,7 +14,7 @@ https://cdn.jdcloud-api.com/v1/task
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**taskType**|String|True| |刷新预热类型,(url:url刷新,dir:目录刷新,prefetch:预热)|
+|**taskType**|String|True| |刷新预热类型,(url:url刷新,dir:目录刷新,prefetch:预热)，中国境外/全球加速域名暂不支持预热功能|
 |**urls**|String[]|True| | |
 
 
@@ -29,6 +29,7 @@ https://cdn.jdcloud-api.com/v1/task
 |---|---|---|
 |**errorCount**|Integer|失败任务的个数|
 |**taskId**|String|任务的id|
+|**includeOversea**|Boolean|预热时urls中是否包含全球或海外域名，默认为false，境外不支持预热|
 
 ## 返回码
 |返回码|描述|

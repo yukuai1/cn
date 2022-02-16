@@ -5,7 +5,7 @@
 
 I/O性能：最高提供15000随机读写IOPS、150MBps吞吐性能；
 
-最大容量：单块通用型SSD云硬盘最大提供4000GB的存储空间；
+最大容量：单块通用型SSD云硬盘最大提供16000GB的存储空间；
 
 应用场景：
 
@@ -16,7 +16,7 @@ I/O性能：最高提供15000随机读写IOPS、150MBps吞吐性能；
 
 I/O性能：最高提供32000随机读写IOPS、150MBps吞吐性能；
 
-最大容量：单块性能型SSD云硬盘最大提供4000GB的存储空间；
+最大容量：单块性能型SSD云硬盘最大提供16000GB的存储空间；
 
 应用场景：
 
@@ -24,15 +24,15 @@ I/O性能：最高提供32000随机读写IOPS、150MBps吞吐性能；
 - 适用于对数据可靠性要求高的I/O密集型核心业务场景。
 
 
-![ app_scenario_001 ](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/CloudDisk/Application-Scenarios/app_scenario_001.png)
+![ app_scenario_001 ](../../../../image/Elastic-Compute/CloudDisk/app_scenario_001.jpg)
 
 
 **容量型HDD云硬盘**
 
 
-I/O性能：最高提供500随机读写IOPS、80MBps吞吐性能；
+I/O性能：最高提供500随机读写IOPS、80MBps吞吐性能，因其物理设备属性，不能保障稳定提供该性能；
 
-最大容量：单块容量型HDD云硬盘最大提供4000GB的存储空间；
+最大容量：单块容量型HDD云硬盘最大提供16000GB的存储空间；
 
 应用场景：
 
@@ -40,5 +40,5 @@ I/O性能：最高提供500随机读写IOPS、80MBps吞吐性能；
 - 适用于web服务器，大容量，事务性处理较少的应用；
 - 适用于大文件顺序读写、冷数据备份等归档存储。
 
-![ app_scenario_002 ](https://github.com/jdcloudcom/cn/blob/edit/image/Elastic-Compute/CloudDisk/Application-Scenarios/app_scenario_002.png)
+![ app_scenario_002 ](../../../../image/Elastic-Compute/CloudDisk/app_scenario_002.jpg)
 

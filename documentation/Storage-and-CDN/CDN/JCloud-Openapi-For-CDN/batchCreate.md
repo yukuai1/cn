@@ -14,7 +14,6 @@ https://cdn.jdcloud-api.com/v1/domain:batchCreate
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**x-jdcloud-channel**|String|False|cdn|域名来源cdn/cdn,video视频云|
 |**domains**|String[]|True| | |
 |**sourceType**|String|True| |回源类型只能是[ips,domain,oss]中的一种|
 |**cdnType**|String|True| |点播域名的类型只能是[vod,download,web]中的一种|
@@ -30,13 +29,13 @@ https://cdn.jdcloud-api.com/v1/domain:batchCreate
 |**ipSource**|[IpSourceInfo[]](#ipsourceinfo)|False| | |
 |**domainSource**|[DomainSourceInfo[]](#domainsourceinfo)|False| | |
 |**ossSource**|String|False| | |
-|**accelerateRegion**|String|False| |加速区域 (mainLand:中国大陆，nonMainLand:海外加港澳台，all:全球)默认为中国大陆|
+|**accelerateRegion**|String|False| |加速区域 (mainland:中国大陆，nonMainland:海外加港澳台，all:全球)默认为中国大陆|
 
 ### <div id="DomainSourceInfo">DomainSourceInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**priority**|Integer|True| |优先级（1-10）|
-|**sourceHost**|String|False| |回源host|
+|**sourceHost**|String|False| |自定义回源host，仅中国境内加速域名可配置|
 |**domain**|String|True| |回源域名|
 ### <div id="IpSourceInfo">IpSourceInfo</div>
 |名称|类型|是否必需|默认值|描述|

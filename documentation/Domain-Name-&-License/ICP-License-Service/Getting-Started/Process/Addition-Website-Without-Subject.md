@@ -1,16 +1,16 @@
 # 新增网站（京东无主体）
 
-###### 新增网站（京东无主体）定义：主体已通过其他服务商进行过备案，现有新的网站托管到京东智联云服务器上，需在京东智联云提交新的网站及域名备案申请。
+###### 新增网站（京东无主体）定义：主体已通过其他服务商进行过备案，现有新的网站托管到京东云服务器上，需在京东云提交新的网站及域名备案申请。
 
 ## 一、登录备案系统
 
-1、打开京东智联云官网[www.jcloud.com](http://www.jcloud.com)打开后点击右上方“备案”
+1、打开京东云官网[www.jcdloud.com](http://www.jdcloud.com)打开后点击右上方“备案”
 
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/Addition-Website-Without-Subject-cn-1.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200220/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/zmc-image_ICP-License-Service_Introduction-cn-shouyedatu.png)
 
 2、显示登录页面，选择您可登录的方式登录系统
 
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/Addition-Website-Without-Subject-cn-2.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20200220/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/zmc-image_ICP-License-Service_Introduction-cn-login.png)
 
 ## 二、填写验证备案类型信息
 
@@ -20,11 +20,8 @@
 
 2、 填写验证备案信息，根据实际信息选择填写，填写后点“验证”按钮进入下一步
 
-注：
-
-1）、证件号码处勾选“主体信息已经备案”;
-
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/Addition-Website-Without-Subject-cn-4.png)
+注：请注意勾选“主体信息已经备案”并填写正确的主体备案号;
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220209/documentation/Domain-Name-%26-License/Image-Domain/add-1.png)
 
 ## 三、填写主体信息
 
@@ -34,9 +31,9 @@
 
 ## 四、填写网站信息
 
-1、根据要求填写网站信息，每个网站只可填写1个域名且此域名是已备案成功的域名。
+1、根据要求填写网站信息，每个网站只可填写1个域名。
 
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/Addition-Website-Without-Subject-cn-6.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220209/documentation/Domain-Name-%26-License/Image-Domain/without-object-1.png)
 
 2、填写网站负责人信息，此负责人需完成后续备案拍照等工作，请根据实际情况填写，若网站负责人与主体负责人为同一人，可勾选“同主体负责人”，点“下一步”；如有多个网站提交申请，在填写完网站信息可单击“继续添加网站”页面。
 
@@ -46,11 +43,11 @@
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/Addition-Website-Without-Subject-cn-8.png)
 
-进行浏览备案信息页，查看填写的备案信息是否有错误，若有需要修改地方可点“编辑”修改，若没有问题，勾选下方的”我已阅读并同意《协助更改备案信息服务在线服务条款不》”，提交备案信息
+进行浏览备案信息页，查看填写的备案信息是否有错误，若有需要修改地方可点“编辑”修改，若没有问题，勾选下方的”我已阅读并同意《协助更改备案信息服务在线服务条款》”，提交备案信息
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/Addition-Website-Without-Subject-cn-9.png)
 
-提交信息后等待京东智联云初审审核。
+提交信息后等待京东云初审审核。
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/Addition-Website-Without-Subject-cn-10.png)
 
@@ -60,9 +57,9 @@
 
 ### 当面核验拍照流程
 
-1、 初审通过后, 登录京东智联云备案系统，办理网站负责人拍照核验。
+1、 初审通过后, 登录京东云备案系统，办理网站负责人拍照核验。
 
-如无京东智联云幕布，请点“申请邮寄幕布”按钮。填写邮寄地址，京东智联云会将幕布邮寄至此地址（地址必须为中国大陆境内地址）。收到幕布后，自行拍照并上传照片进行审核（拍照前请先查看拍照说明，并避免身着红色或蓝色上衣进行拍照）。
+如无京东云幕布，请点“申请邮寄幕布”按钮。填写邮寄地址，京东云会将幕布邮寄至此地址（地址必须为中国大陆境内地址）。收到幕布后，自行拍照并上传照片进行审核（拍照前请先查看拍照说明，并避免身着红色或蓝色上衣进行拍照）。
 
 如有京东智云幕布并已拍照，请直接**上传照片**。
 
@@ -72,7 +69,7 @@ a)   拍照人与网站负责人必须为同一人；
 
 b)   负责人需站在背景幕布中间位置，仅拍上半身即可；
 
-c)   整个背景画布必须是京东智联云画布，幕布为蓝色且字迹清晰；
+c)   整个背景画布必须是京东云画布，幕布为蓝色且字迹清晰；
 
 d)   负责人着装需要符合当季节（例如：冬天不能穿半袖衣服拍照）。
 
@@ -80,11 +77,11 @@ d)   负责人着装需要符合当季节（例如：冬天不能穿半袖衣服
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/Addition-Website-Without-Subject-cn-13.png)
 
-2、照片通过审核后，京东智联云将在 1 个工作日内将您的备案信息提交至通信管理局审核
+2、照片通过审核后，京东云将在 1 个工作日内将您的备案信息提交至通信管理局审核
 
 ![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/Addition-Website-Without-Subject-cn-14.png)
 
-管局审核结果将以短信及邮件形式通知。您也可以登录京东智联云备案系统主页查看您的备案信息情况。
+管局审核结果将以短信及邮件形式通知。您也可以登录京东云备案系统主页查看您的备案信息情况。
 
 ### 幕布申请流程
 
