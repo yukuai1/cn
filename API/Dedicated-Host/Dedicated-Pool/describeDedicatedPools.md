@@ -38,7 +38,7 @@ https://dh.jdcloud-api.com/v1/regions/{regionId}/dedicatedPools
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](#Result)| |
 |**requestId**|String| |
 
 ### <div id="Result">Result</div>
@@ -54,9 +54,9 @@ https://dh.jdcloud-api.com/v1/regions/{regionId}/dedicatedPools
 |**dedicatedHostType**|String|专有资源池支持的机型|
 |**description**|String|专有资源池描述|
 |**az**|String[]|专有资源池选定的AZ列表|
-|**capacity**|[ResourceCapacity](#resourcecapacity)|专有资源池资源使用信息|
+|**capacity**|[ResourceCapacity](#ResourceCapacity)|专有资源池资源使用信息|
 |**supportedInstanceType**|String[]|专有宿主机支持的云主机实例规格|
-|**dedicatedHosts**|[DedicatedHostsBreif](#dedicatedhostsbreif)|专有资源池下的专有宿主机简要信息|
+|**dedicatedHosts**|[DedicatedHostsBreif](#DedicatedHostsBreif)|专有资源池下的专有宿主机简要信息|
 |**instanceIds**|String[]|专有资源池中的云主机ID列表|
 |**createTime**|String|创建时间|
 ### <div id="DedicatedHostsBreif">DedicatedHostsBreif</div>
