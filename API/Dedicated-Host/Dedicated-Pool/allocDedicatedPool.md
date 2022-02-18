@@ -33,7 +33,7 @@ https://dh.jdcloud-api.com/v1/regions/{regionId}/dedicatedPools
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](#Result)| |
 |**requestId**|String| |
 
 ### <div id="Result">Result</div>
