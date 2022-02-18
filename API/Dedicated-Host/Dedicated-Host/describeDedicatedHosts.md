@@ -38,7 +38,7 @@ https://dh.jdcloud-api.com/v1/regions/{regionId}/dedicatedHosts
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](#Result)| |
 |**requestId**|String| |
 
 ### <div id="Result">Result</div>
@@ -58,9 +58,9 @@ https://dh.jdcloud-api.com/v1/regions/{regionId}/dedicatedHosts
 |**dedicatedPoolId**|String|专有宿主机所在的专有宿主机池ID|
 |**logicRack**|Integer|专有宿主机所在的逻辑机架|
 |**supportedInstanceType**|String[]|专有宿主机支持的云主机规格|
-|**capacity**|[ResourceCapacity](#resourcecapacity)|专有宿主机资源使用信息|
+|**capacity**|[ResourceCapacity](#ResourceCapacity)|专有宿主机资源使用信息|
 |**instanceIds**|String[]|专有宿主机上的云主机ID|
-|**charge**|[Charge](#charge)|计费信息|
+|**charge**|[Charge](#Charge)|计费信息|
 |**createTime**|String|创建时间|
 ### <div id="Charge">Charge</div>
 |名称|类型|描述|
