@@ -23,7 +23,7 @@ https://dh.jdcloud-api.com/v1/regions/{regionId}/dedicatedHosts
 ## 请求参数
 |名称|类型|是否必需|示例值|描述|
 |---|---|---|---|---|
-|**dedicatedHostSpec**|[DedicatedHostSpec](#dedicatedhostspec)|是| |描述专有宿主机配置<br>|
+|**dedicatedHostSpec**|[DedicatedHostSpec](#DedicatedHostSpec)|是| |描述专有宿主机配置<br>|
 |**deployPolicy**|String|否|preferred|是否支持AZ内专有宿主机强制均衡，可选值：<br> preferred：（默认值）非强制<br>required：强制]<br>|
 |**maxCount**|Integer|否|1|购买云主机的数量；取值范围：[1,100]，默认为1。<br>|
 |**clientToken**|String|否 | |用于保证请求的幂等性。由客户端生成，长度不能超过64个字符。<br>|
@@ -35,7 +35,7 @@ https://dh.jdcloud-api.com/v1/regions/{regionId}/dedicatedHosts
 |**az**|String|否| |专有宿主机所属的可用区，不传入该参数时可用区属性从专有宿主机池中继承；指定的可用区必须是对应专有宿主机池中设置的可用区的子集|
 |**name**|String|是|dh-name |专有宿主机名称|
 |**description**|String|否| |专有宿主机描述|
-|**charge**|[ChargeSpec](#chargespec)|否| |计费配置。<br>专有宿主机不支持按用量方式计费，默认为按配置计费。|
+|**charge**|[ChargeSpec](#ChargeSpec)|否| |计费配置。<br>专有宿主机不支持按用量方式计费，默认为按配置计费。|
 ### <div id="ChargeSpec">ChargeSpec</div>
 |名称|类型|是否必需|示例值|描述|
 |---|---|---|---|---|
@@ -48,7 +48,7 @@ https://dh.jdcloud-api.com/v1/regions/{regionId}/dedicatedHosts
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](#result)| |响应结果 |
+|**result**|[Result](#Result)| |响应结果 |
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID |
 
 ### <div id="Result">Result</div>
