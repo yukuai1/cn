@@ -21,9 +21,9 @@ https://dh.jdcloud-api.com/v1/regions/{regionId}/dedicatedHostType
 ## 请求参数
 |名称|类型|是否必需|示例值|描述|
 |---|---|---|---|---|
-|**filters**|[Filter[]](#filter)|否| |filters 中支持使用以下关键字进行过滤 <br> `dedicatedHostType`: 专有宿主机机型，精确匹配，支持多个<br> `az`:可用区，精确匹配，支持多个<br>|
+|**filters**|[Filter[]](describeDedicatedHostType#user-content-filter)|否| |filters 中支持使用以下关键字进行过滤 <br> `dedicatedHostType`: 专有宿主机机型，精确匹配，支持多个<br> `az`:可用区，精确匹配，支持多个<br>|
 
-### <div id="Filter">Filter</div>
+### <div id="user-content-filter">Filter</div>
 |名称|类型|是否必需|示例值|描述|
 |---|---|---|---|---|
 |**name**|String|是|az |过滤条件的名称|
@@ -33,25 +33,25 @@ https://dh.jdcloud-api.com/v1/regions/{regionId}/dedicatedHostType
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describeDedicatedHostType#user-content-result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="user-content-result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dedicatedHostTypes**|[HostType[]](#hosttype)| |
+|**dedicatedHostTypes**|[HostType[]](describeDedicatedHostType#user-content-hosttype)| |
 |**totalCount**|Number| |
-### <div id="HostType">HostType</div>
+### <div id="user-content-hosttype">HostType</div>
 |名称|类型|描述|
 |---|---|---|
 |**dedicatedHostType**|String|专有宿主机机型|
-|**state**|[HostTypeState[]](#hosttypestate)|专有宿主机机型售卖状态|
+|**state**|[HostTypeState[]](describeDedicatedHostType#user-content-hosttypestate)|专有宿主机机型售卖状态|
 |**totalVCPUs**|Integer|CPU总数|
 |**totalMemoryMB**|Integer|内存总大小，单位MB|
 |**totalDiskGB**|Integer|本地磁盘总大小，单位GB|
 |**totalGPUs**|Integer|GPU总个数|
 |**supportedInstanceType**|String[]|专有宿主机支持的云主机实例规格|
-### <div id="HostTypeState">HostTypeState</div>
+### <div id="user-content-hosttypestate">HostTypeState</div>
 |名称|类型|描述|
 |---|---|---|
 |**az**|String|可用区|
