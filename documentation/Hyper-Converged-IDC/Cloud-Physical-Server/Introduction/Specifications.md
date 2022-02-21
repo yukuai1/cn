@@ -20,12 +20,28 @@
 		    <td align="center">独立管理口1块+<br/>2*10GE网卡</td>
 		<td align="center">NO RAID/RAID0/RAID1</td>
     </tr>
+    <tr>   
+        <td align="center"><B>标准计算型内存型（安培）<br/>（cps.c.normal.memory.amp）<B></td>
+		    <td align="center">Ampere 2*Altra Q80-30 <br/>（80物理核 3.0GHz）</td>
+		    <td align="center">512GB（8*64G）DDR4</td>
+		    <td >1*240GB（SSD）</td>
+		    <td align="center">独立管理口1块+<br/>2*25GE网卡</td>
+		<td align="center">NO RAID</td>
+    </tr>
 	  <tr>   
         <td align="center"><B>计算效能型Ⅰ<br/>（cps.c.perf1）<B></td>
 		    <td align="center">Intel 2*2683V4<br/>（16物理核 2.1G）</td>
 		    <td align="center">256G（8*32G）DDR4</td>
 		    <td >2*300GB（SAS）+<br/>1*4000GB（NVME）</td>
 		    <td align="center">独立管理口1块+<br/>2*10GE网卡</td>
+		<td align="center">NO RAID</td>
+    </tr>
+	  <tr>   
+        <td align="center"><B>计算效能型Ⅰ超高内存型（安培）<br/>（cps.c.perf1.supermemory.amp）<B></td>
+		    <td align="center">Ampere 2*Altra Q80-30<br/>（80物理核 3.0GHz）</td>
+		    <td align="center">1024GB（32*32G）DDR4</td>
+		    <td >1*3.84TB（NVME）</td>
+		    <td align="center">独立管理口1块+<br/>2*25GE网卡</td>
 		<td align="center">NO RAID</td>
     </tr>
     <tr>   
