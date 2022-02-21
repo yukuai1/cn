@@ -4,7 +4,7 @@
 
 要使用数据大屏，依次打开【工作簿】-【我的大屏】
 
-![img](../../../../image/IoT/IoT-Data-Analysis-Service/Data-LargeScreen-Create-Report-1.png)
+![img](../../../../image/IoT/IoT-Data-Analysis-Service/Data-LargeScreen-Create-Report-111.png)
 
 点击页面右上角的 **新建大屏** ；
 
