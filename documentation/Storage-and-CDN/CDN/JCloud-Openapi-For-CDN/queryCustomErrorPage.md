@@ -28,7 +28,7 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/customErrorPage
 |名称|类型|描述|
 |---|---|---|
 |**domain**|String|域名 |
-|**enable**|String|自定义错误页面开关(on:开启 off：关闭) |
+|**enable**|String|自定义错误页面开关(on：开启  off：关闭) |
 |**customErrorPageInfos**|[ErrorPageConfigs[]](queryCustomErrorPage#ErrorPageConfigs)|自定义错误页面信息 |
 
 ### <div id="ErrorPageConfigs">ErrorPageConfigs</div>
