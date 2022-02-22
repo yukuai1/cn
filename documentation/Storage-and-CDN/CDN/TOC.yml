@@ -251,6 +251,8 @@ items:
                  href: JCloud-Openapi-For-CDN/getDomainList.md
                - name: getDomainListByFilter
                  href: JCloud-Openapi-For-CDN/getDomainListByFilter.md
+               - name: queryDomainConfig
+                 href: JCloud-Openapi-For-CDN/queryDomainConfig.md
                - name: queryLiveDomainDetail
                  href: JCloud-Openapi-For-CDN/queryLiveDomainDetail.md
                - name: queryDomainGroupDetail
@@ -291,8 +293,8 @@ items:
                  href: SSL-Certificate/getSslCertDetail.md
                - name: getSslCertList
                  href: SSL-Certificate/getSslCertList.md
-               - name: queryBackSourceRule
-                 href: JCloud-Openapi-For-CDN/queryBackSourceRule.md
+               - name: queryFollowRedirect
+                 href: JCloud-Openapi-For-CDN/queryCustomErrorPage.md
                - name: queryUrlRule
                  href: JCloud-Openapi-For-CDN/queryUrlRule.md
                - name: queryHttp2
@@ -341,6 +343,8 @@ items:
                  href: JCloud-Openapi-For-CDN/updateCacheRule.md
                - name: deleteCacheRule
                  href: JCloud-Openapi-For-CDN/deleteCacheRule.md
+               - name: setCustomErrorPage
+                 href: JCloud-Openapi-For-CDN/setCustomErrorPage.md
                - name: setIgnoreQueryString
                  href: JCloud-Openapi-For-CDN/setIgnoreQueryString.md
                - name: setRange
@@ -359,8 +363,6 @@ items:
                  href: JCloud-Openapi-For-CDN/setFollowSourceProtocol.md
                - name: uploadCert
                  href: SSL-Certificate/uploadCert.md
-               - name: queryDomainConfig
-                 href: JCloud-Openapi-For-CDN/queryDomainConfig.md
                - name: setExtraCacheTime
                  href: JCloud-Openapi-For-CDN/setExtraCacheTime.md
                - name: deleteExtraCacheTime
