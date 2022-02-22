@@ -163,8 +163,6 @@ items:
             href: API-Reference/CDN-Open-API/Query-pv.md
           - name: 查询刷新任务
             href: API-Reference/CDN-Open-API/Query-refresh.md
-          - name: 实时调度覆盖关系
-            href: API-Reference/CDN-Open-API/Query-scheduling-relationship.md
           - name: 查询TOP IP
             href: API-Reference/CDN-Open-API/Query-top-ip.md
           - name: 查询TOP URL
