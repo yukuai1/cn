@@ -37,9 +37,5 @@
         href: Operation-Guide/Data-Diagram.md
       - name: 数据看板
         href: Operation-Guide/Data-Board.md
-      - name: 数据大屏
-        href: Operation-Guide/Data-LargeScreen.md  
-      - name: 分析报告
-        href: Operation-Guide/Analysis-Report.md
       - name: 数据门户
         href: Operation-Guide/Data-Portal.md
