@@ -3,7 +3,7 @@
 
 以折线图或柱状图的形式，快速查看机器的整体运行情况，包括CPU、内存、负载、磁盘、流量的各时间段的使用情况。可帮助用户快速关注到机器使用的波动情况。针对每个图表，点击右上角 是否可视 按钮可进行显示/隐藏配置，可编辑配置图表的相关参数。
 
-![1645344886885](C:\Users\zhaotongtong10\AppData\Roaming\Typora\typora-user-images\1645344886885.png)
+![1645344886885](https://github.com/jdcloudcom/cn/blob/cn-joygraph/image/Elastic-Compute/Graph-Compute/1645344886885.png)
 
 #### 2、CPU
 
@@ -21,7 +21,7 @@
 | `cpu_user`        | 用户空间（非 Nebula Graph 图空间）占用的 CPU 百分比   |
 | `cpu_system`      | 内核空间（非 Nebula Graph 内核空间）占用的 CPU 百分比 |
 
-![1645344916359](C:\Users\zhaotongtong10\AppData\Roaming\Typora\typora-user-images\1645344916359.png)
+![1645344916359](https://github.com/jdcloudcom/cn/blob/cn-joygraph/image/Elastic-Compute/Graph-Compute/1645344916359.png)
 
 #### 3、内存
 
@@ -40,7 +40,7 @@
 | `memory_actual_used` | 实际使用内存（不包括缓存） |
 | `memory_free`        | 空闲内存                   |
 
-![1645344944012](C:\Users\zhaotongtong10\AppData\Roaming\Typora\typora-user-images\1645344944012.png)
+![1645344944012](https://github.com/jdcloudcom/cn/blob/cn-joygraph/image/Elastic-Compute/Graph-Compute/1645344944012.png)
 
 #### 4、负载
 
@@ -58,7 +58,7 @@
 | `load_5m`  | 最近 5 分钟系统平均负载  |
 | `load_15m` | 最近 15 分钟系统平均负载 |
 
-![1645344969694](C:\Users\zhaotongtong10\AppData\Roaming\Typora\typora-user-images\1645344969694.png)
+![1645344969694](https://github.com/jdcloudcom/cn/blob/cn-joygraph/image/Elastic-Compute/Graph-Compute/1645344969694.png)
 
 #### 5、磁盘
 
@@ -80,7 +80,7 @@
 | `disk_writeiops`    | 磁盘每秒的写请求数量 |
 | `inode_utilization` | inode 已使用百分比   |
 
-![1645344990690](C:\Users\zhaotongtong10\AppData\Roaming\Typora\typora-user-images\1645344990690.png)
+![1645344990690](https://github.com/jdcloudcom/cn/blob/cn-joygraph/image/Elastic-Compute/Graph-Compute/1645344990690.png)
 
 #### 6、流量
 
@@ -101,4 +101,4 @@
 | `network_in_packets`  | 网卡每秒接收的数据包数量 |
 | `network_out_packets` | 网卡每秒发送的数据包数量 |
 
-![1645345018344](C:\Users\zhaotongtong10\AppData\Roaming\Typora\typora-user-images\1645345018344.png)
+![1645345018344](https://github.com/jdcloudcom/cn/blob/cn-joygraph/image/Elastic-Compute/Graph-Compute/1645345018344.png)
