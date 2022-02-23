@@ -7,7 +7,7 @@
 - 图数据库用于对关系数据进行存储及查询服务。
 - 根据需求点击 创建图数据库 按钮，进入实例创建页面
 
-![1645340822451](C:\Users\zhaotongtong10\AppData\Roaming\Typora\typora-user-images\1645340822451.png)
+![1645340822451](https://github.com/jdcloudcom/cn/blob/cn-joygraph/image/Elastic-Compute/Graph-Compute/1645340822451.png)
 
 #### 2、进行实例参数配置-图数据库
 

@@ -2,7 +2,7 @@
 
 以可视化的方式展现图数据结果，并支持在页面中，完成点的拓展、移动画布、修改点的颜色及 icon、显示点边属性等操作。
 
-![1644847060407](C:\Users\zhaotongtong10\AppData\Roaming\Typora\typora-user-images\1644847060407.png)
+![1644847060407](https://github.com/jdcloudcom/cn/blob/cn-joygraph/image/Elastic-Compute/Graph-Compute/1644847060407.png)
 
 #### 1、选择图空间
 
