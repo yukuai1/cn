@@ -60,7 +60,7 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |**reqKey**|String|指定key，匹配类型为"geo"/"ip"时，该字段为空,|  partOfReq为uri/body/method 时，该字段为空，header/cookie时非空，args时选填|
 |**matchLogic**|String|匹配类型"str"时：["startsWith"/"endsWith"/"contains"/"equal"]|匹配类型为"geo"/"SQLi"/"XSS"/"regex"时：""|匹配类型为"size"时：["equal"/"notEquals"/"greaterThan"/"greaterThanOrEqual"/"lessThan"/"lessThanOrEqual"]|
 |**reqValue**|String|// 匹配类型为"SQLi"/"XSS"时:""，匹配类型为"geo"时:该值为省份名称。匹配类型为"ip"时，该值为 ipv4/8/16/24/32)/ipv6/64 ipv6/128)| 匹配类型为"size"时:数字字符串 其他类型不限|
-|**decodeFunc**|String|仅type为str regex SQLi XSS时可非空，取值"","lowercase","trim","base64Decode","urlDecode","htmlDecode",按先后顺序，多个时用 , 分隔|
+|**decodeFunc**|String|仅type为str regex SQLi XSS时可非空，取值"","lowercase","trim","base64Decode","urlDecode","htmlDecode","hexDecode","sqlTrim"按先后顺序，多个时用 , 分隔|
 |**isBase64Decode**|String|不解码"base64Decode"解码,str时才有|
 
 ## 返回码

@@ -8,7 +8,7 @@
 
 ## 实例列表页
 
-1. 访问[堡垒机控制台](https://bastion-console.jdcloud.com/list)，即进入实例列表页面。或访问[京东智联云控制台](https://console.jdcloud.com)点击头部导航栏【云服务】-【监控与运维】-【堡垒机】进入实例列表页。
+1. 访问[堡垒机控制台](https://bastion-console.jdcloud.com/list)，即进入实例列表页面。或访问[京东云控制台](https://console.jdcloud.com)点击头部导航栏【云服务】-【监控与运维】-【堡垒机】进入实例列表页。
 2. 选择地域。
 
 ![](/image/Bastion/instance-list.png) 
@@ -31,7 +31,7 @@
 
 ## 实例详情页
 
-1. 访问[堡垒机控制台](https://bastion-console.jdcloud.com/list)，即进入实例列表页面。或访问[京东智联云控制台](https://console.jdcloud.com)点击头部导航栏【云服务】-【监控与运维】-【堡垒机】进入实例列表页。
+1. 访问[堡垒机控制台](https://bastion-console.jdcloud.com/list)，即进入实例列表页面。或访问[京东云控制台](https://console.jdcloud.com)点击头部导航栏【云服务】-【监控与运维】-【堡垒机】进入实例列表页。
 2. 选择地域。
 3. 在实例列表中选择需要查看详细信息的实例，点击实例ID进入详情页。
 

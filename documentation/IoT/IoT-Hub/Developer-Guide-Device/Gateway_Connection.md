@@ -25,7 +25,7 @@
 
 子设备需要在后台配置拓扑关系，子设备可多次获取DS/ID，子设备需先解除和网关的依赖关系，才可关联其他网关。解除依赖后，原网关清除对子设备的控制能力。
 
-![image](../../../../image/IoT/IoT-DeviceSDK/Device_Activation.PNG)
+![image](../../../../image/IoT/IoT-DeviceSDK/Device-Activation.PNG)
 
 网关功能架构图：
 ![image](../../../../image/IoT/IoT-DeviceSDK/DeviceGateway.PNG)

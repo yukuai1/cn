@@ -47,12 +47,56 @@
             href: Instance-APIs/modifyInstanceName.md
           - name: modifyProtectionRule
             href: Instance-APIs/modifyProtectionRule.md
+          - name: createAcl
+            href: Instance-APIs/createAcl.md
+          - name: createIpSet
+            href: Instance-APIs/createIpSet.md
+          - name: createPortSet
+            href: Instance-APIs/createPortSet.md
+          - name: deleteAcl
+            href: Instance-APIs/deleteAcl.md
+          - name: deleteIpSet
+            href: Instance-APIs/deleteIpSet.md
+          - name: deletePortSet
+            href: Instance-APIs/deletePortSet.md
+          - name: describeAcls
+            href: Instance-APIs/describeAcls.md
+          - name: describeInstanceAclCnt
+            href: Instance-APIs/describeInstanceAclCnt.md
+          - name: describeInstanceAclEnable
+            href: Instance-APIs/describeInstanceAclEnable.md
+          - name: describeIpSet
+            href: Instance-APIs/describeIpSet.md
+          - name: describeIpSets
+            href: Instance-APIs/describeIpSets.md
+          - name: describePortSet
+            href: Instance-APIs/describePortSet.md
+          - name: describePortSets
+            href: Instance-APIs/describePortSets.md
+          - name: disableAcl
+            href: Instance-APIs/disableAcl.md
+          - name: disableInstanceAcl
+            href: Instance-APIs/disableInstanceAcl.md
+          - name: enableAcl
+            href: Instance-APIs/enableAcl.md
+          - name: enableInstanceAcl
+            href: Instance-APIs/enableInstanceAcl.md
+          - name: modifyAcl
+            href: Instance-APIs/modifyAcl.md
+          - name: modifyAclPriority
+            href: Instance-APIs/modifyAclPriority.md
+          - name: modifyIpSet
+            href: Instance-APIs/modifyIpSet.md
+          - name: modifyPortSet
+            href: Instance-APIs/modifyPortSet.md
       - name: 可防护公网 IP 相关接口
         items:
           - name: describeCpsIpResources
             href: IP-Resources-APIs/describeCpsIpResources.md
           - name: describeElasticIpResources
             href: IP-Resources-APIs/describeElasticIpResources.md
+          - name: describeWafIpResources
+            href: IP-Resources-APIs/describeWafIpResources.md
           - name: describeCcsIpResources
             href: IP-Resources-APIs/describeCcsIpResources.md
       - name: 操作记录相关接口

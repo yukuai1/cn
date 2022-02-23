@@ -4,7 +4,7 @@
 
 ## 一、登录备案系统
 
-1、打开京东云官网[www.jcloud.com](http://www.jcloud.com)打开后点击右上方“备案”
+1、打开京东云官网[www.jdcloud.com](http://www.jdcloud.com)打开后点击右上方“备案”
 
 ![img](https://github.com/jdcloudcom/cn/blob/edit/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/zmc-image_ICP-License-Service_Introduction-cn-shouyedatu.png)
 
@@ -26,19 +26,19 @@
 
 2）、域名处填写您需要接入的备案域名。
 
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/New-Access-Without-Subject-cn-4.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220209/documentation/Domain-Name-%26-License/Image-Domain/add-1.png)
 
 ## 三、填写主体信息
 
-1、填写真实有效的主体信息，最关键的是您的备案密码，您的申请接入资料提交至管局审核，备案密码错误会被通信管理局直接驳回，为了不影响您的备案进度，请务必输入正确的备案密码，再根据要求填写主体负责人信息，填写完成后点“下一步”按钮
+1、根据要求填写真实有效的主体信息及主体负责人信息，填写完成后点“下一步”按钮。
 
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/New-Access-Without-Subject-cn-5.png)
+![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/Addition-Website-Without-Subject-cn-5.png)
 
 ## 四、填写网站信息
 
 1、根据要求填写网站信息，每个网站只可填写1个域名且此域名是已备案成功的域名。
 
-![img](https://github.com/jdcloudcom/cn/blob/joytaobao-beian-2020032001/image/ICP-License-Service/New-Access-Without-Subject-cn-6.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220209/documentation/Domain-Name-%26-License/Image-Domain/without-object-add-1.jpg)
 
 2、填写网站负责人信息，此负责人需完成后续备案拍照等工作，请根据实际情况填写，若网站负责人与主体负责人为同一人，可勾选“同主体负责人”，点“下一步”；如有多个网站提交申请，在填写完网站信息可单击“继续添加网站”页面。
 

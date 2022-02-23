@@ -33,6 +33,8 @@ items:
             href: Anti-DDoS-Pro-Flow-APIs/describeBusinessGraph.md
           - name: describeConnStatGraph
             href: Anti-DDoS-Pro-Flow-APIs/describeConnStatGraph.md
+          - name: describeStatusGraph
+            href: Anti-DDoS-Pro-Flow-APIs/describeStatusGraph.md
       - name: IP高防实例相关接口
         items:
           - name: checkName
@@ -89,6 +91,8 @@ items:
             href: Anti-DDoS-Pro-Instance-APIs/modifyInstanceCustomPageDefault.md
           - name: recoverInstanceAcl
             href: Anti-DDoS-Pro-Instance-APIs/recoverInstanceAcl.md
+          - name: describeInstanceIdByResourceId
+            href: Anti-DDoS-Pro-Instance-APIs/describeInstanceIdByResourceId.md
       - name: IP高防网站转发配置相关接口
         items:
           - name: bindCert

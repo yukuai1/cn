@@ -9,8 +9,8 @@
         href: Introduction/Core-Concept.md
       - name: 地域和可用区
         href: Introduction/Regionzone.md       
-      - name: 产品功能
-        href: Introduction/Features.md
+      - name: 实例规格
+        href: Introduction/Instance-type.md
       - name: 产品优势
         href: Introduction/Benefits.md
       - name: 应用场景
@@ -57,7 +57,7 @@
         - name: Windows分区、格式化和创建文件系统
           href: Getting-Started/Cloud-Disk/Windows-Partition.md
           
-    - name: 扩容文件系统
+    - name: 云硬盘扩容
       items:
         - name: 云硬盘扩容概述
           href: Getting-Started/Cloud-Disk/Expand-Filesystem/Cloud-Disk-Expansion-Overview.md

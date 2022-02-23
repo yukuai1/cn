@@ -23,7 +23,8 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:crea
 ### <div id="webrulespec">WebRuleSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**serviceIp**|String|False| |高防 IP|
+|**serviceIp**|String|False| |高防 IP, serviceIps 为空时生效|
+|**serviceIps**|String[]|False| |高防 IP 列表, 不为空时忽略 serviceIp, 传多个时后台会在高防IP封禁后随机切换其他未封禁的IP|
 |**domain**|String|True| |子域名|
 |**protocol**|[WebRuleProtocol](createwebrules#webruleprotocol)|True| |协议: http, https 至少一个为 true|
 |**port**|Integer[]|False| |HTTP 协议的端口号, 如80, 81; 如果 protocol.http 为 true, 至少配置一个端口|
@@ -41,7 +42,8 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:crea
 |**enableKeepalive**|String|False| |是否开启回源长连接, protocol 选项开启 https 时生效, 可取值<br>- on: 开启<br>- off: 关闭|
 |**httpVersion**|String|False| |http 版本, protocol 选项开启 https 时生效, 可取值 http1 或 http2|
 |**sslProtocols**|String[]|False| |SSL协议类型, protocol 选项开启 https 时生效, 可取值SSLv2,SSLv3,TLSv1.0,TLSv1.1,TLSv1.2|
-|**suiteLevel**|String|False| |加密套件等级, protocol 选项开启 https 时生效, 可取值<br>- low: 低级<br>- middle: 中级<br>- high：高级|
+|**suiteLevel**|String|False| |加密套件等级, protocol 选项开启 https 时生效, 可取值<br>- low: 低级<br>- middle: 中级<br>- high：高级<br>- custom：自定义|
+|**userSuiteLevel**|String[]|False| |自定义加密套件等级, suiteLevel 为 custom 是有效|
 |**enableHealthCheck**|Integer|False| |健康检查开关, 0: 关闭, 1: 开启|
 |**proxyConnectTimeout**|Integer|False| |回源连接超时时长, 单位 秒|
 |**enableUnderscores**|Integer|False| |请求头支持下划线, 0: 关闭, 1: 开启|

@@ -10,7 +10,7 @@
 		</thead>
 	<tbody>
    	<tr>
-      	<td rowspan="6">中国大陆地域</td>
+      	<td rowspan="9">中国大陆地域</td>
       	<td rowspan="3">华北-北京<br>cn-north-1</td>
      	<td> 可用区A<br>cn-north-1a</td>
 	   	<td> 北京</td>
@@ -39,14 +39,27 @@
      	<td> 可用区C<br>cn-east-2c</td>
 	   	<td> 上海</td>
    </tr>
+     </tr>
+   </tr>
+    	<tr>
+     	<td rowspan="3">华南-广州<br>cn-south-1</td>
+     	<td>可用区B<br>cn-south-1b</td>
+	   	<td>广州</td>
+   </tr>
+      </tr>
+    	<tr>
+     	<td>可用区C<br>cn-south-1c</td>
+	   	<td>广州</td>
+   </tr>
    </tbody>
+   
 </table>
 
 ### 规格限制
 
 |限制项|限制规则 | 例外申请方式
 :--|:---|:---
-|集群版本|V2.4、V1.0.1、V0.10.2|
+|集群版本|V2.4、V1.0.1、V0.10.2、V2.6.0（内测中）|申请内测请提交工单|
 
 
 ### 网络访问
