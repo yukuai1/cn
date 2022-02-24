@@ -9,7 +9,7 @@
 ## 生成事务死锁诊断记录
 通过【立即诊断】立即进行锁诊断，当时运行的事务死锁情况的诊断，并产生诊断生成记录。
 
-![](../../Image/Document/lock_analysis1.png) 
+![](../../image/SmartDBA/lock_analysis1.png) 
  
 ## 查看死锁诊断详情
 点击诊断记录对应的【查看详情】
