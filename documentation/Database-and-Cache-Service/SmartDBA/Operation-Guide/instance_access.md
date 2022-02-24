@@ -10,11 +10,11 @@
 
 进入SmartDBA实例监控列表页，可以看到当前区域下的各个云数据库实例的基本信息。
 
-![](../../Image/Document/instance_access1.png)
+![](../../image/SmartDBA/instance_access1.png)
 
 点击【快速接入】按钮，进入实例接入页面。
 
-![](../../Image/Document/instance_access2.png) 
+![](../../image/SmartDBA/instance_access2.png) 
 
  
 实例接入包括选择实例和授权验证两个步骤，默认展示选择实例，在实例接入页面，点击实例接入左侧的返回符号，可返回至上一级实例监控页面。
