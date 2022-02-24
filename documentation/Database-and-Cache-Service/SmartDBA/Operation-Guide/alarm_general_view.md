@@ -9,7 +9,7 @@
 
 下图为告警概览页面：
 
-![](../../Image/Document/alarm_general_view1.png)
+![](../../image/SmartDBA/alarm_general_view1.png)
 
 * 告警趋势-折线图：按照时间维度展示告警的数量趋势.
          
@@ -39,7 +39,7 @@
 
 在告警概览页点击【告警历史】后跳到告警历史页面，如下图：
 
-![](../../Image/Document/alarm_general_view2.png)
+![](../../image/SmartDBA/alarm_general_view2.png)
 
 * 告警历史说明
 	   
