@@ -1,3 +1,12 @@
+### 请求头
+
+请求需要请求头携带ak（公钥）和sign（签名）参数，
+
+| 名称   | 类型     | 描述                             | 是否必填 |
+| ---- | ------ | ------------------------------ | ---- |
+| ak   | String | 公钥                             | 是    |
+| sign | String | 签名，DigestUtils.md5Hex(请求参数+私钥) | 是    |
+
 ### 添加设备
 
 ##### 请求方式：
@@ -38,7 +47,7 @@ http://服务器地址/gateway/mockReceive
             "type":"CAMERA",
             "recordStatus":"OFFLINE",
             "placeId":"1494229770627932161",
-            "placeName":"test王小桐",
+            "placeName":"test王",
             "templateCode":"CAMERA_HAIKANG"
         }]
 }
@@ -270,7 +279,7 @@ http://服务器地址/gateway/mockReceive
 	"type": "ESTATE_SECURITY_BLACKLIST_SERVICE",
 	"data": [{
 		"name": "随行1",
-		"photo": "http://114.67.251.124:9000/data/ad15f2cd-b1c4-4b23-af2b-c1d70cf5cf45.jpg",
+		"photo": "http://xxxx.jpg",
 		"faceId": "1466316814753079296",
 		"idNumber": "130302199601222222",
 		"type": "VISITOR",
@@ -330,7 +339,7 @@ http://服务器地址/gateway/mockReceive
 	    "deptId": "1463400467443441665",
 	    "deptName": "IOT",
 	    "type": "EMPLOYEE",
-	    "photo": "http://114.67.251.124:9000/data/590cfe04-0de5-4d5f-b460-2078d6135e2b.jpg",
+	    "photo": "http://xxxx.jpg",
 	    "cardId": "card666",
 	    "jobNumber":"123321",
 	    "state": "EFFECTIVE",
@@ -442,7 +451,7 @@ http://服务器地址/gateway/mockReceive
 | 名称         | 类型     | 描述      | 是否必填 |
 | ---------- | ------ | ------- | ---- |
 | shortName  | String | 部门名称    | 是    |
-| sort       | int    | 排列序号    | 是    |
+| sort       | String | 排列序号    | 是    |
 | parentName | String | 上级部门名称  | 否    |
 | employeeId | String | 部门负责人id | 否    |
 | projects   | List   | 关联项目    | 是    |
@@ -455,15 +464,53 @@ http://服务器地址/gateway/mockReceive
 "type":"ESTATE_DEPARTMENT_SERVICE",
 "data":[{
 	"shortName":"商城",
-	"sort":1,
+	"sort":"1",
 	"parentName":"集团",
 	"employeeId":"",
 	"projects":[{
 		"key":"6218e115ec0e4b60baed90b1702d610c",
-		"value":"test王小桐"	
+		"value":"test王"	
 		}],
 	"parentId":"0"
     }]
+}
+```
+
+### 添加车辆通行记录
+
+##### 请求方式：
+
+POST
+
+##### 请求地址：
+
+http://服务器地址/gateway/mockReceive
+
+##### 请求参数：
+
+| 名称   | 类型     | 描述                              | 是否必填 |
+| ---- | ------ | ------------------------------- | ---- |
+| type | String | 同步数据的类型：ESTATE_CAR_PASS_SERVICE | 是    |
+| data | List   | 车辆通行记录数据                        | 是    |
+
+##### 车辆通行记录参数：
+
+| 名称                 | 类型     | 描述   | 是否必填 |
+| ------------------ | ------ | ---- | ---- |
+| oid                | String | 设备id | 是    |
+| licensePlateNumber | String | 车牌号  | 是    |
+| inTime             | String | 驶入时间 | 否    |
+| outTime            | String | 驶出时间 | 否    |
+
+```
+{
+  "type":"ESTATE_CAR_PASS_SERVICE",
+  "data":[{
+    "oid":"MJ3293824",
+    "licensePlateNumber": "京A45678", 
+    "inTime": "2021-11-24 16:29:19",
+    "outTime": "2021-11-26 16:29:19"
+  }]
 }
 ```
 
