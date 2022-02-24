@@ -2,18 +2,18 @@
 
 通过创建逻辑的监控大盘对象，用户可以自定义把相关实例进行监控信息统计展示。有助于用户对相关实例的整体性能监控分析。
 
-![](../../Image/Document/monitor_market1.png)
+![](../../image/SmartDBA/monitor_market1.png)
 
 ## 添加大盘
 
 填写监控大盘名称，点击确定创建大盘。
 
-![](../../Image/Document/monitor_market2.png)
+![](../../image/SmartDBA/monitor_market2.png)
 
 
 新增的大盘为空，如下图：
 
-![](../../Image/Document/monitor_market3.png)
+![](../../image/SmartDBA/monitor_market3.png)
 
 * 页面同监控大盘页面，无时间过滤项。
 
@@ -29,7 +29,7 @@
 
 * 实例列仅展示当前已加入smartDBA且符合页面所筛选的地域以及产品类型。
 
-![](../../Image/Document/monitor_market4.png)
+![](../../image/SmartDBA/monitor_market4.png)
 
 | 指标                                  | 说明                                                         |
 | ------------------------------------- | ------------------------------------------------------------ |
@@ -63,6 +63,6 @@
 
 如下图：
 
-![](../../Image/Document/monitor_market6.png)
+![](../../image/SmartDBA/monitor_market6.png)
 
 
