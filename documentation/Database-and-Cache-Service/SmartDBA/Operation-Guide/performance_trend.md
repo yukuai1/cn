@@ -9,28 +9,28 @@
 
 ## 支持监控指标项
 
-![](../../Image/Document/performance_trend1.png)
+![](../../image/SmartDBA/performance_trend1.png)
  
 ## 查看性能趋势图
 点击【性能趋势】按钮后显示监控指标项的性能趋势图，默认全选并按序展示，默认开启图表联动。
 
 性能趋势页如下：
 
-![](../../Image/Document/performance_trend2.png)
+![](../../image/SmartDBA/performance_trend2.png)
  
 ## 查看部分监控指标项性能趋势图
 展示顺序和勾选顺序有关，如下图：
  
-![](../../Image/Document/performance_trend3.png)
+![](../../image/SmartDBA/performance_trend3.png)
  
 ## 查看性能趋势对比图
 点击【性能趋势对比】按钮后显示监控指标项的性能趋势对比图，默认全选并按序展示，默认开启图表联动。
 
 性能趋势对比页如下：
 
-![](../../Image/Document/performance_trend4.png)
+![](../../image/SmartDBA/performance_trend4.png)
  
 ## 查看部分监控指标项性能趋势对比图
 展示顺序和勾选顺序有关，如下图：
 
-![](../../Image/Document/performance_trend5.png) 
+![](../../image/SmartDBA/performance_trend5.png) 
