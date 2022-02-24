@@ -9,7 +9,7 @@
 
 一键诊断tab页如下：
 
-![](../../Image/Document/click_diagnosis1.png) 
+![](../../image/SmartDBA/click_diagnosis1.png) 
 
 ## 执行诊断操作
 1）进入一键巡检tab后，即执行诊断操作。
@@ -27,4 +27,4 @@
 ## 查看诊断历史
 展示近7天诊断历史，点击历史数据展示诊断信息，弹窗展示，内容样式同诊断详情。
  
-![](../../Image/Document/click_diagnosis2.png)
+![](../../image/SmartDBA/click_diagnosis2.png)
