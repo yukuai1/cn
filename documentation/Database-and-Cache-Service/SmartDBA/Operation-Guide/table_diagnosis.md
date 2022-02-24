@@ -8,6 +8,6 @@
 
 控制台->数据库与缓存->SmartDBA->实例监控->实例监控详情->表诊断。
 
-![](../../Image/Document/table_diagnosis.png)
+![](../../image/SmartDBA/table_diagnosis.png)
 
 通过点击查看左侧角标显示数字的问题项，即可显示对应影响的库表信息以及提供的优化建议。
