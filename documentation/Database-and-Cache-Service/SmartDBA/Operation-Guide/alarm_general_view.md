@@ -9,9 +9,9 @@
 
 下图为告警概览页面：
 
-![](../Image/Operation-Guide/alarm_general_view1.png)
+![](../../image/SmartDBA/alarm_general_view1.png)
  
 ## 查看告警历史
 在告警概览页点击【告警历史】后跳到告警历史页面，如下图：
  
-![](../Image/Operation-Guide/alarm_general_view2.png)
+![](../../image/SmartDBA/alarm_general_view2.png)
