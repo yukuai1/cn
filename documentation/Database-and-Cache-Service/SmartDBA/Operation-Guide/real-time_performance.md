@@ -10,10 +10,10 @@
 ## 查看实时性能
 默认监控指标全选并按序展示，默认开启图表联动。
 
-![](../../Image/Document/real-time_performance1.png)
+![](../../image/SmartDBA/real-time_performance1.png)
  
 ## 查看部分监控指标项
 如下图：
 
-![](../../Image/Document/real-time_performance2.png) 
+![](../../image/SmartDBA/real-time_performance2.png) 
 
