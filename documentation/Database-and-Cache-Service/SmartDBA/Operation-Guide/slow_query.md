@@ -10,7 +10,7 @@
 ## 查看慢查询次数趋势和慢查询耗时
 
 
-![](../../Image/Document/slow_query.png)
+![](../../image/SmartDBA/slow_query.png)
 
 * 图表展示：
 	
