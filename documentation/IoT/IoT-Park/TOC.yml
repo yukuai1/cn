@@ -51,3 +51,9 @@ items:
         href: Developer-Guide/Cloud-To-Cloud.md
   - name: 常见问题
     href: FAQ/FAQ.md
+  - name: 用户协议
+    status: 0
+    items:
+    - name: SLA
+      href: User-Agreements/SLA.md
+      status: 0
