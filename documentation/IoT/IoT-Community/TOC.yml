@@ -1,0 +1,33 @@
+name: 智慧社区平台
+href: 
+items:
+  - name: 产品简介
+    items:
+      - name: 产品概述
+        href: Introduction/Product-Overview.md
+      - name: 基础架构
+        href: Introduction/Basic-Infrastructure.md
+      - name: 产品优势
+        href: Introduction/Benefits.md
+      - name: 产品功能
+        href: Introduction/Features.md
+  - name: 产品定价
+    items:
+      - name: 计费概述
+        href: Pricing/Billing-Overview.md
+      - name: 计费规则
+        href: Pricing/Billing-Rules.md
+      - name: 价格总览
+        href: Pricing/Price-Overview.md
+      - name: 购买流程
+        href: Pricing/Purchase-Process.md 
+  - name: 入门指南
+    items:
+      - name: 入门指南概述
+        href: Getting-Started/Getting-Started.md
+      - name: 购买服务
+        href: Getting-Started/Buy-Product.md
+      - name: 登录智能生活物联网平台
+        href: Getting-Started/Login.md
+  - name: 常见问题
+    href: FAQ/FAQ.md
