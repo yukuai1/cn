@@ -49,10 +49,30 @@ items:
             href: Operation-Guide/Device-Manager/Device-Info.md    
           - name: 设备分组
             href: Operation-Guide/Device-Manager/Device-Grouping.md    
-      - name: 创建规则引擎
+      - name: 规则引擎
         href: Operation-Guide/Rule-Engine/Create-Rule.md  
+      - name: 固件升级
+        items:
+          - name: 固件管理
+            href: Operation-Guide/Firmware-Manager/Ota.md
+          - name: 任务管理
+            href: Operation-Guide/Firmware-Manager/Job.md
+      - name: 视频监控
+        href: Operation-Guide/Vedio-Manager/Vedio.md  
+       - name: 边缘计算
+        items:
+          - name: 边缘节点
+            href: Operation-Guide/Edge-Manager/EdgeNode.md
+          - name: 应用管理
+            href: Operation-Guide/Edge-Manager/EdgeAPP.md
       - name: 档案管理
         href: Operation-Guide/Archive-Manager/Create-Archive.md
+      - name: 运维监控
+        items:
+          - name: 边缘节点
+            href: Operation-Guide/Edge-Manager/EdgeNode.md
+          - name: 应用管理
+            href: Operation-Guide/Edge-Manager/EdgeAPP.md
   - name: 设备开发指南
     items:
       - name: Device SDK 介绍

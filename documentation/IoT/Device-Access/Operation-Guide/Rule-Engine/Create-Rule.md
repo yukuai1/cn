@@ -4,7 +4,7 @@
 2. 左侧导航栏选择**规则引擎** -> **规则列表**
 3. 点击页面右上方**新建规则**
 
-![新建规则](../../../../../image/IoT/IoT-Core/Rule-Engine/Create-Rule.png)
+![新建规则](../../../../../image/IoT/Device-Access/Rule-Engine/Create-Rule.png)
 
 **基本信息** 
 
@@ -37,11 +37,11 @@
 ```
 - 用户自定义设置：在对设备上报的数据进行增强时，可以选择用户自定义设置来为上报数据进行增强信息。可通过扩展列、截取列、合并列的方式对上报数据进行增强。
 
-![新建规则](../../../../../image/IoT/IoT-Core/Rule-Engine/User-Setting.png)
+![新建规则](../../../../../image/IoT/Device-Access/Rule-Engine/User-Setting.png)
 
 扩展列：增加扩展属性到转发数据中，现支持设备ID，物类型code,设备名称，设备物理id四种属性的扩展。
 
-![扩展字段](../../../../../image/IoT/IoT-Core/Rule-Engine/extend-column.png)
+![扩展字段](../../../../../image/IoT/Device-Access/Rule-Engine/extend-column.png)
 截取列：针对字符型列，可以指定截取该列的某些字符，比如：‘device.profile.name, 0, 4’,代表要截取device.profile.name列，从0开始，截取长度为4，如果不输入长度，默认截取到末尾。
 
 合并列：连接组合列（支持多列），支持字符与数值型多组合形式连接组合，比如：连接字符列(person.name:xiaoli)与数值列(person.age:23)，请输入'person.name, person.age'，最终输出结果为：'xiaoli23'
@@ -56,7 +56,7 @@
 1. 转发到Kafka
 填写转发到kafka需填写名称、地址、Topic。
 
-![转发到Kafka](../../../../../image/IoT/IoT-Core/Rule-Engine/Forward-To-Kafka.png)
+![转发到Kafka](../../../../../image/IoT/Device-Access/Rule-Engine/Forward-To-Kafka.png)
 
 获取Kafka的参数信息：
 - 进入**消息队列 Kafka 版** -> **实例列表**
@@ -66,7 +66,7 @@
 2. 转发到MySQL
 转发到MySQL需要填写名称、数据库地址、库名、表名、列名、批量（数据入库阀值）、账号、密码。
 
-![转发到MySQL](../../../../../image/IoT/IoT-Core/Rule-Engine/Forward-To-MySQL.png)
+![转发到MySQL](../../../../../image/IoT/Device-Access/Rule-Engine/Forward-To-MySQL.png)
 
 获取MySQL的参数信息：
 - 进入**云数据库RDS** -> **实例列表**
@@ -76,7 +76,7 @@
 3. 转发到JCQ
 转发到JCQ需填写地址、Topic、AccessKey/SecretKey、消息类型等信息。
 
-![转发到JCQ](../../../../../image/IoT/IoT-Core/Rule-Engine/Forward-To-JCQ.png)
+![转发到JCQ](../../../../../image/IoT/Device-Access/Rule-Engine/Forward-To-JCQ.png)
 
 获取消息队列JCQ的参数信息：
 - 进入**消息队列JCQ** -> **Topic管理**
@@ -92,10 +92,10 @@
 1. 进入规则引擎-规则列表页面，点击运行/停止按钮。
 2. 运行成功后，状态变为运行，在规则列表中操作中运行按钮变成停止按钮。停止成功后状态变为运行，在规则列表中操作中运行按钮变成停止按钮。
 
-![启停规则](../../../../../image/IoT/IoT-Core/Rule-Engine/Start-And-Stop-RuleEngine.png)
+![启停规则](../../../../../image/IoT/Device-Access/Rule-Engine/Start-And-Stop-RuleEngine.png)
 
 ## 删除规则
 
 进入规则引擎-规则列表页面，点击删除按钮。如果规则处于运行状态，则不可以删除；如果规则处于停止状态，则可以删除；删除成功后，在规则列表中查询不到。
 
-![删除规则](../../../../../image/IoT/IoT-Core/Rule-Engine/Delete-Rule-Engine.png)
+![删除规则](../../../../../image/IoT/Device-Access/Rule-Engine/Delete-Rule-Engine.png)
