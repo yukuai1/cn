@@ -46,6 +46,7 @@ https://cdn.jdcloud-api.com/v1/domain/{domain}/config
 |---|---|---|
 |**weight**|Integer| |
 |**ttl**|Long| |
+|**configId**|Long| |
 |**contents**|String| |
 |**createTime**|String| |
 |**updateTime**|String| |
