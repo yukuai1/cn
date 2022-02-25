@@ -57,9 +57,7 @@ items:
             href: Operation-Guide/Firmware-Manager/Ota.md
           - name: 任务管理
             href: Operation-Guide/Firmware-Manager/Job.md
-      - name: 视频监控
-        href: Operation-Guide/Vedio-Manager/Vedio.md  
-       - name: 边缘计算
+      - name: 边缘计算
         items:
           - name: 边缘节点
             href: Operation-Guide/Edge-Manager/EdgeNode.md
