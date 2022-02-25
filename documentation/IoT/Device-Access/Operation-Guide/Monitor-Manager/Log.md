@@ -4,10 +4,9 @@
 
 操作步骤：
 
-1.  在左侧导航栏选择 运维监控 -\>日志服务，即可进入消息查看页。
+1.  在左侧导航栏选择 运维监控 ->日志服务，即可进入消息查看页。
 
-![](media/image79.png){width="6.0in" height="2.1145833333333335in"}
+![查询日志](../../../../../image/IoT/Device-Access/Monitor-Manager/Log/Log.png)
 
 2.  选择要查看日志的设备，消息类型（上行，下行，全部），时间范围，点击查询。
-
-![QQ截图20201012115053](media/image80.png){width="5.993055555555555in" height="2.839583333333333in"}
+![筛选日志](../../../../../image/IoT/Device-Access/Monitor-Manager/Log/Query-Log.png)
