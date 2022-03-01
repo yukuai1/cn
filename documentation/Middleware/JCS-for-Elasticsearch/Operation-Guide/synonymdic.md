@@ -10,28 +10,32 @@
     elasticsearch,es => es
     中华人民共和国,中国 => 中国
   ```
-* 同义词文件单个文件最大为20M。
+* 同义词文件单个文件最大为5M，单次上传文件总大小不超过20M。
 #### 操作步骤
-1. 登陆 京东云Elasticsearch控制台。
-2. 在集群管理页，单击集群名称进入集群详情页。 
-3. 选择自定义词库页签，在同义词配置区域，单击配置同义词词库右侧的按钮。</br>
-![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/Synonym_cfg.png)
+1. 登陆 [京东云Elasticsearch控制台](https://es-console.jdcloud.com/clusters)。
+2. 在集群管理页，单击**集群名称**进入集群详情页。 
+3. 选择**自定义词库**页签，在**同义词配置**区域，单击**配置同义词词库右侧的按钮**。
 
-4. 在弹出的同义词配置页面，选择要上传的同义词文件。</br>
-![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/synonym_upload.png)
+   ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/Synonym_cfg.png)
 
-5. 如果选择的同义词文件校验成功（在同义词词库文件名邮件显示绿色的success），可单击保存。</br>
-![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/synonym_upload_success.png)
+4. 在弹出的**同义词配置**页面，选择要上传的同义词文件。
 
-说明：如果您需要获取已经上传过的词库文件，可直接单击对应文件的下载图标进行下载。
+   ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/synonym_upload.png)
+
+5. 如果选择的同义词文件校验成功（在同义词词库文件名邮件显示**绿色的success**），可单击**保存**。
+
+   ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/synonym_upload_success.png)
+
+说明：如果您需要获取已经上传过的词库文件，可直接单击对应文件的**下载图标**进行下载。
+
 ### 使用同义词文件
 #### 同义词文件配置
-等待实例的状态变为正常后，登录Kibana控制台创建索引、校验同义词，并上传测试数据进行搜索测试。创建索引时需要配置settings和mapping，并且**需要在settings中配置"synonyms_path": "synonym/your_dict_name.txt"**。
+等待实例的状态变为正常后，登录Kibana控制台创建索引、校验同义词，并上传测试数据进行搜索测试。**创建索引时需要配置settings和mapping，并且需要在settings中配置"synonyms_path": "synonym/your_dict_name.txt"**。
 
 以下实例使用 filter 过滤器配置同义词，使用synonym.txt作为测试文件，文件内容为elasticsearch,es => es。
-1. 在集群管理页，选择已上传同义词文件的集群右侧的kibana按钮，进入Kibana控制台。
-2. 单击左侧导航栏的 Dev Tools。
-3. 在Console中执行如下的命令，创建索引。
+1. 在**集群管理**页，选择已上传同义词文件的集群右侧的**kibana**按钮，进入Kibana控制台。
+2. 单击左侧导航栏的 **Dev Tools**。
+3. 在**Console**中执行如下的命令，创建索引。
    ```
    PUT /my_index
    {
