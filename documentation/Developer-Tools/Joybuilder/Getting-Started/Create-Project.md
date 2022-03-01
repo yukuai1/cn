@@ -8,11 +8,11 @@
 
  ![](/image/Joybuilder/create_project.PNG) 
 
-3、选择模板
+3、选择模板，推荐“快速创建模板V1.0”
 
  ![](/image/Joybuilder/create_project_template.PNG) 
   
-4、选择环境
+4、选择环境，推荐“低代码体验环境”
 
  ![](/image/Joybuilder/create_project_env.PNG) 
  
