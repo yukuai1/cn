@@ -1,6 +1,9 @@
 # 基础架构
 
-## 业务架构
+## 低代码，可视化架构
 
-业务架构如下图：
-![](../../../../image/IoT/IoT-Hub/architecture.png)
+![](../../../../image/IoT/IoT-Aep/lowcode-art.png)
+
+## 小程序架构
+
+![](../../../../image/IoT/IoT-Aep/mp-art.jpeg)
