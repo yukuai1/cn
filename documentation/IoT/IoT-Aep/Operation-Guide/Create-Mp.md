@@ -22,7 +22,7 @@
    其中分为手机和车机两种：
    ![小程序创建详细](../../../../image/IoT/IoT-Aep/mp-create1.jpeg)
    然后根据提示信息填写，提交即可：
-   ![小程序创建详细](../../../../image/IoT/IoT-Aep/mp-create1.jpeg)
+   ![小程序创建详细](../../../../image/IoT/IoT-Aep/mp-create2.jpeg)
 
 ## 管理小程序
 1. 开发管理
