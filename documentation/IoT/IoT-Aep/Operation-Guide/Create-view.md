@@ -12,7 +12,4 @@
    点击控制台左侧的“可视化“菜单后，点击”立即使用“您可以进入到“京东莫奈可视化平台"
    ![拖拽列表](../../../../image/IoT/IoT-Aep/view-home.jpeg)
 
-3. 使用小程序服务
-
-   进入“京东莫奈可视化平台”后，您可以根据《操作手册》使用平台，操作手册入口见下图所示
-   ![拖拽列表](../../../../image/IoT/IoT-Aep/view-list.jpeg)
+3. [使用可视化平台](https://imonet.jdcloud.com/monet-doc/)
