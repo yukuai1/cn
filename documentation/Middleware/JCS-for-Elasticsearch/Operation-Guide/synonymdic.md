@@ -14,13 +14,13 @@
 #### 操作步骤
 1. 登陆 京东云Elasticsearch控制台。
 2. 在集群管理页，单击集群名称进入集群详情页。 
-3. 选择自定义词库页签，在同义词配置区域，单击配置同义词词库右侧的按钮。
+3. 选择自定义词库页签，在同义词配置区域，单击配置同义词词库右侧的按钮。</br>
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/Synonym_cfg.png)
 
-4. 在弹出的同义词配置页面，选择要上传的同义词文件。
+4. 在弹出的同义词配置页面，选择要上传的同义词文件。</br>
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/synonym_upload.png)
 
-5. 如果选择的同义词文件校验成功（在同义词词库文件名邮件显示绿色的success），可单击保存。
+5. 如果选择的同义词文件校验成功（在同义词词库文件名邮件显示绿色的success），可单击保存。</br>
 ![查询1](https://github.com/jdcloudcom/cn/blob/Elasticsearch/image/Internet-Middleware/JCS%20for%20Elasticsearch/synonym_upload_success.png)
 
 说明：如果您需要获取已经上传过的词库文件，可直接单击对应文件的下载图标进行下载。
