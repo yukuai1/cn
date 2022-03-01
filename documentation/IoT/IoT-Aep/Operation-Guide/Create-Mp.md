@@ -3,7 +3,7 @@
 ## 前提条件
 [账号实名认证](./Precondition.md)
 
-## 创建应用
+## 创建小程序
 
 1. [登录控制台](./ControllPage.md)
 
@@ -23,7 +23,9 @@
    ![小程序创建详细](../../../../image/IoT/IoT-Aep/mp-create1.jpeg)
    然后根据提示信息填写，提交即可：
    ![小程序创建详细](../../../../image/IoT/IoT-Aep/mp-create1.jpeg)
-5. 开发管理
+
+## 管理小程序
+1. 开发管理
    您可以在已创建的小程序列表中可见 开发管理按钮
    ![小程序开发管理](../../../../image/IoT/IoT-Aep/mp-devManage.jpeg)
    开发管理可分为四步：
@@ -37,13 +39,13 @@
    ![小程序开发管理详细](../../../../image/IoT/IoT-Aep/mp-devManage3.jpeg)
    4. 最后如果您小程序的需要下线
    ![小程序开发管理详细](../../../../image/IoT/IoT-Aep/mp-devManage6.jpeg)
-6. 成员管理
+2. 成员管理
    您可以为您的小程序添加管理成员
    ![小程序成员管理](../../../../image/IoT/IoT-Aep/mp-memberManage.jpeg)
    需要填写被添加的成员邮箱，操作成功后，需要被添加成员在收到的小程序邮件中进行认证，认证完成便可成为您的小程序管理员
    ![小程序成员管理详细](../../../../image/IoT/IoT-Aep/mp-memberManage1.jpeg)
 
-7. 数据统计
+3. 数据统计
    在您的小程序上线后，您可以在数据统计页面关于您的小程序的相关统计数据，为您提供分析
    1. 基础数据
       ![小程序数据统计-基础数据](../../../../image/IoT/IoT-Aep/mp-dataStatistics1.jpeg)
@@ -51,7 +53,7 @@
       ![小程序数据统计-基础数据](../../../../image/IoT/IoT-Aep/mp-dataStatistics2.jpeg)
    3. 留存分析
       ![小程序数据统计-基础数据](../../../../image/IoT/IoT-Aep/mp-dataStatistics3.jpeg)
-8. 设置
+4. 设置
    小程序创建之后，您还可以其进行设置修改
    1. 基础设置
       ![小程序设置-基础设置](../../../../image/IoT/IoT-Aep/mp-settingBase.jpeg)
