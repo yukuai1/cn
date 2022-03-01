@@ -6,4 +6,4 @@
 
 ## 小程序架构
 
-![](TODO)
+![](../../../../image/IoT/IoT-Aep/mp-art.jpeg)
