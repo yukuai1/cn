@@ -29,6 +29,8 @@ items:
         href: Developer-Guide/Device-Access.md
       - name: 设备服务器对接京东云服务
         href: Developer-Guide/UserServer-To-JdCloudServer.md
+  - name: API指南
+    href: API/API-Guide.md
   - name: 常见问题
     href: FAQ/FAQ.md
   - name: 用户协议
