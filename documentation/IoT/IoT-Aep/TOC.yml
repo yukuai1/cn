@@ -5,8 +5,6 @@
     items:
       - name: 产品概述
         href: Introduction/Product-Overview.md
-      - name: 基础架构
-        href: Introduction/Basic-Infrastructure.md
       - name: 产品优势
         href: Introduction/Benefits.md
       - name: 产品功能
@@ -17,7 +15,7 @@
         href: Pricing/Billing-Overview.md
   - name: 操作指南
     items:
-      - name: 在线拖拽工具
+      - name: 低代码平台
         href: Operation-Guide/Create-Product.md
       - name: 小程序服务
         href: Operation-Guide/Create-Mp.md
