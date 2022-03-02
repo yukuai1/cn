@@ -10,7 +10,7 @@ JDCloud 设备身份认证SDK封装了对底层安全芯片的操作细节，只
 
 | 参数 | 参数类型 | 描述 |
 | :--- | :--- | :--- |
-| license | 输出参数 | 从芯片中读取到的license_id信息，license长度为32字节。需要用户提前开辟足够空间存储。后续使用本SDK所有函数均需提供此license_id，请用户自行保存。
+| license | 输出参数 | 从芯片中读取到的license信息，license长度为32字节。需要用户提前开辟足够空间存储。后续使用本SDK所有函数均需提供此license，请用户自行保存。
 | proto_ver | 输入参数 | 设置使用的身份认证协议版本。当前支持版本为1.
 | suite_id | 输入参数| 设置使用的身份认证签名套件id.1：HMAC-SHA256
 | return | 返回值 | 详细见响应码
@@ -19,7 +19,7 @@ JDCloud 设备身份认证SDK封装了对底层安全芯片的操作细节，只
 函数原型：RET_T get_client_authcode(uint8_t *license, client_authcode_t *authcode, int *buf_len);  
 函数功能：根据init函数中输入的proto_ver 、suite_id生成设备端认证码。将此认证码传给认证服务器实现对设备端的认证。  
 
-**如果传入的license_id不正确将导致函数执行失败。**
+**如果传入的license不正确将导致函数执行失败。**
 
 | 参数 | 参数类型 | 描述 |
 | :--- | :--- | :--- |
@@ -32,13 +32,13 @@ JDCloud 设备身份认证SDK封装了对底层安全芯片的操作细节，只
 函数原型：RET_T validate_server_authcode(uint8_t *license, const server_authcode_t authcode, int in_buf_len);  
 函数功能：验证认证服务器回传的认证码，实现设备端对服务器的认证。  
 如果认证正确，会从认证服务器认证码中解析出用于对称加密的密钥，用于后续加密通讯功能。  
-**如果传入的license_id不正确将导致函数执行失败。**
+**如果传入的license不正确将导致函数执行失败。**
 
 | 参数 | 参数类型 | 描述 |
 | :--- | :--- | :--- |
 | license | 输入参数 | init函数中读取到的license信息 |
 | authcode | 输入参数 | 认证服务器回传的认证码 |
-| in_buf_len | 输入参数 | 认证服务器回传的认证码 |
+| in_buf_len | 输入参数 | 认证服务器回传的认证码长度 |
 | return | 返回值 | 详细见响应码 |
 
 ### 响应码
@@ -56,7 +56,7 @@ JDCloud 设备身份认证SDK封装了对底层安全芯片的操作细节，只
 | -9 | 芯片读取错误 | 
 | -10 | 在芯片上创建文件失败 | 
 | -11 | 计算HMAC_SHA256失败 | 
-| -12 | 传入的license_id错误 | 
+| -12 | 传入的license错误 | 
 | -13 | 未进行初始化 | 
 
 ## 认证服务器API
