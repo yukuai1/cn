@@ -74,5 +74,5 @@
            - name: VMS管理
              href: Operation-Guide/Management/VMS.md
            - name: 组件管理
-             href: Operation-Guide/Management/Component.md
+             href: Operation-Guide/Management/ComponentManagement.md
     
