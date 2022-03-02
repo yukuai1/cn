@@ -85,8 +85,12 @@
         href: Operation-Guide/index.md
       - name: SQL支持
         href: Operation-Guide/sql.md
-      - name: 高级配置
-        href: Operation-Guide/Configure.md
+      - name: 集群配置
+        items: 
+        - name: 高级配置
+          href: Operation-Guide/Configure.md
+        - name: 同义词配置
+          href: Operation-Guide/synonymdic.md
       - name: 快照
         items: 
         - name: 创建快照
