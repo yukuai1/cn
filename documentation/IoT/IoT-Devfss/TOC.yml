@@ -5,10 +5,10 @@ items:
     items:
       - name: 产品概述
         href: Introduction/Product-Overview.md
-      - name: 应用场景
-        href: Introduction/Application-Scenarios.md
       - name: 产品功能
         href: Introduction/Features.md
+      - name: 应用场景
+        href: Introduction/Application-Scenarios.md
   - name: 产品定价
     items:
       - name: 计费规则
