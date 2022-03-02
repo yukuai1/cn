@@ -31,14 +31,7 @@
 
 ## 审批状态图
 
-```mermaid
-stateDiagram-v2
-[*] --> 待测试审批
-待测试审批 --> 待上线审批:测试通过
-待测试审批 --> [*]:驳回
-待上线审批 --> [*]:通过
-待上线审批 --> [*]:驳回
-```
+![process](../../../../../image/Starlink/process/process_state.png)
 
 
 
