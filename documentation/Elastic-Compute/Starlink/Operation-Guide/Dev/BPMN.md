@@ -1,6 +1,7 @@
 # BPMN流程编排
-BPMN函数可以快速方便地进行服务编排，编排的服务可以是函数、连接器等等。BPMN函数与Java、JavaScript、Groovy函数的主要区别仅仅在于BPMN函数编辑页对应的是BPMN画布，而其他函数则是一段代码。  
+BPMN函数可以快速方便地进行服务编排，编排的服务可以是函数、连接器等。BPMN函数与Java、JavaScript、Groovy函数的主要区别仅仅在于BPMN函数编辑页对应的是BPMN画布，而其他函数则是一段代码。  
 BPMN画布主要包含如下元素：
+
 > - 基本元素：开始节点、任务节点、网关节点、结束节点
 > - 选择、连接工具
 > - 组件库
@@ -29,10 +30,10 @@ BPMN画布主要包含如下元素：
 ### 排他网关
 - 排它网关相当于 if(){} elseif() {} elseif(){}  
 - 只有一条线可以设置为default分支
-  * default分支设置方法：单机连线，点击扳手图标，选择Default Flow
+  * default分支设置方法：单击连线，点击扳手图标，选择Default Flow
 - default分支相当于 if() {} elseif() {} else {}
-- 如果未设置default分支，排它网关运行时必须有有且只有一条线的表达式结果未true，都是false或者2个以上的true都会抛异常
-- 如果设置了default分支，如果除default外其它分支都未false，则默认走default分支
+- 如果未设置default分支，排它网关运行时必须有且只有一条线的表达式结果为true，都是false或者2个以上的true都会抛异常
+- 如果设置了default分支，如果除default外其它分支都为false，则默认走default分支
 - default分支不需要设置条件
 ![排他网关](../../../../../image/Starlink/dev/exclusive-gateway.png)
 ### 并行网关

@@ -35,7 +35,7 @@
         配置请求体数据 请求类型 支持 **json、text、x-www-form-urlencoded**
         ![配置http方法请求体数据](../../../../image/Starlink/Demo/配置http方法请求体数据.png)
     - 6、请求参数和示例值互转
-        为方便请求参数配置支持定义与参数值互转，参数对应类型 **query(url请求参数)、path(url请求路径参数)、header(请求头参数)、body(请求体参数)、cookie(cookie 参数)**     
+        为方便请求参数配置，支持参数定义与示例值互转，示例值有固定的结构，query表示url请求参数，path表示url请求路径参数，header表示请求头参数，body表示请求体参数，cookie表示cookie 参数。
         ![http方法请求参数与示例值互转](../../../../image/Starlink/Demo/http方法请求参数与示例值互转.png)
 - 3、配置响应参数
     - 1、配置响应体
@@ -45,13 +45,13 @@
         配置响应头参数     
          ![配置http方法响应头参数](../../../../image/Starlink/Demo/配置http方法响应头参数.png)
     - 3、响应参数和示例值互转
-        为方便响应参数定义方便，执行响应参数与响应示例值互转     
-        ![http方法响应参数与示例值互转](../../../../image/Starlink/Demo/http方法响应参数与示例值互转.png)
+        为方便响应参数定义，支持响应参数与响应示例值互转![http方法响应参数与示例值互转](../../../../image/Starlink/Demo/http方法响应参数与示例值互转.png)
 ### 数据源配置
 **配置：**
 #### 新建数据源
   目前只支持 **mysql** 类型数据源
   ![新建数据源](../../../../image/Starlink/Demo/新建数据源.png)
+
 #### 配置数据源
 **jdbcUrl 用户名 密码** 支持环境变量配置， 其他参数有默认值，可以根据实际需求进行调整
 ![配置数据源](../../../../image/Starlink/Demo/配置数据源.png)
@@ -119,7 +119,7 @@ public class HandleBussinessGroovy{
     private final Logger log2 = LoggerFactory.getLogger("groovy-demo");
 
     /**
-     * 通过{@link Inject}注解注入函数对象(可以注入代码函数或者bomn函数)
+     * 通过{@link Inject}注解注入函数对象(可以注入代码函数或者bpmn函数)
      */
     @Inject
     private Function handleBussinessGroovy;
@@ -210,7 +210,7 @@ class User{
         this.name = name;
     }
 }
-  ```
+```
 ### bpmn 函数配置
 **配置：**
 #### 新建bpmn类型函数

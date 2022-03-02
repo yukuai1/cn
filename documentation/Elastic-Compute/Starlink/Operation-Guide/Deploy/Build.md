@@ -19,7 +19,7 @@
 ![build-desc](../../../../../image/Starlink/build/build-desc.jpg)
 
   > - 强烈建议输入一些有意义的、与本次构建内容相关的说明。
-  > - 系统构建时，**默认拉取master分支**。请确认master分支已是最新代码。
+  > - 系统构建时，**从远程Git仓库拉取代码，请确认在星链Studio中的修改都已提交Git**。
   >
 
   

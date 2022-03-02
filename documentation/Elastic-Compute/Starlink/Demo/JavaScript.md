@@ -35,7 +35,7 @@
       配置请求体数据 请求类型 支持 **json、text、x-www-form-urlencoded**
       ![配置http方法请求体数据](../../../../image/Starlink/Demo/配置http方法请求体数据.png)
     - 6、请求参数和示例值互转
-      为方便请求参数配置支持定义与参数值互转，参数对应类型 **query(url请求参数)、path(url请求路径参数)、header(请求头参数)、body(请求体参数)、cookie(cookie 参数)**
+      为方便请求参数配置，支持参数定义与示例值互转，示例值有固定的结构，query表示url请求参数，path表示url请求路径参数，header表示请求头参数，body表示请求体参数，cookie表示cookie 参数。
       ![http方法请求参数与示例值互转](../../../../image/Starlink/Demo/http方法请求参数与示例值互转.png)
 - 3、配置响应参数
     - 1、配置响应体
@@ -45,7 +45,7 @@
       配置响应头参数
       ![配置http方法响应头参数](../../../../image/Starlink/Demo/配置http方法响应头参数.png)
     - 3、响应参数和示例值互转
-      为方便响应参数定义方便，执行响应参数与响应示例值互转
+      为方便参数定义，支持示例值转定义参数
       ![http方法响应参数与示例值互转](../../../../image/Starlink/Demo/http方法响应参数与示例值互转.png)
 ### 数据源配置
 **配置：**
@@ -149,7 +149,7 @@ function doCall(args) {
 }
 
 export {doCall}
-  ```
+```
 ### bpmn 函数配置
 **配置：**
 #### 新建bpmn类型函数
