@@ -1,4 +1,4 @@
-name: 智能生活物联网平台
+name: 物联网设备身份认证服务
 href: 
 items:
   - name: 产品简介
@@ -33,6 +33,4 @@ items:
     href: API/API-Guide.md
   - name: 常见问题
     href: FAQ/FAQ.md
-  - name: 用户协议
-    href: User-Agreements/SLA.md
 

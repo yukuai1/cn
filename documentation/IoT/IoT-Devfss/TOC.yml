@@ -19,7 +19,3 @@ items:
         href: Operation-Guide/Use-Product-Info.md
   - name: 常见问题
     href: FAQ/FAQ.md
-  - name: 用户协议
-    items:
-      - name: SLA
-        href: User-Agreements/SLA.md

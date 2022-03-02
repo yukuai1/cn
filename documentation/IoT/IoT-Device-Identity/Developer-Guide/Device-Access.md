@@ -66,6 +66,6 @@ EXIT:
 3. 标识动态库文件目录，建议使用export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/~/testdemo/:. 命令。
 4. 调用./mytest执行示例程序。
 
-需要其他平台的sdk的请邮件联系XXXX@jd.com，并附上平台信息及对应的交叉编译链。
+需要其他平台的sdk的请邮件联系smartcloud@jd.com，并附上平台信息及对应的交叉编译链。
 
 
