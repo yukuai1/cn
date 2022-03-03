@@ -68,5 +68,5 @@
 - 管理
   - [团队管理](../Operation-Guide/Management/Team.md)
   - [VMS管理](../Operation-Guide/Management/VMS.md)
-  - [组件管理](../Operation-Guide/Management/Component.md)  
+  - [组件管理](../Operation-Guide/Management/ComponentManagement.md)  
   
