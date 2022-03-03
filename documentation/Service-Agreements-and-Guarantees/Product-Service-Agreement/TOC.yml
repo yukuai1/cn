@@ -482,4 +482,11 @@ items:
     href: Real-Name-Authentication-SLA.md
   - name: 云电脑服务条款
     href: Cloud-Computer-Of-Service.md
-    
+  - name: 大宗商品仓储监管服务条款
+	  href: BulkStock-Terms-Of-Service.md
+	- name: 大宗商品仓储监管等级协议（SLA）
+	  href: BulkStock-SLA.md
+  - name: 智慧社区管理平台等级协议（SLA）
+	  href: Iotcommunity-SLA.md
+	- name: 智慧园区管理平台等级协议（SLA）
+    href: Iotpark-SLA.md 
