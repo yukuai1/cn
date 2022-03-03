@@ -21,6 +21,8 @@
         href: Instance-Management/describeNodes.md
       - name: describeInstances
         href: Instance-Management/describeInstances.md
+      - name: describeInstanceAttributes
+        href: Instance-Management/describeInstanceAttributes.md        
       - name: describeParameters
         href: Instance-Management/describeParameters.md
       - name: describeUpgradePlan
