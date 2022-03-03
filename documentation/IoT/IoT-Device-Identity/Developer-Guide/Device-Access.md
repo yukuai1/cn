@@ -3,7 +3,7 @@
 本节介绍如何使用设备身份认证SDK。
 
 前序条件：
-- 下载购买的license和对应的PSK（下载地址：https://deviceidentity-console.jdcloud.com/list ，位置如图）  
+- 下载购买的license和对应的PSK（下载地址：https://deviceidentity-console.jdcloud.com/list ，位置如图）  。
 ![管理设备](../../../../image/IoT/IoT-Device-Identity/License-Manage.png)
 - 将其烧录到安全芯片中，集成烧录请联系smartcloud@jd.com，我们将提供专业团队进行技术支持。  
 
@@ -62,7 +62,7 @@ EXIT:
 ```
 本示例代码采用scons进行编译，针对的是linux平台的评估版。执行示例代码需要首先连接安全芯片到linux系统中，步骤如下：
 1. 需要进入root用户。
-2. 使用chmod 777 /dev/sdb给安全芯片加执行权限（/dev/sdb只是示例名称，以实际安全芯片在系统中的名称为准）
+2. 使用chmod 777 /dev/sdb给安全芯片加执行权限（/dev/sdb只是示例名称，以实际安全芯片在系统中的名称为准）。
 3. 标识动态库文件目录，建议使用export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/~/testdemo/:. 命令。
 4. 调用./mytest执行示例程序。
 
