@@ -42,7 +42,15 @@
       - name: rebootPod
         href: Instance-Management/rebootPod.md  
       - name: upgradeEngineVersion
-        href: Instance-Management/upgradeEngineVersion.md          
+        href: Instance-Management/upgradeEngineVersion.md
+  - name: 账号管理
+    items:
+      - name: createAccount
+        href: Account-Management/createAccount.md
+      - name: describeAccounts
+        href: Account-Management/describeAccounts.md
+      - name: resetPassword
+        href: Account-Management/resetPassword.md
   - name: 备份管理
     items:
       - name: createBackup
