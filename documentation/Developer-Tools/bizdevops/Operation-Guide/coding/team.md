@@ -1,7 +1,7 @@
 ## 群组空间
 
 在首页，左侧菜单栏的**群组列表**，展示您所参与的群组，选择您要查看的群组名称，即可查看该群组下的仓库，群组成员，以及群组活动，该群组的Owner 或者Master可以对群组进行设置。
-![img](../../All-Image/team.assets/team_new.jpg)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/team.assets/team_new.jpg)
 
 ### 新建群组
 
@@ -17,7 +17,7 @@
 
 >3. 访问级别：根据代码群组的实际情况设置访问级别。
 
-![img](../../All-Image/team.assets/new_team1.jpg)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/team.assets/new_team1.jpg)
 
 3. 点击**创建群组**，即可完成创建。
 
@@ -25,7 +25,7 @@
 
 在首页，选择您要查看的群组，进入群组后，默认展示该群组的**仓库**信息，您可以通过输入仓库名称来查找您想查看的仓库，点击仓库地址即可进入仓库。如果您的群组还未创建代码仓库，点击**新建仓库**即可。
 
-![img](../../All-Image/team.assets/team_repo.jpg)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/team.assets/team_repo.jpg)
 
 ### 群组成员
 
@@ -35,7 +35,7 @@
 * 如果您所负责的业务发生了变化，不再为该群组下的代码贡献代码，可以点击**离开**，退出该群组。
 * 如果您该群组的Owner时，请在**设置**页签，**高级设置**中先将该群组移交给群组下的某个成员，然后在成员设置，或者群组成员中退出即可
 
-![img](../../All-Image/team.assets/team_member.jpg)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/team.assets/team_member.jpg)
 
 ### 群组活动
 
@@ -55,7 +55,7 @@
 
 >2. 目前群组的访问权限，默认是公开，暂时无法设置权限，正在开发，敬请期待
 
-![img](../../All-Image/team.assets/team_setting1.jpg)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/team.assets/team_setting1.jpg)
 
 #### 成员设置
 
@@ -75,7 +75,7 @@
    * 增加成员，在erp输入框和角色输入框分别输入erp和角色，点击添加按钮，即可添加群组成员。
    * 修改成员角色，点击成员列表右侧角色下拉列表，即可修改成员角色。
    * 删除仓库成员，点击成员列表右侧移除按钮，即可删除仓库成员。
-     ![img](../../All-Image/team.assets/team_setting2.jpg)
+     ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/team.assets/team_setting2.jpg)
 
 
 
@@ -92,7 +92,7 @@
 >您可以将群组负责人转移群组下的任何一位成员，转移操作完成后，您还在该群组下，同时被赋予"Master"权限。
 
 高级设置中，在选择要接收群组的成员。点击**转移群组**，在弹出框中，再次输入群组名称，点击**确认**，即可完成群组的转移操作。
-![img](../../All-Image/team.assets/team_setting3.jpg)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/team.assets/team_setting3.jpg)
 
 #### 删除群组
 
@@ -104,5 +104,5 @@
 
 高级设置中，点击**删除群组**，在弹出框中，再次输入群组名称，点击**确认**，即可完成群组的删除操作。
 
-![img](../../All-Image/team.assets/team_setting4.jpg)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/team.assets/team_setting4.jpg)
 

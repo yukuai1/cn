@@ -8,7 +8,7 @@
 
 产品架构如下：
 
-![image-20220216115012884](../../All-Image/space.assets/image-20220216115012884.png)
+![image-20220216115012884](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/image-20220216115012884.png)
 
 ## 团队空间管理
 
@@ -18,33 +18,33 @@
 
 空间基本信息展示空间名称、类型、项目名称、插件等数据。
 
-**![img](../../All-Image/space.assets/clip_image002.jpg)**
+**![img](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/clip_image002.jpg)**
 
 #### 空间数据展示
 
 空间数据展示了一些空间内工作项的关键指标，和各个阶段下的工作项数量。
 
-**![img](../../All-Image/space.assets/clip_image004.jpg)**
+**![img](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/clip_image004.jpg)**
 
 #### 团队空间动态
 
 成员可以在空间动态中以不同维度：项目空间、迭代、工作项、任务查看到所有成员在空间内的操作，实现动态可追溯。
 
-**![img](../../All-Image/space.assets/clip_image006.jpg)**
+**![img](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/clip_image006.jpg)**
 
 ### 创建团队空间
 
 进入`团队空间`模块，点击`创建新团队空间`，填写相应字段，即可创建一个团队空间。
 
-![x](../../All-Image/space.assets/space1.png)
+![x](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/space1.png)
 
 创建好的团队空间如图
 
-![demand1](../../All-Image/space.assets/space.png)
+![demand1](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/space.png)
 
 对于有些团队空间众多的角色，可以收藏一些常关注的团队空间。点击`收藏`按钮，空间名称下方将变为`已收藏`。进入`我的收藏`即可查看。
 
-![demand1 ](../../All-Image/space.assets/space909.png)
+![demand1 ](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/space909.png)
 
 ## 
 
@@ -58,19 +58,19 @@
 
 当团队空间关联了项目，则此团队空间下的卡片将默认与团队空间关联的项目一致，卡片关联的项目可以再次更改。
 
-![img](../../All-Image/space.assets/clip_image002-4983933.jpg)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/clip_image002-4983933.jpg)
 
 #### 关联项目管理
 
 空间可以切换关联项目，支持变更项目时，同样团队的成员继续执行新项目的场景。
 
-![img](../../All-Image/space.assets/clip_image004-4983933.jpg)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/clip_image004-4983933.jpg)
 
 #### 人员管理
 
 实现 管理员-成员-游客 多层级的自组织团队成员管理。
 
-![img](../../All-Image/space.assets/clip_image006-4983933.jpg)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/clip_image006-4983933.jpg)
 
 默认对各身份的权限如下：
 
@@ -99,7 +99,7 @@
 默认显示`任务`和`BUG`，且不可取消显示；可选是否显示`产品需求`和`研发需求`。
 在实际应用中，根据团队线下管理模式，自由选择相应显示字段。
 
-![img](../../All-Image/space.assets/clip_image008.jpg)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/clip_image008.jpg)
 
 行云支持对卡片状态的自定义设置，并可以随意更改名称，以适应不同业务场景的需要。同时支持选择状态是否显示，隐藏后看板视图将不显示对应状态列。但完成状态不支持删除和隐藏，仅支持改名，挂起状态不可做修改。
 
@@ -108,47 +108,47 @@
 1. 状态自定义是在固定的阶段中进行大排序，顺序不可变更，大的阶段按顺序为「准备」「评审」「就绪」「设计」「开发」「测试」「发布」「完成」「挂起」
 2. 可通过新增状态功能进行状态新增，每个阶段中最多允许5个自定义的状态，同阶段中可进行顺序的拖拽。
 
-![img](../../All-Image/space.assets/clip_image010.jpg)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/clip_image010.jpg)
 
 #### 成员权限管理
 
 支持针对各种成员角色，对迭代和工作项进行操作权限的配置管理。管理员可修改
 
-![img](../../All-Image/space.assets/clip_image012.jpg)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/clip_image012.jpg)
 
 #### 个性化流程管理
 
 项目空间内支持评审流程约束、需求变更流程约束、工时填报流程约束等多种流程约束。
 
-![img](../../All-Image/space.assets/clip_image014.jpg)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/clip_image014.jpg)
 
 #### 插件管理
 
 支持根据团队自身情况，选择对应的插件集成到空间中。
 
-![img](../../All-Image/space.assets/clip_image016.jpg)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/clip_image016.jpg)
 
 #### 卡片自定义
 
 团队空间管理员有权根据部门管理员在系统设置-->扩展表单设置里创建的模版自定义扩展字段，保存后扩展字段会在团队空间的卡片内生效。
 
-![img](../../All-Image/space.assets/clip_image018.jpg)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/clip_image018.jpg)
 
 #### 卡片流程自定义
 
 支持团队空间管理员按照角色、用户自定义卡片在不同状态之间的流转规则，流转规则对空间内所有卡片生效，便于团队进行流程管理。
 
-![img](../../All-Image/space.assets/clip_image020.jpg)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/clip_image020.jpg)
 
 #### 角色职责设置
 
 行云支持对团队成员进行角色职责设置，团队成员可在卡片处理人中选择角色（非必填，当选择后系统自动记忆保存，下次将自动带出），方便管理者按角色进行统计分析。
 
-![demand](../../All-Image/space.assets/space8.png)
+![demand](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/space8.png)
 
 #### 不同团队空间简易切换
 
-<img src="../../All-Image/space.assets/image-20220216144557779.png" alt="image-20220216144557779" style="zoom:50%;" />
+<img src="http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/image-20220216144557779.png" alt="image-20220216144557779" style="zoom:50%;" />
 
 ### 
 
@@ -168,13 +168,13 @@
 
 进入团队空间内，点击左侧`新建迭代`，可以创建一个迭代计划。
 
-![image-20220216143506745](../../All-Image/space.assets/image-20220216143506745.png)
+![image-20220216143506745](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/image-20220216143506745.png)
 
 ### 管理迭代
 
 支持编辑迭代信息，对迭代进行归档和删除。可在迭代视图快速查看迭代的相关信息。包括各类工作项信息、迭代时间和剩余工作量。
 
-<img src="../../All-Image/space.assets/clip_image002-4993494.jpg" alt="img/" style="zoom:50%;" />
+<img src="http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/clip_image002-4993494.jpg" alt="img/" style="zoom:50%;" />
 
 迭代结束后，可以进行迭代`归档`操作，归档时，若有未完成卡片，可以选择将卡片恢转移到未计划。
 
@@ -186,7 +186,7 @@
 
 看板查看：可以进行卡片筛选
 
-<img src="../../All-Image/space.assets/image-20220216150036291.png" alt="image-20220216150036291" style="zoom:50%;" />
+<img src="http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/image-20220216150036291.png" alt="image-20220216150036291" style="zoom:50%;" />
 
 列表查看：
 
@@ -204,15 +204,15 @@
 
 卡片创建页面如下图：
 
-<img src="../../All-Image/space.assets/space11.png" alt="demand/" style="zoom:50%;" />
+<img src="http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/space11.png" alt="demand/" style="zoom:50%;" />
 
-![demand](../../All-Image/space.assets/卡片详情.jpg)
+![demand](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/卡片详情.jpg)
 
-![demand](../../All-Image/space.assets/新建卡片.jpg)
+![demand](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/新建卡片.jpg)
 
-![demand](../../All-Image/space.assets/卡任务.jpg)
+![demand](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/卡任务.jpg)
 
-![demand1](../../All-Image/space.assets/拖动卡任务.jpg)
+![demand1](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/拖动卡任务.jpg)
 
 
 填写字段说明如下：
@@ -341,7 +341,7 @@
 
 如需保密，可直接勾选。如下图所示：
 
-![demand1](../../All-Image/space.assets/sprint4.jpg)
+![demand1](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/sprint4.jpg)
 
 若有详情内容需要补充，点击卡片，进入卡片内容详情页进行补充即可。
 
@@ -369,13 +369,13 @@
 
 支持查看指定时间内的空间成员处理的工作项。便于管理者对成员进行任务的指配和调整。拥有权限的成员可以在日历中快速新建工作项。
 
-![img](../../All-Image/space.assets/clip_image002-4995203.jpg)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/clip_image002-4995203.jpg)
 
 ### 人力资源饱和度视图
 
 人力资源饱和度视图支持查看指定时间内的空间成员的任务饱和度。便于管理者对任意成员进行工作的调度，以及随时查看自组织团队内各个成员的工作情况，为管理者提供人员管理的有力工具。
 
-![img](../../All-Image/space.assets/clip_image004-4995203.jpg)点击团队成员名字后面的加号，在任务分配框内填写相关信息，即可为该成员分配任务。
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/clip_image004-4995203.jpg)点击团队成员名字后面的加号，在任务分配框内填写相关信息，即可为该成员分配任务。
 
-![demand](../../All-Image/space.assets/space23.png)
+![demand](http://devops-minio.jdcloud.com/doc-image/All-Image/space.assets/space23.png)
 
