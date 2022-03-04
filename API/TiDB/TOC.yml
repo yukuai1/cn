@@ -45,27 +45,35 @@
         href: Instance-Management/upgradeEngineVersion.md          
   - name: 备份管理
     items:
-      - name: backupDownloadURL
-        href: Backup-Management/backupDownloadURL.md
       - name: createBackup
         href: Backup-Management/createBackup.md
       - name: deleteBackup
         href: Backup-Management/deleteBackup.md
       - name: describeBackups
         href: Backup-Management/describeBackups.md  
-  - name: 安全管理
+  - name: 白名单管理
     items:
-      - name: describeSecurityIps
-        href: Security-Management/describeSecurityIps.md
-      - name: modifySecurityIps
-        href: Security-Management/modifySecurityIps.md
-  - name: 跨地域备份管理
-    status: 0
+      - name: addWhiteListGroup
+        href: White-List/addWhiteListGroup.md
+      - name: deleteWhiteListGroup
+        href: White-List/deleteWhiteListGroup.md
+      - name: describeWhiteList
+        href: White-List/describeWhiteList.md
+      - name: modifyWhiteList
+        href: White-List/modifyWhiteList.md        
+  - name: 数据迁移
     items:
-      - name: createBackupSynchronicity
-        href: Across-Region-Backup-Sync-Management/createBackupSynchronicity.md
-      - name: deleteBackupSynchronicities
-        href: Across-Region-Backup-Sync-Management/deleteBackupSynchronicities.md
-      - name: describeBackupSynchronicities
-        href: Across-Region-Backup-Sync-Management/describeBackupSynchronicities.md      
-      
+      - name: createDataMigration
+        href: Data-Migration/createDataMigration.md
+      - name: describeDataMigration
+        href: Data-Migration/describeDataMigration.md
+      - name: verifyFilefromOSS
+        href:Data-Migration/verifyFilefromOSS.md
+  - name: 其他
+    items:
+      - name: describeAvailableZones
+        href: Common/describeAvailableZones.md
+      - name: describeOrderableInstanceType
+        href: Common/describeOrderableInstanceType.md
+      - name: describeVersions
+        href: Common/describeVersions.md
