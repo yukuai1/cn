@@ -8,7 +8,7 @@
 
  ![](/image/Joybuilder/create_project.PNG) 
 
-3、选择模板，推荐“快速创建模板V1.0”
+3、选择模板，推荐“快速创建模板V2(推荐体验)”
 
  ![](/image/Joybuilder/create_project_template.PNG) 
   
@@ -35,4 +35,10 @@
 6、点击【确定】按钮，完成项目创建。在项目列表中，通过【访问】按钮，即可进行项目访问
 
 ![](/image/Joybuilder/create_project_end.PNG) 
+
+7、点击【查看详情】按钮，查看项目信息，也可点击【修改】按钮，对项目详情进行修改
+
+![](/image/Joybuilder/create_project_detail.PNG) 
+
+
 
