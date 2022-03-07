@@ -10,11 +10,11 @@
    * 在Coding首页，点击菜单栏右上方的➕，选择**新建仓库**，进入新建仓库页面，仓库的命名空间默认为个人群组（用户ERP）。
 
    * 在Coding首页，左侧仓库列表，点击**新建**按钮，进入新建仓库页面，仓库的命名空间默认为个人群组（用户ERP）。
-     ![](../../All-Image/repo.assets/new_repo.jpg)	
+     ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/new_repo.jpg)	
 
    * 选择一个群组，在群组空间内，点击**新建仓库**按钮，进入新建仓库页面，仓库的命名空间默认为当前群组。
 
-     ![](../../All-Image/repo.assets/new_repo1.jpg)
+     ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/new_repo1.jpg)
 
 2. 在新建仓库页签，选择**命名空间**，填写**仓库名称**，**仓库中文名称**，**仓库描述** *（可选）*，**语言** *（默认: JAVA）*，以及选择相应的**访问级别**，点击**创建**按钮，仓库创建完成。
 
@@ -24,14 +24,14 @@
 >2. 仓库负责人：默认将创建者设置为仓库的owner，并赋予master权限。
 >3. 访问级别：根据代码仓库的实际情况设置访问级别。
 
-   ![](../../All-Image/repo.assets/new_repo2.jpg)
+   ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/new_repo2.jpg)
 
 #### 导入仓库
 
 如果您已经在gitlab有自己的代码仓库，想切换到Coding平台管理您的代码，请按照以下步骤操作：
 
 1.  在Coding首页，点击菜单栏右上方的➕，选择**导入仓库**，进入导入仓库页面。
-    ![](../../All-Image/repo.assets/new_repo4.jpg)	
+    ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/new_repo4.jpg)	
 
 2.  在新建仓库页签，输入Gitlab中的仓库地址，选择**命名空间**，填写**仓库名称**，**仓库中文名称**，**仓库描述** *（可选）*，**语言** *（默认: JAVA）*，以及选择相应的**访问级别**，点击**创建**按钮，仓库创建完成。
 
@@ -40,7 +40,7 @@
 >1. 操作导入的人员，必须是Gitlab仓库中的成员，导入Coding后，默认将该操作人设置为该仓库的Owner。
 >2. 支持自动导入成员和成员权限。
 
-   ![](../../All-Image/repo.assets/new_repo5.jpg)
+   ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/new_repo5.jpg)
 
 ## 仓库文件
 
@@ -55,7 +55,7 @@
 >3. 文件树模式浏览：文件将以树状结构呈现于左侧，方便查找文件，并和文件列表中的文件连动。
 >4. 在线编辑功能：直接在该仓库，在线新建，编辑，删除文件。
 
-   ![](../../All-Image/repo.assets/files_list.jpg)
+   ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/files_list.jpg)
 
 ### 新建文件
 
@@ -75,7 +75,7 @@
    * 提交文件的同时，基于当前分支创建新分支，并将该文件提交到新分支上。<br>
      新分支默认的命名规则：当前登录账号-patch-1；比如：miaoguangying-patch-1。可根据需求自行修改分支名称。
 
-![](../../All-Image/repo.assets/files_new.jpg)
+![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/files_new.jpg)
 
 ### 编辑文件
 
@@ -98,49 +98,49 @@
 ## 提交历史
 
 1. 进入仓库**Code**页，点击仓库描述及标签下方的**commits或提交**按钮。
-   ![img](../../All-Image/repo.assets/WX20190305-145041@2x.png)
+   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190305-145041@2x.png)
 
 2. 即可查看整个仓库的提交历史。在提交历史页，您可以切换分支来查看不同分支的提交历史。
-   ![img](../../All-Image/repo.assets/WX20190305-140946@2x.png)
+   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190305-140946@2x.png)
 
 3. 同时，针对某一提交历史，您还可复制commit-id，点击commit-id进入提交历史文件对比页。
-   ![img](../../All-Image/repo.assets/WX20190305-143040@2x.png)
+   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190305-143040@2x.png)
 4. 除此之外，你还可点击右侧的***< >***按钮，进入对应的commit-id的文件列表页。
-   ![img](../../All-Image/repo.assets/WX20190305-143731@2x.png)
+   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190305-143731@2x.png)
 
 ## 分支列表
 
 1. 进入仓库**Code**页，点击仓库描述及标签下方的**branches或分支**按钮。
-   ![img](../../All-Image/repo.assets/WX20190305-145232@2x.png)
+   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190305-145232@2x.png)
 2. 即可查看整个仓库的分支列表。概述中包括仓库的默认分支、活跃分支及陈旧分支。
-   ![img](../../All-Image/repo.assets/WX20190305-141019@2x.png)
+   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190305-141019@2x.png)
 
 3. 点击**活跃分支**，即可查看三个月内有过提交的所有活跃分支。
-   ![img](../../All-Image/repo.assets/WX20190305-141036@2x.png)
+   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190305-141036@2x.png)
 4. 点击**陈旧分支**，即可查看三个月内没有提交的所有活跃分支。
-   ![img](../../All-Image/repo.assets/WX20190305-141052@2x.png)
+   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190305-141052@2x.png)
 
 ## 成员列表
 
 1. 进入仓库**Code**页，点击仓库描述及标签下方的**members或成员**按钮。
-   ![img](../../All-Image/repo.assets/WX20190305-151243@2x.png)
+   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190305-151243@2x.png)
 
 2. 即可查看整个仓库的成员基本信息及其角色。
-   ![img](../../All-Image/repo.assets/WX20190305-151259@2x.png)
+   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190305-151259@2x.png)
 
 ## 派生仓库
 
 1. 进入仓库，点击仓库上方的**Fork或派生**按钮。
-   ![img](../../All-Image/repo.assets/WX20190513-155537@2x.png)
+   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190513-155537@2x.png)
 
 2. 填写Fork原因即可。
-   ![img](../../All-Image/repo.assets/WX20190513-155634@2x.png)
+   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190513-155634@2x.png)
 
 3. 您还可进入Fork Request按钮，进入Fork列表页
-   ![img](../../All-Image/repo.assets/WX20190513-155826@2x.png)
+   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190513-155826@2x.png)
 
 4. Fork列表页包含我的申请和待我处理的fork请求。
-   ![img](../../All-Image/repo.assets/WX20190513-160027@2x.png)
+   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190513-160027@2x.png)
 
 ## 文件写保护
 
@@ -151,19 +151,19 @@
 * **“锁定”**文件  
   * 仓库 - 代码，选择想要锁定的“文件”，点击“锁定”。
   * 被锁定的文件，有🔒标识；无权限成员编辑/删除图标不可见。
-    ![img](../../All-Image/repo.assets/lock-file.png)
+    ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/lock-file.png)
 
   * 鼠标悬停，查看”文件“详细锁定信息。
-    ![img](../../All-Image/repo.assets/lockedfiles.png)
+    ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/lockedfiles.png)
 * **”取消锁定“**文件  
   * 仓库 - code，选择想要解锁的文件，点击“取消锁定”。
   * 无权限成员“取消锁定”按钮不可见。
-    ![img](../../All-Image/repo.assets/unlock-file.png)
+    ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/unlock-file.png)
 * **查看仓库中已锁定的文件列表**  
   * 仓库 - 设置 - 安全策略：“文件写保护“中列出了仓库中所有的锁定文件。
   * 同时可以“取消锁定”文件，被“取消锁定”的文件，将从此列表中删除。
-    ![img](../../All-Image/repo.assets/settings-lock.png)
-* **命令行修改锁定文件**，如果权限不足(Master以下成员)，将提示错误不能提交：  ![img](../../All-Image/repo.assets/lock-command.png)
+    ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/settings-lock.png)
+* **命令行修改锁定文件**，如果权限不足(Master以下成员)，将提示错误不能提交：  ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/lock-command.png)
 
 以`Merge Request`为例，从新建合并请求，查阅合并请求的列表，代码评审，以及最终合并代码进行详细的说明。
 
@@ -175,36 +175,36 @@
 ### 标签
 
 进入仓库**Code**页，点击**标签**按钮
-![img](../../All-Image/repo.assets/tag.png)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/tag.png)
 即可进入“标签”页面
-![img](../../All-Image/repo.assets/tag-2.png)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/tag-2.png)
 
 **支持**：  
 
 * 新建标签：
   * 新建标签命名规范参考：[git check ref format](https://git-scm.com/docs/git-check-ref-format)
   * 标签描述不多于255个字符
-    ![img](../../All-Image/repo.assets/tag-new.png)
+    ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/tag-new.png)
 
   * 支持基于分支/标签/commits新建标签
-    ![img](../../All-Image/repo.assets/tag-new-base.png)
+    ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/tag-new-base.png)
 
 * 从已存在标签创建发行版: 
-  ![img](../../All-Image/repo.assets/release-from-tag.png)
+  ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/release-from-tag.png)
     * 添加描述
     * 上传附件
     * 如果暂不支持用于生产环境，可以标记为Pre-release
-      ![img](../../All-Image/repo.assets/release-from-tag-2.png)
+      ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/release-from-tag-2.png)
 
 * 删除已存在标签:
-  ![img](../../All-Image/repo.assets/tag-delete.png)
+  ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/tag-delete.png)
 
 ### 发行版
 
 进入仓库**Code**页，点击**发行版**按钮
-![img](../../All-Image/repo.assets/release.png)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/release.png)
 即可进入“发行版”页面
-![img](../../All-Image/repo.assets/release-2.png)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/release-2.png)
 
 **支持**：
 
@@ -213,12 +213,12 @@
   * 添加详细描述
   * 添加附件
   * 如果勾选"这是一个预发行版“，则标记为Pre-release；否则通过Commit时间和发行版创建时间标记 Latest-release
-    ![img](../../All-Image/repo.assets/release-new.png)
+    ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/release-new.png)
 
 * 编辑/删除发行版：
   * 编辑发行版：更新描述，附件，标题等
   * 删除发行版：删除发行版不会删除对应的标签
-    ![img](../../All-Image/repo.assets/release-delete.png)
+    ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/release-delete.png)
 
 ## 统计视图
 
@@ -239,30 +239,30 @@
 
 进入仓库，点击**统计按钮**，即可查看仓库总览数据（评审数、代码库大小、语言分布情况等）。
 
-![img](../../All-Image/repo.assets/WX20190305-182403@2x.png)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190305-182403@2x.png)
 
 ### 提交视图
 
-进入仓库，点击**统计按钮**，点击左侧**Commits**菜单，即可查看仓库commits、文件数、代码行数变化趋势图。同时还可选择时间范围确定数据范围。![img](../../All-Image/repo.assets/WX20190305-182428@2x.png)
+进入仓库，点击**统计按钮**，点击左侧**Commits**菜单，即可查看仓库commits、文件数、代码行数变化趋势图。同时还可选择时间范围确定数据范围。![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190305-182428@2x.png)
 
 ### 评审视图
 
 
 进入仓库，点击**统计按钮**，点击左侧**Reviews**菜单，即可查看仓库评审数、评审人员数据变化趋势图。同时还可选择时间范围确定数据范围。
 
-![img](../../All-Image/repo.assets/WX20190305-182443@2x.png)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190305-182443@2x.png)
 
 ### 贡献者视图
 
 进入仓库，点击**统计按钮**，点击左侧**Contributors**菜单，即可查看仓库贡献者数据变化趋势图。同时还可选择时间范围和贡献类型确定数据范围。
 
-![img](../../All-Image/repo.assets/WX20190305-182501@2x.png)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190305-182501@2x.png)
 
 ### 活动视图
 
 进入仓库，点击**统计按钮**，点击左侧**活动**菜单，即可查看仓库近期活动(推送、合并、评审、团队)。
 
-![img](../../All-Image/repo.assets/WX20190305-182525@2x.png)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190305-182525@2x.png)
 
 ## 仓库设置
 
@@ -278,7 +278,7 @@
 
 > 私有：仓库只能由仓库成员访问,必须明确授予每个用户访问权限。
 
-![img](../../All-Image/repo.assets/WX20190306-111410@2x.png)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190306-111410@2x.png)
 
 ### 仓库成员
 
@@ -295,14 +295,14 @@
 >2. 仓库成员角色与群组成员角色的关系：当用户在群组和仓库中同时增加了角色权限，则以仓库中的设置为准。
 
 
-![img](../../All-Image/repo.assets/WX20190306-112113@2x.png)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190306-112113@2x.png)
 
 2. 增加成员，在erp输入框和角色输入框分别输入erp和角色，点击添加按钮，即可添加仓库成员。
-   ![img](../../All-Image/repo.assets/WX20190307-105806@2x.png)
+   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190307-105806@2x.png)
 3. 修改成员角色，点击成员列表右侧角色下拉列表，即可修改成员角色。
-   ![img](../../All-Image/repo.assets/WX20190307-105816@2x.png)
+   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190307-105816@2x.png)
 4. 删除仓库成员，点击成员列表右侧移除按钮，即可删除仓库成员。
-   ![img](../../All-Image/repo.assets/WX20190307-105856@2x.png)
+   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190307-105856@2x.png)
 
 ## 评审规则
 
@@ -315,7 +315,7 @@
 >[!Note|label:关于评审组成员设置的说明]
 >只有评审组的成员为常用评审成员，每次创建评审时评审成员都可进行评审。除此之外，如您需要临时添加评审人员，可在创建评审时自定义评审人员。
 
-![img](../../All-Image/repo.assets/WX20190306-114003@2x.png)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190306-114003@2x.png)
 
 **评审策略设置**
 
@@ -347,7 +347,7 @@
 
   点击右上角**自定义评审策略**,填写分支名，填写通过策略的人数，并设置自评策略、评审组成员策略，合并策略，强制评审策略。
 
-  ![img](../../All-Image/repo.assets/setting_ Review.jpg)
+  ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/setting_ Review.jpg)
 
 ### 补充提交
 
@@ -358,7 +358,7 @@
  >
  >1. 进入仓库 --> 设置 --> 评审规则 --> 评审策略 --> 配置  
  >2. 开启“补充提交”策略，如下图所示：   
- >   ![img](../../All-Image/repo.assets/commit-amend-2.png)
+ >   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/commit-amend-2.png)
 
 **功能说明**  
 
@@ -374,7 +374,7 @@
 
 * **补充提交**功能可将commits C自动包含到已存在的MR中；
 * 同时重置此MR的评审状态，需要重新评审此MR。  
-  ![img](../../All-Image/repo.assets/commit-amend-1.png)
+  ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/commit-amend-1.png)
 
 
 **效果演示**  
@@ -382,7 +382,7 @@
 * “补充提交”选项开启后，新的commits会自动加入当前未合并的评审；
   参考下图：
 
-  ![img](../../All-Image/repo.assets/commit-amend-3.png)
+  ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/commit-amend-3.png)
 
 ## 安全策略
 
@@ -395,12 +395,12 @@
 >* 针对某一保护分支，只有可push成员才能提交代码到改保护分支。  
 >* 目前任何人不可以删除被保护分支；并且不允许force push。  
 
-![](../../All-Image/repo.assets/protected-branch-1.png)
+![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/protected-branch-1.png)
 
 2. 增加保护分支，在分支名输入框和可push人员输入框分别输入分支名和可push人员，点击添加按钮，即可添加保护分支。
-   ![](../../All-Image/repo.assets/protected-branch-2.png)
+   ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/protected-branch-2.png)
 3. 删除保护分支，点击保护分支列表右侧的"取消保护"按钮，即可删除保护分支。
-   ![](../../All-Image/repo.assets/protected-branch-3.png)
+   ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/protected-branch-3.png)
 
 ### 文件写保护
 
@@ -412,7 +412,7 @@
 
 1. 列出本仓库所有被锁定的文件
 2. 点击"取消锁定"按钮，即可解除文件锁定并从列表中删除
-   ![](../../All-Image/repo.assets/settings-lock-4463703.png)  
+   ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/settings-lock-4463703.png)  
 
 ## push rules
 
@@ -424,7 +424,7 @@
 
 * Push Rules默认disable，规则一旦enable，对该仓库所有分支生效   
 
-  ![](../../All-Image/repo.assets/push-rule-1.png)
+  ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/push-rule-1.png)
 
 ### Commit提交人信息检查
 
@@ -433,9 +433,9 @@
 * 要求Committer信息与当前操作用户信息(ERP/email)保持一致
 
 * 如‘git push’时遇到如下问题：  
-  ![](../../All-Image/repo.assets/push-rule-commiter-error-2.png)
+  ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/push-rule-commiter-error-2.png)
 
-  ![](../../All-Image/repo.assets/push-rule-commiter-error.png)
+  ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/push-rule-commiter-error.png)
 
 * **修复方法：**  
 
@@ -448,7 +448,7 @@
      ```
 
      例如：
-     ![](../../All-Image/repo.assets/push-rule-commiter-example.png)  
+     ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/push-rule-commiter-example.png)  
 
     **更新完成后，查看配置信息确保准确无误：**  
 
@@ -469,14 +469,14 @@
 * 约定式提交规则：是Coding一直在支持的一种格式，详细参考：[约定式提交](/all/others.html#commitMsg)  
 * 自定义规则：允许用户根据需要自己定义提交规则，‘git push’时或者Web UI提交时检查“Commit message”是否符合当前规则，不符合规则拒绝提交  
 
-![](../../All-Image/repo.assets/push-rule-message.png)
+![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/push-rule-message.png)
 
 ### 禁止提交Secret文件
 
 * Coding预定义了保密文件名单（如SSH私钥和其他包含保密的文件），我们不提倡此类文件提交至代码托管平台  
 * 您可以通过“禁止提交Secret文件”选项，阻止此类文件提交至当前代码库   
 
-![](../../All-Image/repo.assets/push-rule-secret.png)
+![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/push-rule-secret.png)
 
 
 * ** 预定义的保密文件名单如下：**  
@@ -544,7 +544,7 @@ bash_history
 Webhooks允许在发生特定事件时通知外部服务。 当指定的事件发生时，我们会向您提供的每个网址发送一个POST请求。
 
 进入某个仓库，点击**设置**按钮，点击左侧的**Webhooks**菜单，即进入Webhooks页面。你可以管理所添加的webhook信息。
-![img](../../All-Image/repo.assets/webhook.png)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/webhook.png)
 
 **添加webhook**
 
@@ -556,7 +556,7 @@ Webhooks允许在发生特定事件时通知外部服务。 当指定的事件�
    * **Token**：第三方应用验证的密钥<br>
    * **触发条件**：触发条件有三种方式：push，tag_push，merge_request。
 
-   ![img](../../All-Image/repo.assets/setting_webhook.jpg)
+   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/setting_webhook.jpg)
 
 3. 添加完成后，该条webhook默认开启。
 

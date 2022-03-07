@@ -8,7 +8,7 @@
 
 * 默认按照“已开启的”/“已关闭的”分类、最新创建排序。
 
-  ![img](../../All-Image/mr.assets/created-mr.png)
+  ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/mr.assets/created-mr.png)
 
 ### 提及的
 
@@ -16,14 +16,14 @@
 
 * 默认按照“已开启的”/“已关闭的”分类、最新创建排序。
 
-  ![img](../../All-Image/mr.assets/mentioned-mr.png)
+  ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/mr.assets/mentioned-mr.png)
 
 ### 邀请评审的
 
 * 此tab页面列出在MR中邀请登陆用户评审的合并请求；  
 * 默认按照“已开启的”/“已关闭的”分类、最新创建排序。
 
-![img](../../All-Image/mr.assets/review-requested-mr.png)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/mr.assets/review-requested-mr.png)
 
 ### 搜索合并请求
 
@@ -48,7 +48,7 @@
     * 举例说明：  
       state:open mentions:hanxiaojie3  
         搜索状态为open并且在评论中提及hanxiaojie3的MR  
-      ![img](../../All-Image/mr.assets/search_mentions.png)
+      ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/mr.assets/search_mentions.png)
 
 >[!Note|label:说明]目前尚不支持mentions与author的组合搜索   
 
@@ -57,7 +57,7 @@
     * 举例说明：  
       state:open review-requested:hanxiaojie3   
         搜索状态为open并且邀请hanxiaojie3参加评审的MR  
-      ![img](../../All-Image/mr.assets/search_review_requested.png)  
+      ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/mr.assets/search_review_requested.png)  
 
 >[!Note|label:说明]目前尚不支持review-requested与author的组合搜索   
 
@@ -66,14 +66,14 @@
     * 举例说明：   
       author:hanxiaojie3 state:open title:commmit  
         搜索hanxiaojie3创建的title中包含“commit”的状态为openMR  
-      ![img](../../All-Image/mr.assets/search_title.png)
+      ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/mr.assets/search_title.png)
 
 * **按照创建时间搜索MR**  
   created:[>, <, =, >=, <=]  
     * 举例说明：  
       author:hanxiaojie3 created:>2020-03-12 repo:han-test/test-1115   
         搜索2020-03-12以后由hanxiaojie3创建的在某个特定repo中的MR  
-      ![img](../../All-Image/mr.assets/search_created.png)
+      ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/mr.assets/search_created.png)
 
 
 * **按照MR创建的源分支和目标分支搜索**  
@@ -82,6 +82,6 @@
     * 举例说明：   
       author:hanxiaojie3 state:open target-branch:master   
         搜索由hanxiaojie3创建的状态为open，target分支为master的MR  
-      ![img](../../All-Image/mr.assets/search_branch.png)
+      ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/mr.assets/search_branch.png)
 
  

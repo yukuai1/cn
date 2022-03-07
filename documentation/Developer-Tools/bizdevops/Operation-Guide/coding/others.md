@@ -1,7 +1,7 @@
 ## 与行云的任务关联实例展示
 
 1. 在行云上找到空间内相应的任务ID（卡片编号）；如下图：
-   ![img](../../All-Image/others.assets/jagile.jpg)
+   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/others.assets/jagile.jpg)
 
 2. 提交代码时，关联该任务ID，形式如下：<br>
    <类型>`[可选的作用域]`: **空格** `<描述>` **空格** `#行云卡片编号`
@@ -20,7 +20,7 @@
 
 
 3.在行云中任务卡片的详情信息中，查看**代码提交记录**；如下图：
-![img](../../All-Image/others.assets/jagile1.jpg)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/others.assets/jagile1.jpg)
 
 ## 权限矩阵 
 

@@ -4,5 +4,5 @@
 
  
 
-![img](../../All-Image/deploy.assets/clip_image002.jpg)
+![img](http://devops-minio.jdcloud.com/doc-image/All-Image/deploy.assets/clip_image002.jpg)
 
