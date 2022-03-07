@@ -17,3 +17,7 @@
 3、表名称修改
 
 ![](/image/Joybuilder/db_update.PNG)  
+
+4、创建项目后，会自动创建一个数据库。点击【同步】按钮，可以看到默认创建的一个示例表【city_driver_info】
+
+![](/image/Joybuilder/create_project_detail_db.PNG)  

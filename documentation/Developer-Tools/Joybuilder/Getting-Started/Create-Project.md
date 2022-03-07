@@ -40,8 +40,8 @@
 
 ![](/image/Joybuilder/create_project_detail.PNG) 
 
-8、创建项目后，会同时创建一个项目库及一个模块表。选择数据库，即可查看数据库表列表
+8、创建项目后，会同时创建一个项目库及一个模块表。选择数据库，即可对库表进行查看和新增等操作
 
-![](/image/Joybuilder/create_project_detail.PNG) 
+![](/image/Joybuilder/create_project_detail_db.PNG) 
 
 
