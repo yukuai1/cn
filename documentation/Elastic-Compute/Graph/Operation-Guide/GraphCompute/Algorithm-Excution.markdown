@@ -59,9 +59,9 @@
 
 平台共内置了13个图算法
 
-包括传统图算法：[lpa](#jump)、[wcc](#jumpwcc)、[sssp](#jumpsssp)、[apsp](#jumpapsp)、[louvain](#jumplouvain)，
+包括传统图算法：lpa、wcc、sssp、apsp、louvain，
 
-图深度学习算法：[line](#jumpGNN)、[deepwalk](#jumpGNN)、[node2vec](#jumpGNN)、[metapath2vec](#jumpGNN)、[gcn](#jumpGNN)、 [unsupervised_graphsage](#jumpGNN)、[supervised_graphsage](#jumpGNN)、[gat](#jumpGNN)
+图深度学习算法：line、deepwalk、node2vec、metapath2vec、gcn、 unsupervised_graphsage、supervised_graphsage、gat
 
 ### 传统图算法
 
@@ -72,7 +72,7 @@
   ./bin/对应算法文件 
 ```
 
-#### 1.<span id="jump">lpa算法</span>
+#### 1.lpa算法
 
 ```
 执行命令：
@@ -89,7 +89,7 @@ cat 目录下的文件名
 20：迭代计算次数
 ```
 
-#### 2.<span id="jumpwcc">wcc算法</span>
+#### 2.wcc算法
 
 ```
 执行命令：
@@ -100,7 +100,7 @@ cat 目录下的文件名
 ./output/wcc/：结果文件输出路径
 ```
 
-#### 3.<span id="jumpsssp">sssp算法</span>
+#### 3.sssp算法
 
 ```
 执行命令：
@@ -112,7 +112,7 @@ cat 目录下的文件名
 1：root顶点，0和正整数，取值范围为:顶点数值区间
 ```
 
-#### 4.<span id="jumpapsp">apsp算法</span>
+#### 4.apsp算法
 
 ```
 执行命令：
@@ -125,7 +125,7 @@ cat 目录下的文件名
 
 ==此算法执行时间较长==
 
-#### 5.<span id="jumplouvain">louvain算法</span>
+#### 5.louvain算法
 
 ```
 执行命令：
@@ -138,7 +138,7 @@ cat 目录下的文件名
 true：true: 输入的边文件是有向图;false: 输入的边文件是无向图
 ```
 
-### <span id="jumpGNN">图深度学习算法</span>
+### 图深度学习算法
 
 #### 执行命令及参数
 
