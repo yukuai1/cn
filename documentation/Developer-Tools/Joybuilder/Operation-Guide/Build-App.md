@@ -6,11 +6,15 @@
 
 操作步骤：
 
-1、项目列表中，访问项目
+1、点击左侧导航栏【项目】列表中，点击【创建项目】按钮，进入快速创建项目页面。
+        
+![](/image/Joybuilder/create_project.PNG) 
+
+2、点击【项目名称】按钮，即可进行项目访问
 
 ![](/image/Joybuilder/build_app_start.PNG) 
 
-2、进入项目中，包含四个基础功能：首页、系统管理、应用、车辆报备（实例模块）
+2、进入项目中，包含四个基础功能：首页、系统管理、应用管理、业务体验（CRUD示例模块）
 
 ![](/image/Joybuilder/build_app_portal.PNG) 
 

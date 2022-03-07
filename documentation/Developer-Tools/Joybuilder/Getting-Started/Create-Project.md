@@ -26,13 +26,13 @@
      
    * 项目代码
    
-     必填项，输入长度最大为8个字符。
+     必填项，输入长度最大为8个字符。注意需英文。
 
    * 项目logo
     
      项目图标，非必填项。
 
-6、点击【确定】按钮，完成项目创建。在项目列表中，通过【访问】按钮，即可进行项目访问
+6、点击【确定】按钮，完成项目创建。在项目列表中，点击【项目名称】按钮，即可进行项目访问
 
 ![](/image/Joybuilder/create_project_end.PNG) 
 
@@ -40,5 +40,8 @@
 
 ![](/image/Joybuilder/create_project_detail.PNG) 
 
+8、创建项目后，会同时创建一个项目库及一个模块表。选择数据库，即可查看数据库表列表
+
+![](/image/Joybuilder/create_project_detail.PNG) 
 
 
