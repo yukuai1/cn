@@ -21,5 +21,5 @@
     href: FAQ/FAQ.md
   - name: 用户协议
     items:
-    - name: SLA
-      href: User-Agreements/SLA.md
+      - name: SLA
+        href: User-Agreements/SLA.md
