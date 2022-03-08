@@ -1,14 +1,9 @@
   name: 成本账单
   href: 
   items:
-  - name: 产品简介
-    items:
-       - name: 产品概述
-         herf: Introduction/Overview.md
-  - name: 操作指南
-    items:
-       - name: 操作说明
-         herf: Operation-Guide/Guide.md
-
+  - name: 产品概述
+    href: Introduction/Overview.md
+  - name: 操作说明
+    href: Operation-Guide/Guide.md
 
     
