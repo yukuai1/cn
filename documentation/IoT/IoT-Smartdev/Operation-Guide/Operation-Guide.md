@@ -2,21 +2,21 @@
 
 ## 入口
 
-- 登录[京东云官网](https://www.jdloud.com)
+- 登录[京东云官网](https://www.jdcloud.com)
 - 选择“产品>物联网>行业应用>智能家居平台”
 - 在的产品介绍页面，点击“立即使用”，即可进入智能家居平台的控制台
 - 进入到控制台后，“点击进行设备智能化”、或者图片即可进入到智能家居平台首页
 
-![img_2.png](img_2.png)
+![入口](../../../../image/IoT/IoT-Smartdev/console.png)
 
 ## 智能家居平台
 进入智能家居平台后，点击下方“控制台“入口即可开始设备智能化。Tips:点击下方页面所示”文档中心“，您可以查看所有详细的文档。
 
-![img.png](img.png)
+![智能家居平台](../../../../image/IoT/IoT-Smartdev/smartdev.png)
 
 ## 设备智能化流程说明
 
-![img.png](img_1.png)
+![设备智能化流程图](../../../../image/IoT/IoT-Smartdev/flow.png)
 
 ### Step1：商务合作洽谈
 接入前请先联系商务人员，确定合作目标等。
