@@ -23,15 +23,15 @@
 ## 第三步:上传固件
 在**产品** -> **物联网** ->  **安全服务** -> **物联网固件漏检服务** 控制台的 **固件安全检测** 下载点击 **点击上传** 按钮即可上传固件。success代表上传成功。  
 
-![上传固件](../../../../image/IoT/IoT-DevFss/Upload-Bin.png)
+![上传固件](../../../../image/IoT/IoT-DevFss/UploadBin.png)
 
   
 ## 第四步:开始检测
 固件完成上传后，单击**开始检测**，确认固件信息，勾选**我已阅读，并确认以上声明**，即可进行当前已上传固件的安全检测。  
 
-![开始检测](../../../../image/IoT/IoT-DevFss/Start-Detect1.png)
+![开始检测](../../../../image/IoT/IoT-DevFss/StartDetect1.png)
 
-![开始检测](../../../../image/IoT/IoT-DevFss/Start-Detect2.png)
+![开始检测](../../../../image/IoT/IoT-DevFss/StartDetect2.png)
 
   
 ## 第五步:查看检测报告
