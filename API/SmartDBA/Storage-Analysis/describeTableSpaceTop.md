@@ -27,18 +27,7 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/ta
 |---|---|---|
 |**result**|[Result](#result)| |
 |**requestId**|String|请求id|
-|**error**|[Error](#error)|Error信息|
 
-### <div id="Error">Error</div>
-|名称|类型|描述|
-|---|---|---|
-|**errorInfo**|[ErrorInfo](#errorinfo)| |
-### <div id="ErrorInfo">ErrorInfo</div>
-|名称|类型|描述|
-|---|---|---|
-|**code**|Integer|错误码，默认正确为0|
-|**message**|String|错误信息，默认为""|
-|**status**|String|错误状态信息，默认为""|
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|

@@ -49,7 +49,7 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/panels/{panelGid}/metric/
 |名称|类型|描述|
 |---|---|---|
 |**timestamp**|Long|时间戳，精确到毫秒，如：1606836371000。|
-|**value**|Object|值|
+|**value**|String|值|
 
 ## 返回码
 |返回码|描述|
