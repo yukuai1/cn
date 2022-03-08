@@ -1,10 +1,10 @@
 # Issues
 
-## 关联行云团队空间及Workflow设置	
+## 关联行云团队空间及Workflow设置
 
->[!Note|label:说明]仓库Master及以上权限成员可以行云团队空间   
+>[!Note|label:说明]仓库Master及以上权限成员可以行云团队空间
 
-  * 仓库-设置-Issues，进入配置页面；  
+  * 仓库-设置-Issues，进入配置页面；
   * 点击 “关联团队空间”
   * 显示当前登陆用户有权限的行云团队空间，选择团队空间并确认;
   * 每个仓库只能关联唯一的行云团队空间；
@@ -29,12 +29,12 @@
   * 仅平行展示行云团队空间中的卡片，不展示任务；
   * 按照卡片状态分为两类：
     * 待开发：对应行云卡片“测试”阶段及之前的卡片
-    * 已完成：对应行云卡片“测试”阶段之后的卡片  
+    * 已完成：对应行云卡片“测试”阶段之后的卡片
   * 可以按照“标签”/“迭代”/“状态”/“受理人”等条件筛选；
     ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/issue.assets/show_card.png)
 
  * 点击卡片标题，打开卡片详情页；
- * 详情页面可以编辑： “标题”/“描述”/”卡任务处理人”/”迭代”/“状态”/“[**关联合并请求**](issues.md#link_mr)”
+ * 详情页面可以编辑： “标题”/“描述”/”卡任务处理人”/”迭代”/“状态”/“关联合并请求”
    ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/issue.assets/show_card_detail.png)
 
 * 详情页面同时展示关联的commit与合并请求;
@@ -46,14 +46,14 @@
   * 新建后的卡片将自动同步至关联的行云团队空间
   * 新建时需填写：
     *  卡片title
-    *  卡片迭代 
+    *  卡片迭代
     *  卡片状态（默认设置为“需求沟通”或者“TODO”）
        ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/issue.assets/new_card.png)
 
 ### 关联“Commit”及状态流转
 
-  * 在符合[约定式提交](/all/others.html#commitMsg)的Commit中关联卡片，支持卡片状态**自动流转**；
-    * 使用`git commit -m `提交时关联卡片，卡片ID以“#”开头儿，例如：  
+  * 在符合约定式提交的Commit中关联卡片，支持卡片状态**自动流转**；
+    * 使用`git commit -m `提交时关联卡片，卡片ID以“#”开头儿，例如：
       `git commit -m "fix: <简短描述|必填> #C2020090167504"`
     * 支持UI界面提交时关联‘行云卡片:
       ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/issue.assets/link_commit.png)

@@ -42,14 +42,14 @@
           - name: PMO
             href: /Operation-Guide/pmp/pmo.md
       - name: 效能度量
-        href: /Operation-Guide/effecttiveness_measurement/agile_practices.md
+        href: /Operation-Guide/effectiveness_measurement/agile_practices.md
       - name: 测试管理
         href: /Operation-Guide/test_management/test_management.md
         items:
           - name: 缺陷管理
             href: /Operation-Guide/test_manage/bug.md
           - name: 提测管理
-            href: /Operation-Guide/test_manage/test.md 
+            href: /Operation-Guide/test_manage/test.md
           - name: 用例管理
             href: /Operation-Guide/test_manage/case.md
           - name: 测试计划

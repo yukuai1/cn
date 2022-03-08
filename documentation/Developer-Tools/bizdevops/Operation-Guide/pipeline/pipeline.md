@@ -121,7 +121,7 @@
    cron: '*/5 * * * *' #每5分钟执行一次
    ```
 
-   **参数共用：**配置了事件触发的流水线，可以直接使用:[事件变量](../appendix/variables.md#gitlab-event相关)，作为参数。例如：gitlabBranch作为下载代码或者jone编译的分支，如果分支变量同时想作为自定义参数在手工触发时使用，可以直接在自定义参数中使用gitlabBranch这个变量。
+   **参数共用：**配置了事件触发的流水线，可以直接使用:事件变量作为参数。例如：gitlabBranch作为下载代码或者jone编译的分支，如果分支变量同时想作为自定义参数在手工触发时使用，可以直接在自定义参数中使用gitlabBranch这个变量。
    自定义参数中分支的设置
 
    ![image](http://devops-minio.jdcloud.com/doc-image/All-Image/pipeline.assets/gitlabBranch_manual.png)

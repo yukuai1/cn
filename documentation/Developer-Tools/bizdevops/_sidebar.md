@@ -18,7 +18,7 @@
     * [项目管理](/Operation-Guide/pmp/project_management.md)
     * [工时填报](/Operation-Guide/pmp/labor_hour.md)
     * [PMO](/Operation-Guide/pmp/pmo.md)
-  * [效能度量](/Operation-Guide/effecttiveness_measurement/agile_practices.md)
+  * [效能度量](/Operation-Guide/effectiveness_measurement/agile_practices.md)
   * [测试管理](/Operation-Guide/test_management/test_management.md)
     * [缺陷管理](/Operation-Guide/test_manage/bug.md)
     * [提测管理](/Operation-Guide/test_manage/test.md)
