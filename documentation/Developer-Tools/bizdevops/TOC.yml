@@ -32,6 +32,7 @@
           - name: 评审约束
             href: /Operation-Guide/teamspace/space_check.md
       - name: 需求管理
+        href: /Operation-Guide/demand/demand.md
       - name: 项目管理
         href: /Operation-Guide/pmp/pmp.md
         items:
@@ -49,7 +50,7 @@
           - name: 缺陷管理
             href: /Operation-Guide/test_manage/bug.md
           - name: 提测管理
-            href: /Operation-Guide/test_manage/test.md 
+            href: /Operation-Guide/test_manage/test.md
           - name: 用例管理
             href: /Operation-Guide/test_manage/case.md
           - name: 测试计划
