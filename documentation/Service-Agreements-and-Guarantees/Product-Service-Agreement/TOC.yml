@@ -187,7 +187,25 @@ items:
   - name: 物联网连接服务等级协议（SLA）
     href: IoT-Link-Service-Level-Agreements-SLA.md
   - name: 物联网智能边缘计算服务条款
-    href: IoT-Edge-Terms-Of-Service.md    
+    href: IoT-Edge-Terms-Of-Service.md
+  - name: 物联网数据分析产品服务条款
+    href: IoT-Data-Analysis.md
+  - name: 物联网设备身份认证服务条款
+    href: Deviceidentity-Terms-Of-Service.md
+  - name: 物联网设备身份认证等级协议（SLA）
+    href: Deviceidentity-SLA.md
+  - name: 物联网固件漏检服务服务条款
+    href: Devfss-Terms-Of-Service.md
+  - name: 物联网固件漏检服务等级协议（SLA）
+    href: Devfss-SLA.md
+  - name: 物联网应用使能平台服务条款
+    href: Iotaep-Terms-Of-Service.md
+  - name: 物联网应用使能平台等级协议（SLA）
+    href: Iotaep-SLA.md
+  - name: 商业物联管理系统服务条款
+    href: Moiot-Terms-Of-Service.md
+  - name: 商业物联管理系统等级协议（SLA）
+    href: Moiot-SLA.md
   - name: 云文件服务协议
     href: Cloud-File-Service-terms-of-service.md
   - name: 云文件服务等级服务协议（SLA）
@@ -452,6 +470,10 @@ items:
     href: Iov-Mobility-Service-Terms-Of-Service.md  
   - name: 车主出行服务等级协议（SLA）
     href: Iov-Mobility-Service-Level-Agreements-SLA.md
+  - name: 智能家居平台服务条款
+    href: Smartdev-Terms-Of-Service.md
+  - name: 智能家居平台等级协议（SLA）
+    href: Smartdev-SLA.md
   - name: 数知服务协议
     href: Number-Of-Terms-Of-Service.md
   - name: 数知服务等级协议（SLA）
@@ -483,10 +505,14 @@ items:
   - name: 云电脑服务条款
     href: Cloud-Computer-Of-Service.md
   - name: 大宗商品仓储监管服务条款
-	  href: BulkStock-Terms-Of-Service.md
-	- name: 大宗商品仓储监管等级协议（SLA）
-	  href: BulkStock-SLA.md
+    href: BulkStock-Terms-Of-Service.md
+  - name: 大宗商品仓储监管等级协议（SLA）
+    href: BulkStock-SLA.md
+  - name: 智慧社区管理平台服务条款
+    href: Iotcommunity-Terms-Of-Service.md
   - name: 智慧社区管理平台等级协议（SLA）
-	  href: Iotcommunity-SLA.md
-	- name: 智慧园区管理平台等级协议（SLA）
+    href: Iotcommunity-SLA.md
+  - name: 智慧园区管理平台服务条款
+    href: Iotpark-Terms-Of-Service.md   
+  - name: 智慧园区管理平台等级协议（SLA）
     href: Iotpark-SLA.md 
