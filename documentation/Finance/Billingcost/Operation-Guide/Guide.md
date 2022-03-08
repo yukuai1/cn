@@ -29,8 +29,7 @@
 |本月分摊|当月已支付/分摊的实际金额|
 |期末未分摊|下个月开始还需要支付/分摊的实际金额，预付费期末未分摊是分摊的金额，后付费期末未分摊是0|
 
-![](../../../image/Billingcost/guide1.png)
-
+![guide1](../../../../image/Billingcost/guide1.png)
 ### 按产品分摊
 
 点击“按产品分摊展示”，可以查看按产品汇总的费用，分摊到该月的资金等信息。
@@ -53,7 +52,7 @@
 |代金券分摊|通过代金券支付该产品产生的费用，并分摊到当前月的金额|
 |期末未分摊|下个月开始还需要支付/分摊的实际金额，预付费期末未分摊是分摊的金额，后付费期末未分摊是0|
 
-![](../../../image/Billingcost/guide2.png)
+![guide2](../../../../image/Billingcost/guide2.png)
 
 ### 导出数据
 
@@ -61,10 +60,9 @@
 
 #### 1.导出当前所选
 
-![](../../../image/Billingcost/export1.png)
+![export1](../../../../image/Billingcost/export1.png)
 
 #### 2.导出所有内容
 
 一次最多导出6个月账单，可以导出一年的数据。如果导出1年以上的数据，需要提交工单。
-
-![](../../../image/Billingcost/export2.png)
+![export2](../../../../image/Billingcost/export2.png)
