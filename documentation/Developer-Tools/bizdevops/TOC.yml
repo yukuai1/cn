@@ -32,7 +32,6 @@
           - name: 评审约束
             href: /Operation-Guide/teamspace/space_check.md
       - name: 需求管理
-        href: /Operation-Guide/demand/demand.md
       - name: 项目管理
         href: /Operation-Guide/pmp/pmp.md
         items:
@@ -43,7 +42,7 @@
           - name: PMO
             href: /Operation-Guide/pmp/pmo.md
       - name: 效能度量
-        href: /Operation-Guide/effecttiveness_measurement/agile_practices.md
+        href: /Operation-Guide/effectiveness_measurement/agile_practices.md
       - name: 测试管理
         href: /Operation-Guide/test_management/test_management.md
         items:

@@ -72,7 +72,7 @@
    提交方式有两种：
 
    * 直接提交到当前分支。
-   * 提交文件的同时，基于当前分支创建新分支，并将该文件提交到新分支上。<br>
+   * 提交文件的同时，基于当前分支创建新分支，并将该文件提交到新分支上。
      新分支默认的命名规则：当前登录账号-patch-1；比如：miaoguangying-patch-1。可根据需求自行修改分支名称。
 
 ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/files_new.jpg)
@@ -466,7 +466,7 @@
 
 支持两种方式定义提交信息的格式：  
 
-* 约定式提交规则：是Coding一直在支持的一种格式，详细参考：[约定式提交](/all/others.html#commitMsg)  
+* 约定式提交规则：是Coding一直在支持的一种格式
 * 自定义规则：允许用户根据需要自己定义提交规则，‘git push’时或者Web UI提交时检查“Commit message”是否符合当前规则，不符合规则拒绝提交  
 
 ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/push-rule-message.png)
@@ -584,7 +584,7 @@ Webhooks允许在发生特定事件时通知外部服务。 当指定的事件�
 >Owner ：仓库的所有设置，均可操作。 
 
 1. 进入仓库，点击**设置**按钮，点击左侧的**高级设置**菜单，即进入高级设置页面。
-2. 在高级设置界面，可以对您的仓库进行如下操作：[变更默认分支](#setting_advance1)、[变更仓库负责人](#setting_advance2)、[转移仓库空间](#setting_advance3)、[仓库GC](#setting_advance4)、[删除仓库](#setting_advance5)。
+2. 在高级设置界面，可以对您的仓库进行如下操作：变更默认分支、变更仓库负责人、转移仓库空间、仓库GC、删除仓库。
 
 ### 变更默认分支
 

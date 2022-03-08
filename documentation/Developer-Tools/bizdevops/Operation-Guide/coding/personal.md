@@ -1,6 +1,6 @@
 ## 个人空间
 
-个人空间主要是从登录者的维度进行查看：  
+个人空间主要是从登录者的维度进行查看：
 
   >* 个人最近一年贡献值,贡献日历；
   >* 自从加入 Coding以来的主要贡献活动；
@@ -9,7 +9,7 @@
 
 ### 总览
 
-首页 - 右上角头像 - 进入 您的个人首页 即可。 
+首页 - 右上角头像 - 进入 您的个人首页 即可。
 
 #### 常用仓库
 
@@ -17,14 +17,14 @@
 
   >* 列出常用的仓库top 4;
   >* 显示仓库的名称，描述和语言类型;
-  >* 如果点击查看更多，可以显示所有您参与或负责的仓库。 
+  >* 如果点击查看更多，可以显示所有您参与或负责的仓库。
 
 ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/personal.assets/personal_common_repo.png)
 
 #### 贡献日历
 
-按照contributions统计显示最近一年的贡献数据，每个空格代表一天。 
-**贡献值统计包含6类数据：**  
+按照contributions统计显示最近一年的贡献数据，每个空格代表一天。
+**贡献值统计包含6类数据：**
 
   >* 首次登陆Coding平台
   >* 新建仓库；之后被删除的不计入。
@@ -42,7 +42,7 @@
 
   >* 默认按照月份分类聚合当月数据。
   >* 点击"查看更多活动记录“，显示更早一个月数据。
-  >* 如果点击贡献日历上某天，则详细显示当天贡献数据。 
+  >* 如果点击贡献日历上某天，则详细显示当天贡献数据。
 
 ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/personal.assets/personal_calendar_activity.png)
 
@@ -153,10 +153,6 @@ $ ssh-keygen -t rsa -b 4096 -C "工号，比如：zhansan"
 2. 在个人设置界面，点击左侧**SSH Keys**页签，进入**SSH Keys**页面，管理你的SSH密钥。
 
  如果您还未添加SSH密钥，可以点击**新建SSH Key**按钮，填写密钥标题和key值，添加SSH密钥。如下图：
-
-    ![](/images/personal/ssh_new.jpg)
-
- 如果您所添加SSH密钥，已经不再使用，可以点击**移除**，删除该SSH密钥。如下图：
 ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/personal.assets/ssh_new.jpg)
 
 #### 验证SSH的连通性
@@ -175,13 +171,13 @@ $ ssh -vT coding.jd.com
 
 ```
 > debug1: Authentication succeeded (publickey).
-> Authenticated to coding.jd.com ([172.20.39.5]:22). 
+> Authenticated to coding.jd.com ([172.20.39.5]:22).
 > debug1: channel 0: new [client-session]
 > debug1: Entering interactive session.
 > debug1: pledge: network
 > debug1: Sending environment.
 > debug1: Sending env LANG = zh_CN.UTF-8
-> shell request failed on channel 0 
+> shell request failed on channel 0
 ```
 
 >[!Note|label:说明]

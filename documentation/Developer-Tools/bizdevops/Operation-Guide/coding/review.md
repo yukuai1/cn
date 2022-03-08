@@ -68,7 +68,6 @@
 
 6. 根据正常流程代码评审，合并代码即可。
 
-   >[!Tip|label:步骤**3**，**4**，**5**可以参考[Merge Request](#step3)的图示!]
 
 #### Only Review
 
