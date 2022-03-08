@@ -1,7 +1,8 @@
 ## 新手引导
 
-1、登录京东云官网
+1、打开京东云官网[jdcloud.com]登录京东云官网
 
+https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/1-home-page.png
 2、进入备案系统
 
 3、请根据页面效果选择对应的帮助文档，帮助您完成备案流程。
