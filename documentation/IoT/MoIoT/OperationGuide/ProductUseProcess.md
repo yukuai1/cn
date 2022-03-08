@@ -18,6 +18,6 @@
 
 1、您可以查看已购的设备数、服务起始时间和结束时间。
 
-2、“点击使用此服务”，您可以进入到商业物联管理系统，按照[开发指南](DeveloperGuide/DeviceAccessService.md)进行使用。
+2、“点击使用此服务”，您可以进入到商业物联管理系统，按照[开发指南](../DeveloperGuide/DeviceAccessService.md)进行使用。
 
 ![服务管理](../../../../image/IoT/MoIoT/ServiceList.png)
