@@ -367,8 +367,6 @@ items:
                  href: JCloud-Openapi-For-CDN/setSourceAuthConfig.md
                - name: setIpBlackList
                  href: JCloud-Openapi-For-CDN/setIpBlackList.md
-               - name: configBackSourceRule
-                 href: JCloud-Openapi-For-CDN/configBackSourceRule.md
                - name: configUrlRule
                  href: JCloud-Openapi-For-CDN/configUrlRule.md
                - name: configHttp2
