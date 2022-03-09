@@ -83,7 +83,7 @@
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/9-3.png)
 
-完成备案后，您还需要根据《非经营性互联网信息服务备案管理办法》（原信息产业部令第33号）第十三条“非经营性互联网信息服务提供者应当在其网站开通时在主页底部的中央位置标明其备案编号，并在备案编号下方按要求链接  [**信息产业部备案管理系统网址**](beian.miit.gov.cn)，供公众查询核对”
+完成备案后，您还需要根据《非经营性互联网信息服务备案管理办法》（原信息产业部令第33号）第十三条“非经营性互联网信息服务提供者应当在其网站开通时在主页底部的中央位置标明其备案编号，并在备案编号下方按要求链接  [**信息产业部备案管理系统网址**](https://beian.miit.gov.cn/#/Integrated/index)，供公众查询核对”
 
 
 
