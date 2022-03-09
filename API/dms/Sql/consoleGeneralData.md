@@ -26,16 +26,16 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/console:generalData
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](consolegeneraldata#result)| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dmsSqlsResult**|[DmsSqlsResult](#dmssqlsresult)| |
+|**dmsSqlsResult**|[DmsSqlsResult](consolegeneraldata#dmssqlsresult)| |
 ### <div id="dmssqlsresult">DmsSqlsResult</div>
 |名称|类型|描述|
 |---|---|---|
-|**dmsSqlResults**|[DmsSqlResult[]](#dmssqlresult)|多条sql查询结果。|
+|**dmsSqlResults**|[DmsSqlResult[]](consolegeneraldata#dmssqlresult)|多条sql查询结果。|
 ### <div id="dmssqlresult">DmsSqlResult</div>
 |名称|类型|描述|
 |---|---|---|
