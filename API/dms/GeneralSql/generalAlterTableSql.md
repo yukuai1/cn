@@ -24,13 +24,13 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/alterSql:general
 |**columnInfos**|[ColumnInfo[]](#columninfo)|False| |列信息。|
 |**indexInfos**|[IndexInfo[]](#indexinfo)|False| |索引信息。|
 
-### <div id="IndexInfo">IndexInfo</div>
+### <div id="indexinfo">IndexInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**indexName**|String|True| |索引名。|
 |**indexType**|String|True| |列类型，普通索引：NORMAL，唯一索引：UNIQUE。|
 |**columnNames**|String[]|True| |列名称。|
-### <div id="ColumnInfo">ColumnInfo</div>
+### <div id="columnInfo">ColumnInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**columnName**|String|True| |列名。|
@@ -44,7 +44,7 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/alterSql:general
 |**columnComment**|String|False| |列注释。|
 |**isAutoIncrease**|Boolean|True| |是否自增。|
 |**isPrimaryKey**|Boolean|True| |是否为主键。|
-### <div id="MetaTableInfo">MetaTableInfo</div>
+### <div id="metatableinfo">MetaTableInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**tableName**|String|True| |表名。|
@@ -56,7 +56,7 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/alterSql:general
 |---|---|---|
 |**result**|[Result](#result)| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**strResult**|String|生成sql|
