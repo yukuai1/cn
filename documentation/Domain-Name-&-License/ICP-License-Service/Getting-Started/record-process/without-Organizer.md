@@ -54,8 +54,19 @@
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/7-Check.png)
 
-提交信息后会出现提示弹窗，点击“继续提交” ，等待京东云初审审核。
+提交信息后会出现“工信部短信核验”有关弹窗提示，点击“继续提交” 
+###### 说明：（未验证、超时验证均会导致备案失败，所以请务必填写真实有效的手机号码！）
+
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/7-2-windouws-24.png)
+
+继续提交将把备案信息提交至京东云，等待审核即可。
+
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/8-1-Submit-for-initial-review.png)
+
+您可通过左侧“备案管理”按钮查看备案信息，若状态为“审核失败”，点击继续备案可查看具体驳回原因；
+
+初审通过后按照系统提示完成真实性核验进入下一步流程，
+
 
 
 
