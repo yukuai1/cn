@@ -32,19 +32,19 @@ items:
       - name: 智慧园区管理平台
         items:
           - name: 员工通行
-            href: Operation-Guide/Park-Manager/Employee-Pass.md
+            href: Operation-Guide/Employee-Pass.md
           - name: 访客通行
-            href: Operation-Guide/Park-Manager/Visitor-Pass.md
+            href: Operation-Guide/Visitor-Pass.md
           - name: 车辆管理
-            href: Operation-Guide/Park-Manager/Car-Manager.md
+            href: Operation-Guide/Car-Manager.md
           - name: 安防报警
-            href: Operation-Guide/Park-Manager/Security-Alarm.md 
+            href: Operation-Guide/Security-Alarm.md 
           - name: 空间管理
-            href: Operation-Guide/Park-Manager/Space-Manager.md    
+            href: Operation-Guide/Space-Manager.md    
           - name: 设备管理
-            href: Operation-Guide/Park-Manager/Device-Manager.md  
+            href: Operation-Guide/Device-Manager.md  
           - name: 系统管理
-            href: Operation-Guide/Park-Manager/System-Manager.md
+            href: Operation-Guide/System-Manager.md
   - name: 开发指南
     items:
       - name: 云对云接入简介
