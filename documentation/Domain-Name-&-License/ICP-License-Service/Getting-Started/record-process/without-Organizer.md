@@ -2,7 +2,7 @@
 
 ###### 说明：备案类型会由系统自动判断，无论什么备案类型，流程都是唯一的，按照下方流程指引操作即可。
 
-#### 1、登录京东云备案系统，找到备案入口
+#### 登录京东云备案系统，找到备案入口
 
 打开[**京东云官网**](jdcloud.com)首页,点击右上角处备案
 
@@ -12,7 +12,7 @@
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/2-log-in.png)
 
-#### 2、填写备案信息，验证备案类型
+#### 填写备案信息，验证备案类型
 
 进入备案系统后会显示如下页面，点击“开始备案”
 
@@ -25,13 +25,13 @@
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/4-jiaoyan-new.png)
 
-#### 3、填写主办单位详细信息及主体负责人信息
+#### 填写主办单位详细信息及主体负责人信息
 
 按照提示填写真实有效的信息，企业备案主体负责人建议填写法人，个人备案填写个人信息即可；填写完毕后点击“下一步”
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/4-1-Organizer-all.png)
 
-#### 4、填写网站信息及网站负责人信息
+#### 填写网站信息及网站负责人信息
 
 按照提示及下方说明填写真实有效的信息，填写完毕后点击“下一步”
 ###### 说明③：网站负责人需完成后续备案拍照、核验单签署等工作，请根据实际情况填写，若网站负责人与主体负责人为同一人，可勾选“同主体负责人”；个人备案请勾选“同主体负责人”。
@@ -39,7 +39,7 @@
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/5-website-information-all.png)
 
-#### 5、上传图片资料
+#### 上传图片资料
 
 按照提示及下方说明上传对应图片，图片均需清晰完整，证件图片有效期均需大于3个月以上，上传完毕后点击“下一步”
 ###### 说明⑤：非必填项，如单位性质为律师事务所等需上传多页证件资料时，上传至此处即可。
@@ -47,6 +47,15 @@
 ###### 说明⑦：域名证书需要联系您的域名注册商获取。
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/6-Upload-photos-all.png)
+
+#### 核对备案信息，提交初审
+
+浏览备案信息页，查看填写的备案信息是否有错误，若有需要修改地方可点“编辑”修改，若没有问题，勾选下方的“我已阅读并同意《信息安全管理协议》和《协助更改备案信息服务在线服务条款》”后，点击“提交信息”,
+
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/7-Check.png)
+
+提交信息后会出现提示弹窗，点击“继续提交” ，等待京东云初审审核。
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/8-1-Submit-for-initial-review.png)
 
 
 
