@@ -15,7 +15,13 @@
 #### 2、填写备案信息，验证备案类型
 
 进入备案系统后会显示如下页面，点击“开始备案”
-![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/3-start.png)
 
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/3-first-8505.png)
+
+根据实际信息选择填写，完成信息验证，填写后点“验证”按钮进入下一步
+###### 说明①： 如果您的主办单位名称已经在其他服务商处完成过备案，则需要勾选“主体信息已经备案”并填写正确的主体备案号；如果您的主办单位名称没有备案过，则无需勾选
+###### 说明②： 填写您本次需要备案的域名即可，系统会自动识别域名是否有备案号并自动判断备案类型。
+
+![img]()
 
 
