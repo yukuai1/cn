@@ -39,5 +39,15 @@
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/5-website-information-all.png)
 
+#### 5、上传图片资料
+
+按照提示及下方说明上传对应图片，图片均需清晰完整，证件图片有效期均需大于3个月以上，上传完毕后点击“下一步”
+###### 说明⑤：非必填项，如单位性质为律师事务所等需上传多页证件资料时，上传至此处即可。
+###### 说明⑥：点击蓝色字体进入“核验单”下载界面，下载后需打印纸质文件，并由网站负责人在“网站负责人签字”处，用黑笔签名，企业备案还需在此处加盖公章。
+###### 说明⑦：域名证书需要联系您的域名注册商获取。
+
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/6-Upload-photos-all.png)
+
+
 
 
