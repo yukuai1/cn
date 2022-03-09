@@ -25,13 +25,13 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/personalSql:query
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](querypersonalsqls#result)| |
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**count**|Integer|收藏sql总量|
-|**personalSqls**|[PersonalSql[]](#personalsql)| |
+|**personalSqls**|[PersonalSql[]](querypersonalsqls#personalsql)| |
 ### <div id="personalsql">PersonalSql</div>
 |名称|类型|描述|
 |---|---|---|
