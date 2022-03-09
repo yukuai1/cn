@@ -23,7 +23,7 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/getDmsDomain
 |---|---|---|
 |**result**|[Result](#result)| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**domains**|Object|区域到域名映射，例{"cn-north-1":"http://10.222.49.154:8080", "cn-east-1":"http://10.222.49.154:8080"}。|
