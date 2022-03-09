@@ -27,19 +27,19 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/console:openTable
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
-|**error**|[Error](#error)| |
+|**result**|[Result](opentable#result)| |
+|**error**|[Error](opentable#error)| |
 
-### <div id="Error">Error</div>
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Integer|错误码，-1：执行错误，-2：需要重新登录|
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dmsSqlResults**|[DmsSqlResult[]](#dmssqlresult)|查询结果。|
+|**dmsSqlResults**|[DmsSqlResult[]](opentable#dmssqlresult)|查询结果。|
 |**count**|Integer|当前表中数据总量|
-### <div id="DmsSqlResult">DmsSqlResult</div>
+### <div id="dmssqlresult">DmsSqlResult</div>
 |名称|类型|描述|
 |---|---|---|
 |**sqlType**|String|sql类型，SYNCDMLDDL，同步执行ddl，dml语句；ASYNCDMLDDL，异步执行ddl，dml语句，未支持；QUERY，执行查询类sql语句，如select；COMMAND，如show等命令，未支持。|

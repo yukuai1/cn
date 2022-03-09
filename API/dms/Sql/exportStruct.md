@@ -26,13 +26,13 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/console:exportStruct
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](exportstruct#result)| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**tableStructs**|[TableStruct[]](#tablestruct)|查询结果。|
-### <div id="TableStruct">TableStruct</div>
+|**tableStructs**|[TableStruct[]](exportstruct#tablestruct)|查询结果。|
+### <div id="tablestruct">TableStruct</div>
 |名称|类型|描述|
 |---|---|---|
 |**tableName**|String|表名。|

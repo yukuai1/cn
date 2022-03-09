@@ -25,18 +25,18 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/console:exeSql
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
-|**error**|[Error](#error)| |
+|**result**|[Result](consolesql#result)| |
+|**error**|[Error](consolesql#error)| |
 
-### <div id="Error">Error</div>
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Integer|错误码，-1：执行错误，-2：需要重新登录|
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dmsSqlResults**|[DmsSqlResult[]](#dmssqlresult)|查询结果。|
-### <div id="DmsSqlResult">DmsSqlResult</div>
+|**dmsSqlResults**|[DmsSqlResult[]](consolesql#dmssqlresult)|查询结果。|
+### <div id="dmssqlresult">DmsSqlResult</div>
 |名称|类型|描述|
 |---|---|---|
 |**sqlType**|String|sql类型，SYNCDMLDDL，同步执行ddl，dml语句；ASYNCDMLDDL，异步执行ddl，dml语句，未支持；QUERY，执行查询类sql语句，如select；COMMAND，如show等命令，未支持。|

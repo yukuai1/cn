@@ -23,9 +23,9 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/consoleDbList
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](databaselist#result)| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**databaseNames**|String[]|库名称列表|

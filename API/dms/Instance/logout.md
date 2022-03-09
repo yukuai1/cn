@@ -23,9 +23,9 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/instance:logout
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**error**|[Error](#error)| |
+|**error**|[Error](logout#error)| |
 
-### <div id="Error">Error</div>
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Integer|0，成功；-1，失败。|

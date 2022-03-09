@@ -25,28 +25,28 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/consoleTableInfo
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](tableinfo#result)| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dmsTableStruct**|[DmsTableStruct](#dmstablestruct)| |
-### <div id="DmsTableStruct">DmsTableStruct</div>
+|**dmsTableStruct**|[DmsTableStruct](tableinfo#dmstablestruct)| |
+### <div id="dmstablestruct">DmsTableStruct</div>
 |名称|类型|描述|
 |---|---|---|
 |**tableName**|String|表名。|
 |**primaryIndex**|String|主键。|
 |**sql**|String|建表sql|
-|**metaTableInfo**|[MetaTableInfo](#metatableinfo)| |
-|**columnInfos**|[ColumnInfo[]](#columninfo)|表中全部列信息。|
-|**indexInfos**|[IndexInfo[]](#indexinfo)|表中全部索引信息。|
-|**extraTableInfo**|[ExtraTableInfo](#extratableinfo)|广播表，分表额外信息。|
-### <div id="ExtraTableInfo">ExtraTableInfo</div>
+|**metaTableInfo**|[MetaTableInfo](tableinfo#metatableinfo)| |
+|**columnInfos**|[ColumnInfo[]](tableinfo#columninfo)|表中全部列信息。|
+|**indexInfos**|[IndexInfo[]](tableinfo#indexinfo)|表中全部索引信息。|
+|**extraTableInfo**|[ExtraTableInfo](tableinfo#extratableinfo)|广播表，分表额外信息。|
+### <div id="extratableinfo">ExtraTableInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**tableTypeEnum**|String|ORIGIN:原始表, STARDB_SPLIT:stardb切分表, STARDB_ISOLATE:stardb孤立表, STARDB_BROADCAST:stardb广播表。|
-|**stardbSplitInfo**|[StardbSplitInfo](#stardbsplitinfo)|tableTypeEnum为切分表时的切分信息内容。|
-### <div id="StardbSplitInfo">StardbSplitInfo</div>
+|**stardbSplitInfo**|[StardbSplitInfo](tableinfo#stardbsplitinfo)|tableTypeEnum为切分表时的切分信息内容。|
+### <div id="stardbsplitinfo">StardbSplitInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**splitType**|String|切分方式，"MODULO：取模, "HASH"：哈希, "DB_TABLE"：分库分表, "YYYYMMDD","YYYYMM","MM","MMDD"|
@@ -54,13 +54,13 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/consoleTableInfo
 |**columnNames**|String[]|切分列名称，第一项为切分表的列（必需），第二项为切分库的列（非必需)|
 |**splitDateBegin**|String|起始时间，切分方式为时间时必需，格式为20220125|
 |**splitDateEnd**|String|结束时间，切分方式为时间时必需，格式为20220125|
-### <div id="IndexInfo">IndexInfo</div>
+### <div id="indexinfo">IndexInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**indexName**|String|索引名。|
 |**indexType**|String|列类型，普通索引：NORMAL，唯一索引：UNIQUE。|
 |**columnNames**|String[]|列名称。|
-### <div id="ColumnInfo">ColumnInfo</div>
+### <div id="columninfo">ColumnInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**columnName**|String|列名。|
@@ -74,7 +74,7 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/consoleTableInfo
 |**columnComment**|String|列注释。|
 |**isAutoIncrease**|Boolean|是否自增。|
 |**isPrimaryKey**|Boolean|是否为主键。|
-### <div id="MetaTableInfo">MetaTableInfo</div>
+### <div id="metatableinfo">MetaTableInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**tableName**|String|表名。|

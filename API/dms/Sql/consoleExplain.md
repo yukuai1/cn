@@ -25,13 +25,13 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/console:explain
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](consoleexplain#result)| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dmsSqlResults**|[DmsSqlResult[]](#dmssqlresult)|查询结果。|
-### <div id="DmsSqlResult">DmsSqlResult</div>
+|**dmsSqlResults**|[DmsSqlResult[]](consoleexplain#dmssqlresult)|查询结果。|
+### <div id="dmssqlresult">DmsSqlResult</div>
 |名称|类型|描述|
 |---|---|---|
 |**sqlType**|String|sql类型，SYNCDMLDDL，同步执行ddl，dml语句；ASYNCDMLDDL，异步执行ddl，dml语句，未支持；QUERY，执行查询类sql语句，如select；COMMAND，如show等命令，未支持。|

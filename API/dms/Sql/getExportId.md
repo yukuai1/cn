@@ -23,9 +23,9 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/console:getExportId
 |**exportTypeEnum**|String|True| |导出方式，SYNC("SYNC", 0), ASYNC("ASYNC", 1)，当前只支持SYNC导出;|
 |**exportFileTypeEnum**|String|True| |导出文件格式，CSV("CSV", 0), SQL("SQL", 1);|
 |**exportContentTypeEnum**|String|True| |导出内容，DATA("DATA", 0), STRUCT("STRUCT", 1), STRUCT_DATA("STRUCT_DATA", 2);|
-|**tableFilters**|[TableFilter[]](#tablefilter)|False| |查询条件。|
+|**tableFilters**|[TableFilter[]](getexportid#tablefilter)|False| |查询条件。|
 
-### <div id="TableFilter">TableFilter</div>
+### <div id="tablefilter">TableFilter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**tableName**|String|False| |表名。|
@@ -34,9 +34,9 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/console:getExportId
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](getexportid#result)| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**strResult**|String|导出文件下载id|

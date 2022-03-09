@@ -19,19 +19,19 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/console:createTableBatch
 |---|---|---|---|---|
 |**dataSourceId**|Integer|True| |数据源id|
 |**dbName**|String|True| |数据库名称|
-|**createTableInfos**|[CreateTableInfo[]](#createtableinfo)|False| |查询结果。|
+|**createTableInfos**|[CreateTableInfo[]](createtablebatch#createtableinfo)|False| |查询结果。|
 
-### <div id="CreateTableInfo">CreateTableInfo</div>
+### <div id="createtableinfo">CreateTableInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**sql**|String|True| |sql语句。|
-|**extraTableInfo**|[ExtraTableInfo](#extratableinfo)|False| |创建广播表，分表额外信息。|
-### <div id="ExtraTableInfo">ExtraTableInfo</div>
+|**extraTableInfo**|[ExtraTableInfo](createtablebatch#extratableinfo)|False| |创建广播表，分表额外信息。|
+### <div id="extratableinfo">ExtraTableInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**tableTypeEnum**|String|True| |ORIGIN:原始表, STARDB_SPLIT:stardb切分表, STARDB_ISOLATE:stardb孤立表, STARDB_BROADCAST:stardb广播表。|
-|**stardbSplitInfo**|[StardbSplitInfo](#stardbsplitinfo)|False| |tableTypeEnum为切分表时的切分信息内容。|
-### <div id="StardbSplitInfo">StardbSplitInfo</div>
+|**stardbSplitInfo**|[StardbSplitInfo](createtablebatch#stardbsplitinfo)|False| |tableTypeEnum为切分表时的切分信息内容。|
+### <div id="stardbsplitinfo">StardbSplitInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**splitType**|String|True| |切分方式，"MODULO：取模, "HASH"：哈希, "DB_TABLE"：分库分表, "YYYYMMDD","YYYYMM","MM","MMDD"|
@@ -43,17 +43,17 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/console:createTableBatch
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](createtablebatch#result)| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dmsSqlsResult**|[DmsSqlsResult](#dmssqlsresult)| |
-### <div id="DmsSqlsResult">DmsSqlsResult</div>
+|**dmsSqlsResult**|[DmsSqlsResult](createtablebatch#dmssqlsresult)| |
+### <div id="dmssqlsresult">DmsSqlsResult</div>
 |名称|类型|描述|
 |---|---|---|
-|**dmsSqlResults**|[DmsSqlResult[]](#dmssqlresult)|多条sql查询结果。|
-### <div id="DmsSqlResult">DmsSqlResult</div>
+|**dmsSqlResults**|[DmsSqlResult[]](createtablebatch#dmssqlresult)|多条sql查询结果。|
+### <div id="dmssqlresult">DmsSqlResult</div>
 |名称|类型|描述|
 |---|---|---|
 |**sqlType**|String|sql类型，SYNCDMLDDL，同步执行ddl，dml语句；ASYNCDMLDDL，异步执行ddl，dml语句，未支持；QUERY，执行查询类sql语句，如select；COMMAND，如show等命令，未支持。|
