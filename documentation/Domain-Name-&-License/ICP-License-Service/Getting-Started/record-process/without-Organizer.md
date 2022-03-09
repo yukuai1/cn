@@ -26,4 +26,11 @@
 
 #### 3、填写主办单位详细信息及主体负责人信息
 
-![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/4-1-Supplementary-subject-information.png)
+按照提示填写真实有效的信息，企业备案主体负责人建议填写法人，个人备案填写个人信息即可；填写完毕后点击“下一步”
+
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/4-1-Organizer-all.png)
+
+#### 4、填写网站信息及网站负责人信息
+
+###### 说明 网站负责人需完成后续备案拍照、核验单签署等工作，请根据实际情况填写，若网站负责人与主体负责人为同一人，可勾选“同主体负责人”；
+
