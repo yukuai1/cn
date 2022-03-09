@@ -29,22 +29,22 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/instances:query
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](queryinstance#result)| |
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**instanceQueryTypeEnum**|String|查询分类方式：LOGIN_STATUS，DB_TYPE。|
-|**loginedInstance**|[DmsInstance[]](#dmsinstance)|已登录实例。|
-|**unloginedInstance**|[DmsInstance[]](#dmsinstance)|未登录实例。|
-|**noNeedLoginInstance**|[DmsInstance[]](#dmsinstance)|无需登录实例。|
-|**rdsIntance**|[DmsInstance[]](#dmsinstance)|RDS实例。|
-|**drdsIntance**|[DmsInstance[]](#dmsinstance)|DRDS实例。|
+|**loginedInstance**|[DmsInstance[]](queryinstance#dmsinstance)|已登录实例。|
+|**unloginedInstance**|[DmsInstance[]](queryinstance#dmsinstance)|未登录实例。|
+|**noNeedLoginInstance**|[DmsInstance[]](queryinstance#dmsinstance)|无需登录实例。|
+|**rdsIntance**|[DmsInstance[]](queryinstance#dmsinstance)|RDS实例。|
+|**drdsIntance**|[DmsInstance[]](queryinstance#dmsinstance)|DRDS实例。|
 ### <div id="dmsinstance">DmsInstance</div>
 |名称|类型|描述|
 |---|---|---|
 |**dbType**|Integer|数据库类型，CDS("CDS", 1), MYSQL("MYSQL", 2), ORACLE("ORACLE", 3), SQLSERVER("SQLSERVER", 4), CDSMYSQL("CDSMYSQL", 5), CDSORACLE("CDSORACLE", 6), CDSSQLSERVER("CDSSQLSERVER", 7), DATACENTER("DATACENTER", 8), HBASE("Hbase",9),MONGODB("MongoDb",10),ES("ES",11), MYSQL_INS("MYSQL_INS",12), DRDS_INS("DRDS_INS",13), STARDB_INS("STARDB_INS",14), STARDB_PROXY_INS("STARDB_PROXY_INS",15);。|
-|**dataSource**|[DataSource](#datasource)|数据源详情。|
+|**dataSource**|[DataSource](queryinstance#datasource)|数据源详情。|
 |**instanceInfo**|Object|从RDS，DRDS获取的数据源详情。|
 ### <div id="datasource">DataSource</div>
 |名称|类型|描述|
