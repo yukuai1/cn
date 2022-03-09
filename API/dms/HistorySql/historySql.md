@@ -27,12 +27,12 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/historySql
 |---|---|---|
 |**result**|[Result](#result)| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**count**|Integer|历史sql总量|
 |**historySqls**|[DmsHistorySql[]](#dmshistorysql)| |
-### <div id="DmsHistorySql">DmsHistorySql</div>
+### <div id="dmshistorysql">DmsHistorySql</div>
 |名称|类型|描述|
 |---|---|---|
 |**sql**|String|执行sql内容。|
