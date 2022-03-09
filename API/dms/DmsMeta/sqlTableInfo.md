@@ -25,27 +25,27 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/sqlTableInfo
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](sqltableinfo#result)| |
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dmsTableStructs**|[DmsTableStruct[]](#dmstablestruct)|sql生成的表元数据信息。|
+|**dmsTableStructs**|[DmsTableStruct[]](sqltableinfo#dmstablestruct)|sql生成的表元数据信息。|
 ### <div id="dmstablestruct">DmsTableStruct</div>
 |名称|类型|描述|
 |---|---|---|
 |**tableName**|String|表名。|
 |**primaryIndex**|String|主键。|
 |**sql**|String|建表sql|
-|**metaTableInfo**|[MetaTableInfo](#metatableinfo)| |
-|**columnInfos**|[ColumnInfo[]](#columninfo)|表中全部列信息。|
-|**indexInfos**|[IndexInfo[]](#indexinfo)|表中全部索引信息。|
-|**extraTableInfo**|[ExtraTableInfo](#extratableinfo)|广播表，分表额外信息。|
+|**metaTableInfo**|[MetaTableInfo](sqltableinfo#metatableinfo)| |
+|**columnInfos**|[ColumnInfo[]](sqltableinfo#columninfo)|表中全部列信息。|
+|**indexInfos**|[IndexInfo[]](sqltableinfo#indexinfo)|表中全部索引信息。|
+|**extraTableInfo**|[ExtraTableInfo](sqltableinfo#extratableinfo)|广播表，分表额外信息。|
 ### <div id="extratableinfo">ExtraTableInfo</div>
 |名称|类型|描述|
 |---|---|---|
 |**tableTypeEnum**|String|ORIGIN:原始表, STARDB_SPLIT:stardb切分表, STARDB_ISOLATE:stardb孤立表, STARDB_BROADCAST:stardb广播表。|
-|**stardbSplitInfo**|[StardbSplitInfo](#stardbsplitinfo)|tableTypeEnum为切分表时的切分信息内容。|
+|**stardbSplitInfo**|[StardbSplitInfo](sqltableinfo#stardbsplitinfo)|tableTypeEnum为切分表时的切分信息内容。|
 ### <div id="stardbsplitinfo">StardbSplitInfo</div>
 |名称|类型|描述|
 |---|---|---|
