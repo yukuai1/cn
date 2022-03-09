@@ -1,4 +1,4 @@
-## 第一次来京东备案看这里
+# 第一次来京东备案看这里
 
 ###### 说明：备案类型会由系统自动判断，无论什么备案类型，流程都是唯一的，按照下方流程指引操作即可。
 
@@ -69,7 +69,7 @@
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/8-2-View-rejection-Reasons.png)
 
-
+待您的备案信息通过京东云审核后将触发工信部的短信核验系统，请在24小时内完成短信核验，您的备案信息才能成功上报至地方通信管理局审核。
 
 
 
