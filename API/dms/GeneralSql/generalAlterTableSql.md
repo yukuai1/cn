@@ -20,9 +20,9 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/alterSql:general
 |**dataSourceId**|Integer|True| |数据源Id|
 |**dbName**|String|True| |数据库名|
 |**tableName**|String|True| |表名|
-|**metaTableInfo**|[MetaTableInfo](#metatableinfo)|True| |表元信息。|
-|**columnInfos**|[ColumnInfo[]](#columninfo)|False| |列信息。|
-|**indexInfos**|[IndexInfo[]](#indexinfo)|False| |索引信息。|
+|**metaTableInfo**|[MetaTableInfo](generalaltertablesql#metatableinfo)|True| |表元信息。|
+|**columnInfos**|[ColumnInfo[]](generalaltertablesql#columninfo)|False| |列信息。|
+|**indexInfos**|[IndexInfo[]](generalaltertablesql#indexinfo)|False| |索引信息。|
 
 ### <div id="indexinfo">IndexInfo</div>
 |名称|类型|是否必需|默认值|描述|
@@ -54,7 +54,7 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/alterSql:general
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](generalaltertablesql#result)| |
 
 ### <div id="result">Result</div>
 |名称|类型|描述|
