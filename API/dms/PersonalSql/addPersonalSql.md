@@ -27,7 +27,7 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/personalSql:add
 |---|---|---|
 |**result**|[Result](#result)| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**strResult**|String|返回消息|
