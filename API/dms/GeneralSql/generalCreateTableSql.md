@@ -30,7 +30,7 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/createSql:general
 |---|---|---|---|---|
 |**tableTypeEnum**|String|True| |ORIGIN:原始表, STARDB_SPLIT:stardb切分表, STARDB_ISOLATE:stardb孤立表, STARDB_BROADCAST:stardb广播表。|
 |**stardbSplitInfo**|[StardbSplitInfo](#stardbsplitinfo)|False| |tableTypeEnum为切分表时的切分信息内容。|
-### <div id="StardbSplitInfo">StardbSplitInfo</div>
+### <div id="stardbsplitinfo">StardbSplitInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**splitType**|String|True| |切分方式，"MODULO：取模, "HASH"：哈希, "DB_TABLE"：分库分表, "YYYYMMDD","YYYYMM","MM","MMDD"|
@@ -38,13 +38,13 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/createSql:general
 |**columnNames**|String[]|True| |切分列名称，第一项为切分表的列（必需），第二项为切分库的列（非必需)|
 |**splitDateBegin**|String|False| |起始时间，切分方式为时间时必需，格式为20220125|
 |**splitDateEnd**|String|False| |结束时间，切分方式为时间时必需，格式为20220125|
-### <div id="IndexInfo">IndexInfo</div>
+### <div id="indexinfo">IndexInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**indexName**|String|True| |索引名。|
 |**indexType**|String|True| |列类型，普通索引：NORMAL，唯一索引：UNIQUE。|
 |**columnNames**|String[]|True| |列名称。|
-### <div id="ColumnInfo">ColumnInfo</div>
+### <div id="columninfo">ColumnInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**columnName**|String|True| |列名。|
@@ -58,7 +58,7 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/createSql:general
 |**columnComment**|String|False| |列注释。|
 |**isAutoIncrease**|Boolean|True| |是否自增。|
 |**isPrimaryKey**|Boolean|True| |是否为主键。|
-### <div id="MetaTableInfo">MetaTableInfo</div>
+### <div id="metatableinfo">MetaTableInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**tableName**|String|True| |表名。|
@@ -70,7 +70,7 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/createSql:general
 |---|---|---|
 |**result**|[Result](#result)| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**strResult**|String|生成sql|
