@@ -6,13 +6,16 @@
 
 打开[**京东云官网**](jdcloud.com)首页,点击右上角处备案
 
-![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/1-home-page.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/1-home-page.png)
 
 进入登录页面，选择您可登录的方式登录系统（说明：目前仅支持京东账号、京东云账号及微信账号登录，子账号不支持备案。）
 
-![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/2-log-in.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/2-log-in.png)
 
 #### 2、填写备案信息，验证备案类型
+
+进入备案系统后会显示如下页面，点击“开始备案”
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/3-start.png)
 
 
 
