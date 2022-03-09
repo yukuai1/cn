@@ -31,7 +31,7 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/instances:query
 |---|---|---|
 |**result**|[Result](#result)| |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**instanceQueryTypeEnum**|String|查询分类方式：LOGIN_STATUS，DB_TYPE。|
@@ -40,13 +40,13 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/instances:query
 |**noNeedLoginInstance**|[DmsInstance[]](#dmsinstance)|无需登录实例。|
 |**rdsIntance**|[DmsInstance[]](#dmsinstance)|RDS实例。|
 |**drdsIntance**|[DmsInstance[]](#dmsinstance)|DRDS实例。|
-### <div id="DmsInstance">DmsInstance</div>
+### <div id="dmsinstance">DmsInstance</div>
 |名称|类型|描述|
 |---|---|---|
 |**dbType**|Integer|数据库类型，CDS("CDS", 1), MYSQL("MYSQL", 2), ORACLE("ORACLE", 3), SQLSERVER("SQLSERVER", 4), CDSMYSQL("CDSMYSQL", 5), CDSORACLE("CDSORACLE", 6), CDSSQLSERVER("CDSSQLSERVER", 7), DATACENTER("DATACENTER", 8), HBASE("Hbase",9),MONGODB("MongoDb",10),ES("ES",11), MYSQL_INS("MYSQL_INS",12), DRDS_INS("DRDS_INS",13), STARDB_INS("STARDB_INS",14), STARDB_PROXY_INS("STARDB_PROXY_INS",15);。|
 |**dataSource**|[DataSource](#datasource)|数据源详情。|
 |**instanceInfo**|Object|从RDS，DRDS获取的数据源详情。|
-### <div id="DataSource">DataSource</div>
+### <div id="datasource">DataSource</div>
 |名称|类型|描述|
 |---|---|---|
 |**id**|Integer|主键id。|
