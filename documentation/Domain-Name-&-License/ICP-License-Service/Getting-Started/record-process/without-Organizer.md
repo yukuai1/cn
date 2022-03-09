@@ -69,7 +69,18 @@
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/8-2-View-rejection-Reasons.png)
 
+#### 提交管局审核
+
 待您的备案信息通过京东云审核后将触发工信部的短信核验系统，请在24小时内完成短信核验，您的备案信息才能成功上报至地方通信管理局审核。
+
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/9-1.png)
+
+若管局审核失败，系统提示页面如下
+
+若管局审核成功，您可在左侧“备案管理”查看您的备案号等相关信息。
+
+
+
 
 
 
