@@ -63,9 +63,15 @@
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/8-1-Submit-for-initial-review.png)
 
-您可通过左侧“备案管理”按钮查看备案信息，若状态为“审核失败”，点击继续备案可查看具体驳回原因；
+若您接到初审通过的通知，按照系统提示继续完成真实性核验即可；若您接到初审失败的通知，您可通过左侧“备案管理”或“备案记录”按钮查看备案记录，点击“继续备案”可查看具体驳回原因,按照驳回原因点击“修改信息提交”
 
-初审通过后按照系统提示完成真实性核验进入下一步流程，
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/8-1-1-lose.png)
+
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/8-2-View-rejection-Reasons.png)
+
+
+
+
 
 
 
