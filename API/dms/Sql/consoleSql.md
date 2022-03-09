@@ -25,8 +25,8 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/console:exeSql
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
-|**error**|[Error](#error)| |
+|**result**|[Result](consolesql#result)| |
+|**error**|[Error](consolesql#error)| |
 
 ### <div id="error">Error</div>
 |名称|类型|描述|
@@ -35,7 +35,7 @@ https://dms.jdcloud-api.com/v1/regions/{regionId}/console:exeSql
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dmsSqlResults**|[DmsSqlResult[]](#dmssqlresult)|查询结果。|
+|**dmsSqlResults**|[DmsSqlResult[]](consolesql#dmssqlresult)|查询结果。|
 ### <div id="dmssqlresult">DmsSqlResult</div>
 |名称|类型|描述|
 |---|---|---|
