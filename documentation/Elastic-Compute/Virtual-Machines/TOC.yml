@@ -314,7 +314,13 @@ items:
       - name: 自动任务策略
         items:
           - name: 自动镜像策略
-            href: Operation-Guide/autoTaskPolicy/autoImagePolicy.md                           
+            href: Operation-Guide/autoTaskPolicy/autoImagePolicy.md          
+      - name: 在线迁移服务
+        items:
+          - name: 在线迁移概述
+            href: Operation-Guide/Vm-Migration/Online-Migration-Overview.md            
+          - name: 在线迁移教程
+            href: Operation-Guide/Vm-Migration/Online-Migration-Operation.md             
   - name: 性能测试
     href: Operation-Guide/Performence-Test/Linux-Performance-Test.md
   - name: 最佳实践
