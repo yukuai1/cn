@@ -85,7 +85,8 @@
 ###### 网站注销：仅注销您本次选择的网站的备案号，该网站下的域名将失去备案号。注销过程中不可撤回！注销成功后此网站将不能开通访问！
 ###### 取消接入：是指将您的备案信息从京东云的备案系统中删除，取消接入成功后如果您继续使用京东云接入商的服务器，您的网站将会被阻断访问；如果此网站（此域名）在其他服务商处存在备案，您的备案号不会被注销；如果您的备案信息没有对应的接入商，根据相关法律法规，相关部门可能会注销您的备案号，届时您的网站将不能开通访问！
 
-以注销主体为例，请务必仔细阅读说明，知晓注销后果。
+以注销主体为例，请务必仔细阅读说明，知晓注销后果。注销/取消接入成功后，主体负责人会收到工信部下发的短信、邮件通知。
+
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/pic-6.png)
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/pic-7.png)
