@@ -15,5 +15,5 @@
 
 5. 在概览页查看实例基本信息，如访问地址、MQTT地址等。
 
-![实例详情](../../../../image/IoT/Device-Access/Getting-Started/Instance-Info.png)
+![实例详情](../../../../image/IoT/Device-Access/Getting-Started/InstanceInfo.png)
 
