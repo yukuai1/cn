@@ -12,7 +12,26 @@
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/2-log-in.png)
 
-登入后您看到的页面应该是这样的
+登入后您看到的页面如下，请按照您的业务需求查看对应说明帮助文档
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/pic-1.png)
+
+## 说明①： 新增网站
+
+###### 新增网站（京东有主体）定义：主体已通过京东云进行过备案，现有新的网站托管到京东云服务器上，需在京东云提交新的网站及域名备案申请。
+
+点击“新增网站”，会出现信息核对页面，请仔细核对信息是否正确，若信息正确请点击“信息准确，下一步”；**若信息需要修改，请查看说明③**
+
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/pic-2.png)
+
+填写网站信息
+
+
+
+
+
+
+
+
+
 
