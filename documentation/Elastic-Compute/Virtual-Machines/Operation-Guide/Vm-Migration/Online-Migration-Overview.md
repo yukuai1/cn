@@ -18,7 +18,7 @@
 
 京东云提供安装在源节点和目标节点上的迁移工具，并提供已安装迁移服务平台的镜像。您需要预先在京东云上创建与源节点操作系统版本完全匹配的云主机，并在两侧迁移节点均安装迁移工具。同时，使用京东云发布的迁移服务镜像另行创建一台云主机，作为控制节点（迁移完成后可释放或另做他用）。随后，前往京东云云市场购买与迁移节点数量相等的许可，在迁移平台上完成迁移节点和迁移任务的配置，即可将源节点整机迁移至京东云的目标节点云主机上。
 
-<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/migration-overview.png" width="600"></div>
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/migration-overview.png" width="500"></div>
 
 ## 重要提示
 * 目前仅支持kvm虚拟化环境迁移至京东云，迁移时须确保源和目标端节点的操作系统类型、版本、内核、位数完全一致，且暂不支持Windows系统迁移。目前可迁移的操作系版本如下：
