@@ -1,7 +1,5 @@
 # 京东云有过备案记录看这里
 
-###### 说明：备案类型会由系统自动判断，无论什么备案类型，流程入口都是唯一的，按照下方流程指引操作即可。
-
 #### 登录京东云备案系统，找到备案入口
 
 打开[**京东云官网**](jdcloud.com)首页,点击右上角处备案
@@ -12,15 +10,16 @@
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/2-log-in.png)
 
-登入后您看到的页面如下，请按照您的业务需求查看对应说明帮助文档
+登入后您将看到如下页面，含有备案主办单位信息及网站信息，请核对主办单位名称等信息是否是您本次需要操作的对象，若不是请核对登录的账号是否正确。
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/pic-1.png)
 
-## 说明①： 新增网站
+## 说明① 新增网站&新增接入网站
 
-###### 新增网站（京东有主体）定义：主体已通过京东云进行过备案，现有新的网站托管到京东云服务器上，需在京东云提交新的网站及域名备案申请。
+###### 选项仅区分备案类型，备案流程是一致的，错误选择会导致备案流程报错无法进行或备案失败。
+您本次备案的域名没有备案号且需要备案到此主办单位下，请点击“新增网站”，若本次备案的域名存在备案号且隶属于该主办单位下，请点击“新增接入网站
 
-点击“新增网站”，会出现信息核对页面，请仔细核对信息是否正确，若信息正确请点击“信息准确，下一步”；**若信息需要修改，请查看说明③**
+按照您的实际情况点击“新增网站”或“新增接入网站”，点击后会出现信息核对页面，请仔细核对信息是否正确，若信息正确请点击“信息准确，下一步”；**若信息需要修改，请查看说明②**
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/pic-2.png)
 
