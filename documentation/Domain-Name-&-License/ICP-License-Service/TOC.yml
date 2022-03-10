@@ -9,13 +9,7 @@ items:
       - name: 京东云有过备案记录看这里
         href: Getting-Started/record-process/Existence-record.md
       - name: 备案授权码
-        href: Getting-Started/Process/IP-Authorization-code.md
-      - name: 我要新增备案
-        href: Getting-Started/Process/Subject-Cancellation.md
-      - name: 我要变更备案
-        href: Getting-Started/Process/Website-Cancellation.md
-      - name: 我要注销备案
-        href: Getting-Started/Process/Cancel-Access.md         
+        href: Getting-Started/Process/IP-Authorization-code.md       
   - name: 管局规则
     items:
       - name: 安徽
