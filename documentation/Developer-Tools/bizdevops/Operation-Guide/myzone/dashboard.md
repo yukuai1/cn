@@ -40,16 +40,16 @@
 
 除`待提报`外，均支持`持续时间`和`提出时间`的排序，`待提报`支持`创建时间`排序，点击相应需求可跳转至详情页面进行查看和处理。
 
-![](http://devops-minio.jdcloud.com/doc-image/All-Image/dashboard.assets/dashboard1.jpg)
+![image-20220309150934372](http://devops-minio.jdcloud.com/doc-image/All-Image/dashboard.assets/image-20220309150934372.png)
 
 
-## 开发者视图
+## 研发视图
 
 开发者视图中，以`我的任务`为主要界面。按照`我的待办`、`我完成的`分别排列。
 
 支持`开始日期`和`截止日期`的排序，当任务完成后可勾选是否完成将此任务移至`我完成的`列表中。
 
-![](http://devops-minio.jdcloud.com/doc-image/All-Image/dashboard.assets/dashboard2.jpg)
+![image-20220309150921114](http://devops-minio.jdcloud.com/doc-image/All-Image/dashboard.assets/image-20220309150921114.png)
 
 ## 管理者视图
 
@@ -61,5 +61,4 @@
 
 支持全屏展示，方便电子看板拖拽使用。
 
-![](http://devops-minio.jdcloud.com/doc-image/All-Image/dashboard.assets/dashboard3.png)
-
+![image-20220309151035920](http://devops-minio.jdcloud.com/doc-image/All-Image/dashboard.assets/image-20220309151035920.png)

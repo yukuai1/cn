@@ -1,6 +1,6 @@
 测试人员可通过测试用例模块，对产品、项目所有的用例进行规范化管理和长期维护。用例管理通过模块来区分业务、权限。新用户进入用例管理页面，可能无任何模块权限，可点击新增模块，创建属于自己业务的相关模块 若已有模块的负责人，将您加为模块成员，您就可以进入对应的模块
 
-![新增模块](http://devops-minio.jdcloud.com/doc-image/All-Image/case.assets/case_新增模块.jpg)
+![image-20220309153710328](http://devops-minio.jdcloud.com/doc-image/All-Image/case.assets/image-20220309153710328.png)
 
 选择模块进入后，用户可创建属于自己的用例分组，也可直接创建用例（无分组时，创建的用例默认进入未分组用例组）
 

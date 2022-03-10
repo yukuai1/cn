@@ -2,7 +2,7 @@
 
 不同层级的管理员拥有不同的管理权限，高权限成员可以为低权限成员分配权限。
 
-![admin](http://devops-minio.jdcloud.com/doc-image/All-Image/admin.assets/set1.png)
+![image-20220309150051243](http://devops-minio.jdcloud.com/doc-image/All-Image/admin.assets/image-20220309150051243.png)
 
 ## 一、权限分类
 
@@ -28,7 +28,7 @@
 
 ![admin](http://devops-minio.jdcloud.com/doc-image/All-Image/admin.assets/set2.png)
 
-### 
+###
 
 ### 普通管理员
 
