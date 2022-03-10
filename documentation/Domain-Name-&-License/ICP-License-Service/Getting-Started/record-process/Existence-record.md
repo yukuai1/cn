@@ -37,6 +37,7 @@
 #### 上传图片资料
 
 按照提示及下方说明上传对应图片，图片均需清晰完整，证件图片有效期均需大于3个月以上，上传完毕后点击“下一步”
+
 **温馨提示**  域名证书需要联系您的域名注册商获取。
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/pic-4.png)
@@ -69,6 +70,8 @@
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/9-2.png)
 
 若管局审核成功，您可在左侧“备案管理”查看您的备案号等相关信息。
+
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/9-2.png)
 
 
 
