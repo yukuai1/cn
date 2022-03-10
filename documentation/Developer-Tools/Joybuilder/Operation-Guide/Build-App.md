@@ -1,4 +1,4 @@
-# 应用
+# 应用管理
 
 支持通过拖拉拽实现前端功能页面。
 
@@ -30,14 +30,41 @@
 
 ![](/image/Joybuilder/app_dev.PNG) 
 
-6、画布中，点击预览，即可实现所开发页面的预览效果
+6、画布左侧--页面模块，可进行页面创建和编辑
+
+![](/image/Joybuilder/app_dev_page.PNG) 
+
+7、画布左侧--组件模块，选择组件可进行拖拽
+
+![](/image/Joybuilder/app_dev_comp.PNG) 
+
+8、画布中--选中组件
+
+![](/image/Joybuilder/app_dev_button.PNG) 
+
+9、点击右侧属性栏--click事件，进行js开发。其中，接口为数据库表自定义转化
+   举例：创建库表city_driver_info，会自动生成API。 
+   前缀为cityDriverInfo，方法名即为访问路径。
+   基础方法包含：AddOrEdit，delete，listData，check，save等
+   
+![](/image/Joybuilder/app_dev_js.PNG) 
+
+10、点击保存：完成应用开发，可在菜单进行配置
+
+![](/image/Joybuilder/app_dev_save.PNG) 
+
+11、画布中，点击预览，即可实现所开发页面的预览效果
 
 ![](/image/Joybuilder/app_detail.PNG) 
 
-7、项目中，通过【系统管理】-【菜单&权限】，即可配置所开发的应用页面。
+12、项目中，通过【系统管理】-【菜单&权限】，即可配置所开发的应用页面。
 
 ![](/image/Joybuilder/app_site.PNG) 
 
-8、项目中，通过【系统管理】-【角色管理】，即可配置角色对应的菜单。
+13、项目中，通过【系统管理】-【角色管理】，即可配置角色对应的菜单。
 
 ![](/image/Joybuilder/build_app_rbac.PNG) 
+
+14、项目中，点击菜单中所配置的模块，如【业务体验】
+
+![](/image/Joybuilder/app_dev_show.PNG) 
