@@ -23,7 +23,7 @@
 <div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/migration-overview.png" width="600"></div>
 
 ## 重要提示
-* 迁移时须确保源和目标端节点的操作系统类型、版本、内核、位数完全一致，且暂不支持Windows系统迁移。目前可迁移的操作系版本如下：
+* 目前仅支持kvm虚拟化环境迁移至京东云，迁移时须确保源和目标端节点的操作系统类型、版本、内核、位数完全一致，且暂不支持Windows系统迁移。目前可迁移的操作系版本如下：
   * CentOS（64位）：8.2/7.6/7.3/7.2/6.9
   * Ubuntu（64位）：20.04/18.04/16.04/14.04
-* 为确保迁移后可在京东云环境下正常运行并支持平台提供的生命周期管理能力，请在迁移前完成虚拟化驱动 virtio 的安装，并参照 [导入镜像](https://docs.jdcloud.com/cn/virtual-machines/import-private-image) 的要求尽量保持系统关键配置一致。
+* 为确保迁移后可在京东云环境下正常运行并支持平台提供的生命周期管理能力，请参照 [导入镜像](https://docs.jdcloud.com/cn/virtual-machines/import-private-image) 的要求尽量保持系统关键配置一致。
