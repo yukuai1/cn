@@ -3,75 +3,75 @@ items:
   - name: 备案入门
     items:
       - name: 新手引导
-        href: Getting-Started/Novice-guidance.md
+        href: Getting-Started/record-process/record-shouquanma.md
       - name: 第一次来京东云备案看这里
         href: Getting-Started/record-process/without-Organizer.md
       - name: 京东云有过备案记录看这里
         href: Getting-Started/record-process/Existence-record.md
-      - name: 备案授权码
-        href: Getting-Started/Process/IP-Authorization-code.md       
+      - name: 备案授权码说明
+        href: Getting-Started/record-process/Irecord-shouquanma.md      
   - name: 管局规则
     items:
       - name: 安徽
-        href: Getting-Started/Management-specification/Anhui.md
+        href: the-rules/Anhui.md
       - name: 北京
-        href: Getting-Started/Management-specification/Beijing.md
+        href: the-rules/Beijing.md
       - name: 重庆
-        href: Getting-Started/Management-specification/Chongqing.md  
+        href: the-rules/Chongqing.md
       - name: 福建
-        href: Getting-Started/Management-specification/Fujian.md
+        href: the-rules/Fujian.md
       - name: 甘肃
-        href: Getting-Started/Management-specification/Gansu.md
+        href: the-rules/Gansu.md
       - name: 广东
-        href: Getting-Started/Management-specification/Guangdong.md
+        href: the-rules/Guangdong.md
       - name: 广西
-        href: Getting-Started/Management-specification/Guangxi.md
+        href: the-rules/Guangxi.md
       - name: 贵州
-        href: Getting-Started/Management-specification/Guizhou.md
+        href: the-rules/Guizhou.md
       - name: 海南
-        href: Getting-Started/Management-specification/Hainan.md
+        href: the-rules/Hainan.md
       - name: 河北
-        href: Getting-Started/Management-specification/Hebei.md
+        href: the-rules/Hebei.md
       - name: 黑龙江
-        href: Getting-Started/Management-specification/Heilongjiang.md
+        href: the-rules/Heilongjiang.md
       - name: 河南
-        href: Getting-Started/Management-specification/Henan.md
+        href: the-rules/Henan.md
       - name: 湖北
-        href: Getting-Started/Management-specification/Hubei.md
+        href: the-rules/Hubei.md
       - name: 湖南
-        href: Getting-Started/Management-specification/Hunan.md
+        href: the-rules/Hunan.md
       - name: 江苏
-        href: Getting-Started/Management-specification/Jiangsu.md
+        href: the-rules/Jiangsu.md
       - name: 江西
-        href: Getting-Started/Management-specification/Jiangxi.md
+        href: the-rules/Jiangxi.md
       - name: 吉林
-        href: Getting-Started/Management-specification/Jilin.md
+        href: the-rules/Jilin.md
       - name: 辽宁
-        href: Getting-Started/Management-specification/Liaoning.md
+        href: the-rules/Liaoning.md
       - name: 内蒙古
-        href: Getting-Started/Management-specification/Neimenggu.md
+        href: the-rules/Neimenggu.md
       - name: 宁夏
-        href: Getting-Started/Management-specification/Ningxia.md
+        href: the-rules/Ningxia.md
       - name: 青海
-        href: Getting-Started/Management-specification/Qinghai.md
-      - name: 山西
-        href: Getting-Started/Management-specification/Shan-xi.md
-      - name: 上海
-        href: Getting-Started/Management-specification/Shanghai.md
+        href:the-rules/Qinghai.md
       - name: 陕西
-        href: Getting-Started/Management-specification/Shanxi.md
-      - name: 四川
-        href: Getting-Started/Management-specification/Sichuan.md
-      - name: 新疆
-        href: Getting-Started/Management-specification/Xinjiang.md
-      - name: 云南
-        href: Getting-Started/Management-specification/Yunnan.md
-      - name: 浙江
-        href: Getting-Started/Management-specification/Zhejiang.md
+        href: the-rules/Shaanxi.md
       - name: 山东
-        href: Getting-Started/Management-specification/shandong.md
+        href: the-rules/Shandong.md
+      - name: 上海
+        href: the-rules/Shanghai.md
+      - name: 山西
+        href: the-rules/Shanxi.md
+      - name: 四川
+        href: the-rules/Sichuan.md
       - name: 天津
-        href: Getting-Started/Management-specification/tianjin.md
+        href: the-rules/Tianjin.md
+      - name: 新疆
+        href: the-rules/Xinjiang.md
+      - name: 云南
+        href: the-rules/Yunnan.md
+      - name: 浙江
+        href: the-rules/Zhejiang.md
   - name: 资料下载
     items:
       - name: 核验单信息
@@ -124,18 +124,12 @@ items:
     items:
       - name: 备案基本问题
         href: FAQ/Problem-summary.md
-      - name: 备案拦截排查
-        href: FAQ/Intercept-troubleshooting.md
       - name: 工信部短信验证说明
-        href: Process/Recording-SMS-verification-instructions.md
-      - name: 关于网站备案域名核验功能说明
-        href: Process/Verification-function-description.md
+        href: FAQ/Recording-SMS-verification-instructions.md
       - name: 公安局备案常见问题
         href: FAQ/Public-Security-Bureau-Filing-Common-Problems.md
       - name: 经营性备案
         href: FAQ/Operational-Filing.md
-      - name: 接入备案说明
-        href: FAQ/Access-Filing-Notes.md
       - name: 网站备案号超链接设置
         href: FAQ/About-Adding-Hyperlink-Of-Record-Number-To-Website.md
       - name: 政府网站备案说明
