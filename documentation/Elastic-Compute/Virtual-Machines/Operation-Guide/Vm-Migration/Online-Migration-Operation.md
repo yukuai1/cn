@@ -1,7 +1,7 @@
 # 在线迁移教程
 
 在线迁移流程如下图所示，本文将详细介绍各环节的操作步骤。
-![](https://img1.jcloudcs.com/cn/image/vm/migration-operation-overview.png)
+<div align="center"><img src="https://https://img1.jcloudcs.com/cn/image/vm/migration-operation-overview.png" width="800"></div>
 
 ## 迁移前准备
 ### 1、迁移条件确认
@@ -13,6 +13,7 @@
 
 #### 1.2、 网络联通确认<br>
 由于源节点、目标节点、控制节点须保证两两网络可达，因此通常情况下，意味着三个节点均需要具有公网访问的能力，请提前规划好网络联通方式。同时，各节点需要开放下述端口，请提前确认与当前业务在用端口是否有冲突。
+
 | 节点类型                | 端口协议                | 端口          |
 | :------------------- | -------------------: |:---------------:|
 | 源节点  | TCP | 26821 |
@@ -31,9 +32,11 @@
 请根据迁移节点的操作系统及版本，下载对应的代理程序安装包，源节点和目标节点均需要安装且安装步骤相同。
 
 #### 1.1、下载迁移代理程序安装包
+
 ```
 wget https://bj-vm-migration.s3.cn-north-1.jdcloud-oss.com/info2soft-<i2-version>.<os-version>.rpm
 ```
+
 内网环境下载时，请将链接中的bucket地址"bj"和地域参数"cn-north-1"分别替换成主机所在地域的代码，并将域名中的"s3"改为"s3-internal"，将会使用免费内网流量下载：
 * 华北-北京："bj","cn-north-1"
 * 华南-广州："gz","cn-south-1"
@@ -47,25 +50,34 @@ wget https://bj-vm-migration.s3.cn-north-1.jdcloud-oss.com/info2soft-<i2-version
 ```
 rpm -ivh info2soft-i2node-<i2-version>.<os-version>.rpm
 ```
+
 如果系统是最小安装的，将会提示缺少zip, unzip, psmisc等3个软件包，可直接使用yum安装。
+
 ```
 yum install -y zip unzip psmisc
 ```
+
 在安装模式处，选择“1”；加载块复制驱动处，选择“n”；修改监听端口提示处，选择“n”。随后按回车键完成安装。
 确认以下进程是否开启，以确保服务成功安装。
+
 ```
 service i2node status
 ```
+
 1.2.2、Ubuntu系统安装代理程序
 
 执行deb包安装。
+
 ```
 sudo dpkg -i info2soft-i2node-<i2-version>.<os-version>.rpm
 ```
+
 如果系统是最小安装的，将会提示缺少 unzip 包，可直接使用 apt-get 安装。
+
 ```
 sudo apt-get install -y unzip
 ```
+
 在安装模式处，选择“1”；加载块复制驱动处，选择“n”；修改监听端口提示处，选择“n”。随后按回车键完成安装。
 ![](https://img1.jcloudcs.com/cn/image/vm/migration-operation-inode1.png)
 
