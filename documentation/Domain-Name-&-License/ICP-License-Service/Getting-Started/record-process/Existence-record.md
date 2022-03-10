@@ -24,7 +24,11 @@
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/pic-2.png)
 
-填写网站信息
+按照系统提示及真实情况填写网站信息，若网站负责人信息与主体负责人信息一致，则勾选“同主体负责人”，若还需继续备案网站，可点击“继续添加网站”继续填写网站信息；全部填写完毕后点击“下一步”
+
+补充上传图片资料后，点击下一步
+
+进入信息核对页面，核对无误后勾选“我已阅读并同意《》”
 
 
 
