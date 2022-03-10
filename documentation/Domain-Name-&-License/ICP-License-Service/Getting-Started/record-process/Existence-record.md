@@ -12,7 +12,7 @@
 
 登入后您将看到如下页面，含有备案主办单位信息及网站信息，请核对主办单位名称等信息是否是您本次需要操作的对象，若不是请核对登录的账号是否正确。
 
-![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/pic-1.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/pic-1-1.png)
 
 ## 说明① 新增网站&新增接入网站
 
