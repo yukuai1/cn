@@ -4,7 +4,7 @@
 
 2. 主体负责人必须是法人
 
-3. 网站负责人若不是法人，需提供[网站负责人授权书.docx](https://badownload.s3.cn-north-1.jdcloud-oss.com/buchongziliao/fujian/fujianshouquanshu.doc)
+3. 网站负责人若不是法人，需提供[网站负责人授权书](https://badownload.s3.cn-north-1.jdcloud-oss.com/buchongziliao/fujian/fujianshouquanshu.doc)
 
 4. 办公电话必须能联系对应负责人，否则备案不予通过
 
