@@ -1,6 +1,6 @@
 # 京东云有过备案记录看这里
 
-###### 说明：备案类型会由系统自动判断，无论什么备案类型，流程都是唯一的，按照下方流程指引操作即可。
+###### 说明：备案类型会由系统自动判断，无论什么备案类型，流程入口都是唯一的，按照下方流程指引操作即可。
 
 #### 登录京东云备案系统，找到备案入口
 
@@ -14,5 +14,5 @@
 
 登入后您看到的页面应该是这样的
 
-![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/2-log-in.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/pic-1.png)
 
