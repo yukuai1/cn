@@ -86,6 +86,8 @@
 ###### 取消接入：是指将您的备案信息从京东云的备案系统中删除，取消接入成功后如果您继续使用京东云接入商的服务器，您的网站将会被阻断访问；如果此网站（此域名）在其他服务商处存在备案，您的备案号不会被注销；如果您的备案信息没有对应的接入商，根据相关法律法规，相关部门可能会注销您的备案号，届时您的网站将不能开通访问！
 
 
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/pic-6.png)
+
 
 
 
