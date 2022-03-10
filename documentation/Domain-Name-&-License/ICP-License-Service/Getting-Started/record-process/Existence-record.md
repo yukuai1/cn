@@ -46,12 +46,11 @@
 
 浏览备案信息页，查看填写的备案信息是否有错误，若有需要修改地方可点“编辑”修改，若没有问题，勾选下方的“我已阅读并同意《信息安全管理协议》和《协助更改备案信息服务在线服务条款》”后，点击“提交信息”,
 
-![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/pic-5.png)
-
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/7-Check.png)
 
 继续提交将把备案信息提交至京东云，等待审核即可。
 
-![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/pic-6.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/8-1-Submit-for-initial-review.png)
 
 若您接到初审通过的通知，按照系统提示继续完成真实性核验即可；若您接到初审失败的通知，您可通过左侧“备案管理”或“备案记录”按钮查看备案记录，点击“继续备案”可查看具体驳回原因,按照驳回原因点击“修改信息提交”
 
@@ -71,7 +70,7 @@
 
 若管局审核成功，您可在左侧“备案管理”查看您的备案号等相关信息。
 
-![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/9-2.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/pic-5.png)
 
 
 
