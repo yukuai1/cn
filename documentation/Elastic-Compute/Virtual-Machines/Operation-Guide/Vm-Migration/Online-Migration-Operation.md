@@ -32,6 +32,14 @@
 请根据迁移节点的操作系统及版本，下载对应的代理程序安装包，源节点和目标节点均需要安装且安装步骤相同。
 
 #### 1.1、下载迁移代理程序安装包
+| 操作系统及版本          | 迁移代理程序安装包（以华北为例）                | 
+| :------------------- | :-------------------|
+| CentOS 8.x  |   https://bj-vm-migration.s3.cn-north-1.jdcloud-oss.com/info2soft-i2node-7.1.72.22012416-el8.x86_64.rpm| 
+| CentOS 7.x  | https://bj-vm-migration.s3.cn-north-1.jdcloud-oss.com/info2soft-i2node-7.1.72.22012416-el7.x86_64.rpm |
+| CentOS 6.x  | https://bj-vm-migration.s3.cn-north-1.jdcloud-oss.com/info2soft-i2node-7.1.72.22012416-el6.x86_64.rpm  | 
+| Ubuntu 18.04  | https://bj-vm-migration.s3.cn-north-1.jdcloud-oss.com/info2soft-i2node-7.1.72.22012416-ubuntu.18.04.5.x86_64.deb   |
+| Ubuntu 16.04  | https://bj-vm-migration.s3.cn-north-1.jdcloud-oss.com/info2soft-i2node-7.1.72.22012416-ubuntu.16.04.2.x86_64.deb   | 
+| Ubuntu 14.04  | https://bj-vm-migration.s3.cn-north-1.jdcloud-oss.com/info2soft-i2node-7.1.72.22012416-ubuntu.14.04.x86_64.deb   | 
 
 ```
 wget https://bj-vm-migration.s3.cn-north-1.jdcloud-oss.com/info2soft-<i2-version>.<os-version>.rpm
