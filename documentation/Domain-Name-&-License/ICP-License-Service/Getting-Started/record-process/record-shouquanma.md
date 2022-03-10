@@ -2,13 +2,13 @@
 
 #### 一、登录备案系统
 
-1、 打开京东云官网[www.jdcloud.com](http://www.jdcloud.com)打开后点击右上方“备案”
+打开[**京东云官网**](jdcloud.com)首页,点击右上角处备案
 
-![img](https://github.com/jdcloudcom/cn/blob/edit/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/zmc-image_ICP-License-Service_Introduction-cn-shouyedatu.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/1-home-page.png)
 
-2、显示登录页面，选择您可登录的方式登录系统
+进入登录页面，选择您可登录的方式登录系统
 
-![img](https://github.com/jdcloudcom/cn/blob/edit/documentation/Domain-Name-%26-License/Image-Domain/ZMC-Image-Domain/zmc-image_ICP-License-Service_Introduction-cn-login.png)
+![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/2-log-in.png)
 
 ####  二、申请授权码
 
