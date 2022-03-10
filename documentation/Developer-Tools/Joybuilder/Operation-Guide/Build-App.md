@@ -42,10 +42,10 @@
 
 ![](/image/Joybuilder/app_dev_button.PNG) 
 
-10、点击右侧属性栏--click事件，进行js开发。其中，接口为数据库表自定义转化
+10、点击右侧属性栏--click事件，进行js开发。其中，接口为数据库表自定义转化。
   
-   举例：创建库表city_driver_info，会自动生成API。 
-   前缀为cityDriverInfo，方法名即为访问路径。
+   举例：创建库表city_driver_info，会自动生成API。前缀为cityDriverInfo，方法名即为访问路径。
+   
    基础方法包含：AddOrEdit，delete，listData，check，save等
    
 ![](/image/Joybuilder/app_dev_js.PNG) 
