@@ -6,7 +6,7 @@
 
 * 通用型：[通用共享型](instance-type-family#user-content-1)、[通用标准型](instance-type-family#user-content-2)
 * 计算优化型：[计算优化共享型](instance-type-family#user-content-9)、[计算优化密集型](instance-type-family#user-content-11)、[计算优化标准型](instance-type-family#user-content-3)
-* 内存优化型：[内存优化标准型](instance-type-family#user-content-4)
+* 内存优化型：[内存优化标准型](instance-type-family#user-content-4)、[内存优化增强型](instance-type-family#user-content-17)
 * 突发性能型：[突发性能型](instance-type-family#user-content-12)
 * 高频计算型：[高频计算通用型](instance-type-family#user-content-5)
 * 存储优化型：[存储优化IO型](instance-type-family#user-content-7)、[存储优化大数据型](instance-type-family#user-content-8)
@@ -416,7 +416,7 @@ g.n1.8xlarge|32|128|8|4 |	 |
 |m.n1.2xlarge|8|64|4|4  | |
 |m.n1.4xlarge|16|128|8|4 | |
 
-<div id="user-content-12"></div>
+<div id="user-content-17"></div>
 
 ### 内存优化增强型
 
