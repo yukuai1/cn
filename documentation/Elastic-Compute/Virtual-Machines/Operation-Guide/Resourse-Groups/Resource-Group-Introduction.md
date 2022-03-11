@@ -13,7 +13,7 @@
 
 ## 实例支持的资源组操作：
 
-- [添加资源组](https://github.com/jdcloudcom/cn/blob/wangbaohan2/documentation/Elastic-Compute/Virtual-Machines/Operation-Guide/Resourse-Groups/Add-Resource-Groups.md)
+- [实例加入资源组](https://github.com/jdcloudcom/cn/blob/wangbaohan2/documentation/Elastic-Compute/Virtual-Machines/Operation-Guide/Resourse-Groups/Add-Resource-Groups.md)
 
 - [变更资源组](https://github.com/jdcloudcom/cn/blob/wangbaohan2/documentation/Elastic-Compute/Virtual-Machines/Operation-Guide/Resourse-Groups/Change-Resource-Groups.md)
 
