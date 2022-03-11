@@ -17,4 +17,4 @@
 
 - [变更资源组](https://github.com/jdcloudcom/cn/blob/wangbaohan2/documentation/Elastic-Compute/Virtual-Machines/Operation-Guide/Resourse-Groups/Change-Resource-Groups.md)
 
-- [筛选资源组](https://github.com/jdcloudcom/cn/blob/wangbaohan2/documentation/Elastic-Compute/Virtual-Machines/Operation-Guide/Resourse-Groups/Filter-Resource-Groups.md)
+- [资源组筛选](https://github.com/jdcloudcom/cn/blob/wangbaohan2/documentation/Elastic-Compute/Virtual-Machines/Operation-Guide/Resourse-Groups/Filter-Resource-Groups.md)
