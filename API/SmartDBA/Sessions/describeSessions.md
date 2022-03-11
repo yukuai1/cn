@@ -22,7 +22,7 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/de
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describesessions#result)| |
 |**requestId**|String|请求id|
 
 ### <div id="Result">Result</div>
@@ -35,10 +35,10 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/de
 |**totalSession**|Integer|会话总数|
 |**systemsSession**|Integer|DMS（系统）会话总数|
 |**totalCount**|Integer|总数|
-|**sessions**|[Session[]](#session)|实时会话列表|
-|**userStatistics**|[UserStatistic[]](#userstatistic)|按用户统计|
-|**hostStatistics**|[HostStatistic[]](#hoststatistic)|按访问来源统计|
-|**dbStatistics**|[DBStatistic[]](#dbstatistic)|按数据库统计|
+|**sessions**|[Session[]](describesessions#session)|实时会话列表|
+|**userStatistics**|[UserStatistic[]](describesessions#userstatistic)|按用户统计|
+|**hostStatistics**|[HostStatistic[]](describesessions#hoststatistic)|按访问来源统计|
+|**dbStatistics**|[DBStatistic[]](describesessions#dbstatistic)|按数据库统计|
 ### <div id="DBStatistic">DBStatistic</div>
 |名称|类型|描述|
 |---|---|---|

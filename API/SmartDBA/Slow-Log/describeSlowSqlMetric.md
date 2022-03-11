@@ -26,15 +26,15 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/sq
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describeslowsqlmetric#result)| |
 |**requestId**|String|请求id|
 
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**itemData**|[DataPoint[]](#datapoint)|监控值对|
-|**metricInfo**|[Metric](#metric)|metric元信息|
+|**itemData**|[DataPoint[]](describeslowsqlmetric#datapoint)|监控值对|
+|**metricInfo**|[Metric](describeslowsqlmetric#metric)|metric元信息|
 ### <div id="Metric">Metric</div>
 |名称|类型|描述|
 |---|---|---|

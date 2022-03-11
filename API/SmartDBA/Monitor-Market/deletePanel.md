@@ -12,7 +12,7 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/panels/{panelGid}
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**regionId**|String|True| |地域代码，取值范围参见[《各地域及可用区对照表》](../Enum-Definitions/Regions-AZ.md)|
+|**regionId**|String|True| |地域代码|
 |**panelGid**|String|True| |监控大盘id|
 
 ## 请求参数

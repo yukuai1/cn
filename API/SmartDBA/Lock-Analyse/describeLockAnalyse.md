@@ -24,7 +24,7 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/lo
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describelockanalyse#result)| |
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
@@ -32,7 +32,7 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/lo
 |**analyseId**|String|锁诊断记录Id|
 |**occurTime**|String|锁发生时间|
 |**deadLockLog**|String|死锁日志详情|
-|**data**|[DeadLockDetail[]](#deadlockdetail)|锁分析信息列表|
+|**data**|[DeadLockDetail[]](describelockanalyse#deadlockdetail)|锁分析信息列表|
 ### <div id="DeadLockDetail">DeadLockDetail</div>
 |名称|类型|描述|
 |---|---|---|

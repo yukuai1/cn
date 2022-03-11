@@ -22,14 +22,14 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/sy
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describesysteminfo#result)| |
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**bufferPoolInfo**|[BufferPoolInfo](#bufferpoolinfo)|Buffer Pool信息|
-|**connectionInfo**|[ConnectionInfo](#connectioninfo)|连接信息|
-|**serverInfo**|[ServerInfo](#serverinfo)|Server信息|
+|**bufferPoolInfo**|[BufferPoolInfo](describesysteminfo#bufferpoolinfo)|Buffer Pool信息|
+|**connectionInfo**|[ConnectionInfo](describesysteminfo#connectioninfo)|连接信息|
+|**serverInfo**|[ServerInfo](describesysteminfo#serverinfo)|Server信息|
 ### <div id="ServerInfo">ServerInfo</div>
 |名称|类型|描述|
 |---|---|---|

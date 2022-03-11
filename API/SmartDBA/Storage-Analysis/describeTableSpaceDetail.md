@@ -12,7 +12,7 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/ta
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**regionId**|String|True| |地域代码，取值范围参见[《各地域及可用区对照表》](../Enum-Definitions/Regions-AZ.md)|
+|**regionId**|String|True| |地域代码|
 |**instanceGid**|String|True| |RDS 实例ID，唯一标识一个RDS实例。|
 
 ## 请求参数
@@ -29,13 +29,13 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/ta
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describetablespacedetail#result)| |
 |**requestId**|String|请求id|
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[TableStorageInfo[]](#tablestorageinfo)|库空间信息列表|
+|**data**|[TableStorageInfo[]](describetablespacedetail#tablestorageinfo)|库空间信息列表|
 |**totalCount**|Integer|总数|
 ### <div id="TableStorageInfo">TableStorageInfo</div>
 |名称|类型|描述|

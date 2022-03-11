@@ -26,12 +26,12 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/describeAlarmResource
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describealarmresource#result)| |
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[AlarmDetail[]](#alarmdetail)|列表|
+|**data**|[AlarmDetail[]](describealarmresource#alarmdetail)|列表|
 |**totalCount**|Integer|总数|
 ### <div id="AlarmDetail">AlarmDetail</div>
 |名称|类型|描述|
