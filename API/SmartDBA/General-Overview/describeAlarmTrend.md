@@ -12,7 +12,7 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/alarmTrend
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**regionId**|String|True| |地域代码，取值范围参见[《各地域及可用区对照表》](../Enum-Definitions/Regions-AZ.md)|
+|**regionId**|String|True| |地域代码|
 
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
@@ -25,15 +25,15 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/alarmTrend
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describealarmtrend#result)| |
 |**requestId**|String|请求id|
 
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**itemData**|[DataPoint[]](#datapoint)|监控值对|
-|**metricInfo**|[Metric](#metric)|metric元信息|
+|**itemData**|[DataPoint[]](describealarmtrend#datapoint)|监控值对|
+|**metricInfo**|[Metric](describealarmtrend#metric)|metric元信息|
 ### <div id="Metric">Metric</div>
 |名称|类型|描述|
 |---|---|---|

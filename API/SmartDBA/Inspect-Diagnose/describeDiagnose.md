@@ -12,7 +12,7 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/di
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**regionId**|String|True| |地域代码，取值范围参见[《各地域及可用区对照表》](../Enum-Definitions/Regions-AZ.md)|
+|**regionId**|String|True| |地域代码|
 |**instanceGid**|String|True| |RDS 实例ID，唯一标识一个RDS实例|
 |**diagnoseId**|String|True| |诊断任务id|
 
@@ -23,24 +23,24 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/di
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describediagnose#result)| |
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**status**|String|巡检状态描述，取值 complete 或者 fail。如遇到云监控或者RDS服务异常，会出现fail。可提示用户诊断失败，请稍后重试。|
-|**data**|[DiagnoseDetail](#diagnosedetail)| |
+|**data**|[DiagnoseDetail](describediagnose#diagnosedetail)| |
 ### <div id="DiagnoseDetail">DiagnoseDetail</div>
 |名称|类型|描述|
 |---|---|---|
 |**message**|String|诊断结果一句话描述|
-|**score**|[DiagnoseScore](#diagnosescore)| |
-|**general**|[DiagnoseGeneral](#diagnosegeneral)| |
-|**metrics**|[DiagnoseMetric](#diagnosemetric)| |
+|**score**|[DiagnoseScore](describediagnose#diagnosescore)| |
+|**general**|[DiagnoseGeneral](describediagnose#diagnosegeneral)| |
+|**metrics**|[DiagnoseMetric](describediagnose#diagnosemetric)| |
 ### <div id="DiagnoseMetric">DiagnoseMetric</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[DiagnoseMetricItem[]](#diagnosemetricitem)|实时性能、慢查询、会话等信息|
+|**data**|[DiagnoseMetricItem[]](describediagnose#diagnosemetricitem)|实时性能、慢查询、会话等信息|
 ### <div id="DiagnoseMetricItem">DiagnoseMetricItem</div>
 |名称|类型|描述|
 |---|---|---|
@@ -51,7 +51,7 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/di
 ### <div id="DiagnoseGeneral">DiagnoseGeneral</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[DiagnoseGeneralItem[]](#diagnosegeneralitem)|可用性、可靠性、可维护性等信息|
+|**data**|[DiagnoseGeneralItem[]](describediagnose#diagnosegeneralitem)|可用性、可靠性、可维护性等信息|
 ### <div id="DiagnoseGeneralItem">DiagnoseGeneralItem</div>
 |名称|类型|描述|
 |---|---|---|

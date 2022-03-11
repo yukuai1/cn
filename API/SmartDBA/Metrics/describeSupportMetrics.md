@@ -24,15 +24,15 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/supportMetrics
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describesupportmetrics#result)| |
 |**requestId**|String|请求id|
 
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**sys**|[SupportMetric[]](#supportmetric)|资源监控|
-|**server**|[SupportMetric[]](#supportmetric)|MySQL server 监控|
+|**sys**|[SupportMetric[]](describesupportmetrics#supportmetric)|资源监控|
+|**server**|[SupportMetric[]](describesupportmetrics#supportmetric)|MySQL server 监控|
 ### <div id="SupportMetric">SupportMetric</div>
 |名称|类型|描述|
 |---|---|---|

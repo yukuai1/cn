@@ -25,14 +25,14 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/de
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describenowsessions#result)| |
 |**requestId**|String|请求id|
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**totalCount**|Integer|总数|
-|**data**|[NowSession[]](#nowsession)|实时会话列表|
+|**data**|[NowSession[]](describenowsessions#nowsession)|实时会话列表|
 ### <div id="NowSession">NowSession</div>
 |名称|类型|描述|
 |---|---|---|

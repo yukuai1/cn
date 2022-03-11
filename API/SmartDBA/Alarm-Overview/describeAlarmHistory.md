@@ -29,13 +29,13 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/describeAlarmHistory
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describealarmhistory#result)| |
 |**requestId**|String|请求的标识id|
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[AlarmHistoryDetail[]](#alarmhistorydetail)|告警历史列表|
+|**data**|[AlarmHistoryDetail[]](describealarmhistory#alarmhistorydetail)|告警历史列表|
 |**totalCount**|Integer|总数|
 ### <div id="AlarmHistoryDetail">AlarmHistoryDetail</div>
 |名称|类型|描述|

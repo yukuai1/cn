@@ -32,20 +32,20 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/sl
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describeslowdigestlog#result)| |
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[SlowDigestLog[]](#slowdigestlog)| |
+|**data**|[SlowDigestLog[]](describeslowdigestlog#slowdigestlog)| |
 |**totalCount**|Integer|总数|
 ### <div id="SlowDigestLog">SlowDigestLog</div>
 |名称|类型|描述|
 |---|---|---|
-|**execTime**|[Statistic](#statistic)|执行时间|
-|**lockTime**|[Statistic](#statistic)|锁等待时间|
-|**rowsSent**|[StatisticInt](#statisticint)|返回行数|
-|**rowsExamined**|[StatisticInt](#statisticint)|扫描行数|
+|**execTime**|[Statistic](describeslowdigestlog#statistic)|执行时间|
+|**lockTime**|[Statistic](describeslowdigestlog#statistic)|锁等待时间|
+|**rowsSent**|[StatisticInt](describeslowdigestlog#statisticint)|返回行数|
+|**rowsExamined**|[StatisticInt](describeslowdigestlog#statisticint)|扫描行数|
 |**sql**|String|sql模板|
 |**database**|String|数据库|
 |**queryCount**|Integer|执行次数|

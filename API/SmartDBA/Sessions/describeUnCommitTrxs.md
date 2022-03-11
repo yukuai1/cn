@@ -25,14 +25,14 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/de
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describeuncommittrxs#result)| |
 |**requestId**|String|请求id|
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**totalCount**|Integer|总数|
-|**data**|[UnCommitTrx[]](#uncommittrx)|未提交事务列表|
+|**data**|[UnCommitTrx[]](describeuncommittrxs#uncommittrx)|未提交事务列表|
 ### <div id="UnCommitTrx">UnCommitTrx</div>
 |名称|类型|描述|
 |---|---|---|

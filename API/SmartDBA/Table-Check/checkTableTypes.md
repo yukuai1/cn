@@ -22,12 +22,12 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/ch
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](checktabletypes#result)| |
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[Table[]](#table)|数据|
+|**data**|[Table[]](checktabletypes#table)|数据|
 ### <div id="Table">Table</div>
 |名称|类型|描述|
 |---|---|---|
@@ -35,7 +35,7 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/ch
 |**title**|String|诊断名称|
 |**message**|String|问题与建议|
 |**note**|String|其他信息提示，如："mysql 5.5 5.6 mariadb不支持"|
-|**formHeader**|[Point[]](#point)|受影响表 表头|
+|**formHeader**|[Point[]](checktabletypes#point)|受影响表 表头|
 |**count**|Long|问题数量|
 ### <div id="Point">Point</div>
 |名称|类型|描述|

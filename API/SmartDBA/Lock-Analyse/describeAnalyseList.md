@@ -28,13 +28,13 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/an
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describeanalyselist#result)| |
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**totalCount**|Integer|总数|
-|**data**|[DeadLockOverview[]](#deadlockoverview)|诊断记录概览列表|
+|**data**|[DeadLockOverview[]](describeanalyselist#deadlockoverview)|诊断记录概览列表|
 ### <div id="DeadLockOverview">DeadLockOverview</div>
 |名称|类型|描述|
 |---|---|---|

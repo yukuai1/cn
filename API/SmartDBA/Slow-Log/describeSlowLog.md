@@ -33,12 +33,12 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/sl
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describeslowlog#result)| |
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[SlowLog[]](#slowlog)| |
+|**data**|[SlowLog[]](describeslowlog#slowlog)| |
 |**totalCount**|Integer|总数|
 ### <div id="SlowLog">SlowLog</div>
 |名称|类型|描述|

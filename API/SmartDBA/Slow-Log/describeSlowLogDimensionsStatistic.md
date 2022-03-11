@@ -25,7 +25,7 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/Sl
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describeslowlogdimensionsstatistic#result)| |
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|

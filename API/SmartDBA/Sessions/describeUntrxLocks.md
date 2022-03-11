@@ -25,14 +25,14 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/de
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describeuntrxlocks#result)| |
 |**requestId**|String|请求id|
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**totalCount**|Integer|总数|
-|**data**|[UntrxLock[]](#untrxlock)|非事务锁列表|
+|**data**|[UntrxLock[]](describeuntrxlocks#untrxlock)|非事务锁列表|
 ### <div id="UntrxLock">UntrxLock</div>
 |名称|类型|描述|
 |---|---|---|

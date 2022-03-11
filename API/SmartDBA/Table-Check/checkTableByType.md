@@ -26,12 +26,12 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/ch
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](checktablebytype#result)| |
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**data**|[FieldList[]](#fieldlist)|诊断结果|
+|**data**|[FieldList[]](checktablebytype#fieldlist)|诊断结果|
 |**totalCount**|Integer|总条数|
 ### <div id="FieldList">FieldList</div>
 |名称|类型|描述|

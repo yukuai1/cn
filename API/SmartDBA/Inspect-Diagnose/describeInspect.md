@@ -12,7 +12,7 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/in
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**regionId**|String|True| |地域代码，取值范围参见[《各地域及可用区对照表》](../Enum-Definitions/Regions-AZ.md)|
+|**regionId**|String|True| |地域代码|
 |**instanceGid**|String|True| |RDS 实例ID，唯一标识一个RDS实例|
 |**inspectId**|String|True| |巡检任务id|
 
@@ -23,7 +23,7 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/in
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describeinspect#result)| |
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
@@ -31,13 +31,13 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/in
 |**score**|Integer|巡检分值|
 |**beginTime**|String|巡检范围的起始时间，如：2021-11-09T00:00:00Z|
 |**endTime**|String|巡检范围的截至时间，如：2021-11-09T23:59:59Z|
-|**systemView**|[SystemView](#systemview)|资源使用率|
-|**connectView**|[ConnectView](#connectview)|连接数|
-|**engineView**|[EngineView](#engineview)|锁信息|
-|**schemaView**|[SchemaView](#schemaview)|库表空间|
-|**diskView**|[DiskView](#diskview)|磁盘空间|
-|**slowLowView**|[SlowLowView](#slowlowview)|慢sql|
-|**detail**|[KV[]](#kv)|扣分明细|
+|**systemView**|[SystemView](describeinspect#systemview)|资源使用率|
+|**connectView**|[ConnectView](describeinspect#connectview)|连接数|
+|**engineView**|[EngineView](describeinspect#engineview)|锁信息|
+|**schemaView**|[SchemaView](describeinspect#schemaview)|库表空间|
+|**diskView**|[DiskView](describeinspect#diskview)|磁盘空间|
+|**slowLowView**|[SlowLowView](describeinspect#slowlowview)|慢sql|
+|**detail**|[KV[]](describeinspect#kv)|扣分明细|
 ### <div id="KV">KV</div>
 |名称|类型|描述|
 |---|---|---|
@@ -46,15 +46,15 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/in
 ### <div id="SlowLowView">SlowLowView</div>
 |名称|类型|描述|
 |---|---|---|
-|**items**|[SlowDigestLog[]](#slowdigestlog)| |
+|**items**|[SlowDigestLog[]](describeinspect#slowdigestlog)| |
 |**message**|String|扣分说明|
 ### <div id="SlowDigestLog">SlowDigestLog</div>
 |名称|类型|描述|
 |---|---|---|
-|**execTime**|[Statistic](#statistic)|执行时间|
-|**lockTime**|[Statistic](#statistic)|锁等待时间|
-|**rowsSent**|[StatisticInt](#statisticint)|返回行数|
-|**rowsExamined**|[StatisticInt](#statisticint)|扫描行数|
+|**execTime**|[Statistic](describeinspect#statistic)|执行时间|
+|**lockTime**|[Statistic](describeinspect#statistic)|锁等待时间|
+|**rowsSent**|[StatisticInt](describeinspect#statisticint)|返回行数|
+|**rowsExamined**|[StatisticInt](describeinspect#statisticint)|扫描行数|
 |**sql**|String|sql模板|
 |**database**|String|数据库|
 |**queryCount**|Integer|执行次数|
@@ -81,7 +81,7 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/in
 ### <div id="SchemaView">SchemaView</div>
 |名称|类型|描述|
 |---|---|---|
-|**items**|[TableStorage[]](#tablestorage)|表空间，top10|
+|**items**|[TableStorage[]](describeinspect#tablestorage)|表空间，top10|
 |**message**|String|扣分说明|
 ### <div id="TableStorage">TableStorage</div>
 |名称|类型|描述|
@@ -105,10 +105,10 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/in
 ### <div id="ConnectView">ConnectView</div>
 |名称|类型|描述|
 |---|---|---|
-|**running**|[StatisticString](#statisticstring)|活跃连接数|
-|**total**|[StatisticString](#statisticstring)|总连接数|
+|**running**|[StatisticString](describeinspect#statisticstring)|活跃连接数|
+|**total**|[StatisticString](describeinspect#statisticstring)|总连接数|
 |**max**|String|最大连接数|
-|**ratio**|[StatisticString](#statisticstring)|连接使用率|
+|**ratio**|[StatisticString](describeinspect#statisticstring)|连接使用率|
 |**message**|String|扣分说明|
 ### <div id="StatisticString">StatisticString</div>
 |名称|类型|描述|
@@ -119,9 +119,9 @@ https://smartdba.jdcloud-api.com/v2/regions/{regionId}/instance/{instanceGid}/in
 ### <div id="SystemView">SystemView</div>
 |名称|类型|描述|
 |---|---|---|
-|**cpu**|[StatisticString](#statisticstring)|cpu|
-|**mem**|[StatisticString](#statisticstring)|内存|
-|**iops**|[StatisticString](#statisticstring)|每秒读写次数|
+|**cpu**|[StatisticString](describeinspect#statisticstring)|cpu|
+|**mem**|[StatisticString](describeinspect#statisticstring)|内存|
+|**iops**|[StatisticString](describeinspect#statisticstring)|每秒读写次数|
 |**message**|String|扣分说明|
 
 ## 返回码
