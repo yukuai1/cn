@@ -15,7 +15,7 @@
 由于源节点、目标节点、控制节点须保证两两网络可达，因此通常情况下，意味着三个节点均需要具有公网访问的能力，请提前规划好网络联通方式。同时，各节点需要开放下述端口，请提前确认与当前业务在用端口是否有冲突。
 
 | 节点类型                | 端口协议                | 端口          |
-| :------------------- | -------------------: |:---------------:|
+| :------------------- | :------------------- |:---------------|
 | 源节点  | TCP | 26821 |
 | 目标节点   | TCP   | 26821/26831/26832/26833          |
 | 控制节点   | TCP   | 26803/58080/58086   |
@@ -25,19 +25,27 @@
 根据待迁移节点的操作系统版本，在京东云环境下预先创建出与其匹配的目标节点主机，如涉及多个节点迁移，请尽量在云主机名称上有所区分和匹配，便于后续配置迁移任务。关于云主机创建详见 [创建云主机](https://docs.jdcloud.com/virtual-machines/create-instance)。
 
 ### 3、购买迁移许可
-在线迁移服务为付费服务，可前往 [京东云云市场](https://market.jdcloud.com/service/details/585174) 购买。建议您提前与京东云客服联系，获得在线迁移可执行情况的评估协助，再行购买合适数量的迁移许可。
+在线迁移服务为付费服务，可前往 [京东云云市场](https://market.jdcloud.com/service/details/585155) 购买。建议您提前与京东云客服联系，获得在线迁移可执行情况的评估协助，再行购买合适数量的迁移许可。
 
 ## 迁移节点配置
 ### 1、安装迁移服务
 请根据迁移节点的操作系统及版本，下载对应的代理程序安装包，源节点和目标节点均需要安装且安装步骤相同。
 
 #### 1.1、下载迁移代理程序安装包
+| 操作系统及版本          | 迁移代理程序安装包（以华北为例）                | 
+| :------------------- | :-------------------|
+| CentOS 8.x  |   https://bj-vm-migration.s3.cn-north-1.jdcloud-oss.com/info2soft-i2node-7.1.72.22012416-el8.x86_64.rpm| 
+| CentOS 7.x  | https://bj-vm-migration.s3.cn-north-1.jdcloud-oss.com/info2soft-i2node-7.1.72.22012416-el7.x86_64.rpm |
+| CentOS 6.x  | https://bj-vm-migration.s3.cn-north-1.jdcloud-oss.com/info2soft-i2node-7.1.72.22012416-el6.x86_64.rpm  | 
+| Ubuntu 18.04  | https://bj-vm-migration.s3.cn-north-1.jdcloud-oss.com/info2soft-i2node-7.1.72.22012416-ubuntu.18.04.5.x86_64.deb   |
+| Ubuntu 16.04  | https://bj-vm-migration.s3.cn-north-1.jdcloud-oss.com/info2soft-i2node-7.1.72.22012416-ubuntu.16.04.2.x86_64.deb   | 
+| Ubuntu 14.04  | https://bj-vm-migration.s3.cn-north-1.jdcloud-oss.com/info2soft-i2node-7.1.72.22012416-ubuntu.14.04.x86_64.deb   | 
 
 ```
 wget https://bj-vm-migration.s3.cn-north-1.jdcloud-oss.com/info2soft-<i2-version>.<os-version>.rpm
 ```
 
-内网环境下载时，请将链接中的bucket地址"bj"和地域参数"cn-north-1"分别替换成主机所在地域的代码，并将域名中的"s3"改为"s3-internal"，将会使用免费内网流量下载：
+内网环境下载时，请将链接中的bucket地址 "bj" 和地域参数 "cn-north-1" 分别替换成主机所在地域的代码，并将域名中的 "s3" 改为 "s3-internal" ，将会使用免费内网流量下载：
 * 华北-北京："bj","cn-north-1"
 * 华南-广州："gz","cn-south-1"
 * 华东-宿迁："sq","cn-east-1"
@@ -96,7 +104,7 @@ service i2node status
 ### 1、创建控制节点
 登录京东云控制台，进入 [云主机创建页](https://cns-console.jdcloud.com/compute/vm/create?regionId=cn-north-1)：
 * 如迁移控制节点后续不打算另作他用可选择“按配置计费”模式，完全迁移后释放云主机，也可直接选择“包年包月”计费模式，迁移完成后通过重置系统功能更换镜像。
-* 在镜像配置中，选择**“镜像市场”-“云主机迁移管理平台”**
+* 在镜像配置中，选择 “镜像市场”-“云主机迁移管理平台” 
 * 规格建议选择2C4G及以上的规格
 * 安全组可先选择“Linux安全组开放22端口”，之后再添加规则
 * 弹性公网IP带宽会影响数据迁移时间，可根据迁移节点数据量选择，也可在带宽影响迁移速度时再行调整
@@ -126,11 +134,11 @@ service i2node status
 在迁移服务平台上，点击 “资源管理”-“容灾节点”-“节点管理” 页面中的 “新建” 按钮配置节点信息。源节点和目标节点均需要在添加至服务器平台中。
 
 计划迁移多个节点时，建议名称添加序号并包含应用名称、目标迁移节点地址等信息，以便后续创建迁移任务时能一一对应。管理地址和数据地址均填写源节点的公网IP地址；管理端口保持默认；控制台地址选择控制节点内网IP即可。随后需要输入源节点的root用户名/密码，并点击右侧的 “认证” ，系统会自动访问源节点并进行环境识别，将重要配置信息自动填充到下方的配置项中；软件许可暂时缺省，之后统一配置。
-![](https://img1.jcloudcs.com/cn/image/vm/migration-operation-console1.png)
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/migration-operation-console1.png" width="600"></div>
 
 ## 迁移许可配置
 ### 1、导入迁移许可
-前往 [云市场]() 按源节点数量购买迁移许可，同一个源节点迁移至多个目标节点，仅消耗一个License。购买完成并通过京东云客服获得迁移许可后，点击 “系统管理”-“许可管理”页面中的 “添加” 将软件注册码填写在页面内，点击 “确定” 后即可在许可管理页面看到迁移授权的相关信息。
+前往 [云市场](https://market.jdcloud.com/service/details/585155) 按源节点数量购买迁移许可，同一个源节点迁移至多个目标节点，仅消耗一个License。购买完成并通过京东云客服获得迁移许可后，点击 “系统管理”-“许可管理”页面中的 “添加” 将软件注册码填写在页面内，点击 “确定” 后即可在许可管理页面看到迁移授权的相关信息。
 ![](https://img1.jcloudcs.com/cn/image/vm/migration-operation-license1.png)
 
 ### 2、授权迁移节点
@@ -150,7 +158,7 @@ service i2node status
 * 迁移设置中，请选择第一项 “完成系统和数据同步之后，... ...手工切换” 。此选项下，程序将持续监控“基本设置”配置的“同步项”所选择的目录和文件，将新的任何增量数据和文件变化持续复制到目标端，直到您在迁移的界面上单击“迁移”。
 * 压缩加密和带宽控制可保持，默认不做修改。
 完成以上配置后，点击“确定”。
-![](https://img1.jcloudcs.com/cn/image/vm/migration-operation-task1.png)
+<div align="center"><img src="https://img1.jcloudcs.com/cn/image/vm/migration-operation-task1.png" width="500"></div>
 
 ### 2、启动迁移任务
 完成上一步操作后，系统会自动应用迁移规则，并将源节点的存量数据同步至目标节点。迁移任务状态显示“就绪”时，意味着存量数据已同步完成，点击 “迁移” 即可开始增量数据同步。迁移过程中，如果之前配置的迁移规则有调整，可以点击“停止”暂定迁移，修改规则后重新“启动”。
@@ -160,7 +168,7 @@ service i2node status
 
 迁移完成后，如果需要重新迁移，或者同一个源节点需要往其他目标节点迁移，均需要重新新建任务。
 
-确认迁移已完成后，可执行执行 `rpm -e info2soft-i2node` 将源节点和目标节点中的迁移代理服务卸载，并清除元数据目录.
+确认迁移已完成后，可将源节点和目标节点中的迁移代理服务卸载，并清除元数据目录.
 
 ```
 rpm -e info2soft-i2node
