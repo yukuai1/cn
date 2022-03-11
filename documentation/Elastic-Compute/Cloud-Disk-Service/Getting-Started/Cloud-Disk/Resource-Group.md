@@ -22,8 +22,8 @@
 
 2. 可根据资源组ID进行条件筛选，支持多个资源组同时查询。
 
-   ![image-20220311102723556](C:\Users\qiaoguanjun1\AppData\Roaming\Typora\typora-user-images\image-20220311102723556.png)
+   ![image-20220311102723556](../../../../../image/Elastic-Compute/CloudDisk/Search-By-RG.png)
 
 3. 支持批量变更资源组，选择对应实例后，通过列表下方“变更资源组”按钮，进行统一调整。
 
-   ![image-20220311103410826](C:\Users\qiaoguanjun1\AppData\Roaming\Typora\typora-user-images\image-20220311103410826.png)
+  ![image](../../../../../image/Elastic-Compute/CloudDisk/Modify-RG.png)
