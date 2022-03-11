@@ -2,7 +2,7 @@
 
 本文将向您介绍如何使用成本账单，并进行更改配置。
 
-您可以登录[jdcloud.com](https://www.jdcloud.com/)，进入“[控制台-成本管理-成本账单](cost-allocation-console.jdcloud.com)”，查看费用分摊到每个月的金额等信息。
+您可以登录[jdcloud.com](https://www.jdcloud.com/)，进入“[控制台-成本管理-成本账单](https://cost-allocation-console.jdcloud.com/list)”，查看费用分摊到每个月的金额等信息。
 
 支持按分摊月、实例ID、产品、消费类型进行搜索；可以按实例分摊展示和按产品分摊展示切换，查询费用情况。
 
