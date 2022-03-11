@@ -170,10 +170,17 @@ service i2node status
 
 确认迁移已完成后，可将源节点和目标节点中的迁移代理服务卸载，并清除元数据目录.
 
+CentOS系统：
 ```
 rpm -e info2soft-i2node
 rm -rf /etc/sdata
 rm -rf /var/i2data
 ```
 
+Ubuntu系统：
+```
+sudo dpkg -e info2soft-i2node-<i2-version>.<os-version>.deb
+rm -rf /etc/sdata
+rm -rf /var/i2data
+```
 
