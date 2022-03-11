@@ -1,4 +1,4 @@
-# 服务网关（Ingress Gateway）
+# 网关（Service-Gateway）
 
 通过服务网关，提供服务的外网访问入口。
 
@@ -8,21 +8,21 @@
 
 1、    登录控制台，互联网中间件>云服务网格>服务网关。
 
-![](../../../../image/Internet-Middleware/Mesh/gateway-list.png) 
+![](../../../../image/Internet-Middleware/Mesh/gateway-list.png)
 
 2、    点击新建。
 
-![](../../../../image/Internet-Middleware/Mesh/gateway-new.png) 
+![](../../../../image/Internet-Middleware/Mesh/gateway-new.png)
 
-| 信息项       | 说明                  |
-|:--------- |:------------------- |
-| 名称        | 新创建的服务网关的名称。        |
-| Istio网关服务 | 默认为istio-ingress服务。 |
-| 端口配置      | 单击添加，可以增加多个端口的配置。   |
-| 端口名称      | 端口的名称               |
-| 端口协议      | 支持HTTP/TCP          |
-| 端口        | 1-65535             |
-| Host      | 默认为通配符“*”，不可修改。     |
+| 信息项      | 说明                                 |
+|:-------- |:---------------------------------- |
+| 名称       | 新创建的服务网关的名称。                       |
+| 命名空间     | 代理目标服务的命名空间。                       |
+| Selector | key默认为app，value为在组件中创建的ingress的名字。 |
+| 端口名称     | 端口的名称                              |
+| Hosts    | 可以增加多个端口的配置。                       |
+| 端口协议     | 支持HTTP/TCP等                        |
+| 端口       | 1-65535                            |
 
 ### 删除网关
 
