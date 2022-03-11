@@ -55,6 +55,8 @@
             href: Virtual-Machines/modifyInstanceVpcAttribute.md
           - name: modifyInstancePassword
             href: Virtual-Machines/modifyInstancePassword.md
+          - name: modifyInstancePlacement
+            href: Virtual-Machines/modifyInstancePlacement.md
       - name: 镜像
         items:
           - name: createImage

@@ -89,6 +89,8 @@ items:
             href: Operation-Guide/Instance/Resize-Instance.md
           - name: 修改实例名称
             href: Operation-Guide/Instance/Modify-Instance-Name.md
+          - name: 调整高可用组
+            href: Operation-Guide/Instance/Modify-Instance-Ag.md
           - name: 查找实例
             href: Operation-Guide/Instance/Search-Instance.md
           - name: 导出实例信息
