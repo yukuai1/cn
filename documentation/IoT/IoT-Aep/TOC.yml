@@ -15,8 +15,14 @@
         href: Pricing/Billing-Overview.md
   - name: 操作指南
     items:
-      - name: 低代码平台
-        href: Operation-Guide/Create-Product.md
+      - name:
+        items:
+          - name: 创建应用
+            href: Operation-Guide/Lowcode/Create.md
+          - name: 页面管理
+            href: Operation-Guide/Lowcode/Dev-Page.md
+          - name: 访问应用
+            href: Operation-Guide/Lowcode/Use-Page.md
       - name:
         items:
           - name: 创建小程序
