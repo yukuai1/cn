@@ -14,7 +14,7 @@ items:
     - name: deleteInstance
       href: Instance-Management/deleteInstance.md
     - name: describeBackupPolicy.md
-      href: Instance-Management/describeBackupPolicy.md.md
+      href: Instance-Management/describeBackupPolicy.md
     - name: describeInstanceClasses
       href: Instance-Management/describeInstanceClasses.md
     - name: describeNodes
