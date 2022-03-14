@@ -254,6 +254,6 @@
 
 **安全漏洞展示** 在"代码质量 - 依赖分析 - 安全漏洞“页面，根据依赖包展示漏洞信息：
 
-- 可根据不同条件排序，根据不同manifest文件筛选 ![img](../../All-Image/code_scan.assets/security_1.png)
+- 可根据不同条件排序，根据不同manifest文件筛选 ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/code_scan.assets/security_1.png)
 
 
