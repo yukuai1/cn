@@ -13,8 +13,8 @@
 
 ## 实例支持的资源组操作：
 
-- [实例加入资源组](../Add-Resource-Groups.md)
+- [实例加入资源组](../Resource-group/Add-Resource-Groups.md)
 
-- [变更资源组](../Change-Resource-Groups.md)
+- [变更资源组](../Resource-group/Change-Resource-Groups.md)
 
-- [资源组筛选](../Filter-Resource-Groups.md)
+- [资源组筛选](../Resource-group/Filter-Resource-Groups.md)
