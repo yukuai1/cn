@@ -4,8 +4,8 @@
 
 ## 操作步骤
 
-- 进入[京东云控制台](https://es-console.jdcloud.com/clusters)，访问集群管理页。
-- 点击创建进入集群页。
+- 进入[云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，访问集群管理页。
+- 点击**创建**进入集群页。
 
 ![sdsd](../../../../../../image/Elasticsearch/Resource-Groups/add_resource_group_1.png)
 
