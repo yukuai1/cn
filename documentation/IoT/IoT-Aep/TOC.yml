@@ -31,7 +31,7 @@
             href: Operation-Guide/Mp/Dev-Mp.md
           - name: 审核上线
             href: Operation-Guide/Mp/Approve-Mp.md
-          - name: 下载使用
+          - name: 安装使用
             href: Operation-Guide/Mp/Use-Mp.md
       - name: 可视化平台
         href: Operation-Guide/Create-view.md
