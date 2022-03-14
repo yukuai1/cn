@@ -119,6 +119,16 @@
           href: Operation-Guide/Tag/Edit-Tag.md
         - name: 根据标签筛选
           href: Operation-Guide/Tag/Filter-by-Tag.md
+      - name: 资源组
+        items:
+        - name: 资源组概述
+          href: Operation-Guide/Instance/Resource-group/resource-group-introduction.md
+        - name: 实例加入资源组
+          href: Operation-Guide/Instance/Resource-group/Add-Resource-Groups.md
+        - name: 变更资源组
+          href: Operation-Guide/Instance/Resource-group/Change-Resource-Groups.md
+        - name: 资源组筛选
+          href: Operation-Guide/Instance/Resource-group/Filter-Resource-Groups.md
   - name: 最佳实践
     items:
      - name: 规格容量评估
