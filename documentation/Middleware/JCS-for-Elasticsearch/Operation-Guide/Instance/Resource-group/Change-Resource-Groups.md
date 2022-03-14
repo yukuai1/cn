@@ -21,4 +21,4 @@
 
 - 选择需要转入的资源组，即可批量变更实例所在资源组。
 
-![sdsd](../../../../../../image/Elasticsearch/Resource-Groups/change_resource_group_4.png)
+![sdsd](../../../../../../image/Elasticsearch/Resource-Groups/change_resource_group_5.png)
