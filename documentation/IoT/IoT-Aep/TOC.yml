@@ -19,7 +19,7 @@
         items:
           - name: 创建应用
             href: Operation-Guide/Lowcode/Create.md
-          - name: 页面管理
+          - name: 页面创建
             href: Operation-Guide/Lowcode/Dev-Page.md
           - name: 访问应用
             href: Operation-Guide/Lowcode/Use-Page.md
