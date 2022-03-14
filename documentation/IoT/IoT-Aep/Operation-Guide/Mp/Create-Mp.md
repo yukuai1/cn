@@ -1,6 +1,6 @@
 # 创建小程序
    开发操作流程
-   ![小程序首页](../../../../../image/IoT/IoT-Aep/mp-process.jpeg)
+   ![小程序首页](../../../../../image/IoT/IoT-Aep/mp-all-process.jpeg)
 
 ## 前提条件
 [账号实名认证](../Precondition.md)
