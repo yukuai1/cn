@@ -5,9 +5,9 @@
 ## 操作步骤
 
 
-- 访问[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，进入实例列表页面。或访问 [京东云控制台](https://console.jdcloud.com/overview) ，点击顶部导航栏 **弹性计算-云主机**，进入实例列表页。
+- 访问[云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，进入集群管理页面。或访问 [京东云控制台](https://console.jdcloud.com/overview) ，点击顶部导航栏 **互联网中间件-云搜索Elasticsearch**，进入集群管理页。
 
-- 点击实例列表页【操作-更多-变更资源组】或进入实例详情页点击右上角的【操作-变更资源组】。
+- 点击实例列表页【操作-更多-变更资源组】。
 
 ![sdsd](../../../../../image/Elastic-Compute/Virtual-Machine/image-4.png)
 
