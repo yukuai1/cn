@@ -102,7 +102,7 @@ $ ls -al ~/.ssh
 2. 使用以下命令，将会以你的邮箱作为标签创建一个新的SSH密钥。
 
 ```
-$ ssh-keygen -t rsa -b 4096 -C "工号，比如：zhansan"
+$ ssh-keygen -t rsa -b 4096 -C "工作邮箱，比如：zhansan@xxx.com"
 > Generating public/private rsa key pair.
 ```
 
@@ -121,7 +121,7 @@ $ ssh-keygen -t rsa -b 4096 -C "工号，比如：zhansan"
 
 #### 添加SSH密钥到Coding
 
-1. 复制SSH密钥。<br>如果您的SSH密钥文件的名称与示例代码的名称不同，请修改文件名以匹配您当前的设置。复制密钥时，请勿添加任何换行符或空格。
+1. 复制SSH密钥。如果您的SSH密钥文件的名称与示例代码的名称不同，请修改文件名以匹配您当前的设置。复制密钥时，请勿添加任何换行符或空格。
 
    macOS:
 
@@ -147,7 +147,6 @@ $ ssh-keygen -t rsa -b 4096 -C "工号，比如：zhansan"
    cat ~/.ssh/id_rsa.pub | clip
    ```
 
-   >[!Tip|label:提示]
    >如果命令行复制不起作用，您可以找到隐藏.ssh文件夹，使用文本编辑器中打开id_rsa.pub文件，复制内容。
 
 2. 在个人设置界面，点击左侧**SSH Keys**页签，进入**SSH Keys**页面，管理你的SSH密钥。
@@ -163,7 +162,7 @@ $ ssh-keygen -t rsa -b 4096 -C "工号，比如：zhansan"
 2. 使用以下命令：
 
 ```
-$ ssh -vT coding.jd.com
+$ ssh -vT {coding服务域名}
 # Attempts to ssh to Coding
 ```
 
@@ -171,7 +170,7 @@ $ ssh -vT coding.jd.com
 
 ```
 > debug1: Authentication succeeded (publickey).
-> Authenticated to coding.jd.com ([172.20.39.5]:22).
+> Authenticated to {coding服务域名}.
 > debug1: channel 0: new [client-session]
 > debug1: Entering interactive session.
 > debug1: pledge: network
@@ -180,17 +179,17 @@ $ ssh -vT coding.jd.com
 > shell request failed on channel 0
 ```
 
->[!Note|label:说明]
->表示使用ssh的方式，连通性已经验证通过:<br>
->`Authenticated to coding.jd.com ([172.20.39.5]:22).`<br>
->由于server端限制了`shell request`的操作，故会看到如下报错信息（**可忽略该报错信息**）：<br>
+>[说明:]
+>表示使用ssh的方式，连通性已经验证通过:
+>`Authenticated to {coding服务域名}.`
+>由于server端限制了`shell request`的操作，故会看到如下报错信息（**可忽略该报错信息**）：
 >`shell request failed on channel 0 `
 
 ### 个人API Token
 
  在个人设置界面，点击左侧**API Tokens**页签，进入**个人API Token**页面，管理你的API Tokens，你可以在该界面新增创建新的API Token，也可以将原有的Token删除。
 
->[!Note|label:说明]
+>[说明:]
 >
 >1. 你生成的API Token 可以用来访问Coding Open API。
 >2. API Token的访问权限与你的账号权限一致。

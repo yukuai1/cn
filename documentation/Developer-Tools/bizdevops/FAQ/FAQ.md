@@ -44,7 +44,7 @@
 2. 如果不想提交全部,那么可以通过添加-i选项 git commit file/to/path -i -m "merge"
    上述情况一般出现在解决本地working copy冲突时出现, 本地文件修改(手工merge)完成后,要添加并提交,使得本地版本处于clean的状态. 这样以后git pull就不再会报错.
 
-**Q：Fatal：Authentication failed for ‘http://coding.jd.com/app/gwtuan.mjd.com.git/’**
+**Q：Fatal：Authentication failed for ‘{coding服务域名}/app/xxxxxx.git/’**
 
 原因：本地保存了Git旧认证信息，导致认证失败
 
@@ -66,7 +66,7 @@
 
 ​	在本地编辑   ~/.netrc 文件，添加如下配置信息:
 
-​		machine coding.jd.com 
+​		machine {coding服务域名}
 
 ​		login 用户
 

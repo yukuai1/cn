@@ -106,7 +106,7 @@
 * 若未勾选，则需要目标分支有权限的成员，根据需求，选择相应的合并方式进行手动合并；
   我们提供四种合并方式：  
 
->[!Note|label:四种代码合并方式的定义]
+>[四种代码合并方式的定义]
 
 >**Merge**：这种方式会优先尝试fast-forward（快进）方式merge，若行不通，再尝试non-fast forward方式。**默认方式**
 
@@ -123,8 +123,6 @@ Coding系统**手动合并**选择页面如下图：
 ### 四种合并方式的定义与图解
 
 #### Merge
-
->[!Note|label:说明]
 
 >这种方式会优先尝试fast-forward（快进）方式merge，若行不通，再尝试non-fast forward方式。**默认方式**
 
@@ -147,8 +145,6 @@ Coding系统**手动合并**选择页面如下图：
 
 #### Merge with non-fast forward
 
->[!Note|label:说明]
-
 >采用non-fast forward方式merge，总是会在目标分支头部生成一个merge point（合并点）。
 
 **示例：**如下图，bugfix分支从master分支branch out，此后master分支**没有再被更新过**。  
@@ -161,8 +157,6 @@ Coding系统**手动合并**选择页面如下图：
 
 #### Squash and merge
 
->[!Note|label:说明]
-
 >将源分支上所有要合并的commits先汇合成一个commit，然后提交到目标分支头部。
 
 **示例：**如下图所示，bugfix分支从master分支branch out。
@@ -174,8 +168,6 @@ Coding系统**手动合并**选择页面如下图：
   ![](http://devops-minio.jdcloud.com/doc-image/All-Image/review.assets/squash-merge-pic2.png)  
 
 #### Rebase and merge
-
->[!Note|label:说明]
 
 >Rebase是一种变基操作，本质是将source branch的commits一个一个有序的cherry pick到目标分支头部，保留每个commit的内容但变更sha1。使目标分支的版本树看起来是一条线，简洁易读。
 

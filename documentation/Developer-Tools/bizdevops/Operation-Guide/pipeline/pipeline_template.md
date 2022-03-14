@@ -62,7 +62,7 @@ go build模板主要用于golang的构建，使用go的内建构建工具；属�
 批量构建docker镜像，这个keyword会根据提供的base_dir，从base_dir开始，遍历改路径下的所有文件夹，如果文件夹下面有dockerfile和target文件，会以该文件夹为context， dockerfile为构建配置，target里的内容为destination构建镜像，父文件夹永远在子文件夹前面构建，因而子文件夹引用的父文件夹对应的镜像都是最新的。
 
 - base_dir:遍历开始的文件夹路径，必填
-- username:上传镜像的目标镜像仓库认证使用的用户名，必填。<br>
+- username:上传镜像的目标镜像仓库认证使用的用户名，必填。
   由于username，password配置只有一套，要求在一个文件夹下面的target对应的registry的验证用户名和密码是一致的
 - password:上传镜像的目标镜像仓库认证使用的密码，必填
 - schema:构建镜像的存储的registry的传输协议，http或者https，默认是https

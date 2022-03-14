@@ -2,7 +2,7 @@
 
 在新建空间界面，可以选择是否关联coding平台。
 
-> [!note|label:说明：]
+> [说明：]
 >
 > 1. 关联coding平台：空间名称就是coding的group，成员继承coding的group成员。
 > 2. 不关联coding平台：空间名称支持重命名，成员由空间的admin管理。

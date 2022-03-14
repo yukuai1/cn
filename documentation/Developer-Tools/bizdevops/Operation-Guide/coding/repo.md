@@ -10,7 +10,7 @@
    * 在Coding首页，点击菜单栏右上方的➕，选择**新建仓库**，进入新建仓库页面，仓库的命名空间默认为个人群组（用户ERP）。
 
    * 在Coding首页，左侧仓库列表，点击**新建**按钮，进入新建仓库页面，仓库的命名空间默认为个人群组（用户ERP）。
-     ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/new_repo.jpg)	
+     ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/new_repo.jpg)
 
    * 选择一个群组，在群组空间内，点击**新建仓库**按钮，进入新建仓库页面，仓库的命名空间默认为当前群组。
 
@@ -18,8 +18,7 @@
 
 2. 在新建仓库页签，选择**命名空间**，填写**仓库名称**，**仓库中文名称**，**仓库描述** *（可选）*，**语言** *（默认: JAVA）*，以及选择相应的**访问级别**，点击**创建**按钮，仓库创建完成。
 
->[!Note|label:说明]
->
+>[说明:]
 >1. 仓库名称：是仓库中的唯一标识，创建仓库后，将不能修改。命名规则：可由字母（不区分大小写）、数字、点、中划线，下划线随机组合，且必须以字母或数字开头、结尾。
 >2. 仓库负责人：默认将创建者设置为仓库的owner，并赋予master权限。
 >3. 访问级别：根据代码仓库的实际情况设置访问级别。
@@ -31,11 +30,11 @@
 如果您已经在gitlab有自己的代码仓库，想切换到Coding平台管理您的代码，请按照以下步骤操作：
 
 1.  在Coding首页，点击菜单栏右上方的➕，选择**导入仓库**，进入导入仓库页面。
-    ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/new_repo4.jpg)	
+    ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/new_repo4.jpg)
 
 2.  在新建仓库页签，输入Gitlab中的仓库地址，选择**命名空间**，填写**仓库名称**，**仓库中文名称**，**仓库描述** *（可选）*，**语言** *（默认: JAVA）*，以及选择相应的**访问级别**，点击**创建**按钮，仓库创建完成。
 
->[!Note|label:仓库导入的注意事项]
+>[仓库导入的注意事项]
 >
 >1. 操作导入的人员，必须是Gitlab仓库中的成员，导入Coding后，默认将该操作人设置为该仓库的Owner。
 >2. 支持自动导入成员和成员权限。
@@ -48,7 +47,7 @@
 进入仓库**代码**页，即可查看文件列表及每个文件的最新提交备注。你还可通过切换分支或tag的方式查看不同分支或tag的文件列表。
 
 
->[!Tip|label:功能提示]
+>[功能提示]
 >
 >1. 提交、分支、标签、成员下的颜色条代表仓库语言的分布，点击颜色条即可查看哦。
 >2. 文件列表第一行信息为：最新提交人、提交备注及commit id。
@@ -146,20 +145,20 @@
 
 支持界面上对“文件”的锁定功能，被锁定文件处于写保护状态，特定成员才可以操作，从而达到保护文件的目的。
 
->[!Note|label:说明] 权限设定：仓库**Master/Owner权限**的成员可以锁定/取消锁定文件，编辑/删除已锁定的文件。
+>权限设定：仓库**Master/Owner权限**的成员可以锁定/取消锁定文件，编辑/删除已锁定的文件。
 
-* **“锁定”**文件  
+* **“锁定”**文件
   * 仓库 - 代码，选择想要锁定的“文件”，点击“锁定”。
   * 被锁定的文件，有🔒标识；无权限成员编辑/删除图标不可见。
     ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/lock-file.png)
 
   * 鼠标悬停，查看”文件“详细锁定信息。
     ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/lockedfiles.png)
-* **”取消锁定“**文件  
+* **”取消锁定“**文件
   * 仓库 - code，选择想要解锁的文件，点击“取消锁定”。
   * 无权限成员“取消锁定”按钮不可见。
     ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/unlock-file.png)
-* **查看仓库中已锁定的文件列表**  
+* **查看仓库中已锁定的文件列表**
   * 仓库 - 设置 - 安全策略：“文件写保护“中列出了仓库中所有的锁定文件。
   * 同时可以“取消锁定”文件，被“取消锁定”的文件，将从此列表中删除。
     ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/settings-lock.png)
@@ -179,7 +178,7 @@
 即可进入“标签”页面
 ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/tag-2.png)
 
-**支持**：  
+**支持**：
 
 * 新建标签：
   * 新建标签命名规范参考：[git check ref format](https://git-scm.com/docs/git-check-ref-format)
@@ -189,7 +188,7 @@
   * 支持基于分支/标签/commits新建标签
     ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/tag-new-base.png)
 
-* 从已存在标签创建发行版: 
+* 从已存在标签创建发行版:
   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/release-from-tag.png)
     * 添加描述
     * 上传附件
@@ -222,7 +221,7 @@
 
 ## 统计视图
 
->[!Note|label:算法说明]
+>[算法说明]
 >本次统计提数使用最新算法
 >
 >1. 提交过滤 - 忽略所有Merge节点。
@@ -270,7 +269,7 @@
 
 1. 进入仓库，点击**设置**按钮，点击左侧的**通用设置**菜单，即进入通用设置页面。
 
->[!Note|label:关于访问级别的说明]
+>[关于访问级别的说明]
 
 > 默认：所有人均可查找、浏览及派生代码库，您设定的成员可维护代码。
 
@@ -284,8 +283,6 @@
 
 1. 进入仓库，点击**设置**按钮，点击左侧的**仓库成员**菜单，即进入仓库成员管理页面。
 
->[!Note|label:说明]
->
 >1. 仓库成员角色说明：
 >
 >* Master：可以添加tag、管理分支、仓库设置、克隆、提交、拉取代码。
@@ -312,7 +309,7 @@
 
 在评审人员输入框输入评审人员erp，然后点击添加按钮即可将该人员加入评审组。
 
->[!Note|label:关于评审组成员设置的说明]
+>[关于评审组成员设置的说明]
 >只有评审组的成员为常用评审成员，每次创建评审时评审成员都可进行评审。除此之外，如您需要临时添加评审人员，可在创建评审时自定义评审人员。
 
 ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/WX20190306-114003@2x.png)
@@ -321,7 +318,7 @@
 
 针对所有分支，Coding平台提供了默认评审策略，以及自定义评审策略，可根据需求设置相应的评审策略。
 
->[!Note|label:关于评审策略的设置说明]
+>[关于评审策略的设置说明]
 >
 >1. 分支名：可输入某个分支名或分支通配符表达式（必填），默认策略的分支名不可修改。
 
@@ -333,10 +330,10 @@
 
 >5. 合并策略：开启后，评审通过将自动合并代码，如果未开启，则需要由目标分支操作权限的成员进行手动合并，默认开启
 
->6. 补充提交策略：开启后，在评审合并前，**允许补充提交**并**重置评审状态**。  
->   **新仓库默认开启此选项**；已有的仓库默认不开启，如需要请手动开启。<br>  
+>6. 补充提交策略：开启后，在评审合并前，**允许补充提交**并**重置评审状态**。
+>   **新仓库默认开启此选项**；已有的仓库默认不开启，如需要请手动开启。<br>
 >
->   <ul><li> 如果是合并触发的评审，当有新的提交merged到此评审的源分支时，则该提交会被自动包含到此评审中。 </li> 
+>   <ul><li> 如果是合并触发的评审，当有新的提交merged到此评审的源分支时，则该提交会被自动包含到此评审中。 </li>
 >   <li>如果是push触发的评审，则再次push的提交也会默认被包含到此评审中。</li></ul>
 
 >7. 强制评审策略：开启后，push到该分支就要强制创建评审记录。
@@ -351,33 +348,33 @@
 
 ### 补充提交
 
-**如何开启**  
+**如何开启**
 如需要手动开启“补充提交”功能，请参考：
 
- >[!Note|label:步骤]
+ >[步骤]
  >
- >1. 进入仓库 --> 设置 --> 评审规则 --> 评审策略 --> 配置  
- >2. 开启“补充提交”策略，如下图所示：   
+ >1. 进入仓库 --> 设置 --> 评审规则 --> 评审策略 --> 配置
+ >2. 开启“补充提交”策略，如下图所示：
  >   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/commit-amend-2.png)
 
-**功能说明**  
+**功能说明**
 
-* 评审合并前，允许新的commit自动加入当前评审；不论当前评审是由：  
+* 评审合并前，允许新的commit自动加入当前评审；不论当前评审是由：
   * `git push` 触发的；
   * 不同分支合并触发的。
 * 重置当前评审状态(通过/拒绝)，保留所有评论历史。
 
->[!Note|label:图示说明]
+>[图示说明]
 >目的：合并dev分支到master分支。
 >
->* 生成的Merge request包含commit A/B，之后又提交commit C作为bug fix；  
+>* 生成的Merge request包含commit A/B，之后又提交commit C作为bug fix；
 
 * **补充提交**功能可将commits C自动包含到已存在的MR中；
-* 同时重置此MR的评审状态，需要重新评审此MR。  
+* 同时重置此MR的评审状态，需要重新评审此MR。
   ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/commit-amend-1.png)
 
 
-**效果演示**  
+**效果演示**
 
 * “补充提交”选项开启后，新的commits会自动加入当前未合并的评审；
   参考下图：
@@ -390,10 +387,10 @@
 
 1. 进入仓库，点击**设置**按钮，点击左侧的**安全策略**菜单，即进入“保护分支”设置页面。
 
->[!Note|label:关于保护分支的说明]
+>[关于保护分支的说明]
 >
->* 针对某一保护分支，只有可push成员才能提交代码到改保护分支。  
->* 目前任何人不可以删除被保护分支；并且不允许force push。  
+>* 针对某一保护分支，只有可push成员才能提交代码到改保护分支。
+>* 目前任何人不可以删除被保护分支；并且不允许force push。
 
 ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/protected-branch-1.png)
 
@@ -406,23 +403,23 @@
 
 进入仓库，点击**设置**按钮，点击左侧的**安全策略**菜单，即进入“文件写保护”列表页面。
 
->[!Note|label:文件写保护的说明]
+>[文件写保护的说明]
 >
->* 被锁定的文件处于写保护状态，只有Master及以上权限成员可以 编辑/删除/解除锁定。  
+>* 被锁定的文件处于写保护状态，只有Master及以上权限成员可以 编辑/删除/解除锁定。
 
 1. 列出本仓库所有被锁定的文件
 2. 点击"取消锁定"按钮，即可解除文件锁定并从列表中删除
-   ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/settings-lock-4463703.png)  
+   ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/settings-lock-4463703.png)
 
 ## push rules
 
 进入仓库，点击**设置**按钮，点击左侧的**Push Rules**菜单，即进入设置页面。
 
->[!Note|label:关于Push Rules的说明]
+>[关于Push Rules的说明]
 
 * Push Rules仅仅在使用‘git push’命令或者在Web UI提交代码时触发
 
-* Push Rules默认disable，规则一旦enable，对该仓库所有分支生效   
+* Push Rules默认disable，规则一旦enable，对该仓库所有分支生效
 
   ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/push-rule-1.png)
 
@@ -432,54 +429,52 @@
 
 * 要求Committer信息与当前操作用户信息(ERP/email)保持一致
 
-* 如‘git push’时遇到如下问题：  
+* 如‘git push’时遇到如下问题：
   ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/push-rule-commiter-error-2.png)
 
   ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/push-rule-commiter-error.png)
 
-* **修复方法：**  
+* **修复方法：**
 
   1. 更新本地 $HOME/.gitconfig 文件，确保user/email信息正确;：
 
      ```
      [user]
       name = <ERP 或者 中文名>
-      email = <京东邮箱>
+      email = <邮箱>
      ```
 
      例如：
-     ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/push-rule-commiter-example.png)  
+     ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/push-rule-commiter-example.png)
+       **更新完成后，查看配置信息确保准确无误：**
+  ```
+    git config --list
+  ```
 
-    **更新完成后，查看配置信息确保准确无误：**  
-
-    ```  
-    git config --list  
-    ```
-
-  2. 使用git命令修改“commit message”同时重置当前Commit的user/email：  
+  2. 使用git命令修改“commit message”同时重置当前Commit的user/email：
      `$ git commit --amend --reset-author`
 
-  3. 使用`git log`确认当前commit的Author信息已经重置  
-  4. 更复杂场景请咨询：咚咚群（81323027）  
+  3. 使用`git log`确认当前commit的Author信息已经重置
+  4. 更复杂场景请咨询：咚咚群（81323027）
 
 ### 提交信息格式检查
 
-支持两种方式定义提交信息的格式：  
+支持两种方式定义提交信息的格式：
 
 * 约定式提交规则：是Coding一直在支持的一种格式
-* 自定义规则：允许用户根据需要自己定义提交规则，‘git push’时或者Web UI提交时检查“Commit message”是否符合当前规则，不符合规则拒绝提交  
+* 自定义规则：允许用户根据需要自己定义提交规则，‘git push’时或者Web UI提交时检查“Commit message”是否符合当前规则，不符合规则拒绝提交
 
 ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/push-rule-message.png)
 
 ### 禁止提交Secret文件
 
-* Coding预定义了保密文件名单（如SSH私钥和其他包含保密的文件），我们不提倡此类文件提交至代码托管平台  
-* 您可以通过“禁止提交Secret文件”选项，阻止此类文件提交至当前代码库   
+* Coding预定义了保密文件名单（如SSH私钥和其他包含保密的文件），我们不提倡此类文件提交至代码托管平台
+* 您可以通过“禁止提交Secret文件”选项，阻止此类文件提交至当前代码库
 
 ![](http://devops-minio.jdcloud.com/doc-image/All-Image/repo.assets/push-rule-secret.png)
 
 
-* ** 预定义的保密文件名单如下：**  
+* ** 预定义的保密文件名单如下：**
 
 ```
 #####################
@@ -578,10 +573,10 @@ Webhooks允许在发生特定事件时通知外部服务。 当指定的事件�
 
 ## 高级设置
 
->[!Tip|label:操作权限]
+>[操作权限]
 >Master ：仅可以变更默认分支，以及仓库GC操作。
 
->Owner ：仓库的所有设置，均可操作。 
+>Owner ：仓库的所有设置，均可操作。
 
 1. 进入仓库，点击**设置**按钮，点击左侧的**高级设置**菜单，即进入高级设置页面。
 2. 在高级设置界面，可以对您的仓库进行如下操作：变更默认分支、变更仓库负责人、转移仓库空间、仓库GC、删除仓库。
@@ -590,14 +585,13 @@ Webhooks允许在发生特定事件时通知外部服务。 当指定的事件�
 
 高级设置中，选择您要设置的分支，点击**确认更改**按钮，在弹出框中，点击**确认**，即可完成仓库默认分支的设置。
 
->[!Note|label:说明]
 >修改默认分支后，所有请求和代码提交都将根据该分支自动进行。
 
 ### 变更仓库负责人
 
 高级设置中，选择您要转移的仓库负责人，点击**确认更改**按钮，在弹出框中，再次输入仓库名称，点击**确认**，即可完成仓库负责人的变更操作。
 
->[!Note|label:说明]
+>[说明:]
 >
 >1. 您只能将仓库转移给一位成员，非成员无法转移。
 
@@ -609,7 +603,7 @@ Webhooks允许在发生特定事件时通知外部服务。 当指定的事件�
 
 高级设置中，选择您要转移的群组空间，点击**确认更改**按钮，在弹出框中，再次输入仓库名称，点击**确认**，即可完成仓库的转移操作。
 
->[!Danger|label:注意]
+>[注意]
 >
 >1. 您只能将仓库转移到您管理的群组。
 
@@ -619,7 +613,7 @@ Webhooks允许在发生特定事件时通知外部服务。 当指定的事件�
 
 高级设置中，点击**仓库GC**按钮，在弹出框中，点击**确认**，即可完成仓库GC操作。
 
->[!Note|label:说明]
+>[说明:]
 >
 >1. 根据仓库大小不同，GC过程耗时可能需要几秒到数十分钟。**GC操作不可逆！**
 
@@ -631,6 +625,6 @@ Webhooks允许在发生特定事件时通知外部服务。 当指定的事件�
 
 高级设置中，点击**删除仓库**，在弹出框中，再次输入仓库名称，点击**确认**，即可完成仓库的删除操作。
 
->[!Danger|label:删除操作无法恢复！]
+>[删除操作无法恢复！]
 >删除仓库将会连同其相关的所有数据（包括 issues, Merge Request等）一起删除。
 
