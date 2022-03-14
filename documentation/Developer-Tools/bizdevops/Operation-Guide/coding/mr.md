@@ -27,7 +27,7 @@
 
 ### 搜索合并请求
 
->[!Note|label:说明]搜索范围：当前登陆账户的所有可见仓库；public+internal+为仓库成员的private仓库
+>搜索范围：当前登陆账户的所有可见仓库；public+internal+为仓库成员的private仓库
 
 目前我们提供多项搜索条件，详细用法如下：
 
@@ -50,7 +50,7 @@
         搜索状态为open并且在评论中提及hanxiaojie3的MR  
       ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/mr.assets/search_mentions.png)
 
->[!Note|label:说明]目前尚不支持mentions与author的组合搜索   
+>[说明:]目前尚不支持mentions与author的组合搜索   
 
 * **搜索邀请某个用户评审的MR**  
   review-requested:erp  
@@ -59,7 +59,7 @@
         搜索状态为open并且邀请hanxiaojie3参加评审的MR  
       ![img](http://devops-minio.jdcloud.com/doc-image/All-Image/mr.assets/search_review_requested.png)  
 
->[!Note|label:说明]目前尚不支持review-requested与author的组合搜索   
+>[说明:]目前尚不支持review-requested与author的组合搜索   
 
 * **搜索 标题中包含某个关键字的MR**  
   title:content  
