@@ -2,27 +2,27 @@
 
 ## 1. 系统环境
 
-&emsp;&emsp;要求系统环境iOS9.0及以上版本。
+要求系统环境iOS9.0及以上版本。
 
 ## 2. 接入指南
 
-&emsp;&emsp;性能监控，网络监测和崩溃收集。
+性能监控，网络监测和崩溃收集。
 
 ## 3. 代码集成
 ### 3.1 Pod集成
 ### 3.1.1 Podfile配置
-&emsp;&emsp;`source 'http://gitlab.mpaas.jdcloud.com/umapadmin/jdtmpaassdkspecrepo.git'`  
-&emsp;&emsp;`pod 'JDTAPM', '1.0.0'`   
-&emsp;&emsp;`pod 'JDTGateway', '1.0.0'`  
+`source 'http://gitlab.mpaas.jdcloud.com/umapadmin/jdtmpaassdkspecrepo.git'`  
+`pod 'JDTAPM', '1.0.0'`   
+`pod 'JDTGateway', '1.0.0'`  
 
 ### 3.1.2 Podspec配置
-&emsp;&emsp;在使用APM的模块中配置Podspec：
+在使用APM的模块中配置Podspec：
 
-&emsp;&emsp;`# APM依赖`    
-&emsp;&emsp;`s.dependency 'JDTAPM'`  
-&emsp;&emsp;`s.dependency 'JDTGateway'`  
-&emsp;&emsp;`s.dependency 'RealReachability'`  
-&emsp;&emsp;`s.libraries = 'c++', 'z'#z表示libz.tdb,后缀不需要,lib开头的省略lib`  
+`# APM依赖`    
+`s.dependency 'JDTAPM'`  
+`s.dependency 'JDTGateway'`  
+`s.dependency 'RealReachability'`  
+`s.libraries = 'c++', 'z'#z表示libz.tdb,后缀不需要,lib开头的省略lib`  
 
 ### 3.2 主工程集成
 
@@ -37,7 +37,7 @@
 
 ### 4.1 网关初始化
 
-&emsp;&emsp;初始化离线化SDK前，先要初始化网关SDK，请参考[网关SDK接入文档](../../Mobile-Gateway/SDK/网关-iOS-接入文档.md)。
+初始化离线化SDK前，先要初始化网关SDK，请参考[网关SDK接入文档](../../Mobile-Gateway/SDK/ios.md)。
 
 ### 4.2 APM初始化
 

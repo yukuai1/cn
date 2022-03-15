@@ -1,50 +1,50 @@
 
 # 行为分析-iOS-接入文档 1.2.7
 ## 1. 系统环境
-&emsp;&emsp;要求iOS9.0及以上版本
+要求iOS9.0及以上版本
 
 ## 2. 接入指南
-&emsp;&emsp;1.申请网关    
-&emsp;&emsp;请到网关平台申请相应火眼网关应用，以获得网关应用名称和网关密钥。  
+1.申请网关    
+请到网关平台申请相应火眼网关应用，以获得网关应用名称和网关密钥。  
 
-&emsp;&emsp;2.申请火眼应用      
-&emsp;&emsp;在集成火眼SDK前需要我们先去【火眼控制台】去申请应用，以便获得AppSecret。
+2.申请火眼应用      
+在集成火眼SDK前需要我们先去【火眼控制台】去申请应用，以便获得AppSecret。
 ## 3. 集成流程
 ### 3.1 Pod集成
 ### 3.1.1 Podfile配置
 
-&emsp;&emsp;`source 'https://gitlab.mpaas.jdcloud.com/umapadmin/jdtmpaassdkspecrepo.git'`  
+`source 'https://gitlab.mpaas.jdcloud.com/umapadmin/jdtmpaassdkspecrepo.git'`  
 
-&emsp;&emsp;`pod 'JDTHuoYan', 1.0.0'`   
+`pod 'JDTHuoYan', 1.0.0'`   
 
-&emsp;&emsp;`pod 'JDTGateway',  '1.0.0'` 
+`pod 'JDTGateway',  '1.0.0'` 
 
 ### 3.1.2 Podspec配置
-&emsp;&emsp;在使用火眼SDK的模块中配置Podspec：
+在使用火眼SDK的模块中配置Podspec：
 
-&emsp;&emsp;`# 火眼依赖SDK`  
-&emsp;&emsp;`s.dependency 'JDTHuoYan'`   
-&emsp;&emsp;`s.dependency 'JDTGateway'` 
+`# 火眼依赖SDK`  
+`s.dependency 'JDTHuoYan'`   
+`s.dependency 'JDTGateway'` 
 
-&emsp;&emsp;`# 火眼依赖第三方`
-&emsp;&emsp;`s.dependency 'FMDB/SQLCipher', '2.6.2'`
+`# 火眼依赖第三方`
+`s.dependency 'FMDB/SQLCipher', '2.6.2'`
 
-&emsp;&emsp;`# 火眼依赖系统库`  
-&emsp;&emsp;`s.frameworks 'CoreFoundation','CoreTelephony','CoreLocation','UIKit','Security','WebKit'` 
+`# 火眼依赖系统库`  
+`s.frameworks 'CoreFoundation','CoreTelephony','CoreLocation','UIKit','Security','WebKit'` 
     
 ### 3.1.3 主工程配置
 将`JDTHuoYan.framework`中`JDTHuoYan.bundle`拖入到项目中。  
 
-![image-20211204170004675](../../../../image/MPaas/Fireeye/iOS/WX20220302-202642@2x.png)
+![image-20211204170004675](../../../../../image/MPaas/Fireeye/iOS/WX20220302-202642@2x.png)
 ### 3.2 主工程配置
 
-&emsp;&emsp;1.手动集成火眼SDK。  
+1.手动集成火眼SDK。  
 
-&emsp;&emsp;2.选择工程目录-》Build Settings 》 Other Link Flags 中加入-ObjC参数。  
+2.选择工程目录-》Build Settings 》 Other Link Flags 中加入-ObjC参数。  
 
-&emsp;&emsp;4.依赖库：sqlite3、MobileCoreServices、CoreGraphics、Security、SystemConfiguration。   
+4.依赖库：sqlite3、MobileCoreServices、CoreGraphics、Security、SystemConfiguration。   
 
-&emsp;&emsp;5.将`JDTHuoYan.framework`中`JDTHuoYan.bundle`拖入到项目中。  
+5.将`JDTHuoYan.framework`中`JDTHuoYan.bundle`拖入到项目中。  
 
 ![](%E4%BA%AC%E4%B8%9C%E7%81%AB%E7%9C%BC%E9%87%87%E9%9B%86-iOS%20SDK%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3/DE4A45EE-AEF3-44AD-A6D3-70670806F6E9.png)
 ## 4. 基本功能
@@ -52,7 +52,7 @@
 application:didFinishLaunchingWithOptions 中初始化SDK。 
 ``` ObjectiveC
 [JDTHuoYanConfig getInstance].url = @"https://www.example.com"; 
-[JDTHuoYanConfig getInstance].debugEnable = YES; [JDTHuoYanConfig getInstance].appChannel = @"App Store"; 
+[JDTHuoYanConfig getInstance].debugEnable = YES;[JDTHuoYanConfig getInstance].appChannel = @"App Store"; 
 [JDTHuoYanConfig getInstance].autoTrack = YES; 
 [JDTHuoYanConfig getInstance].userId = @"user1";
 [JDTHuoYanConfig getInstance].extraParams = @{@"extra1":@"value1"};
