@@ -122,6 +122,8 @@ items:
       href: Metrics/function.md   
     - name: 弹性公网IP
       href: Metrics/ip.md
+    - name: 共享带宽包
+      href: Metrics/Bwp.md
     - name: 专线服务
       href: Metrics/DirectConnection.md
     - name: NAT网关
