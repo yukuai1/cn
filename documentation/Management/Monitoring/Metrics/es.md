@@ -13,6 +13,7 @@ jmiss.es.instance.index_qps|集群写入QPS | Cluster indexing qps | Count/s| �
 
 ### 节点
 获取某个节点的指标数据时，tags中nodeId 需指定具体的节点ID。 其提供的监控指标如下：  
+> 提示：如果您需要获取全部节点（node）的指标数据，可以在调用describeMetricData接口时，把groupBy参数设置为true，tags中的Key指定为nodeId，value值指定为*。
 
 metric | 中文名称  | 英文名称 |单位 | 说明
 ---|--- |--- |--- |---
