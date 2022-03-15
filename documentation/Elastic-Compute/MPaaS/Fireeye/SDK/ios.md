@@ -46,7 +46,7 @@
 
 5.将`JDTHuoYan.framework`中`JDTHuoYan.bundle`拖入到项目中。  
 
-![](%E4%BA%AC%E4%B8%9C%E7%81%AB%E7%9C%BC%E9%87%87%E9%9B%86-iOS%20SDK%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3/DE4A45EE-AEF3-44AD-A6D3-70670806F6E9.png)
+![](../../../../../image/MPaas/Fireeye/iOS/DE4A45EE-AEF3-44AD-A6D3-70670806F6E9.png)
 ## 4. 基本功能
 ### 4.1 初始化配置  
 application:didFinishLaunchingWithOptions 中初始化SDK。 
