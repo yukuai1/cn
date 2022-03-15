@@ -24,6 +24,10 @@
 |BUILDING|创建中|
 |RUNNING|运行|
 |SCALING|水平扩容中|
+|UPGRADING |版本升级中|
+|REBOOTING|重启中|
+|BACKUPRESTORING|根据备份创建中|
+
 
 ## accountStatus 账号状态
 
