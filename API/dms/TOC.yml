@@ -1,4 +1,4 @@
-name: 数据管理系统 DMS
+name: 数据管理DMS
 href:
 items:
   - name: 接口概览
@@ -84,3 +84,10 @@ items:
             herf: Sql/importDdlDml.md
           - name: openTable
             herf: Sql/openTable.md
+
+      - name: 枚举参数说明
+        items:
+          - name: 枚举类型定义
+            herf: Enum-Definitions/Enum-Definitions.md
+          - name: 地域及可用区列表
+            herf: Enum-Definitions/Regions-AZ.md
