@@ -2,28 +2,28 @@
 
 ## 1. 系统环境
 
-&emsp;&emsp;要求系统环境iOS9.0及以上版本。
+要求系统环境iOS9.0及以上版本。
 
 ## 2. 接入指南
-&emsp;&emsp;通过类似扩展坞的设计理念，解决了移动SDK适配网关的问题，即所有SDK只需要集成网关SDK即可，无论有多少网关需求，移动SDK均不需要对接适配。
+通过类似扩展坞的设计理念，解决了移动SDK适配网关的问题，即所有SDK只需要集成网关SDK即可，无论有多少网关需求，移动SDK均不需要对接适配。
 
 ## 3. 集成流程
 ### 3.1 Pod集成
 ### 3.1.1 Podfile配置
 
-&emsp;&emsp;`source 'http://gitlab.mpaas.jdcloud.com/umapadmin/jdtmpaassdkspecrepo.git'`  
-&emsp;&emsp;`pod 'JDTGateway', '1.0.0'`   
+`source 'http://gitlab.mpaas.jdcloud.com/umapadmin/jdtmpaassdkspecrepo.git'`  
+`pod 'JDTGateway', '1.0.0'`   
 
 ### 3.1.2 Podspec配置
-&emsp;&emsp;在使用网关SDK的模块中配置Podspec：
+在使用网关SDK的模块中配置Podspec：
 
-&emsp;&emsp;`s.dependency 'JDTGateway'` 
+`s.dependency 'JDTGateway'` 
   
-&emsp;&emsp;`# 网关依赖第三方`  
-&emsp;&emsp;`s.dependency 'AFNetworking', '~> 3.2.1'`
+`# 网关依赖第三方`  
+`s.dependency 'AFNetworking', '~> 3.2.1'`
 
-&emsp;&emsp;`# 网关依赖系统库`  
-&emsp;&emsp;`s.frameworks = 'CoreGraphics','MobileCoreServices','Security','SystemConfiguration'`  
+`# 网关依赖系统库`  
+`s.frameworks = 'CoreGraphics','MobileCoreServices','Security','SystemConfiguration'`  
 
 ### 3.2 主工程集成
 
@@ -33,7 +33,7 @@
     
 ## 4. 基本功能
 ### 4.1 网关初始化
-&emsp;&emsp;初始化网关SDK，网关SDK的APPID和Domain在配置服务时提供，APM，应用发布，H5离线化和热修复均使用网关服务，实现一次初始化即可。
+初始化网关SDK，网关SDK的APPID和Domain在配置服务时提供，APM，应用发布，H5离线化和热修复均使用网关服务，实现一次初始化即可。
 
 ```ObjectiveC
 // SDK接入网关需要使用的类

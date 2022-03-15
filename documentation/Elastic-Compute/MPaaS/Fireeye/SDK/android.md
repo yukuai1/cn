@@ -22,7 +22,7 @@
 
 在应用目录(app)下的build.gradle中声明使用该SDK 
 
-```groovy
+``` groovy
 dependencies {
 // 引入libs目录下的所有jar
 compile fileTree(dir: ‘libs’, include: [‘*.jar’]) 

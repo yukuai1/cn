@@ -2,40 +2,40 @@
 
 ## 1.系统环境
 
-&emsp;&emsp;要求系统环境iOS8.0及以上版本。
+要求系统环境iOS8.0及以上版本。
 
 ## 2.接入指南
 
-&emsp;&emsp;应用灰度发布，应用升级等。
+应用灰度发布，应用升级等。
 
 ## 3.集成流程
 
 ### 3.1 Pod集成
 ### 3.1.1 Podfile配置
-&emsp;&emsp;`source 'https://gitlab.mpaas.jdcloud.com/umapadmin/jdtmpaassdkspecrepo.git'`  
+`source 'https://gitlab.mpaas.jdcloud.com/umapadmin/jdtmpaassdkspecrepo.git'`  
 
-&emsp;&emsp;`pod 'JDTTestFlight', '1.0.0'`   
-&emsp;&emsp;`pod 'JDTGateway', '1.0.0'`  
-&emsp;&emsp;`pod 'JDTUDIDManager', '1.0.0'` 
+`pod 'JDTTestFlight', '1.0.0'`   
+`pod 'JDTGateway', '1.0.0'`  
+`pod 'JDTUDIDManager', '1.0.0'` 
 
 ### 3.1.2 Podspec配置
-&emsp;&emsp;在使用应用发布SDK的模块中配置Podspec：
+在使用应用发布SDK的模块中配置Podspec：
 
-&emsp;&emsp;`# 应用发布依赖SDK`  
-&emsp;&emsp;`s.dependency 'JDTTestFlight'`   
-&emsp;&emsp;`s.dependency 'JDTGateway'`   
-&emsp;&emsp;`s.dependency 'JDTUDIDManager'` 
+`# 应用发布依赖SDK`  
+`s.dependency 'JDTTestFlight'`   
+`s.dependency 'JDTGateway'`   
+`s.dependency 'JDTUDIDManager'` 
 
-&emsp;&emsp;`# 应用发布依赖第三方`  
-&emsp;&emsp;`s.dependency 'AFNetworking', '~> 3.2.1'`  
-&emsp;&emsp;`s.dependency 'RealReachability'`    
-&emsp;&emsp;`s.dependency 'Masonry'`   
-&emsp;&emsp;`s.dependency 'SDWebImage'`   
+`# 应用发布依赖第三方`  
+`s.dependency 'AFNetworking', '~> 3.2.1'`  
+`s.dependency 'RealReachability'`    
+`s.dependency 'Masonry'`   
+`s.dependency 'SDWebImage'`   
 
 ### 3.1.3 主工程配置
 将`JDTTestFlight.framework`中`JDTTestFlight.bundle`拖入到项目中。
 
-![技术架构图](../../../../image/MPaas/APP-Publish/iOS/iamge1.png)
+![技术架构图](../../../../../image/MPaas/APP-Publish/iOS/iamge1.png)
 
 ### 3.2 主工程集成
 
@@ -48,7 +48,7 @@
 ## 4. 基础功能
 
 ### 4.1 网关初始化
-&emsp;&emsp;初始化离线化SDK前，先要初始化网关SDK，请参考[网关SDK接入文档](../gateway/iOS接入1.0.0.md)。
+初始化离线化SDK前，先要初始化网关SDK，请参考[网关SDK接入文档](../../Mobile-Gateway/SDK/ios.md)。
 
 ### 4.2 TestFlightSDK初始化
 ```ObjectiveC

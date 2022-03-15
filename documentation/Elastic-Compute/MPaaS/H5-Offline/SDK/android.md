@@ -165,26 +165,26 @@ JROfflineManager.mOfflineSwitch = true;
 
 内置离线包功能使用，前提条件是需要在离线服务平台发布上线对应离线包，只有离线服务存在的离线包才会生效。所以需要按照离线化产品操作文档在控制台上传对应离线包之后，待将控制台生成加密之后离线资源下载内置进应用内。
 
-![image-20211209154017144](../../../../image/MPaas/H5-Offline/android/image-20211209154017144.png)
+![image-20211209154017144](../../../../../image/MPaas/H5-Offline/android/image-20211209154017144.png)
 
 
 #### 5.2 下载离线资源
 
 在控制台上传发布离线资源之后，按照如下图所示下载离线资源
 
-![image-20211209154250730](../../../../image/MPaas/H5-Offline/android/image-20211209154250730.png)
+![image-20211209154250730](../../../../../image/MPaas/H5-Offline/android/image-20211209154250730.png)
 
 #### 5.3 更改离线包资源名称
 
 将加密的离线资源下载之后，使用离线资源对应的releaseID作为唯一命名，保存至应用assets/offline/文件夹下
 
-![image-20211209154606366](../../../../image/MPaas/H5-Offline/android/image-20211209154606366.png)
+![image-20211209154606366](../../../../../image/MPaas/H5-Offline/android/image-20211209154606366.png)
 
-![image-20211209154720803](../../../../image/MPaas/H5-Offline/android/image-20211209154720803.png)
+![image-20211209154720803](../../../../../image/MPaas/H5-Offline/android/image-20211209154720803.png)
 
 #### 5.4 内置离线资源
 
-![image-20211209154934455](../../../../image/MPaas/H5-Offline/android/image-20211209154934455.png)
+![image-20211209154934455](../../../../../image/MPaas/H5-Offline/android/image-20211209154934455.png)
 
 #### 5.5 使用
 

@@ -1,38 +1,38 @@
 # H5离线化-iOS-接入文档 
 ##  1. 系统环境
-&emsp;&emsp;要求系统环境iOS9.0及以上版本。
+要求系统环境iOS9.0及以上版本。
 
 ## 2. 接入指南
 
 H5离线加载，实现web页面快速加载。
 
 ## 3. 集成流程
-### 3.1 Pod集成
+### 3.1 Pod集成
 ### 3.1.1 Podfile配置
 
-&emsp;&emsp;`source 'http://gitlab.mpaas.jdcloud.com/umapadmin/jdtmpaassdkspecrepo.git'`  
-&emsp;&emsp;`pod 'JDTH5Offline', '1.0.0'`   
-&emsp;&emsp;`pod 'JDTGateway', :'1.0.0'`  
+`source 'http://gitlab.mpaas.jdcloud.com/umapadmin/jdtmpaassdkspecrepo.git'`  
+`pod 'JDTH5Offline', '1.0.0'`   
+`pod 'JDTGateway', :'1.0.0'`  
 
 ### 3.1.2 Podspec配置
-&emsp;&emsp;在使用H5离线化SDK的模块中配置Podspec：
+在使用H5离线化SDK的模块中配置Podspec：
 
-&emsp;&emsp;`# H5离线化依赖SDK`  
-&emsp;&emsp;`s.dependency 'JDTH5Offline'`   
-&emsp;&emsp;`s.dependency 'JDTGateway'` 
+`# H5离线化依赖SDK`  
+`s.dependency 'JDTH5Offline'`   
+`s.dependency 'JDTGateway'` 
 
-&emsp;&emsp;`# H5离线化依赖第三方`  
-&emsp;&emsp;`s.dependency 'AFNetworking', '~> 3.2.1'`  
-&emsp;&emsp;`s.dependency 'RealReachability'`  
-&emsp;&emsp;`s.dependency 'ZipArchive'`  
+`# H5离线化依赖第三方`  
+`s.dependency 'AFNetworking', '~> 3.2.1'`  
+`s.dependency 'RealReachability'`  
+`s.dependency 'ZipArchive'`  
 
-&emsp;&emsp;`# H5离线化依赖系统库`  
-&emsp;&emsp;`s.frameworks = 'WebKit'`  
+`# H5离线化依赖系统库`  
+`s.frameworks = 'WebKit'`  
 
 ### 3.1.3 主工程配置
 
 将`JDTH5Offline.framework`中`JDTH5Offline.bundle`拖入到项目中。
-![image-20211204170004675](./iOS/WX20220302-202318@2x.png)
+![image-20211204170004675](../../../../../image/MPaas/H5-Offline/iOS/WX20220302-202318@2x.png)
 
 ### 3.2 主工程集成
 
@@ -47,13 +47,13 @@ H5离线加载，实现web页面快速加载。
   pod 'RealReachability'
 ```
 
-&emsp;&emsp;如果没有cocoapods，亦可自己去github下载相应的库；然后将下载库文件拖入项目即可完成集成。
+如果没有cocoapods，亦可自己去github下载相应的库；然后将下载库文件拖入项目即可完成集成。
 
 ## 4. 基础功能
 
 ### 4.1 网关初始化
 
-初始化离线化SDK前，先要初始化网关SDK，请参考[网关SDK接入文档](../../Mobile-Gateway/SDK/网关-iOS-接入文档.md)。
+初始化离线化SDK前，先要初始化网关SDK，请参考[网关SDK接入文档](../../../MPaaS/Mobile-Gateway/SDK/ios.md)。
 
 ### 4.2 离线化SDK初始化
 
@@ -121,11 +121,11 @@ config.recodTrackData = ^(NSString* bid, NSDictionary* params) {
 
 内置包分为zip包和配置文件，如下图所示
 
-![image-20211204170004675](../../../../image/MPaas/H5-Offline/iOS/image-20211204170004675.png)
+![image-20211204170004675](../../../../../image/MPaas/H5-Offline/iOS/image-20211204170004675.png)
 
 内置zip包需从控制台下载加密的zip，并将配置信息填入JDTOF_Config.plist文件中，配置文件信息如下：
 
-![image-20211204170240180](../../../../image/MPaas/H5-Offline/iOS/image-20211204170240180.png)
+![image-20211204170240180](../../../../../image/MPaas/H5-Offline/iOS/image-20211204170240180.png)
 
 version，versionWithFile这两个字段保持一致，对应控制台版本标识，baseurl对应控制台baseurl，loadBundle是zip包的命名。
 
