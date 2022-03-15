@@ -85,3 +85,5 @@ items:
       href: Common/describeOrderableInstanceType.md
     - name: describeVersions
       href: Common/describeVersions.md
+- name: 枚举参数说明
+  href: Enum-Definitions/Enum-Definitions.md
