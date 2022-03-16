@@ -2,16 +2,16 @@
 
 - [engineVersion 引擎版本](engineversion-引擎版本#engineversion)
 - [instanceStatus 实例状态](instancestatus-实例状态#instancestatus)
-- [accountStatus 账号状态](accountStatus-账号状态#accountStatus)
-- [dbPrivilege 数据库访问权限](dbPrivilege-数据库访问权限#dbPrivilege)
-- [backupStatus 备份状态](backupStatus-备份状态#backupStatus)
-- [backupType 备份类型](backupType-备份类型#backupType)
-- [backupMode 备份模式](backupMode-备份模式#backupMode)
+- [accountStatus 账号状态](accountStatus-账号状态#accountstatus)
+- [dbPrivilege 数据库访问权限](dbPrivilege-数据库访问权限#dbprivilege)
+- [backupStatus 备份状态](backupStatus-备份状态#backupstatus)
+- [backupType 备份类型](backupType-备份类型#backuptype)
+- [backupMode 备份模式](backupMode-备份模式#backupmode)
 - [storageType 存储类型](storagetype-存储类型#storagetype)
-- [nodeStatus 节点状态](nodeStatus-节点状态#nodeStatus)
+- [nodeStatus 节点状态](nodeStatus-节点状态#nodestatus)
 
 ## engineVersion 引擎版本
-<div id="engineVersion"></div>
+<div id="engineversion"></div>
 
 |取值|说明|
 |-|-|
@@ -19,7 +19,7 @@
 |5.4|TiDB 5.4 版本|
 
 ## instanceStatus 实例状态
-<div id="instanceStatus"></div>
+<div id="instancestatus"></div>
 
 |取值|说明|
 |-|-|
@@ -32,7 +32,7 @@
 
 
 ## accountStatus 账号状态
-<div id="accountStatus"></div>
+<div id="accountstatus"></div>
 
 |取值|说明|
 |-|-|
@@ -41,7 +41,7 @@
 |RESETING|密码重置中|
 
 ## dbPrivdlege 数据库访问权限
-<div id="dbPrivdlege"></div>
+<div id="dbprivilege"></div>
 
 |取值|说明|
 |-|-|
@@ -49,7 +49,7 @@
 |rw|读写|
 
 ## backupStatus 备份状态
-<div id="backupStatus"></div>
+<div id="backupstatus"></div>
 
 |取值|说明|
 |-|-|
@@ -58,7 +58,7 @@
 |DELETING|删除中|
 
 ## backupType 备份类型
-<div id="backupType"></div>
+<div id="backuptype"></div>
 
 |取值|说明|
 |-|-|
@@ -66,7 +66,7 @@
 |increment|增量备份|
 
 ## backupMode 备份模式
-<div id="backupMode"></div>
+<div id="backupmode"></div>
 
 |取值|说明|
 |-|-|
@@ -74,7 +74,7 @@
 |manual|手动备份|
 
 ## storageType 存储类型 
-<div id="storageType"></div>
+<div id="storagetype"></div>
 
 |取值|说明|
 |-|-|
@@ -83,7 +83,7 @@
 
 
 ## nodeStatus 节点状态
-<div id="nodeStatus"></div>
+<div id="nodestatus"></div>
 
 |取值|说明|
 |-|-|
