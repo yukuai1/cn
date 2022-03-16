@@ -1,17 +1,17 @@
 # 枚举类型定义
 
-- [engineVersion 引擎版本](engineversion-引擎版本#engineversion)
-- [instanceStatus 实例状态](instancestatus-实例状态#instancestatus)
-- [accountStatus 账号状态](accountStatus-账号状态#accountstatus)
-- [dbPrivilege 数据库访问权限](dbPrivilege-数据库访问权限#dbprivilege)
-- [backupStatus 备份状态](backupStatus-备份状态#backupstatus)
-- [backupType 备份类型](backupType-备份类型#backuptype)
-- [backupMode 备份模式](backupMode-备份模式#backupmode)
-- [storageType 存储类型](storagetype-存储类型#storagetype)
-- [nodeStatus 节点状态](nodeStatus-节点状态#nodestatus)
+- [engineVersion 引擎版本](engine-version#engine-version)
+- [instanceStatus 实例状态](instance-status#instance-status)
+- [accountStatus 账号状态](account-status#account-status)
+- [dbPrivilege 数据库访问权限](db-privilege#db-privilege)
+- [backupStatus 备份状态](backup-status#backup-status)
+- [backupType 备份类型](backup-type#backup-type)
+- [backupMode 备份模式](backup-mode#backup-mode)
+- [storageType 存储类型](storage-type#storage-type)
+- [nodeStatus 节点状态](node-status#node-status)
 
 ## engineVersion 引擎版本
-<div id="engineversion"></div>
+<div id="engine-version"></div>
 
 |取值|说明|
 |-|-|
@@ -19,7 +19,7 @@
 |5.4|TiDB 5.4 版本|
 
 ## instanceStatus 实例状态
-<div id="instancestatus"></div>
+<div id="instance-status"></div>
 
 |取值|说明|
 |-|-|
@@ -32,7 +32,7 @@
 
 
 ## accountStatus 账号状态
-<div id="accountstatus"></div>
+<div id="account-status"></div>
 
 |取值|说明|
 |-|-|
@@ -41,7 +41,7 @@
 |RESETING|密码重置中|
 
 ## dbPrivdlege 数据库访问权限
-<div id="dbprivilege"></div>
+<div id="db-privilege"></div>
 
 |取值|说明|
 |-|-|
@@ -49,7 +49,7 @@
 |rw|读写|
 
 ## backupStatus 备份状态
-<div id="backupstatus"></div>
+<div id="backup-status"></div>
 
 |取值|说明|
 |-|-|
@@ -58,7 +58,7 @@
 |DELETING|删除中|
 
 ## backupType 备份类型
-<div id="backuptype"></div>
+<div id="backup-type"></div>
 
 |取值|说明|
 |-|-|
@@ -66,7 +66,7 @@
 |increment|增量备份|
 
 ## backupMode 备份模式
-<div id="backupmode"></div>
+<div id="backup-mode"></div>
 
 |取值|说明|
 |-|-|
@@ -74,7 +74,7 @@
 |manual|手动备份|
 
 ## storageType 存储类型 
-<div id="storagetype"></div>
+<div id="storage-type"></div>
 
 |取值|说明|
 |-|-|
@@ -83,7 +83,7 @@
 
 
 ## nodeStatus 节点状态
-<div id="nodestatus"></div>
+<div id="node-status"></div>
 
 |取值|说明|
 |-|-|
