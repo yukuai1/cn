@@ -47,7 +47,17 @@ cps.network.bytes.ingress |网卡进流量 |Network Ingress Traffic| bps |
 cps.network.bytes.egress |网卡出流量 |Network Egress Traffic| bps | 
 cps.network.packets.ingress |网络进包量 |Network Ingress Packets| 个/秒 | 
 cps.network.packets.egress |网络出包量 |Network Egress Packets| 个/秒 | 
+### 监控插件安装
+curl [http://jdcps-proxy.jdcloud.com/agent/download/jdcps-agent-v2.0.0.bin](http://jdcps-proxy.jdcloud.com/agent/download/jdcps-agent-v2.0.0.bin) -O <br/>
+chmod +x jdcps-agent-v2.0.0.bin<br/>
+sudo ./jdcps-agent-v2.0.0.bin<br/>
 
+说明：基础网络实例安装前准备工作如下：<br/>
+基础网络实例增加路由<br/>
+1、确定内网Gateway地址 route -n <br/>
+查询eth0对应的Gateway地址（eg：10.123.0.1）<br/>
+2、将监控流量引导到内网网关<br/>
+route add -net 100.66.1.0 netmask 255.255.255.0 gw {机器内网网关地址}<br/>
 
 
 
