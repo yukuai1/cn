@@ -475,9 +475,13 @@ items:
   - name: 智能家居平台等级协议（SLA）
     href: Smartdev-SLA.md    
   - name: 种草标题服务
-    href: Language-Model-Filling.md
+    href: Recommend-Title-Generation.md
   - name: 种草标题等级协议（SLA）
-    href: Language-Model-Filling-SLA.md
+    href: Recommend-Title-Generation-SLA.md    
+  - name: 语言模型填空服务
+    href: Language-Model-Filling.md
+  - name: 语言模型填空等级协议（SLA）
+    href: Language-Model-Filling-SLA.md    
   - name: 卖点标题生成服务
     href: Unique-Selling-Proposition-Generation.md
   - name: 卖点标题生成等级协议（SLA）
@@ -510,7 +514,7 @@ items:
     href: Index-Extraction.md
   - name: 指标抽取等级协议（SLA）
     href: Index-Extraction-SLA.md
-  - name: 金融知识图谱 条款
+  - name: 金融知识图谱条款
     href: Financial-Knowledge-Graph.md
   - name: 金融知识图谱等级协议（SLA）
     href: Financial-Knowledge-Graph-SLA.md  
