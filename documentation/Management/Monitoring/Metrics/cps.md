@@ -8,7 +8,7 @@ cps.cpu.util |CPU使用率| CPU Usage | % |
 cps.memory.util |内存使用率|Memory Usage| % |
 cps.memory.used | 内存使用量 | Memory Used| GB | 
 cps.disk.used |磁盘使用量 |Disk Used| GB | 
-cps.disk.util |磁盘使用率 |Disk Used| % | 
+cps.disk.util |磁盘使用率 |Disk Usage| % | 
 cps.disk.bytes.read |磁盘读流量 |Disk Read Traffic| Bps | 
 cps.disk.bytes.write |磁盘写流量 |Disk Write Traffic| Bps | 
 cps.disk.counts.read |磁盘读IOPS |Disk Read IOPS| 次/秒 | 
@@ -28,7 +28,7 @@ Linux系统按设备名上报， Windows系统按盘符上报,tag的key为device
 metric | 中文名称  | 英文名称 |单位 | 说明
 ---|--- |--- |--- |---
 cps.disk.used |磁盘使用量 |Disk Used| GB | 
-cps.disk.util |磁盘使用率 |Disk Used| % | 
+cps.disk.util |磁盘使用率 |Disk Usage| % | 
 cps.disk.bytes.read |磁盘读流量 |Disk Read Traffic| Bps | 
 cps.disk.bytes.write |磁盘写流量 |Disk Write Traffic| Bps | 
 cps.disk.counts.read |磁盘读IOPS |Disk Read IOPS| 次/秒 | 
@@ -38,7 +38,7 @@ Linux系统按分区挂载点上报，Windows系统按盘符上报,tag的key为d
 metric | 中文名称  | 英文名称 |单位 | 说明
 ---|--- |--- |--- |---
 cps.disk.used |磁盘使用量 |Disk Used| GB | 
-cps.disk.util |磁盘使用率 |Disk Used| % | 
+cps.disk.util |磁盘使用率 |Disk Usage| % | 
 ### 网口 
 tag的key为device，值为'eth0','eth1','band0'…
 metric | 中文名称  | 英文名称 |单位 | 说明
