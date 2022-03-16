@@ -513,7 +513,91 @@ items:
   - name: 金融知识图谱 条款
     href: Financial-Knowledge-Graph.md
   - name: 金融知识图谱等级协议（SLA）
-    href: Financial-Knowledge-Graph-SLA.md    
+    href: Financial-Knowledge-Graph-SLA.md  
+   - name: 拍照翻译服务条款
+    href: Photo-Character-Recognition.md
+  - name: 拍照翻译服务等级协议（SLA）
+    href: Photo-Character-Recognition-SLA.md
+  - name: 手写体签名识别服务条款
+    href: Handwritten-Signature-Recognition.md
+  - name: 手写体签名等级协议（SLA）
+    href: Handwritten-Signature-Recognition-SLA.md
+  - name: 泰国驾驶证识别服务条款
+    href: Thai-driver's-License-Recognition.md
+  - name: 泰国驾驶证识别等级协议（SLA）
+    href: Thai-driver's-License-Recognition-SLA.md
+  - name: 泰国身份证识别服务协议
+    href: Thai-ID-Card-Recognition.md
+  - name: 泰国身份证识别等级协议（SLA）
+    href: Thai-ID-Card-Recognition-SLA.md 
+  - name: 通用卡证质检服务条款
+    href: General-Card-Verify.md  
+  - name: 通用卡证质检等级协议（SLA）
+    href: General-Card-Verify-SLA.md
+  - name: 通用印刷体识别高精度版服务协议
+    href: Universal-Printed-Recognition-High-precision.md
+  - name: 通用印刷体识别高精度版服务等级协议（SLA）
+    href: Universal-Printed-Recognition-High-precision-SLA.md
+  - name: 通用印刷体识别快速版服务协议
+    href: Universal-Printed-Recognition-High-speed.md
+  - name: 通用印刷体识别快速版等级协议（SLA）
+    href: Universal-Printed-Recognition-High-speed-SLA.md
+  - name: 香港身份证识别服务条款
+    href: Hong-Kong-Identity-Card-Recognition.md
+  - name: 香港身份证识别等级协议（SLA）
+    href: Hong-Kong-Identity-Card-Recognition-SLA.md
+  - name: 表格识别服务协议
+    href: Table-Recognition.md
+  - name: 表格识别服务等级协议（SLA）
+    href: Table-Recognition-SLA.md
+  - name: 不动产证识别服务协议
+    href: Real-Estate-Certificate-Recognition.md
+  - name: 不动产证识别服务等级协议（SLA）
+    href: Real-Estate-Certificate-Recognition-SLA.md
+  - name: 车牌识别（V2）服务协议
+    href: License-Plate-ecognition-V2.md
+  - name: 车牌识别（V2）服务等级协议（SLA）
+    href: License-Plate-ecognition-V2-SLA.md
+  - name: 电子汇票识别服务协议
+    href: Electronic-Bill-Recognition.md
+  - name: 电子汇票识别服务等级协议（SLA）
+    href: Electronic-Bill-Recognition-SLA.md
+  - name: 二维码识别服务协议
+    href: QR-Code-Recognition.md
+  - name: 二维码识别服务等级协议（SLA）
+    href: QR-Code-Recognition-SLA.md
+  - name: 房产证识别服务条款
+    href: Property-Ownership-Certificate-Recognition.md
+  - name: 房产证识别服务等级协议（SLA）
+    href: Property-Ownership-Certificate-Recognition-SLA.md
+  - name: 飞机行程单识别服务条款
+    href: Aircraft-Itinerary-Recognition.md
+  - name: 飞机行程单识别等级协议（SLA）
+    href: Aircraft-Itinerary-Recognition-SLA.md
+  - name: 港澳通行证识别服务条款
+    href: Hong-Kong-and-Macao-Pass-Recognition.md
+  - name: 港澳通行证识别服务等级协议（SLA）
+    href: Hong-Kong-and-Macao-Pass-Recognition-SLA.md
+  - name: 港澳通行证防伪服务协议
+    href: Anti-Counterfeiting-of-HongKong-and-Macao-Pass.md
+  - name: 港澳通行证防伪等级协议（SLA）
+    href: Anti-Counterfeiting-of-HongKong-and-Macao-Pass-SLA.md 
+  - name: 购车发票识别服务条款
+    href: Purchase-Invoice-Recognition.md.md  
+  - name: 购车发票识别等级协议（SLA）
+    href: Purchase-Invoice-Recognition-SLA.md.md
+  - name: 户口本识别服务协议
+    href: Household-Register-Recognition.md.md
+  - name: 户口本识别服务等级协议（SLA）
+    href: Household-Register-Recognition-SLA.md
+  - name: 护照信息识别服务协议
+    href: Passport-Information-Recognition.md.md
+  - name: 护照信息识别等级协议（SLA）
+    href: Passport-Information-Recognition-SLA.md
+  - name: 名片识别服务条款
+    href: Business-Card-Recognition.md
+  - name: 名片识别等级协议（SLA）
+    href: Business-Card-Recognition-SLA.md
   - name: 数知服务协议
     href: Number-Of-Terms-Of-Service.md
   - name: 数知服务等级协议（SLA）
