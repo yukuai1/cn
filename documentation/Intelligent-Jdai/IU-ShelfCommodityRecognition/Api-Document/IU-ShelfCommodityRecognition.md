@@ -7,7 +7,7 @@
 ### 2.接口地址
 
 ```
-https://aiapi.jd.com/jdai/detect_shelf_product
+https://aiapi.jdcloud.com/jdai/detect_shelf_product
 ```
 
 ### 3.请求方式
@@ -16,7 +16,11 @@ https://aiapi.jd.com/jdai/detect_shelf_product
 POST
 ```
 
-### 4. 请求参数
+### 4. 接口使用：
+
+进入京东智联云控制台-账号管理-Access Key管理，创建并获取Access Key。整体流程详见 [调用方法](https://docs.jdcloud.com/cn/common-declaration/api/call-methods) 。
+
+### 5. 请求参数
 
 #### （1）query请求参数
 
@@ -53,7 +57,7 @@ python
         }
 ```
 
-### 5.返回参数
+### 6.返回参数
 
 #### （1）公共返回参数
 
