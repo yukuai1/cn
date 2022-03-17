@@ -1,5 +1,9 @@
 # Java示例
- 示例代码可访问： [java-demo](https://starlink-console.jdcloud.com/studio/v2/index.html#/?vms=eyJ2bXNLZXkiOiJmNWI5MmNjZDMwNzg0MzQ2YjQzNmFiNDk3NGFiYTdlZiIsInZtc05hbWUiOiJqYXZhLWRlbW8iLCJnaXRVcmwiOiJodHRwczovL2NvZGUuamRjbG91ZC5jb20vc3Rhcmxpbmstdm1zL2phdmEtZGVtby5naXQiLCJzY3JpcHRUeXBlIjoiSmF2YSIsInRlYW1LZXkiOiIzMDFiMzFjMjVkZjI0YzQ2YjI2N2MwZGUzODMzMGU2YSIsImdyb3VwSWQiOiJjb20uamQuZGVtbyIsImF1dGhDb2RlIjowLCJ0ZWFtTmFtZSI6ImRlbW8ifQ)
+ 演示了Java语言下各种触发器、连接器、函数的示例配置、用法和代码， 示例代码可访问： [java-demo](https://starlink-console.jdcloud.com/studio/v2/index.html#/?vms=eyJ2bXNLZXkiOiJmNWI5MmNjZDMwNzg0MzQ2YjQzNmFiNDk3NGFiYTdlZiIsInZtc05hbWUiOiJqYXZhLWRlbW8iLCJnaXRVcmwiOiJodHRwczovL2NvZGUuamRjbG91ZC5jb20vc3Rhcmxpbmstdm1zL2phdmEtZGVtby5naXQiLCJzY3JpcHRUeXBlIjoiSmF2YSIsInRlYW1LZXkiOiIzMDFiMzFjMjVkZjI0YzQ2YjI2N2MwZGUzODMzMGU2YSIsImdyb3VwSWQiOiJjb20uamQuZGVtbyIsImF1dGhDb2RlIjowLCJ0ZWFtTmFtZSI6ImRlbW8ifQ)。
+
+> 示例VMS可以查看，但不可以修改/部署，您可以克隆至您自己的团队内修改。
+
+
 ## Connector 连接器配置
 ### Http Connector 连接器配置
 **配置：**
