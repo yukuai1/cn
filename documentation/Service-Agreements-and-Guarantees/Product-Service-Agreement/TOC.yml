@@ -589,13 +589,13 @@ items:
   - name: 购车发票识别服务条款
     href: Purchase-Invoice-Recognition.md.md  
   - name: 购车发票识别等级协议（SLA）
-    href: Purchase-Invoice-Recognition-SLA.md.md
+    href: Purchase-Invoice-Recognition-SLA.md
   - name: 户口本识别服务协议
-    href: Household-Register-Recognition.md.md
+    href: Household-Register-Recognition.md
   - name: 户口本识别服务等级协议（SLA）
     href: Household-Register-Recognition-SLA.md
   - name: 护照信息识别服务协议
-    href: Passport-Information-Recognition.md.md
+    href: Passport-Information-Recognition.md
   - name: 护照信息识别等级协议（SLA）
     href: Passport-Information-Recognition-SLA.md
   - name: 名片识别服务条款
