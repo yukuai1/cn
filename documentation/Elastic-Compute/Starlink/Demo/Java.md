@@ -128,7 +128,7 @@
     private final Logger log2 = LoggerFactory.getLogger("java-demo");
 
     /**
-     * 通过{@link Inject}注解注入函数对象(可以注入代码函数或者bpmn函数)
+     * 通过 Inject 注解注入函数对象(可以注入代码函数或者bpmn函数)
      */
     @Inject
     private Function handleBussinessJava2;
