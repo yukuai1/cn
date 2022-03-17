@@ -26,16 +26,14 @@
 
 ### 4. 接口使用
 
-平台为每个 API 提供试用体验服务，您在 AI 市场选择“免费试用”规格下单后，即可开始体验业内领先的人工智能 API 服务。 免费试用服务具有调用量、QPS 限制，如需更高性能的 API 服务，可以提交咨询工单，联系京东 AI 扩容购买。
-
-在获得使用权限后，您可使用已经封装好的 SDK 参照 [接口鉴权](https://aidoc.jd.com/user/auth.html) 规则进行相应开发，整体流程详见 [接入流程](https://aidoc.jd.com/user/flow.html) 。
+进入京东智联云控制台-账号管理-Access Key管理，创建并获取Access Key。整体流程详见 [调用方法](https://docs.jdcloud.com/cn/common-declaration/api/call-methods) 。
 
 ## 二、创建任务接口说明
 
 ### 1. 接口地址
 
 ```
-https://aiapi.jd.com/jdai/cc_fasr_create
+https://aiapi.jdcloud.com/jdai/cc_fasr_create
 ```
 
 ### 2. 请求方式

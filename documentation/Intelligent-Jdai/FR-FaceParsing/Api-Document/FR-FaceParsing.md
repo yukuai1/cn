@@ -21,14 +21,14 @@
 
 ### 4. 接口使用：
 
-使用接口前，需要先完成API的下单购买，然后可使用已经封装好的SDK/参照[接口鉴权](https://aidoc.jd.com/user/auth.html)规则进行相应开发，整体流程详见 [接入流程](https://aidoc.jd.com/user/flow.html)
+进入京东智联云控制台-账号管理-Access Key管理，创建并获取Access Key。整体流程详见 [调用方法](https://docs.jdcloud.com/cn/common-declaration/api/call-methods) 。
 
 ## 二、请求说明
 
 ### 1. 接口地址 ：
 
 ```
-https://aiapi.jd.com/jdai/face_parser
+https://aiapi.jdcloud.com/jdai/face_parser
 ```
 
 ### 2. 请求方式：

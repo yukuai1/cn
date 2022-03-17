@@ -1,8 +1,8 @@
-# 香港身份证质检防伪
+# 港澳通行证质检防伪
 
 
 ## 描述
-香港身份证质检防伪
+港澳通行证质检防伪
 
 ## 请求方式
 
@@ -11,7 +11,7 @@ POST
 ## 请求地址
 
 ```apl
-https://aiapi.jdcloud.com/jdai/hkIdCardVerify
+https://aiapi.jdcloud.com/jdai/entryPermitVerify
 ```
 
 
@@ -24,8 +24,8 @@ https://aiapi.jdcloud.com/jdai/hkIdCardVerify
 | appName             | string   | Y        | 授权appName, 申请分配                                        |
 | `appAuthorityKey`   | string   | Y        | 授权key, 申请分配                                            |
 | `businessId`        | string   | Y        | 业务id, 申请分配                                             |
-| `imageItem`         | Object   | Y        | 图片信息[公共请求参数实体#公共请求参数实体-4.图片信息](https://cf.jd.com/pages/viewpage.action?pageId=138528176#id-公共请求参数实体-公共请求参数实体-4.图片信息) |
-| `imageItemExposure` | Object   | N        | 曝光图片信息[公共请求参数实体#公共请求参数实体-4.图片信息](https://cf.jd.com/pages/viewpage.action?pageId=138528176#id-公共请求参数实体-公共请求参数实体-4.图片信息) |
+| `imageItem`         | Object   |          | 图片信息[公共请求参数实体#公共请求参数实体-4.图片信息](https://cf.jd.com/pages/viewpage.action?pageId=138528176#id-公共请求参数实体-公共请求参数实体-4.图片信息) |
+| `imageItemExposure` | Object   |          | 图片信息[公共请求参数实体#公共请求参数实体-4.图片信息](https://cf.jd.com/pages/viewpage.action?pageId=138528176#id-公共请求参数实体-公共请求参数实体-4.图片信息) |
 | `extended`          | map      | N        | 附加信息, 特殊需求处理                                       |
 
 ### 返回实体
@@ -40,34 +40,21 @@ https://aiapi.jdcloud.com/jdai/hkIdCardVerify
 
 字段data的内容说明：
 
-| 参数名称      | 参数类型 | 参数说明 |
-| :------------ | :------- | :------- |
-| `quality```   | Object   | ``       |
-| `antiForgery` | `Object` |          |
+| 参数名称       | 参数类型 | 参数说明                           |
+| :------------- | :------- | :--------------------------------- |
+| bbox           | Object   | 【"left", "top","width","height"】 |
+| cardType       | String   | 正反面【"front", "back"】          |
+| blur           | Float    | 质检【是否模糊】分数               |
+| incompleteness | Float    | 质检【是否残缺】分数               |
+| fakeTextline   | Float    | 防伪【文本行贴图】分数             |
+| fakePortrait   | Float    | 防伪【头像贴图】分数               |
+| fakeMonocopy   | Float    | 防伪【是否复印件】分数             |
+| fakeColorcopy  | Float    | 防伪【是否彩印】分数               |
+| fakeScreen     | Float    | 防伪【是否屏幕翻拍】分数           |
 
-字段quality的内容说明：
+## 请求参数示例
 
-| 参数名称 | 参数类型 | 参数说明            |
-| :------- | :------- | :------------------ |
-| blur     | Float    | 证据模糊程度分数    |
-| cover    | Float    | 防伪点/关键区域遮挡 |
-
-字段antiForgery的内容说明：
-
-| 参数名称      | 参数类型 | 参数说明                              |
-| :------------ | :------- | :------------------------------------ |
-| portraitBB    | Float    | `两个大人像防伪点分数`                |
-| portraitBS    | `Float`  | `大小头像防伪点分数`                  |
-| verify1       | Float    | 其他防伪点1分数                       |
-| verify2       | Float    | 其他防伪点2分数                       |
-| fakePortrait  | Float    | 防伪【头像贴图】分数,v2.1版本新增     |
-| fakeMonocopy  | Float    | 防伪【是否复印件】分数,v2.1版本新增   |
-| fakeColorcopy | Float    | 防伪【是否彩印】分数,v2.1版本新增     |
-| fakeScreen    | Float    | 防伪【是否屏幕翻拍】分数,v2.1版本新增 |
-
-### 请求参数示例
-
-```
+```json
 {
  	"appName": "FACE_xxx",
 	"appAuthorityKey": "sADxxx==",
@@ -84,25 +71,21 @@ https://aiapi.jdcloud.com/jdai/hkIdCardVerify
     },
     "serialNo": "12092873283-2313"
 }
-```
-
-### 返回样例
 
 ```
+
+## 返回样例
+
+```json
 {
     "code": 0,
-    "quality": {
+    "data": {
         "blur": 0.1
     },
-     "antiForgery": {
-        "portraitBB": 0.1
-    }, 
     "algResult":true,
     "msg": "成功",
     "serialNo": "12092873283-2313",
     "timestamp": 1646188619374
 }
 ```
-
-
 

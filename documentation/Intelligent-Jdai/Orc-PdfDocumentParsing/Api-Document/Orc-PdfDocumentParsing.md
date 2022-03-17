@@ -24,9 +24,7 @@ pdf文档解析
 
 与高速度OCR接口相比，**仅server不同。**请求参数中对应替换server
 
-**Request Server**: 'http://g.jsf.jd.local/com.jd.cvp.vct.api.ocr.general.GeneralOcr/pro-acc/recognize/39576/jsf/30000'
-
-#### 4. 返回参数
+**Request Server**: https://aiapi.jdcloud.com/jdai/generalPrintRecognition
 
 **Response**
 

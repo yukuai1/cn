@@ -8,16 +8,14 @@
 
 ### 2. 接口使用：
 
-平台为每个API提供试用体验服务，您在AI市场选择“免费试用”规格下单后，即可开始体验业内领先的人工智能API服务。 免费试用服务具有调用量、QPS限制，如需更高性能的API服务，可以提交咨询工单，联系京东AI扩容购买。
-
-在获得使用权限后，您可使用已经封装好的SDK/参照[接口鉴权](https://aidoc.jd.com/user/auth.html)规则进行相应开发，整体流程详见 [接入流程](https://aidoc.jd.com/user/flow.html)
+进入京东智联云控制台-账号管理-Access Key管理，创建并获取Access Key。整体流程详见 [调用方法](https://docs.jdcloud.com/cn/common-declaration/api/call-methods) 。
 
 ## 二、请求说明
 
 ### 1. 接口地址 ：
 
 ```
-https://aiapi.jd.com/jdai/nlp_address
+https://aiapi.jdcloud.com/jdai/nlp_address
 ```
 
 ### 2. 请求方式：
