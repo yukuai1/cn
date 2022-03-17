@@ -1,3 +1,4 @@
+
 ## 登录引擎
 
 创建图计算引擎后，点击登录引擎，进入命令行输入页面。可使用以下命令行进行算法调用。
@@ -70,69 +71,68 @@
 ```
   cd /openjoygraph/build/joyEngine
   ./bin/对应算法文件 
+
+  查看执行结果：
+  第①步 cd /openjoygraph/build/joyEngine/output/算法名(如lpa、wcc)
+  第②步 ls 
+  会返回如下内容：
+  part-r-0.txt   part-r-11.txt  part-r-14.txt  part-r-17.txt  part-r-2.txt   part-r-22.txt  part-r-25.txt  part-r-28.txt  part-r-30.txt  part-r-5.txt  part-r-8.txt
+  part-r-1.txt   part-r-12.txt  part-r-15.txt  part-r-18.txt  part-r-20.txt  part-r-23.txt  part-r-26.txt  part-r-29.txt  part-r-31.txt  part-r-6.txt  part-r-9.txt
+  part-r-10.txt  part-r-13.txt  part-r-16.txt  part-r-19.txt  part-r-21.txt  part-r-24.txt  part-r-27.txt  part-r-3.txt   part-r-4.txt   part-r-7.txt
+  第③步 cat 具体的文件名即可 ，如cat part-r-24.txt
 ```
 
 #### 1.lpa算法
-
+  - 执行命令：
+    - 第①步 cd /openjoygraph/build/joyEngine
+    - 第②步 ./bin/lpa -i ./data/facebook_combined.txt -o ./output/lpa/ -n 20
 ```
-执行命令：
-./bin/lpa -i /data/facebook_combined.txt -o ./output/lpa/ -n 20
-
-查看执行结果：
-cd ./output/lpa
-ls
-cat 目录下的文件名
-
 参数说明：
-/data/facebook_combined.txt：数据文件路径
+./data/facebook_combined.txt：数据文件路径
 ./output/lpa/：结果文件输出路径
 20：迭代计算次数
 ```
 
 #### 2.wcc算法
-
+  - 执行命令：
+    - 第①步 cd /openjoygraph/build/joyEngine
+    - 第②步 ./bin/wcc -i ./data/facebook_combined.txt -o ./output/wcc/
 ```
-执行命令：
-/bin/wcc -i ./data/facebook_combined.txt -o ./output/wcc/
-
 参数说明：
-/data/facebook_combined.txt：数据文件路径
+./data/facebook_combined.txt：数据文件路径
 ./output/wcc/：结果文件输出路径
 ```
 
 #### 3.sssp算法
-
+  - 执行命令：
+    - 第①步 cd /openjoygraph/build/joyEngine
+    - 第②步 ./bin/sssp -i ./data/facebook_combined.txt -o  ./output/sssp/ -r 1
 ```
-执行命令：
-./bin/sssp -i /data/facebook_combined.txt -o  ./output/sssp/ -r 1
-
 参数说明：
-/data/facebook_combined.txt：数据文件路径
+./data/facebook_combined.txt ：数据文件路径
 ./output/lpa/：结果文件输出路径
 1：root顶点，0和正整数，取值范围为:顶点数值区间
 ```
 
 #### 4.apsp算法
-
+  - 执行命令：
+    - 第①步 cd /openjoygraph/build/joyEngine
+    - 第②步 ./bin/apsp -i ./data/facebook_combined.txt -o ./output/apsp/
 ```
-执行命令：
-./bin/apsp -i /data/facebook_combined.txt -o ./output/apsp/
-
 参数说明：
-/data/facebook_combined.txt：数据文件路径
+./data/facebook_combined.txt：数据文件路径
 ./output/apsp/：结果文件输出路径
 ```
 
 ==此算法执行时间较长==
 
 #### 5.louvain算法
-
+  - 执行命令：
+    - 第①步 cd /openjoygraph/build/joyEngine
+    - 第②步 ./bin/louvain -i ./data/facebook_combined.txt -o ./output/louvain/ -n 20 -w true 
 ```
-执行命令：
-./bin/louvain -i /data/facebook_combined.txt -o /output/louvain/ -n 20 -w true 
-
 参数说明：
-/data/facebook_combined.txt：数据文件路径
+./data/facebook_combined.txt：数据文件路径
 ./output/louvain/：结果文件输出路
 20：计算轮数。louvain算法第一阶段计算，每轮计算增益度一直都在增加，则最多计算iteration轮
 true：true: 输入的边文件是有向图;false: 输入的边文件是无向图
@@ -142,14 +142,26 @@ true：true: 输入的边文件是有向图;false: 输入的边文件是无向�
 
 #### 执行命令及参数
 
+  - 执行命令：
+    - 第①步 cd /openjoygraph
+    - 第②步 rm -rf /data/line
+    - 第③步
+      ``` 
+      python -m joyTf --model line  --mode train --max_id 67179 --meta_file_dir /openjoygraph/data/supervised_data/Reddit/reddit_meta_file.json --node_dir /openjoygraph/data/supervised_data/Reddit/node_ids.txt --edge_dir /openjoygraph/data/supervised_data/Reddit/edge_ids.txt --checkpoint_dir /data/line/checkpoint --num_epochs 1  ...
+      ```
 ```
 执行命令：
-python -m joyTf --model line --mode train --max_id 44905 --meta_file_dir /data/GNN/metafile.json --node_dir /data/GNN/node.txt --edge_dir /data/GNN/edge.txt --checkpoint_dir /data/line/checkpoint --num_epochs 3  ...
 
 参数说明：
-python -m joyTf --model line --mode train --max_id 44905 --meta_file_dir /data/GNN/metafile.json --node_dir /data/GNN/node.txt --edge_dir /data/GNN/edge.txt --checkpoint_dir /data/line/checkpoint --num_epochs 3  ...
- line、deepwalk、node2vec、metapath2vec、gcn、 unsupervised_graphsage、supervised_graphsage、gat 代表选择相应的算法
-mode： 运行模式，默认"train"，可选“evaluate”和“save_embedding”
+line：line、deepwalk、node2vec、metapath2vec、gcn、 unsupervised_graphsage、supervised_graphsage、gat 代表选择相应的算法
+
+如果使用metapath2vec算法，第三步的执行命令应更换为：
+python -m joyTf --model metapath2vec --mode train --max_id 44905 --meta_file_dir /openjoygraph/build/joyEngine/data/metafile.json --node_dir /openjoygraph/build/joyEngine/data/node.txt --edge_dir /openjoygraph/build/joyEngine/data/edge.txt --checkpoint_dir /data/line/checkpoint --num_epochs 1 --meta_path [0-0],[0-0-0] --path_weight 0.6,0.5
+如果使用unsupervised_graphsage算法，第三步的执行命令应更换为：
+python -m joyTf --model unsupervised_graphsage  --mode train --max_id 67179 --meta_file_dir /openjoygraph/build/joyEngine/data/metafile.json  --node_dir /openjoygraph/build/joyEngine/data/node.txt --edge_dir /openjoygraph/build/joyEngine/data/edge.txt --checkpoint_dir /data/line/checkpoint --num_epochs 1 
+其他算法只需替换mode中的值即可
+
+train：运行模式，默认"train"，可选“evaluate”和“save_embedding”
 max_id：对应顶点数据文件中的最大ID： max_id=node_num-1
 meta_file_dir：metafile文件路径，metafile格式说明见下文
 node_dir：顶点数据文件路径
