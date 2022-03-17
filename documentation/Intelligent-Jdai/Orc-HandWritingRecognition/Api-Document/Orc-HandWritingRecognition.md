@@ -1,8 +1,8 @@
-# 户口本识别
+# 写体签名识别
 
 
 ## 描述
-户口本识别
+手写体签名识别
 
 ## 请求方式
 
@@ -11,7 +11,7 @@ POST
 ## 请求地址
 
 ```apl
-https://aiapi.jdcloud.com/jdai/householdRecognition
+https://aiapi.jdcloud.com/jdai/chNameHandWritingRecognition
 ```
 
 
@@ -26,6 +26,7 @@ https://aiapi.jdcloud.com/jdai/householdRecognition
 | `businessId`      | string   | Y        | 业务id, 申请分配                                             |
 | `imageItem`       | Object   |          | 图片信息[公共请求参数实体#公共请求参数实体-4.图片信息](https://cf.jd.com/pages/viewpage.action?pageId=138528176#id-公共请求参数实体-公共请求参数实体-4.图片信息) |
 | `extended`        | map      | N        | 附加信息, 特殊需求处理                                       |
+| `cardType`        | string   | N        | 备用字段                                                     |
 
 ### 返回实体
 
@@ -40,9 +41,9 @@ https://aiapi.jdcloud.com/jdai/householdRecognition
 
 | 参数名称 | 参数类型 | 是否必填 | 参数说明 |
 | :------- | :------- | :------- | :------- |
-|          |          |          |          |
+| `name`   | string   |          | `姓名`   |
 
-**请求参数示例**
+### 请求参数示例
 
 ```
 {
@@ -58,12 +59,18 @@ https://aiapi.jdcloud.com/jdai/householdRecognition
 }
 ```
 
+
+
 ### 返回样例
 
 ```
 {
     "code": 0,
-    "msg": "成功"
+    "data": {
+        "name": "张三"
+    },
+    "msg": "成功",
+    "serialNo": "12092873283-2313",
+    "timestamp": 1646202687598
 }
 ```
-

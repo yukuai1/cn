@@ -1,4 +1,4 @@
-# 行驶证（增强版）
+# 行驶证
 
 
 ## 描述
@@ -11,7 +11,7 @@ POST
 ## 请求地址
 
 ```apl
-https://aiapi.jd.com/jdai/maskInsurance
+https://aiapi.jdcloud.com/jdai/vehicleLicense
 ```
 
 
@@ -92,3 +92,4 @@ https://aiapi.jd.com/jdai/maskInsurance
   "timestamp": 1550560993638
 }
 ```
+
