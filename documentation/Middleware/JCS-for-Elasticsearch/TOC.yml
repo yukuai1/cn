@@ -1,6 +1,8 @@
   name: 云搜索 Elasticsearch
   href: 
   items:
+  - name: 产品动态
+    href: Product-news/Product-news.md
   - name: 产品简介
     items:
       - name: 产品概述
