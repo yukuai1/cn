@@ -1,8 +1,8 @@
-# 购车发票
+# 机动车销售发票识别
 
 
 ## 描述
-购车发票
+机动车销售发票识别
 
 ## 请求方式
 
@@ -11,7 +11,7 @@ POST
 ## 请求地址
 
 ```apl
-https://aiapi.jdcloud.com/jdai/vehicleInvoiceRecognition
+https://aiapi.jd.com/jdai/vehicleInvoiceRecognition
 ```
 
 
@@ -26,7 +26,7 @@ https://aiapi.jdcloud.com/jdai/vehicleInvoiceRecognition
 | `businessId`      | string   | Y        | 业务id, 申请分配                                             |
 | `imageItem`       | Object   | Y        | 图片信息[公共请求参数实体#公共请求参数实体-4.图片信息](https://cf.jd.com/pages/viewpage.action?pageId=138528176#id-公共请求参数实体-公共请求参数实体-4.图片信息) |
 
-###  23.3.返回实体
+### 返回实体
 
 | 参数名称             | 参数类型             | 是否必填 | 参数说明         |
 | :------------------- | :------------------- | :------- | :--------------- |
@@ -51,7 +51,7 @@ https://aiapi.jdcloud.com/jdai/vehicleInvoiceRecognition
 | `invoiceCode`              | String   | N        | `发票代码`     |
 | `taxpayerIdentificationNo` | String   | N        | `纳税人识别号` |
 
-**23.4.请求参数示例**
+**请求参数示例**
 
 ```
 {
@@ -68,7 +68,7 @@ https://aiapi.jdcloud.com/jdai/vehicleInvoiceRecognition
 
 
 
-### 23.5.返回样例
+### 返回样例
 
 ```
 {
@@ -91,3 +91,4 @@ https://aiapi.jdcloud.com/jdai/vehicleInvoiceRecognition
     "timestamp": 1618381882201
 }
 ```
+
