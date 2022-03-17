@@ -360,7 +360,7 @@ public interface AppConnectorInterceptor extends AppInterceptor{
 ```
 ## 工具类
 ### JsonUtil
-Json工具，目前底层是通过Jackson实现的。建议开发者通过JsonUtil来序列化和反序列化JSON串，只有Jackson不支持的功能才引入其他的JSON工具类。
+Json工具，目前底层是通过Jackson实现的。建议开发者通过JsonUtil来序列化和反序列化JSON串，只有Jackson不支持的功能才引入其他的JSON工具类。使用时需要在Java/Groovy类中`import com.jd.starlink.engine.sdk.json.JsonUtil`。
 
 **源码**
 ```Java
@@ -416,7 +416,7 @@ public class JsonUtil {
 }
 ```
 ### StringUtil
-字符串工具，目前提供了判断是否空串、首字母转大写等方法。
+字符串工具，目前提供了判断是否空串、首字母转大写等方法。使用时需要在Java/Groovy类中`import com.jd.starlink.engine.sdk.util.StringUtil`。
 
 **源码**
 ```Java
