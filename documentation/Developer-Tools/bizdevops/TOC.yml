@@ -24,7 +24,7 @@
   - name: 操作指南
     items:
       - name: 工作台
-        href: Operation-Guide/myzone/dashboard.md
+        href: /Operation-Guide/myzone/dashboard.md
       - name: 团队空间
         items:
           - name: 团队空间
@@ -32,6 +32,7 @@
           - name: 评审约束
             href: /Operation-Guide/teamspace/space_check.md
       - name: 需求管理
+        href: /Operation-Guide/demand/demand.md
       - name: 项目管理
         href: /Operation-Guide/pmp/pmp.md
         items:
@@ -97,8 +98,12 @@
             href: /Operation-Guide/pipeline/pipeline_template.md
           - name: 其他
             href: /Operation-Guide/pipeline/pipeline_others.md
-      - name: 管理员说明
-        href: /Operation-Guide/admin/admin.md
+      - name: 平台管理
+        items:
+          - name: 管理员说明
+            href: /Operation-Guide/admin/admin.md
+          - name: 组织与用户管理
+            href: /Operation-Guide/admin/organisation_and_user.md
   - name: 常见问题
     href: /FAQ/FAQ.md
   - name: 相关资源
