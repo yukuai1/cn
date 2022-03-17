@@ -1,8 +1,8 @@
 #查看健康诊断报告
 
 ## 前提条件
-- 已开启 **智能运维** 服务，详情请参见 [开启智能运维服务]()
-- 至少已完成一次手工或自动集群健康诊断，并生成报告，详情请参见 [诊断集群健康状况]()
+- 已开启 **智能运维** 服务，详情请参见 [开启智能运维服务](../HealthCheck/Health_check_on.md)
+- 至少已完成一次手工或自动集群健康诊断，并生成报告，详情请参见 [诊断集群健康状况](../HealthCheck/Health_check_start.md)
 
 ## 操作步骤
 1. 访问[云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，进入集群管理页面。或访问 [京东云控制台](https://console.jdcloud.com/)，点击顶部导航栏 互联网中间件-云搜索Elasticsearch，进入集群管理页。
