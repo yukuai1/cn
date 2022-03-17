@@ -133,10 +133,26 @@
           href: Operation-Guide/Kibana.md 
         - name: Head
           href: Operation-Guide/head.md
+      - name: 智能运维
+        items:
+        - name: 智能运维概述
+          href: HealthCheck/Health_check_introduction.md 
+        - name: 开启智能运维服务
+          href: HealthCheck/Health_check_on.md
+        - name: 诊断集群健康状况
+          href: HealthCheck/Health_check_start.md
+        - name: 查看健康诊断报告
+          href: HealthCheck/Health_check_report.md
+        - name: 关闭智能运维服务
+          href: HealthCheck/Health_check_off.md
       - name: 访问控制
-        href: Operation-Guide/control.md
-      - name: 插件支持
-        href: Operation-Guide/IK.md      
+        items:
+        - name: 访问控制
+          href: Operation-Guide/control.md
+      - name: 插件配置
+        items:
+        - name: 插件支持
+          href: Operation-Guide/IK.md      
       - name: SQL支持
         href: Operation-Guide/sql.md     
   - name: 最佳实践
