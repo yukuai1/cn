@@ -2,16 +2,6 @@ name: 行驶证识别-数科智能技术
 href:
 items:
 
-- name: 操作指南
-  items:
-    - name: 如何开通
-      href: Operation-Guide/start.md
-- name: 开发指南
-  items:
-    - name: 获取AK/SK
-      href: SDK-Rerference/Authentication-Keys.md
-    - name: SDK使用方法
-      href: SDK-Rerference/Environment-Preparation.md
 - name: 接口文档
   items:
     - name: 接口概述

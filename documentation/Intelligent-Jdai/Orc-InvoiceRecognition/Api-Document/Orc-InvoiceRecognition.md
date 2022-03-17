@@ -11,7 +11,7 @@ POST
 ## 请求地址
 
 ```apl
-https://aiapi.jd.com/jdai/maskInsurance
+https://aiapi.jdcloud.com/jdai/invoiceRecognition
 ```
 
 ### 请求参数
