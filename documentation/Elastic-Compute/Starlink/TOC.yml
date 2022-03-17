@@ -31,12 +31,18 @@
         href: Getting-Started/Deploy-VMS.md
   - name: Demo示例
     items:
+      - name: Hello World
+        href: Demo/HelloWorld.md
       - name: Java示例
         href: Demo/Java.md
       - name: Groovy示例
         href: Demo/Groovy.md
       - name: JavaScript示例
         href: Demo/JavaScript.md
+      - name: Hello Health
+        href: Demo/HelloHealth.md
+      - name: Hello AI
+        href: Demo/HelloAI.md
   - name: 操作指南
     items:
        - name: 开发VMS

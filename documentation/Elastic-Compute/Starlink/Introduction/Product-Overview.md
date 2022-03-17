@@ -10,7 +10,7 @@
 
 除了提升研发工作的抽象层次，提升效率，星链充分考虑灵活性，完整支持代码功能，且支持多语言，目前支持Java/JavaScript/Groovy，更多语言支持在规划中，支持在线代码函数编写，支持在线调试。
 
-与大多低代码平台是黑盒不同，星链开发的VMS保存在Git仓库上，源码是完全可见的，用户可以克隆到本地开发，可以使用本地IDE如IDEA/VS Code开发，支持引入第三方标准类库，而且，代码提交后，在Cloud Web IDE上也完全兼容可见。
+与大多低代码平台是黑子不同，星链开发的VMS保存在Git仓库上，源码是完全可见的，用户可以克隆到本地开发，可以使用本地IDE如IDEA/VS Code开发，支持引入第三方标准类库，而且，代码提交后，在Cloud Web IDE上也完全兼容可见。
 
 ### 微服务
 
@@ -48,9 +48,12 @@
   - [开发VMS](../Getting-Started/Dev-VMS.md)
   - [部署VMS](../Getting-Started/Deploy-VMS.md)
 - Demo示例
+  - [Hello World](../Demo/HelloWorld.md)
   - [Java示例](../Demo/Java.md)
   - [Groovy示例](../Demo/Groovy.md)
   - [JavaScript示例](../Demo/JavaScript.md)
+  - [出行防疫政策API示例](../Demo/HelloHealth.md)
+  - [AI服务示例](../Demo/HelloAI.md)
 - 开发VMS
   - [开发触发器](../Operation-Guide/Dev/Trigger.md)
   - [开发连接器](../Operation-Guide/Dev/Connector.md)
