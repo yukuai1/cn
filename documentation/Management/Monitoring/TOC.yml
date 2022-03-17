@@ -163,7 +163,9 @@ items:
     - name: 分布式事务
       href: Metrics/jdts.md
     - name: 堡垒机
-      href: Metrics/bastion.md 
+      href: Metrics/bastion.md
+    - name: 云物理服务器
+      href: Metrics/cps.md     
 - name: 教程
   items:
   status: 0
