@@ -18,10 +18,10 @@ https://captcha.jdcloud-api.com/v1/captcha:verifytoken
 |**sessionId**|String|True| |验证码会话id，getsessionid返回|
 |**appId**|Long|True| |应用id|
 |**sceneId**|Long|True| |场景id|
+|**secret**|String|True| |密钥，从界面获取|
 |**ip**|String|True| |客户端ip|
 |**userAgent**|String|True| |客户端userAgent|
-|**fingerPrint**|String|True| |指纹，客户端sdk获取|
-|**clientType**|String|True| |客户端类型, android, ios|
+|**clientType**|String|True| |客户端类型, 可选值: android, ios, pc, wxapp, m|
 |**clientVersion**|String|False| |客户端版本，用户端app版本，可选|
 
 
@@ -30,11 +30,11 @@ https://captcha.jdcloud-api.com/v1/captcha:verifytoken
 |---|---|---|
 |**result**|Result| |
 
-### <div id="Result">Result</div>
+### Result
 |名称|类型|描述|
 |---|---|---|
 |**data**|VerifyDataResp| |
-### <div id="VerifyDataResp">VerifyDataResp</div>
+### VerifyDataResp
 |名称|类型|描述|
 |---|---|---|
 |**code**|String|代号，0000:验证成功，0001:验证失败，0002:内部错误|

@@ -53,8 +53,8 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 ### <div id="denyactioncfg">DenyActionCfg</div>
 |名称|类型|描述|
 |---|---|---|
-|**atOp**|Integer|黑名单匹配动作类型 1-4 分别表示forbidden@1 redirect@2 verify@captcha3 verify@jscookie4 5-告警(自定义bot增加)，6-302cookie(自定义bot增加)|
-|**atVal**|String|黑名单匹配动作内容 当atOp为3/4时，atVal为空，atOp=1时，atVal为自定义页面,atOp=2时，atVal为跳转url。|
+|**atOp**|Integer|黑名单匹配动作类型 1-4 分别表示forbidden@1 redirect@2 verify@captcha3 verify@jscookie4 5-告警(自定义bot增加)，6-302cookie(自定义bot增加), 7-cc动态防护|
+|**atVal**|String|黑名单匹配动作内容 当atOp为3/4/7时，atVal为空，atOp=1时，atVal为自定义页面,atOp=2时，atVal为跳转url。|
 
 ## 返回码
 |返回码|描述|

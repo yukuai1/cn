@@ -17,11 +17,11 @@ https://captcha.jdcloud-api.com/v1/captcha:getsessionid
 |**appId**|Long|True| |应用id|
 |**sceneId**|Long|True| |场景id|
 |**secret**|String|True| |密钥，从界面获取|
-|**uuid**|String|True| |uuid，ios客户端传openudid, android客户端传androidid|
+|**uuid**|String|False| |uuid，ios客户端传openudid, android客户端传androidid, m, pc, wxapp客户端此值为空即可|
 |**ip**|String|True| |客户端ip|
 |**userAgent**|String|True| |客户端userAgent|
-|**fingerPrint**|String|True| |指纹，客户端sdk获取|
-|**clientType**|String|True| |客户端类型, android, ios|
+|**fingerPrint**|String|True| |指纹，ios和android客户端(clientType)从sdk获取, m, pc, wxapp客户端此值为空即可|
+|**clientType**|String|True| |客户端类型, android, ios, pc, wxmapp, m|
 |**clientVersion**|String|False| |客户端版本，用户端app版本，可选|
 
 
@@ -30,11 +30,11 @@ https://captcha.jdcloud-api.com/v1/captcha:getsessionid
 |---|---|---|
 |**result**|Result| |
 
-### <div id="Result">Result</div>
+### Result
 |名称|类型|描述|
 |---|---|---|
 |**data**|SessionDataResp| |
-### <div id="SessionDataResp">SessionDataResp</div>
+### SessionDataResp
 |名称|类型|描述|
 |---|---|---|
 |**code**|String|代号, 0000:通过，0001:拒绝，0002:内部错误，0003:补充验证|

@@ -163,8 +163,6 @@ items:
             href: API-Reference/CDN-Open-API/Query-pv.md
           - name: 查询刷新任务
             href: API-Reference/CDN-Open-API/Query-refresh.md
-          - name: 实时调度覆盖关系
-            href: API-Reference/CDN-Open-API/Query-scheduling-relationship.md
           - name: 查询TOP IP
             href: API-Reference/CDN-Open-API/Query-top-ip.md
           - name: 查询TOP URL
@@ -251,6 +249,8 @@ items:
                  href: JCloud-Openapi-For-CDN/getDomainList.md
                - name: getDomainListByFilter
                  href: JCloud-Openapi-For-CDN/getDomainListByFilter.md
+               - name: queryDomainConfig
+                 href: JCloud-Openapi-For-CDN/queryDomainConfig.md
                - name: queryLiveDomainDetail
                  href: JCloud-Openapi-For-CDN/queryLiveDomainDetail.md
                - name: queryDomainGroupDetail
@@ -291,8 +291,6 @@ items:
                  href: SSL-Certificate/getSslCertDetail.md
                - name: getSslCertList
                  href: SSL-Certificate/getSslCertList.md
-               - name: queryBackSourceRule
-                 href: JCloud-Openapi-For-CDN/queryBackSourceRule.md
                - name: queryUrlRule
                  href: JCloud-Openapi-For-CDN/queryUrlRule.md
                - name: queryHttp2
@@ -359,8 +357,6 @@ items:
                  href: JCloud-Openapi-For-CDN/setFollowSourceProtocol.md
                - name: uploadCert
                  href: SSL-Certificate/uploadCert.md
-               - name: queryDomainConfig
-                 href: JCloud-Openapi-For-CDN/queryDomainConfig.md
                - name: setExtraCacheTime
                  href: JCloud-Openapi-For-CDN/setExtraCacheTime.md
                - name: deleteExtraCacheTime
@@ -371,8 +367,6 @@ items:
                  href: JCloud-Openapi-For-CDN/setSourceAuthConfig.md
                - name: setIpBlackList
                  href: JCloud-Openapi-For-CDN/setIpBlackList.md
-               - name: configBackSourceRule
-                 href: JCloud-Openapi-For-CDN/configBackSourceRule.md
                - name: configUrlRule
                  href: JCloud-Openapi-For-CDN/configUrlRule.md
                - name: configHttp2

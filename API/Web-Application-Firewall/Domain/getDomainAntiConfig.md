@@ -56,7 +56,19 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |**statusConf**|[StatusConf](getdomainanticonfig#statusconf)|状态码修改配置|
 |**uriRewriteConf**|[UriRewriteConf](getdomainanticonfig#urirewriteconf)|网站uri重写规则配置|
 |**proxycacheConf**|[EnableConf](getdomainanticonfig#enableconf)|proxy缓存配置|
-|**riskConf**|[EnableConf](getdomainanticonfig#enableconf)|risk配置|
+|**riskConf**|[RiskConf](getdomainanticonfig#riskconf)|risk配置|
+|**botConf**|[BotConf](getdomainanticonfig#botconf)|bot配置|
+### <div id="botconf">BotConf</div>
+|名称|类型|描述|
+|---|---|---|
+|**enable**|Integer|已知类型bot。1-使能 0-禁止|
+|**enableUserDefine**|Integer|自定义类型bot。1-使能 0-禁止|
+|**enableThreatIp**|Integer|bot IDC开关。1-使能 0-禁止|
+### <div id="riskconf">RiskConf</div>
+|名称|类型|描述|
+|---|---|---|
+|**enable**|Integer|数据风控。1-使能 0-禁止|
+|**enableAccount**|Integer|账户安全。1-使能 0-禁止|
 ### <div id="enableconf">EnableConf</div>
 |名称|类型|描述|
 |---|---|---|
@@ -103,7 +115,8 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |---|---|---|
 |**enable**|Integer|是否使能 0表示否|
 |**wafMode**|Integer|0表示防护，1表示预警|
-|**wafLevel**|Integer|0表示宽松，1表示正常，2表示严格|
+|**wafLevel**|Integer|0表示宽松，1表示正常，2表示严格, 3表示自定义|
+|**usrPolicy**|Long|自定义规则集Id|
 |**redirection**|String|自定义页面名称|
 ### <div id="userdefpageconf">UserDefPageConf</div>
 |名称|类型|描述|
@@ -139,6 +152,12 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |**qps**|Integer|qps配置|
 |**enableUserDefine**|Integer|是否支持自定义cc，0表示否|
 |**rulesCount**|Integer|cc自定义规则个数|
+|**action**|[DenyActionCfg](getdomainanticonfig#denyactioncfg)|动作配置，默认为告警，支持1，2，3和5四种类型动作|
+### <div id="denyactioncfg">DenyActionCfg</div>
+|名称|类型|描述|
+|---|---|---|
+|**atOp**|Integer|黑名单匹配动作类型 1-4 分别表示forbidden@1 redirect@2 verify@captcha3 verify@jscookie4 5-告警(自定义bot增加)，6-302cookie(自定义bot增加), 7-cc动态防护|
+|**atVal**|String|黑名单匹配动作内容 当atOp为3/4/7时，atVal为空，atOp=1时，atVal为自定义页面,atOp=2时，atVal为跳转url。|
 ### <div id="aclconf">AclConf</div>
 |名称|类型|描述|
 |---|---|---|

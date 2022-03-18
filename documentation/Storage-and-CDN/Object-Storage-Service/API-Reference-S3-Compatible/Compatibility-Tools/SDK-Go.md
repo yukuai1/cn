@@ -3,7 +3,7 @@
 ## 概述
 
 本文档基于[AWS Go SDK](https://docs.aws.amazon.com/sdk-for-go/api/) 编写。京东云对象存储支持AWS S3接口，具体兼容的接口可在
-[兼容接口](../Compatibility-API/Compatibility-API-Overview.md)查看。
+[兼容接口](../../../../../API/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Compatibility-API-Overview.md)查看。
 
 ## 环境准备
 请使用Go 1.5及以上版本，如需安装或更新Golang，请访问[Golang](https://golang.org/doc/install)。

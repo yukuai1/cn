@@ -1,6 +1,10 @@
-﻿  name: 共享带宽包
+  name: 共享带宽包
   href: 
   items:
+  - name: 产品动态
+    items:
+      - name: 文档历史记录
+        href: Related-Resources/Release-Records.md
   - name: 产品简介
     items:
       - name: 产品概述
@@ -50,6 +54,11 @@
         href: Operation-Guide/Search-Bwp.md
       - name: 查看共享带宽包监控信息
         href: Operation-Guide/View-Monitoring.md
+      - name: 标签
+        href: Operation-Guide/Tag-Management.md
+      - name: 资源组
+        href: Operation-Guide/Resource-Group-Management.md       
+        
   - name: 最佳实践
     items:
     status: 0
