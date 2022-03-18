@@ -19,11 +19,11 @@
 
 |metric|中文名称|英文名称|单位|备注|
 |:--|:--|:--|:--|:--|
-|tidb_pod_cpu_util|CPU使用率|CPUUsage|%|
-|tidb_pod_memory_usage|内存使用率|MemoryUsage|%|
-|tidb_pod_pv_usage|磁盘使用率|DiskUsage|%|
-|tidb_kubelet_volume_stats_used_bytes|磁盘使用量|DiskUsed|GB|
-|tidb_container_network_transmit_bytes_total|网络出速率|NetworkOutboundRate|Kbps|
-|tidb_container_network_receive_bytes_total|网络进速率|NetworkInboundRate|Kbps|
-|tidb_container_network_transmit_packets_total|网络出包量|NetworkOutboundPackets|个/s|
-|tidb_container_network_receive_packets_total|网络进包量|NetworkInboundPackets|个/s|
+|tidb_pod_cpu_util|CPU使用率|CPU Usage|%|
+|tidb_pod_memory_usage|内存使用率|Memory Usage|%|
+|tidb_pod_pv_usage|磁盘使用率|Disk Usage|%|
+|tidb_kubelet_volume_stats_used_bytes|磁盘使用量|Disk Used|GB|
+|tidb_container_network_transmit_bytes_total|网络出速率|Network Outbound Rate|Kbps|
+|tidb_container_network_receive_bytes_total|网络进速率|Network Inbound Rate|Kbps|
+|tidb_container_network_transmit_packets_total|网络出包量|Network Outbound Packets|个/s|
+|tidb_container_network_receive_packets_total|网络进包量|Network Inbound Packets|个/s|
