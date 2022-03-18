@@ -1,4 +1,4 @@
-# 行驶证
+# 行驶证识别
 
 
 ## 描述
@@ -18,15 +18,12 @@ https://aiapi.jdcloud.com/jdai/vehicleLicense
 
 ### 请求参数
 
-| 参数名称          | 参数类型 | 是否必填 | 参数说明                                                     |
-| :---------------- | :------- | :------- | :----------------------------------------------------------- |
-| `serialNo`        | string   | N        | 请求流水号, 不传接口自动生成                                 |
-| `appName`         | string   | Y        | 授权appName, 申请分配                                        |
-| `appAuthorityKey` | string   | Y        | 授权key, 申请分配                                            |
-| `businessId`      | string   | Y        | 业务id, 申请分配                                             |
-| ```imageItem```   | Object   |          | 图片信息[公共请求参数实体#公共请求参数实体-4.图片信息](https://cf.jd.com/pages/viewpage.action?pageId=138528176#id-公共请求参数实体-公共请求参数实体-4.图片信息) |
-| `extMap`          | map      | N        | 附加信息, 特殊需求处理                                       |
-| cardType          | string   | N        | 取值【“primary”, "vice", "unknown"】注: 若行驶证主副页未知, 传"unknown"字段. |
+| 参数名称   | 参数类型 | 是否必填 | 参数说明                                                     |
+| :--------- | :------- | :------- | :----------------------------------------------------------- |
+| `serialNo` | string   | N        | 请求流水号, 不传接口自动生成                                 |
+| imageItem  | Object   |          | 图片信息                                                     |
+| `extMap`   | map      | N        | 附加信息, 特殊需求处理                                       |
+| cardType   | string   | N        | 取值【“primary”, "vice", "unknown"】注: 若行驶证主副页未知, 传"unknown"字段. |
 
 
 
@@ -37,18 +34,18 @@ https://aiapi.jdcloud.com/jdai/vehicleLicense
 | `code`                | int      |          | 返回code码0:成功                            |
 | `msg`                 | string   |          | msg                                         |
 | `serialNo`            | string   |          | 交互的流水号                                |
-| ```recognitionInfo``` | String   |          | `识别结果```                                |
-| `--plateNo`           | string   |          | `号牌号码`                                  |
-| `--vehicleType`       | string   |          | `车辆类型`                                  |
-| `--owner```           | string   |          | ```所有人`                                  |
-| `--address```         | string   |          | `地址`                                      |
-| `--model```           | string   |          | `品牌型号`                                  |
-| `--useCharacter```    | string   |          | ```使用性质```                              |
-| `--engineNo```        | string   |          | `发动机号`                                  |
-| `--vin```             | string   |          | `车辆识别码`                                |
-| `--registerDate```    | string   |          | `注册时间`                                  |
-| `--issueDate```       | string   |          | `发证时间`                                  |
-| `--cardType`          | string   |          | 主页：“primary”,副页："vice", 或者"unknown" |
+| ```recognitionInfo``` | String   |          | 识别结果                                |
+| plateNo`           | string   |          | 号牌号码                                  |
+| vehicleType`       | string   |          | 车辆类型                                  |
+| owner                                  |string||所有人|
+| address                                      |string||地址|
+| model                                  |string||品牌型号|
+| useCharacter                              |string||使用性质|
+| engineNo                                  |string||发动机|
+| vin                                |string||车辆识别|
+| registerDate                                  |string||注册|
+| issueDate                                  |string||发证时|
+| cardType          | string   |          | 主页：“primary”,副页："vice", 或者"unknown" |
 
 
 
@@ -57,9 +54,6 @@ https://aiapi.jdcloud.com/jdai/vehicleLicense
 ```
 
 {
-	"appName": "FACE_xxx",
-	"appAuthorityKey": "sADxxx==",
-	"businessId": "FACE-xxxxxx",
 	"cardType": "primary",
 	"imageItem": {
 		"encryptionType": "NON",
