@@ -73,6 +73,8 @@
              href: Operation-Guide/Deploy/Process.md
            - name: 部署
              href: Operation-Guide/Deploy/Deploy.md
+           - name: 监控报警
+             href: Operation-Guide/Deploy/Monitor.md
        - name: 管理
          items:
            - name: 团队管理
