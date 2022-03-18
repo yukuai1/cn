@@ -32,7 +32,7 @@ H5离线加载，实现web页面快速加载。
 ### 3.1.3 主工程配置
 
 将`JDTH5Offline.framework`中`JDTH5Offline.bundle`拖入到项目中。
-![image-20211204170004675](../../../../../image/MPaas/H5-Offline/iOS/WX20220302-202318@2x.png)
+![image-20211204170004675](../../../../image/MPaas/H5-Offline/iOS/WX20220302-202318@2x.png)
 
 ### 3.2 主工程集成
 
@@ -121,11 +121,11 @@ config.recodTrackData = ^(NSString* bid, NSDictionary* params) {
 
 内置包分为zip包和配置文件，如下图所示
 
-![image-20211204170004675](../../../../../image/MPaas/H5-Offline/iOS/image-20211204170004675.png)
+![image-20211204170004675](../../../../image/MPaas/H5-Offline/iOS/image-20211204170004675.png)
 
 内置zip包需从控制台下载加密的zip，并将配置信息填入JDTOF_Config.plist文件中，配置文件信息如下：
 
-![image-20211204170240180](../../../../../image/MPaas/H5-Offline/iOS/image-20211204170240180.png)
+![image-20211204170240180](../../../../image/MPaas/H5-Offline/iOS/image-20211204170240180.png)
 
 version，versionWithFile这两个字段保持一致，对应控制台版本标识，baseurl对应控制台baseurl，loadBundle是zip包的命名。
 

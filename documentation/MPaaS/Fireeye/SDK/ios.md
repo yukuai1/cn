@@ -35,7 +35,7 @@
 ### 3.1.3 主工程配置
 将`JDTHuoYan.framework`中`JDTHuoYan.bundle`拖入到项目中。  
 
-![image-20211204170004675](../../../../../image/MPaas/Fireeye/iOS/WX20220302-202642@2x.png)
+![image-20211204170004675](../../../../image/MPaas/Fireeye/iOS/WX20220302-202642@2x.png)
 ### 3.2 主工程配置
 
 1.手动集成火眼SDK。  
@@ -46,7 +46,7 @@
 
 5.将`JDTHuoYan.framework`中`JDTHuoYan.bundle`拖入到项目中。  
 
-![](../../../../../image/MPaas/Fireeye/iOS/DE4A45EE-AEF3-44AD-A6D3-70670806F6E9.png)
+![](../../../../image/MPaas/Fireeye/iOS/DE4A45EE-AEF3-44AD-A6D3-70670806F6E9.png)
 ## 4. 基本功能
 ### 4.1 初始化配置  
 application:didFinishLaunchingWithOptions 中初始化SDK。 

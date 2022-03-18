@@ -35,7 +35,7 @@
 ### 3.1.3 主工程配置
 将`JDTTestFlight.framework`中`JDTTestFlight.bundle`拖入到项目中。
 
-![技术架构图](../../../../../image/MPaas/APP-Publish/iOS/iamge1.png)
+![技术架构图](../../../../image/MPaas/APP-Publish/iOS/iamge1.png)
 
 ### 3.2 主工程集成
 

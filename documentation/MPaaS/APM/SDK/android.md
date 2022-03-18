@@ -120,7 +120,7 @@ APM.initialize(apmConfigBuilder.build());
 
 在主界面Activity(一般为启动页跳转后的页面或MainActivity)的类上增加注解 @StartupDone，确保Activity中包含有onCreate方法。
 后台管理界面获取的数据如下图
-![start](../../../../../image/MPaas/APM/android/start.png)
+![start](../../../../image/MPaas/APM/android/start.png)
 参数说明：
 
 |        字段       |              备注                    |
@@ -163,7 +163,7 @@ ApmInstance.getInstance().addErrorLogMonitor(apmErrorLogMonitor);
 |    错误日志Id      |          跟入参的type值保持一致        |
 |   错误日志类型名称  |          代表含义，可以自己定义         |
 
-![error](../../../../../image/MPaas/APM/android/errorLog.png)
+![error](../../../../image/MPaas/APM/android/errorLog.png)
 
 ## 5. 高级功能
 
