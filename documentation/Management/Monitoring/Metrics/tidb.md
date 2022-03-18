@@ -2,7 +2,7 @@
 
 该产品线监控数据的servicecode：tidb ，其提供的监控指标如下：
 
-## TiDB 实例
+## TiDB 集群的监控指标
 |metric|中文名称|英文名称|单位|说明|
 |:-|:-|:-|:-|:-|
 |tidb.type_storage_size.pd_cluster_status|已用存储空间大小|Current storage size|GB||
@@ -15,7 +15,7 @@
 |tidb.type_Select.executor_statement_total|SQL执行数量(查询)|Statement OPS(select)|个||
 |tidb.tidb_executor_statement_total|每秒查询数|QPS|个||
 
-## TiDB 中的节点
+## TiDB 中的节点的监控指标
 
 |metric|中文名称|英文名称|单位|备注|
 |:--|:--|:--|:--|:--|
