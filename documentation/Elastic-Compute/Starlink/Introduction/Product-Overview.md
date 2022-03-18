@@ -68,6 +68,7 @@
   - [构建](../Operation-Guide/Deploy/Build.md)
   - [发布审批](../Operation-Guide/Deploy/Process.md)
   - [部署](../Operation-Guide/Deploy/Deploy.md)
+  - [监控报警](../Operation-Guide/Deploy/Monitor.md)
 - 管理
   - [团队管理](../Operation-Guide/Management/Team.md)
   - [VMS管理](../Operation-Guide/Management/VMS.md)
