@@ -6,8 +6,8 @@
 
 |   监控指标   |  单位   | metric	  |   说明   |   备注  | 
 | :--- | :---:  |:---  |:---  |:---  |
-| 	实例平均CPU使用率  | 	%	   | -  | 单位时间内Redis实例所有Master节点的平均CPU使用率  |通过[describeMetrics](https://docs.jdcloud.com/cn/monitoring/api/describemetrics)获取监控数据时，aggreType 设置为 avg | 
-| 	实例平均CPU使用率  | 	%	   | -  | 单位时间内Redis实例所有Master节点的平均CPU使用率  |通过[describeMetrics](https://docs.jdcloud.com/cn/monitoring/api/describemetrics)获取监控数据时，aggreType 设置为 avg | 
+| 	实例平均CPU使用率  | 	%	   | -  | 单位时间内Redis实例所有Master节点的平均CPU使用率  |通过[describeMetricData](https://docs.jdcloud.com/cn/monitoring/api/describemetricdata)获取监控数据时，aggreType 设置为 avg | 
+| 	实例平均CPU使用率  | 	%	   | -  | 单位时间内Redis实例所有Master节点的平均CPU使用率  |通过[describeMetricData](https://docs.jdcloud.com/cn/monitoring/api/describemetricdata)获取监控数据时，aggreType 设置为 avg | 
 | 	实例最大CPU使用率   |   %	 | -  |   单位时间内Redis实例所有Master节点中最大节点的CPU使用率   | 获取监控数据时，aggreType 设置为 max |   
 | 	代理CPU使用率   |   %	   |   jmiss.redis.proxy.container.cpu.util   |   单位时间内单个proxy代理的CPU使用率   |   |
 | 	CPU使用率（节点）   |   %	   |   jmiss.redis.instance.container.cpu.util   |   单位时间内单个节点的CPU使用率。可单独查看master节点、slave节点、shard分片维度的情况。   |   |
