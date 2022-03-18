@@ -3,7 +3,9 @@
 
 ## 描述
 
-存量主机加入高可用组，或者主机从一个高可用组移动到另一个高可用组
+存量主机加入高可用组，或者主机从一个高可用组移动到另一个高可用组。
+
+详细操作说明请参考帮助文档：[调整高可用组](https://docs.jdcloud.com/cn/virtual-machines/modify-instance-ag)、[手动添加实例](https://docs.jdcloud.com/cn/availability-group/add-instance-manually)
 
 ## 接口说明
 
