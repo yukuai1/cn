@@ -2,7 +2,19 @@
 
 该产品线监控数据的servicecode：tidb ，其提供的监控指标如下：
 
-## 一、前端展示指标
+|metric|中文名称|英文名称|说明
+|:-|:--|:--|:--
+|tidb.type_storage_size.pd_cluster_status|已用存储空间大小|Current storage size|
+|tidb.type_storage_capacity.pd_cluster_status|存储空间大小|Current storage capacity|
+|tidb.component_tidb.server_connections|每个TiDB连接数|Connection Count|
+|tidb.session_transaction_duration_seconds_count|每秒事务执行数量|Transaction OPS|
+|tidb.type_Insert.executor_statement_total|SQL执行数量(插入)|Statement OPS(insert)|
+|tidb.type_Delete.executor_statement_total|SQL执行数量(删除)|Statement OPS(delete)|
+|tidb.type_Update.executor_statement_total|SQL执行数量(更新)|Statement OPS(update)|
+|tidb.type_Select.executor_statement_total|SQL执行数量(查询)|Statement OPS(select)|
+|tidb.tidb_executor_statement_total|每秒查询数|QPS|
+
+
 |metric中文展示名称|metric英文展示名称|code|type|downsample-aggregator|grouping-aggregator|变化率展示|tags(必须/不必须)|间隔|上报单位|monitor展示单位|单位转换公式(convertFrom/convertTo)|是否前端展示|是否可用于创建告警规则|创建报警规则的特殊需求|
 |-|:--|:-:|:-:|:-:|:-:|:-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |已用存储空间大小|Current storage size|tidb.type_storage_size.pd_cluster_status|时刻|avg|none|N|type(storage_size):Y|60s|GB|GB|1|Y|Y|无|
