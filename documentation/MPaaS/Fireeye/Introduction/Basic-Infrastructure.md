@@ -12,4 +12,4 @@
 
 产品架构如下图：
 
-![技术架构图](../../../../../image/MPaas/Fireeye/1.png)
+![技术架构图](../../../../image/MPaas/Fireeye/1.png)

@@ -6,4 +6,4 @@
 
 技术架构如下图：
 
-![技术架构图](../../../../../image/MPaas/APP-Publish/1.png)
+![技术架构图](../../../../image/MPaas/APP-Publish/1.png)

@@ -6,4 +6,4 @@
 
 业务架构如下图：
 
-![业务架构图](../../../../../image/MPaas/Mobile-Gateway/1.png)
+![业务架构图](../../../../image/MPaas/Mobile-Gateway/1.png)
