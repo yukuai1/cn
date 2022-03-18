@@ -25,3 +25,7 @@
 
 ![image](https://user-images.githubusercontent.com/88134774/155670992-2f1b6f16-f1f9-415c-9a8d-fad2492bea8d.png)
 
+
+## 相关参考
+
+[调整实例高可用组](https://docs.jdcloud.com/cn/virtual-machines/api/modifyinstanceplacement?content=API)

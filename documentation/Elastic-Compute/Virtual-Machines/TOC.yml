@@ -141,6 +141,8 @@ items:
             href: Operation-Guide/Instance-Template/Instance-Template-Overview.md
           - name: 创建实例模板
             href: Operation-Guide/Instance-Template/Create-Instance-Template.md
+          - name: 修改实例模板
+            href: Operation-Guide/Instance-Template/Modify-Instance-Template.md
           - name: 删除实例模板
             href: Operation-Guide/Instance-Template/Delete-Instance-Template.md
           - name: 实例模板FAQ
