@@ -147,8 +147,20 @@
           href: HealthCheck/Health_check_off.md
       - name: 访问控制
         items:
-        - name: 访问控制
+        - name: IAM访问控制
           href: Operation-Guide/control.md
+        - name: 用户鉴权
+          items:
+          - name: 用户鉴权概述
+            href: Operation-Guide/Auth/Auth_introduction.md
+          - name: 开启用户鉴权
+            href: Operation-Guide/Auth/Auth_on.md
+          - name: 角色管理
+            href: Operation-Guide/Auth/Role_manage.md
+          - name: 用户管理
+            href: Operation-Guide/Auth/User_manage.md
+          - name: 关闭用户鉴权
+            href: Operation-Guide/Auth/关闭用户鉴权
       - name: 插件配置
         items:
         - name: 插件支持
