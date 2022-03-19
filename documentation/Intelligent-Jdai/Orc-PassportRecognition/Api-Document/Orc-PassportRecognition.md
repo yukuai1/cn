@@ -1,4 +1,4 @@
-# 护照
+# 护照信息识别
 
 
 ## 描述
@@ -16,13 +16,23 @@ https://aiapi.jdcloud.com/jdai/realStateCertRecognition
 
 ### 请求参数
 
-| 参数名称          | 参数类型 | 是否必填 | 参数说明                                                     |
-| :---------------- | :------- | :------- | :----------------------------------------------------------- |
-| `serialNo`        | string   | N        | 请求流水号, 不传接口自动生成                                 |
-| appName           | string   | Y        | 授权appName, 申请分配                                        |
-| `appAuthorityKey` | string   | Y        | 授权key, 申请分配                                            |
-| `businessId`      | string   | Y        | 业务id, 申请分配                                             |
-| `imageItem`       | Object   |          | 图片信息[公共请求参数实体#公共请求参数实体-4.图片信息](https://cf.jd.com/pages/viewpage.action?pageId=138528176#id-公共请求参数实体-公共请求参数实体-4.图片信息) |
+| 参数名称  | 参数类型 | 是否必填 | 参数说明                     |
+| :-------- | :------- | :------- | :--------------------------- |
+| serialNo  | string   | N        | 请求流水号, 不传接口自动生成 |
+| imageItem | Object   |          | 图片信息                     |
+
+imageItem对象信息说明
+
+| 参数名称       | 参数类型 | 是否必填 | 示例值 | 参数说明                                                     |
+| -------------- | -------- | -------- | ------ | ------------------------------------------------------------ |
+| imgType        | enum     | 是       | DL     | 图片的类型 SFF("采集照")，FF("全景采集照")，NIR("双目采集的近红外照片")，DEEP("深度采集的照片")，IDP("身份证正面")，IDN("身份证反面")，MP("网纹照")，AP("动作照")，VL("行驶证")，DL("驾驶证")，BC("银行卡")，BL("营业执照")，LP("车牌")，COM("通用图片 |
+| imgBase64      | String   | 是       | DL     | /9j/4AAQSkZJRgABAQAAAQABAA...                                |
+| filename       | String   | 否       |        | 图片的存储名, 指定了则不读base64                             |
+| imgUrl         | String   | 否       |        | 图片的Url地址（外网地址可能会有socket连接超时问题，建议传base64） |
+| imgArr         | byte[]   | 否       |        | 图片的二进制                                                 |
+| encryptionType | enum     | 是       | NON    | 加密方式 AKS,LICENSE,NON AKS解密方式：com.wangyin.key.server.DeviceCryptoService#decryptEnvelop 版本号1.5.3 |
+
+
 
 ###  返回实体
 
@@ -54,9 +64,6 @@ https://aiapi.jdcloud.com/jdai/realStateCertRecognition
 
 ```
 {
-    "appAuthorityKey": "aKG/VUsDM7EjJIA7T7B8oA==",
-    "appName": "JD_SFYL_OCR",
-    "businessId": "JDD-OCR-TEST-PLAT",
     "imageItem": {
         "encryptionType": "NON",
         "imgBase64": "图片base64",
@@ -79,17 +86,17 @@ https://aiapi.jdcloud.com/jdai/realStateCertRecognition
 
 
 
-| 参数名`imageItem`  | 参数类型 | 是否必填                     | 参数说明                                                     |
-| ------------------ | -------- | ---------------------------- | ------------------------------------------------------------ |
-| `--imgType`` `     | enum     | N（OCR服务不用指定图片类型） | `图片的类型``SFF("采集照"),FF("全景采集照"),NIR("双目采集的近红外照片"),DEEP("深度采集的照片"),IDP("身份证正面"),IDN("身份证反面"),MP("网纹照"),AP("动作照"),``VL("行驶证"),``DL("驾驶证"),``BC("银行卡")``BL("营业执照")``LP("车牌")`COM("通用图片") |
-| `--imgBase64`      | string   | Y                            | `图片的Base64`                                               |
-| `--filename`       | string   | N                            | 图片的存储名, 指定了则不读base64                             |
-| `--imgUrl`         | string   | N                            | 图片的Url地址（外网地址可能会有socket连接超时问题，建议传base64） |
-| `--imgArr`         | byte[]   | N                            | 图片的二进制                                                 |
-| `--encryptionType` | enum     | Y                            | `加密方式``/** * aks加密方式 */AKS,/** * license 加密 */LICENSE,/** * 不加密 */NON,AKS解密方式：``com.wangyin.key.server.DeviceCryptoService#decryptEnvelop  版本号1.5.3` |
-| `faceLocation`     | object   | N                            | 人脸坐标                                                     |
-| `--top`            | int      | Y                            | 坐标开始Y方向                                                |
-| `--left`           | int      | Y                            | 坐标开始X方向                                                |
-| `--width`          | int      | Y                            | 人脸图片宽度                                                 |
-| `--height`         | int      | Y                            | 人脸图片高度                                                 |
+| 参数名`imageItem` | 参数类型 | 是否必填                     | 参数说明                                                     |
+| ----------------- | -------- | ---------------------------- | ------------------------------------------------------------ |
+| imgType           | enum     | N（OCR服务不用指定图片类型） | `图片的类型``SFF("采集照"),FF("全景采集照"),NIR("双目采集的近红外照片"),DEEP("深度采集的照片"),IDP("身份证正面"),IDN("身份证反面"),MP("网纹照"),AP("动作照"),``VL("行驶证"),``DL("驾驶证"),``BC("银行卡")``BL("营业执照")``LP("车牌")`COM("通用图片") |
+| imgBase64         | string   | Y                            | `图片的Base64`                                               |
+| filename          | string   | N                            | 图片的存储名, 指定了则不读base64                             |
+| imgUrl            | string   | N                            | 图片的Url地址（外网地址可能会有socket连接超时问题，建议传base64） |
+| imgArr            | byte[]   | N                            | 图片的二进制                                                 |
+| encryptionType    | enum     | Y                            | `加密方式``/** * aks加密方式 */AKS,/** * license 加密 */LICENSE,/** * 不加密 */NON,AKS解密方式：``com.wangyin.key.server.DeviceCryptoService#decryptEnvelop  版本号1.5.3` |
+| faceLocation      | object   | N                            | 人脸坐标                                                     |
+| top               | int      | Y                            | 坐标开始Y方向                                                |
+| left              | int      | Y                            | 坐标开始X方                                                  |
+| width             | int      | Y                            | 人脸图片宽度                                                 |
+| height            | int      | Y                            | 人脸图片高度                                                 |
 
