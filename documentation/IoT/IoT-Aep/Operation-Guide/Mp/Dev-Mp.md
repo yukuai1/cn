@@ -26,7 +26,7 @@
 
 ## 开发小程序
 
-   开发者可以在 [小程序开发文档](https://iotaep-stag.s3.cn-north-1.jdcloud-oss.com/index/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E6%96%87%E6%A1%A3-1.0.2.pdf) 上了解小程序的框架、组件与API。 小程序开放平台为开发者提供快捷API、及组件预览工具，可在项目开始前对小程序开发进行了解。
+   开发者可以在 [小程序开发文档](https://iot-aep-mp.s3.cn-north-1.jdcloud-oss.com/mp-develop_reference-1.0.2.pdf) 上了解小程序的框架、组件与API。 小程序开放平台为开发者提供快捷API、及组件预览工具，可在项目开始前对小程序开发进行了解。
 
 ## 调试预览
 
