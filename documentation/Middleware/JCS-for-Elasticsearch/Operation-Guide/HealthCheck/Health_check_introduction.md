@@ -4,7 +4,7 @@
 
 ## 功能概览
 智能运维系统支持以下功能
-- [开启智能运维服务](../Operation-Guide/HealthCheck/Health_check_on.md)
-- [诊断集群健康状况](../Operation-Guide/HealthCheck/Health_check_start.md)
-- [查看健康诊断报告](../Operation-Guide/HealthCheck/Health_check_report.md)
-- [关闭智能运维服务](../Operation-Guide/HealthCheck/Health_check_off.md)
+- [开启智能运维服务](./Health_check_on.md)
+- [诊断集群健康状况](./Health_check_start.md)
+- [查看健康诊断报告](./Health_check_report.md)
+- [关闭智能运维服务](./Health_check_off.md)
