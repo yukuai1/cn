@@ -16,6 +16,7 @@
 |tidb.tidb_executor_statement_total|每秒查询数|QPS|个||
 
 ## TiDB 中的节点的监控指标
+如果需要获取TiDB 集群中下面各个节点的监控指标，tags的key为'pod'，value为节点的id，可以通过OpenAPI describeNodes获取
 
 |metric|中文名称|英文名称|单位|备注|
 |:--|:--|:--|:--|:--|
