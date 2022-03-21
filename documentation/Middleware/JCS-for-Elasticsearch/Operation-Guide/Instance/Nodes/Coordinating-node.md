@@ -40,6 +40,6 @@
 3. 在您要启用协调节点的集群，选择 【**操作-更多-变更配置**】。
 4. 在变更配置页面，请开启**启用协调节点**开关、选择 **协调节点规格类型** 和 **协调节点数量**，确认参数后，单击 **创建** 按钮：
 
-![](../../../../../../image/Elasticsearch/Nodes/Coordinating_node_create_2.png)
+![](../../../../../../image/Elasticsearch/Nodes/Coordinating_node_create_1.png)
 
 4. 在**订单确认**页，选择 **已阅读并同意《云搜索Elasticsearch服务条款》**，单击 **立即开通** 按钮确认订单并启用协调节点。
