@@ -1,8 +1,8 @@
-# 购车发票
+# 中国身份证识别
 
 
 ## 描述
-购车发票
+中国身份证
 
 ## 请求方式
 
@@ -11,24 +11,19 @@ POST
 ## 请求地址
 
 ```apl
-https://aiapi.jd.com/jdai/idcardDetect
+https://aiapi.jdcloud.com/jdai/idcardOcrRecognition
 ```
 
-## header请求参数
+## 请求参数
 
-| 名称             | 类型   | 是否必需 | 示例值           | 描述     |
-| ---------------- | ------ | -------- | ---------------- | -------- |
-| **Content-Type** | String | 是       | application/json | json格式 |
+| 参数名称   | 参数类型 | 是否必填 | 参数说明                                                     |
+| :--------- | :------- | :------- | :----------------------------------------------------------- |
+| serialNo   | string   | N        | 请求流水号, 不传接口自动生成                                 |
+| idcardItem | object   | Y        | 采集的图片                                                   |
+| idcardType | enum     |          | 身份证检测结果(正面, 反面)：P("身份证正面"),N("身份证反面"); |
+| extMap     | map      | N        | 附加信息, 特殊需求处理                                       |
 
-## body请求参数
-
-| 参数名称     | 参数类型 | 是否必填 | 参数说明                     |
-| :----------- | :------- | :------- | :--------------------------- |
-| `serialNo`   | string   | N        | 请求流水号, 不传接口自动生成 |
-| `idcardItem` | object   | Y        | 采集的图片列表               |
-| `extMap`     | map      | N        | 附加信息, 特殊需求处理       |
-
-idcardItem对象信息
+imageItem对象信息说明
 
 | 参数名称       | 参数类型 | 是否必填 | 示例值 | 参数说明                                                     |
 | -------------- | -------- | -------- | ------ | ------------------------------------------------------------ |
@@ -41,14 +36,28 @@ idcardItem对象信息
 
 
 
-## 返回实体
+# 返回实体
 
-| 参数名称     | 参数类型 | 是否必填 | 参数说明                                                     |
-| :----------- | :------- | :------- | :----------------------------------------------------------- |
-| `code`       | int      |          | 返回code码0:成功                                             |
-| `msg`        | string   |          | msg                                                          |
-| `serialNo`   | string   |          | 交互的流水号                                                 |
-| `idcardType` | enum     |          | `/** * 身份证检测结果(正面, 反面) */`` ``P("身份证正面"),N("身份证反面");``` |
+| 参数名称             | 参数类型 | 是否必填 | 参数说明         |      |
+| :------------------- | :------- | :------- | :--------------- | :--- |
+| `code`               | int      |          | 返回code码0:成功 |      |
+| `msg`                | string   |          | msg              |      |
+| `serialNo`           | string   |          | 交互的流水号     |      |
+| `idCardInfo`         | object   |          | 正面信息         |      |
+| `--name`             | `String` |          | `身份证号`       |      |
+| `--cardNo`           | `String` |          | `姓名`           |      |
+| `--sex`              | `String` |          | `性别`           |      |
+| `--nation`           | `String` |          | `名族`           |      |
+| `--address`          | `String` |          | `户籍地址`       |      |
+| `--brith`            | `String` |          | 生日yyyymmdd     |      |
+| `idCardBackInfo`     | object   |          | 反面信息         |      |
+| `--singDate`         | `String` |          | `签发时间`       |      |
+| `--expirationDate`   | `String` |          | `过期时间`       |      |
+| `--issuingAuthority` | `String` |          | `签证机关`       |      |
+| `--overdue`          | `String` |          | `是否过期`       |      |
+| `extMap`             | map      |          | 返回身份证url    |      |
+| `--idCardUrl`        | `String` |          | 身份证正面url    |      |
+| `--idCardBackUrl`    | `String` |          | 身份证反面url    |      |
 
 
 
@@ -58,7 +67,8 @@ idcardItem对象信息
 {
 	"idcardType": "P",
 	"idcardItem": {
-		"imgBase64": "图片base64",
+		"imgType": "IDP",
+		"imgBase64": "图片se64",
 		"encryptionType": "NON"
 	}
 }
@@ -70,10 +80,16 @@ idcardItem对象信息
 
 ```
 {
-	"code": 0,
-	"idcardType": "N",
-	"serialNo": "XXX",
-	"timestamp": 1547524430503
+    "code": 0,
+    "idCardInfo": {
+        "name": "张素芳",
+        "address": "山西省忻州市忻府区董村镇太延村二组215号",
+        "nation": "汉",
+        "cardNo": "142201199003272740",
+        "sex": "女"
+    },
+    "serialNo": "w1232",
+    "timestamp": 1547524786490
 }
 ```
 
