@@ -15,10 +15,11 @@
 | 专有主节点存储空间 | 20GB，暂不可更改 |
 
 ## 创建集群时启用专有主节点
-<div id="create-instace"></div>
-1. 访问 [云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，进入集群管理页面。或访问 [京东云控制台](https://console.jdcloud.com/)，点击顶部导航栏 互联网中间件-云搜索Elasticsearch，进入集群管理页。
 
-3. 选择您要创建实例的**区域**后，单击 **创建** 按钮，进入 **创建集群** 页面。
+<div id="create-instace"></div>
+
+1. 访问 [云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，进入集群管理页面。或访问 [京东云控制台](https://console.jdcloud.com/)，点击顶部导航栏 互联网中间件-云搜索Elasticsearch，进入集群管理页。
+2. 选择您要创建实例的**区域**后，单击 **创建** 按钮，进入创建集群页面。
 
 ![](../../../../../../image/Elasticsearch/Nodes/Master_node_create.png)
 
@@ -30,10 +31,12 @@
 5. 在**订单确认**页，选择 **已阅读并同意《云搜索Elasticsearch服务条款》**，单击 **立即开通** 按钮确认订单并创建云搜索Elasticsearch集群。
 
 ## 变更配置时启用专有主节点
+
 <div id="config-instace"></div>
+
 1. 访问 [云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，进入集群管理页面。或访问 [京东云控制台](https://console.jdcloud.com/)，点击顶部导航栏 互联网中间件-云搜索Elasticsearch，进入集群管理页。
-2. 在您要启用专有主节点的集群，选择 【操作-更多-变更配置】。
-3. 在变更配置页面，请开启**启用专有主节点**开关、选择专有主节点规格类型，确认参数后，单击 **创建** 按钮：
+3. 在您要启用专有主节点的集群，选择 【**操作-更多-变更配置**】。
+4. 在变更配置页面，请开启**启用专有主节点**开关、选择专有主节点规格类型，确认参数后，单击 **创建** 按钮：
 
 ![](../../../../../../image/Elasticsearch/Nodes/Master_node_create_2.png)
 
