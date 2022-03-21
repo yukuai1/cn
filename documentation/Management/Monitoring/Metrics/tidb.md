@@ -5,7 +5,7 @@
 ## TiDB 集群的监控指标
 
 > 备注:
-> 1. 每个TiDB连接数  按照不同的tidb 上报，查询时若期望展示每个每个tidb 的连接数，在调用[describeMetricData](https://docs.jdcloud.com/cn/monitoring/api/describemetrics)  接口时，把groupBy参数设置为true，tags中的Key指定为kubernetes_pod_name，value值指定为*。
+> 1. 每个TiDB连接数  按照不同的tidb 上报，查询时若期望展示每个每个tidb 的连接数，在调用[describeMetricData](https://docs.jdcloud.com/cn/monitoring/api/describemetrics)  接口时把groupBy参数设置为true，tags中的Key指定为kubernetes_pod_name，value值指定为*；或者value值指定为节点的id（节点ID可以通过OpenAPI describeNodes接口获取）；
 
 |metric|中文名称|英文名称|单位|说明|
 |:-|:-|:-|:-|:-|
