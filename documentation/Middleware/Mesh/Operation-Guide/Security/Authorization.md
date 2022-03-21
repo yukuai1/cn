@@ -13,7 +13,8 @@
 2. 如该范围没有任何 `ALLOW` 策略，则允许该请求的访问。
 3. 如当前该范围存在 `ALLOW` 策略，且请求匹配到了任何一条 `ALLOW` 策略，则允许该请求的访问。
 4. 拒绝该请求的访问。
-   ![](https://main.qcloudimg.com/raw/f513040eef15fbff345791a89cb406a2.png)
+
+![](../../../../../image/Internet-Middleware/Mesh/f513040eef15fbff345791a89cb406a2.png)
 
 以下是两种特殊 AuthorizationPolicy 示例：
 
@@ -26,8 +27,8 @@
   name: allow-all
   namespace: default
   spec:
-  action: ALLOW
-  rules:
+  action: ALLOW2022-03-21-16-08-24-image.png
+  rules:2022-03-21-16-08-24-image.png
   - {} # 规则可以匹配任何请求
   ```
 
@@ -187,8 +188,6 @@ spec:
 
 查看 client 容器的日志，会发现访问成功，正确返回了 user 信息：
 
-![](https://main.qcloudimg.com/raw/031025872eb71ef8a925977c655586ef.jpg)
-
 接下来将配置 Authorization 策略，不允许 base namespace 的服务被 test namespace 的服务访问（需要开启 mTLS）。
 
 <dx-tabs>
@@ -214,8 +213,6 @@ spec:
 </dx-tabs>
 
 配置完成后再次查看 client 的容器日志，发现所有访问均失败，没有返回 user 信息，AuthorizationPolicy 生效。
-
-![](https://main.qcloudimg.com/raw/47aa447543f546d5aff80a95c10575dc.png)
 
 ## 使用 AuthorizationPolicy 配置 Ingress Gateway 的 IP 黑白名单
 
@@ -374,5 +371,9 @@ spec:
 ![](https://main.qcloudimg.com/raw/aaec6a1f51df3706f17593ff6976a222.png)
 :::
 </dx-tabs>
+
+![](/Users/zhangdalei/git/github.com/jdcloudcom/cn/image/Internet-Middleware/Mesh/2022-03-21-17-30-27-image.png)
+
+![](/Users/zhangdalei/git/github.com/jdcloudcom/cn/image/Internet-Middleware/Mesh/2022-03-21-17-35-13-image.png)
 
 配置完成后再次通过 curl 语句 `curl "$INGRESS_IP:80/headers" -s -o /dev/null -w "%{http_code}\n"` 测试服务的连通性，注意您需要将代码中的 `$INGRESS_IP` 替换为您的边缘代理网关 IP 地址，此时访问失败，返回 `403` 返回码，黑名单策略生效。

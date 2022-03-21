@@ -4,15 +4,14 @@
 
 以下是 PeerAuthentication 重要字段说明：
 
-| 字段名称                 | 字段类型                     | 字段说明                                                                                                                                                                                                                                                                                                                              |
-| -------------------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `metadata.name`      | `string`                 | PeerAuthentication 名称                                                                                                                                                                                                                                                                                                             |
-| `metadata.namespace` | `string`                 | PeerAuthentication 命名空间                                                                                                                                                                                                                                                                                                           |
-| `spec.selector`      | `map<string, string>`    | PeerAuthentication 使用填写的标签键值对，配合填写的 namespace，匹配配置下发的 Workload 范围：<li> namespace 填写 istio-system，且 selector 字段不填写时，该策略生效范围为整个网格<li>namespace 填写非 istio-system 的 namespace，且 selector 字段不填写时，策略生效范围为填写的 namespace<li>namespace 填写非 istio-system 的 namespace，且 selector 字段填写了有效键值对时，策略的生效范围为在所填 namespace 下根据 selector 匹配到的Workload |
-| `spec.mtls.mode`     | -                        | 配置 mTLS 的模式，支持：`UNSET                                                                                                                                                                                                                                                                                                             |
-| `spec.portLevelMtls` | `map<uint32, mTLS mode>` | 设置端口级别的 mTLS 模式                                                                                                                                                                                                                                                                                                                   |
-
-> ?mTLS 模式配置，不同选择范围的生效效力为：端口 > 服务/Workload > namespace > 网格。
+| 字段名称                                                         | 字段类型                     | 字段说明                                                                                                                                                                                                                                                                                                                              |
+| ------------------------------------------------------------ | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `metadata.name`                                              | `string`                 | PeerAuthentication 名称                                                                                                                                                                                                                                                                                                             |
+| `metadata.namespace`                                         | `string`                 | PeerAuthentication 命名空间                                                                                                                                                                                                                                                                                                           |
+| `spec.selector`                                              | `map<string, string>`    | PeerAuthentication 使用填写的标签键值对，配合填写的 namespace，匹配配置下发的 Workload 范围：<li> namespace 填写 istio-system，且 selector 字段不填写时，该策略生效范围为整个网格<li>namespace 填写非 istio-system 的 namespace，且 selector 字段不填写时，策略生效范围为填写的 namespace<li>namespace 填写非 istio-system 的 namespace，且 selector 字段填写了有效键值对时，策略的生效范围为在所填 namespace 下根据 selector 匹配到的Workload |
+| `spec.mtls.mode`                                             | -                        | 配置 mTLS 的模式，支持：`UNSET                                                                                                                                                                                                                                                                                                             |
+| `spec.portLevelMtls`                                         | `map<uint32, mTLS mode>` | 设置端口级别的 mTLS 模式                                                                                                                                                                                                                                                                                                                   |
+| 说明：mTLS 模式配置，不同选择范围的生效效力为：端口 > 服务/Workload > namespace > 网格。 |                          |                                                                                                                                                                                                                                                                                                                                   |
 
 ## 使用 PeerAuthentication 配置网格内服务通信 mTLS 模式
 
@@ -20,11 +19,9 @@
 
 为测试 mTLS 模式配置的效果，您可以首先对您网格内的服务发起明文请求，测试明文请求的连通性。以下是登录网格内 istio-proxy 容器对另外的服务发起明文请求的示例：
 
-1. 在网格管理的 TKE 集群控制台，登录 istio-proxy 容器。
-   ![](https://qcloudimg.tencent-cloud.cn/raw/3af9d26b785d0581e3d48b97691d08f4.png)
+1. 登录 istio-proxy 容器。
 2. 输入命令 `curl http://product.base.svc.cluster.local:7000/product` 明文访问命名空间 base 下的 product 服务。
 3. 查看明文访问结果，正确返回了 Product 信息，明文访问成功。
-   ![](https://main.qcloudimg.com/raw/fd33ded000a3643314f21e4ee1ea5667.png)
 
 下面我们将会配置 base namespace 的 mTLS 模式为 STRICT，并验证配置是否生效。
 
@@ -78,132 +75,121 @@ spec:
   apiVersion: v1
   kind: Namespace
   metadata:
-  name: foo
-  labels:
-    istio.io/rev: 1-6-9 # 开启 namespace 的 sidecar 自动注入（istio 版本 1.6.9）
+    name: foo
+    labels:
+      istio.io/injection: true
   spec:
-  finalizers:
-    - kubernetes
-  ```
-
----
-
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: httpbin
-  namespace: foo
-
----
-
-apiVersion: v1
-kind: Service
-metadata:
-  name: httpbin
-  namespace: foo
-  labels:
-    app: httpbin
-    service: httpbin
-spec:
-  ports:
-
-- name: http
-  port: 8000
-  targetPort: 80
-  selector:
-  app: httpbin
-
----
-
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: httpbin
-  namespace: foo
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
+    finalizers:
+      - kubernetes
+  ---
+  apiVersion: v1
+  kind: ServiceAccount
+  metadata:
+    name: httpbin
+    namespace: foo
+  ---
+  apiVersion: v1
+  kind: Service
+  metadata:
+    name: httpbin
+    namespace: foo
+    labels:
       app: httpbin
-      version: v1
-  template:
-    metadata:
-      labels:
+      service: httpbin
+  spec:
+    ports:
+    - name: http
+      port: 8000
+      targetPort: 80
+    selector:
+      app: httpbin
+  ---
+  apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: httpbin
+    namespace: foo
+  spec:
+    replicas: 1
+    selector:
+      matchLabels:
         app: httpbin
         version: v1
-    spec:
-      serviceAccountName: httpbin
-      containers:
-      - image: docker.io/kennethreitz/httpbin
-        imagePullPolicy: IfNotPresent
-        name: httpbin
-        ports:
-        - containerPort: 80
+    template:
+      metadata:
+        labels:
+          app: httpbin
+          version: v1
+      spec:
+        serviceAccountName: httpbin
+        containers:
+        - image: docker.io/kennethreitz/httpbin
+          imagePullPolicy: IfNotPresent
+          name: httpbin
+          ports:
+          - containerPort: 80
+  ```
 
-```
 - 配置通过 Ingress Gateway 暴露 httpbin 服务至公网访问：
-```
-
-apiVersion: networking.istio.io/v1alpha3
-kind: Gateway
-metadata:
-  name: httpbin-gateway
-  namespace: foo
-spec:
-  selector:
-    app: istio-ingressgateway
-    istio: ingressgateway
-  servers:
-
-- port:
-    number: 80
-    name: http
-    protocol: HTTP
-  hosts:
-  - "*"
-
----
-
-apiVersion: networking.istio.io/v1alpha3
-kind: VirtualService
-metadata:
-  name: httpbin
-  namespace: foo
-spec:
-  hosts:
-
-- "*"
-  gateways:
-
-- httpbin-gateway
-  http:
-
-- route:
   
-  - destination:
-      port:
-    
-        number: 8000
-    
-      host: httpbin.foo.svc.cluster.local
-    
-    ```
-    
-    ```
+  ```
+  apiVersion: networking.istio.io/v1alpha3
+  kind: Gateway
+  metadata:
+    name: httpbin-gateway
+    namespace: foo
+  spec:
+    selector:
+      app: istio-ingressgateway
+      istio: ingressgateway
+    servers:
+  
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts:
+    - "*"
+  
+  ---
+  
+  apiVersion: networking.istio.io/v1alpha3
+  kind: VirtualService
+  metadata:
+    name: httpbin
+    namespace: foo
+  spec:
+    hosts:
+  
+  - "*"
+    gateways:
+  
+  - httpbin-gateway
+    http:
+  
+  - route:
+  
+    - destination:
+        port:
+  
+          number: 8000
+  
+        host: httpbin.foo.svc.cluster.local
+  ```
   
   - 通过 curl 语句 `curl "$INGRESS_IP:80/headers" -s -o /dev/null -w "%{http_code}\n"` 测试服务的连通性，注意您需要将代码中的 `$INGRESS_IP` 替换为您的边缘代理网关 IP 地址，正常情况下会返回 `200` 返回码。
 
 下面将会为边缘代理网关配置 JWT 认证规则，放通带有符合条件的 JWT 令牌的请求。
 
-<dx-tabs>
-::: YAML 配置示例
-```
-apiVersion: "security.istio.io/v1beta1"
-kind: "RequestAuthentication"
-metadata:
+- YAML 配置示例
+  
+  ```
+  apiVersion: "security.istio.io/v1beta1"
+  kind: "RequestAuthentication"
+  metadata:
   name: "jwt-example"
   namespace: istio-system
-spec:
+  spec:
   selector:
     matchLabels:
       istio: ingressgateway
@@ -211,14 +197,10 @@ spec:
   jwtRules:
   - issuer: "testing@secure.istio.io"
     jwksUri: "https://raw.githubusercontent.com/istio/istio/release-1.9/security/tools/jwt/samples/jwks.json"
-```
+  ```
 
-:::
-::: 控制台配置示例
-![](https://main.qcloudimg.com/raw/2267dee435e392c0c7d2007d46f0e0d9.png)
-
-:::
-</dx-tabs>
+- 控制台配置示例
+  ![](../../../../../image/Internet-Middleware/Mesh/2022-03-21-16-08-24-image.png)
 
 配置完成后，我们来验证配置的 JWT 验证规则是否生效。
 

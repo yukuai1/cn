@@ -16,11 +16,11 @@
 
 1. 登录控制台。菜单位置：互联网中间件>云服务网格>虚拟服务。
 
-![](/Users/zhangdalei/git/github.com/jdcloudcom/cn/image/Internet-Middleware/Mesh/2022-03-11-19-12-21-image.png)
+![](../../../../image/Internet-Middleware/Mesh/2022-03-11-19-12-21-image.png)
 
 2. 点击“新建”，进入创建页面。
 
-![](/Users/zhangdalei/git/github.com/jdcloudcom/cn/image/Internet-Middleware/Mesh/2022-03-11-19-14-02-image.png)
+![](../../../../image/Internet-Middleware/Mesh/2022-03-11-19-14-02-image.png)
 
 | 信息项       | 说明                                        |
 | --------- | ----------------------------------------- |

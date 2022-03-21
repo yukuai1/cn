@@ -12,7 +12,7 @@
 
 2、    点击新建。
 
-![](/Users/zhangdalei/git/github.com/jdcloudcom/cn/image/Internet-Middleware/Mesh/2022-03-12-11-16-19-image.png)
+![](../../../../image/Internet-Middleware/Mesh/2022-03-12-11-16-19-image.png)
 
 | 信息项      | 说明                                |
 |:-------- |:--------------------------------- |

@@ -7,24 +7,22 @@
 ## 创建边缘代理网关
 
 1. 登录控制台。菜单位置：互联网中间件 > 云服务网格 > 组件管理
-   ![](/Users/zhangdalei/git/github.com/jdcloudcom/cn/image/Internet-Middleware/Mesh/2022-03-11-17-16-53-image.png)
+   ![](../../../../image/Internet-Middleware/Mesh/2022-03-11-17-16-53-image.png)
 
 2. 选择已经安装istio的目前集群，然后点击“新建”
    
-   ![](/Users/zhangdalei/git/github.com/jdcloudcom/cn/image/Internet-Middleware/Mesh/2022-03-11-17-31-24-image.png)
+   ![](../../../../image/Internet-Middleware/Mesh/2022-03-11-17-31-24-image.png)
    
    配置项信息说明：
-   
-   
-   
-   | 名称   | 信息项                      |
-   |:---- |:------------------------ |
-   | 名称   | 边缘代理网格ingress-gateway的名字 |
-   | 命名空间 | 部署ingress-gateway的命名空间。  |
-   | 访问类型 | 是否通过负载均衡暴露到公网。           |
+
+| 名称   | 信息项                      |
+|:---- |:------------------------ |
+| 名称   | 边缘代理网格ingress-gateway的名字 |
+| 命名空间 | 部署ingress-gateway的命名空间。  |
+| 访问类型 | 是否通过负载均衡暴露到公网。           |
 
 3. 安装成功后，详情如下：
    
-   ![](/Users/zhangdalei/git/github.com/jdcloudcom/cn/image/Internet-Middleware/Mesh/2022-03-11-17-54-14-image.png)
+   ![](../../../../image/Internet-Middleware/Mesh/2022-03-11-17-54-14-image.png)
 
         备注：如上图所示的标签，在创建服务网关是需要填写。
