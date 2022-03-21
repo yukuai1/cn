@@ -13,7 +13,8 @@
 2. 如该范围没有任何 `ALLOW` 策略，则允许该请求的访问。
 3. 如当前该范围存在 `ALLOW` 策略，且请求匹配到了任何一条 `ALLOW` 策略，则允许该请求的访问。
 4. 拒绝该请求的访问。
-   ![](/Users/zhangdalei/git/github.com/jdcloudcom/cn/image/Internet-Middleware/Mesh/f513040eef15fbff345791a89cb406a2.png)
+
+![](../../../../../image/Internet-Middleware/Mesh/f513040eef15fbff345791a89cb406a2.png)
 
 以下是两种特殊 AuthorizationPolicy 示例：
 
@@ -26,8 +27,8 @@
   name: allow-all
   namespace: default
   spec:
-  action: ALLOW
-  rules:
+  action: ALLOW2022-03-21-16-08-24-image.png
+  rules:2022-03-21-16-08-24-image.png
   - {} # 规则可以匹配任何请求
   ```
 
@@ -370,5 +371,9 @@ spec:
 ![](https://main.qcloudimg.com/raw/aaec6a1f51df3706f17593ff6976a222.png)
 :::
 </dx-tabs>
+
+![](/Users/zhangdalei/git/github.com/jdcloudcom/cn/image/Internet-Middleware/Mesh/2022-03-21-17-30-27-image.png)
+
+![](/Users/zhangdalei/git/github.com/jdcloudcom/cn/image/Internet-Middleware/Mesh/2022-03-21-17-35-13-image.png)
 
 配置完成后再次通过 curl 语句 `curl "$INGRESS_IP:80/headers" -s -o /dev/null -w "%{http_code}\n"` 测试服务的连通性，注意您需要将代码中的 `$INGRESS_IP` 替换为您的边缘代理网关 IP 地址，此时访问失败，返回 `403` 返回码，黑名单策略生效。
