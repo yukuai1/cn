@@ -1,14 +1,14 @@
 # 枚举类型定义
 
-- [engineVersion 引擎版本](engine-version#engine-version)
-- [instanceStatus 实例状态](instance-status#instance-status)
-- [accountStatus 账号状态](account-status#account-status)
-- [dbPrivilege 数据库访问权限](db-privilege#db-privilege)
-- [backupStatus 备份状态](backup-status#backup-status)
-- [backupType 备份类型](backup-type#backup-type)
-- [backupMode 备份模式](backup-mode#backup-mode)
-- [storageType 存储类型](storage-type#storage-type)
-- [nodeStatus 节点状态](node-status#node-status)
+- [engineVersion 引擎版本](enum-definitions#engine-version)
+- [instanceStatus 实例状态](enum-definitions#instance-status)
+- [accountStatus 账号状态](enum-definitions#account-status)
+- [dbPrivilege 数据库访问权限](enum-definitions#db-privilege)
+- [backupStatus 备份状态](enum-definitions#backup-status)
+- [backupType 备份类型](enum-definitions#backup-type)
+- [backupMode 备份模式](enum-definitions#backup-mode)
+- [storageType 存储类型](enum-definitions#storage-type)
+- [nodeStatus 节点状态](enum-definitions#node-status)
 
 ## engineVersion 引擎版本
 <div id="engine-version"></div>
