@@ -136,15 +136,15 @@
       - name: 智能运维
         items:
         - name: 智能运维概述
-          href: HealthCheck/Health_check_introduction.md 
+          href: Operation-Guide/HealthCheck/Health_check_introduction.md 
         - name: 开启智能运维服务
-          href: HealthCheck/Health_check_on.md
+          href: Operation-Guide/HealthCheck/Health_check_on.md
         - name: 诊断集群健康状况
-          href: HealthCheck/Health_check_start.md
+          href: Operation-Guide/HealthCheck/Health_check_start.md
         - name: 查看健康诊断报告
-          href: HealthCheck/Health_check_report.md
+          href: Operation-Guide/HealthCheck/Health_check_report.md
         - name: 关闭智能运维服务
-          href: HealthCheck/Health_check_off.md
+          href: Operation-Guide/HealthCheck/Health_check_off.md
       - name: 访问控制
         items:
         - name: IAM访问控制
@@ -160,7 +160,7 @@
           - name: 用户管理
             href: Operation-Guide/Auth/User_manage.md
           - name: 关闭用户鉴权
-            href: Operation-Guide/Auth/关闭用户鉴权
+            href: Operation-Guide/Auth/Auth_off.md
       - name: 插件配置
         items:
         - name: 插件支持
