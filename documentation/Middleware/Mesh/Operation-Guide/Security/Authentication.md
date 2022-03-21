@@ -1,18 +1,18 @@
-认证可以管控网格服务间的双向 TLS 和终端用户的身份认证，认证的策略包含 PeerAuthentication 和 RequestAuthentication。其中，PeerAuthentication 策略用于配置服务通信的 mTLS 模式，RequestAuthentication 策略用于配置服务的请求身份验证方法。
+认证策略包含 PeerAuthentication 和 RequestAuthentication。其中，PeerAuthentication 策略用于配置服务通信的 mTLS 模式，RequestAuthentication 策略用于配置服务的请求身份验证方法。
 
 ## PeerAuthentication 配置字段说明
 
 以下是 PeerAuthentication 重要字段说明：
 
-| 字段名称                 | 字段类型                     | 字段说明                                                                                                                                                                                                                                                                                                                           |
-| -------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `metadata.name`      | `string`                 | PeerAuthentication 名称                                                                                                                                                                                                                                                                                                          |
-| `metadata.namespace` | `string`                 | PeerAuthentication 命名空间                                                                                                                                                                                                                                                                                                        |
-| `spec.selector`      | `map<string, string>`    | PeerAuthentication 使用填写的标签键值对，配合填写的 namespace，匹配配置下发的 Workload 范围：- namespace 填写 istio-system，且 selector 字段不填写时，该策略生效范围为整个网格<li>namespace 填写非 istio-system 的 namespace，且 selector 字段不填写时，策略生效范围为填写的 namespace<li>namespace 填写非 istio-system 的 namespace，且 selector 字段填写了有效键值对时，策略的生效范围为在所填 namespace 下根据 selector 匹配到的Workload |
-| `spec.mtls.mode`     | -                        | 配置 mTLS 的模式，支持：`UNSET\|DISABLE\|PERMISSIVE\|STRICT` 四种模式：<li>UNSET 模式为继承父范围的 mTLS 模式（如有），否则视为 PERMISSIVE 模式<li>DISABLE 模式为明文连接，不使用 mTLS 加密（不推荐使用），同时需要配置相同应用范围的 DestinationRule TLS 模式为 DISABLE 使用<li>PERMISSIVE 模式连接可以是明文或密文，业务改造过程中推荐使用此模式<li>STRICT 模式下连接必须使用 mTLS 加密。                                                      |
-| `spec.portLevelMtls` | `map<uint32, mTLS mode>` | 设置端口级别的 mTLS 模式                                                                                                                                                                                                                                                                                                                |
+| 字段名称                 | 字段类型                     | 字段说明                                                                                                                                                                                                                                                                                                                              |
+| -------------------- | ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `metadata.name`      | `string`                 | PeerAuthentication 名称                                                                                                                                                                                                                                                                                                             |
+| `metadata.namespace` | `string`                 | PeerAuthentication 命名空间                                                                                                                                                                                                                                                                                                           |
+| `spec.selector`      | `map<string, string>`    | PeerAuthentication 使用填写的标签键值对，配合填写的 namespace，匹配配置下发的 Workload 范围：<li> namespace 填写 istio-system，且 selector 字段不填写时，该策略生效范围为整个网格<li>namespace 填写非 istio-system 的 namespace，且 selector 字段不填写时，策略生效范围为填写的 namespace<li>namespace 填写非 istio-system 的 namespace，且 selector 字段填写了有效键值对时，策略的生效范围为在所填 namespace 下根据 selector 匹配到的Workload |
+| `spec.mtls.mode`     | -                        | 配置 mTLS 的模式，支持：`UNSET                                                                                                                                                                                                                                                                                                             |
+| `spec.portLevelMtls` | `map<uint32, mTLS mode>` | 设置端口级别的 mTLS 模式                                                                                                                                                                                                                                                                                                                   |
 
-> ?mTLS 模式配置，策略优先级：端口 > 服务/Workload > namespace > 网格。
+> ?mTLS 模式配置，不同选择范围的生效效力为：端口 > 服务/Workload > namespace > 网格。
 
 ## 使用 PeerAuthentication 配置网格内服务通信 mTLS 模式
 
@@ -20,8 +20,10 @@
 
 为测试 mTLS 模式配置的效果，您可以首先对您网格内的服务发起明文请求，测试明文请求的连通性。以下是登录网格内 istio-proxy 容器对另外的服务发起明文请求的示例：
 
-1. 输入命令 `curl http://product.base.svc.cluster.local:7000/product` 明文访问命名空间 base 下的 product 服务。
-2. 查看明文访问结果，正确返回了 Product 信息，明文访问成功。
+1. 在网格管理的 TKE 集群控制台，登录 istio-proxy 容器。
+   ![](https://qcloudimg.tencent-cloud.cn/raw/3af9d26b785d0581e3d48b97691d08f4.png)
+2. 输入命令 `curl http://product.base.svc.cluster.local:7000/product` 明文访问命名空间 base 下的 product 服务。
+3. 查看明文访问结果，正确返回了 Product 信息，明文访问成功。
    ![](https://main.qcloudimg.com/raw/fd33ded000a3643314f21e4ee1ea5667.png)
 
 下面我们将会配置 base namespace 的 mTLS 模式为 STRICT，并验证配置是否生效。
@@ -62,7 +64,7 @@ spec:
 | `spec.jwtRules.jwksUri`                | `string`               | 配置验证 JWT 签名的公钥 URL，详情参见 [OpenID Discovery](https://openid.net/specs/openid-connect-discovery-1_0.html#ProviderMetadata)。同时配置 jwksUri 和 jwks 字段时，jwksUri 将被忽略                                                                                                                                                             |
 | `spec.jwtRules.jwks`                   | `string`               | 验证 JWT 签名的 [JSON Web Key Set](https://auth0.com/docs/tokens/json-web-tokens/json-web-key-sets) 公钥。同时配置 jwksUri 和 jwks 字段时，jwksUri 将被忽略                                                                                                                                                                                   |
 | `spec.jwtRules.fromHeaders`            | `map<string,string>[]` | 配置 JWT 从 header 中的提取位置列表                                                                                                                                                                                                                                                                                                 |
-| `spec.jwtRules.fromParams`             | `string[]`             | 配置 JWT 从 header 中提取的 parameters，例如从 parameter mytoken（`/path?token=`）中提取                                                                                                                                                                                                                                                 |
+| `spec.jwtRules.fromParams`             | `string[]`             | 配置 JWT 从 header 中提取的 parameters，例如从 parameter mytoken（`/path?my_token=`）中提取                                                                                                                                                                                                                                              |
 | `spec.jwtRules.outputPayloadToHeader ` | `string`               | 配置成功验证的 JWT payload 输出的 header 名称，转发的数据为 `base64_encoded(jwt_payload_in_JSON)`。未填写时默认不会输出 JWT payload                                                                                                                                                                                                                    |
 | `spec.jwtRules.forwardOriginalToken`   | `bool`                 | 配置是否将原始 JWT 转发至 upstream。默认值为 `false`                                                                                                                                                                                                                                                                                    |
 
