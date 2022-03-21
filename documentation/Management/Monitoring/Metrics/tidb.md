@@ -11,7 +11,7 @@
 |:-|:-|:-|:-|:-|
 |tidb.type_storage_size.pd_cluster_status|已用存储空间大小|Current storage size|GB||
 |tidb.type_storage_capacity.pd_cluster_status|存储空间大小|Current storage capacity|GB||
-|tidb.component_tidb.server_connections|每个TiDB连接数|Connection Count|个||
+|tidb.component_tidb.server_connections|每个TiDB连接数|Connection Count|个|参见备注信息|
 |tidb.session_transaction_duration_seconds_count|每秒事务执行数量|Transaction OPS|个||
 |tidb.type_Insert.executor_statement_total|SQL执行数量(插入)|Statement OPS(insert)|个||
 |tidb.type_Delete.executor_statement_total|SQL执行数量(删除)|Statement OPS(delete)|个||
