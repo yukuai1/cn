@@ -57,8 +57,12 @@
             href: Pricing/Price-Overview/PostgreSQL-Price.md            
       - name: 购买流程
         href: Pricing/Purchase-Procedure.md
+      - name: 变配
+        href: Pricing/Change-Procedure.md
       - name: 续费流程
         href: Pricing/Renewal-Procedure.md
+      - name: 查看消费明细
+        href: Pricing/Consumption-details.md
         
   - name: 入门指南
     items:
