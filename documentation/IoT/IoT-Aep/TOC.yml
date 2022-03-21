@@ -37,3 +37,9 @@
         href: Operation-Guide/Create-view.md
   - name: 常见问题
     href: FAQ/FAQ.md
+  - name: 相关资源
+    items:
+      - name: 账号实名认证
+        href: Operation-Guide/Precondition.md
+      - name: 登录控制台
+        href: Operation-Guide/ControllPage.md
