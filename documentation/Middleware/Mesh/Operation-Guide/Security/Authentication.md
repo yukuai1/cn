@@ -20,11 +20,9 @@
 
 为测试 mTLS 模式配置的效果，您可以首先对您网格内的服务发起明文请求，测试明文请求的连通性。以下是登录网格内 istio-proxy 容器对另外的服务发起明文请求的示例：
 
-1. 在网格管理的 TKE 集群控制台，登录 istio-proxy 容器。
-   ![](https://qcloudimg.tencent-cloud.cn/raw/3af9d26b785d0581e3d48b97691d08f4.png)
+1. 登录 istio-proxy 容器。
 2. 输入命令 `curl http://product.base.svc.cluster.local:7000/product` 明文访问命名空间 base 下的 product 服务。
 3. 查看明文访问结果，正确返回了 Product 信息，明文访问成功。
-   ![](https://main.qcloudimg.com/raw/fd33ded000a3643314f21e4ee1ea5667.png)
 
 下面我们将会配置 base namespace 的 mTLS 模式为 STRICT，并验证配置是否生效。
 
@@ -215,7 +213,7 @@ spec:
 
 :::
 ::: 控制台配置示例
-![](https://main.qcloudimg.com/raw/2267dee435e392c0c7d2007d46f0e0d9.png)
+![](../../../../image/Internet-Middleware/Mesh/2022-03-21-16-13-12-image.png)
 
 :::
 </dx-tabs>

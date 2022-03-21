@@ -24,11 +24,11 @@
 
 1、登录控制台。菜单位置：互联网中间件 > 云服务网格 > Istio管理
 
-![](/Users/zhangdalei/git/github.com/jdcloudcom/cn/image/Internet-Middleware/Mesh/2022-03-11-16-56-20-image.png)
+![](../../../../image/Internet-Middleware/Mesh/2022-03-11-16-56-20-image.png)
 
 2、当用户创建完K8S集群后, 在Istio管理中，会自动检索到用户创建的K8S列表。用户可选择需要部署网格的K8S集群，点击操作中的“部署”，往该集群中部署网格。
 
-![](/Users/zhangdalei/git/github.com/jdcloudcom/cn/image/Internet-Middleware/Mesh/2022-03-11-16-57-38-image.png)
+![](../../../../image/Internet-Middleware/Mesh/2022-03-11-16-57-38-image.png)
 
 配置组件信息说明：
 

@@ -13,7 +13,7 @@
 2. 如该范围没有任何 `ALLOW` 策略，则允许该请求的访问。
 3. 如当前该范围存在 `ALLOW` 策略，且请求匹配到了任何一条 `ALLOW` 策略，则允许该请求的访问。
 4. 拒绝该请求的访问。
-   ![](https://main.qcloudimg.com/raw/f513040eef15fbff345791a89cb406a2.png)
+   ![](/Users/zhangdalei/git/github.com/jdcloudcom/cn/image/Internet-Middleware/Mesh/f513040eef15fbff345791a89cb406a2.png)
 
 以下是两种特殊 AuthorizationPolicy 示例：
 
@@ -187,8 +187,6 @@ spec:
 
 查看 client 容器的日志，会发现访问成功，正确返回了 user 信息：
 
-![](https://main.qcloudimg.com/raw/031025872eb71ef8a925977c655586ef.jpg)
-
 接下来将配置 Authorization 策略，不允许 base namespace 的服务被 test namespace 的服务访问（需要开启 mTLS）。
 
 <dx-tabs>
@@ -214,8 +212,6 @@ spec:
 </dx-tabs>
 
 配置完成后再次查看 client 的容器日志，发现所有访问均失败，没有返回 user 信息，AuthorizationPolicy 生效。
-
-![](https://main.qcloudimg.com/raw/47aa447543f546d5aff80a95c10575dc.png)
 
 ## 使用 AuthorizationPolicy 配置 Ingress Gateway 的 IP 黑白名单
 
