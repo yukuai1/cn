@@ -72,9 +72,9 @@
       - name: 集群管理
         items:
         - name: 专用主节点
-          href: Operation-Guide/Dedicated-master.md
+          href: Operation-Guide/Instance/Nodes/Dedicated-master-node.md
         - name: 协调节点
-          href: Operation-Guide/coordination_node.md
+          href: Operation-Guide/Instance/Nodes/Coordinating-node.md
         - name: 标签管理
           items:
           - name: 标签概述
