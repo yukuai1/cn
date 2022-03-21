@@ -363,7 +363,7 @@ kubectl apply -f bookinfo.yaml
 
 进入到组件管理界面创建边缘代理网关
 
-![](/Users/zhangdalei/git/github.com/jdcloudcom/cn/image/Internet-Middleware/Mesh/ingress-install.png)
+![](../../../../image/Internet-Middleware/Mesh/ingress-install.png)
 
 #### STEP5: 创建虚拟服务。
 
