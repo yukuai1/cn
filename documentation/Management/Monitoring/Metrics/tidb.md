@@ -5,13 +5,13 @@
 ## TiDB 集群的监控指标
 
 > 备注:
-> 如果要查看tidb 实例下"每个TiDB 的连接数"，在调用describeMetricData接口时，把groupBy参数设置为true，tags中的Key指定为kubernetes_pod_name，value值指定为*。
+> 1. 每个TiDB连接数  按照不同的tidb 上报，查询时若期望展示每个每个tidb 的连接数，在调用[describeMetricData](https://docs.jdcloud.com/cn/monitoring/api/describemetrics)  接口时，把groupBy参数设置为true，tags中的Key指定为kubernetes_pod_name，value值指定为*。
 
 |metric|中文名称|英文名称|单位|说明|
 |:-|:-|:-|:-|:-|
 |tidb.type_storage_size.pd_cluster_status|已用存储空间大小|Current storage size|GB||
 |tidb.type_storage_capacity.pd_cluster_status|存储空间大小|Current storage capacity|GB||
-|tidb.component_tidb.server_connections|每个TiDB连接数|Connection Count|个|参见备注信息|
+|tidb.component_tidb.server_connections|每个TiDB连接数|Connection Count|个|参见备注 1|
 |tidb.session_transaction_duration_seconds_count|每秒事务执行数量|Transaction OPS|个||
 |tidb.type_Insert.executor_statement_total|SQL执行数量(插入)|Statement OPS(insert)|个||
 |tidb.type_Delete.executor_statement_total|SQL执行数量(删除)|Statement OPS(delete)|个||
