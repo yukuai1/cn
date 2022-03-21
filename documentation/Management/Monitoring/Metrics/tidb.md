@@ -3,6 +3,10 @@
 该产品线监控数据的servicecode：tidb ，其提供的监控指标如下：
 
 ## TiDB 集群的监控指标
+
+> 备注:
+> 如果要查看tidb 实例下"每个TiDB 的连接数"，在调用describeMetricData接口时，把groupBy参数设置为true，tags中的Key指定为kubernetes_pod_name，value值指定为*。
+
 |metric|中文名称|英文名称|单位|说明|
 |:-|:-|:-|:-|:-|
 |tidb.type_storage_size.pd_cluster_status|已用存储空间大小|Current storage size|GB||
