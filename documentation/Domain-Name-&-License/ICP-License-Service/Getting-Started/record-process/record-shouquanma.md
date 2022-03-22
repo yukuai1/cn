@@ -2,7 +2,7 @@
 
 #### 一、登录备案系统
 
-打开[**京东云官网**](jdcloud.com)首页,点击右上角处备案
+打开[**京东云官网**](https://www.jdcloud.com/cn/)首页,点击右上角处备案
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/1-home-page.png)
 
