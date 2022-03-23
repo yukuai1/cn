@@ -4,7 +4,7 @@ items:
     - name: 接口概览
       href: overview.md
     - name: 更新历史
-      href: changelog.md
+      href: ChangeLog.md
     - name: 接口信息
       items:
         - name:  实例管理 

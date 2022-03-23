@@ -19,4 +19,4 @@
 4. 点击 ***查询*** 按钮，查看符合要求的 SQL 列表。
 
 
-![慢日志](../../../../../image/JCHDB/SlowLog.jpg)
+![慢日志](../../../../../image/JCHDB/SlowLog1.jpg)
