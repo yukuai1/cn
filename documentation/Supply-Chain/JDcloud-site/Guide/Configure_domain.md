@@ -2,12 +2,21 @@
 
 
 ## 操作场景
-网站框架构建完成后，需要为网站绑定一个域名，此域名为客户访问网站的入口。 
-
-## 前提条件
-已购买域名，并且域名需要完成备案后才能使用。 京东云提供[备案服务](https://record-console.jdcloud.com)，助力您便捷完成备案。
+网站框架构建完成后，需要为网站绑定一个域名，此域名为客户访问网站的入口，当用户需要访问网站时，在浏览器输入网站域名就可以直接进行访问。
 
 
+
+
+## 获取授权码进行域名备案
+
+域名需要先完成备案后才能正常使用，如果还没有域名，请先[购买域名](https://net.jdcloud.com)。
+
+京东云提供[备案服务](https://record-console.jdcloud.com)，助力您便捷完成备案，备案授权码在您购买的建站服务控制台获取。
+
+![图片名称](https://img1.jcloudcs.com/image/docs/site-21.png)
+
+购买正式的建站服务1年及以上的版本提供授权码，如果您是试用版，请升级版本后获取授权码。
+![图片名称](https://img1.jcloudcs.com/image/docs/site-22.png)
 
 
 
@@ -39,15 +48,7 @@
 ![图片名称](https://img1.jcloudcs.com/image/docs/site1203-3.png)
 
 
-## 域名备案
 
-域名完成备案后才能正常使用。
-
-可以访问[备案服务](https://record-console.jdcloud.com/index)进行快速备案，备案授权码在建站服务控制台获取。
-
-![图片名称](https://img1.jcloudcs.com/image/docs/site-21.png)
-
-![图片名称](https://img1.jcloudcs.com/image/docs/site-22.png)
 
 
 ## 域名解析
