@@ -2,7 +2,7 @@
 
 #### 登录京东云备案系统，找到备案入口
 
-打开[**京东云官网**](jdcloud.com)首页,点击右上角处备案
+打开[**京东云官网**](https://www.jdcloud.com/cn/)首页,点击右上角处备案
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/1-home-page.png)
 
@@ -88,7 +88,7 @@
 ###### 网站注销：仅注销您本次选择的网站的备案号，该网站下的域名将失去备案号。注销过程中不可撤回！注销成功后此网站将不能开通访问！
 ###### 取消接入：是指将您的备案信息从京东云的备案系统中删除，取消接入成功后如果您继续使用京东云接入商的服务器，您的网站将会被阻断访问；如果此网站（此域名）在其他服务商处存在备案，您的备案号不会被注销；如果您的备案信息没有对应的接入商，根据相关法律法规，相关部门可能会注销您的备案号，届时您的网站将不能开通访问！
 
-注销过程中，请仔细信息提示卡内容明，知晓注销后果后点击“确认注销”，等待地方通信管理局审核即可。
+注销过程中，请仔细阅读信息提示卡内容明，知晓注销后果后点击“确认注销”，等待地方通信管理局审核即可。
 
 ![img](https://github.com/jdcloudcom/cn/blob/zhaomeichen-beian-20220308/documentation/Domain-Name-%26-License/Image-Domain/Beian-Newimage/pic-6.png)
 

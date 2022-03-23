@@ -9,7 +9,7 @@ items:
       - name: 京东云有过备案记录看这里
         href: Getting-Started/record-process/Existence-record.md
       - name: 备案授权码说明
-        href: Getting-Started/record-process/Irecord-shouquanma.md      
+        href: Getting-Started/record-process/record-shouquanma.md
   - name: 管局规则
     items:
       - name: 安徽
