@@ -9,7 +9,7 @@ items:
   items:
     - name: 概述
       href: Guide/Summary.md
-    - name: 开通网站
+    - name: 购买建站服务流程
       href: Guide/Open_website.md 
     - name: 配置域名
       href: Guide/Configure_domain.md 
