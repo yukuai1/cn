@@ -9,7 +9,7 @@ SQL 审计不会解析实际的参数值，并且在 SQL 查询量较大的时�
     * 执行时间：可以选择从当前时间往前推 7 天的时间区间，作为 SQL 审计查询的时间段。
     * 选择节点：可以查看指定节点的审计信息。
 
-![audit2](/Users/quyiwei/GIT-Jdcloud/cn/image/JCHDB/audit2.jpg)
+![audit2](../../../../../image/JCHDB/audit2.jpg)
 
 3.  点击 ***查询*** 按钮，查看符合要求的 SQL 列表。
 
