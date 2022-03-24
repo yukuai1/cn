@@ -190,27 +190,24 @@ spec:
 
 接下来将配置 Authorization 策略，不允许 base namespace 的服务被 test namespace 的服务访问（需要开启 mTLS）。
 
-<dx-tabs>
-::: YAML 配置示例
+- YAML 配置示例
+```yaml
+  apiVersion: security.istio.io/v1beta1
+  kind: AuthorizationPolicy
+  metadata:
+    name: base-authz
+    namespace: base
+  spec:
+    action: DENY
+    rules:
+      - from:
+          - source:
+              namespaces:
+                - test
 ```
-apiVersion: security.istio.io/v1beta1
-kind: AuthorizationPolicy
-metadata:
-  name: base-authz
-  namespace: base
-spec:
-  action: DENY
-  rules:
-    - from:
-        - source:
-            namespaces:
-              - test
-```
-:::
-::: 控制台配置示例
-![](https://main.qcloudimg.com/raw/ab0cacaa38cdb23a784f37c5b25d4d59.png)
-:::
-</dx-tabs>
+- 控制台配置示例
+![](../../../../../image/Internet-Middleware/Mesh/base-authz.png)
+
 
 配置完成后再次查看 client 的容器日志，发现所有访问均失败，没有返回 user 信息，AuthorizationPolicy 生效。
 
@@ -222,133 +219,124 @@ spec:
 
 - 创建 foo namespace，开启 sidecar 自动注入，部署 httpbin 服务到 foo namespace：
   
-  ```yaml
-  apiVersion: v1
-  kind: Namespace
-  metadata:
-  name: foo
-  labels:
-    istio.io/rev: 1-6-9 # 开启 namespace 的 sidecar 自动注入（istio 版本 1.6.9）
-  spec:
-  finalizers:
-    - kubernetes
-  ```
-
----
-
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: httpbin
-  namespace: foo
-
----
-
-apiVersion: v1
-kind: Service
-metadata:
-  name: httpbin
-  namespace: foo
-  labels:
-    app: httpbin
-    service: httpbin
-spec:
-  ports:
-
-- name: http
-  port: 8000
-  targetPort: 80
-  selector:
-  app: httpbin
-
----
-
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: httpbin
-  namespace: foo
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: httpbin
-      version: v1
-  template:
+```yaml
+    apiVersion: v1
+    kind: Namespace
     metadata:
-      labels:
+    name: foo
+    labels:
+      istio.io/rev: 1-6-9 # 开启 namespace 的 sidecar 自动注入（istio 版本 1.6.9）
+    spec:
+    finalizers:
+      - kubernetes
+
+  ---
+
+  apiVersion: v1
+  kind: ServiceAccount
+  metadata:
+    name: httpbin
+    namespace: foo
+
+  ---
+
+  apiVersion: v1
+  kind: Service
+  metadata:
+    name: httpbin
+    namespace: foo
+    labels:
+      app: httpbin
+      service: httpbin
+  spec:
+    ports:
+
+  - name: http
+    port: 8000
+    targetPort: 80
+    selector:
+    app: httpbin
+
+  ---
+
+  apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: httpbin
+    namespace: foo
+  spec:
+    replicas: 1
+    selector:
+      matchLabels:
         app: httpbin
         version: v1
-    spec:
-      serviceAccountName: httpbin
-      containers:
-      - image: docker.io/kennethreitz/httpbin
-        imagePullPolicy: IfNotPresent
-        name: httpbin
-        ports:
-        - containerPort: 80
+    template:
+      metadata:
+        labels:
+          app: httpbin
+          version: v1
+      spec:
+        serviceAccountName: httpbin
+        containers:
+        - image: docker.io/kennethreitz/httpbin
+          imagePullPolicy: IfNotPresent
+          name: httpbin
+          ports:
+          - containerPort: 80
 
 ```
 - 配置通过 Ingress Gateway 暴露 httpbin 服务至公网访问：
-```
-
-apiVersion: networking.istio.io/v1alpha3
-kind: Gateway
-metadata:
-  name: httpbin-gateway
-  namespace: foo
-spec:
-  selector:
-    app: istio-ingressgateway
-    istio: ingressgateway
-  servers:
-
-- port:
-    number: 80
-    name: http
-    protocol: HTTP
-  hosts:
-  - "*"
-
----
-
-apiVersion: networking.istio.io/v1alpha3
-kind: VirtualService
-metadata:
-  name: httpbin
-  namespace: foo
-spec:
-  hosts:
-
-- "*"
-  gateways:
-
-- httpbin-gateway
-  http:
-
-- route:
   
-  - destination:
-      port:
-    
-        number: 8000
-    
-      host: httpbin.foo.svc.cluster.local
-    
-    ```
-    
-    ```
+```yaml
+  apiVersion: networking.istio.io/v1alpha3
+  kind: Gateway
+  metadata:
+    name: httpbin-gateway
+    namespace: foo
+  spec:
+    selector:
+      app: istio-ingressgateway
+      istio: ingressgateway
+    servers:
 
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts:
+    - "*"
+
+  ---
+
+  apiVersion: networking.istio.io/v1alpha3
+  kind: VirtualService
+  metadata:
+    name: httpbin
+    namespace: foo
+  spec:
+    hosts:
+
+  - "*"
+    gateways:
+
+  - httpbin-gateway
+    http:
+
+  - route:
+    
+    - destination:
+        port:
+      
+          number: 8000
+      
+        host: httpbin.foo.svc.cluster.local
+```
+    
 - 通过 curl 语句 `curl "$INGRESS_IP:80/headers" -s -o /dev/null -w "%{http_code}\n"` 测试服务的连通性，注意您需要将代码中的 `$INGRESS_IP` 替换为您的边缘代理网关 IP 地址，正常情况下会返回 `200` 返回码。
 
-- 为使 Ingress Gateway 能正确获取真实客户端源 IP，我们需要修改 Ingress Gateway Service 的 ExternalTrafficPolicy 为 Local，保证流量仅在本节点转发不做 SNAT。
-  ![](https://main.qcloudimg.com/raw/b4c8372cfdf171074df87e76370b7f7d.png)
-
 下面将会使用 AuthorizationPolicy 把本机的 IP 地址列入 Ingress Gateway 的黑名单，并验证黑名单是否生效。
-
-<dx-tabs>
-::: YAML 配置示例
-```
+- YAML 配置示例
+```yaml
 apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy
 metadata:
@@ -366,14 +354,6 @@ spec:
               - $您的本机 IP 地址
   action: DENY
 ```
-:::
-::: 控制台配置示例
-![](https://main.qcloudimg.com/raw/aaec6a1f51df3706f17593ff6976a222.png)
-:::
-</dx-tabs>
-
-![](/Users/zhangdalei/git/github.com/jdcloudcom/cn/image/Internet-Middleware/Mesh/2022-03-21-17-30-27-image.png)
-
-![](/Users/zhangdalei/git/github.com/jdcloudcom/cn/image/Internet-Middleware/Mesh/2022-03-21-17-35-13-image.png)
-
+- 控制台配置示例
+![](../../../../../image/Internet-Middleware/Mesh/2022-03-21-17-30-27-image.png)
 配置完成后再次通过 curl 语句 `curl "$INGRESS_IP:80/headers" -s -o /dev/null -w "%{http_code}\n"` 测试服务的连通性，注意您需要将代码中的 `$INGRESS_IP` 替换为您的边缘代理网关 IP 地址，此时访问失败，返回 `403` 返回码，黑名单策略生效。
