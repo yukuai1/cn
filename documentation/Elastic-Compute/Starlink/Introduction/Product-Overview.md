@@ -1,5 +1,9 @@
 # 产品概述
 
+视频介绍：
+
+{{video}}[ src="//starlink.s3.cn-north-1.jdcloud-oss.com/help/starlink_introduction.mp4"  poster="//starlink.s3.cn-north-1.jdcloud-oss.com/help/poster.png" width="700" ]
+
 ## 产品介绍
 星链低代码Serverless是一个微服务低代码Serverless平台，面向微服务编排、BFF、FaaS等应用场景，以可视化、组件编排方式开发微服务，以声明式进行Serverless部署，帮助您快速实现场景化微服务研发需求。
 
