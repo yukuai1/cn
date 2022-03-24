@@ -57,11 +57,12 @@
 
 访问[云解析DNS控制台](https://dns-console.jdcloud.com/list)，先添加域名。在域名列表选择刚添加的域名，点击操作中的解析。
 
+![图片名称](https://img1.jcloudcs.com/image/docs/site0324-2.png)
 
 
 点击添加解析。
 
-
+![图片名称](https://img1.jcloudcs.com/image/docs/site0324-3.png)
 
 在添加解析页面，进行解析记录配置。
 
@@ -69,7 +70,7 @@
 - 记录值： 在建站服务中进行获取
 - 其它项：可选择默认参数
 
-
+![图片名称](https://img1.jcloudcs.com/image/docs/site0324-4.png)
 
 
 查看站点的CNAME解析地址。
