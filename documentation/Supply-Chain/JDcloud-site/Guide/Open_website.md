@@ -72,4 +72,4 @@
 
 购买一年的建站服务，会送一款付费的模板，有“精美”角标展示的是送的模板。
 
-
+![图片名称](https://img1.jcloudcs.com/image/docs/site0324-1.png)
