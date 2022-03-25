@@ -10,7 +10,7 @@
 
  1. 打开控制台，选择[弹性计算>>容器服务Kubernetes>>集群服务>>集群](https://cns-console.jdcloud.com/host/kubernetes/list)   
  2. 点击创建，进入创建页面，如果申请开通边缘集群的权限，会有集群类型的选项
-  ![新建集群](../../../../image/Elastic-Compute/JCS-for-Kubernetes/边缘集群.png)。  
+  ![新建集群](../../../../image/Elastic-Compute/JCS-for-Kubernetes/边缘集群.png) 
  4. 选择边缘集群
  5. 地域选择华东-上海，可用区选择湖北武汉1
  6. 设置名称、描述：名称不可为空，只支持中文、数字、大小写字母、英文下划线 “ _ ”及中划线 “ - ”，且不能超过32字符；描述为非必填项，长度不超过256字符。
