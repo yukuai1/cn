@@ -8,7 +8,7 @@
 
 ## 认证流程
 
-1. 进入实名认证页面，在“个人认证”选项卡里点击“立即认证”。
+1. 进入[实名认证](https://realname.jdcloud.com/account/verify)页面，在“个人认证”选项卡里点击“立即认证”。
 
 ![face1](../../../../image/User/newnewrealname/face1.png)
  
