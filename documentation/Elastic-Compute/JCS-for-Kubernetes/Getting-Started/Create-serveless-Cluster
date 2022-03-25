@@ -34,6 +34,6 @@
   * 创建 Pod子网，Service-LB子网
   * 管理节点CIDR，默认自动选择，系统会自动创建一个管理节点子网，建立VPC对等连接。
   * ServiceCIDR，默认自动选择，
-  * 公网访问服务端点，默认开启，开启后管理节点组提供一个带公网IP的LB,关闭后LB不带公网IP，管理节点不能通过公网访问
+  * 公网访问服务端点，默认开启，开启后kube-apiserver可以通过公网访问，关闭后不能通过公网访问。
   
 创建集群时会对私有网络的相关配额进行校验，请保证私有网络相关配额充足，详情参考[私有网络使用限制](https://docs.jdcloud.com/cn/virtual-private-cloud/restrictions)。
