@@ -18,7 +18,7 @@
 ## 创建集群
 
  1. 打开控制台，选择[弹性计算>>Serveless 容器服务>>Serveless集群>>集群]( https://cns-console.jdcloud.com/host/cluster/servless/list)   
- ![新建集群](../../../../image/Elastic-Compute/JCS-for-Kubernetes/新建Kubernetes集群集群信息.png)。  
+ ![新建集群](../../../../image/Elastic-Compute/JCS-for-Kubernetes/创建vk集群.png)。  
  2. 选择地域及可用区：建议您根据业务情况选择集群所在地域及可用区；默认选中指定地域下的所有可用区，推荐使用默认模式；也可取消选中某个或某几个可用区，但需要至少保证有一个可用区被选中。
 
  3. 设置名称、描述：名称不可为空，只支持中文、数字、大小写字母、英文下划线 “ _ ”及中划线 “ - ”，且不能超过32字符；描述为非必填项，长度不超过256字符。
@@ -31,9 +31,10 @@
 
 网络配置指选择部署工作节点组资源的私有网络：
   * 私有网络，用来创建Kubernetes集群的私有网络
-  * 创建 Pod子网，Service-LB子网
+  * 创建 Pod子网，创建的pod获得的ip会在此子网范围内
+  * Service-LB子网，使用LoadBalancer类型的service时创建的实例会在此子网范围内
   * 管理节点CIDR，默认自动选择，系统会自动创建一个管理节点子网，建立VPC对等连接。
-  * ServiceCIDR，默认自动选择，
+  * ServiceCIDR，默认自动选择，Cluster IP地址会创建在此范围内
   * 公网访问服务端点，默认开启，开启后kube-apiserver可以通过公网访问，关闭后不能通过公网访问。
   
 创建集群时会对私有网络的相关配额进行校验，请保证私有网络相关配额充足，详情参考[私有网络使用限制](https://docs.jdcloud.com/cn/virtual-private-cloud/restrictions)。
