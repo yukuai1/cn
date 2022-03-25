@@ -13,19 +13,16 @@ v1
 |接口名称|请求方式|功能描述|
 |---|---|---|
 |**addWhiteListGroup**|POST|增加白名单分组。|
-|**attachNetwork**|POST|当实例不欠费了或者续费了，开启Clickhouse实例的网络访问功能。|
 |**azs**|GET|获取当前用户可用的可用区|
 |**createAccount**|POST|创建一个Clickhouse账号|
 |**createInstance**|POST|创建一个Clickhouse实例|
 |**deleteAccount**|DELETE|删除一个Clickhouse实例|
 |**deleteInstance**|DELETE|删除一个Clickhouse实例|
-|**deleteInstanceByForce**|POST|强行删除DRDS实例，包括包年包月未过期实例|
 |**deleteWhiteListGroup**|DELETE|删除白名单分组。|
 |**describeAccounts**|GET|查询 Clickhouse account列表信息|
 |**describeAuditResult**|GET|查询 Clickhouse audit列表信息|
 |**describeDefaultConfig**|GET|查询 Clickhouse 推荐规格|
 |**describeDomainNames**|GET|获取某个实例下的所有节点对应的域名信息。|
-|**describeExposeType**|GET|查询k8s集群支持的集群外访问方式|
 |**describeInstanceAttributes**|GET|查询 Clickhouse 实例的详细信息|
 |**describeInstances**|GET|查询实例列表|
 |**describeNodeClasses**|GET|查询 node 可用规格|
@@ -35,10 +32,7 @@ v1
 |**describeProgress**|GET|查询 Clickhouse 集群进度|
 |**describeSlowlogResult**|GET|查询 Clickhouse audit列表信息|
 |**describeWhiteList**|GET|查看实例当前白名单。白名单是允许访问当前实例的IP/IP段列表，缺省情况下，白名单对本VPC开放。如果用户开启了外网访问的功能，还需要对外网的IP配置白名单。|
-|**detachNetwork**|POST|当实例欠费或者到期了，关闭Clickhouse实例的网络访问功能|
-|**disableCloudDiskCapacity**|POST|关闭数据库的云盘扩容功能|
 |**disableInternetAccess**|POST|关闭实例的外网访问功能。|
-|**enableCloudDiskCapacity**|POST|开启数据库的云盘扩容功能|
 |**enableInternetAccess**|POST|开启实例的外网访问功能。|
 |**internalDescribeInstance**|GET|内部查询实例状态|
 |**modifyInstanceName**|POST|修改实例名称。|
