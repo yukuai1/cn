@@ -105,6 +105,8 @@
         items:
         - name: 周期创建索引
           href: Operation-Guide/index.md
+        - name: 创建索引模板
+          href: Operation-Guide/Index/Index-template-create.md
       - name: 数据备份
         items: 
         - name: 创建快照
