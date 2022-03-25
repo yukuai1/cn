@@ -1,4 +1,4 @@
-name: 分析型云数据库ClickHouse
+name: 分析型云数据库 ClickHouse
 href: 
 items:
     - name: 接口概览
@@ -7,30 +7,31 @@ items:
       href: ChangeLog.md
     - name: 接口信息
       items:
-        - name:  实例管理 
+        - name: 账号管理
           items:
-            - name: attachNetwork
-              href:  Instance-Management/attachNetwork.md
+             - name: createAccount
+               href: Account-Management/createAccount.md       
+             - name: describeAccounts
+               href: Account-Management/describeAccounts.md    
+             - name: deleteAccount
+               href: Account-Management/deleteAccount.md       
+             - name: modifyPrivilege
+               href: Account-Management/modifyPrivilege.md
+             - name: resetPassword
+               href: Account-Management/resetPassword.md  
+
+        - name: 实例管理 
+          items:
             - name: azs
-              href:  Instance-Management/azs.md
-            - name: createAccount
-              href:  Instance-Management/createAccount.md
+              href: Instance-Management/azs.md
             - name: createInstance
               href:  Instance-Management/createInstance.md
-            - name: deleteAccount
-              href:  Instance-Management/deleteAccount.md
             - name: deleteInstance
               href:  Instance-Management/deleteInstance.md
-            - name: deleteInstanceByForce
-              href:  Instance-Management/deleteInstanceByForce.md
-            - name: describeAccounts
-              href:  Instance-Management/describeAccounts.md
             - name: describeAuditResult
               href:  Instance-Management/describeAuditResult.md
             - name: describeDomainNames
               href:  Instance-Management/describeDomainNames.md
-            - name: describeExposeType
-              href:  Instance-Management/describeExposeType.md
             - name: describeInstanceAttributes
               href:  Instance-Management/describeInstanceAttributes.md
             - name: describeInstances
@@ -45,14 +46,8 @@ items:
               href:  Instance-Management/describeProgress.md
             - name: describeSlowlogResult
               href:  Instance-Management/describeSlowlogResult.md
-            - name: detachNetwork
-              href:  Instance-Management/detachNetwork.md
-            - name: disableCloudDiskCapacity
-              href:  Instance-Management/disableCloudDiskCapacity.md
             - name: disableInternetAccess
               href:  Instance-Management/disableInternetAccess.md
-            - name: enableCloudDiskCapacity
-              href:  Instance-Management/enableCloudDiskCapacity.md
             - name: enableInternetAccess
               href:  Instance-Management/enableInternetAccess.md
             - name: internalDescribeInstance
@@ -61,27 +56,36 @@ items:
               href:  Instance-Management/modifyInstanceName.md
             - name: modifyInstanceSpec
               href:  Instance-Management/modifyInstanceSpec.md
-            - name: modifyPrivilege
-              href:  Instance-Management/modifyPrivilege.md
             - name: orderableInstanceType
               href:  Instance-Management/orderableInstanceType.md
-            - name: resetPassword
-              href:  Instance-Management/resetPassword.md
             - name: selectDetailList
               href:  Instance-Management/selectDetailList.md
             - name: upgradeEngineVersion
-              href:  Instance-Management/upgradeEngineVersion.md       
-        - name: 参数组  
+              href:  Instance-Management/upgradeEngineVersion.md    
+
+        - name: 参数
           items:
             - name: describeParameters
               href: Parameters/describeParameters.md
             - name: describeParameters
               href: Parameters/describeParameters.md
+
         - name: 白名单
           items:
-             - name: createNamespace
+             - name: addWhiteListGroup
                href: White-List/addWhiteListGroup.md        
-             - name: deleteNamespace
-               href: White-List/deleteWhiteListGroup.md 
-            
+             - name: deleteWhiteListGroup
+               href: White-List/deleteWhiteListGroup.md    
+             - name: describeWhiteList
+               href: White-List/describeWhiteList.md        
+             - name: modifyWhiteList
+               href: White-List/modifyWhiteList.md  
+
+    - name: 枚举参数说明
+      items:
+        - name: 枚举类型定义
+          href: Enum-Definitions/Enum-Definitions.md
+        - name: 地域及可用区列表
+          href: Enum-Definitions/Regions-AZ.md
+        
             
