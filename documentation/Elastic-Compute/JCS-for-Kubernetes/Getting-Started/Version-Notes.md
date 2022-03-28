@@ -14,22 +14,23 @@
 - 聚焦安全性：基于角色的访问控制（RBAC）成为stable支持。RBAC允许集群管理员动态定义角色对于Kubernetes API的访问策略。通过网络策略筛选出站流量的Beta支持，增强了对入站流量进行过滤的现有支持。 RBAC和网络策略是强化Kubernetes内组织和监管安全要求的两个强大工具。Kubelet的传输层安全性（TLS）证书轮换成为beta版。自动证书轮换减轻了集群安全性运维的负担。  
 - 聚焦工作负载支持：Kubernetes 1.8通过apps/v1beta2组和版本推动核心工作负载API的beta版本。Beta版本包含当前版本的Deployment、DaemonSet、ReplicaSet和StatefulSet。 工作负载API是将现有工作负载迁移到Kubernetes以及开发基于Kubernetes的云原生应用程序提供了基石。  
 --------------------------
-Kubernetes拓扑管理器（Topology Manager ） 升级到Beta版 ！
+- Kubernetes拓扑管理器（Topology Manager ） 升级到Beta版 ！
 拓扑管理器功能 是1.18版中Kubernetes的beta版本功能，它可以使CPU和设备（如SR-IOV VFs）实现NUMA，这将使你的工作负载在针对低延迟而优化的环境中运行。在引入拓扑管理器之前，CPU和设备管理器会做出彼此独立的资源分配决策，那么可能会导致在多套接字（ multi-socket ）系统上分配不良，从而导致关键型应用程序的性能下降。
 
-Serverside Apply引入Beta 2版本
+- Serverside Apply引入Beta 2版本
 Server-side Apply 在1.16中被升级为Beta，在1.18中引入Beta 2版本。这个新版本将跟踪和管理所有新Kubernetes对象的字段更改，从而使你知道更改了什么资源以及何时更改的。
 
-使用IngressClass扩展Ingress，并用IngressClass替换不推荐使用的注释
+- 使用IngressClass扩展Ingress，并用IngressClass替换不推荐使用的注释
 在Kubernetes 1.18中，Ingress有两个重要的补充：一个新pathType字段和一个新IngressClass资源。该pathType字段允许指定路径应如何匹配。除了默认ImplementationSpecific类型外，还有new Exact和Prefixpath类型。
 
 该IngressClass资源用于描述Kubernetes集群中的Ingress类型。入口可以通过ingressClassName在入口上使用新字段来指定与它们关联的类。这个新资源和字段替换了不建议使用的kubernetes.io/ingress.class注释。
 
-SIG-CLI引入kubectl debug命令
+- SIG-CLI引入kubectl debug命令
 SIG-CLI一直在争论是否需要调试实用程序。随着临时容器(ephemeral containers)的发展，开发人员越来越需要更多类似kubectl exec的命令。该kubectl debug命令的添加（它是Alpha版本，但欢迎你提供反馈），使开发人员可以轻松地在集群中调试其Pod。我们认为这种增加是无价的。此命令允许创建一个临时容器，该容器在要检查的Pod旁边运行，并且还附加到控制台以进行交互式故障排除。
 
-Alpha版本引入Windows CSI
+- Alpha版本引入Windows CSI
 随着Kubernetes 1.18的发布，用于Windows的CSI代理的Alpha版本也已发布。CSI代理使非特权（预先批准）的容器能够在Windows上执行特权存储操作。现在，可以利用CSI代理在Windows中支持CSI驱动程序。
+
 ### 1.16 
 #### 版本说明:  
 - 1.16社区版与2019年9月18日正式发布，该版本是京东云容器服务Kubernetes支持的版本
