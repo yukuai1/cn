@@ -4,7 +4,7 @@
 **确定实例所在地域**
 
 京东云不同地域之间完全隔离，保证不同地域间最大程度的稳定性和容错性。当前边缘集群只覆盖华东-上海地域，未来我们将逐步增加更多服务地域
-目前边缘集群在华东-上海灰度发布，如果使用边缘集群，客户需要申请使用。 [工单](https://ticket.jdcloud.com/myorder/form?cateId=1&questionId=410)
+目前边缘集群在华东-上海灰度发布，如要使用边缘集群，请申请使用。[工单](https://ticket.jdcloud.com/myorder/form?cateId=1&questionId=410)
 
 ## 创建集群
 
