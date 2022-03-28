@@ -31,3 +31,8 @@ items:
       href: Users'-Guide/Check-site-information.md
     - name: 定制站点
       href: Users'-Guide/Custom-site.md 
+
+- name: 常见问题
+  items:
+    - name: FAQ
+      href: question/FAQ.md
