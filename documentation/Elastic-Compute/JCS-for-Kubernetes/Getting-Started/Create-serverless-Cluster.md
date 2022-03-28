@@ -1,11 +1,11 @@
-# 创建 Serveless集群
+# 创建 Serverless集群
 
 ## 确认地域及实例配置
 **确定实例所在地域**
 
 京东云不同地域之间完全隔离，保证不同地域间最大程度的稳定性和容错性。当前覆盖国内华北-北京、华南-广州、华东-宿迁及华东-上海四地域。
 
-目前Serveless集群在华北-北京、华南-广州、华东-上海开放服务，未来我们将逐步增加更多服务地域以满足您业务需求。
+目前Serverless集群在华北-北京、华南-广州、华东-上海开放服务，未来我们将逐步增加更多服务地域以满足您业务需求。
 
 选择地域时建议考虑以下几点：
 
@@ -17,7 +17,7 @@
 
 ## 创建集群
 
- 1. 打开控制台，选择[弹性计算>>Serveless 容器服务>>Serveless集群>>集群]( https://cns-console.jdcloud.com/host/cluster/servless/list)   
+ 1. 打开控制台，选择[弹性计算>>Serverless 容器服务>>Serverless集群>>集群]( https://cns-console.jdcloud.com/host/cluster/servless/list)   
  ![新建集群](../../../../image/Elastic-Compute/JCS-for-Kubernetes/创建vk集群.png)
  2. 选择地域及可用区：建议您根据业务情况选择集群所在地域及可用区；默认选中指定地域下的所有可用区，推荐使用默认模式；也可取消选中某个或某几个可用区，但需要至少保证有一个可用区被选中。
 
