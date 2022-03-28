@@ -15,6 +15,7 @@
 - 聚焦工作负载支持：Kubernetes 1.8通过apps/v1beta2组和版本推动核心工作负载API的beta版本。Beta版本包含当前版本的Deployment、DaemonSet、ReplicaSet和StatefulSet。 工作负载API是将现有工作负载迁移到Kubernetes以及开发基于Kubernetes的云原生应用程序提供了基石。  
 --------------------------
 - Kubernetes拓扑管理器（Topology Manager ） 升级到Beta版 ！
+
 拓扑管理器功能 是1.18版中Kubernetes的beta版本功能，它可以使CPU和设备（如SR-IOV VFs）实现NUMA，这将使你的工作负载在针对低延迟而优化的环境中运行。在引入拓扑管理器之前，CPU和设备管理器会做出彼此独立的资源分配决策，那么可能会导致在多套接字（ multi-socket ）系统上分配不良，从而导致关键型应用程序的性能下降。
 
 - Serverside Apply引入Beta 2版本
