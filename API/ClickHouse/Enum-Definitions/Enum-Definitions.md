@@ -1,12 +1,5 @@
 # 枚举类型定义
 
-- [engineVersion 引擎版本](#engineversion-rds引擎版本)
-- [instanceStatus 实例状态](#instancestatus-实例状态)
-- [accountStatus 账号状态](#accountstatus-账号状态)
-- [privilege 数据库访问权限](#privilege-账号访问权限)
-- [instanceStorageType 存储类型](#instancestorageType-存储类型)
-
-
 ## engineVersion 引擎版本
 
 | 取值       | 说明                       |
