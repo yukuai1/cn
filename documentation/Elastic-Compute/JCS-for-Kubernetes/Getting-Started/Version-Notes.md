@@ -11,9 +11,7 @@
 - 1.18社区版与2020年3月26日正式发布，该版本是京东云容器服务Kubernetes支持的版本
 
 #### 社区版支持的新特性说明：  
-- 聚焦安全性：基于角色的访问控制（RBAC）成为stable支持。RBAC允许集群管理员动态定义角色对于Kubernetes API的访问策略。通过网络策略筛选出站流量的Beta支持，增强了对入站流量进行过滤的现有支持。 RBAC和网络策略是强化Kubernetes内组织和监管安全要求的两个强大工具。Kubelet的传输层安全性（TLS）证书轮换成为beta版。自动证书轮换减轻了集群安全性运维的负担。  
-- 聚焦工作负载支持：Kubernetes 1.8通过apps/v1beta2组和版本推动核心工作负载API的beta版本。Beta版本包含当前版本的Deployment、DaemonSet、ReplicaSet和StatefulSet。 工作负载API是将现有工作负载迁移到Kubernetes以及开发基于Kubernetes的云原生应用程序提供了基石。  
---------------------------
+
 - Kubernetes拓扑管理器（Topology Manager ） 升级到Beta版 ！
 
   拓扑管理器功能 是1.18版中Kubernetes的beta版本功能，它可以使CPU和设备（如SR-IOV VFs）实现NUMA，这将使你的工作负载在针对低延迟而优化的环境中运行。在引入拓扑管理器之前，
