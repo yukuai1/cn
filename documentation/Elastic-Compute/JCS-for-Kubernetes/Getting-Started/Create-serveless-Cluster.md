@@ -18,7 +18,7 @@
 ## 创建集群
 
  1. 打开控制台，选择[弹性计算>>Serveless 容器服务>>Serveless集群>>集群]( https://cns-console.jdcloud.com/host/cluster/servless/list)   
- ![新建集群](../../../../image/Elastic-Compute/JCS-for-Kubernetes/创建vk集群.png)。  
+ ![新建集群](../../../../image/Elastic-Compute/JCS-for-Kubernetes/创建vk集群.png)
  2. 选择地域及可用区：建议您根据业务情况选择集群所在地域及可用区；默认选中指定地域下的所有可用区，推荐使用默认模式；也可取消选中某个或某几个可用区，但需要至少保证有一个可用区被选中。
 
  3. 设置名称、描述：名称不可为空，只支持中文、数字、大小写字母、英文下划线 “ _ ”及中划线 “ - ”，且不能超过32字符；描述为非必填项，长度不超过256字符。
