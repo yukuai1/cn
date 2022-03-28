@@ -75,6 +75,10 @@
           href: Operation-Guide/Instance/Nodes/Dedicated-master-node.md
         - name: 协调节点
           href: Operation-Guide/Instance/Nodes/Coordinating-node.md
+        - name: 实例生命周期
+          href: Operation-Guide/Instance/Manage/Status.md
+        - name: 修改实例名称
+          href: Operation-Guide/Instance/Manage/Naming.md
         - name: 标签管理
           items:
           - name: 标签概述
@@ -105,6 +109,8 @@
         items:
         - name: 周期创建索引
           href: Operation-Guide/index.md
+        - name: 创建索引模板
+          href: Operation-Guide/Index/Index-template-create.md
       - name: 数据备份
         items: 
         - name: 创建快照
