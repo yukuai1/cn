@@ -21,8 +21,8 @@
 ![img](../../../../image/ICP-License-Service/New-beian/2-login.png)
 
 **登入备案系统后，选择适合自己的帮助文档以帮助您顺利完成备案**
-- 登入备案系统后，若显示图A效果，则代表此账号未在京东云完成过备案，请移步至[第一次来京东备案看这里](without-Organizer.md)
-- 登入备案系统后，若显示图B效果，则代表此账号在京东云完成过备案，请移步至[京东有备案记录的看这里](Existence-record.md)
+- 登入备案系统后，若显示图A效果，则代表此账号未在京东云完成过备案，请移步至[第一次来京东备案看这里](record-process/without-Organizer.md)
+- 登入备案系统后，若显示图B效果，则代表此账号在京东云完成过备案，请移步至[京东有备案记录的看这里](record-process/Existence-record.md)
 
 ![img](../../../../image/ICP-License-Service/New-beian/3-1imageA.png)
 
