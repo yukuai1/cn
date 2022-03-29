@@ -10,7 +10,7 @@
 
 **打开[**京东云官网**](https://www.jdcloud.com)首页,点击右上角处"备案"按钮**
 
-![img](../../../../../image/ICP-License-Service/New-beian/1-homepage.png)
+![img](../../../../image/ICP-License-Service/New-beian/1-homepage.png)
 
 **进入登录页面，选择您可登录的方式**
 
@@ -18,15 +18,15 @@
 说明：支持京东账号、京东云账号及微信账号登录，子账号不支持备案。
 ```
 
-![img](../../../../../image/ICP-License-Service/New-beian/2-login.png)
+![img](../../../../image/ICP-License-Service/New-beian/2-login.png)
 
 **登入备案系统后，选择适合自己的帮助文档以帮助您顺利完成备案**
 - 登入备案系统后，若显示图A效果，则代表此账号未在京东云完成过备案，请移步至[第一次来京东备案看这里](without-Organizer.md)
 - 登入备案系统后，若显示图B效果，则代表此账号在京东云完成过备案，请移步至[京东有备案记录的看这里](Existence-record.md)
 
-![img](../../../../../image/ICP-License-Service/New-beian/3-1imageA.png)
+![img](../../../../image/ICP-License-Service/New-beian/3-1imageA.png)
 
-![img](../../../../../image/ICP-License-Service/New-beian/3-2imageB.png)
+![img](../../../../image/ICP-License-Service/New-beian/3-2imageB.png)
 
 
 
