@@ -1,49 +1,61 @@
 # 连接实例
 
+## 操作步骤
+
 1. 在实例列表页，点击要连接的实例名称，进入实例详情页
 2. 在实例详情页面中，查看实例的域名及端口信息。分析型云数据库ClickHouse集群有两个端口，TCP端口和HTTP端口，可按需使用。
 
-![域名信息](../../../../../image/JCHDB/connect-instance.jpg)
+![域名信息](/Users/quyiwei/GIT-Jdcloud/cn/image/JCHDB/connect-instance.jpg)
 
-3. 实例连接方式
+3. 连接实例
 
-   3.1 客户端连接
+   #### 客户端连接
 
-    登录到与该实例在同一VPC中的云主机，安装下载客户端，通过clickhouse客户端连接：
+   1. 实例所在VPC内选择一台云主机，在该云主机内，安装下载客户端 [点击下载clickhouse-client](https://repo.yandex.ru/clickhouse/rpm/stable/x86_64/)。
 
-- Ubuntu 或 Debian
+   2. 安装客户端
 
-```
-sudo apt-get install apt-transport-https ca-certificates dirmngr
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv E0C56BD4
+   ```
+   rpm -ivh *.rpm
+   ```
 
-echo "deb https://repo.clickhouse.tech/deb/stable/ main/" | sudo tee \
-    /etc/apt/sources.list.d/clickhouse.list
-sudo apt-get update
+   3. 通过 clickhouse-client客户端 访问该实例
 
-sudo apt-get install -y clickhouse-client
-```
-
-- Centos 或 Redhat
+  - 节点 IP 地址可以通过控制台查看，tcp 服务端口选择9000。
 
 ```
-sudo yum install yum-utils
-sudo rpm --import https://repo.clickhouse.tech/CLICKHOUSE-KEY.GPG
-sudo yum-config-manager --add-repo https://repo.clickhouse.tech/rpm/clickhouse.repo
-sudo yum install  clickhouse-client
+   clickhouse-client -hxxx.xxx.xxx.xxx --port 9000
 ```
 
-​       3.2 使用以下命令连接
+  - http 端口选择8123。确认&查询集群上的引擎版本 。
 
-​          登录到与该实例在同一VPC中的云主机，使用命令行连接：
+```
+   echo "select version()=21.8.15.4"  |  curl  'http://xxx.xxx.xxx.xxx:8123/' --data-binary @-
+```
+
+```
+   echo "select version()"  |  curl  'http://xxx.xxx.xxx.xxx:8123/' --data-binary @-
+```
+
+  - 查询系统cluster   
+
+```
+   echo "select * from system.clusters"  |  curl 'http://xxx.xxx.xxx.xxx:8123/' --data-binary @-
+```
+
+####        命令行连接
+
+​         登录到与该实例在同一VPC中的云主机，在clickhouse-client客户端的安装目录下执行如下命令。
 
 ```
 ./clickhouse-client --host=<host> --port=<port> --user=<user> --password=<password>
 ```
 
-参数说明：
+- 参数说明：
 
-- host：为步骤2中获得的实例的域名。
-- port：为步骤2中获得的实例的TCP端口号
-- user：连接的用户名，在控制台的“账号管理”页面中创建
-- password：连接的密码，在控制台的“账号管理”页面中创建
+  | 参数     | 说明                                                         |
+  | -------- | :----------------------------------------------------------- |
+  | host     | 外网地址或VPC地址。如果clickhouse-client所在服务器与云数据库ClickHouse集群在同一VPC内，您可以使用VPC地址。否则，请使用外网地址。 |
+  | port     | TCP端口号。                                                  |
+  | user     | 您通过分析型云数据库ClickHouse控制台创建的数据库账号。       |
+  | password | 数据库账号对应的密码。                                       |
