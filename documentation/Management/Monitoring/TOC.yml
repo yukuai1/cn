@@ -72,10 +72,10 @@ items:
               href: Operation-Guide/resource-monitoring/Alarmtemplate/template-overview.md
             - name: 查看报警模板
               href: Operation-Guide/resource-monitoring/Alarmtemplate/view-template.md
+            - name: 复制默认报警模板
+              href: Operation-Guide/resource-monitoring/Alarmtemplate/copy-template.md
             - name: 添加自定义报警模板
               href: Operation-Guide/resource-monitoring/Alarmtemplate/add-template.md
-            - name: 复制报警模板
-              href: Operation-Guide/resource-monitoring/Alarmtemplate/copy-template.md
             - name: 删除报警模板
               href: Operation-Guide/resource-monitoring/Alarmtemplate/delete-template.md 
             - name: 使用报警模板
