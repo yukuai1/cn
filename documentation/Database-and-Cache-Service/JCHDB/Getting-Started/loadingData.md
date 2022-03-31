@@ -1,6 +1,6 @@
 # 导入数据
 
-使用clickhouse-client连接到ClickHouse实例以后，导入数据。
+介绍使用clickhouse-client连接到ClickHouse实例以后，如何导入数据。
 
 ## 前提条件
 
