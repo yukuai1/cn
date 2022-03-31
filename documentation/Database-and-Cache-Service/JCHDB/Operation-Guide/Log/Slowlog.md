@@ -5,7 +5,7 @@
 
 
 ### 查看慢日志
-1. 登录[分析型云数据库ClickHouse 管理控制台]（https://jchdb-console.jdcloud.com/list）。
+1. 登录[分析型云数据库ClickHouse 管理控制台](https://jchdb-console.jdcloud.com)。
 2. 选择目标实例，点击目标实例，进入实例详情页 。  
 3. 点击 **性能优化** Tab 页， 选择时间范围，选择需要查询的ZK节点和计算节点，输入慢查询时间（默认慢查询时间大于10秒），慢查询功能说明如下。
 
