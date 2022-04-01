@@ -5,7 +5,7 @@
 1. 在实例列表页，点击要连接的实例名称，进入实例详情页
 2. 在实例详情页面中，查看实例的域名及端口信息。分析型云数据库ClickHouse集群有两个端口，TCP端口和HTTP端口，可按需使用。
 
-![域名信息](/Users/quyiwei/GIT-Jdcloud/cn/image/JCHDB/connect-instance.jpg)
+![域名信息](../../../../../image/JCHDB/connect-instance.jpg)
 
 3.  连接实例
 
