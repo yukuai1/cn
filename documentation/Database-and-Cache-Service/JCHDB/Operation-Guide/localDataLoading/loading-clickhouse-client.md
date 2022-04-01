@@ -1,10 +1,12 @@
-# 数据导入
+# 从clickhouse-client导入
 
 本文介绍如何通过clickhouse-client工具将本地文件的数据导入至分析型云数据库ClickHouse。
 
 #### 注意事项
 
 支持导入到云数据库ClickHouse的常见文件格式为TabSeparated、TabSeparatedWithNames、TabSeparatedWithNamesAndTypes、CSV和CSVWithNames。更多支持的文件格式，请参见[文件格式及说明](https://clickhouse.com/docs/zh/interfaces/formats/?spm=a2c4g.11186623.0.0.522ad0d8vz9llf#tabseparated)
+
+
 
 #### 前提条件
 
@@ -39,7 +41,7 @@ AccountId, Name, Address, Year
 
    3. 通过 clickhouse-client客户端 访问该实例
 
-   ​        在clickhouse-client客户端的安装目录下执行如下命令。
+   ​       在clickhouse-client客户端的安装目录下执行如下命令。
 
    ```
    ./clickhouse-client --host=<host> --port=<port> --user=<user> --password=<password>
@@ -97,4 +99,6 @@ cat <本地文件名> | ./clickhouse-client --host=<数据库连接地址> --por
 ```
 select * from testdb.account;
 ```
+
+   
 

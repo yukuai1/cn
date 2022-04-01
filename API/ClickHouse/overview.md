@@ -27,7 +27,7 @@ v1
 |**describeInstances**|GET|查询实例列表|
 |**describeNodeClasses**|GET|查询 node 可用规格|
 |**describeNodes**|GET|查询 Clickhouse 节点信息|
-|**describeParameters**|GET|查看JCHDB实例的配置参数。|
+|**describeParameters**|GET|查看Clickhouse实例的配置参数。|
 |**describePodMap**|GET|查看实例当前的备份备份策略。|
 |**describeProgress**|GET|查询 Clickhouse 集群进度|
 |**describeSlowlogResult**|GET|查询 Clickhouse audit列表信息|

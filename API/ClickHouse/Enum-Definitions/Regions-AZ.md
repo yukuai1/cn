@@ -6,7 +6,5 @@
 | :--------: | :-------: | :--------------------: | ---------- |
 | cn-north-1 | 华北-北京 |      cn-north-1a       | 可用区A    |
 |            |           |      cn-north-1b       | 可用区B    |
-| cn-east-1  | 华东-宿迁 |       cn-east-1a       | 可用区A    |
 | cn-east-2  | 华东-上海 |       cn-east-2a       | 可用区A    |
 |            |           |       cn-east-2b       | 可用区B    |
-| cn-south-1 | 华南-广州 |      cn-south-1a       | 可用区A    |

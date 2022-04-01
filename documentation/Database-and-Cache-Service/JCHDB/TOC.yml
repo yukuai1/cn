@@ -29,8 +29,14 @@
         href: Getting-Started/Create-Instance1.md
       - name: 创建账号
         href: Getting-Started/Create-Account1.md
+      - name: 白名单设置
+        href: Getting-Started/SetWhiteList.md
       - name: 连接实例
         href: Getting-Started/Connect-Instance1.md    
+      - name: 创建数据库和表
+        href: Getting-Started/Create-Database&Table.md   
+      - name: 导入数据
+        href: Getting-Started/loadingData.md  
  
   - name: 操作指南
     items:
@@ -59,20 +65,38 @@
             href: Operation-Guide/Account/Grant-Privilege.md
           - name: 重置密码
             href: Operation-Guide/Account/Reset-Password.md
+            
       - name: 监控报警
         items:
           - name: 设置报警规则
             href: Operation-Guide/Monitor-Alarm/Set-Alarm-Rules.md
           - name: 查看监控信息
             href: Operation-Guide/Monitor-Alarm/View-Monitor-Information.md
+
       - name: 安全管理
         items:
           - name: 白名单设置
             href: Operation-Guide/Security/SetWhiteList.md
+
+      - name: 连接数据库
+        items:
+          - name: 通过命令行连接ClickHouse
+            href: Operation-Guide/ConnectDatabase/commandLine.md
+          - name: 通过JDBC方式连接ClickHouse
+            href: Operation-Guide/ConnectDatabase/JDBC.md
+
+      - name: 外部数据导入
+        items:
+          - name: 从clickhouse-client导入
+            href: Operation-Guide/localDataLoading/loading-clickhouse-client.md
+          - name: 从Spark导入
+            href: Operation-Guide/localDataLoading/loading-spark.md
+
       - name: 日志审计
         items:
           - name: SQL审计
             href: Operation-Guide/Audit/audit.md
+
       - name: 性能优化
         items:
           - name: 慢日志查询
