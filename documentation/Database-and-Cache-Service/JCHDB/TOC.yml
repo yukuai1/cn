@@ -100,24 +100,23 @@
       - name: 性能优化
         items:
           - name: 慢日志查询
-            href: Operation-Guide/Log/Slowlog.md
+            href: Operation-Guide/Log/Slowlog.md  
+
+  - name: 最佳实践
+    items:
+      - name: 数据导入
+        href: Best-Practices/Load-Data-From-File.md
+
+  - name: 常见问题
+    items:
+      - name: FAQ
+        href: FAQ/FAQ.md     
             
-      - name: 最佳实践
-        items:
-          - name: 数据导入
-            href: Best-Practices/Load-Data-From-File.md
-            
-      - name: 常见问题
-        items:
-          - name: FAQ
-            href: FAQ/FAQ.md     
-            
-      - name: 开发指南
-        items:
-          - name: 集群参数设置
-            href: DevelopmentGuide/ParameterSetting.md
-          - name: 数据库引擎
-            href: DevelopmentGuide/DatabaseEngine.md
-          - name: SQL语法
-            href: DevelopmentGuide/SQLGrammar.md
-     
+  - name: 开发指南
+    items:
+      - name: 集群参数设置
+        href: DevelopmentGuide/ParameterSetting.md
+      - name: 数据库引擎
+        href: DevelopmentGuide/DatabaseEngine.md
+      - name: SQL语法
+        href: DevelopmentGuide/SQLGrammar.md
