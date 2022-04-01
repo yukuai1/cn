@@ -76,7 +76,7 @@
         - name: 协调节点
           href: Operation-Guide/Instance/Nodes/Coordinating-node.md
         - name: 实例生命周期
-          href: Operation-Guide/Instance/Manage/Status.md
+          href: Operation-Guide/Instance/Manage/Instance-status.md
         - name: 修改实例名称
           href: Operation-Guide/Instance/Manage/Naming.md
         - name: 标签管理
