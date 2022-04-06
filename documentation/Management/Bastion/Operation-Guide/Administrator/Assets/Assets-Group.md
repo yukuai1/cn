@@ -28,7 +28,7 @@
 
 进入【资产】-【主机组管理】，在主机组列表中选中需要删除的主机组，点击“删除”操作。
 
-![](/image/Bastion/Delete the host group.png) 
+![](/image/Bastion/Deletethehostgroup.png) 
 
 **查看主机组**
 
