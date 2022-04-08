@@ -50,7 +50,7 @@ https://baseanti.jdcloud-api.com/v1/attacklog
 |名称|类型|描述|
 |---|---|---|
 |**ip**|String|公网 IP 地址|
-|**resourceType**|Integer|公网 IP 类型或绑定资源类型.<br>- 0: 未知类型,<br>- 1: 弹性公网 IP(IP 为弹性公网 IP, 绑定资源类型未知),<br>- 10: 弹性公网 IP(IP 为弹性公网 IP, 但未绑定资源),<br>- 11: 云主机,<br>- 12: 负载均衡,<br>- 13: 原生容器实例,<br>- 14: 原生容器 Pod,<br>- 2: 云物理服务器,<br>- 4: 托管区公网 IP|
+|**resourceType**|Integer|公网 IP 类型或绑定资源类型.<br><br>- 0: 未知类型<br><br>- 1: 弹性公网 IP(IP 为弹性公网 IP, 绑定资源类型未知)<br><br>- 10: 弹性公网 IP(IP 为弹性公网 IP, 但未绑定资源)<br><br>- 11: 云主机<br><br>- 12: 负载均衡<br><br>- 13: 原生容器实例<br><br>- 14: 原生容器 Pod<br><br>- 2: 云物理服务器<br><br>- 3: Web应用防火墙 IP<br><br>- 4: 托管区公网 IP<br>|
 |**attackLogId**|String|攻击记录 ID|
 |**startTime**|String|攻击开始时间, UTC 时间, 格式: yyyy-MM-dd'T'HH:mm:ssZ|
 |**endTime**|String|攻击结束时间, UTC 时间, 格式: yyyy-MM-dd'T'HH:mm:ssZ|

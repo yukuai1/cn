@@ -57,8 +57,12 @@
             href: Pricing/Price-Overview/PostgreSQL-Price.md            
       - name: 购买流程
         href: Pricing/Purchase-Procedure.md
+      - name: 变配
+        href: Pricing/Change-Procedure.md
       - name: 续费流程
         href: Pricing/Renewal-Procedure.md
+      - name: 查看消费明细
+        href: Pricing/Consumption-details.md
         
   - name: 入门指南
     items:
@@ -459,9 +463,15 @@
       - name: MySQL 性能测试 
         items:
         - name: 性能测试步骤 
-          href: Tutorial/Performance-Test/MySQL-Performance-Test/Performance-Test-Step.md
+          href: Tutorial/Performance-Test/MySQL-Performance-Test/MySQL-Performance-Test-Step.md
         - name: 性能测试结果 
-          href: Tutorial/Performance-Test/MySQL-Performance-Test/Performance-Test-Result.md
+          href: Tutorial/Performance-Test/MySQL-Performance-Test/MySQL-Performance-Test-Result.md
+      - name: PostgreSQL 性能测试 
+        items:
+        - name: 性能测试步骤 
+          href: Tutorial/Performance-Test/PostgreSQL-Performance-Test/Performance-Test-Step.md
+        - name: 性能测试结果 
+          href: Tutorial/Performance-Test/PostgreSQL-Performance-Test/Performance-Test-Result.md
   - name: 常见问题
     items:
     - name: FAQ
