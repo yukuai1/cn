@@ -50,6 +50,8 @@
             href: Operation-Guide/Instance/Connect-Instance.md    
           - name: 删除实例
             href: Operation-Guide/Instance/Delete-Instance.md
+          - name: 外网访问
+            href: Operation-Guide/Instance/Outer-Access.md
           - name: 变更配置
             href: Operation-Guide/Instance/Update-Instance.md
           - name: 实例版本升级
@@ -91,6 +93,8 @@
             href: Operation-Guide/localDataLoading/loading-clickhouse-client.md
           - name: 从Spark导入
             href: Operation-Guide/localDataLoading/loading-spark.md
+          - name: 从自建ClickHouse迁移上云
+            href: Operation-Guide/localDataLoading/local-clickhouse-clickhouse.md
 
       - name: 日志审计
         items:
