@@ -25,6 +25,8 @@
         href: Pricing/Price-Overview.md   
   - name: 快速入门
     items:
+      - name: 操作流程
+        href: Getting-Started/operation.md
       - name: 创建实例
         href: Getting-Started/Create-Instance1.md
       - name: 创建账号
