@@ -13,8 +13,8 @@ v1
 |接口名称|请求方式|功能描述|
 |---|---|---|
 |[**associateElasticIp**](https://docs.jdcloud.com/cn/virtual-machines/api/associateelasticip?content=API)|POST|为云主机主网卡的主内网IP绑定弹性公网IP。<br>
-|[**attachDisk**](https://docs.jdcloud.com/cn/virtual-machines/api/attachdisk?content=API)|POST|为一台云主机挂载一块云硬盘。<br>|
-|[**attachNetworkInterface**](https://docs.jdcloud.com/cn/virtual-machines/api/attachnetworkinterface?content=API)|POST|为云主机绑定一块弹性网卡。<br>|
+|[**attachDisk**](https://docs.jdcloud.com/cn/virtual-machines/api/attachdisk?content=API)|POST|为云主机挂载云硬盘。<br>|
+|[**attachNetworkInterface**](https://docs.jdcloud.com/cn/virtual-machines/api/attachnetworkinterface?content=API)|POST|为云主机绑定弹性网卡。<br>|
 |[**copyImages**](https://docs.jdcloud.com/cn/virtual-machines/api/copyimages?content=API)|POST|镜像跨区复制，将私有镜像复制到其它地域下。<br>|
 |[**createImage**](https://docs.jdcloud.com/cn/virtual-machines/api/createimage?content=API)|POST|为云主机创建私有镜像。<br>|
 |[**createInstanceTemplate**](https://docs.jdcloud.com/cn/virtual-machines/api/createinstancetemplate?content=API)|POST|创建一个指定参数的启动模板。<br>|
