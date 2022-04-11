@@ -19,12 +19,11 @@ v1
 |[**createImage**](https://docs.jdcloud.com/cn/virtual-machines/api/createimage?content=API)|POST|为云主机创建私有镜像。<br>|
 |[**createInstanceTemplate**](https://docs.jdcloud.com/cn/virtual-machines/api/createinstancetemplate?content=API)|POST|创建一个指定参数的启动模板。<br>|
 |[**createInstances**](https://docs.jdcloud.com/cn/virtual-machines/api/createinstances?content=API)|POST|创建一台或多台指定配置的云主机。<br>|
-|[**createKeypair**](https://docs.jdcloud.com/cn/virtual-machines/api/createkeypair?content=API)|POST|创建ssh密钥对。公钥部分存储在京东云，并返回未加密的 PEM 编码的 PKCS#8 格式私钥，您只有一次机会保存您的私钥。请妥善保管。<br>若传入已存在的密钥名称，会返回错误。<br>|
-|[**deleteImage**](https://docs.jdcloud.com/cn/virtual-machines/api/deleteimage?content=API)|DELETE|删除一个私有镜像，只允许操作您的个人私有镜像。<br>若镜像已共享给其他用户，需先取消共享才可删除。<br>|
+|[**createKeypair**](https://docs.jdcloud.com/cn/virtual-machines/api/createkeypair?content=API)|POST|创建ssh密钥对。公钥部分存储在京东云，并返回未加密的 PEM 编码的 PKCS#8 格式私钥，您需要自行妥善保管私钥部分。<br>|
+|[**deleteImage**](https://docs.jdcloud.com/cn/virtual-machines/api/deleteimage?content=API)|DELETE|删除一个私有镜像。<br>|
 |[**deleteInstance**](https://docs.jdcloud.com/cn/virtual-machines/api/deleteinstance?content=API)|DELETE|删除按配置计费、或包年包月已到期的单个云主机。不能删除没有计费信息的云主机。<br>云主机状态必须为运行<b>running</b>、停止<b>stopped</b>、错误<b>error</b>，同时云主机没有正在进行中的任务才可删除。<br>如果主机中挂载的数据盘为按配置计费的云硬盘且AutoDelete属性为true，那么数据盘会随主机一起删除。<br>敏感操作，可开启<a href="https://docs.jdcloud.com/cn/security-operation-protection/operation-protection">MFA操作保护</a>|
 |[**deleteInstanceTemplate**](https://docs.jdcloud.com/cn/virtual-machines/api/deleteinstancetemplate?content=API)|DELETE|删除一个启动模板<br>|
 |[**deleteKeypair**](https://docs.jdcloud.com/cn/virtual-machines/api/deletekeypair?content=API)|DELETE|删除ssh密钥对。<br>|
-|[**describeBriefInstances**]()|POST|批量查询云主机信息的轻量接口，不返回云盘、网络、计费、标签等信息。如果不需要关联资源属性，尽量选择使用该接口。<br>此接口支持分页查询，默认每页20条。<br>|
 |[**describeImage**](https://docs.jdcloud.com/cn/virtual-machines/api/describeimage?content=API)|GET|查询镜像详情。<br>|
 |[**describeImageConstraints**](https://docs.jdcloud.com/cn/virtual-machines/api/describeimageconstraints?content=API)|GET|查询镜像的实例规格限制。<br>通过此接口可以查看镜像不支持的实例规格。只有官方镜像、第三方镜像有实例规格的限制，个人的私有镜像没有此限制。<br>|
 |[**describeImageConstraintsBatch**](https://docs.jdcloud.com/cn/virtual-machines/api/describeimageconstraintsbatch?content=API)|GET|批量查询镜像的实例规格限制。<br>通过此接口可以查看镜像不支持的实例规格。只有官方镜像、第三方镜像有实例规格的限制，个人的私有镜像没有此限制。<br>|
@@ -54,12 +53,10 @@ v1
 |[**modifyInstancePassword**](https://docs.jdcloud.com/cn/virtual-machines/api/modifyinstancepassword?content=API)|POST|修改云主机密码，主机没有正在进行中的任务时才可操作。<br>修改密码后，需要重启云主机后生效。<br>|
 |[**rebootInstance**](https://docs.jdcloud.com/cn/virtual-machines/api/rebootinstance?content=API)|POST|重启单个云主机，只能重启<b>running</b>状态的云主机，云主机没有正在进行中的任务才可重启。<br>|
 |[**rebuildInstance**](https://docs.jdcloud.com/cn/virtual-machines/api/rebuildinstance?content=API)|POST|云主机使用指定镜像重置云主机系统<br>云主机的状态必须为<b>stopped</b>状态。<br>若不指定镜像ID，默认使用当前主机的原镜像重置系统。<br>云主机系统盘类型必须与待更换镜像支持的系统盘类型保持一致，若当前云主机系统盘为local类型，则更换镜像的系统盘类型必须为loaclDisk类型；同理，若当前云主机系统盘为cloud类型，则更换镜像的系统盘类型必须为cloudDisk类型。可查询<a href="http://docs.jdcloud.com/virtual-machines/api/describeimages">DescribeImages</a>接口获得指定地域的镜像信息。<br>指定的镜像必须能够支持当前主机的实例规格(instanceType)，否则会返回错误。可查询<a href="http://docs.jdcloud.com/virtual-machines/api/describeimageconstraints">DescribeImageConstraints</a>接口获得指定镜像支持的系统盘类型信息。<br>|
-|[**releaseImage**]()|POST|发布社区镜像，只允许操作您的个人私有镜像。发布为社区镜像后会撤销共享关系。<br>|
 |[**resizeInstance**](https://docs.jdcloud.com/cn/virtual-machines/api/resizeinstance?content=API)|POST|云主机变更实例规格<br>云主机的状态必须为<b>stopped</b>状态。<br>以下情况的云主机，不允许在一代与二代实例规格间互相调整，例：不允许g.n1与g.n2之间互相调配<br>1、16年创建的云硬盘做系统盘的云主机<br>2、本地盘(local类型)做系统盘的云主机。<br>3、使用高可用组(Ag)创建的云主机。<br>如果当前主机中的弹性网卡数量，大于新实例规格允许的弹性网卡数量，会返回错误。可查询<a href="http://docs.jdcloud.com/virtual-machines/api/describeinstancetypes">DescribeInstanceTypes</a>接口获得指定地域及可用区下的实例规格信息。<br>当前主机所使用的镜像，需要支持要变更的目标实例规格，否则返回错误。可查询<a href="http://docs.jdcloud.com/virtual-machines/api/describeimageconstraints">DescribeImageConstraints</a>接口获得指定镜像的实例规格限制信息。<br>云主机欠费或到期时，无法更改实例规格。<br>|
 |[**shareImage**](https://docs.jdcloud.com/cn/virtual-machines/api/shareimage?content=API)|POST|共享镜像，只允许操作您的个人私有镜像，单个镜像最多可共享给20个京东云帐户。<br>整机镜像目前不支持共享。<br>|
 |[**startInstance**](https://docs.jdcloud.com/cn/virtual-machines/api/startinstance?content=API)|POST|启动单个云主机，只能启动<b>stopped</b>状态的云主机，云主机没有正在进行中的任务才可启动。<br>只能启动正常计费状态的云主机，若已欠费停服或到期停服则不支持启动。<br>|
 |[**stopInstance**](https://docs.jdcloud.com/cn/virtual-machines/api/stopinstance?content=API)|POST|停止单个云主机，只能停止<b>running</b>状态的云主机，云主机没有正在进行中的任务才可停止<br>|
-|[**unReleaseImage**]()|POST|撤销社区镜像，只允许操作您的个人私有镜像。<br>|
 |[**unShareImage**](https://docs.jdcloud.com/cn/virtual-machines/api/unshareimage?content=API)|POST|取消共享镜像，只允许操作您的个人私有镜像。<br>|
 |[**updateInstanceTemplate**](https://docs.jdcloud.com/cn/virtual-machines/api/updateinstancetemplate?content=API)|PATCH|修改一个启动模板的信息，包括名称、描述<br>|
 |[**verifyInstanceTemplate**](https://docs.jdcloud.com/cn/virtual-machines/api/verifyinstancetemplate?content=API)|GET|校验启动模板的有效性<br>|
