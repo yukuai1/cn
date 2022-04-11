@@ -19,7 +19,7 @@
 1. 将数据文件导入到 ClickHouse 集群并查看已导入的数据。提前准备好数据文件 account.csv，文件内容如下：
 
 ```
-AccountId, Name, Address, Year
+accountid, name, address, year
 1, 'GHua', 'WuHan Hubei', 1990
 2, 'SLiu', 'ShenZhen Guangzhou', 1991
 3, 'JPong', 'Chengdu Sichuan', 1992
