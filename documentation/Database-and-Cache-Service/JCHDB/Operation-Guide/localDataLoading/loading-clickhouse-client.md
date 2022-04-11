@@ -21,7 +21,7 @@
 1. 提前准备好数据文件 account.csv，文件内容如下：
 
 ```
-AccountId, Name, Address, Year
+accountid, name, address, year
 1, 'GHua', 'WuHan Hubei', 1990
 2, 'SLiu', 'ShenZhen Guangzhou', 1991
 3, 'JPong', 'Chengdu Sichuan', 1992
@@ -63,13 +63,13 @@ AccountId, Name, Address, Year
    - 高可用模式下创建数据库
 
    ```
-      CREATE DATABASE IF NOT EXISTS testdb ON CLUSTER default_cluster;
+      CREATE DATABASE IF NOT EXISTS testdb ON CLUSTER default;
    ```
 
    - 非高可用模式下创建数据库   
 
    ```
-      CREATE DATABASE IF NOT EXISTS testdb ON CLUSTER default_cluster;
+      CREATE DATABASE IF NOT EXISTS testdb ;
    ```
 
    ##### 2.3 创建数据表
@@ -77,13 +77,13 @@ AccountId, Name, Address, Year
    - 高可用模式下创建数据表
 
    ```
-   CREATE TABLE testdb.account ON CLUSTER default_cluster(accountid UInt16,name String,address String,year UInt64) ENGINE =ReplicatedMergeTree('/clickhouse/tables/{layer}-{shard}/testdb/account', '{replica}') ORDER BY (accountid);
+   CREATE TABLE testdb.account ON CLUSTER default(accountid UInt16,name String,address String,year UInt64) ENGINE =ReplicatedMergeTree('/clickhouse/tables/{shard}/testdb/account', '{replica}') ORDER BY (accountid);
    ```
 
    - 非高可用模式下创建数据表
 
    ```
-   CREATE TABLE testdb.account ON CLUSTER default_cluster(accountid UInt16, name String, address String, year UInt64) ENGINE =MergeTree() ORDER BY (accountid);
+   CREATE TABLE testdb.account(accountid UInt16, name String, address String, year UInt64) ENGINE =MergeTree() ORDER BY (accountid);
    ```
 
    
