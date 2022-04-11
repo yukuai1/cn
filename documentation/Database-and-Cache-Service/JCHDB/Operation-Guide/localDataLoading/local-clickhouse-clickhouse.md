@@ -73,11 +73,7 @@ clickhouse-client --host="<new host>" --port="<new port>" --user="<new user name
 
 1，将目标实例分析型云数据库ClickHouse的网段加入到源实例的白名单中。
 
-可以在分析型云数据库ClickHouse控制台查看目标实例云数据库ClickHouse的VPC网络，并且将该VPC的整个网段都加入到源实例的白名单中。如果希望控制白名单的网段范围，避免潜在安全问题，那么可以通过如下SQL查询到目标实例云数据库ClickHouse的后台Server IP，只将这几个IP加入源实例的白名单中。
-
-```
-select * from system.clusters;
-```
+可以在分析型云数据库ClickHouse控制台查看目标实例云数据库ClickHouse的VPC网络，并且将该VPC的整个网段都加入到源实例的白名单中。
 
 2，在目标实例云数据库ClickHouse中，通过如下SQL进行数据迁移。
 
