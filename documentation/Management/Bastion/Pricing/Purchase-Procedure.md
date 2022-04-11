@@ -43,5 +43,5 @@
 ## 6. 创建完成
 点击刷新按钮，显示实例创建完成，状态显示为“运行中”即表示正常运行
 
-![](/image/Bastion/Create-Instance-3.png) 
+![](/image/Bastion/Create-Instance-4.png) 
 
