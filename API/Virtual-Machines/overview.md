@@ -28,7 +28,7 @@ v1
 |[**describeInstanceVncUrl**](https://docs.jdcloud.com/cn/virtual-machines/api/describeinstancevncurl?content=API)|GET|获取云主机vnc，用于连接管理云主机。<br>|
 |[**attachDisk**](https://docs.jdcloud.com/cn/virtual-machines/api/attachdisk?content=API)|POST|为云主机挂载云硬盘。<br>|
 |[**detachDisk**](https://docs.jdcloud.com/cn/virtual-machines/api/detachdisk?content=API)|POST|为云主机缷载云硬盘。<br>|
-|[**modifyInstanceDiskAttribute**](https://docs.jdcloud.com/cn/virtual-machines/api/modifyinstancediskattribute?content=API)|POST|修改云主机挂载的数据盘属性。<br>|
+|[**modifyInstanceDiskAttribute**](https://docs.jdcloud.com/cn/virtual-machines/api/modifyinstancediskattribute?content=API)|POST|修改云主机挂载的云硬盘属性。<br>|
 |[**attachNetworkInterface**](https://docs.jdcloud.com/cn/virtual-machines/api/attachnetworkinterface?content=API)|POST|为云主机绑定弹性网卡。<br>|
 |[**detachNetworkInterface**](https://docs.jdcloud.com/cn/virtual-machines/api/detachnetworkinterface?content=API)|POST|为云主机缷载弹性网卡。<br>|
 |[**associateElasticIp**](https://docs.jdcloud.com/cn/virtual-machines/api/associateelasticip?content=API)|POST|为云主机绑定弹性公网IP。<br>
