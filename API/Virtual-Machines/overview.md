@@ -74,10 +74,10 @@ v1
 |[**describeInstanceTemplatesCustomdata**](https://docs.jdcloud.com/cn/virtual-machines/api/describeinstancetemplatescustomdata?content=API)|GET|查询实例模板配置的自定义数据，包括自定义脚本和自定义元数据。<br>|
 |[**verifyInstanceTemplate**](https://docs.jdcloud.com/cn/virtual-machines/api/verifyinstancetemplate?content=API)|GET|校验实例模板的有效性。<br>|
 |[**updateInstanceTemplate**](https://docs.jdcloud.com/cn/virtual-machines/api/updateinstancetemplate?content=API)|PATCH|修改实例模板的信息，包括实例规格、镜像ID、实例密码等。<br>|
-## 规格类型
+## 实例规格类型
 |API|请求方式|功能描述|
 |---|---|---|
-|[**describeInstanceTypes**](https://docs.jdcloud.com/cn/virtual-machines/api/describeinstancetypes?content=API)|GET|查询实例规格信息列表，包括实力规格族、实例规格代数、实例规格等。<br>|
+|[**describeInstanceTypes**](https://docs.jdcloud.com/cn/virtual-machines/api/describeinstancetypes?content=API)|GET|查询实例规格信息列表，包括实例规格族、实例规格代数、实例规格等。<br>|
 ## 配额
 |API|请求方式|功能描述|
 |---|---|---|
