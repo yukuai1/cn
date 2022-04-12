@@ -25,7 +25,7 @@ v1
 |[**modifyInstanceAttribute**](https://docs.jdcloud.com/cn/virtual-machines/api/modifyinstanceattribute?content=API)|POST|修改云主机部分信息，包括云主机名称、描述、自定义元数据等。<br>|
 |[**describeInstanceStatus**](https://docs.jdcloud.com/cn/virtual-machines/api/describeinstancestatus?content=API)|GET|批量查询云主机状态。<br>|
 |[**describeInstancesCustomData**](https://docs.jdcloud.com/cn/virtual-machines/api/describeinstancescustomdata?content=API)|GET|批量查询云主机用户自定义元数据。<br>|
-|[**describeInstanceVncUrl**](https://docs.jdcloud.com/cn/virtual-machines/api/describeinstancevncurl?content=API)|GET|获取云主机vnc，用于连接管理云主机。<br>|
+|[**describeInstanceVncUrl**](https://docs.jdcloud.com/cn/virtual-machines/api/describeinstancevncurl?content=API)|GET|获取云主机VNC，用于连接管理云主机。<br>|
 |[**attachDisk**](https://docs.jdcloud.com/cn/virtual-machines/api/attachdisk?content=API)|POST|为云主机挂载云硬盘。<br>|
 |[**detachDisk**](https://docs.jdcloud.com/cn/virtual-machines/api/detachdisk?content=API)|POST|为云主机缷载云硬盘。<br>|
 |[**modifyInstanceDiskAttribute**](https://docs.jdcloud.com/cn/virtual-machines/api/modifyinstancediskattribute?content=API)|POST|修改云主机挂载的云硬盘属性。<br>|
@@ -54,7 +54,7 @@ v1
 |[**imageTasks**](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API)|GET|查询镜像导入导出任务信息。<br>|
 |[**describeImageConstraints**](https://docs.jdcloud.com/cn/virtual-machines/api/describeimageconstraints?content=API)|GET|查询单个镜像的云主机实例规格限制信息。<br>|
 |[**describeImageConstraintsBatch**](https://docs.jdcloud.com/cn/virtual-machines/api/describeimageconstraintsbatch?content=API)|GET|批量查询镜像的云主机实例规格限制信息。<br>|
-|[**modifyImageAttribute**](https://docs.jdcloud.com/cn/virtual-machines/api/modifyimageattribute?content=API)|POST|修改镜像信息，包括镜像名称、描述。<br>|
+|[**modifyImageAttribute**](https://docs.jdcloud.com/cn/virtual-machines/api/modifyimageattribute?content=API)|POST|修改镜像信息，包括镜像名称、描述等。<br>|
 
 ## SSH密钥
 |API|请求方式|功能描述|
