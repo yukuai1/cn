@@ -12,7 +12,7 @@ v1
 ## 云主机实例
 |API|请求方式|功能描述|
 |---|---|---|
-|[**createInstances**](https://docs.jdcloud.com/cn/virtual-machines/api/createinstances?content=API)|POST|创建指定配置的云主机。<br>|
+|[**createInstances**](https://docs.jdcloud.com/cn/virtual-machines/api/createinstances?content=API)|POST|创建云主机。<br>|
 |[**startInstance**](https://docs.jdcloud.com/cn/virtual-machines/api/startinstance?content=API)|POST|启动云主机。<br>|
 |[**stopInstance**](https://docs.jdcloud.com/cn/virtual-machines/api/stopinstance?content=API)|POST|停止云主机。<br>|
 |[**rebootInstance**](https://docs.jdcloud.com/cn/virtual-machines/api/rebootinstance?content=API)|POST|重启云主机。<br>|
