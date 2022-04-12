@@ -35,7 +35,7 @@ v1
 |[**disassociateElasticIp**](https://docs.jdcloud.com/cn/virtual-machines/api/disassociateelasticip?content=API)|POST|为云主机解绑弹性公网IP。<br>|
 |[**modifyInstanceNetworkAttribute**](https://docs.jdcloud.com/cn/virtual-machines/api/modifyinstancenetworkattribute?content=API)|POST|修改云主机弹性网卡属性，包括弹性网卡ID、是否随云主机一起删除。<br>|
 |[**modifyInstanceVpcAttribute**](https://docs.jdcloud.com/cn/virtual-machines/api/modifyinstancevpcattribute?content=API)|POST|修改云主机的子网或内网IP地址。<br>|
-|[**modifyInstancePlacement**](https://docs.jdcloud.com/cn/virtual-machines/api/modifyinstanceplacement?content=API)|POST|存量主机加入高可用组，或者主机从一个高可用组移动到另一个高可用组。<br>|
+|[**modifyInstancePlacement**](https://docs.jdcloud.com/cn/virtual-machines/api/modifyinstanceplacement?content=API)|POST|存量云主机加入高可用组，或者云主机从一个高可用组移动到另一个高可用组。<br>|
 
 ## 镜像
 |API|请求方式|功能描述|
