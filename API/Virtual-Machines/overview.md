@@ -19,7 +19,7 @@ v1
 |[**resizeInstance**](https://docs.jdcloud.com/cn/virtual-machines/api/resizeinstance?content=API)|POST|为云主机变更实例规格。<br>|
 |[**startInstance**](https://docs.jdcloud.com/cn/virtual-machines/api/startinstance?content=API)|POST|启动云主机。<br>|
 |[**stopInstance**](https://docs.jdcloud.com/cn/virtual-machines/api/stopinstance?content=API)|POST|停止云主机。<br>|
-|[**describeInstances**](https://docs.jdcloud.com/cn/virtual-machines/api/describeinstances?content=API)|GET|批量查询云主机的详细信息，包括云主机ID、云主机名称、云主机实例规格等。<br>|
+|[**describeInstances**](https://docs.jdcloud.com/cn/virtual-machines/api/describeinstances?content=API)|GET|批量查询云主机的详细信息，包括云主机ID、名称、实例规格等。<br>|
 |[**describeInstance**](https://docs.jdcloud.com/cn/virtual-machines/api/describeinstance?content=API)|GET|查询一台云主机的详细信息。<br>|
 |[**describeInstanceStatus**](https://docs.jdcloud.com/cn/virtual-machines/api/describeinstancestatus?content=API)|GET|批量查询云主机状态。<br>|
 |[**describeInstanceVncUrl**](https://docs.jdcloud.com/cn/virtual-machines/api/describeinstancevncurl?content=API)|GET|获取云主机vnc，用于连接管理云主机。<br>|
