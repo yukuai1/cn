@@ -1,7 +1,7 @@
 # 创建集群
 
 您可以通过 JMR 控制台快速创建集群。
-关于JMR的计费说明请参见：[价格总览](../Pricing/Price-Overview.md)、[计费概述](../Pricing/Billing-Overview.md)，本文介绍通过控制台创建JMR集群。
+关于JMR的计费说明请参见：[价格总览](../Pricing/Price-Overview.md)、[计费概述](../Pricing/Billing-Overview.md)，本文介绍通过控制台创建JMR集群(在支持 IPv6 的私有网络及子网中创建集群时，创建的 JMR集群 将自动支持IPv6)。
 
 ## 前提条件
 
@@ -9,7 +9,7 @@
 - 如计费类型选择按配置计费，请确认您的账户余额（包括代金券）不小于50元。
 
 ## 操作步骤
-1. 登录 [JMR 控制台](https://xdata.jdcloud.com/rmgr/resources/res-manage/custom-resources.html#/)，选择地域。JMR 目前支持华北-北京、华南-广州，后续将支持更多地域。
+1. 登录 [JMR 控制台](https://jmr-console.jdcloud.com/cluster/list)，选择地域。JMR 目前支持华北-北京、华南-广州，后续将支持更多地域。
 	
 2. 在集群管理页面，点击“创建”，进入创建页面。
 

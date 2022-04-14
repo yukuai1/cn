@@ -17,9 +17,16 @@ Windows系统实例暂不支持性能监控功能。<br/>
 
 ## 安装Agent
 
-curl [http://jdcps-proxy.jdcloud.com/agent/download/jdcps-agent-v1.0.0.bin](http://jdcps-proxy.jdcloud.com/agent/download/jdcps-agent-v1.0.0.bin) -O <br/>
-chmod +x jdcps-agent-v1.0.0.bin<br/>
-sudo ./jdcps-agent-v1.0.0.bin<br/>
+curl [http://jdcps-proxy.jdcloud.com/agent/download/jdcps-agent-v2.0.0.bin](http://jdcps-proxy.jdcloud.com/agent/download/jdcps-agent-v2.0.0.bin) -O <br/>
+chmod +x jdcps-agent-v2.0.0.bin<br/>
+sudo ./jdcps-agent-v2.0.0.bin<br/>
+
+说明：基础网络实例安装前准备工作如下：<br/>
+基础网络实例增加路由<br/>
+1、确定内网Gateway地址 route -n <br/>
+查询eth0对应的Gateway地址（eg：10.123.0.1）<br/>
+2、将监控流量引导到内网网关<br/>
+route add -net 100.66.1.0 netmask 255.255.255.0 gw {机器内网网关地址}<br/>
 
 ## 卸载Agent
 
@@ -29,9 +36,9 @@ chkconfig --del jdcpsd <br/>
 
 ## 监控数据说明
 
-1、进入云物理服务器列表页，选择实例列表->私有网络实例，选择所需要查看的实例，点击安装“监控插件”，按照如上描述操作，可安装成功，即可获取监控数据；<br/>
-2、点击私有网络实例列表中的实例名称，进入资源信息页面，即可查看“Agent状态”。<br/>
-3、点击私有网络实例列表中的监控图标，进入性能监控页面，即可查看服务器性能监控指标。<br/>
+1、进入云物理服务器列表页，选择实例列表->基础网络实例/私有网络实例，选择所需要查看的实例，点击安装“监控插件”，按照如上描述操作，可安装成功，即可获取监控数据；<br/>
+2、点击实例列表中的实例名称，进入资源信息页面，即可查看“Agent状态”。<br/>
+3、点击实例列表中的监控图标，进入性能监控页面，即可查看服务器性能监控指标。<br/>
 
 
 

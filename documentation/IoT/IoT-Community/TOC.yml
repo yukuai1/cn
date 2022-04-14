@@ -1,0 +1,56 @@
+name: 智慧社区平台
+href: 
+items:
+  - name: 产品简介
+    items:
+      - name: 产品概述
+        href: Introduction/Product-Overview.md
+      - name: 基础架构
+        href: Introduction/Basic-Infrastructure.md
+      - name: 产品优势
+        href: Introduction/Benefits.md
+      - name: 产品功能
+        href: Introduction/Features.md
+  - name: 产品定价
+    items:
+      - name: 计费概述
+        href: Pricing/Billing-Overview.md
+      - name: 计费规则
+        href: Pricing/Billing-Rules.md
+      - name: 价格总览
+        href: Pricing/Price-Overview.md
+      - name: 购买流程
+        href: Pricing/Purchase-Process.md 
+  - name: 入门指南
+    items:
+      - name: 入门指南概述
+        href: Getting-Started/Getting-Started.md
+      - name: 购买服务
+        href: Getting-Started/Buy-Product.md
+      - name: 登录智能生活物联网平台
+        href: Getting-Started/Login.md
+  - name: 操作指南
+    items:
+      - name: 资源管理
+        href: Operation-Guide/Resource-Manage.md
+      - name: 收费管理
+        href: Operation-Guide/Charge-Manage.md
+      - name: 工单管理
+        href: Operation-Guide/Work-Order.md
+      - name: 租赁管理
+        href: Operation-Guide/Rent-Manage.md
+      - name: 安保巡逻
+        href: Operation-Guide/Security-Patrol.md
+      - name: 系统管理
+        href: Operation-Guide/System-Manage.md
+  - name: 常见问题
+    href: FAQ/FAQ.md
+  - name: 用户协议
+    status: 0
+    items:
+      - name: 服务条款
+        href: User-Agreements/Product-Terms-of-Service.md
+        status: 0
+      - name: SLA
+        href: User-Agreements/SLA.md
+        status: 0

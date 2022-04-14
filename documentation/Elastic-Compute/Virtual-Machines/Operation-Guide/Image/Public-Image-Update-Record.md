@@ -17,6 +17,12 @@
   	</thead>
     <tbody>     
     <tr>
+        <td>2021-01-28 北京/广州/宿迁/上海</td>
+      	<td>CentOS 8.2</td>
+      	<td>* 发布上线</td>
+        <td> </td>
+    </tr> 
+    <tr>
         <td>2020-12-21 北京/广州/宿迁/上海</td>
       	<td>CentOS 6.5, CentOS 6.6, CentOS 6.8</td>
       	<td>* 镜像下线</td>
@@ -25,7 +31,7 @@
     <tr>
         <td>2019-07-03 北京</td>
       	<td>CentOS 7.6</td>
-      	<td>发布上线</td>
+      	<td>* 发布上线</td>
         <td> </td>
     </tr>    	    
     <tr>
@@ -109,6 +115,12 @@
   	</thead>
     <tbody>    
     <tr>
+        <td>2021-06-18 北京/广州/宿迁/上海</td>
+      	<td>Ubuntu 20.04</td>
+      	<td>* 发布上线</td>
+        <td> </td>
+    </tr>    
+    <tr>
         <td>2019-12-19 北京/广州/宿迁/上海</td>
       	<td>Ubuntu 18.04</td>
       	<td>* 发布上线</td>
@@ -179,6 +191,12 @@
     </tr>
   	</thead>
     <tbody>    
+    <tr>
+        <td>2021-07-05 北京/广州/宿迁/上海</td>
+      	<td>Windows Server 2019 数据中心版 中文版</td>
+      	<td>* 发布上线</td>
+        <td> </td>
+    </tr>   
     <tr>
         <td>2019-08-27 北京/广州/宿迁/上海</td>
       	<td>Windows Server 2016 数据中心版 中文版<br>Windows Server 2012 R2 标准版 中文版<br>Windows Server 2008 R2 数据中心版 中文版</td>

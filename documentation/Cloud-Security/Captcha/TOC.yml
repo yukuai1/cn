@@ -28,7 +28,7 @@ items:
       - name: 统计数据查看
         href: Operation-Guide/Overview.md
       - name: 应用管理
-        href: Operation-Guide/packageManagement.md
+        href: Operation-Guide/appManagement.md
       - name: 场景管理
         href: Operation-Guide/sceneManagement.md
       - name: 资源包管理
@@ -36,7 +36,7 @@ items:
   - name: API指南
     items:
       - name: 接口概览
-        href: API-Document/overview.md
+        href: API-Document/API-overview.md
       - name: 更新历史
         href: API-Document/ChangeLog.md
       - name: 验证码接口
@@ -47,9 +47,12 @@ items:
             href:  API-Document/Management/verifyToken.md
   - name: SDK接入
     items:
+      - name: PC/M端 SDK接入
+        href: API-Document/SDK/browser-SDK.md
+      - name: 微信小程序 SDK接入
+        href: API-Document/SDK/wxapp-SDK.md
       - name: Android SDK接入
         href: API-Document/SDK/Androidsdk.md
       - name: iOS SDK接入
         href: API-Document/SDK/iOSsdk.md
-
 
