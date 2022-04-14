@@ -41,8 +41,6 @@
     items:
       - name: 计费概述
         href: Pricing/Billing-Overview.md
-      - name: 计费规则
-        href: Pricing/Billing-Rules.md
       - name: 价格总览
         items:
           - name: MySQL 价格
