@@ -82,6 +82,10 @@
         items:
           - name: 应用管理
             href: /Operation-Guide/deploy/app.md
+          - name: 镜像部署的应用
+            href: /Operation-Guide/deploy/app-image.md
+          - name: 包部署的应用
+            href: /Operation-Guide/deploy/app-package.md
           - name: 集群管理
             href: /Operation-Guide/deploy/clusters.md
           - name: 系统管理
