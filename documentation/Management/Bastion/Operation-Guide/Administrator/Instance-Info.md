@@ -2,7 +2,7 @@
 
 一个堡垒机实例对应一个独立运行的堡垒机系统。您可通过控制台查看您所拥有的实例：
 * [实例列表页](Instance-Info#user-content-2)：可以查看各地域下所有实例的信息，包括ID、可用区、公网IP/域名地址等。
-* [实例详情页](Instance-Info#user-content-3)：可以查看指定实例的详细信息。
+* [实例详情页](Instance-Info#user-content-3)：点击实例ID可以查看指定实例的详细信息（基本信息、配置信息、网络信息、安全组配置信息）；同时可切换查看堡垒机监控信息。
 
 <div id ="user-content-2"></div>
 
