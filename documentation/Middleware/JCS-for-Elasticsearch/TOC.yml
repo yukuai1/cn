@@ -41,7 +41,7 @@
         href: Getting-Started/Create-ES.md
       - name: 访问集群
         href: Getting-Started/accesscluster.md
-      - name: 多可用区部署说明
+      - name: 集群多可用区部署
         href: Getting-Started/MultiAZ-ES.md
       - name: 管理数据
         items:
@@ -79,6 +79,8 @@
           href: Operation-Guide/Instance/Manage/Instance-status.md
         - name: 修改实例名称
           href: Operation-Guide/Instance/Manage/Naming.md
+        - name: 集群多可用区部署
+          href: Getting-Started/MultiAZ-ES.md
         - name: 标签管理
           items:
           - name: 标签概述
