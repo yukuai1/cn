@@ -5,7 +5,7 @@
 查询资源配额。
 
 ## 接口说明
-- 调用该接口可查询专有宿主机、专有宿主机池的配额。
+- 调用该接口可查询专有宿主机、专有资源池的配额。
 
 
 ## 请求方式
@@ -21,9 +21,9 @@ https://dh.jdcloud-api.com/v1/regions/{regionId}/dhQuotas
 ## 请求参数
 |名称|类型|是否必需|示例值|描述|
 |---|---|---|---|---|
-|**filters**|[Filter[]](#filter)|否| |resourceTypes - 资源类型，支持多个[dedicatedHost，dedicatedPool]<br>|
+|**filters**|[Filter[]](describeQuotas#user-content-filter)|否| |resourceTypes - 资源类型，支持多个[dedicatedHost，dedicatedPool]<br>|
 
-### <div id="Filter">Filter</div>
+### <div id="user-content-filter">Filter</div>
 |名称|类型|是否必需|示例值|描述|
 |---|---|---|---|---|
 |**name**|String|是| |过滤条件的名称|
@@ -33,14 +33,14 @@ https://dh.jdcloud-api.com/v1/regions/{regionId}/dhQuotas
 ## 返回参数
 |名称|类型|示例值|描述|
 |---|---|---|---|
-|**result**|[Result](describeQuotas#user-content-2)| |响应结果。|
+|**result**|[Result](describeQuotas#user-content-result)| |响应结果。|
 |**requestId**|String|c2hmmaan8w06w19qcdfuic4w03f7ft2d|请求ID。|
 
-### <div id="Result">Result</div>
+### <div id="user-content-result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**quotas**|[Quota[]](#quota)|配额列表|
-### <div id="Quota">Quota</div>
+|**quotas**|[Quota[]](describeQuotas#user-content-quota)|配额列表|
+### <div id="user-content-quota">Quota</div>
 |名称|类型|描述|
 |---|---|---|
 |**resourceType**|String|资源类型。可能值：<br> `dedicatedHost`: 专有宿主机 <br> `dedicatedPool`: 专有资源池|

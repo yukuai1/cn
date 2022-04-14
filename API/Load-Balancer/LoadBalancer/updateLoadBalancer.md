@@ -21,7 +21,9 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/loadBalancers/{loadBalancerId}
 |**loadBalancerName**|String|False| |LoadBalancer的名称,只允许输入中文、数字、大小写字母、英文下划线“_”及中划线“-”，不允许为空且不超过32字符|
 |**action**|String|False| |启用或停止LoadBalancer，取值为Start(启用)或Stop(停止)|
 |**description**|String|False| |LoadBalancer的描述信息,允许输入UTF-8编码下的全部字符，不超过256字符|
+|**domainEnable**|Boolean|False| |是否绑定域名，包括外网和内网，缺省为不改变原值|
 |**deleteProtection**|Boolean|False| |删除保护，取值为True(开启)或False(关闭)，默认为False|
+|**privateIpAddress**|String|False| |变更loadBalancer的vip地址，新地址只允许是loadBalancer本子网中的空闲ip地址，缺省为不改变原值|
 
 
 ## 返回参数

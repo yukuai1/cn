@@ -26,9 +26,9 @@ https://dh.jdcloud-api.com/v1/regions/{regionId}/dedicatedPools
 |---|---|---|---|---|
 |**pageNumber**|Integer|否 |1|页码；默认为1|
 |**pageSize**|Integer|否|20|分页大小；默认为20；取值范围[10, 100]|
-|**filters**|[Filter[]](#filter)|否| |filters 中支持使用以下关键字进行过滤<br> `dedicatedPoolId`: 专有资源池ID，精确匹配，支持多个<br> `name`: 专有宿主机名称，模糊匹配，支持单个<br> `dedicatedHostType`: 专有宿主机规格，精确匹配，支持多个<br>|
+|**filters**|[Filter[]](describeDedicatedPools#user-content-filter)|否| |filters 中支持使用以下关键字进行过滤<br> `dedicatedPoolId`: 专有资源池ID，精确匹配，支持多个<br> `name`: 专有宿主机名称，模糊匹配，支持单个<br> `dedicatedHostType`: 专有宿主机规格，精确匹配，支持多个<br>|
 
-### <div id="Filter">Filter</div>
+### <div id="user-content-filter">Filter</div>
 |名称|类型|是否必需|示例值|描述|
 |---|---|---|---|---|
 |**name**|String|是|dedicatedPoolId |过滤条件的名称|
@@ -38,15 +38,15 @@ https://dh.jdcloud-api.com/v1/regions/{regionId}/dedicatedPools
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| |
+|**result**|[Result](describeDedicatedPools#user-content-Result)| |
 |**requestId**|String| |
 
-### <div id="Result">Result</div>
+### <div id="user-content-Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**dedicatedPools**|[DedicatedPool[]](#dedicatedpool)| |
+|**dedicatedPools**|[DedicatedPool[]](describeDedicatedPools#user-content-dedicatedpool)| |
 |**totalCount**|Number| |
-### <div id="DedicatedPool">DedicatedPool</div>
+### <div id="user-content-dedicatedpool">DedicatedPool</div>
 |名称|类型|描述|
 |---|---|---|
 |**dedicatedPoolId**|String|专有资源池ID|
@@ -54,23 +54,23 @@ https://dh.jdcloud-api.com/v1/regions/{regionId}/dedicatedPools
 |**dedicatedHostType**|String|专有资源池支持的机型|
 |**description**|String|专有资源池描述|
 |**az**|String[]|专有资源池选定的AZ列表|
-|**capacity**|[ResourceCapacity](#resourcecapacity)|专有资源池资源使用信息|
+|**capacity**|[ResourceCapacity](describeDedicatedPools#user-content-ResourceCapacity)|专有资源池资源使用信息|
 |**supportedInstanceType**|String[]|专有宿主机支持的云主机实例规格|
-|**dedicatedHosts**|[DedicatedHostsBreif](#dedicatedhostsbreif)|专有资源池下的专有宿主机简要信息|
+|**dedicatedHosts**|[DedicatedHostsBreif](describeDedicatedPools#user-content-DedicatedHostsBreif)|专有资源池下的专有宿主机简要信息|
 |**instanceIds**|String[]|专有资源池中的云主机ID列表|
 |**createTime**|String|创建时间|
-### <div id="DedicatedHostsBreif">DedicatedHostsBreif</div>
+### <div id="user-content-DedicatedHostsBreif">DedicatedHostsBreif</div>
 |名称|类型|描述|
 |---|---|---|
 |**count**|Integer|专有宿主机个数|
-|**dedicatedHost**|[DedicatedHostBreif[]](#dedicatedhostbreif)|专有宿主机信息|
-### <div id="DedicatedHostBreif">DedicatedHostBreif</div>
+|**dedicatedHost**|[DedicatedHostBreif[]](describeDedicatedPools#user-content-dedicatedhostbreif)|专有宿主机信息|
+### <div id="user-content-dedicatedhostbreif">DedicatedHostBreif</div>
 |名称|类型|描述|
 |---|---|---|
 |**dedicatedHostId**|String|专有宿主机ID|
 |**az**|String|专有宿主机所在的可用区|
 |**logicRack**|Integer|专有宿主机所在的逻辑机架|
-### <div id="ResourceCapacity">ResourceCapacity</div>
+### <div id="user-content-ResourceCapacity">ResourceCapacity</div>
 |名称|类型|描述|
 |---|---|---|
 |**totalVCPUs**|Integer|专有宿主机总VCPU数|

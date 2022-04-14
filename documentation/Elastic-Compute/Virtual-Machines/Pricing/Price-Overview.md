@@ -1125,8 +1125,8 @@
       <td></td>
    </tr>
    <tr>
-      <td rowspan="35">内存优化</td>
-      <td rowspan="35">标准</td>
+      <td rowspan="43">内存优化</td>
+      <td rowspan="36">标准</td>
       <td>m.n4.large</td>
       <td>2</td>
       <td>16</td>
@@ -1194,6 +1194,16 @@
       <td>5749.44</td>
       <td>11.98 </td>
       <td>11.98 </td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>m.n4.24xlarge</td>
+      <td>96</td>
+      <td>724</td>
+      <td>17248.32</td>
+      <td>17248.32</td>
+      <td>35.93 </td>
+      <td>35.93</td>
       <td></td>
    </tr>
    </tr>
@@ -1476,6 +1486,80 @@
       <td>6.78</td>
       <td></td>
    </tr>
+   
+   <tr>
+      <td rowspan="7">增强</td>
+      <td>m.e3.large</td>
+      <td>2</td>
+      <td>34</td>
+      <td>474</td>
+      <td>--</td>
+      <td>0.99</td>
+      <td>-- </td>
+      <td></td>
+   </tr>
+   <tr>
+     <td>m.e3.xlarge</td>
+      <td>4</td>
+      <td>68</td>
+      <td>948</td>
+      <td>--</td>
+      <td>1.98</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+   <tr>
+     <td>m.e3.2xlarge</td>
+      <td>8</td>
+      <td>136</td>
+      <td>1896</td>
+      <td>--</td>
+      <td>3.95</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+   <tr>
+     <td>m.e3.4xlarge</td>
+      <td>16</td>
+      <td>272</td>
+      <td>3792</td>
+      <td>--</td>
+      <td>7.9</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+   <tr>
+     <td>m.e3.8xlarge</td>
+      <td>32</td>
+      <td>544</td>
+      <td>7584</td>
+      <td>--</td>
+      <td>15.8</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+   <tr>
+     <td>m.e3.16xlarge</td>
+      <td>64</td>
+      <td>1088</td>
+      <td>15168</td>
+      <td>--</td>
+      <td>31.6</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+   <tr>
+     <td>m.e3.31xlarge</td>
+      <td>124</td>
+      <td>2108</td>
+      <td>21804</td>
+      <td>--</td>
+      <td>45.43</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+   
+   
    <tr>
       <td rowspan="10" colspan="2">突发性能</td>
       <td>t.e2.small</td>
