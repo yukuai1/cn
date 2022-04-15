@@ -15,6 +15,7 @@
 | 专有主节点存储空间 | 20GB，暂不可更改 |
 
 <div id="user-content-1"></div>
+
 ## 创建集群时启用专有主节点
 
 1. 访问 [云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，进入集群管理页面。或访问 [京东云控制台](https://console.jdcloud.com/)，点击顶部导航栏 互联网中间件-云搜索Elasticsearch，进入集群管理页。
@@ -29,7 +30,8 @@
 4. 选择完参数后单击 **创建** 按钮。
 5. 在**订单确认**页，选择 **已阅读并同意《云搜索Elasticsearch服务条款》**，单击 **立即开通** 按钮确认订单并创建云搜索Elasticsearch集群。
 
-<div id="user-content-1"></div>
+<div id="user-content-2"></div>
+
 ## 变更配置时启用专有主节点
 
 1. 访问 [云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，进入集群管理页面。或访问 [京东云控制台](https://console.jdcloud.com/)，点击顶部导航栏 互联网中间件-云搜索Elasticsearch，进入集群管理页。
