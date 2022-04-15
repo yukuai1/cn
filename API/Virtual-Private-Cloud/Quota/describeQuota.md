@@ -32,9 +32,44 @@ https://vpc.jdcloud-api.com/v1/regions/{regionId}/quotas/
 |---|---|---|
 |**quota**|Object| |
 
+## 请求示例
+
+GET
+
+调用方法、签名算法及公共请求参数请参考[京东云OpenAPI公共说明](https://docs.jdcloud.com/common-declaration/api/introduction)。
+
+查询ACL （acl-xx78ixhv5z）的出入站规则配额
+
+```
+v1/regions/cn-south-1/quotas?type=aclRule&parentResourceId=acl-xx78ixhv5z
+
+```
+
+## 返回示例
+
+```
+{
+    "requestId": "521b6ff3-40d8-484f-afb6-b762f6103436",
+    "result": {
+        "quota": {
+            "type": "aclRule",
+            "parentResourceId": "acl-xx78ixhv5z",
+            "maxLimit": 100,
+            "count": 22
+        }
+    }
+}
+```
+
+
+
+
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|Successful operation|
-|**400**|invalid parameter|
-|**500**|Internal server error|
+| HTTP状态码 | 错误码                | 描述                                                   |
+| ---------- | --------------------- | ------------------------------------------------------ |
+| **200**    | OK                    |                                                        |
+| **400**    | INVALID_ARGUMENT      | 参数配置错误                                           |
+| **401**    | Authentication failed | 用户权限认证失败                                       |
+| **404**    | Not found             | 资源不存在                                             |
+| **500**    | INTERNAL              | 系统内部错误，请稍后重试。如果多次尝试失败，请提交工单 |
+| **503**    | Service unavailable   | 服务不可用，请稍后重试。如果多次尝试失败，请提交工单   |
