@@ -155,3 +155,7 @@
             href: Peering-Connection/describeVpcPeerings.md
           - name: modifyVpcPeering
             href: Peering-Connection/modifyVpcPeering.md
+      - name: 配额
+        items:
+          - name: describeQuota
+            href: Quota/describeQuota.md 
