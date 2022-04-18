@@ -63,6 +63,8 @@
             href: Operation-Guide/Instance/SOS.md
           - name: 更换网络配置
             href: Operation-Guide/Networking/Modifying-Network-Configurations.md
+          - name: 实例元数据
+            href: Operation-Guide/Instance/metadata.md
       - name: 网络
         items:
           - name: 私有网络
