@@ -41,8 +41,6 @@
     items:
       - name: 计费概述
         href: Pricing/Billing-Overview.md
-      - name: 计费规则
-        href: Pricing/Billing-Rules.md
       - name: 价格总览
         items:
           - name: MySQL 价格
@@ -57,8 +55,12 @@
             href: Pricing/Price-Overview/PostgreSQL-Price.md            
       - name: 购买流程
         href: Pricing/Purchase-Procedure.md
+      - name: 变配
+        href: Pricing/Change-Procedure.md
       - name: 续费流程
         href: Pricing/Renewal-Procedure.md
+      - name: 查看消费明细
+        href: Pricing/Consumption-details.md
         
   - name: 入门指南
     items:
@@ -99,6 +101,8 @@
               href: Operation-Guide/Instance/Reboot-Instance/MariaDB-Restart-Instance.md
             - name: 重启 SQL Server
               href: Operation-Guide/Instance/Reboot-Instance/SQLServer-Restart-Instance.md
+            - name: 重启 PostgreSQL
+              href: Operation-Guide/Instance/Reboot-Instance/PostgreSQL-Restart-Instance.md
   
       - name: 只读实例管理
         items:
@@ -161,6 +165,8 @@
   
       - name: 备份管理
         items:
+          - name: 快照备份
+            href: Operation-Guide/Backup/Snapshot-backup.md
           - name: 创建备份
             items:
             - name: MySQL 创建备份
@@ -217,6 +223,8 @@
               herf: Operation-Guide/Backup/Create-From-Backup/Percona-Create-From-Backup.md
             - name: MariaDB 根据备份创建
               herf: Operation-Guide/Backup/Create-From-Backup/MariaDB-Create-From-Backup.md
+            - name: PostgreSQL根据备份创建
+              herf: Operation-Guide/Backup/Create-From-Backup/Postgresql-Create-From-Backup.md
           - name: 根据时间点创建
             items:
             - name: SQL Server 根据时间点创建
@@ -226,11 +234,15 @@
             - name: Percona 根据时间点创建
               herf: Operation-Guide/Backup/Create-To-Point-In-Time/Percona-Create-To-Point-In-Time.md                  
             - name: MariaDB 根据时间点创建
-              herf: Operation-Guide/Backup/Create-To-Point-In-Time/MariaDB-Create-To-Point-In-Time.md                  
+              herf: Operation-Guide/Backup/Create-To-Point-In-Time/MariaDB-Create-To-Point-In-Time.md  
+            - name: PostgreSQL根据时间点创建
+              herf: Operation-Guide/Backup/Create-To-Point-In-Time/PostgreSQL-Create-To-Point-In-Time.md        
           - name: 根据时间点恢复
             items:
             - name: MySQL 根据时间点恢复
               herf: Operation-Guide/Backup/Recover-To-Point-In-Time/MySQL-Recover-To-Point-In-Time.md
+          - name: 灾备实例
+            href: Operation-Guide/Backup/Disaster-Recovery-Example.md
           - name: 删除备份
             href: Operation-Guide/Backup/Delete-Backup.md
             
@@ -249,33 +261,33 @@
           href: Operation-Guide/Security/tde.md
         - name: MySQL 配置 SSL 证书 
           href: Operation-Guide/Security/Configure-SSL.md
+        - name: PostgreSQL 配置 SSL 证书 
+          href: Operation-Guide/Security/PostgreSQL-Configure-SSL.md  
         - name: SQL Server 配置 SSL 证书 
           href: Operation-Guide/Security/SQLServer-Configure-SSL.md         
           
-      - name: 单库上云
+      - name: SQL Server 单库上云
         items:
         - name: 单库上云简介
           href: Operation-Guide/Data-To-Cloud/Data-To-Cloud-Introduction.md
         - name: 从上传文件导入  
           items:
-          - name: 步骤一 本地备份
+          - name: 一 本地备份
             href: Operation-Guide/Data-To-Cloud/Backup-Local-Database.md
-          - name: 步骤二 上传备份
+          - name: 二 上传备份
             href: Operation-Guide/Data-To-Cloud/Upload-Backup.md
-          - name: 步骤三 备份导入
+          - name: 三 备份导入
             href: Operation-Guide/Data-To-Cloud/Import-Backup.md
           - name: 删除上传文件
             href: Operation-Guide/Data-To-Cloud/Delete-Import.md
         - name: 从OSS导入 
           items:
-          - name: 步骤一 本地备份
+          - name: 一 本地备份
             href: Operation-Guide/Data-To-Cloud/V2/Backup-Local-Database-v2.md
-          - name: 步骤二 上传备份
+          - name: 二 上传及权限设置
             href: Operation-Guide/Data-To-Cloud/V2/Upload-Backup-v2.md
-          - name: 步骤三 备份导入
+          - name: 三 导入备份
             href: Operation-Guide/Data-To-Cloud/V2/Import-Backup-v2.md
-          - name: 备份文件权限设置
-            href: Operation-Guide/Data-To-Cloud/V2/Grant-File-Privilege-v2.md        
       - name: 参数组 
         items:
          - name: 创建参数组
@@ -316,7 +328,7 @@
         - name: PostgreSQL 审计服务
           href: Operation-Guide/Audit/PostgreSQL-Audit-Service.md
  
-      - name: 性能统计分析
+      - name: SQL Server 性能统计分析
         items:
         - name: 性能统计分析简介
           href: Operation-Guide/Performance/Performance-Statistics-Introduction.md
@@ -381,8 +393,6 @@
           href: Operation-Guide/Log/SlowLogs.md   
         - name: 错误日志 
           href: Operation-Guide/Log/ErrorLog.md  
-      - name: 设置访问模式
-        href: Operation-Guide/Set-Access-Mode.md   
         
       - name:  PostgreSQL 插件 
         items:
@@ -451,9 +461,15 @@
       - name: MySQL 性能测试 
         items:
         - name: 性能测试步骤 
-          href: Tutorial/Performance-Test/MySQL-Performance-Test/Performance-Test-Step.md
+          href: Tutorial/Performance-Test/MySQL-Performance-Test/MySQL-Performance-Test-Step.md
         - name: 性能测试结果 
-          href: Tutorial/Performance-Test/MySQL-Performance-Test/Performance-Test-Result.md
+          href: Tutorial/Performance-Test/MySQL-Performance-Test/MySQL-Performance-Test-Result.md
+      - name: PostgreSQL 性能测试 
+        items:
+        - name: 性能测试步骤 
+          href: Tutorial/Performance-Test/PostgreSQL-Performance-Test/Performance-Test-Step.md
+        - name: 性能测试结果 
+          href: Tutorial/Performance-Test/PostgreSQL-Performance-Test/Performance-Test-Result.md
   - name: 常见问题
     items:
     - name: FAQ

@@ -22,7 +22,13 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/forw
 |**pageSize**|Integer|False| |分页大小, 默认为10, 取值范围[10, 100]|
 |**searchType**|String|False| |查询类型名称, domain:源站域名, ip:源站 IP, port: 转发端口, originPort: 源站端口, serviceIp: 高防IP(仅支持BGP线路的实例)|
 |**searchValue**|String|False| |查询类型值|
+|**sorts**|[Sort[]](describeforwardrules#sort)|False| |排序属性：<br>port - 按转发端口排序，默认不排序,asc表示按转发端口升序，desc表示按转发端口降序<br>|
 
+### <div id="sort">Sort</div>
+|名称|类型|是否必需|默认值|描述|
+|---|---|---|---|---|
+|**name**|String|False| |排序条件的名称|
+|**direction**|String|False| |排序条件的方向|
 
 ## 返回参数
 |名称|类型|描述|
@@ -57,7 +63,8 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/forw
 |**protocol**|String|TCP 或 UDP|
 |**cname**|String|规则的 CNAME|
 |**originType**|String|回源类型: ip 或者 domain|
-|**serviceIp**|String|高防 IP|
+|**serviceIp**|String|该规则使用中的高防 IP|
+|**serviceIpConfig**|[ServiceIpConfig](describeforwardrules#serviceipconfig)|已配置的高防 IP 列表|
 |**port**|Integer|端口号|
 |**algorithm**|String|转发规则. <br>- wrr: 带权重的轮询<br>- rr:  不带权重的轮询<br>- sh:  源地址hash|
 |**originAddr**|[OriginAddrItem[]](describeforwardrules#originaddritem)| |
@@ -71,6 +78,16 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/forw
 |**ip**|String|回源ip|
 |**weight**|Integer|权重|
 |**inJdCloud**|Boolean|是否为京东云内公网ip|
+### <div id="serviceipconfig">ServiceIpConfig</div>
+|名称|类型|描述|
+|---|---|---|
+|**serviceIps**|[ServiceIpConfigItem[]](describeforwardrules#serviceipconfigitem)|已配置的高防IP列表|
+### <div id="serviceipconfigitem">ServiceIpConfigItem</div>
+|名称|类型|描述|
+|---|---|---|
+|**serviceIp**|String|高防IP|
+|**securityStatus**|String|安全状态. <br>- SAFE: 安全<br>- CLEANING: 清洗中<br>- BLOCKING: 封禁中|
+|**useStatus**|Integer|使用状态, 1: 使用中, 0: 备用候选|
 
 ## 返回码
 |返回码|描述|
