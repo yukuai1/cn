@@ -165,6 +165,8 @@
   
       - name: 备份管理
         items:
+          - name: 备份收费说明
+            href: Operation-Guide/Backup/Backup-Storage-Billing.md
           - name: 快照备份
             href: Operation-Guide/Backup/Snapshot-backup.md
           - name: 创建备份
