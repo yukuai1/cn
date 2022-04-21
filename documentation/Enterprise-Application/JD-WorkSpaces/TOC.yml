@@ -35,17 +35,17 @@ items:
     items:
       - name: 入门指南概述
         href: Getting-Started/Overview.md
-      - name: 邀请码（定制化）
+      - name: 定制化
         href: Getting-Started/Invitation-Code.md
-      - name: 开通Workspace
+      - name: 开通云电脑
         href: Getting-Started/Create-Workspace.md
       - name: 用户管理
         href: Getting-Started/Active-Directory-Manager.md
-      - name: 创建（购买）云桌面
+      - name: 创建（购买）云电脑
         href: Getting-Started/Purchase-Workspace.md
-      - name: 云桌面实例管理
+      - name: 工作组管理
         href: Getting-Started/Workspace-Instance.md
-      - name: 云桌面实例详情
+      - name: 云电脑实例管理
         href: Getting-Started/Workspace-Details.md
       - name: 镜像管理
         href: Getting-Started/Private-Image.md
@@ -53,13 +53,13 @@ items:
         href: Getting-Started/Policy-Management.md
       - name: 公网带宽
         href: Getting-Started/Elastic-IP-With-Workspace.md
-      - name: 云桌面用户（终端用户）
+      - name: 云电脑用户（终端用户）
         href: Getting-Started/User.md
   - name: 操作指南
     items:
       - name: 购买须知
         href: Operation-Guide/Purchase-Notes.md
-      - name: 开通Workspace的流程
+      - name: 开通云电脑的流程
         href: Operation-Guide/Create-Workspace-Process.md
       - name: 创建（购买）云桌面的流程
         href: Operation-Guide/Purchase-Workspace.md
