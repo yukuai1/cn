@@ -14,30 +14,42 @@ MongoDB 客户端自带了两套数据导入导出工具。您可以在本地服
 
 - mongodump 数据导出命令如下：
 ```
-./mongodump --host <DB_HOST>:<DB_PORT> --authenticationDatabase admin -u <DB_USER> -p <PASSWORD> --db <DB_NAME>  -o <数据的目录名>
+./mongodump --host <DB_HOST>:<DB_PORT> --authenticationDatabase admin -u <DB_USER> -p <PASSWORD> --db <DB_NAME>  -o <DATA_DIR>
 ```
-如下图所示，则执行成功：
-![mongodump示例截图](https://mc.qcloudimg.com/static/img/4071cfd5d9b54c720349f41fc2e07b0c/dump_default.png)
 
 - mongorestore 数据导入命令如下：
 ```
-./mongorestore --host <DB_HOST>:<DB_PORT> --authenticationDatabase admin -u <DB_USER> -p <PASSWORD> --db <DB_NAME> --dir <数据的目录名>
+./mongorestore --host <DB_HOST>:<DB_PORT> --authenticationDatabase admin -u <DB_USER> -p <PASSWORD> --db <DB_NAME> --dir <DATA_DIR>
 ```
-如下图所示，则执行成功：
-![mongorestore示例截图](https://mc.qcloudimg.com/static/img/335dbef8f11a5417e42740472df1a5b8/restore_default.png)
+##### 参数说明
+|参数|说明|
+|:-|:-| 
+|<DB_HOST>| 数据库地址|
+|<DB_PORT>| 数据库端口号|
+|<DB_USER>| 数据库用户名|
+|\<PASSWORD>|数据库密码|
+|<DB_NAME>| 数据库名|
+|<DATA_DIR>| 数据文件目录的路径|
 
 ### mongoexport 和 mongoimport
-进行单个集合导出导入时，可以使用 [mongoexport](https://docs.mongodb.com/manual/reference/program/mongoexport/) 和 [mongoimport](https://docs.mongodb.com/manual/reference/program/mongoimport/)，导出的数据是 JSON 格式，可读性较好，但性能略差。 另外 mongoexport 不支持导出单个db的所有的collection
+进行单个集合导出导入时，可以使用 [mongoexport](https://docs.mongodb.com/manual/reference/program/mongoexport/) 和 [mongoimport](https://docs.mongodb.com/manual/reference/program/mongoimport/)，导出的数据是 JSON 格式，可读性较好，但性能略差。 另外 mongoexport 不支持导出单个db的所有的collection。
 
 - mongoexport 导出命令如下：
 ```
-mongoexport --host 10.66.187.127:27017 -u mongouser -p thepasswordA1 --authenticationDatabase=admin --db=testdb --collection=testcollection -o /data/export_testdb_testcollection.json
-./mongoexport --host <DB_ADDRESS>:<DB_PORT> --authenticationDatabase admin -u <DB_USER> -p <PASSWORD> --db <DB_NAME> --collection <DB_COLLECTION> --out <数据文件名称>
+./mongoexport --host <DB_ADDRESS>:<DB_PORT> --authenticationDatabase admin -u <DB_USER> -p <PASSWORD> --db <DB_NAME> --collection <DB_COLLECTION> --out <DATA_FILE>
 ```
 
-另外您也可以加上 -f 参数指定需要的字段，-q 参数指定一个查询条件来限定要导出的数据。
 - mongoimport 导入命令如下：
 ```
-mongoimport --host 10.66.187.127:27017 -u mongouser -p thepasswordA1 --authenticationDatabase=admin --db=testdb --collection=testcollection2 --file=/data/export_testdb_testcollection.json
-./mongoimport --host <DB_ADDRESS>:<DB_PORT> --authenticationDatabase admin -u <DB_USER> -p <PASSWORD> --db <DB_NAME> --collection <DB_COLLECTION> --file <数据文件名称>
+./mongoimport --host <DB_ADDRESS>:<DB_PORT> --authenticationDatabase admin -u <DB_USER> -p <PASSWORD> --db <DB_NAME> --collection <DB_COLLECTION> --file <DATA_FILE>
 ```
+
+##### 参数说明
+|参数|说明|
+|:-|:-| 
+|<DB_HOST>| 数据库地址|
+|<DB_PORT>| 数据库端口号|
+|<DB_USER>| 数据库用户名|
+|\<PASSWORD>|数据库密码|
+|<DB_NAME>| 数据库名|
+|<DATA_FILE>| 数据文件的路径|
