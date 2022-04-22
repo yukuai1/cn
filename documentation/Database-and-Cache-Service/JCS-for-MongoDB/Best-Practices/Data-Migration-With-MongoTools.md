@@ -1,7 +1,13 @@
 # 使用 MongoDB 工具进行数据迁移
-MongoDB 客户端自带了两套数据导入导出工具，可以用于数据迁移
+MongoDB 客户端自带了两套数据导入导出工具。您可以在本地服务器或云主机中安装 MongoDB 客户端，然后通过以下工具将自建的 MongoDB 数据库或其他云数据库 MongoDB 迁移至京东云数据库 MongoDB。
 - mongodump 和 mongorestore 
 - mongoexport 和 mongoimport
+
+### 注意事项
+- 上述工具仅支持全量数据迁移，为保障数据一致性，请在迁移操作开始前停止源数据库的写入操作。
+- 不支持迁移系统库admin和local。
+- 源端，目标端及客户端最好使用相同的版本，若版本不同可能有兼容性的问题。
+
 
 ### mongodump 和 mongorestore
 进行整库导出导入时，通常使用 [mongodump](https://docs.mongodb.com/manual/reference/program/mongodump/) 和 [mongorestore](https://docs.mongodb.com/manual/reference/program/mongorestore/)，这一对组合操作的数据是 BSON 格式，进行大量 dump 和 restore 时效率较高。
