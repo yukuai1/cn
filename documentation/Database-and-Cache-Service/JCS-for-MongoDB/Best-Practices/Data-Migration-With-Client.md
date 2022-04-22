@@ -1,4 +1,4 @@
-# 使用 MongoDB 工具进行数据迁移
+# 使用 MongoDB 客户端进行数据迁移
 MongoDB 客户端自带了两套数据导入导出工具。您可以在本地服务器或云主机中安装 MongoDB 客户端，然后通过以下工具将自建的 MongoDB 数据库或其他云数据库 MongoDB 迁移至京东云数据库 MongoDB。
 - mongodump 和 mongorestore 
 - mongoexport 和 mongoimport
@@ -6,21 +6,22 @@ MongoDB 客户端自带了两套数据导入导出工具。您可以在本地服
 ### 注意事项
 - 上述工具仅支持全量数据迁移，为保障数据一致性，请在迁移操作开始前停止源数据库的写入操作。
 - 不支持迁移系统库admin和local。
-- 源端，目标端及客户端最好使用相同的版本，若版本不同可能有兼容性的问题。
+- 源端，目标端及客户端最好都使用相同的版本，若版本不同可能有兼容性的问题。
 
 
 ### mongodump 和 mongorestore
-进行整库导出导入时，通常使用 [mongodump](https://docs.mongodb.com/manual/reference/program/mongodump/) 和 [mongorestore](https://docs.mongodb.com/manual/reference/program/mongorestore/)，这一对组合操作的数据是 BSON 格式，进行大量 dump 和 restore 时效率较高。
+进行整库导出导入时，通常使用 [mongodump](https://docs.mongodb.com/manual/reference/program/mongodump/) 和 [mongorestore](https://docs.mongodb.com/manual/reference/program/mongorestore/)。导出的数据是 BSON 格式，导出速度和压缩率方面较好。
 
-- mongodump 导出命令如下：
+- mongodump 数据导出命令如下：
 ```
-mongodump --host 10.66.187.127:27017 -u mongouser -p thepasswordA1 --authenticationDatabase=admin --db=testdb -o /data/dump_testdb
+./mongodump --host <DB_HOST>:<DB_PORT> --authenticationDatabase admin -u <DB_USER> -p <PASSWORD> --db <DB_NAME>  -o <数据的目录名>
 ```
 如下图所示，则执行成功：
 ![mongodump示例截图](https://mc.qcloudimg.com/static/img/4071cfd5d9b54c720349f41fc2e07b0c/dump_default.png)
-- mongorestore 导入命令如下：
+
+- mongorestore 数据导入命令如下：
 ```
-mongorestore --host 10.66.187.127:27017 -u mongouser -p thepasswordA1 --authenticationDatabase=admin --dir=/data/dump_testdb
+./mongorestore --host <DB_HOST>:<DB_PORT> --authenticationDatabase admin -u <DB_USER> -p <PASSWORD> --db <DB_NAME> --dir <数据的目录名>
 ```
 如下图所示，则执行成功：
 ![mongorestore示例截图](https://mc.qcloudimg.com/static/img/335dbef8f11a5417e42740472df1a5b8/restore_default.png)
