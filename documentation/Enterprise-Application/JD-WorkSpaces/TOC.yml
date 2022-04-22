@@ -61,9 +61,9 @@ items:
         href: Operation-Guide/Purchase-Notes.md
       - name: 开通云电脑的流程
         href: Operation-Guide/Create-Workspace-Process.md
-      - name: 创建（购买）云桌面的流程
+      - name: 创建（购买）云电脑的流程
         href: Operation-Guide/Purchase-Workspace.md
-      - name: 查看云桌面详情
+      - name: 查看云电脑详情
         href: Operation-Guide/View-Workspace-Details.md
       - name: 新增用户的流程
         href: Operation-Guide/Create-User.md 
