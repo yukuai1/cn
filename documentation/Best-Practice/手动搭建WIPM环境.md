@@ -12,7 +12,8 @@
 
 2. 在操作系统界面，打开服务器管理器。如下图所示：
 
-<img src="/Users/heyutan/Documents/0-Super结构化资料/8.写作/官网最佳实践文档/Picture/WIPM/1.服务器管理器.jpg" alt="1.服务器管理器" style="zoom:50%;" />
+<img src="../../../../1.服务器管理器.jpg" alt="1.服务器管理器" style="zoom:50%;" />
+
 
 3. 单击**添加角色和功能**，弹出 “添加角色和功能向导” 窗口。
 4. 在 “添加角色和功能向导” 窗口中，单击**下一步**。
@@ -310,22 +311,4 @@ phpinfo();
 <img src="/Users/heyutan/Documents/0-Super结构化资料/8.写作/官网最佳实践文档/Picture/WIPM/46.远程连接Mysql服务.jpg" alt="46.远程连接Mysql服务" style="zoom:50%;" />
 
 至此，WIPM环境搭建完成。
-
-
-
-## 参考信息
-
-1. Mysql简单测试语句
-
-```shell
-select version(); #查看数据库当前版本
-select user();#查看使用当前数据的用户
-select @@datadir;#查看数据库的存储路径
-select @@basedir； #查看数据库的安装路径
-select @@version_compile_os; #查看数据库安装的操作系统
-show databases; #显示所有数据库
-use information_schema; #使用information_schema数据库
-select database(); #确认当前使用的数据库
-show tables; #显示数据库中的数据表
-```
 
