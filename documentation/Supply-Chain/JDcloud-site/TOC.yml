@@ -32,6 +32,11 @@ items:
     - name: 定制站点
       href: Users'-Guide/Custom-site.md 
 
+- name: 视频教程
+  items:
+    - name: 视频演示
+      href: vedio/info.md
+
 - name: 常见问题
   items:
     - name: FAQ
