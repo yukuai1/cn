@@ -1,1 +1,8 @@
-占位
+
+  name: 最佳实践
+  href: 
+  items:
+  - name: 搭建网站
+    items:
+      - name: 手动搭建WIPM环境
+        href: 手动搭建WIPM环境.md
