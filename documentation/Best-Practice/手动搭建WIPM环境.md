@@ -67,9 +67,9 @@ PHP 5.3 版本后取消了安装包模式，仅通过 zip 文件和 debug pack �
 
 在云主机中，访问 [PHP 官网Windows版本下载页面](http://windows.php.net/download/)，下载 PHP zip 安装包。如下图所示：
 
-<img src="../../image/Best-Practice/WIMP/10.PHP版本选择-1.jpg" alt="10.PHP版本选择-1" style="width:40%;" />
+<img src="../../image/Best-Practice/WIMP/10.PHP版本选择-1.jpg" alt="10.PHP版本选择-1" style="width:60%;" />
 
-<img src="../../image/Best-Practice/WIMP/11.PHP版本选择-2.jpg" alt="11.PHP版本选择-2" style="width:40%;" />
+<img src="../../image/Best-Practice/WIMP/11.PHP版本选择-2.jpg" alt="11.PHP版本选择-2" style="width:60%;" />
 
 注意：
 
@@ -207,13 +207,13 @@ phpinfo();
 
 1. 双击打开 MySQL 安装包，并在 “Choosing a Setup Type” 安装界面，选择 **Developer Default**，单击 **Next**。如下图所示：
 
-<img src="../../image/Best-Practice/WIMP/29.Mysql安装-配置类型.jpg" alt="29.Mysql安装-配置类型" style="width:50%;" />
+<img src="../../image/Best-Practice/WIMP/29.Mysql安装-配置类型.jpg" alt="29.Mysql安装-配置类型" style="width:70%;" />
 
 2. 在 “Check Requirements” 安装界面，单击 **Execute**，并根据界面提示配置 MySQL 的基础环境。单击 **Next**。
 
 3. 在 “Installation” 安装界面，单击 **Execute**，安装 MySQL 所需的安装包。
 
-   <img src="../../image/Best-Practice/WIMP/30.Mysql安装-执行安装.jpg" alt="30.Mysql安装-执行安装" style="width:50%;" />
+   <img src="../../image/Best-Practice/WIMP/30.Mysql安装-执行安装.jpg" alt="30.Mysql安装-执行安装" style="width:70%;" />
 
 4. 待 MySQL 所需的安装包完成安装后，单击 **Next**，进入 “Product Configuration” 配置界面。
 
@@ -283,17 +283,17 @@ phpinfo();
 
 1. 使用工作台实现本地连接Mysql，双击本地实例后，输入root密码。
 
-<img src="../../image/Best-Practice/WIMP/41.使用workbench登录mysql.jpg" alt="41.使用workbench登录mysql" style="width: 40%;" />
+<img src="../../image/Best-Practice/WIMP/41.使用workbench登录mysql.jpg" alt="41.使用workbench登录mysql" style="width: 70%;" />
 
 2. 使用Query测试SQL语句
 
-<img src="../../image/Best-Practice/WIMP/42.workbench执行查询命令.jpg" alt="42.workbench执行查询命令" style="width:40%;" />
+<img src="../../image/Best-Practice/WIMP/42.workbench执行查询命令.jpg" alt="42.workbench执行查询命令" style="width:70%;" />
 
 ##### 命令行本地连接Mysql服务
 
 1. 在开始菜单找到Mysql Command Line Client
 
-<img src="../../image/Best-Practice/WIMP/43.开始菜单-Mysql Command line.jpg" alt="43.开始菜单-Mysql Command line" style="width:40%;" />
+<img src="../../image/Best-Practice/WIMP/43.开始菜单-Mysql Command line.jpg" alt="43.开始菜单-Mysql Command line" style="width:30%;" />
 
 2. 输入root密码后即可实现本地访问Mysql服务
 
