@@ -303,7 +303,7 @@ phpinfo();
 
 1. 首先在工作台增加root用户，使Limit to Hosts Matching支持远程服务器。
 
-![45.Mysql新增远程连接用户](img src="../../image/Best-Practice/WIMP/45.Mysql新增远程连接用户.jpg" alt="45.Mysql新增远程连接用户" style="width:90%;")
+<img src="../../image/Best-Practice/WIMP/45.Mysql新增远程连接用户.jpg" alt="45.Mysql新增远程连接用户" style="width:90%;" />
 
 2. 远程连接测试，Mysql服务所在Windows服务器内网地址为10.0.0.13，测试效果如下。
 
