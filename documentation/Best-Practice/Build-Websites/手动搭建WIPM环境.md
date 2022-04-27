@@ -38,7 +38,7 @@
 
 10. 在 “选择角色服务” 界面，勾选 “CGI”，单击**下一步**。如下图所示：
 
-<img src="../../../image/Best-Practice/WIMP/6.角色服务-CGI.jpg" alt="6.角色服务-CGI" style="zoom:70%;" />
+<img src="../../../image/Best-Practice/WIMP/6.角色服务-CGI.jpg" alt="6.角色服务-CGI" style="width:70%;" />
 
 11. 确认安装信息，单击**安装**，并等待安装完成。如下图所示：
 
@@ -205,10 +205,10 @@ phpinfo();
 
 在云服务器中打开浏览器，访问Mysql官网下载 MySQL 安装包 [MySQL Community Server 8.0.28](https://dev.mysql.com/downloads/windows/installer/8.0.html) 。
 
-<img src="../../../image/Best-Practice/WIMP/27.Mysql官网下载.jpg" alt="27.Mysql官网下载" style="zoom:70%;" />
+<img src="../../../image/Best-Practice/WIMP/27.Mysql官网下载.jpg" alt="27.Mysql官网下载" style="width:70%;" />
 可以执行免注册下载。
 
-<img src="../../../image/Best-Practice/WIMP/28.Mysql官网下载-不注册直接下载.jpg" alt="28.Mysql官网下载-不注册直接下载" style="zoom:70%;" />
+<img src="../../../image/Best-Practice/WIMP/28.Mysql官网下载-不注册直接下载.jpg" alt="28.Mysql官网下载-不注册直接下载" style="width:70%;" />
 
 #### 安装Mysql基础环境
 
