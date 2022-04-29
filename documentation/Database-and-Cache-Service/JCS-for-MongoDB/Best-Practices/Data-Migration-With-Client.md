@@ -61,8 +61,8 @@ MongoDB 客户端自带了两套数据导入导出工具。您可以在本地服
    ```
     ./mongodump --host 192.168.0.101:27017 --authenticationDatabase admin -u user1 -p xxxx --db testdb  -o /data/mongo/testdb
    ```
-2. 创建云数据库 MongoDB，具体的创建步骤请参考 [创建 MongoDB 实例](../../../Operation-Guide/Instance/Create-Instance.md)。
-3. 通过控制台进行数据库账号的创建， [创建账号](../../../Operation-Guide/Account/Create-Account/Create-MongoDB-Account.md)。
+2. 创建云数据库 MongoDB，具体的创建步骤请参考 [创建 MongoDB 实例](../Getting-Started/Create-Instance.md)。
+3. 通过控制台进行数据库账号的创建， [创建账号](../Operation-Guide/Account-Management/Create-MongoDB-Account.md)。
 4. 创建 Linux 云主机，步骤请参考 [创建实例](https://docs.jdcloud.com/virtual-machines/create-instance)，创建云主机时候需要注意以下几点：
     * 请确保云主机和第 1 步创建的云数据库 MongoDB 在同一个 **私有网络** 内。
     * 新建的云主机需要带一个 **公网 IP**，提供公网访问能力，否则没办法上传本地的数据文件到云主机上。
