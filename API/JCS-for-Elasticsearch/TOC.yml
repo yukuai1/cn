@@ -19,7 +19,3 @@ items:
             href: ES-Instance-API/describeInstances.md
           - name: modifyInstanceSpec
             href: ES-Instance-API/modifyInstanceSpec.md
-      - name: Elasticsearch字典API
-        items:
-          - name: disableDicts
-            href: ES-Dictionary-API/disableDicts.md

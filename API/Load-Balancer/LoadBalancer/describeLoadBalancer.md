@@ -46,6 +46,7 @@ https://lb.jdcloud-api.com/v1/regions/{regionId}/loadBalancers/{loadBalancerId}
 |**description**|String|LoadBalancer的描述信息|
 |**deleteProtection**|Boolean|删除保护，取值为True(开启)或False(关闭)|
 |**createdTime**|String|LoadBalancer的创建时间|
+|**azType**|String|负载均衡所在可用区类型，取值包括：standard(标准可用区)、edge(边缘可用区)|
 ### <div id="tag">Tag</div>
 |名称|类型|描述|
 |---|---|---|
