@@ -14,7 +14,7 @@
 
 ## 操作说明
 1. 安装环境依赖，见注意事项DB。下面以mysql为例，对将备份文件恢复到自建数据库进行说明。
-2. 下载备份的解压工具，[点击下载](http://jddb-common-public.oss.cn-north-1.jcloudcs.com/general_mysql_backup_extract_tool.zip)，并解压，工具名 `mysql_backup_extract.py`，使用示例如下
+2. 下载备份的解压工具，[点击下载](https://jddb-common-public.oss.cn-north-1.jcloudcs.com/general_mysql_backup_extract_tool.zip)，并解压，工具名 `mysql_backup_extract.py`，使用示例如下
     
     ```Python
      # 增加解压工具文件可执行权限
