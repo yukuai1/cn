@@ -3,7 +3,6 @@
 
 | 功能名称 | 功能描述 | 发布时间 | 相关文档|
 | :---------------| :--------------|:------------|:--------
-|主机联合搜索优化|支持将空格、tab自动识别为多值分隔符","提高搜索效率，优化用户体验。|2022-04|
 |内存优化增强型上线|基于Intel® 第二代傲腾持久内存（BPS），提供高性价比的内存介质。|2022-03|[实例规格类型](https://docs.jdcloud.com/cn/virtual-machines/instance-type-family#user-content-7)
 |存量主机支持加入高可用组|通过调整实例所属高可用组功能，可以将一台未加入高可用组的实例添加到高可用组，或者将一台已加入一个高可用组的实例更换到另一个高可用组。|2022-03|[调整高可用组](https://docs.jdcloud.com/cn/virtual-machines/modify-instance-ag)
 |云主机支持资源组管理|支持根据资源组ID进行实例资源筛选，列表页可对资源的资源组进行单个或批量变更。|2022-03|[资源组概述](https://docs.jdcloud.com/cn/virtual-machines/resource-group-introduction)
