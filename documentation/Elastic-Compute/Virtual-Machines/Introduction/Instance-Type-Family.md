@@ -27,7 +27,8 @@
 
 * vCPU与内存比为1:1、1:2或1:4，提供多种处理器内存配比。
 * 处理器：
-        * 第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器  
+        
+	* 第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器  
 	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持以下类型云硬盘：
@@ -181,7 +182,8 @@ g.n1.8xlarge|32|128|8|4 |	 |
 
 * vCPU与内存比约为1:2
 * 处理器：
-        * 第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器 
+        
+	* 第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器 
 	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 * 支持以下类型云硬盘：
 	* 通用型SSD云盘
