@@ -26,7 +26,8 @@
 **规格类型特点：**
 
 * vCPU与内存比为1:1、1:2或1:4，提供多种处理器内存配比。
-* 处理器： 
+* 处理器：
+        * 第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器  
 	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持以下类型云硬盘：
@@ -39,6 +40,17 @@
 	* 测试环境
 
 **实例规格**
+
+第三代
+
+实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数
+:---|:---|:---|:---|:---
+|g.s3.micro|1|1|2|1
+|g.s3.small|1|2|2|1
+|g.s3.medium|1|4|2|1
+|g.s3.large|2|8|2|2
+|g.s3.xlarge|4|16|4|4
+|g.s3.2xlarge|8|32|4|4
 
 第二代
 
@@ -168,7 +180,9 @@ g.n1.8xlarge|32|128|8|4 |	 |
 **规格类型特点：**
 
 * vCPU与内存比约为1:2
-* 处理器：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器
+* 处理器：
+        * 第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器 
+	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 * 支持以下类型云硬盘：
 	* 通用型SSD云盘
 	* 性能型SSD云盘
@@ -181,6 +195,16 @@ g.n1.8xlarge|32|128|8|4 |	 |
 	* 小规模批量计算
 
 **实例规格**
+
+第三代
+
+实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡对列数
+:---|:---|:---|:---|:---
+|c.s3.large|2|4|2|2
+|c.s3.xlarge|4|8|4|4
+|c.s3.2xlarge|8|16|4|4
+
+第二代
 
 实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡对列数
 :---|:---|:---|:---|:---
@@ -546,10 +570,10 @@ g.n1.8xlarge|32|128|8|4 |	 |
 
 **规格类型特点：**
 
-* vCPU与内存比为1:4
+* vCPU与内存比为1:4/1:8
 * 提供低时延高IO的本地存储
 * 处理器：
-	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器 或 2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器
 	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持本地数据盘（临时存储），并支持以下类型云硬盘。请注意 **本地数据盘为临时存储盘，有丢失数据的风险（比如发生迁移或宿主机宕机等情况），不适用于应用层没有数据冗余架构的使用场景， 建议您使用云硬盘存储重要数据。** 
@@ -575,6 +599,12 @@ g.n1.8xlarge|32|128|8|4 |	 |
 |s.i3.12xlarge|48|192|6 x 1862 NVMe SSD|8|4
 |s.i3.16xlarge|64|256|8 x 1862 NVMe SSD|8|4
 |s.i3.22xlarge|88|352|8 x 1862 NVMe SSD|8|4
+|s.i3m.4xlarge|16|54|1 x 3725 NVMe SSD|8|4
+|s.i3m.8xlarge|32|108|2 x 3725 NVMe SSD|8|4
+|s.i3m.12xlarge|48|162|3 x 3725 NVMe SSD|8|4
+|s.i3m.16xlarge|64|216|4 x 3725 NVMe SSD|8|4
+|s.i3m.24xlarge|96|324|6 x 3725 NVMe SSD|8|4
+|s.i3m.32xlarge|128|432|8 x 3725 NVMe SSD|8|4
 
 
 第一代：
