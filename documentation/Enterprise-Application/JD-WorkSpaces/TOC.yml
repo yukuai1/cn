@@ -54,7 +54,7 @@ items:
         href: Operation-Guide/Create-User.md 
       - name: 新增私有镜像
         href: Operation-Guide/Create-Image.md        
-      - name: 新增策略的流程
+      - name: 新增策略
         href: Operation-Guide/Create-Policy.md
       - name: 新增云电脑实例
         href: Getting-Started/Purchase-Workspace.md
