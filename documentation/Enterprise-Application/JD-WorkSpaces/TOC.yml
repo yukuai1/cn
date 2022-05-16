@@ -33,8 +33,6 @@ items:
     items:
       - name: 入门指南概述
         href: Getting-Started/Overview.md
-      - name: 定制化
-        href: Getting-Started/Invitation-Code.md
       - name: 开通云电脑
         href: Getting-Started/Create-Workspace.md
       - name: 用户管理
