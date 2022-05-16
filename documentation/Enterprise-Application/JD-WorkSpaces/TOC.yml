@@ -27,8 +27,6 @@ items:
         href: Pricing/Billing-Rules.md
       - name: 价格总览
         href: Pricing/Price-Overview.md
-      - name: 购买流程
-        href: Pricing/Purchase-Process.md 
       - name: 续费流程
         href: Pricing/Renewal-Process.md
   - name: 入门指南
