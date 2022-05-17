@@ -3,9 +3,9 @@
 
 | 功能名称 | 功能描述 | 发布时间 | 相关文档|
 | :---------------| :--------------|:------------|:--------
-|内存优化增强型上线|基于Intel® 第二代傲腾持久内存（BPS），提供高性价比的内存介质。|2022-03|[实例规格类型](https://docs.jdcloud.com/cn/virtual-machines/instance-type-family#user-content-7)
+|内存优化增强型上线|基于Intel® 第二代傲腾持久内存（BPS），提供高内存配比的实例规格。|2022-03|[实例规格类型](https://docs.jdcloud.com/cn/virtual-machines/instance-type-family#user-content-7)
 |存量主机支持加入高可用组|通过调整实例所属高可用组功能，可以将一台未加入高可用组的实例添加到高可用组，或者将一台已加入一个高可用组的实例更换到另一个高可用组。|2022-03|[调整高可用组](https://docs.jdcloud.com/cn/virtual-machines/modify-instance-ag)
-|云主机支持资源组管理|支持根据资源组ID进行实例资源筛选，列表页可对资源的资源组进行单个或批量变更。|2022-03|[资源组概述](https://docs.jdcloud.com/cn/virtual-machines/resource-group-introduction)
+|云主机支持资源组管理|云主机创建时支持指定资源组，支持实例资源组调整，支持以资源组视角查看和管理实例。|2022-03|[资源组概述](https://docs.jdcloud.com/cn/virtual-machines/resource-group-introduction)
 |扩展指标功能上线|可通过官方提供的配置文件样本，配置支持的扩展指标，上报至云监控自定义监控。|2022-01|[自动镜像策略](https://docs.jdcloud.com/cn/virtual-machines/monitoring-overview)
 |云主机在线迁移服务上线|在不停机的情况下，将物理服务器或虚拟服务器上的系统、服务程序等从京东云外的环境同步至京东云云主机实例。|2022-01|[在线迁移服务](https://docs.jdcloud.com/cn/virtual-machines/online-migration-overview)
 
