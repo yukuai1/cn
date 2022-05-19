@@ -89,6 +89,7 @@
 > 3） 若路由表所在的私有网络无预设CIDR，则路由规则的目的端不能与所属私有网络中的任何子网的CIDR有冲突；</br>
 > 4） 路由表支持弹性网卡功能处于灰度中，目前支持华东-上海地域，如需使用请提[工单申请](https://ticket.jdcloud.com/applyorder/submit)；</br>
 > 5） 路由表下一跳配置弹性网卡时，需先配置网卡，使网卡在其绑定的资源上已生效，如弹性网卡绑定的是云主机，配置请参考[Linux服务器弹性网卡配置](https://docs.jdcloud.com/cn/elastic-network-interface/linux-permanent-configuration)。</br>
+> 6） ECMP等价路由目前处于灰度中，如需使用，请提[工单申请](https://ticket.jdcloud.com/applyorder/submit)；
 
 步骤4：补充完相关信息后，点击【保存】后即可完成新增路由策略；
 
