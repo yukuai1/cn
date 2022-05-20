@@ -14,14 +14,17 @@
 
 【图片测试区域】
 
-采用原始格式`<img src="../../../../image/Best-Practice/WIPM/1.服务器管理器.jpg" alt="1.服务器管理器" style="width:70%;" />`
-<img src="../../../../image/Best-Practice/WIPM/1.服务器管理器.jpg" alt="1.服务器管理器" style="width:70%;" />
+采用原始格式排除缩放因素`<img src="../../../../image/Best-Practice/WIPM/1.服务器管理器.jpg" alt="1.服务器管理器" />`
+<img src="../../../../image/Best-Practice/WIPM/1.服务器管理器.jpg" alt="1.服务器管理器" />
 
 采用图片路径英文+alt中文格式`<img src="../../../../image/Best-Practice/WIPM/1.jpg" alt="1.服务器管理器" style="width:70%;" />`
 <img src="../../../../image/Best-Practice/WIPM/1.jpg" alt="1.服务器管理器" style="width:70%;" />
 
 采用全英文格式`<img src="../../../../image/Best-Practice/WIPM/1.jpg" alt="1.servermanager" style="width:70%;" />`
 <img src="../../../../image/Best-Practice/WIPM/1.jpg" alt="1.servermanager" style="width:70%;" />
+
+采用全英文格式+排除缩放因素`<img src="../../../../image/Best-Practice/WIPM/1.jpg" alt="1.servermanager" />`
+<img src="../../../../image/Best-Practice/WIPM/1.jpg" alt="1.servermanager" />
 
 采用推荐格式+全中文`![服务器管理器](../../../../image/Best-Practice/WIPM/1.服务器管理器.jpg)`
 ![服务器管理器](../../../../image/Best-Practice/WIPM/1.服务器管理器.jpg)
@@ -32,8 +35,16 @@
 采用全英文格式`![server-manager](../../../../image/Best-Practice/WIPM/1.jpg)`
 ![server-manager](../../../../image/Best-Practice/WIPM/1.jpg)
 
-采用全英文格式+测试缩放`![server-manager](../../../../image/Best-Practice/WIPM/1.jpg)`
-![server-manager](../../../../image/Best-Practice/WIPM/1.jpg style="width:30%;")
+采用全英文格式+测试缩放`![server-manager](../../../../image/Best-Practice/WIPM/1.jpg =180x180)`
+![server-manager](../../../../image/Best-Practice/WIPM/1.jpg =180x180)
+
+采用全英文格式+测试缩放+居中`![server-manager](../../../../image/Best-Practice/WIPM/1.jpg#pic_center =180x180)`
+![server-manager](../../../../image/Best-Practice/WIPM/1.jpg#pic_center =180x180)
+
+采用全英文格式+测试缩放+居右`![server-manager](../../../../image/Best-Practice/WIPM/1.jpg#pic_right =180x180)`
+![server-manager](../../../../image/Best-Practice/WIPM/1.jpg#pic_right =180x180)
+
+
 
 
 3. 单击**添加角色和功能**，弹出 “添加角色和功能向导” 窗口。
