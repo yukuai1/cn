@@ -12,7 +12,26 @@
 
 2. 在操作系统界面，打开服务器管理器。如下图所示：
 
+【图片测试区域】
+
+采用原始格式`<img src="../../../../image/Best-Practice/WIPM/1.服务器管理器.jpg" alt="1.服务器管理器" style="width:70%;" />`
 <img src="../../../../image/Best-Practice/WIPM/1.服务器管理器.jpg" alt="1.服务器管理器" style="width:70%;" />
+
+采用图片路径英文+alt中文格式`<img src="../../../../image/Best-Practice/WIPM/1.jpg" alt="1.服务器管理器" style="width:70%;" />`
+<img src="../../../../image/Best-Practice/WIPM/1.jpg" alt="1.服务器管理器" style="width:70%;" />
+
+采用全英文格式`<img src="../../../../image/Best-Practice/WIPM/1.jpg" alt="1.servermanager" style="width:70%;" />`
+<img src="../../../../image/Best-Practice/WIPM/1.jpg" alt="1.servermanager" style="width:70%;" />
+
+采用推荐格式+全中文`![服务器管理器](../../../../image/Best-Practice/WIPM/1.服务器管理器.jpg)`
+![服务器管理器](../../../../image/Best-Practice/WIPM/1.服务器管理器.jpg)
+
+采用推荐格式+图片路径英文+图片名称中文格式`![服务器管理器](../../../../image/Best-Practice/WIPM/1.jpg)`
+![服务器管理器](../../../../image/Best-Practice/WIPM/1.jpg)
+
+采用全英文格式`![server-manager](../../../../image/Best-Practice/WIPM/1.jpg)`
+![server-manager](../../../../image/Best-Practice/WIPM/1.jpg)
+
 
 3. 单击**添加角色和功能**，弹出 “添加角色和功能向导” 窗口。
 4. 在 “添加角色和功能向导” 窗口中，单击**下一步**。
