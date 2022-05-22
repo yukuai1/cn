@@ -5,3 +5,13 @@
     items:
       - name: 手动搭建WIPM环境
         href: Built-Websites/Build-WIPM-Env-Manually.md
+      - name: 手动搭建LNMP环境
+        href: Built-Websites/Build-LNMP-Env-Manually.md
+      - name: 手动搭建WordPress（Windows）
+        href: Built-Websites/Build-WordPress-On-WindowsServer2016.md
+      - name: 手动搭建WordPress（CentOS 7）
+        href: Built-Websites/Build-WordPress-On-CentOS7.md       
+      - name: 域名注册和实名认证
+        href: Built-Websites/Domain-Name-Reg-And-Realname-Auth.md
+      - name: 使用云解析服务添加域名解析
+        href: Built-Websites/JDCloud-DNS-Add-Domain-Analysis.md
