@@ -11,12 +11,14 @@ items:
         href: Product-advantages.md
       - name: 产品功能
         items:
+           - name: 功能概述
+             href: Product-Function/Feature-overview.md
            - name: 安全专家服务
-             href: .md
+             href: Product-Function/Security-Expert-Services.md
            - name: 安全统一管理平台
-             href: Operation-Guide/Administrator/Login-Bastion.md
+             href: Product-Function/Secure-unified-management-platform.md
            - name: 安全托管运营
-             href: .md
+             href: Product-Function/Secure-hosted-operations.md
            - name: 重点安全保障
-             href: .md
+             href: Product-Function/Focus-on-safety-and-security.md
   
