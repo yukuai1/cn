@@ -19,7 +19,7 @@
 
 ## 相关参考
 
-- [产品概述](../Introduction/Overview.md)
+- [产品概述](../Introduction/Product-Overview.md)
 - [价格总览](../Pricing/Price-Overview.md)
 - [创建实例](../Getting-Started/Create-Instance.md)
 - [虚拟服务器组管理](../Operation-Guide/TargetGroup-Management.md)
