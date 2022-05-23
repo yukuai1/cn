@@ -8,4 +8,6 @@
 
 - 使用智能分析、威胁关联、自动编排等技术，对安全数据进行综合分析，识别有效安全告警，由安全服务专家进行综合研判处置。
 
-![](/Product-architecture.png) 
+![](/image/Unified-secure-managed-service-platform/architecture.png) 
+
+
