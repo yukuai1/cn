@@ -1,24 +1,24 @@
-name: 统一安全托管服务平台
+name: 统一安全托管服务
 href:
 items:
   - name: 产品简介
     items:
-      - name: 产品概述
-        href: Product-overview.md
-      - name: 产品架构
-        href: Product-architecture.md
-      - name: 产品优势
-        href: Product-advantages.md
-      - name: 产品功能
-        items:
-           - name: 功能概述
-             href: Product-Function/Feature-overview.md
-           - name: 安全专家服务
-             href: Product-Function/Security-Expert-Services.md
-           - name: 安全统一管理平台
-             href: Product-Function/Secure-unified-management-platform.md
-           - name: 安全托管运营
-             href: Product-Function/Secure-hosted-operations.md
-           - name: 重点安全保障
-             href: Product-Function/Focus-on-safety-and-security.md
+  - name: 产品概述
+    href: Product-overview.md
+  - name: 产品架构
+    href: Product-architecture.md
+  - name: 产品优势
+    href: Product-advantages.md
+  - name: 产品功能
+    items:
+      - name: 服务形式
+        href: Product-Function/Feature-overview.md
+      - name: 安全专家服务
+        href: Product-Function/Security-Expert-Services.md
+      - name: 安全统一管理平台
+        href: Product-Function/Secure-unified-management-platform.md
+      - name: 安全托管运营
+        href: Product-Function/Secure-hosted-operations.md
+      - name: 重点安全保障
+        href: Product-Function/Focus-on-safety-and-security.md
   
