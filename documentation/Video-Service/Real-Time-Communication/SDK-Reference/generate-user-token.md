@@ -37,15 +37,17 @@
 
 ```
 String appId="192bc3400174019265a7b1ad1ea7c6c7";
-String appKey="SadW4EIcFmhmA7ixgK39MNegUFj0LnAkYEPlxlykexVezqsXS2Q1VOMed88ES4GxTP0Jiqv3pR/bCNE1lcrpA==";
+String appKey="SadW4EIcFmhmA7ixgK39MNegUFj0LnAkYEPlxlykexVezqsXS2Q1VOMed88ES4GxTP0Jiqv3pR";
 String roomId="60";
-String userId="2b9be4b25c2d38c409c376ffd2372be1";
-String nonce ="AK-2b9be4b25c2d38c409c376ffd2372be1";
-Long timestamp=4762379647000l;
+String userId="a1555463c361e7036a274a8b44e2919";
+String nonce ="AK-a1555463c361e7036a274a8b44e2919";
+Long timestamp=7923514036000l;
 String token=MacUtil.hmacSha256(appId,appKey,roomId,userId,nonce,timestamp);
 System.out.println(token);
+
+
 //输出token结果
-N203UkQwM3pLdExvYURNcy9lWWhkNnJhS0FMWTlRdTh4bE9wTkcyR2ZIUT0_
+RmwzcUJkZnBjWHFUbUFKcFN5YTUwVUpPOERBTzk3REhyeUsrY21rWjhTND0_
 ```
 
 ### Java算法示例：
