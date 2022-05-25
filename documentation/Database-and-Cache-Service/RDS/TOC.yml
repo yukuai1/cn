@@ -71,7 +71,7 @@
       - name：数据库和账号
         href: Getting-Started/Database-and-Account.md
       - name：连接数据库
-        href: Getting-Started/Database-and-Account.md
+        href: Getting-Started/Connect-RDS.md
       - name: 删除实例
         href: Getting-Started/Delete-RDS-Instance.md
   
