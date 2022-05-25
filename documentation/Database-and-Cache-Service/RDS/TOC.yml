@@ -64,8 +64,14 @@
         
   - name: 入门指南
     items:
+      - name: 使用概述
+        href: Getting-Started/Process-Preparation.md
       - name: 创建实例
         href: Getting-Started/Create-RDS-Instance.md
+      - name: 数据库和账号
+        href: Getting-Started/Database-and-Account.md
+      - name: 连接数据库
+        href:  Getting-Started/Connect-RDS.md
       - name: 删除实例
         href: Getting-Started/Delete-RDS-Instance.md
   
@@ -167,6 +173,8 @@
         items:
           - name: 备份收费说明
             href: Operation-Guide/Backup/Backup-Storage-Billing.md
+          - name: 查看备份空间
+            href: Operation-Guide/Backup/Check-Backup-Space.md
           - name: 快照备份
             href: Operation-Guide/Backup/Snapshot-backup.md
           - name: 创建备份
@@ -247,7 +255,8 @@
             href: Operation-Guide/Backup/Disaster-Recovery-Example.md
           - name: 删除备份
             href: Operation-Guide/Backup/Delete-Backup.md
-            
+          - name: 长期保留备份
+            herf:  Operation-Guide/Backup/Enduring-Backup-Retention.md
       - name: Binlog 管理
         items:
         - name: 文件管理
