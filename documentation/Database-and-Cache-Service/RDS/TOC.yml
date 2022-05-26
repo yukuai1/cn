@@ -88,7 +88,9 @@
           - name: 迁移可用区
             href: Operation-Guide/Instance/Migrate-AZ.md 
           - name: 配置目录服务
-            href: Operation-Guide/Instance/Modify-AD.md           
+            href: Operation-Guide/Instance/Modify-AD.md   
+          - name: 版本升级
+            href: Operation-Guide/Instance/Version-Upgrade        
           - name: 重启实例
             items:
             - name: 重启 MySQL
@@ -101,6 +103,7 @@
               href: Operation-Guide/Instance/Reboot-Instance/SQLServer-Restart-Instance.md
             - name: 重启 PostgreSQL
               href: Operation-Guide/Instance/Reboot-Instance/PostgreSQL-Restart-Instance.md
+          
   
       - name: 只读实例管理
         items:
