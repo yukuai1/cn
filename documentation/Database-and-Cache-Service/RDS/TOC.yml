@@ -214,6 +214,8 @@
               href: Operation-Guide/Backup/Restore-Instance/MariaDB-Backup-Restore.md
             - name: SQL Server 备份恢复
               herf: Operation-Guide/Backup/Restore-Instance/SQLServer-Backup-Restore.md
+              name: PostgreSQL通过控制台下载备份进行恢复
+              herf: Operation-Guide/Backup/Restore-Instance/PG-Backup-download-Restore.md
           - name: 根据备份创建
             items:
             - name: SQL Server 根据备份创建
@@ -246,6 +248,10 @@
             href: Operation-Guide/Backup/Disaster-Recovery-Example.md
           - name: 删除备份
             href: Operation-Guide/Backup/Delete-Backup.md
+          - name: 逻辑备份PostgreSQL数据
+            href: Operation-Guide/Backup/PG_dump.md
+          - name: 实例级别全量备份
+            href: Operation-Guide/Backup/PG_basebackup.md
             
       - name: Binlog 管理
         items:
