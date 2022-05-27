@@ -447,6 +447,8 @@
         href: Best-Practices/Restore-Backup-To-Self-Built-Database/Restore-Backup-To-Self-Built-Percona-Database.md
       - name: 将备份恢复到自建 MariaDB 
         href: Best-Practices/Restore-Backup-To-Self-Built-Database/Restore-Backup-To-Self-Built-MariaDB-Database.md
+      - name: 将备份恢复到自建 PostgreSQL 
+        href: Best-Practices/Restore-Backup-To-Self-Built-Database/Restore-Backup-To-Self-Built-PostgreSQL-Database.md
     - name: 连接数据库实例
       items:
       - name: 连接实例
