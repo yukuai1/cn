@@ -9,3 +9,4 @@
 ![image](https://user-images.githubusercontent.com/103625856/170644819-aaa27e0b-3f35-4776-a8a2-960ad3bbb308.png)<br>
 2、点击“创建工作组”，输入工作组名称，选择或者创建安全策略。<br>
 ![image](https://user-images.githubusercontent.com/103625856/170645194-7595f5cd-af52-4f62-833e-3144ac85b871.png)<br>
+
