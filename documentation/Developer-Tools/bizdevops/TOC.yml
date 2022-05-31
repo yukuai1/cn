@@ -1,0 +1,116 @@
+  name: 行云 DevOps
+  href:
+  items:
+  - name: 产品简介
+    items:
+      - name: 概述
+        href: Introduction/Product-Overview.md
+      - name: 核心概念
+        href: Introduction/Core-Concepts.md
+      - name: 基础架构
+        href: Introduction/Basic-Infrastructure.md
+      - name: 产品优势
+        href: Introduction/Benefits.md
+      - name: 产品功能
+        href: Introduction/Features.md
+      - name: 限制说明
+        href: Introduction/Restrictions.md
+      - name: 应用场景
+        href: Introduction/Application-Scenarios.md
+  - name: 产品定价
+    items:
+      - name: 计费概述
+        href: Pricing/Billing-Overview.md
+  - name: 操作指南
+    items:
+      - name: 工作台
+        href: /Operation-Guide/myzone/dashboard.md
+      - name: 团队空间
+        items:
+          - name: 团队空间
+            href: /Operation-Guide/teamspace/space.md
+          - name: 评审约束
+            href: /Operation-Guide/teamspace/space_check.md
+      - name: 需求管理
+        href: /Operation-Guide/demand/demand.md
+      - name: 项目管理
+        href: /Operation-Guide/pmp/pmp.md
+        items:
+          - name: 项目管理
+            href: /Operation-Guide/pmp/project_management.md
+          - name: 工时填报
+            href: /Operation-Guide/pmp/labor_hour.md
+          - name: PMO
+            href: /Operation-Guide/pmp/pmo.md
+      - name: 效能度量
+        href: /Operation-Guide/effectiveness_measurement/agile_practices.md
+      - name: 测试管理
+        href: /Operation-Guide/test_management/test_management.md
+        items:
+          - name: 缺陷管理
+            href: /Operation-Guide/test_manage/bug.md
+          - name: 提测管理
+            href: /Operation-Guide/test_manage/test.md
+          - name: 用例管理
+            href: /Operation-Guide/test_manage/case.md
+          - name: 测试计划
+            href: /Operation-Guide/test_manage/test_plan.md
+          - name: 模版设置
+            href: /Operation-Guide/test_manage/test_setting.md
+      - name: 代码库
+        items:
+          - name: 仓库列表
+            href: /Operation-Guide/coding/repo.md
+          - name: 代码扫描
+            href: /Operation-Guide/coding/code_scan.md
+          - name: 部门视图
+            href: /Operation-Guide/coding/department.md
+          - name: 合并请求
+            href: /Operation-Guide/coding/mr.md
+          - name: 群组列表
+            href: /Operation-Guide/coding/team.md
+          - name: 个人空间
+            href: /Operation-Guide/coding/personal.md
+          - name: 评审 & 合并
+            href: /Operation-Guide/coding/review.md
+          - name: 其他
+            href: /Operation-Guide/coding/others.md
+          - name: Issue
+            href: /Operation-Guide/coding/issue.md
+      - name: 部署发布
+        href: /Operation-Guide/deploy/deploy.md
+        items:
+          - name: 应用管理
+            href: /Operation-Guide/deploy/app.md
+          - name: 镜像部署的应用
+            href: /Operation-Guide/deploy/app-image.md
+          - name: 包部署的应用
+            href: /Operation-Guide/deploy/app-package.md
+          - name: 集群管理
+            href: /Operation-Guide/deploy/clusters.md
+          - name: 系统管理
+            href: /Operation-Guide/deploy/system.md
+          - name: 变更管理
+            href: /Operation-Guide/deploy/process.md
+      - name: 流水线
+        items:
+          - name: 流水线管理
+            href: /Operation-Guide/pipeline/pipeline.md
+          - name: 群组空间
+            href: /Operation-Guide/pipeline/pipeline_team.md
+          - name: 流水线模版
+            href: /Operation-Guide/pipeline/pipeline_template.md
+          - name: 其他
+            href: /Operation-Guide/pipeline/pipeline_others.md
+      - name: 平台管理
+        items:
+          - name: 管理员说明
+            href: /Operation-Guide/admin/admin.md
+          - name: 组织与用户管理
+            href: /Operation-Guide/admin/organisation_and_user.md
+  - name: 常见问题
+    href: /FAQ/FAQ.md
+  - name: 相关资源
+    items:
+      - name: 文档历史记录
+        href: Related-Resources/Document-History.md

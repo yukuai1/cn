@@ -50,7 +50,8 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}:desc
 ### <div id="serviceip">ServiceIp</div>
 |名称|类型|描述|
 |---|---|---|
-|**serviceIp**|String|高防 IP|
+|**serviceIp**|String|高防IP|
+|**securityStatus**|String|安全状态. <br>- SAFE: 安全<br>- CLEANING: 清洗中<br>- BLOCKING: 封禁中|
 
 ## 返回码
 |返回码|描述|

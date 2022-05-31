@@ -29,3 +29,6 @@
 
 4. 点击 **立即购买** 进入订单确认页。
 5. 勾选完云数据库 RDS 服务条款，按照提示完成后续操作
+
+## 相关API
+根据时间点创建实例：[createInstanceByTime](https://docs.jdcloud.com/cn/rds/api/createinstancebytime)
