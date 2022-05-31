@@ -4,7 +4,7 @@ WordPress是使用PHP语言开发的博客平台，在支持PHP和MySQL数据库
 
 ## 前提条件
 
-已创建Linux操作系统的云主机实例，并且手动部署LNMP环境，详情请参见<font color=red>手动搭建LNMP环境的超链接</font>
+已创建Linux操作系统的云主机实例，并且手动部署LNMP环境，详情请参见[手动搭建LNMP环境](https://docs.jdcloud.com/cn/learn-best-practice/build-lnmp-env-manually)。
 
 本文的示例步骤中，使用的软件版本信息如下所述。当您使用不同软件版本时，需要根据实际情况自行调整命令和参数配置。
 
