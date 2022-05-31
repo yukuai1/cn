@@ -97,6 +97,8 @@
             href: Operation-Guide/Monitoring/Alarm-Rules.md              
   - name: 最佳实践
     items:
+    - name: 使用MongoDB客户端进行数据迁移
+      href: Best-Practices/Data-Migration-With-Client.md    
     - name: 使用MongoDB的固定集合
       href: Best-Practices/Capped-Collections.md
     - name: MongoDB 开启慢日志分析

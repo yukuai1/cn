@@ -101,17 +101,9 @@ jdc vm import-image --architecture x86_64 --os-type linux --platform "Other Linu
 | clientToken |  string    |否  |用于保证请求的幂等性。由客户端生成，长度不能超过64个字符
 
 ## 查看及测试镜像
-成功提交导入镜像请求后，即可在控制台私有镜像列表页/详情页中通过“状态”属性中的百分比了解具体进度；也可通过镜像[任务管理控制台](https://cns-console.jdcloud.com/compute/imageTask/list)或openAPI调用 [镜像导入任务查询](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API) 接口来获知更详细的任务进展。
+成功提交导入镜像请求后，即可在控制台私有镜像列表页/详情页中通过“状态”属性中的百分比了解具体进度；也可通过镜像[任务管理控制台](https://cns-console.jdcloud.com/compute/imageTask/list)来获知更详细的任务进展和关联资源信息。
 
-* OpenAPI文档见：[查询镜像任务](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API)<br>
-* CLI安装和配置见：[CLI安装](https://docs.jdcloud.com/cn/cli/installation)   [CLI配置](https://docs.jdcloud.com/cn/cli/config) <br>
-  * CLI指令示意：
-
-```
-jdc vm image-tasks --region-id cn-north-1 --task-action ImportImage --input-json '{"taskIds":[xxx]}'
-```
-
-> 镜像导入完成后，请使用镜像创建云主机测试是否可以成功创建，以及基本功能是否正常，如有异常可核对是否符合镜像制作基本要求 ，若仍无法解决请提交工单或联系客服获得技术支持。
+![image](https://user-images.githubusercontent.com/88134774/164971965-f61f757f-51b1-4d69-9410-5e3925b70282.png)
 
 
 ## 相关参考

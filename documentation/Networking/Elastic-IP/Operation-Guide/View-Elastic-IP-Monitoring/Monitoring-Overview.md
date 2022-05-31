@@ -14,6 +14,8 @@
 |**公网入带宽使用率**|floatingip.out.bandwidth.util|在某个时刻公网IP出方向的带宽上限占出方向总带宽上限的比例|时刻|%|出方向100Mbps以内的公网IP入方向默认为100Mbps，公网IP加入共享带宽包后，带宽上限以在共享带宽包中的带宽上限为准
 |**公网出包量**|floatingip.outgoing.packets|在当前周期下，公网IP出方向转发的包量|增量|pps||
 |**公网入包量**|floatingip.incoming.packets|在当前周期下，公网IP入方向转发的包量|增量|pps||
+|**公网出流量**|floatingip.outgoing.bytes|在当前周期下，公网IP出方向转发的流量|增量|bytes|需通过云监控的[接口](https://docs.jdcloud.com/cn/monitoring/api/describemetricdata?content=API)拉取数据查看|
+|**公网入流量**|floatingip.incoming.bytes|在当前周期下，公网IP入方向转发的流量|增量|bytes|需通过云监控的[接口](https://docs.jdcloud.com/cn/monitoring/api/describemetricdata?content=API)拉取数据查看|
 
 ## 监控数据说明
 
@@ -26,5 +28,6 @@
 ## 相关参考
 
 - [云监控](https://docs.jdcloud.com/cn/monitoring/product-overview)
+- [云监控-弹性公网IP](https://docs.jdcloud.com/cn/monitoring/ip)
 - [管理报警规则](https://docs.jdcloud.com/cn/monitoring/manage_alarmrules_cm)
 

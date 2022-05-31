@@ -53,13 +53,22 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |**sslProtocols**|String[]|ssl协议，["TLSv1","TLSv1.1","TLSv1.2","SSLv2","SSLv3"]|
 |**pureClient**|Integer|前置代理，1：使用 0：不使用|
 |**httpStatus**|Integer|协议状态，0：正常|
+|**httpsCertUpdateStatus**|Integer|https证书绑定状态|
+|**gmHttpsCertUpdateStatus**|Integer|国密https证书绑定状态|
+|**gmCertSupport**|Integer|是否支持国密证书|
 |**antiStatus**|[AntiStatus](listmaincfg#antistatus)|防护状态，0：关闭 1：开启|
 |**disableWaf**|Integer|1：bypass 0：防护模式|
 |**attackInfo**|[AttackInfo](listmaincfg#attackinfo)|近七天攻击详情|
 |**dnsStatus**|[DnsStatus](listmaincfg#dnsstatus)|网站dns配置|
 |**enableCname2Rs**|Integer|cname解析状态。0为解析到VIP，1为解析到回源地址|
 |**enableIpv6**|Integer|cname解析状态。0为解析到VIP，1为解析到回源地址|
-|**region**|[RegionVipInfo](listmaincfg#regionvipinfo)|域名的地域信息，类型是map[string]regionVipInfo|
+|**region**|[DomainRegionInfo](listmaincfg#domainregioninfo)|域名的地域信息，类型是map[string]regionVipInfo|
+### <div id="domainregioninfo">DomainRegionInfo</div>
+|名称|类型|描述|
+|---|---|---|
+|**hb_bgp**|[RegionVipInfo](listmaincfg#regionvipinfo)|域名的在华北的vip和选中信息|
+|**hd_bgp**|[RegionVipInfo](listmaincfg#regionvipinfo)|域名的在华东的vip和选中信息|
+|**hn**|[RegionVipInfo](listmaincfg#regionvipinfo)|域名的在华南的vip和选中信息|
 ### <div id="regionvipinfo">RegionVipInfo</div>
 |名称|类型|描述|
 |---|---|---|
@@ -73,18 +82,17 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 ### <div id="attackinfo">AttackInfo</div>
 |名称|类型|描述|
 |---|---|---|
-|**aclAnti**|Integer|自定义规则防护|
-|**ccAnti**|String|cc防护|
-|**wafAnti**|String|web防护|
+|**aclAnti**|Long|自定义规则防护|
+|**ccAnti**|Long|cc防护|
+|**wafAnti**|Long|web防护|
 ### <div id="antistatus">AntiStatus</div>
 |名称|类型|描述|
 |---|---|---|
 |**acl**|Integer|自定义规则|
-|**cc**|String|cc防护|
-|**waf**|String|waf防护|
+|**cc**|Integer|cc防护|
+|**waf**|Integer|waf防护|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|BAD_REQUEST|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

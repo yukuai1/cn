@@ -14,7 +14,7 @@
 
 ## 操作说明
 1. 安装环境依赖，见注意事项DB。
-2. 下载备份的解压工具，[点击下载](http://jddb-common-public.oss.cn-north-1.jcloudcs.com/general_mysql_backup_extract_tool.zip)，并解压，工具名 `mysql_backup_extract.py`，使用示例如下
+2. 下载备份的解压工具，[点击下载](https://jddb-common-public.oss.cn-north-1.jcloudcs.com/general_mysql_backup_extract_tool.zip)，并解压，工具名 `mysql_backup_extract.py`，使用示例如下
     
     ```Python
      # 增加解压工具文件可执行权限
@@ -51,10 +51,10 @@
     |MySQL 8.0|mysql-8.cnf|
     |MariaDB|mariadb-10.2.cnf|
     |Percona|percona-7.cnf|  
-</p>
+
 
     ```Python
-    xtrabackup --defaults-file=$HOME/percona-7.cnf --parallel=1 --prepare --target-dir=$HOME/tmp_snapshot
+     xtrabackup --defaults-file=$HOME/percona-7.cnf --parallel=1 --prepare --target-dir=$HOME/tmp_snapshot
     ```   
     
     当看到 ***innobackupex completed OK!*** 时， 表明执行成功，你就可以继续下一步操作了。

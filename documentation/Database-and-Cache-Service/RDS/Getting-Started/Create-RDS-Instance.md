@@ -47,5 +47,9 @@
 - 然后进入 **订单确认页面** ，确认购买信息无误后，点击 **立即支付**,完成实例创建。
 
   ![创建实例7](../../../../image/RDS/Create-Instance-7.png)
+  
+  
+## 相关文档
+通过API创建RDS实例：[创建RDS实例](https://docs.jdcloud.com/cn/rds/api/createinstance?content=API)
 
 
