@@ -90,7 +90,7 @@
           - name: 配置目录服务
             href: Operation-Guide/Instance/Modify-AD.md   
           - name: 版本升级
-            href: Operation-Guide/Instance/Version-Upgrade        
+            href: Operation-Guide/Instance/Version-Upgrade.md         
           - name: 重启实例
             items:
             - name: 重启 MySQL
