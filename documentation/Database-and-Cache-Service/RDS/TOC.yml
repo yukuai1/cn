@@ -115,6 +115,8 @@
   
       - name: 只读实例管理
         items:
+        - name: 创建只读简介
+          herf: Operation-Guide/Readonly-Instance-Management/Readonly-Instance.md
         - name: 创建只读实例
           herf: Operation-Guide/Readonly-Instance-Management/Create-Readonly-Instance.md
         - name: 重启只读实例
