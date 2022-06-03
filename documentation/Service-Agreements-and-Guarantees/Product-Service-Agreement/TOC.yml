@@ -801,5 +801,21 @@ items:
   - name: 智慧园区管理平台等级协议（SLA）
     href: Iotpark-SLA.md 
   - name: 京瞳AIoT应用管理平台服务条款
-    href: AIoTManagementPlatform-Terms-Of-Service.md 
+    href: AIoTManagementPlatform-Terms-Of-Service.md
+  - name: 智能设计服务条款
+    href: NeuDesign.md
+  - name: 智能设计服务等级协议（SLA）
+    href: NeuDesign-SLA.md
+  - name: 趋势洞察服务条款
+    href: NeuInsight.md
+  - name: 趋势洞察服务等级协议（SLA）
+    href: NeuInsight-SLA.md
+  - name: 调研服务服务条款
+    href: NeuSurvey.md
+  - name: 调研服务等级协议（SLA）
+    href: NeuSurvey-SLA.md
+  - name: 智能测试产品服务协议
+    href: NeuTest.md
+  - name: 智能测试服务等级协议（SLA）
+    href: NeuTest-SLA.md
 
