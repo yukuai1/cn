@@ -91,6 +91,8 @@
             href: Operation-Guide/Instance/Modify-Instance-Spec.md            
           - name: 主备切换
             href: Operation-Guide/Instance/Failover-Instance.md
+          - name: 版本升级
+            href: Operation-Guide/Instance/Version-Upgrade.md
           - name: 域名切换
             href: Operation-Guide/Instance/Exchanged-DNS.md          
           - name: 迁移可用区
