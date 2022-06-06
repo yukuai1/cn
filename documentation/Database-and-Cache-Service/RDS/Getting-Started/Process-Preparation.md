@@ -6,7 +6,7 @@
 这里主要通过创建MySQL实例进行讲解，创建并使用云数据库仅需要3步：
 1. [创建RDS实例](https://docs.jdcloud.com/cn/rds/create-rds-instance)
 2. [创建数据库和账号](Database-and-Account.md)
-3. [连接实例]()
+3. [连接实例](https://docs.jdcloud.com/cn/rds/connect-instance)
 
 ## 准备工作
 

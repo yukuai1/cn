@@ -18,6 +18,11 @@
    |描述|对于参数组的描述，长度不超过64个字符|
     > 注意：不同实例参数略有不同，因此参数组需与实例类型及版本对应。
    
-    ![截图](../../../../../image/RDS/create-parameter-group.jpg)
+    ![截图](../../../image/RDS/create-parameter-group.png)
 
 4.单击 **确定** 按钮，创建参数组成功，返回到参数组列表页。
+
+## 相关API
+创建参数组：[createParameterGroup](https://docs.jdcloud.com/cn/rds/api/createparametergroup)
+查看参数列表：[describeParameterGroups
+](https://docs.jdcloud.com/cn/rds/api/describeparametergroups)

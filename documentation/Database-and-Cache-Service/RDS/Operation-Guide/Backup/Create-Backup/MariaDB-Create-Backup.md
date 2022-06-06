@@ -20,7 +20,7 @@
 2. 实例列表中，点击实例ID进入实例详情页。
 3. 切换到 备份管理-> 备份策略。
     ![备份策略](../../../../image/RDS/Backup-Strategy-1.png)
-4. 点击 **修改策略**，弹出备份策略修改弹窗，进行设置。详情见[备份策略](../MySQL-Backup-Policy.md)
+4. 点击 **修改策略**，弹出备份策略修改弹窗，进行设置。详情见[备份策略](../../MariaDB-Backup-Policy.md)
    ![备份策略](../../../../image/RDS/Backup-Strategy-2.png)
    
    > 说明：
