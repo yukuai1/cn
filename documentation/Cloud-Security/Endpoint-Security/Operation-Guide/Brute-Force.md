@@ -18,11 +18,14 @@
 
 ![](../../../../image/Endpoint-Security/Brute-Force1.png)
 
+- **详情与建议**
 
-- 点击【详情与建议】，可查看具体安全事件详情和修复建议。
+   点击【详情与建议】，可查看具体安全事件详情和修复建议。
 
 ![](../../../../image/Endpoint-Security/Brute-Force2.png)
 
-- 点击页面右上角【防护设置】，对暴力破解功能设置开关。
+- **防护设置**
+
+   点击暴力破解页面右上角“防护设置”按钮进行设置；通过对SSH暴力破解、RDP暴力破解、MYSQL暴力破解、SQLSERVER暴力破解设置（例如：x秒内单IP尝试登录x次，攻击IP冻结x秒），可对攻击IP进行冻结。
 
 ![](../../../../image/Endpoint-Security/Brute-Force3.png)
