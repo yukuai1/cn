@@ -6,9 +6,9 @@
 2、选择一级菜单“企业应用”下的二级菜单“云电脑”。<br>
 ### 操作步骤
 1、进入云电脑管理后台，点击左侧功能栏  “用户管理”，进入用户管理页面。<br>
-![image](https://user-images.githubusercontent.com/103625856/170675656-b5c1de66-c463-4538-8f9c-aeb19edbb5d9.png)<br>
+![image](https://user-images.githubusercontent.com/103625856/172799640-232f26d8-710c-40e4-bf4c-99bf048b429d.png)<br>
 2、点击“创建用户”进入用户创建页面，填写用户信息，完成用户创建。<br>
-![image](https://user-images.githubusercontent.com/103625856/170675813-b6abd7df-34b9-4daf-b06b-4222a887f5cf.png)
+![image](https://user-images.githubusercontent.com/103625856/172799826-6e81e6b5-5ba6-41ac-8653-3c06e14bba2b.png)<br>
 3、用户创建成功后，会通过短信通知用户开通信息，包含用户名、密码等信息，请提醒用户妥善保管。<br>
 
 
