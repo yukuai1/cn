@@ -6,7 +6,7 @@
 2、选择一级菜单“企业应用”下的二级菜单“云电脑”。<br>
 ### 操作步骤
 1、进入云电脑管理后台，点击左侧功能栏  “工作组管理”，进入工作组管理页面。<br>
-![image](https://user-images.githubusercontent.com/103625856/170623758-dc1e3ba5-3483-4b1a-9e6a-2f0d00af3fc2.png)<br>
+![image](https://user-images.githubusercontent.com/103625856/172790835-b4c302ff-fb00-46b8-81fd-dac01f814b42.png)<br>
 2、可按工作组名称/ID，输入内容后进行精准查询。<br>
 ![image](https://user-images.githubusercontent.com/103625856/170623862-86e02dd7-8248-402b-97b4-46849317ba03.png)<br>
 3、可在工作组列表操作区，对工作组进行策略管理、用户管理及删除工作组操作。<br>
