@@ -6,7 +6,7 @@
 2、选择一级菜单“企业应用”下的二级菜单“云电脑”。<br>
 ### 操作步骤
 1、进入云电脑管理后台，点击左侧功能栏  “工作组管理”，进入工作组管理页面。<br>
-![image](https://user-images.githubusercontent.com/103625856/170644819-aaa27e0b-3f35-4776-a8a2-960ad3bbb308.png)<br>
+![image](https://user-images.githubusercontent.com/103625856/172800685-4bd23fca-fbfe-43e1-9bda-70f7e56da5cc.png)<br>
 2、点击“创建工作组”，输入工作组名称，选择或者创建安全策略。<br>
-![image](https://user-images.githubusercontent.com/103625856/170645194-7595f5cd-af52-4f62-833e-3144ac85b871.png)<br>
+![image](https://user-images.githubusercontent.com/103625856/172800884-74169629-f011-4b7c-aaa0-edd8616a71cb.png)<br>
 
