@@ -1,13 +1,11 @@
 ## 工作组管理
 ### 使用场景
-针对创建的工作组进行管理。<br>
+对创建的工作组进行管理。<br>
 ### 前提条件
-1、管理员已登录京东云控制台。<br>
-2、选择一级菜单“企业应用”下的二级菜单“云电脑”。<br>
+1、已登录京东云控制台。<br>
+2、选择一级菜单“弹性计算”下的二级菜单“云电脑”。<br>
 ### 操作步骤
 1、进入云电脑管理后台，点击左侧功能栏  “工作组管理”，进入工作组管理页面。<br>
-![image](https://user-images.githubusercontent.com/103625856/172790835-b4c302ff-fb00-46b8-81fd-dac01f814b42.png)<br>
-2、可按工作组名称/ID，输入内容后进行精准查询。<br>
-![image](https://user-images.githubusercontent.com/103625856/170623862-86e02dd7-8248-402b-97b4-46849317ba03.png)<br>
-3、可在工作组列表操作区，对工作组进行策略管理、用户管理及删除工作组操作。<br>
-![image](https://user-images.githubusercontent.com/103625856/170623975-d3ac47fe-4408-4929-847a-488e5f62808f.png)<br>
+![image](https://user-images.githubusercontent.com/103625856/172819795-ee39a7c1-924b-4df1-a609-3aeb1bb09def.png)<br>
+2、在工作组列表操作区，对工作组进行策略管理、用户管理及删除工作组操作。<br>
+![image](https://user-images.githubusercontent.com/103625856/172820171-a6a38477-fc3d-40e1-8a9b-0a88c7a46fa5.png)<br>
