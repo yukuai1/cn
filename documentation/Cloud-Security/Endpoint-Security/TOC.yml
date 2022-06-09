@@ -44,7 +44,11 @@ items:
     - name: 敏感文件篡改
       href: Operation-Guide/File-Monitoring.md     
     - name: 安全报表
-      href: Operation-Guide/Security-Report.md    
+      href: Operation-Guide/Security-Report.md  
+    - name: 容器安全
+      href: Operation-Guide/Security-Configuration.md   
+    - name: 云原生容器安全
+      href: Operation-Guide/Security-Incidents.md
     - name: 多云安装
       href: Operation-Guide/MultiCloud-Install.md  
     - name: 系统设置
