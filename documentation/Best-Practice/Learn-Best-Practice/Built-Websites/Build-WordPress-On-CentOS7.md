@@ -60,14 +60,14 @@ exit;
 
 1. 通过**yum**命令下载的WordPress保存在/usr/share/wordpress目录下，将下载的WordPress移动至网站根目录。
 
-```
+```Shell
 yum -y install wordpress
 mv /usr/share/wordpress /usr/share/nginx/html/wordpress
 ```
 
 2. 进入移动后的WordPress路径下，软连接配置文件wp-config.php，并编辑`wp-config.php`文件。
 
-```
+```Shell
 cd /usr/share/nginx/html/wordpress
 ln -snf /etc/wordpress/wp-config.php wp-config.php
 vim wp-config.php
@@ -94,7 +94,7 @@ define('DB_HOST', 'localhost');
 
 运行以下命令打开Nginx配置文件。
 
-```
+```Shell
 vim /etc/nginx/nginx.conf
 ```
 
