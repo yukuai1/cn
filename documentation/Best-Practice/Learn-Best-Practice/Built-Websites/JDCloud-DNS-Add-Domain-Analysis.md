@@ -61,7 +61,7 @@
 
 配置成功后可以使用以下命令验证解析效果。
 
-```shell
+```Shell
 #linux系统使用dig命令
 dig www.jdcup.com
 
