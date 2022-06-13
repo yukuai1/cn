@@ -39,7 +39,7 @@ WordPress是使用PHP语言开发的博客平台，在支持PHP和MySQL数据库
 
 3. 为WordPress网站创建数据库的名称为`wordpress`
 
-```
+```SQL
 create database wordpress;
 ```
 
