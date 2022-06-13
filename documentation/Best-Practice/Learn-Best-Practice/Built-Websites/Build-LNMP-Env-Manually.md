@@ -317,7 +317,7 @@ vim /usr/share/nginx/html/phpinfo.php
 
 输入下列内容，函数`phpinfo()`会展示PHP的所有配置信息。
 
-```php
+```PHP
 <?php echo phpinfo(); ?>
 ```
 
