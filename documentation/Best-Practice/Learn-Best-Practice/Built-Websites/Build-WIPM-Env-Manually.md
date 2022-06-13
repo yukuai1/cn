@@ -23,11 +23,11 @@
 6. 在 “选择服务器角色” 界面，勾选“Web 服务器(IIS)”。如下图所示：
    弹出 “添加 Web 服务器(IIS) 所需的功能” 提示框。
 
-<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/3.server-role.jpg" alt="3.server-role" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/3.server-role.jpg" alt="3.server-role" width=700 />
 
 7. 在弹出的 “添加 Web 服务器(IIS) 所需的功能” 提示框中，单击**添加功能**。如下图所示：
 
-<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/4.iis-function-needed.jpg" alt="4.iis-function-needed" style="width:40%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/4.iis-function-needed.jpg" alt="4.iis-function-needed" width=400 />
 
 8. 单击**下一步**。
 9. 在 “选择功能” 界面，勾选 “.NET Framework 3.5 功能”，并连续单击2次**下一步**。如下图所示：
@@ -295,7 +295,7 @@ phpinfo();
 
 1. 在开始菜单找到Mysql Command Line Client
 
-<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/43.mysql-command-line.jpg" alt="43.mysql-command-line" style="width:30%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/43.mysql-command-line.jpg" alt="43.mysql-command-line" width=300 />
 
 2. 输入root密码后即可实现本地访问Mysql服务
 
