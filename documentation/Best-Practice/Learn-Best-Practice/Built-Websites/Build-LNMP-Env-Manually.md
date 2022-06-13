@@ -25,7 +25,7 @@ LNMP 环境是指在 Linux 系统下，由 Nginx + MySQL/MariaDB + PHP 组成的
 - 如果防火墙的状态参数是inactive，则防火墙为关闭状态。
 - 如果防火墙的状态参数是active，则防火墙为开启状态。
 
-```shell
+```Shell
 systemctl status firewalld
 ```
 
@@ -33,7 +33,7 @@ systemctl status firewalld
 
 临时关闭防火墙后，如果Linux实例重启，则防火墙将会自动开启。
 
-```shell
+```Shell
 systemctl stop firewalld
 ```
 
@@ -60,7 +60,7 @@ getenforce
 
 SELinux关闭的方式分为临时关闭和永久关闭，请您根据自身业务需求进行选择。
 
-```shell
+```Shell
 #临时关闭SELinux
 setenforce 0
 ```
@@ -71,7 +71,7 @@ setenforce 0
 
 安装Nginx并查看版本
 
-```shell
+```Shell
 #安装nginx
 yum -y install nginx
 
@@ -81,7 +81,7 @@ nginx -v
 
 返回结果如下所示，表示Nginx安装成功。
 
-```shell
+```Shell
 nginx version: nginx/1.20.1
 ```
 
@@ -89,7 +89,7 @@ nginx version: nginx/1.20.1
 
 1.更新Yum源
 
-```shell
+```Shell
 rpm -Uvh  http://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
 ```
 
@@ -101,7 +101,7 @@ rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
 
 避免GPG验证不通过产生如下报错
 
-```shell
+```Shell
 #报错1
 mysql-community-server-5.7.37-1.el7.x86_64.rpm 的公钥尚未安装
 失败的软件包是：mysql-community-server-5.7.37-1.el7.x86_64
@@ -117,25 +117,25 @@ GPG  密钥配置为：file:///etc/pki/rpm-gpg/RPM-GPG-KEY-mysql
 
 （2）安装Mysql
 
-```
+```Shell
 yum -y install mysql-community-server
 ```
 
 3.查看Mysql版本
 
-```
+```Shell
 mysql -V
 ```
 
 返回结果如下所示，表示MySQL安装成功。
 
-```shell
+```Shell
 mysql  Ver 14.14 Distrib 5.7.37, for Linux (x86_64) using  EditLine wrapper
 ```
 
 4.启动Mysql并设置开机启动
 
-```shell
+```Shell
 systemctl start mysqld
 systemctl enable mysqld
 systemctl daemon-reload
@@ -145,7 +145,7 @@ systemctl daemon-reload
 
 1.更新Yum源
 
-```shell
+```Shell
 #添加epel源
 yum install \
 https://repo.ius.io/ius-release-el7.rpm \
@@ -157,7 +157,7 @@ rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
 
 2.安装PHP
 
-```shell
+```Shell
 yum -y install php70w-devel php70w.x86_64 php70w-cli.x86_64 php70w-common.x86_64 php70w-gd.x86_64 php70w-ldap.x86_64 php70w-mbstring.x86_64 php70w-mcrypt.x86_64  php70w-pdo.x86_64   php70w-mysqlnd  php70w-fpm php70w-opcache php70w-pecl-redis php70w-pecl-mongodb
 ```
 
@@ -169,7 +169,7 @@ php -v
 
 返回结果如下所示，表示安装成功。
 
-```shell
+```Shell
 PHP 7.0.33 (cli) (built: Dec  6 2018 22:30:44) ( NTS )
 Copyright (c) 1997-2017 The PHP Group
 Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
@@ -194,7 +194,7 @@ vim /etc/nginx/nginx.conf
 
 （1）添加或修改`location /`配置信息。
 
-```shell
+```Shell
         location / {
             index index.php index.html index.htm;
         }
@@ -202,7 +202,7 @@ vim /etc/nginx/nginx.conf
 
 （2）添加或修改`location /`配置信息
 
-```shell
+```Shell
         #添加下列信息，配置Nginx通过fastcgi方式处理您的PHP请求。
         location ~ .php$ {
             root /usr/share/nginx/html;    #将/usr/share/nginx/html替换为您的网站根目录，本文使用/usr/share/nginx/html作为网站根目录。
@@ -219,7 +219,7 @@ vim /etc/nginx/nginx.conf
 
 3. 启动Nginx服务，设置Nginx服务开机自启动。
 
-```shell
+```Shell
 systemctl start nginx 
 systemctl enable nginx
 ```
@@ -228,7 +228,7 @@ systemctl enable nginx
 
 1. 运行以下命令查看/var/log/mysqld.log文件，获取并记录root用户的初始密码。
 
-```shell
+```Shell
 grep 'temporary password' /var/log/mysqld.log
 ```
 
@@ -240,7 +240,7 @@ grep 'temporary password' /var/log/mysqld.log
 
 2. 运行以下命令配置MySQL的安全性。
 
-```shell
+```Shell
 mysql_secure_installation
 ```
 
@@ -248,14 +248,14 @@ mysql_secure_installation
 
 （1）输入Mysql初始密码
 
-```shell
+```Shell
 Securing the MySQL server deployment.
 Enter password for user root: #输入上一步获取的root用户初始密码
 ```
 
 （2）为Mysql设置新密码
 
-```shell
+```Shell
 The existing password for the user account root has expired. Please set a new password.
 
 New password: #输入新密码。长度为8至30个字符，必须同时包含大小写英文字母、数字和特殊符号。特殊符号包含()` ~!@#$%^&*-+=|{}[]:;‘<>,.?/
@@ -280,7 +280,7 @@ Do you wish to continue with the password provided?(Press y|Y for Yes, any other
 
 （3）设置匿名用户、root登录等权限。
 
-```shell
+```Shell
 Remove anonymous users? (Press y|Y for Yes, any other key for No) :Y  #输入Y删除匿名用户。
 Success.
 
@@ -302,7 +302,7 @@ All done!
 
 1. 新建并编辑phpinfo.php文件，用于展示PHP信息。
 
-```shell
+```Shell
 vim <网站根目录>/phpinfo.php
 
 #<网站根目录>是您在nginx.conf配置文件中location ~ .php$大括号内，配置的root参数值
@@ -311,7 +311,7 @@ vim <网站根目录>/phpinfo.php
 
 因此需要运行以下命令新建phpinfo.php文件：
 
-```shell
+```Shell
 vim /usr/share/nginx/html/phpinfo.php
 ```
 
@@ -323,7 +323,7 @@ vim /usr/share/nginx/html/phpinfo.php
 
 2. 启动PHP-FPM并设置开机自启动
 
-```shell
+```Shell
 systemctl start php-fpm
 systemctl enable php-fpm
 ```
@@ -342,13 +342,13 @@ systemctl enable php-fpm
 
 测试访问LNMP配置信息页面后，建议您运行以下命令将phpinfo.php文件删除，消除数据泄露风险。
 
-```shell
+```Shell
 rm -rf <网站根目录>/phpinfo.php
 ```
 
 本文配置的网站根目录为/usr/share/nginx/html，因此需要运行以下命令
 
-```shell
+```Shell
 rm -rf /usr/share/nginx/html/phpinfo.php
 ```
 
