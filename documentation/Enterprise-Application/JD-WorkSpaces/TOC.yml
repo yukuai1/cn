@@ -50,9 +50,9 @@ items:
         href: Getting-Started/User.md
   - name: 操作指南
     items:
-      - name: 新增云电脑实例
+      - name: 新增云电脑
         href: Getting-Started/Purchase-Workspace.md  
-      - name: 新增用户的流程
+      - name: 新增用户
         href: Operation-Guide/Create-User.md 
       - name: 新增工作组
         href: Operation-Guide/Purchase-Workspace.md
