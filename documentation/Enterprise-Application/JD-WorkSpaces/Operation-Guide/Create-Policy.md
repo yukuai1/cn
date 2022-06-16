@@ -1,13 +1,13 @@
 ## 新增策略
 ### 使用场景
-为云电脑创建策略。<br>
+根据需求创建策略。<br>
 ### 前提条件
 1、已登录京东云控制台。<br>
 2、选择一级菜单“ 弹性计算”下的二级菜单“云电脑”。<br>
 ### 操作步骤
 1、进入云电脑管理后台，点击左侧功能栏  “策略管理”，进入策略管理页面。<br>
 ![image](https://user-images.githubusercontent.com/103625856/172797242-0818a776-af32-4fbe-90cb-a538cc3c4996.png)<br>
-2、点击“创建”，进入创建策略页面，填写策略信息，完成创建。<br>
+2、点击“创建”，进入创建策略页面，填写名称及设置策略，完成创建。<br>
 ![image](https://user-images.githubusercontent.com/103625856/172798643-a7aafc39-44e6-4aca-bacb-d05901b04b11.png)<br>
 ![image](https://user-images.githubusercontent.com/103625856/172799094-0dde014d-dd4b-45a7-b301-f612f98c200d.png)<br>
 水印：是否开启水印功能。开启后，您可以设置水印显示的内容和透明度，云电脑上将均衡分布显示水印。<br>
