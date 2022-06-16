@@ -35,21 +35,6 @@ items:
         href: Getting-Started/Overview.md
       #- name: 购买流程
         # href: Getting-Started/Create-Workspace.md
-      - name: 用户管理
-        href: Getting-Started/Active-Directory-Manager.md
-      - name: 工作组管理
-        href: Getting-Started/Workspace-Instance.md
-      - name: 云电脑管理
-        href: Getting-Started/Workspace-Details.md
-      #- name: 镜像管理
-      #href: Getting-Started/Private-Image.md
-        
-      - name: 策略管理
-        href: Getting-Started/Policy-Management.m
-      - name: 云电脑用户
-        href: Getting-Started/User.md
-  - name: 操作指南
-    items:
       - name: 新建云电脑
         href: Getting-Started/Purchase-Workspace.md  
       - name: 新建用户
@@ -59,7 +44,21 @@ items:
       - name: 新建策略
        href: Operation-Guide/Create-Policy.md
       #- name: 新建私有镜像
-       # href: Operation-Guide/Create-Image.md  
+       # href: Operation-Guide/Create-Image.md
+  - name: 管理指南
+    items:
+      - name: 用户管理
+        href: Getting-Started/Active-Directory-Manager.md
+      - name: 工作组管理
+        href: Getting-Started/Workspace-Instance.md
+      - name: 云电脑管理
+        href: Getting-Started/Workspace-Details.md
+      #- name: 镜像管理
+      #href: Getting-Started/Private-Image.md  
+      - name: 策略管理
+        href: Getting-Started/Policy-Management.m
+     # - name: 云电脑用户
+       # href: Getting-Started/User.md
   - name: 常见问题
     href: FAQ/FAQ.md
   - name: API参考
