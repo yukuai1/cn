@@ -7,5 +7,5 @@
 ### 操作步骤
 1、进入云电脑管理后台，点击左侧功能栏 “用户管理”，进入用户管理页面。<br>
 ![image](https://user-images.githubusercontent.com/103625856/172799640-232f26d8-710c-40e4-bf4c-99bf048b429d.png)<br>
-2、点击“创建用户”进入用户创建页面，填写用户信息（支持批量导入），完成用户创建。<br>
+2、点击“创建用户”进入用户创建页面，选择创建方式（支持批量上传），填写用户信息，完成用户创建。<br>
 ![image](https://user-images.githubusercontent.com/103625856/172799826-6e81e6b5-5ba6-41ac-8653-3c06e14bba2b.png)<br>
