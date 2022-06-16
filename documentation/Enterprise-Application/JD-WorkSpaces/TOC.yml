@@ -33,8 +33,8 @@ items:
     items:
       - name: 入门指南概述
         href: Getting-Started/Overview.md
-      - name: 购买流程
-        href: Getting-Started/Create-Workspace.md
+      #- name: 购买流程
+        # href: Getting-Started/Create-Workspace.md
       - name: 用户管理
         href: Getting-Started/Active-Directory-Manager.md
       - name: 工作组管理
