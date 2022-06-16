@@ -50,15 +50,15 @@ items:
         href: Getting-Started/User.md
   - name: 操作指南
     items:
-      - name: 新增云电脑
+      - name: 新建云电脑
         href: Getting-Started/Purchase-Workspace.md  
-      - name: 新增用户
+      - name: 新建用户
         href: Operation-Guide/Create-User.md 
-      - name: 新增工作组
+      - name: 新建工作组
         href: Operation-Guide/Purchase-Workspace.md
-      - name: 新增策略
+      - name: 新建策略
        href: Operation-Guide/Create-Policy.md
-      #- name: 新增私有镜像
+      #- name: 新建私有镜像
        # href: Operation-Guide/Create-Image.md  
   - name: 常见问题
     href: FAQ/FAQ.md
