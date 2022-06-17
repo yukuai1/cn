@@ -2,7 +2,7 @@
 1. 访问[实例控制台](https://cns-console.jdcloud.com/host/compute/list)，或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏【弹性计算】-【云主机】-【实例】进入实例列表页。
 
 2. 选择创建实例所属地域，点击【创建】按钮，进入云主机购买页面。建议您根据业务情况选择实例所在地域，关于京东云地域详细信息，请参见[地域与可用区](../Introduction/Regions-and-AvailabilityZones.md)。
-![](https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Create-Region.png)
+![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0617.png)
 
 3. 选择计费模式：包年包月和按配置计费，包年包月按一个整月进行购买付费，按配置计费按照实际使用的时长（精确至秒）每小时进行扣费。关于两种计费方式的区别，请参见[计费规则](../Pricing/Billing-Rules.md)。
 ![](https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Create-billing.png)
