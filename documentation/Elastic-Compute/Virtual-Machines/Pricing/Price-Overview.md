@@ -2138,8 +2138,48 @@
    </tr>    
    
    <tr>
-      <td rowspan="17">GPU</td>
-      <td rowspan="9">标准</td>
+      <td rowspan="21">GPU</td>
+      <td rowspan="13">标准</td>
+      <td>p.n3a100.7large</td>
+      <td>14</td>
+      <td>120</td>
+      <td>16637.5</td>
+      <td>--</td>
+      <td>34.66</td>
+      <td>--</td>
+      <td>1*A100</td>
+   </tr>
+   <tr>
+      <td>p.n3a100.15large</td>
+      <td>30</td>
+      <td>240</td>
+      <td>33275</td>
+      <td>--</td>
+      <td>69.32</td>
+      <td>--</td>
+      <td>2*A100</td>
+   </tr>
+   <tr>
+      <td>p.n3a100.31large</td>
+      <td>62</td>
+      <td>480</td>
+      <td>66550</td>
+      <td>--</td>
+      <td>138.65</td>
+      <td>--</td>
+      <td>4*A100</td>
+   </tr>
+   <tr>
+      <td>p.n3a100.31xlarge</td>
+      <td>124</td>
+      <td>972</td>
+      <td>33100</td>
+      <td>--</td>
+      <td>277.29</td>
+      <td>--</td>
+      <td>8*A100</td>
+   </tr>
+   <tr>
       <td>p.n1p40.3xlarge</td>
       <td>12</td>
       <td>48</td>
