@@ -22,7 +22,7 @@
 1. 登录[云数据库 RDS管理控制台](https://rds-console.jdcloud.com/database)。
 2. 右侧菜单栏，切换到 **备份列表** 。选择 **已删除实例备份** Tab页面。
 3. 选择不再需要保留的实例，右侧操作列点击删除。
-![已删除实例备份的删除](../../../Image/RDS/Deleted-Instance-Backups.png)
+![对已删除实例备份进行删除](../../../image/RDS/Deleted-Instance-Backups.png)
 
 ## 相关API
 手动删除备份：[deleteBackup](https://docs.jdcloud.com/cn/rds/api/deletebackup)

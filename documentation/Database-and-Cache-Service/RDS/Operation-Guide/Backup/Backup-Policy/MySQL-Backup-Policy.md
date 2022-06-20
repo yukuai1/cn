@@ -27,6 +27,7 @@
     
 ## 相关API
 查看实例备份策略：[describeBackupPolicy](https://docs.jdcloud.com/cn/rds/api/describebackuppolicy)  
+修改实例备份：[modifyBackupPolicy](https://docs.jdcloud.com/cn/rds/api/modifybackuppolicy)
 
 
 

@@ -30,3 +30,7 @@
 
 6. 确认无误后，点击 **确定** 按钮，完成参数的修改，并返回到参数列表页。
 7. 选择 **云数据库**  Tab 页，您可以发现 **参数组生效** 这一列的值从原先的 **生效** 变成了 **同步中**，表示您刚刚保持的参数修改，正在同步到数据库实例上；状态值从 **同步中** 变成 **生效**，表示修改后的参数已经应用到数据库实例上。
+
+## 相关API
+修改参数：[modifyParameterGroupParameters
+描述](https://docs.jdcloud.com/cn/rds/api/modifyparametergroupparameters)

@@ -15,3 +15,7 @@
     ![创建账号](../../../../../../image/RDS/PostgreSQL-Create-Account.png)
 
 4. 单击 **确定** 按钮完成建账号，返回到账号管理页面。
+
+## 相关API
+创建账号：[createAccount](https://docs.jdcloud.com/cn/rds/api/createaccount)
+查看账号：[describeAccounts](https://docs.jdcloud.com/cn/rds/api/describeaccounts)

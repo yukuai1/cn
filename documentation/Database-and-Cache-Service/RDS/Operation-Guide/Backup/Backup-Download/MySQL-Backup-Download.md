@@ -25,9 +25,11 @@
 1. 登录 [云数据库 RDS 控制台](https://rds-console.jdcloud.com/database)。
 2. 选择需要进行备份数据下载的目标实例，点击目标实例的名称，进入到实例详情页。
 3. 选择 **备份管理** 标签，切换至 **binlog** tab页，点击**操作**列的**下载**。
+
 ## 相关问题
 1. 如何使用下载的备份文件？
 您可以将本地盘实例下载的备份文件恢复至自建数据库，具体请参见[将备份恢复到自建MySQL](https://docs.jdcloud.com/cn/rds/restore-backup-to-self-built-mysql-database)
+
 ## 相关API
 下载数据备份：[describeBackupDownloadURL](https://docs.jdcloud.com/cn/rds/api/describebackupdownloadurl)
 下载日志备份：[describeBinlogDownloadURL](https://docs.jdcloud.com/cn/rds/api/describebinlogdownloadurl)

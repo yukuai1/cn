@@ -17,3 +17,7 @@
     * 点击 **取消** 按钮，放弃备份数据的下载。
 
 ![image2018-3-8 14_14_29.png](https://img1.jcloudcs.com/cms/9de5deac-1a4d-4bea-b6ad-3121e317935b20180308142747.png)
+
+## 相关API
+下载数据备份：[describeBackupDownloadURL](https://docs.jdcloud.com/cn/rds/api/describebackupdownloadurl)
+下载日志备份：[describeBinlogDownloadURL](https://docs.jdcloud.com/cn/rds/api/describebinlogdownloadurl)
