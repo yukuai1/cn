@@ -9,4 +9,8 @@
 ![image](https://user-images.githubusercontent.com/103625856/172819795-ee39a7c1-924b-4df1-a609-3aeb1bb09def.png)<br>
 2、在工作组列表操作区，对工作组进行策略管理、用户管理及删除工作组操作。<br>
 ![image](https://user-images.githubusercontent.com/103625856/172820171-a6a38477-fc3d-40e1-8a9b-0a88c7a46fa5.png)<br>
+3、可在工作组列表操作区，对工作组进行策略管理、用户管理及删除工作组操作。<br>
+策略管理：可快速切换工作组对应的安全策略。<br>
+用户管理：可针对工作组内的用户进行快速新增操作。<br>
+删除工作组：可删除工作组；工作组下存在用户账号则不支持删除工作组。<br>
 
