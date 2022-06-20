@@ -2,16 +2,16 @@
 1. 访问[实例控制台](https://cns-console.jdcloud.com/host/compute/list)，或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏【弹性计算】-【云主机】-【实例】进入实例列表页。
 
 2. 选择创建实例所属地域，点击【创建】按钮，进入云主机购买页面。建议您根据业务情况选择实例所在地域，关于京东云地域详细信息，请参见[地域与可用区](../Introduction/Regions-and-AvailabilityZones.md)。
-![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0617.png)
+![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0601.jpg)
 
 3. 选择计费模式：包年包月和按配置计费，包年包月按一个整月进行购买付费，按配置计费按照实际使用的时长（精确至秒）每小时进行扣费。关于两种计费方式的区别，请参见[计费规则](../Pricing/Billing-Rules.md)。
-![](https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Create-billing.png)
+![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0603.png)
 
 4. 地域与可用区选择：在此步骤仍可以选择实例对应的地域（华北-北京、华南-广州、华东-宿迁及华东-上海）及可用区，请注意“不同地域资源内网不互通，创建之后不可更改”，如果所选地域限额已满，可以通过[提交工单](https://ticket.jdcloud.com/myorder/submit)提升限额。
-![](https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Create-Region%26AZ.png)
+![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0602.png)
 
-5. 创建方式选择：提供三种创建方式 **自定义创建**、**使用实例模板创建**、**在高可用组内创建**，后两种需要您预先创建好实例模板和高可用组，如果是除此使用保持默认选项“自定义创建”即可。
-![](https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Create-method.png)
+5. 创建方式选择：提供三种创建方式 **自定义创建**、**在高可用组内创建**、**指定宿主机创建**，后两种需要您预先创建好高可用组和专有资源池或专有宿主机，如果是除此使用保持默认选项“自定义创建”即可。
+![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0604.png)
 
 6. 选择镜像：镜像分为云硬盘系统盘镜像及本地盘系统盘镜像，前者仅支持创建系统盘为云硬盘的实例，后者仅支持创建系统盘为本地盘的实例。
 	
@@ -20,10 +20,10 @@
     对于初次使用京东云的用户可以选择京东云提供的“官方镜像”，您可以根据需要选择对应的系统，并选择合适的版本。
     
     如果您已经创建好自己的实例，并配置好相应的环境，可以将此实例进行制作私有镜像操作，同时基于此镜像批量创建有相同系统及环境配置的主机，还可以将此私有镜像共享给其他京东云用户。 
-![](https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Create-image.png)
+![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0605.png)
 
 7. 选择实例规格：实例的规格支持用户自定义选择，从最小的1核1G（如g.s1.micro）到72C576GB（如m.n2.18xlarge），用户可以根据不同业务场景选择实例规格及相应配置，详细请参见[实例规格](../Introduction/Instance-Type-Family.md)。
-![](https://img1.jcloudcs.com/cn/image/vm/Getting-Start-Linux-Create-type.png)
+![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0606.png)
 
 8. 配置实例存储：
 
