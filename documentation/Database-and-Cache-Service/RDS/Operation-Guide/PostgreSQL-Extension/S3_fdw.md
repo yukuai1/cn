@@ -4,7 +4,7 @@
 
 目前s3_fdw支持读取和写入的文件格式为 csv。
 ## 前提条件
-京东云PostgreSQL实例版本支持 9.6、 10.6、 11.6、12.6、13.2。
+京东云PostgreSQL实例版本支持 9.6、 10.、 11、12、13。
 ## s3_fdw参数说明
 s3_fdw和其他fdw接口一样，对外部数据OSS中的数据进行封装，用户可以像使用数据表一样通过s3_fdw读取OSS中存放的数据。s3_fdw提供独有的参数用于连接和解析OSS上的文件数据。
 
@@ -190,7 +190,7 @@ pgbench=> explain insert into local select * from oss;
    ->  Foreign Scan on oss  (cost=0.00..22.00 rows=200 width=70)
          OSS File Path: s3_fdw_dir/s3_put_88d55295-1e5d-42e9-aeba-e560fe8be435_21557 
 (3 rows)
-``` 
+```
 
 ## s3_fdw 注意事项
 

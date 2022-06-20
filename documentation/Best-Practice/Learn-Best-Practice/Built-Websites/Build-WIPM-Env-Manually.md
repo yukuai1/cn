@@ -12,48 +12,44 @@
 
 2. 在操作系统界面，打开服务器管理器。如下图所示：
 
-<img src="../../../../image/Best-Practice/WIPM/1.服务器管理器.jpg" alt="1.服务器管理器" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/1.server-manager.jpg" alt="1.server-manager" style="width:70%;" />
 
 3. 单击**添加角色和功能**，弹出 “添加角色和功能向导” 窗口。
 4. 在 “添加角色和功能向导” 窗口中，单击**下一步**。
 5. 在 “选择安装类型” 界面，选择**基于角色或基于功能的安装**，并连续单击2次**下一步**。如下图所示：
 
-<img src="../../../../image/Best-Practice/WIPM/2.添加角色和功能向导.jpg" alt="2.添加角色和功能向导" style="width:70%;" />
-
-
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/2.add-role-function.jpg" alt="2.add-role-function" style="width:70%;" />
 
 6. 在 “选择服务器角色” 界面，勾选“Web 服务器(IIS)”。如下图所示：
    弹出 “添加 Web 服务器(IIS) 所需的功能” 提示框。
 
-<img src="../../../../image/Best-Practice/WIPM/3.服务器角色.jpg" alt="3.服务器角色" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/3.server-role.jpg" alt="3.server-role" width=700 />
 
 7. 在弹出的 “添加 Web 服务器(IIS) 所需的功能” 提示框中，单击**添加功能**。如下图所示：
 
-<img src="../../../../image/Best-Practice/WIPM/4.Web 服务器(IIS) 所需的功能.jpg" alt="4.Web 服务器(IIS) 所需的功能" style="width:40%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/4.iis-function-needed.jpg" alt="4.iis-function-needed" width=400 />
 
 8. 单击**下一步**。
 9. 在 “选择功能” 界面，勾选 “.NET Framework 3.5 功能”，并连续单击2次**下一步**。如下图所示：
 
-<img src="../../../../image/Best-Practice/WIPM/5.功能-NET35.jpg" alt="5.功能-NET35" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/5.function-net35.jpg" alt="5.function-net35" style="width:70%;" />
 
 10. 在 “选择角色服务” 界面，勾选 “CGI”，单击**下一步**。如下图所示：
 
-<img src="../../../../image/Best-Practice/WIPM/6.角色服务-CGI.jpg" alt="6.角色服务-CGI" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/6.role-service-cgi.jpg" alt="6.role-service-cgi" style="width:70%;" />
 
 11. 确认安装信息，单击**安装**，并等待安装完成。如下图所示：
 
-    <img src="../../../../image/Best-Practice/WIPM/7.确认安装所选内容.jpg" alt="7.确认安装所选内容" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/7.confirm-already-chosen-config.jpg" alt="7.confirm-already-chosen-config" style="width:70%;" />
 
 12. 安装完成后，如下图所示：
 
-    <img src="../../../../image/Best-Practice/WIPM/8.服务和功能安装成功.jpg" alt="8.服务和功能安装成功" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/8.install-success.jpg" alt="8.install-success" style="width:70%;" />
 
 13. 在云服务器的浏览器中访问 `http://localhost/`，验证 IIS 是否安装成功。
     若出现以下界面，即表示成功安装。
 
-    <img src="../../../../image/Best-Practice/WIPM/9.IIS默认web页面.jpg" alt="9.IIS默认web页面" style="width:70%;" />
-
-
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/9.iis-default-web.jpg" alt="9.iis-default-web" style="width:70%;" />
 
 ## 步骤2：部署PHP环境
 
@@ -69,9 +65,9 @@ PHP 5.3 版本后取消了安装包模式，仅通过 zip 文件和 debug pack �
 
 在云主机中，访问 [PHP 官网Windows版本下载页面](http://windows.php.net/download/)，下载 PHP zip 安装包。如下图所示：
 
-<img src="../../../../image/Best-Practice/WIPM/10.PHP版本选择-1.jpg" alt="10.PHP版本选择-1" style="width:60%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/10.php-version.jpg" alt="10.php-version" style="width:60%;" />
 
-<img src="../../../../image/Best-Practice/WIPM/11.PHP版本选择-2.jpg" alt="11.PHP版本选择-2" style="width:60%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/11.php-veriosn2.jpg" alt="11.php-veriosn2" style="width:60%;" />
 
 注意：
 
@@ -110,15 +106,15 @@ PHP 安装包对应需下载和安装的 Visual C++ Redistributable 安装包对
 
 例如，本文档中PHP版本为VS16 x64 Non Thread Safe，我们访问微软官网下载 [Microsoft Visual C++ Redistributable for Visual Studio 2022](https://visualstudio.microsoft.com/zh-hans/downloads/) ，在“其他工具、框架和可再发行组件”中，选择x64版本下载。
 
-<img src="../../../../image/Best-Practice/WIPM/12.Visual C++ Redistributable 2022安装包.jpg" alt="12.Visual C++ Redistributable 2022安装包" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/12.visual-c-redistributable-package.jpg" style="width:70%;" />
 
 #### 安装Visual C++ Redistributable
 
 下载的文件为exe可执行文件`VC_redist.x64.exe`，双击安装即可。
 
-<img src="../../../../image/Best-Practice/WIPM/13.安装Visual C++ Redistributable 2022.jpg" alt="13.安装Visual C++ Redistributable 2022" style="width:40%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/13.install-vcr.jpg" alt="13.install-vcr" style="width:40%;" />
 
-<img src="../../../../image/Best-Practice/WIPM/14.安装Visual C++ Redistributable完成.jpg" alt="14.安装Visual C++ Redistributable完成" style="width:40%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/14.install-vcr-success.jpg" alt="14.install-vcr-success" style="width:40%;" />
 
 #### 安装配置PHP
 
@@ -126,25 +122,25 @@ PHP 安装包对应需下载和安装的 Visual C++ Redistributable 安装包对
 
 （2）复制 `C:\PHP` 目录下的 `php.ini-production` 文件，并将该文件的后缀修改为 `.ini`（即重命名为`php.ini`文件）。如下图所示：
 
-<img src="../../../../image/Best-Practice/WIPM/15.配置php.ini文件.jpg" alt="15.配置php.ini文件" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/15.config-php-ini.jpg" alt="15.config-php-ini" style="width:70%;" />
 
 （3）在操作系统界面，打开服务器管理器。在服务器管理器的左侧导航栏中，单击 **IIS**。
 
 在右侧 IIS 管理窗口中，右键单击**服务器**栏中的服务器名称，选择 **Internet Information Sevices (IIS)管理器**。如下图所示：
 
-<img src="../../../../image/Best-Practice/WIPM/16.IIS管理器.jpg" alt="16.IIS管理器" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/16.iis-manager.jpg" alt="16.iis-manager" style="width:70%;" />
 
 （4）在打开的 “Internet Information Sevices (IIS)管理器” 窗口中，单击左侧导航栏的服务器名称，进入服务器的主页。如下图所示：
 
-<img src="../../../../image/Best-Practice/WIPM/17.IIS管理器主页.jpg" alt="17.IIS管理器主页" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/17.iis-manager-main-page.jpg" alt="17.iis-manager-main-page" style="width:70%;" />
 
 （5）双击**处理程序映射**，进入 “处理程序映射” 管理界面。如下图所示：
 
-<img src="../../../../image/Best-Practice/WIPM/18.IIS管理器处理程序映射.jpg" alt="18.IIS管理器处理程序映射" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/18.app-mapping.jpg" alt="18.app-mapping" style="width:70%;" />
 
 （6）在右侧的**操作**栏中，单击**添加模块映射**，打开 “添加模块映射” 窗口。在打开的 “添加模块映射” 窗口中，填写以下信息，并单击**确定**。如下图所示：
 
-<img src="../../../../image/Best-Practice/WIPM/19.添加模块映射.jpg" alt="19.添加模块映射" style="width:40%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/19.add-module-mapping.jpg" alt="19.add-module-mapping" style="width:40%;" />
 
 主要的参数信息如下：
 
@@ -155,29 +151,29 @@ PHP 安装包对应需下载和安装的 Visual C++ Redistributable 安装包对
 
 在弹出的提示框中，单击**是**。
 
-<img src="../../../../image/Best-Practice/WIPM/20.添加模块映射完成.jpg" alt="20.添加模块映射完成" style="width:50%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/20.add-module-mapping-finish.jpg" alt="20.add-module-mapping-finish" style="width:50%;" />
 
 （7）回到服务器主页，双击**默认文档**，进入 “默认文档” 管理界面。如下图所示：
 
-<img src="../../../../image/Best-Practice/WIPM/21.默认文档.jpg" alt="21.默认文档" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/21.default-doc.jpg" alt="21.default-doc" style="width:70%;" />
 
 在右侧的**操作**栏中，单击**添加**，打开 “添加默认文档” 窗口。
 
 在打开的 “添加默认文档” 窗口中，将**名称**填写为 `index.php`，单击**确定**。如下图所示：
 
-<img src="../../../../image/Best-Practice/WIPM/22.默认文档index.jpg" alt="22.默认文档index" style="width:40%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/22.default-doc-index.jpg" alt="22.default-doc-index" style="width:40%;" />
 
 （8）回到服务器主页，双击 **FastCGI 设置**，进入 “FastCGI 设置” 管理界面。如下图所示：
 
-<img src="../../../../image/Best-Practice/WIPM/23.Fastcgi设置.jpg" alt="23.Fastcgi设置" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/23.fastcgi-config.jpg" alt="23.fastcgi-config" style="width:70%;" />
 
 在 “FastCGI 设置” 管理界面，选择 FastCGI 应用程序，单击**编辑**。如下图所示：
 
-<img src="../../../../image/Best-Practice/WIPM/24.Fastcgi编辑.jpg" alt="24.Fastcgi编辑" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/24.fastcgi-edit.jpg" alt="24.fastcgi-edit" style="width:70%;" />
 
 在打开的 “编辑 FastCGI 应用程序” 窗口中，将**监视对文件所做的更改**设置为 `php.ini` 文件的路径。如下图所示：
 
-<img src="../../../../image/Best-Practice/WIPM/25.Fastcgi监视对文件所做出的更改.jpg" alt="25.Fastcgi监视对文件所做出的更改" style="width:50%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/25.fastcgi-monitor.jpg" alt="25.fastcgi-monitor" style="width:50%;" />
 
 （9）在 `C:\inetpub\wwwroot` 目录下，创建一个 PHP 文件。例如创建一个 `index.php` 文件。
 
@@ -191,7 +187,8 @@ phpinfo();
 
 （10）在操作系统界面，打开浏览器并访问 `http://localhost/index.php`，查看环境配置是否成功。如果打开的页面如下显示，则表示配置成功：
 
-<img src="../../../../image/Best-Practice/WIPM/26.PHPIndex测试页访问.jpg" alt="26.PHPIndex测试页访问" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/26.php-index-test-visit.jpg" alt="26.php-index-test-visit" style="width:70%;" />
+
 
 ## 步骤3：安装Mysql数据库
 
@@ -205,22 +202,22 @@ phpinfo();
 
 在云服务器中打开浏览器，访问Mysql官网下载 MySQL 安装包 [MySQL Community Server 8.0.28](https://dev.mysql.com/downloads/windows/installer/8.0.html) 。
 
-<img src="../../../../image/Best-Practice/WIPM/27.Mysql官网下载.jpg" alt="27.Mysql官网下载" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/27.mysql-download.jpg" alt="27.mysql-download" style="width:70%;" />
 可以执行免注册下载。
 
-<img src="../../../../image/Best-Practice/WIPM/28.Mysql官网下载-不注册直接下载.jpg" alt="28.Mysql官网下载-不注册直接下载" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/28.mysql-nologin.jpg" alt="28.mysql-nologin" style="width:70%;" />
 
 #### 安装Mysql基础环境
 
 1. 双击打开 MySQL 安装包，并在 “Choosing a Setup Type” 安装界面，选择 **Developer Default**，单击 **Next**。如下图所示：
 
-<img src="../../../../image/Best-Practice/WIPM/29.Mysql安装-配置类型.jpg" alt="29.Mysql安装-配置类型" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/29.mysql-install.jpg" alt="29.mysql-install" style="width:70%;" />
 
 2. 在 “Check Requirements” 安装界面，单击 **Execute**，并根据界面提示配置 MySQL 的基础环境。单击 **Next**。
 
 3. 在 “Installation” 安装界面，单击 **Execute**，安装 MySQL 所需的安装包。
 
-   <img src="../../../../image/Best-Practice/WIPM/30.Mysql安装-执行安装.jpg" alt="30.Mysql安装-执行安装" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/30.mysql-install-execute.jpg" alt="30.mysql-install-execute" style="width:70%;" />
 
 4. 待 MySQL 所需的安装包完成安装后，单击 **Next**，进入 “Product Configuration” 配置界面。
 
@@ -231,29 +228,27 @@ phpinfo();
 1. 在 “Product Configuration” 配置界面，单击 **Next**。
 2. 在 “Type and Networking” 配置界面，保持默认配置，单击 **Next**。
 
-<img src="../../../../image/Best-Practice/WIPM/31.类型和网络-默认配置.jpg" alt="31.类型和网络-默认配置" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/31.type-and-networking.jpg" alt="31.type-and-networking" style="width:70%;" />
 
 3. 在 “Authentication Method” 配置界面，选择 **Use Legacy Authentication Method(Retain MySQL 5.x Compatibility)**，并单击 **Next**。此配置与加密算法相关，您可按需选择。如下图所示：
 
-   <img src="../../../../image/Best-Practice/WIPM/32.认证方法-使用旧加密方式.jpg" alt="32.认证方法-使用旧加密方式" style="width:70%;" />
+   <img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/32.authentication-method.jpg" alt="32.authentication-method" style="width:70%;" />
 
 4. 设置 root 密码，单击 **Next**。如下图所示：
 
-   <img src="../../../../image/Best-Practice/WIPM/33.账号和角色-设置root密码.jpg" alt="33.账号和角色-设置root密码" style="width:70%;" />
+   <img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/33.root-password.jpg" alt="33.root-password" style="width:70%;" />
 
 5. 在 “Windows Service” 配置界面，保持默认配置，单击 **Next**。如下图所示：
 
-   <img src="../../../../image/Best-Practice/WIPM/34.Windows角色-默认配置.jpg" alt="34.Windows角色-默认配置" style="width:70%;" />
+   <img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/34.windows-service.jpg" alt="34.windows-service" style="width:70%;" />
 
 5. 在 “Apply Configuration” 配置界面，单击 **Execute**。
 
-   <img src="../../../../image/Best-Practice/WIPM/35.执行配置.jpg" alt="35.执行配置" style="width:70%;" />
+   <img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/35.execute-config.jpg" alt="35.execute-config" style="width:70%;" />
 
 6. 单击 **Finish**，完成 MySQL 服务配置。
 
-<img src="../../../../image/Best-Practice/WIPM/36.Mysql安装完成-finish.jpg" alt="36.Mysql安装完成-finish" style="width:70%;" />
-
-
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/36.mysql-installation-finished.jpg" alt="36.mysql-installation-finished" style="width:70%;" />
 
 ##### 配置Mysql路由器
 
@@ -261,7 +256,7 @@ phpinfo();
 
 2. 在 “MySQL Router Configuration” 界面，保持默认配置，单击 **Finish**。如下图所示：
 
-   <img src="../../../../image/Best-Practice/WIPM/37.配置Mysql路由器.jpg" alt="37.配置Mysql路由器" style="width: 70%;" />
+   <img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/37.mysql-router.jpg" alt="37.mysql-router" style="width: 70%;" />
 
 ##### 配置Mysql示例
 
@@ -269,7 +264,7 @@ phpinfo();
 2. 在 “Connect To Server” 配置界面，输入 root 的密码，单击 **Check**。
 3. 待 root 的密码验证成功后，单击 **Next**。如下图所示：
 
-<img src="../../../../image/Best-Practice/WIPM/38.配置Mysql实例.jpg" alt="38.配置Mysql实例" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/38.mysql-instance.jpg" alt="38.mysql-instance" style="width:70%;" />
 
 4. 在 “Apply Configuration” 配置界面，单击 **Execute**。
 5. 单击 **Finish**，完成 MySQL 示例配置。
@@ -278,11 +273,11 @@ phpinfo();
 
 - 若成功打开如下图所示的 MySQL 工作台，即表示 MySQL 安装成功。
 
-<img src="../../../../image/Best-Practice/WIPM/39.Mysql Workbench.jpg" alt="39.Mysql Workbench" style="width: 70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/39.mysql-workbench.jpg" alt="39.mysql-workbench" style="width: 70%;" />
 
 - 若成功打开如下图所示的 MySQL Shell，即表示 MySQL 安装成功。
 
-  <img src="../../../../image/Best-Practice/WIPM/40.Mysql shell.jpg" alt="40.Mysql shell" style="width:70%;" />
+  <img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/40.mysql-shell.jpg" alt="40.mysql-shell" style="width:70%;" />
 
 #### 连接Mysql
 
@@ -290,30 +285,30 @@ phpinfo();
 
 1. 使用工作台实现本地连接Mysql，双击本地实例后，输入root密码。
 
-<img src="../../../../image/Best-Practice/WIPM/41.使用workbench登录mysql.jpg" alt="41.使用workbench登录mysql" style="width: 70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/41.workbench-login-mysql.jpg" alt="41.workbench-login-mysqll" style="width: 70%;" />
 
 2. 使用Query测试SQL语句
 
-<img src="../../../../image/Best-Practice/WIPM/42.workbench执行查询命令.jpg" alt="42.workbench执行查询命令" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/42.workbench-query.jpg" alt="42.workbench-query" style="width:70%;" />
 
 ##### 命令行本地连接Mysql服务
 
 1. 在开始菜单找到Mysql Command Line Client
 
-<img src="../../../../image/Best-Practice/WIPM/43.开始菜单-Mysql Command line.jpg" alt="43.开始菜单-Mysql Command line" style="width:30%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/43.mysql-command-line.jpg" alt="43.mysql-command-line" width=300 />
 
 2. 输入root密码后即可实现本地访问Mysql服务
 
-<img src="../../../../image/Best-Practice/WIPM/44.Mysql command line 执行命令.jpg" alt="44.Mysql command line 执行命令" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/44.mysql-command-line-execute.jpg" alt="44.mysql-command-line-execute" style="width:70%;" />
 
 ##### 命令行远程连接Mysql服务
 
 1. 首先在工作台增加root用户，使Limit to Hosts Matching支持远程服务器。
 
-<img src="../../../../image/Best-Practice/WIPM/45.Mysql新增远程连接用户.jpg" alt="45.Mysql新增远程连接用户" style="width:90%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/45.mysql-add-remote-user.jpg" alt="45.mysql-add-remote-user" style="width:90%;" />
 
 2. 远程连接测试，Mysql服务所在Windows服务器内网地址为10.0.0.13，测试效果如下。
 
-<img src="../../../../image/Best-Practice/WIPM/46.远程连接Mysql服务.jpg" alt="46.远程连接Mysql服务" style="width:70%;" />
+<img src="https://img1.jcloudcs.com/cn/best-practice/WIPM/46.remote-connect-mysql.jpg" alt="46.remote-connect-mysql" style="width:70%;" />
 
 至此，WIPM环境搭建完成。

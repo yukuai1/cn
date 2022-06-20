@@ -93,11 +93,9 @@
 
       - name: 外部数据导入
         items:
-          - name: 从clickhouse-client导入
-            href: Operation-Guide/localDataLoading/loading-clickhouse-client.md
           - name: 从Spark导入
             href: Operation-Guide/localDataLoading/loading-spark.md
-          - name: 从自建ClickHouse迁移上云
+          - name: 从自建ClickHouse导入
             href: Operation-Guide/localDataLoading/local-clickhouse-clickhouse.md
 
       - name: 日志审计
