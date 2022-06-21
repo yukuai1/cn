@@ -35,7 +35,7 @@
 
         |参数||
         |---|---|
-        |joinroomInfo|JRTCJoinRoomInfo{<br>userRoomId : 房间号<br>nickName : 昵称<br>appId : appid<br>token : token<br>userId : userid<br>nonce : nonce<br>timestamp : 时间戳<br>recordFileName: 录制文件名<br>liveStreamName: 转推直播流名<br>}<br>用户token计算<a href="https://docs.jdcloud.com/cn/real-time-communication/sdk/generate-user-token"
+        |joinroomInfo|JRTCJoinRoomInfo{<br>userRoomId : 房间号<br>nickName : 昵称<br>appId : appid<br>token : token<br>userId : userid<br>nonce : nonce<br>timestamp : 时间戳<br>recordFileName: 录制文件名<br>liveStreamName: 转推直播流名<br>}<br><a href="https://docs.jdcloud.com/cn/real-time-communication/sdk/generate-user-token">用户Token计算</a>
         |listener|设置回调接口 JRTCRoomListenerV2，用户获得来自JRTC的各种状态通知|
 
     - #### exitRoom
