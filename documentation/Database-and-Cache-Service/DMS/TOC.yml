@@ -26,3 +26,8 @@ items:
             href: Operation-Guide/data-import.md
           - name: 数据导出
             href: Operation-Guide/data-export.md
+      - name: 可编程对象管理
+        items:
+          - name: 视图管理
+            href: Operation-Guide/view_management.md
+       
