@@ -20,13 +20,16 @@
    |选择时间|选择需要恢复的时间点|
    |选择库表|选择需要恢复的库或表|
 
-   ![根据时间点创建](../../../../../../image/RDS/recover_Select_database.jpg)
+   ![根据时间点创建](../../../../image/RDS/recover_Select_database.png)
 
 4. 点击 下一步 进入库表恢复信息确认页面，可自定义恢复的库表名称。
    > 注：
    > * 表名称只支持数字、小写字母、英文中划线和下划线
    > * 需确认实例有足够的空间进行数据库表恢复
 
-   ![根据时间点创建](../../../../../../image/RDS/recover_table_name.jpg)
+   ![根据时间点创建](../../../../image/RDS/recover_table_name.png)
 
 5. 点击 **确定** ，执行实例恢复，恢复完成后您可以登录数据库查询恢复后的库表信息。
+
+## 相关API
+根据时间点恢复库表到当前实例：[restoreInstanceByTime](https://docs.jdcloud.com/cn/rds/api/restoreinstancebytime)

@@ -14,7 +14,7 @@
 
 用户可创建服务A日志集，并在该日志集下分别创建日志主题Topic_1、Topic_2、Topic_3、Topic_4，分别用于采集LogA、LogB、Log1、Log2四种不同类型的日志。从而对对特定类型的日志设置转储和监控。
 
-![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/Introduction/logset%26logtopic.jpg)
+![](https://raw.githubusercontent.com/jdcloudcom/cn/zhangwenjie-only/image/LogService/Introduction/logset&logtopic.jpg)
 
 ### 3.日志源设置
 
@@ -39,3 +39,6 @@
 ### 7.日志监控
 
 在企业的运维中，最不愿看到的就是当业务出现问题时，没有及时发现；以及不能实时掌握业务的运营情况。因此，为了便于用户及时地了解业务运营情况，以及快速的发现问题，降低损失，日志服务提供日志监控的功能。用户可以针对有监控需求的日志，设置筛选条件，对符合筛选条件的日志数据中的关键词或指定字段设置监控，可以查看监控图，设置报警规则。
+
+### 8. 日志消费
+企业的运维中，有时需要将某些日志数据进行进一步的开发使用，可以使用日志的实时消费功能，可由第三方软件、多语言应用、流式计算框架等通过Kafka API实时订阅和消费日志数据，适用于流计算、实时计算等场景。实时消费的实时性较强，通常为秒级。

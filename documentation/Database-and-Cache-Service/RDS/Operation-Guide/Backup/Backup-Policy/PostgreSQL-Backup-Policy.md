@@ -13,6 +13,10 @@
     * 点击 **确认** 按钮，完成备份策略的修改。
     * 点击 **取消** 按钮，放弃备份策略的修改。
 
-    ![image2018-3-8 11_35_24.png](https://img1.jcloudcs.com/cms/c24d3cf4-4e58-4443-88d8-ee7e278ed42520180308115416.png)
+    ![修改策略](../../../../image/RDS/Postgresql-Backup-Strategy.png)
 
 4. 点击 **确定** 按钮，返回到备份策略详情页。
+
+## 相关API
+查看实例备份策略：[describeBackupPolicy](https://docs.jdcloud.com/cn/rds/api/describebackuppolicy)  
+修改实例备份：[modifyBackupPolicy](https://docs.jdcloud.com/cn/rds/api/modifybackuppolicy)

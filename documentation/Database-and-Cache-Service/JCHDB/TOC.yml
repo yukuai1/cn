@@ -1,6 +1,6 @@
-  name: 分析型云数据库 ClickHouse
-  href: 
-  items:
+name: 分析型云数据库 ClickHouse
+href: 
+items:
   - name: 产品简介
     items:
       - name: 产品概述
@@ -56,6 +56,8 @@
             href: Operation-Guide/Instance/Outer-Access.md
           - name: 变更配置
             href: Operation-Guide/Instance/Update-Instance.md
+          - name: 变更副本数
+            href: Operation-Guide/Instance/Update-Copies.md
           - name: 实例版本升级
             href: Operation-Guide/Instance/Update-Version.md 
             
@@ -91,11 +93,9 @@
 
       - name: 外部数据导入
         items:
-          - name: 从clickhouse-client导入
-            href: Operation-Guide/localDataLoading/loading-clickhouse-client.md
           - name: 从Spark导入
             href: Operation-Guide/localDataLoading/loading-spark.md
-          - name: 从自建ClickHouse迁移上云
+          - name: 从自建ClickHouse导入
             href: Operation-Guide/localDataLoading/local-clickhouse-clickhouse.md
 
       - name: 日志审计
