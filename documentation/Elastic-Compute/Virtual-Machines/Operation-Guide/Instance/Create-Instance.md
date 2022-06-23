@@ -3,8 +3,8 @@
 创建实例时，需指定实例规格、镜像、私有网络、安全组及登录密码等信息。京东云为用户提供了多种创建实例的方法，包括：
 
 * [自定义创建](Create-Instance#user-content-1)
-* [使用实例模板创建](Create-Instance#user-content-2)
-* [在高可用组内创建](Create-Instance#user-content-3)
+* [在高可用组内创建](Create-Instance#user-content-2)
+* [指定宿主机创建](Create-Instance#user-content-3)
 
 
 其中自定义创建还包括相同配置创建。
