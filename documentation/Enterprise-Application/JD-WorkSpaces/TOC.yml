@@ -56,7 +56,7 @@ items:
      #- name: 镜像管理
       # href: Getting-Started/Private-Image.md  
       - name: 策略管理
-        href: Getting-Started/Policy-Management.m
+        href: Getting-Started/Policy-Management.md
      #- name: 云电脑用户
       # href: Getting-Started/User.md
   - name: 常见问题
