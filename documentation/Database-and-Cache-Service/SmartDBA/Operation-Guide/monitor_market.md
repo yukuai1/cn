@@ -2,6 +2,11 @@
 
 通过创建逻辑的监控大盘对象，用户可以自定义把相关实例进行监控信息统计展示。有助于用户对相关实例的整体性能监控分析。
 
+## 前置条件
+
+* 已创建数据库实例，数据库类型目前支持MySQL、Percona
+* 数据库实例已接入SmartDBA服务
+
 ![](../../image/SmartDBA/monitor_market1.png)
 
 ## 添加大盘
@@ -64,5 +69,4 @@
 如下图：
 
 ![](../../image/SmartDBA/monitor_market6.png)
-
 
