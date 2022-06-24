@@ -297,4 +297,4 @@
 
 	* 指定的所有key和destination 必须要同属于一个槽，否则会(error) ERR CROSSSLOT Keys in request don't hash to the same slot错误
 	
-* 使用EVAL/EVALSHA命令时，命令参数中必须带有至少1个key，numkeys大于0，否则直接返回错误 "-ERR eval/evalsha numkeys can't be zero"
+* 使用lua脚本的EVAL/EVALSHA命令时，命令参数中必须带有至少1个key，numkeys大于0，否则直接返回错误 "-ERR eval/evalsha numkeys can't be zero"
