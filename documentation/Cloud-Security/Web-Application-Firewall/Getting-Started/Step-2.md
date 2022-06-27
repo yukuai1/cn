@@ -9,5 +9,5 @@ Web应用防火墙（简称WAF）使用特定的回源IP段将经过防护引擎
 ## 操作步骤
 1. 登录 [Web应用防火墙 控制台](https://cloudwaf-console.jdcloud.com/instance)。
 2. 查看“实例管理”页面下方“回源IP段”，复制全部IP，并将其添加至源站服务器安全软件的白名单中。
-![image](https://github.com/jdcloudcom/cn/blob/edit/image/WAF/join-in-WAF/WhiteIP.png)
+![image](../../../../image/WAF/join-in-WAF/WhiteIP.png)
 
