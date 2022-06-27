@@ -26,7 +26,9 @@
 **规格类型特点：**
 
 * vCPU与内存比为1:1、1:2或1:4，提供多种处理器内存配比。
-* 处理器： 
+* 处理器：
+        
+	* 第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器  
 	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持以下类型云硬盘：
@@ -39,6 +41,17 @@
 	* 测试环境
 
 **实例规格**
+
+第三代
+
+实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数
+:---|:---|:---|:---|:---
+|g.s3.micro|1|1|2|1
+|g.s3.small|1|2|2|1
+|g.s3.medium|1|4|2|1
+|g.s3.large|2|8|2|2
+|g.s3.xlarge|4|16|4|4
+|g.s3.2xlarge|8|32|4|4
 
 第二代
 
@@ -168,7 +181,10 @@ g.n1.8xlarge|32|128|8|4 |	 |
 **规格类型特点：**
 
 * vCPU与内存比约为1:2
-* 处理器：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器
+* 处理器：
+        
+	* 第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器 
+	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 * 支持以下类型云硬盘：
 	* 通用型SSD云盘
 	* 性能型SSD云盘
@@ -181,6 +197,16 @@ g.n1.8xlarge|32|128|8|4 |	 |
 	* 小规模批量计算
 
 **实例规格**
+
+第三代
+
+实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡对列数
+:---|:---|:---|:---|:---
+|c.s3.large|2|4|2|2
+|c.s3.xlarge|4|8|4|4
+|c.s3.2xlarge|8|16|4|4
+
+第二代
 
 实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡对列数
 :---|:---|:---|:---|:---
@@ -546,10 +572,10 @@ g.n1.8xlarge|32|128|8|4 |	 |
 
 **规格类型特点：**
 
-* vCPU与内存比为1:4
+* vCPU与内存比为1:4/1:8
 * 提供低时延高IO的本地存储
 * 处理器：
-	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器 或 2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器
 	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持本地数据盘（临时存储），并支持以下类型云硬盘。请注意 **本地数据盘为临时存储盘，有丢失数据的风险（比如发生迁移或宿主机宕机等情况），不适用于应用层没有数据冗余架构的使用场景， 建议您使用云硬盘存储重要数据。** 
@@ -575,6 +601,12 @@ g.n1.8xlarge|32|128|8|4 |	 |
 |s.i3.12xlarge|48|192|6 x 1862 NVMe SSD|8|4
 |s.i3.16xlarge|64|256|8 x 1862 NVMe SSD|8|4
 |s.i3.22xlarge|88|352|8 x 1862 NVMe SSD|8|4
+|s.i3m.4xlarge|16|54|1 x 3725 NVMe SSD|8|4
+|s.i3m.8xlarge|32|108|2 x 3725 NVMe SSD|8|4
+|s.i3m.12xlarge|48|162|3 x 3725 NVMe SSD|8|4
+|s.i3m.16xlarge|64|216|4 x 3725 NVMe SSD|8|4
+|s.i3m.24xlarge|96|324|6 x 3725 NVMe SSD|8|4
+|s.i3m.32xlarge|128|432|8 x 3725 NVMe SSD|8|4
 
 
 第一代：
@@ -638,14 +670,14 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 
 **规格类型特点：**
 
-* vCPU与内存比接近1:4
+* vCPU与内存比接近1:4或1:8
 * 异构计算
 * GPU：
-	* Nvidia Tesla P40 
-	* Nvidia Tesla V100
+	*  第三代：* Nvidia Tesla A100（显存80 GiB）
+	*  第一代：Nvidia Tesla P40 或 Nvidia Tesla V100（显存16 GiB）
 * 处理器：
-	* 2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器（P40）
-	* 2.2 GHz主频的Intel Xeon E5-2650 v4（Broadwell）处理器（V100）
+	* 第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器
+	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器（P40）或 2.2 GHz主频的Intel Xeon E5-2650 v4（Broadwell）处理器（V100）
 * 支持本地数据盘（临时存储），并支持以下类型云硬盘。请注意 **本地数据盘为临时存储盘，有丢失数据的风险（比如发生迁移或宿主机宕机等情况），不适用于应用层没有数据冗余架构的使用场景， 建议您使用云硬盘存储重要数据。** 
 	* 通用型SSD云盘
 	* 性能型SSD云盘
@@ -656,6 +688,15 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 	* 图形渲染 
 
 **实例规格**
+
+第三代：
+
+实例规格|vCPU（核）|内存（GiB）|GPU    |网卡数|单网卡队列数
+:---|:---|:---|:---|:---|:---
+|p.n3a100.7large|14|120|1 x Nvidia Tesla A100|8|4
+|p.n3a100.15large|30|240|2  x Nvidia Tesla A100|8|4
+|p.n3a100.31large|62|480|4  x Nvidia Tesla A1000|8|4
+|p.n3a100.7large|124|972|8  x Nvidia Tesla A100|8|4
 
 第一代：
 

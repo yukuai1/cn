@@ -83,6 +83,7 @@ database.sqlserver.BlockProcess|阻塞进程数|Processes Blocked|个|
 | database.DBMonitor.InnodbRows.Delete | InnoDB每秒删除行数 | InnoDB Rows Delete Per Second | 行/秒 |  |
 | database.DBMonitor.InnodbRows.Update | InnoDB每秒修改行数 | InnoDB Rows Update Per Second | 行/秒 |  |
 | database.DBMonitor.InnodbRows.Read | InnoDB每秒读取行数 | InnoDB Rows Read Per Second | 行/秒 |
+| database.connection.usage | 连接数使用率 | connection usage | % |  |
 
 
 # 云数据库Percona
@@ -138,7 +139,9 @@ database.sqlserver.BlockProcess|阻塞进程数|Processes Blocked|个|
 | database.DBMonitor.Stored.TmpSpace | 临时表空间使用量 | Temporary Tablespace | MB |  |
 | database.DBMonitor.Stored.ShareSpace | 共享表空间使用量 | Shared Tablespace | MB |  |
 | database.container.net.tcp.retrans_segs | TCP包重传数 | TCP包重传数 | 次/秒 |  |
-| database.container.disk.io.util | 磁盘繁忙 | Disk IO util | % |
+| database.container.disk.io.util | 磁盘繁忙 | Disk IO util | % |  |
+| database.connection.usage | 连接数使用率 | connection usage | % |  |
+
 
 
 # 云数据库MariaDB
@@ -197,7 +200,7 @@ database.sqlserver.BlockProcess|阻塞进程数|Processes Blocked|个|
 | database.DBMonitor.Stored.ShareSpace | 共享表空间使用量 | Shared Tablespace | MB |  |
 | database.container.net.tcp.retrans_segs | TCP包重传数 | TCP包重传数 | 次/秒 |  |
 | database.container.disk.io.util | 磁盘繁忙 | Disk IO util | % |  |
-
+| database.connection.usage | 连接数使用率 | connection usage | % |  |
 
 
 # 云数据库PostgreSQL

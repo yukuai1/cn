@@ -27,8 +27,68 @@
       <td>华东-宿迁</td>    
    </tr>
    <tr>
-      <td rowspan="52">通用</td>
-      <td rowspan="8">共享</td>
+      <td rowspan="58">通用</td>
+      <td rowspan="14">共享</td>
+      <td>g.s3.micro</td>
+      <td>1</td>
+      <td>1</td>
+      <td>34.94</td>
+      <td>--</td>
+      <td>0.07</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.s3.small</td>
+      <td>1</td>
+      <td>2</td>
+      <td>63.53</td>
+      <td>--</td>
+      <td>0.13</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+   <tr>
+      <td>g.s3.medium</td>
+      <td>1</td>
+      <td>4</td>
+      <td>95.29</td>
+      <td>--</td>
+      <td>0.20</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>g.s3.large</td>
+      <td>2</td>
+      <td>8</td>
+      <td>190.58</td>
+      <td>--</td>
+      <td>0.40</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>g.s3.xlarge</td>
+      <td>4</td>
+      <td>16</td>
+      <td>381.15</td>
+      <td>--</td>
+      <td>0.79</td>
+      <td>--</td>
+      <td></td>
+   </tr>   
+    <tr>
+      <td>g.s3.2xlarge</td>
+      <td>8</td>
+      <td>32</td>
+      <td>762.30</td>
+      <td>--</td>
+      <td>1.59</td>
+      <td>--</td>
+      <td></td>
+   </tr>  
+   <tr>
       <td>g.s2.micro</td>
       <td>1</td>
       <td>1</td>
@@ -550,8 +610,38 @@
       <td></td>
    </tr>
    <tr>
-      <td rowspan="57">计算优化</td>
-      <td rowspan="3">共享</td>
+      <td rowspan="60">计算优化</td>
+      <td rowspan="6">共享</td>
+      <td>c.s3.large</td>
+      <td>2</td>
+      <td>4</td>
+      <td>127.05</td>
+      <td>--</td>
+      <td>0.26</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>c.s3.xlarge</td>
+      <td>4</td>
+      <td>8</td>
+      <td>254.10</td>
+      <td>--</td>
+      <td>0.53</td>
+      <td>--</td>
+      <td></td>
+   </tr>
+    <tr>
+      <td>c.s3.2xlarge</td>
+      <td>8</td>
+      <td>16</td>
+      <td>508.20</td>
+      <td>--</td>
+      <td>1.06</td>
+      <td>--</td>
+      <td></td>
+  </tr>
+   <tr>
       <td>c.s2.large</td>
       <td>2</td>
       <td>4</td>
@@ -580,7 +670,7 @@
       <td>1.65</td>
       <td>--</td>
       <td></td>
-  
+  </tr>
   <tr>
      <td rowspan="10">密集</td>
       <td>c.c4.large</td>
@@ -1764,8 +1854,8 @@
       <td></td>
    </tr>
    <tr>
-      <td rowspan="22">存储优化</td>
-      <td rowspan="12">IO</td>
+      <td rowspan="28">存储优化</td>
+      <td rowspan="18">IO</td>
       <td>s.i3.2xlarge</td>
       <td>8</td>
       <td>32</td>
@@ -1834,6 +1924,66 @@
       <td>48.77</td>
       <td>36.58</td>
       <td>8*1862 GiB NVMe SSD</td>
+   </tr> 
+   <tr>
+      <td>s.i3m.4xlarge</td>
+      <td>16</td>
+      <td>54</td>
+      <td>2791.65</td>
+      <td>--</td>
+      <td>5.82</td>
+      <td>--</td>
+      <td>1*3725 GiB NVMe SSD</td>
+   </tr>    
+   <tr>
+      <td>s.i3m.8xlarge</td>
+      <td>32</td>
+      <td>108</td>
+      <td>5583.3</td>
+      <td>--</td>
+      <td>11.63</td>
+      <td>--</td>
+      <td>2*3725 GiB NVMe SSD</td>
+   </tr> 
+   <tr>
+      <td>s.i3m.12xlarge</td>
+      <td>48</td>
+      <td>162</td>
+      <td>8374.95</td>
+      <td>--</td>
+      <td>17.45</td>
+      <td>--</td>
+      <td>3*3725 GiB NVMe SSD</td>
+   </tr>
+   <tr>
+      <td>s.i3m.16xlarge</td>
+      <td>64</td>
+      <td>216</td>
+      <td>11166.6</td>
+      <td>--</td>
+      <td>23.26</td>
+      <td>--</td>
+      <td>4*3725 GiB NVMe SSD</td>
+   </tr> 
+   <tr>
+      <td>s.i3m.24xlarge</td>
+      <td>96</td>
+      <td>324</td>
+      <td>16749.9</td>
+      <td>--</td>
+      <td>34.9</td>
+      <td>--</td>
+      <td>6*3725 GiB NVMe SSD</td>
+   </tr> 
+   <tr>
+      <td>s.i3m.32xlarge</td>
+      <td>128</td>
+      <td>432</td>
+      <td>22333.2</td>
+      <td>--</td>
+      <td>46.53</td>
+      <td>--</td>
+      <td>8*3725 GiB NVMe SSD</td>
    </tr> 
    <tr>
       <td>s.i1.xlarge</td>
@@ -1988,8 +2138,48 @@
    </tr>    
    
    <tr>
-      <td rowspan="17">GPU</td>
-      <td rowspan="9">标准</td>
+      <td rowspan="21">GPU</td>
+      <td rowspan="13">标准</td>
+      <td>p.n3a100.7large</td>
+      <td>14</td>
+      <td>120</td>
+      <td>16637.5</td>
+      <td>--</td>
+      <td>34.66</td>
+      <td>--</td>
+      <td>1*A100</td>
+   </tr>
+   <tr>
+      <td>p.n3a100.15large</td>
+      <td>30</td>
+      <td>240</td>
+      <td>33275</td>
+      <td>--</td>
+      <td>69.32</td>
+      <td>--</td>
+      <td>2*A100</td>
+   </tr>
+   <tr>
+      <td>p.n3a100.31large</td>
+      <td>62</td>
+      <td>480</td>
+      <td>66550</td>
+      <td>--</td>
+      <td>138.65</td>
+      <td>--</td>
+      <td>4*A100</td>
+   </tr>
+   <tr>
+      <td>p.n3a100.31xlarge</td>
+      <td>124</td>
+      <td>972</td>
+      <td>133100</td>
+      <td>--</td>
+      <td>277.29</td>
+      <td>--</td>
+      <td>8*A100</td>
+   </tr>
+   <tr>
       <td>p.n1p40.3xlarge</td>
       <td>12</td>
       <td>48</td>

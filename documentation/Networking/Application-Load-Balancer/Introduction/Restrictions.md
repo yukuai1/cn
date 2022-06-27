@@ -12,13 +12,14 @@
 |一个虚拟服务器组内的实例	|100个|	工单|
 |一个应用负载均衡下的转发规则组	|50个|	工单|
 |一个转发规则组内的转发规则	|50个|	工单|
+|一条转发规则可以配置的扩展动作数	|10个|	工单|
 |一个应用负载均衡可绑定的安全组|4个|	无|
 |一个监听器绑定的扩展证书项(不包括默认证书项)|25个|	工单|
 
 
 ## 相关参考
 
-- [产品概述](../Introduction/Overview.md)
+- [产品概述](../Introduction/Product-Overview.md)
 - [价格总览](../Pricing/Price-Overview.md)
 - [创建实例](../Getting-Started/Create-Instance.md)
 - [虚拟服务器组管理](../Operation-Guide/TargetGroup-Management.md)

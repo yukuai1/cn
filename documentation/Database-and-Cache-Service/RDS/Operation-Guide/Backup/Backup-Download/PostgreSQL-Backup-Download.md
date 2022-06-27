@@ -1,8 +1,9 @@
 # 备份下载
-当您想获取云数据库 PostgreSQL 实例的备份数据的时候，京东云提供了内网地址，外网地址供用户自行下载。
+当您想获取云数据库 PostgreSQL 实例的备份数据的时候，京东云提供了内网地址，外网地址供用户在控制台自行下载。
 
 ## 注意事项
-* 内网地址，外网地址是有有效期的，如果超过了有效期地址会失效
+* 仅手动备份支持下载，自动备份不支持支持下载。
+* 内网地址，外网地址是有有效期的，如果超过了有效期地址会失效。
 * 点击下载按钮，才能生成下载弹出框，才能获取新地址。
 
 ## 操作步骤
@@ -16,3 +17,7 @@
     * 点击 **取消** 按钮，放弃备份数据的下载。
 
 ![image2018-3-8 14_14_29.png](https://img1.jcloudcs.com/cms/9de5deac-1a4d-4bea-b6ad-3121e317935b20180308142747.png)
+
+## 相关API
+下载数据备份：[describeBackupDownloadURL](https://docs.jdcloud.com/cn/rds/api/describebackupdownloadurl)
+下载日志备份：[describeBinlogDownloadURL](https://docs.jdcloud.com/cn/rds/api/describebinlogdownloadurl)

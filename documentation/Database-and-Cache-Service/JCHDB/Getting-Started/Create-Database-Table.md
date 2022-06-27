@@ -18,31 +18,19 @@
 
 1. 创建数据库
 
-  - 高可用模式下创建数据库
-
    ```
-   CREATE DATABASE IF NOT EXISTS testdb ON CLUSTER default_cluster;
-   ```
-
-  - 非高可用模式下创建数据库   
-
-   ```
-   CREATE DATABASE IF NOT EXISTS testdb ON CLUSTER default_cluster;
+   CREATE DATABASE IF NOT EXISTS testdb ;
    ```
 
 2. 创建数据表
 
-- 高可用模式下创建数据表
+- 使用MergeTree系类引擎创建数据表
 
 ```
-CREATE TABLE testdb.account ON CLUSTER default_cluster(accountid UInt16,name String,address String,year UInt64) ENGINE =ReplicatedMergeTree('/clickhouse/tables/{layer}-{shard}/testdb/account', '{replica}') ORDER BY (accountid);
+CREATE TABLE testdb.account ON CLUSTER default(accountid UInt16,name String,address String,year UInt64) ENGINE =ReplicatedMergeTree('/clickhouse/tables/{shard}/testdb/account', '{replica}') ORDER BY (accountid);
 ```
 
-- 非高可用模式下创建数据表
 
-```
-CREATE TABLE testdb.account ON CLUSTER default_cluster(accountid UInt16, name String, address String, year UInt64) ENGINE =MergeTree() ORDER BY (accountid);
-```
 
 
 

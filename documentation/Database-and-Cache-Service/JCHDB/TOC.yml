@@ -1,6 +1,6 @@
-  name: 分析型云数据库 ClickHouse
-  href: 
-  items:
+name: 分析型云数据库 ClickHouse
+href: 
+items:
   - name: 产品简介
     items:
       - name: 产品概述
@@ -25,6 +25,8 @@
         href: Pricing/Price-Overview.md   
   - name: 快速入门
     items:
+      - name: 操作流程
+        href: Getting-Started/operation.md
       - name: 创建实例
         href: Getting-Started/Create-Instance1.md
       - name: 创建账号
@@ -50,8 +52,12 @@
             href: Operation-Guide/Instance/Connect-Instance.md    
           - name: 删除实例
             href: Operation-Guide/Instance/Delete-Instance.md
+          - name: 外网访问
+            href: Operation-Guide/Instance/Outer-Access.md
           - name: 变更配置
             href: Operation-Guide/Instance/Update-Instance.md
+          - name: 变更副本数
+            href: Operation-Guide/Instance/Update-Copies.md
           - name: 实例版本升级
             href: Operation-Guide/Instance/Update-Version.md 
             
@@ -87,10 +93,10 @@
 
       - name: 外部数据导入
         items:
-          - name: 从clickhouse-client导入
-            href: Operation-Guide/localDataLoading/loading-clickhouse-client.md
           - name: 从Spark导入
             href: Operation-Guide/localDataLoading/loading-spark.md
+          - name: 从自建ClickHouse导入
+            href: Operation-Guide/localDataLoading/local-clickhouse-clickhouse.md
 
       - name: 日志审计
         items:

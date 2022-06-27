@@ -1,15 +1,6 @@
 # 同义词配置
 
-* [上传同义词文件](synonymdic#synonym-upload)
-* [使用同义词](synonymdic#synonym-use)
-* [下载同义词文件](synonymdic#synonym-download)
-* [更新同义词文件](synonymdic#synonym-update)
-* [删除同义词文件](synonymdic#synonym-delete)
-
 ## 上传同义词文件
-
-<div id="synonym-upload"></div>
-
 在通过同义词文件方式使用同义词时，您需要先上传同义词文件。
 ### 注意事项
 * 上传同义词文件前请确保集群处于正常状态，该操作将触发集群滚动重启，在重启过程中后台会进行同义词词典的下发，生效时长与集群规模、数据量及负载情况等有关，建议在业务低峰期操作。
@@ -37,18 +28,12 @@
    ![](../../../../image/Internet-Middleware/JCS%20for%20Elasticsearch/synonym_upload_success.png)
 
 ## 同义词文件下载
-
-<div id="synonym-download"></div>
-
 说明：如果您需要获取已经上传过的词库文件，可直接单击对应文件的**下载**按钮进行下载。
 
    ![](../../../../image/Internet-Middleware/JCS%20for%20Elasticsearch/synonym_download.png)
    
 
 ## 使用同义词
-
-<div id="synonym-use"></div>
-
 ### 同义词文件配置
 等待实例的状态变为正常后，登录Kibana控制台创建索引、校验同义词，并上传测试数据进行搜索测试。**创建索引时需要配置settings和mapping，并且需要在settings中配置"synonyms_path": "synonym/your_dict_name.txt"**。
 
@@ -189,8 +174,6 @@
 
 ## 更新同义词文件
 
-<div id="synonym-update"></div>
-
 ### 注意事项
 * 假设现存索引使用了synonym.txt同义词文件，当synonym.txt文件内容变更并重新上传后，现存索引不会动态加载更新后的同义词词典。请在同义词词典内容发生变化后进行**索引重建（reindex）操作**，否则可能会造成只有新增数据使用新词典的情况。
 * 更新同义词文件前请确保集群处于正常状态，该操作将触发集群滚动重启，在重启过程中后台会进行同义词词典的下发，生效时长与集群规模、数据量及负载情况等有关，建议在业务低峰期操作。
@@ -211,8 +194,6 @@
    ![](../../../../image/Elasticsearch/Synonym/synonym_update_3.png)
 
 ## 删除同义词文件
-
-<div id="synonym-delete"></div>
 
 ### 注意事项
 * 请谨慎选择删除同义词文件。在删除同义词文件之前，**请确保在所有已经配置过该同义词文件的索引的索引配置中，已经删除了该同义词文件的相关配置**。否则在删除同义词文件后的集群滚动重启时，可能将导致集群启动异常。
