@@ -29,7 +29,7 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |**timeUnit**|String|True| |时间单位，month, year|
 |**startTime**|Long|True| |创建时间|
 |**wafInstanceId**|String|False| |实例id，除新建必传|
-|**packageType**|Integer|True| |套餐类型 1:高级版, 2:企业版 3:旗舰版 4:基础版|
+|**packageType**|Integer|True| |套餐类型 1:高级版, 2:企业版 3:旗舰版 4:基础版(仅支持新用户)|
 |**extraDomainsNum**|Integer|True| |额外的域名扩展包|
 |**nickName**|String|False| |实例名，新建订单时必传，只能包含汉字、英文字母、下划线、破折号、数字，且长度不能超过16|
 |**returnURL**|String|True| |下单成功后返回的url, eg:http://abc.com|
@@ -37,6 +37,7 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |**appCode**|String|False| |云鼎的appCode|
 |**serviceCode**|String|False| |云鼎的serviceCode|
 |**buyScenario**|String|False| |购物车活动参数|
+|**needPay**|Boolean|False| |true表示支持autoPay|
 
 ## 返回参数
 |名称|类型|描述|
@@ -49,6 +50,7 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |---|---|---|
 |**buyId**|String|订单编号|
 |**wafInstanceId**|String|wafInstancdId|
+|**orderNumber**|String|orderNumber|
 
 ## 返回码
 |HTTP状态码|错误码|描述|
