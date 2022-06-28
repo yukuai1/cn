@@ -9,7 +9,7 @@
         href: Online-Payment/Common-Problems.md
   - name: 续费管理
     href: Renew-Management.md
-  - name: 包年包月未到期资源删除退订
+  - name: 退订管理
     items:
       - name: 退订常见问题
         href: refund/refund.md
