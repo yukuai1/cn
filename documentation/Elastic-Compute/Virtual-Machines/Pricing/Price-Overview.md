@@ -2143,9 +2143,9 @@
       <td>p.n3a100.7large</td>
       <td>14</td>
       <td>120</td>
-      <td>16637.5</td>
+      <td>16375</td>
       <td>--</td>
-      <td>34.66</td>
+      <td>34.11</td>
       <td>--</td>
       <td>1*A100</td>
    </tr>
@@ -2153,9 +2153,9 @@
       <td>p.n3a100.15large</td>
       <td>30</td>
       <td>240</td>
-      <td>33275</td>
+      <td>33050</td>
       <td>--</td>
-      <td>69.32</td>
+      <td>68.85</td>
       <td>--</td>
       <td>2*A100</td>
    </tr>
@@ -2163,9 +2163,9 @@
       <td>p.n3a100.31large</td>
       <td>62</td>
       <td>480</td>
-      <td>66550</td>
+      <td>66400</td>
       <td>--</td>
-      <td>138.65</td>
+      <td>138.33</td>
       <td>--</td>
       <td>4*A100</td>
    </tr>
@@ -2173,9 +2173,9 @@
       <td>p.n3a100.31xlarge</td>
       <td>124</td>
       <td>972</td>
-      <td>133100</td>
+      <td>132800</td>
       <td>--</td>
-      <td>277.29</td>
+      <td>276.67</td>
       <td>--</td>
       <td>8*A100</td>
    </tr>
