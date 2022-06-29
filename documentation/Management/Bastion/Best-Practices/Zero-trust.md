@@ -49,7 +49,7 @@
 
          - Access Key Secret：通过【用户管理】列表复制相关信息
 
-![](/image/Bastion/security4.png) 
+ ![](/image/Bastion/security4.png) 
 
 
 
