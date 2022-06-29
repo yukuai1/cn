@@ -695,8 +695,8 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 :---|:---|:---|:---|:---|:---
 |p.n3a100.7large|14|120|1 x Nvidia Tesla A100|8|4
 |p.n3a100.15large|30|240|2  x Nvidia Tesla A100|8|4
-|p.n3a100.31large|62|480|4  x Nvidia Tesla A1000|8|4
-|p.n3a100.7large|124|972|8  x Nvidia Tesla A100|8|4
+|p.n3a100.31large|62|480|4  x Nvidia Tesla A100|8|4
+|p.n3a100.31xlarge|124|972|8  x Nvidia Tesla A100|8|4
 
 第一代：
 
