@@ -5,7 +5,7 @@
 ## 2022年
 | 功能名称 | 功能描述 | 发布时间 | 相关文档|
 | :---------------| :--------------|:------------|:--------|
-|安全组默认策略|修改安全组默认策略，关闭默认开放TCP 80端口及UDP 67、68、161端口|2022/6|[安全组](Introduction/Features/Security-Group-Features.md)|
+|安全组默认策略|修改安全组默认策略，关闭默认开放TCP 80端口及UDP 67、68、161端口|2022/6|[安全组](../Introduction/Features/Security-Group-Features.md)|
 |编辑安全组规则|编辑安全组规则时支持源/目的IP、目标端口字段的值批量输入|2022/5|[安全组配置](https://docs.jdcloud.com/cn/virtual-private-cloud/security-group-configuration#user-content-4)|
 
 
