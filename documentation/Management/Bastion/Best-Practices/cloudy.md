@@ -53,6 +53,7 @@
 
 展示跳板机基础信息及关联的主机。
 
+
 ![](/image/Bastion/springboard2.png) 
 
 
