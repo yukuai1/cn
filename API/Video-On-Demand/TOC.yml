@@ -20,7 +20,7 @@ items:
           - name: 添加分类
             href: Category/createCategory.md
           - name: 查询分类列表
-            href: Category/listCategories.md
+            href: Category/listAllCategories.md
           - name: 查询分类及其子分类
             href: Category/getCategoryWithChildren.md
           - name: 查询分类
