@@ -128,7 +128,25 @@ items:
           - name: 提交视频剪辑作业
             href: Vedit/submitVeditJob.md
           - name: 创建视频剪辑作业
-            href: Vedit/createVeditJob.md
+            href: Vedit/createVeditJob.md      
+      - name: 视频截图模板管理
+        items:
+          - name: 查询截图模板列表
+            href: Snapshot-Template/listSnapshotTemplates.md
+          - name: 创建截图模板
+            href: Snapshot-Template/createSnapshotTemplate.md
+          - name: 查询截图模板
+            href: Snapshot-Template/getSnapshotTemplate.md
+          - name: 修改截图模板
+            href: Snapshot-Template/updateSnapshotTemplate.md
+          - name: 删除截图模板
+            href: Snapshot-Template/deleteSnapshotTemplate.md
+      - name: 视频截图作业
+        items:
+          - name: 查询视频截图任务列表
+            href: Snapshot/listSnapshotTasks.md
+          - name: 提交视频截图作业
+            href: Snapshot/submitSnapshotTask.md      
       - name: 域名配置
         items:
           - name: 添加域名
