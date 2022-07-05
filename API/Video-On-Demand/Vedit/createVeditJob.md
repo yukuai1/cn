@@ -91,7 +91,4 @@ https://vod.jdcloud-api.com/v1/veditJobs
 |返回码|描述|
 |---|---|
 |**200**|OK|
-|**400**|Invalid parameter|
-|**401**|Authentication failed|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+
