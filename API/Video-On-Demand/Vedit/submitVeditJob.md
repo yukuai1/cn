@@ -16,7 +16,7 @@ https://vod.jdcloud-api.com/v1/veditJobs:submit
 |---|---|---|---|---|
 |**projectId**|Long|True| |工程ID|
 |**mediaMetadata**|[MediaMetadata](submitveditjob#mediametadata)|False| |合成媒资元数据|
-|**userData**|String|False| |用户数据，JSON格式的字符串。<br>在Timeline中的所有MediaClip中，若有2个或以上的不同MediaId，即素材片段来源于2个或以上不同视频，则在提交剪辑作业时，必须在UserData中指明合并后的视频画面的宽高。<br>如 {\"extendData\": {\"width\": 720, \"height\": 500}}，其中width和height必须为[16, 4096]之间的偶数<br>|
+|**userData**|String|False| |用户数据，JSON格式的字符串。<br>在Timeline中的所有MediaClip中，若有2个或以上的不同MediaId，即素材片段来源于2个或以上不同视频，则在提交剪辑作业时，必须在UserData中指明合并后的视频画面的宽高。<br>如 {\"extendData\": {\"width\": 720, \"height\": 500}}，其中width和height必须为[16, 4096]之间的偶数<br>videoMode 支持 normal 普通模式 screen_record 屏幕录制模式 两种模式，默认为 normal。<br>如 "{\"extendData\":{\"videoMode\":\"screen_record\"}}"<br>|
 
 ### <div id="mediametadata">MediaMetadata</div>
 |名称|类型|是否必需|默认值|描述|
@@ -39,8 +39,4 @@ https://vod.jdcloud-api.com/v1/veditJobs:submit
 |返回码|描述|
 |---|---|
 |**200**|OK|
-|**400**|Invalid parameter|
-|**401**|Authentication failed|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+
