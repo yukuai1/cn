@@ -22,9 +22,9 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/subnets
 |**az**|String|False| |可用区，精确匹配|
 |**name**|String|False| |子网名称|
 |**vpcId**|String|False| |私有网络ID，精确匹配|
-|**filters**|[Filter[]](describesubnets#filter)|False| |subnetId - 子网ID，精确匹配，支持多个<br>|
+|**filters**|[Filter[]](#filter)|False| |subnetId - 子网ID，精确匹配，支持多个<br>|
 
-### <div id="filter">Filter</div>
+### <div id="Filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤条件的名称|
@@ -34,17 +34,17 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/subnets
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describesubnets#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**subnets**|[Subnet[]](describesubnets#subnet)| |
+|**subnets**|[Subnet[]](#subnet)| |
 |**pageNumber**|Integer|页码；默认为1|
 |**pageSize**|Integer|分页大小；默认为20；取值范围[20, 100]|
 |**totalCount**|Integer|查询结果总数|
-### <div id="subnet">Subnet</div>
+### <div id="Subnet">Subnet</div>
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|地域代码, 如cn-east-tz1|
@@ -52,19 +52,24 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/subnets
 |**subnetId**|String|子网ID|
 |**name**|String|子网名称|
 |**cidr**|String|子网CIDR|
+|**secondaryCidrName**|String|子网次要CIDR名称|
+|**secondaryCidr**|String|子网次要CIDR|
+|**secondaryCidrId**|String|子网次要CIDR ID|
 |**vpcId**|String|私有网络Id|
 |**vpcName**|String|私有网络名称|
+|**vpcCidr**|String|私有网络IPv4 CIDR|
 |**availableIpCount**|Integer|可用ip数量|
 |**totalIpCount**|Integer|总ip数量|
+|**usedIpv6IpCount**|Integer|已用IPv6地址数量|
+|**totalIpv6IpCount**|String|总IPv6地址数量|
 |**networkType**|String|网络类型|
+|**ipv6Cidr**|String|私有网络IPv6 CIDR|
+|**isIpv6Open**|Integer|是否开启Ipv6，1：开启，0：未开启|
 |**description**|String|描述|
 |**createTime**|String|创建时间|
+|**vpcIpv6Cidr**|String|私有网络IPv6 CIDR|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|Bad request|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

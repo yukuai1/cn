@@ -26,14 +26,14 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/bandwidthPackages/{bandwidth
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](modifybandwidthpackage#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**bandwidthPackage**|[BandwidthPackage](modifybandwidthpackage#bandwidthpackage)|共享带宽详细信息|
-### <div id="bandwidthpackage">BandwidthPackage</div>
+|**bandwidthPackage**|[BandwidthPackage](#bandwidthpackage)|共享带宽详细信息|
+### <div id="BandwidthPackage">BandwidthPackage</div>
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|区域代码, 如cn-east-tz1|
@@ -44,8 +44,8 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/bandwidthPackages/{bandwidth
 |**lineType**|String|链路类型|
 |**name**|String|名称|
 |**createTime**|String|创建时间|
-|**charge**|[Charge](modifybandwidthpackage#charge)|计费信息|
-### <div id="charge">Charge</div>
+|**charge**|[Charge](#charge)|计费信息|
+### <div id="Charge">Charge</div>
 |名称|类型|描述|
 |---|---|---|
 |**chargeMode**|String|支付模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration|
@@ -55,10 +55,6 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/bandwidthPackages/{bandwidth
 |**chargeRetireTime**|String|预期释放时间，资源的预期释放时间，预付费/后付费资源均有此值，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|Bad request|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

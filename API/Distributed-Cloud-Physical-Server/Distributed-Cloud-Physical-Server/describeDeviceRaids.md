@@ -24,14 +24,14 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/raids
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describedeviceraids#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**raids**|[Raid[]](describedeviceraids#raid)| |
-### <div id="raid">Raid</div>
+|**raids**|[Raid[]](#raid)| |
+### <div id="Raid">Raid</div>
 |名称|类型|描述|
 |---|---|---|
 |**volumeType**|String|磁盘类型, 如 system/data|
@@ -42,10 +42,6 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/raids
 |**description**|String|RAID类型描述|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|Bad request|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

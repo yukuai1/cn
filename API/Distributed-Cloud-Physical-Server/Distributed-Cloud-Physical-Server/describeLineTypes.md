@@ -21,24 +21,20 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/lineTypes
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describelinetypes#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**lineType**|[LineType](describelinetypes#linetype)|链路类型信息|
-### <div id="linetype">LineType</div>
+|**lineType**|[LineType](#linetype)|链路类型信息|
+### <div id="LineType">LineType</div>
 |名称|类型|描述|
 |---|---|---|
 |**lineType**|String|链路类型|
 |**region**|String|地域|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|Bad request|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

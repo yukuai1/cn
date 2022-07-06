@@ -35,9 +35,9 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**clientToken**|String|False| |由客户端生成，用于保证请求的幂等性，长度不能超过36个字符；<br/><br>如果多个请求使用了相同的clientToken，只会执行第一个请求，之后的请求直接返回第一个请求的结果<br/><br>|
-|**instanceSpec**|[InstanceSpec](createinstances#instancespec)|True| |描述分布式云物理服务器配置|
+|**instanceSpec**|[InstanceSpec](#instancespec)|True| |描述分布式云物理服务器配置|
 
-### <div id="instancespec">InstanceSpec</div>
+### <div id="InstanceSpec">InstanceSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**az**|String|True| |可用区, 如 cn-east-tz1|
@@ -54,7 +54,7 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances
 |**networkType**|String|True| |网络类型，取值范围：vpc|
 |**cidr**|String|False| |网络CIDR|
 |**privateIp**|String|False| |内网IP|
-|**aliasIps**|[AliasIpInfo[]](createinstances#aliasipinfo)|False| |内网添加的别名IP范围|
+|**aliasIps**|[AliasIpInfo[]](#aliasipinfo)|False| |内网添加的别名IP范围|
 |**lineType**|String|False| |外网链路类型, 目前支持联通un、电信ct、移动cm|
 |**bandwidth**|Integer|False| |外网带宽, 范围[1,10240] 单位Mbps|
 |**extraUplinkBandwidth**|Integer|False| |额外上行带宽, 范围[0,10240] 单位Mbps|
@@ -64,29 +64,36 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances
 |**count**|Integer|True| |购买数量|
 |**userData**|String|False| |可执行脚本Base64编码后的内容，支持shell和python脚本|
 |**keypairId**|String|False| |密钥对id|
-|**charge**|[ChargeSpec](createinstances#chargespec)|True| |计费配置|
+|**charge**|[ChargeSpec](#chargespec)|True| |计费配置|
 |**interfaceMode**|String|False| |网络接口模式，单网口:bond、双网口:dual|
 |**extensionSubnetId**|String|False| |辅网口子网ID|
 |**extensionPrivateIp**|String|False| |辅网口手动分配的内网ip|
-|**extensionAliasIps**|[AliasIpInfo[]](createinstances#aliasipinfo)|False| |辅网口内网添加的别名IP范围|
+|**extensionAliasIps**|[AliasIpInfo[]](#aliasipinfo)|False| |辅网口内网添加的别名IP范围|
 |**extensionEnableInternet**|String|False| |辅网口是否启用外网，取值范围：yes、no|
 |**extensionLineType**|String|False| |辅网口链路类型, 目前支持联通un、电信ct、移动cm|
 |**extensionBandwidth**|Integer|False| |辅网口外网带宽，范围[1,10240] 单位Mbps|
 |**extensionExtraUplinkBandwidth**|Integer|False| |辅网口额外上行带宽, 范围[0,10240] 单位Mbps|
 |**extensionInternetChargeMode**|String|False| |辅网口启用外网时弹性公网IP的计费模式，取值范围：prepaid_by_duration、postpaid_by_duration|
 |**extensionBandwidthPackageId**|String|False| |辅网口弹性公网IP加入的共享带宽ID|
-|**resourceTags**|[Tag[]](createinstances#tag)|False| |标签|
-### <div id="tag">Tag</div>
+|**enableIpv6**|String|False|no|是否启用IPv6，取值范围：yes、no|
+|**ipv6Address**|String|False| |IPv6地址|
+|**ipv6AliasIps**|[AliasIpInfo[]](#aliasipinfo)|False| |内网添加的别名ipv6 IP范围|
+|**extensionEnableIpv6**|String|False|no|辅网口是否启用IPv6，取值范围：yes、no|
+|**extensionIpv6Address**|String|False| |辅网口IPv6地址|
+|**extensionIpv6AliasIps**|[AliasIpInfo[]](#aliasipinfo)|False| |辅网口内网添加的别名ipv6 IP范围|
+|**resourceTags**|[Tag[]](#tag)|False| |标签|
+### <div id="Tag">Tag</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**key**|String|True| |标签键|
 |**value**|String|True| |标签值|
-### <div id="aliasipinfo">AliasIpInfo</div>
+### <div id="AliasIpInfo">AliasIpInfo</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**id**|String|False| |主CIDR或次要CIDR id|
 |**cidr**|String|False| |cidr段|
-### <div id="chargespec">ChargeSpec</div>
+|**scope**|String|False| |ipv4/ipv6 本字段为null默认为ipv4|
+### <div id="ChargeSpec">ChargeSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**chargeMode**|String|False|postpaid_by_duration|计费模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration.请参阅具体产品线帮助文档确认该产品线支持的计费类型|
@@ -98,19 +105,15 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](createinstances#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**instanceIds**|String[]| |
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|Bad request|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|
