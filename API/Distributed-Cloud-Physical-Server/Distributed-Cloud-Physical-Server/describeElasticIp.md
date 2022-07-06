@@ -22,19 +22,22 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/elasticIps/{elasticIpId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describeelasticip#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**elasticIp**|[ElasticIp](describeelasticip#elasticip)|弹性公网IP详细信息|
-### <div id="elasticip">ElasticIp</div>
+|**elasticIp**|[ElasticIp](#elasticip)|弹性公网IP详细信息|
+### <div id="ElasticIp">ElasticIp</div>
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|地域代码, 如cn-east-tz1|
 |**elasticIpId**|String|弹性公网IPID|
-|**elasticIp**|String|弹性公网IP|
+|**elasticIp**|String|弹性公网IPv4|
+|**targetIp**|String|对应绑定的资源(服务器/LB/NAT等等)的内网IPv4 或 别名IPv4|
+|**eipv6**|String|弹性公网IPv6|
+|**innerIpv6**|String|对应绑定的资源(服务器/LB/NAT等等)的内网IPv6 或 别名IPv6|
 |**bandwidth**|Integer|带宽, 单位Mbps|
 |**extraUplinkBandwidth**|Integer|额外上行带宽, 单位Mbps|
 |**lineType**|String|链路类型|
@@ -42,10 +45,9 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/elasticIps/{elasticIpId}
 |**instanceType**|String|实例类型|
 |**instanceId**|String|实例ID|
 |**createTime**|String|创建时间|
-|**targetIp**|String|绑定的ip地址|
 |**bandwidthPackageId**|String|共享带宽 id|
-|**charge**|[Charge](describeelasticip#charge)|计费信息|
-### <div id="charge">Charge</div>
+|**charge**|[Charge](#charge)|计费信息|
+### <div id="Charge">Charge</div>
 |名称|类型|描述|
 |---|---|---|
 |**chargeMode**|String|支付模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration|
@@ -55,10 +57,6 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/elasticIps/{elasticIpId}
 |**chargeRetireTime**|String|预期释放时间，资源的预期释放时间，预付费/后付费资源均有此值，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|Bad request|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

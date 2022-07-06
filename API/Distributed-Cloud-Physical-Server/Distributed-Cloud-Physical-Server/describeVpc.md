@@ -22,28 +22,26 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/vpcs/{vpcId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describevpc#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**vpc**|[Vpc](describevpc#vpc)|私有网络详细信息|
-### <div id="vpc">Vpc</div>
+|**vpc**|[Vpc](#vpc)|私有网络详细信息|
+### <div id="Vpc">Vpc</div>
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|地域代码, 如cn-east-tz1|
 |**vpcId**|String|私有网络ID|
 |**name**|String|私有网络名称|
 |**cidr**|String|私有网络CIDR|
+|**ipv6Cidr**|String|私有网络IPv6 CIDR|
+|**isIpv6Open**|Integer|是否开启Ipv6，1：开启，0：未开启|
 |**description**|String|描述|
 |**createTime**|String|创建时间|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|Bad request|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

@@ -23,14 +23,14 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/secondaryCidrs
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describesecondarycidrs#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**secondaryCidrs**|[SecondaryCidr[]](describesecondarycidrs#secondarycidr)| |
-### <div id="secondarycidr">SecondaryCidr</div>
+|**secondaryCidrs**|[SecondaryCidr[]](#secondarycidr)| |
+### <div id="SecondaryCidr">SecondaryCidr</div>
 |名称|类型|描述|
 |---|---|---|
 |**secondaryCidrId**|String|次要cidr的ID|
@@ -41,14 +41,11 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/secondaryCidrs
 |**name**|String|次要cidr名称|
 |**vpcId**|String|私有网络Id|
 |**vpcName**|String|私有网络名称|
+|**vpcCidr**|String|私有网络cidr|
 |**availableIpCount**|Integer|可用ip数量|
 |**totalIpCount**|Integer|总ip数量|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|Bad request|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|
