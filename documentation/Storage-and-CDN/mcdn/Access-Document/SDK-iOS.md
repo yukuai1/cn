@@ -21,14 +21,14 @@ MCDN SDK内部包含精简的HTTP Server，初始化时会在本地开启HTTP服
 
 将合并版SDK对应的JDMcdnSdk.framework拖入General -> Frameworks, Libraries, and Embedded Content并添加系统动态库libc++.tbd，如下图所示：
 
-![合并版SDK操作步骤](https://github.com/jdcloudcom/cn/blob/cdn-new/image/MCDN/合并版SDK.png)
+![合并版SDK操作步骤](https://github.com/jdcloudcom/cn/blob/mcdn-0708/image/MCDN/合并版SDK.png)
 
 
 若用户app已引入的第三方库已包含openssl的静态库libssl.a、libcrypto.a和libevent的静态库libevent.a，则推荐对接拆分版SDK，拆分版默认不打包上述依赖的3个静态库，具体对接步骤如下：
 
 将拆分版SDK对应的JDMcdnSdk.framework拖入General -> Frameworks, Libraries, and Embedded Content并添加系统动态库libc++.tbd，同时用户添加app已有的openssl静态库和libevent静态库依赖，如下图所示：
 
-![拆分版SDK操作步骤](https://github.com/jdcloudcom/cn/blob/cdn-new/image/MCDN/拆分版SDK.jpg)
+![拆分版SDK操作步骤](https://github.com/jdcloudcom/cn/blob/mcdn-0708/image/MCDN/拆分版SDK.jpg)
 
 **3、引入 JDMcdnSdk**
 
