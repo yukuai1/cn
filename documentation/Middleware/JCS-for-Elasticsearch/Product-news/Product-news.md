@@ -3,6 +3,7 @@
 ## 2022年
 | 功能名称 | 功能描述 | 发布时间 | 相关文档|
 | :---------------| :--------------|:------------|:--------|
+|版本7.10|支持Elasticsearch 版本7.10。|2022-06|[创建集群](https://docs.jdcloud.com/cn/jcs-for-elasticsearch/create-es)|
 |资源组管理|资源组是京东云资源分组管理的工具，支持对云资源进行逻辑分组。通过使用资源组，可实现多项目或多应用场景下的资源分组管理问题。|2022-03|[资源组管理](https://docs.jdcloud.com/cn/jcs-for-elasticsearch/resource-group-introduction)|
 |同义词配置|支持将符合规则的同义词文件上传至京东云Elasticsearch集群中，该文件会作用于集群的同义词库，您可以使用更新后的词库搜索数据。|2022-02|[同义词配置](https://docs.jdcloud.com/cn/jcs-for-elasticsearch/synonymdic)|
 
@@ -25,7 +26,7 @@
 |数据节点数量缩容|在开启专有主节点的情况下，支持缩减数据节点数量。|2020-05|[变更配置](https://docs.jdcloud.com/cn/jcs-for-elasticsearch/change-es)|
 |版本7.x|支持Elasticsearch 版本7.5。|2020-03|[创建集群](https://docs.jdcloud.com/cn/jcs-for-elasticsearch/create-es)|
 |实例列表支持导出|集群管理页面支持实例列表导出，便于用户查看当前资源。|2020-01|[查看集群](https://docs.jdcloud.com/cn/jcs-for-elasticsearch/view-es)|
-|华南-广州区域|云搜索Elasticsearch正式华南-广州区域。|2020-01||
+|华南-广州区域|云搜索Elasticsearch服务正式开通华南-广州区域。|2020-01|[创建集群](https://docs.jdcloud.com/cn/jcs-for-elasticsearch/create-es)|
 
 ## 2019年
 | 功能名称 | 功能描述 | 发布时间 | 相关文档|
@@ -38,7 +39,7 @@
 |拼音插件|支持拼音插件analysis-pinyin。|2019-04|[插件支持](https://docs.jdcloud.com/cn/jcs-for-elasticsearch/ik)|
 |专有主节点|支持设置专用主节点来提高集群的稳定性，可以在创建集群或变更配置时创建专有主节点。|2019-03|[专有主节点](https://docs.jdcloud.com/cn/jcs-for-elasticsearch/dedicated-master)|
 |数据备份|支持自动备份与恢复、手动备份与恢复，以保证集群数据的可靠性。。|2019-03|[数据备份](https://docs.jdcloud.com/cn/jcs-for-elasticsearch/creatsnapshot)|
-|华东-上海区域|云搜索Elasticsearch正式华东-上海区域。|2019-03||
+|华东-上海区域|云搜索Elasticsearch服务正式开通华东-上海区域。|2019-03|[创建集群](https://docs.jdcloud.com/cn/jcs-for-elasticsearch/create-es)|
 |自定义词库|IK分词插件支持主词库和停用词次数（热更新）。|2019-02|[自定义词库](https://docs.jdcloud.com/cn/jcs-for-elasticsearch/dic)|
 |数据备份|支持自动备份与恢复、手动备份与恢复，以保证集群数据的可靠性。|2019-02|[数据备份](https://docs.jdcloud.com/cn/jcs-for-elasticsearch/creatsnapshot)|
 |访问控制IAM|访问控制IAM的核心功能主要是用户身份管理与资源访问控制。用户可以通过使用IAM创建、管理子用户，并控制这些子用户访问京东云资源的操作权限。|2019-01|[访问控制](https://docs.jdcloud.com/cn/jcs-for-elasticsearch/control)|
