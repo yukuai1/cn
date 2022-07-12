@@ -19,7 +19,11 @@ items:
       - name: SQL查询
         href: Operation-Guide/sql-console.md
       - name: 表管理
-        href: Operation-Guide/table-management.md
+        items:
+          - name: 表管理
+          - href: Operation-Guide/table-management.md	
+          - name: 分布式建表
+          - href: Operation-Guide/Distributed_table_creation.md
       - name: 数据导入导出
         items:
           - name: 数据导入
