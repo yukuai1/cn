@@ -17,7 +17,7 @@
         <td >计算型</td>	  
 	<td >边缘计算效能型Ⅰ(二代)</td>
 	<td >edcps.c2.perf1</td>
-	<td  rowspan="3">华东-济南</td>
+	<td  rowspan="4">华东-济南</td>
 	<td >6000</td>
 	<td >21</td>
        </tr>
