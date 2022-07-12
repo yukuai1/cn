@@ -69,6 +69,8 @@
             href: Operation-Guide/Networking/Alias-IP.md
           - name: 共享带宽
             href: Operation-Guide/Networking/Edge-Shared-Bandwidth.md
+          - name: 负载均衡
+            href: Operation-Guide/Networking/Load Balancer.md
       - name: 防火墙
         items:
           - name: 概述
