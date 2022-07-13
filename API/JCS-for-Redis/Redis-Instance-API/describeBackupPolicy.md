@@ -28,15 +28,15 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
+|**autoBackup**|Boolean|是否开启自动备份，true表示开启，false表示关闭|
 |**backupPeriod**|String|备份周期，包括：Monday，Tuesday，Wednesday，Thursday，Friday，Saturday，Sunday，多个用逗号分隔|
 |**backupTime**|String|备份时间，格式为：HH:mm-HH:mm 时区，例如"01:00-02:00 +0800"，表示东八区的1点到2点|
 |**nextBackupTime**|String|下次自动备份时间段，ISO 8601标准的UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ~YYYY-MM-DDTHH:mm:ssZ|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**404**|NOT_FOUND|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|
 
 ## 请求示例
 GET

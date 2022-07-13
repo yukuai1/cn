@@ -23,6 +23,7 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |**startTime**|String|False| |开始时间|
 |**endTime**|String|False| |结束时间|
 |**shardId**|String|False| |分片id|
+|**shardAddr**|String|False| |分片地址|
 
 
 ## 返回参数
@@ -45,10 +46,9 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |**shardId**|String|执行命令的分片id|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**404**|NOT_FOUND|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|
 
 ## 请求示例
 GET
