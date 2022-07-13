@@ -11,7 +11,6 @@ items:
         href: Introduction/Features.md
       - name: 应用场景
         href: Introduction/Application-Scenarios.md
-      
   - name: 操作指南
     items:
       - name: 登录数据库
@@ -33,5 +32,5 @@ items:
       - name: 可编程对象管理
         items:
           - name: 视图管理
-            href: Operation-Guide/view_management.md
+            href: Operation-Guide/view-management.md
        
