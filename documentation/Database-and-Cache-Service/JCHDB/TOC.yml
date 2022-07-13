@@ -98,6 +98,11 @@ items:
           - name: 从自建ClickHouse导入
             href: Operation-Guide/localDataLoading/local-clickhouse-clickhouse.md
 
+      - name: 冷热数据分层
+        items:
+          - name: 冷热数据分层存储
+            href: Operation-Guide/hot_on_coldStorage/hot_on_coldStorage.md
+
       - name: 日志审计
         items:
           - name: SQL审计
