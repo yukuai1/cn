@@ -12,9 +12,8 @@
 ## 注意事项
 * 分析型云数据库 ClickHouse仅20.8及以上版本支持冷热数据分层存储功能。对于不支持的低版本，可以先将集群版本升级至20.8及以上版本，再进行冷热数据分层存储。
 
-* 冷热数据分层存储功能开通时，实例会进行重启。
 
-* 如果要使用冷热数据分层存储功能，必须在建表时添加SETTINGS storage_policy = 'hot_to_cold' 语句指定存储策略。
+* 如果要使用冷热数据分层存储功能，必须在建表时添加SETTINGS storage_policy = 'hot_cold' 语句指定存储策略。
 
 * 对于老数据的表可以使用 ALTER TABLE <tableName> MODIFY SETTINGS storage_policy = 'hot_cold' 语句变更存储策略。注：如果用户的老数据表结构如下
 
@@ -38,7 +37,7 @@
 ## 操作步骤
 
 1. 登录 [分析型云数据库ClickHouse 管理控制台](https://jchdb-console.jdcloud.com)。创建集群时，在冷热分层配置中选择开启冷备存储。
-    集群策略默认数据达到90%后，会自动触发冷数据分层机制，按 Data Part 的大小，优先将大的 Data Part 从本地盘转移到配置的 COS 盘上，直到数据量低于阈值。可按照实际需要配置冷热分层数据表，具体配置指令如下：ALTER TABLE <tableName>  MODIFY SETTINGS storage_policy = 'hot_to_cold'。
+    集群策略默认数据达到90%后，会自动触发冷数据分层机制，移动老数据到到冷存储，直到数据量低于阈值。可按照实际需要配置冷热分层数据表，具体配置指令如下：ALTER TABLE <tableName>  MODIFY SETTINGS storage_policy = 'hot_cold'。
     
 2. 若集群创建时未开启冷热分层服务，在集群创建成功后，可在集群列表选择操作 > 更多 > 开启冷热分层存储，或在实例详情 > 冷热数据分层>开启按钮，手动开启服务。
 
@@ -46,7 +45,7 @@
 
     ![开启冷热分层](../../../../../image/JCHDB/coldStorage2.png)
 
-3. 确定开通后，实例会进行重启。待实例状态从冷热存储变更中变为运行中，即完成开通。
+3. 确定开通后，待实例状态从冷热存储变更中变为运行中，即完成开通。
 
     ![开启冷热分层](../../../../../image/JCHDB/coldStorage3.png)
 
@@ -92,7 +91,7 @@ ENGINE = MergeTree()
 PARTITION BY date
 ORDER BY f1
 TTL date + INTERVAL 90 DAY TO DISK 'cold_disk'
-SETTINGS storage_policy = 'hot_to_cold';
+SETTINGS storage_policy = 'hot_cold';
 ```
 * 更改 TTL 分层存储策略
 您可以更改 TTL 分层存储策略的日期或日期时间类型的列以及间隔时间。
