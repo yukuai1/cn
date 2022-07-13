@@ -23,7 +23,7 @@ items:
           - name: 表管理
           - href: Operation-Guide/table-management.md	
           - name: 分布式建表
-          - href: Operation-Guide/Distributed_table_creation.md
+          - href: Operation-Guide/Distributed-table-creation.md
       - name: 数据导入导出
         items:
           - name: 数据导入
@@ -33,5 +33,5 @@ items:
       - name: 可编程对象管理
         items:
           - name: 视图管理
-            href: Operation-Guide/view_management.md
+            href: Operation-Guide/view-management.md
        
