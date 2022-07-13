@@ -3,14 +3,14 @@
 
 ### 通过Kibana使用SQL API查询
 - 7.5.2及以上版本
-```java
+```
 POST /_nlpcn/sql
 {
   "sql": "select * from {index_name}"
 }
 ```
 - 其他版本
-```java
+```
 POST /_sql
 {
   "sql": "select * from {index_name}"
@@ -19,10 +19,10 @@ POST /_sql
 
 ### 通过Curl使用SQL API查询
 - 7.5.2及以上版本
-```apl
+```
 curl -u {username}:{password} -H "Content-Type: application/json" -XPOST 'http://{domain}:9200/_nlpcn/sql' -d 'select * from {index_name}'
 ```
 - 其他版本
-```apl
+```
 curl -u {username}:{password} -H "Content-Type: application/json" -XPOST 'http://{domain}:9200/_sql' -d 'select * from {index_name}'
 ```
