@@ -119,10 +119,12 @@
     items:
       - name: 数据迁移工具介绍
         href: Data-Migration/Data-Migration.md
-      - name: 云Redis实例间单向同步
+      - name: 使用云上工具RDTS进行迁移
         href: Data-Migration/MigrationDoc-1.md
       - name: 从自建Redis迁移到云Redis
         href: Data-Migration/MigrationDoc-2.md
+      - name: 使用开源工具迁移介绍
+        href: Data-Migration/MigrationDoc-3.md
       - name: 迁移的监控报警配置
         href: Data-Migration/Migration-Alarm-Rules.md
   - name: 最佳实践
