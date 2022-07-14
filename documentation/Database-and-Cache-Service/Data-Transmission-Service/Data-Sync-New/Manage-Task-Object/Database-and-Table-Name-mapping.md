@@ -27,13 +27,13 @@
      ![库名映射](../../../image/DTS/Database-and-Table-Name-mapping-1.png)
      
      
-<p hidden>
+<!--
  * 表名映射
 
      在编辑表对话框中，设置该数据表在目标实例中的名称。
 
      ![表名映射](../../../image/DTS/Database-and-Table-Name-mapping-2.png) 
-</p>
+-->
 
 
 4. 点击**确定**，完成库表名的映射配置。
