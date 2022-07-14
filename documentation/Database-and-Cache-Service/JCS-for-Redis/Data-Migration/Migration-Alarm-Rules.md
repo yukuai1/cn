@@ -17,16 +17,28 @@
  
 【Step2】进入监控页，可查看到对迁移过程监控的指标，包含 同步OPS、同步传输流量、同步延迟、同步异常。
  
+![](../../../../image/Redis/Migration-Alarm-Rules-2.png)
+
  
 【Step3】配置报警规则，点击添加报警规则
- 
+
+![](../../../../image/Redis/Migration-Alarm-Rules-3.png)
+
 1、	同步延迟 报警设置，可配置ms级别的监控，RDTS上报的最小的延迟是2ms，配置大于等于2ms的监控，即可收到报警。
  
+![](../../../../image/Redis/Migration-Alarm-Rules-4.png)
+
 2、	同步异常 报警配置：异常的上报为0和1.  0为正常、1为异常。
 
 3、在 全部报警规则 页面中，可查看历史报警监控
  
+ 
+![](../../../../image/Redis/Migration-Alarm-Rules-5.png)
+
+ 
+ 
 ##  常见的异常问题
+
 
 - RDTS与源端连接异常
 
