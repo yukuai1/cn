@@ -45,7 +45,7 @@ GRANT REPLICATION SLAVE,REPLICATION CLIENT ON *.* TO 'dbuser'@'%';
 2. 购买完成后，返回[数据同步列表页](https://dts-console-new.jdcloud.com/syncList),等待链路创建完成后进行任务配置。
 3. 点击操作列的**配置同步任务**，进入任务配置页面。配置源端目标端的相关信息。
 
- ![配置同步任务](../../../image/dts/Mysql-Sync-to-Mysql-1.png)
+   ![配置同步任务](../../image/DTS/Mysql-Sync-to-Mysql-1.png)
 
  场景一：自建数据库或通过专线连接数据库同步到云数据库MySQL。
  
