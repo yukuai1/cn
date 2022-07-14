@@ -22,6 +22,7 @@ https://ag.jdcloud-api.com/v1/regions/{regionId}/availabilityGroups
 |**agType**|String|False| |高可用组类型，支持vm|
 |**instanceTemplateId**|String|True| |实例模板的Id|
 |**description**|String|False| |描述，长度不超过 256 字符|
+|**configurationType**|String|False| |高可用组配置类型，支持strict(关联模板型)、loose(自定义配置型)，该字段当前灰度开放中，若有使用需求请提工单|
 
 
 ## 返回参数
