@@ -19,14 +19,14 @@ https://bastion.jdcloud-api.com/v1/regions/{regionId}/instances
 ## 请求参数
 
 | 名称 | 类型 | 是否必需 | 默认值 | 描述 | 
-| :--------: | :--------:| :--------: | :--------:| :--------: |
+| :--------: | :--------:| :--------: | :--------:| :-------- |
 | instanceSpec  | InstanceSpec | True  |    |  实例的相关配置  |
 | chargeSpec  | ChargeSpec | False  |    |  计费信息的相关配置  |
 
 #### ChargeSpec
 
 | 名称 | 类型 | 是否必需 | 默认值 | 描述 | 
-| :--------: | :--------:| :--------: | :--------:| :--------: |
+| :--------: | :--------:| :--------: | :--------:| :-------- |
 | chargeMode  | String | False  |    |  资源计费类型（CONFIG-按配置，MONTHLY-包年包月)  |
 | chargeUnit  | String | True  |    |  预付费计费单位，预付费必填，取值为：MONTH、YEAR  |
 | chargeDuration  | Integer | True  |    |  预付费计费时长，预付费必填，当chargeUnit为month时取值为：1~9，当chargeUnit为year时取值为：1、2、3  |
@@ -37,7 +37,7 @@ https://bastion.jdcloud-api.com/v1/regions/{regionId}/instances
 #### InstanceSpec
 
 | 名称 | 类型 | 是否必需 | 默认值 | 描述 | 
-| :--------: | :--------:| :--------: | :--------:| :--------: |
+| :--------: | :--------:| :--------: | :--------:| :-------- |
 | az  | String | True  |    |  可用区  |
 | vpcId  | String | True  |    |  私有网络vpcId  |
 | subnetId  | String | True  |    |  子网subnetId  |
