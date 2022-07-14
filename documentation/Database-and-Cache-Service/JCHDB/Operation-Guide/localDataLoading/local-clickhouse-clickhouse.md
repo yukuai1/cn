@@ -1,4 +1,4 @@
-# 从自建ClickHouse迁移上云
+# 从自建ClickHouse导入
 
 本文主要介绍如何从自建的ClickHouse将数据库表及数据迁移到分析型云数据库ClickHouse上。
 
@@ -9,6 +9,8 @@
 - 源实例是京东云云主机自建ClickHouse实例，目标实例是分析型云数据库ClickHouse，且在同一个VPC内，直接使用remote函数进行迁移。
 - 如果无法进行网络连通操作，建议在源实例将数据导出为文件，然后通过clickhouse-client将文件导入到目标实例云数据库ClickHouse。
 - 如果无法进行网络连通操作，但是已经有了Spark、Flink等基础设施，也可以尝试编写Spark、Flink job将源实例数据读出，然后写入目标实例云数据库ClickHouse。
+
+
 
 #### 元数据的迁移
 
@@ -69,6 +71,7 @@ clickhouse-client --host="<new host>" --port="<new port>" --user="<new user name
 | new password  | 目标实例分析型云数据库ClickHouse数据库账号对应的密码。 |
 
 
+
 #### 通过remote函数进行数据迁移
 
 1，将目标实例分析型云数据库ClickHouse的网段加入到源实例的白名单中。
@@ -93,9 +96,11 @@ insert into <new_database>.<new_table> select * from remote('old_endpoint', <old
 | username     | 源实例的表名。                                               |
 | password     | 源实例的密码。                                               |
 
+
+
 #### 通过文件导出导入方式进行数据迁移
 
-通过文件，将数据从源实例数据库导出到目标实例分析型云数据库ClickHouse中。
+通过文件，将数据从源实例数据库通过clickhouse-client导出到目标实例分析型云数据库ClickHouse中。详细步骤，请参考[最佳实践](https://docs.jdcloud.com/cn/jchdb/load-data-from-file)
 
 **通过CSV文件导出导入**
 
@@ -110,6 +115,8 @@ clickhouse-client --host="<old host>" --port="<oldport>" --user="<old user name>
 ```
 clickhouse-client --host="<new host>" --port="<new port>" --user="<new user name>" --password="<new password>"  --query="insert into <database_name>.<table_name> FORMAT CSV"  < table.csv
 ```
+
+
 
 #### 通过Linux pipe管道进行流式导出导入
 

@@ -5,6 +5,7 @@
 ## 2021年
 | 功能名称 | 功能描述 | 发布时间 | 相关文档|
 | :---------------| :--------------|:------------|:--------|
+|编辑安全组规则|编辑安全组规则时支持源/目的IP、目标端口字段的值批量输入|2022/5|[安全组配置](https://docs.jdcloud.com/cn/virtual-private-cloud/security-group-configuration#user-content-4)|
 |路由表支持弹性网卡|路由表支持弹性网卡作为下一跳|2021/9|[路由表配置](../Operation-Guide/Route-Table-Configuration.md)|
 |文档内容丰富|基于keepalived实现主备双主机高可用 |2021/9|[基于keepalived实现主备双主机高可用](../Best-Practice/Keepalived.md)
 |文档内容丰富|丰富文档|2021/7|VPC下全部文档|
