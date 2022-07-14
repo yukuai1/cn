@@ -32,7 +32,7 @@ v1
 |**historyImportData**|POST|获取当前实例用户查询导入数据sql历史|
 |**historySql**|POST|获取当前实例用户查询sql历史|
 |**importDdlDml**|POST|sql导入|
-|**login**|POST|rds，drds登录实例|
+|**login**|POST|rds登录实例|
 |**logout**|POST|退出登录|
 |**open**|POST|打开实例|
 |**openTable**|POST|执行sql语句|
@@ -42,3 +42,9 @@ v1
 |**tableInfo**|POST|获取表元数据|
 |**tableList**|POST|获取数据库中的表列表|
 |**updatePersonalSql**|POST|更新收藏sql|
+|**generalAlterView**|POST|生成修改视图sql|
+|**generalCreateView**|POST|生成创建视图sql|
+|**generalDropView**|POST|生成获取视图sql|
+|**viewInfo**|POST|获取视图原信息|
+|**exeProgram**|POST|执行可编程对象（视图）操作sql|
+|**programList**|POST|获取可编程对象（视图）列表|

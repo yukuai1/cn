@@ -42,14 +42,14 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |**pageIndex**|Integer|页码|
 |**pageSize**|Integer|页大小|
 |**totalCount**|Integer|配置总数|
-|**data**|[ListWafRuleCfg](listwafrules#listwafrulecfg)|网站waf自定义规则|
+|**list**|[ListWafRuleCfg[]](listwafrules#listwafrulecfg)|网站waf自定义规则|
 ### <div id="listwafrulecfg">ListWafRuleCfg</div>
 |名称|类型|描述|
 |---|---|---|
 |**conditions**|[ConditionNameSet[]](listwafrules#conditionnameset)|使用的条件集|
 |**id**|Integer|规则id|
-|**matchAction**|String|匹配动作|
-|**redirection**|String|重定向连接|
+|**matchAction**|String|匹配动作, 拦截:forbidden,redirect 人机识别:verify@jscookie,verify@captcha,verify@rdtcookie 观察:notice|
+|**redirection**|String|跳转地址，matchAction为redirect时必须为当前实例下的域名的url，forbidden时为自定义页面名称|
 |**ruleName**|String|规则名称|
 |**updateTime**|Integer|规则更新时间|
 |**disable**|Integer|0-使用中，1-禁用|

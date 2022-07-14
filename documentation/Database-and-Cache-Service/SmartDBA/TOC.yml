@@ -5,31 +5,27 @@ items:
     href: Introduction/Introduction.md 
   - name: 操作指南
     items:
-      - name: 查看概览
-        href: Operation-Guide/general-view.md
-      - name: 实例监控
-        items:
-          - name: 实例快速接入
-            href: Operation-Guide/instance_access.md
-          - name: 实例会话
-            href: Operation-Guide/conversation.md 
-          - name: 性能趋势
-            href: Operation-Guide/performance_trend.md
-          - name: 空间分析
-            href: Operation-Guide/space_analysis.md
-          - name: 实时性能
-            href: Operation-Guide/real-time_performance.md
-          - name: 一键诊断
-            href: Operation-Guide/click_diagnosis.md
-          - name: 锁分析
-            href: Operation-Guide/lock_analysis.md
-          - name: 巡检评分
-            href: Operation-Guide/patrol_scoring.md
-          - name: 慢查询
-            href: Operation-Guide/slow_query.md
-          - name: 表诊断
-            href: Operation-Guide/table_diagnosis.md
+      - name: 实例快速接入
+        href: Operation-Guide/instance-access.md
+      - name: 实例会话
+        href: Operation-Guide/conversation.md 
+      - name: 性能趋势
+        href: Operation-Guide/performance-trend.md
+      - name: 空间分析
+        href: Operation-Guide/space-analysis.md
+      - name: 实时性能
+        href: Operation-Guide/real-time-performance.md
+      - name: 一键诊断
+        href: Operation-Guide/click-diagnosis.md
+      - name: 锁分析
+        href: Operation-Guide/lock-analysis.md
+      - name: 巡检评分
+        href: Operation-Guide/patrol-scoring.md
+      - name: 慢查询
+        href: Operation-Guide/slow-query.md
+      - name: 表诊断
+        href: Operation-Guide/table-diagnosis.md
       - name: 监控大盘
-        href: Operation-Guide/monitor_market.md
+        href: Operation-Guide/monitor-market.md
       - name: 查看告警
-        href: Operation-Guide/alarm_general_view.md
+        href: Operation-Guide/alarm-general-view.md

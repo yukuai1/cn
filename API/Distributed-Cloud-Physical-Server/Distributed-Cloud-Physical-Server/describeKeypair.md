@@ -22,14 +22,14 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/keypairs/{keypairId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describekeypair#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**keypair**|[Keypair](describekeypair#keypair)|密钥对详细信息|
-### <div id="keypair">Keypair</div>
+|**keypair**|[Keypair](#keypair)|密钥对详细信息|
+### <div id="Keypair">Keypair</div>
 |名称|类型|描述|
 |---|---|---|
 |**keypairId**|String|密钥对id|
@@ -41,10 +41,6 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/keypairs/{keypairId}
 |**updateTime**|String|更新时间|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|Bad request|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

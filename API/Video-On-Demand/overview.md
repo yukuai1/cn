@@ -66,7 +66,8 @@ v1
 |**listDomains**|GET|查询域名列表|
 |**listHeaders**|GET|查询域名访问头参数列表|
 |**listQualityDetectionTemplates**|GET|查询质测模板列表。<br>|
-|**listSnapshotTemplates**|GET|查询截图模板列表。<br>允许通过条件过滤查询，支持的过滤字段如下：<br>  \- templateType[eq] 按模板类型精确查询<br>|
+|**listSnapshotTasks**|GET|查询视频截图任务列表<br>支持过滤查询：<br>  \- createTime,ge 最早任务创建时间<br>  \- createTime,le 最晚任务创建时间<br>  \- status,in 任务状态IN查询<br>  \- taskId,eq 任务ID精确查询<br>|
+|**listSnapshotTemplates**|GET|查询截图模板列表。<br>允许通过条件过滤查询，支持的过滤字段如下：<br>  \- snapshotType[eq] 按模板类型精确查询<br>  \- templateId[eq] 按模板ID精确查询<br>
 |**listTranscodeTemplateGroups**|GET|查询转码模板组列表。<br>|
 |**listTranscodeTemplates**|GET|查询转码模板列表。<br>允许通过条件过滤查询，支持的过滤字段如下：<br>  \- source[eq] 按模板来源精确查询<br>  \- templateType[eq] 按模板类型精确查询<br>|
 |**listVeditProjects**|GET|查询视频剪辑工程列表。<br>允许通过条件过滤查询，支持的过滤字段如下：<br>  \- projectId[eq] 按照工程ID精确查询<br>|
@@ -80,6 +81,7 @@ v1
 |**setRefererRule**|POST|设置CDN域名Referer防盗链规则|
 |**setURLRule**|POST|设置CDN域名URL鉴权规则|
 |**submitQualityDetectionJob**|POST|提交质检作业|
+|**submitSnapshotTask**|POST|提交截图作业<br>|
 |**submitTranscodeJob**|POST|提交转码作业|
 |**submitVeditJob**|POST|提交视频剪辑作业|
 |**updateCategory**|PUT|修改分类|

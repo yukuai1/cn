@@ -23,14 +23,14 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/deviceStock
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describedevicestock#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**devicesStock**|[ResourceStock[]](describedevicestock#resourcestock)| |
-### <div id="resourcestock">ResourceStock</div>
+|**devicesStock**|[ResourceStock[]](#resourcestock)| |
+### <div id="ResourceStock">ResourceStock</div>
 |名称|类型|描述|
 |---|---|---|
 |**deviceType**|String|实例类型, 如 edcps.c.normal1|
@@ -38,10 +38,6 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/deviceStock
 |**available**|Integer|可用库存|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|Bad request|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

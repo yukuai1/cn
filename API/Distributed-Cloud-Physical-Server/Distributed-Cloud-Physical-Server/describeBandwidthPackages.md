@@ -22,9 +22,9 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/bandwidthPackages
 |**pageNumber**|Integer|False|1|页码；默认为1|
 |**pageSize**|Integer|False|20|分页大小；默认为20；取值范围[20, 100]|
 |**name**|String|False| |共享带宽名称|
-|**filters**|[Filter[]](describebandwidthpackages#filter)|False| |bandwidthPackageId - 共享带宽ID，精确匹配，支持多个<br>|
+|**filters**|[Filter[]](#filter)|False| |bandwidthPackageId - 共享带宽ID，精确匹配，支持多个<br>|
 
-### <div id="filter">Filter</div>
+### <div id="Filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤条件的名称|
@@ -34,17 +34,17 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/bandwidthPackages
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describebandwidthpackages#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**bandwidthPackages**|[BandwidthPackage[]](describebandwidthpackages#bandwidthpackage)| |
+|**bandwidthPackages**|[BandwidthPackage[]](#bandwidthpackage)| |
 |**pageNumber**|Integer|页码；默认为1|
 |**pageSize**|Integer|分页大小；默认为20；取值范围[20, 100]|
 |**totalCount**|Integer|查询结果总数|
-### <div id="bandwidthpackage">BandwidthPackage</div>
+### <div id="BandwidthPackage">BandwidthPackage</div>
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|区域代码, 如cn-east-tz1|
@@ -55,8 +55,8 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/bandwidthPackages
 |**lineType**|String|链路类型|
 |**name**|String|名称|
 |**createTime**|String|创建时间|
-|**charge**|[Charge](describebandwidthpackages#charge)|计费信息|
-### <div id="charge">Charge</div>
+|**charge**|[Charge](#charge)|计费信息|
+### <div id="Charge">Charge</div>
 |名称|类型|描述|
 |---|---|---|
 |**chargeMode**|String|支付模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration|
@@ -66,10 +66,6 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/bandwidthPackages
 |**chargeRetireTime**|String|预期释放时间，资源的预期释放时间，预付费/后付费资源均有此值，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|Bad request|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

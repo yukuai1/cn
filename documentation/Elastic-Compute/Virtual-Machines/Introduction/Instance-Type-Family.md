@@ -670,14 +670,14 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 
 **规格类型特点：**
 
-* vCPU与内存比接近1:4
+* vCPU与内存比接近1:4或1:8
 * 异构计算
 * GPU：
-	* Nvidia Tesla P40 
-	* Nvidia Tesla V100
+	*  第三代：* Nvidia Tesla A100（显存80 GiB）
+	*  第一代：Nvidia Tesla P40 或 Nvidia Tesla V100（显存16 GiB）
 * 处理器：
-	* 2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器（P40）
-	* 2.2 GHz主频的Intel Xeon E5-2650 v4（Broadwell）处理器（V100）
+	* 第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器
+	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器（P40）或 2.2 GHz主频的Intel Xeon E5-2650 v4（Broadwell）处理器（V100）
 * 支持本地数据盘（临时存储），并支持以下类型云硬盘。请注意 **本地数据盘为临时存储盘，有丢失数据的风险（比如发生迁移或宿主机宕机等情况），不适用于应用层没有数据冗余架构的使用场景， 建议您使用云硬盘存储重要数据。** 
 	* 通用型SSD云盘
 	* 性能型SSD云盘
@@ -688,6 +688,15 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 	* 图形渲染 
 
 **实例规格**
+
+第三代：
+
+实例规格|vCPU（核）|内存（GiB）|GPU    |网卡数|单网卡队列数
+:---|:---|:---|:---|:---|:---
+|p.n3a100.7large|14|120|1 x Nvidia Tesla A100|8|4
+|p.n3a100.15large|30|240|2  x Nvidia Tesla A100|8|4
+|p.n3a100.31large|62|480|4  x Nvidia Tesla A100|8|4
+|p.n3a100.31xlarge|124|972|8  x Nvidia Tesla A100|8|4
 
 第一代：
 

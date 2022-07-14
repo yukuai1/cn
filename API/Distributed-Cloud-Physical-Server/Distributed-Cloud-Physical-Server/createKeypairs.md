@@ -24,10 +24,10 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/keypairs
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](createkeypairs#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**keypairId**|String|密钥对id|
@@ -40,10 +40,6 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/keypairs
 |**privateKey**|String|私钥|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|Bad request|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

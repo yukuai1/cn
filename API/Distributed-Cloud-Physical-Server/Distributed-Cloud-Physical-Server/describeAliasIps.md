@@ -22,9 +22,10 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/aliasIps
 |**subnetId**|String|False| |子网ID|
 |**instanceId**|String|False| |实例ID|
 |**cidr**|String|False| |CIDR段，模糊搜索|
-|**filters**|[Filter[]](describealiasips#filter)|False| |aliasIpId - 别名IP id<br/><br>|
+|**scope**|String|False| |查询范围，ipv4/ipv6/all,为空则默认为ipv4|
+|**filters**|[Filter[]](#filter)|False| |aliasIpId - 别名IP id<br/><br>|
 
-### <div id="filter">Filter</div>
+### <div id="Filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤条件的名称|
@@ -34,17 +35,17 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/aliasIps
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describealiasips#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**aliasIps**|[AliasIp[]](describealiasips#aliasip)| |
+|**aliasIps**|[AliasIp[]](#aliasip)| |
 |**pageNumber**|Integer|页码；默认为1|
 |**pageSize**|Integer|分页大小；默认为20；取值范围[20, 100]|
 |**totalCount**|Integer|查询结果总数|
-### <div id="aliasip">AliasIp</div>
+### <div id="AliasIp">AliasIp</div>
 |名称|类型|描述|
 |---|---|---|
 |**region**|String|地域|
@@ -54,13 +55,10 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/aliasIps
 |**secondaryCidrId**|String|次要cidr ID|
 |**aliasIpId**|String|别名IP ID|
 |**cidr**|String|cidr段|
+|**ipv6Cidr**|String|ipv6Cidr段|
 |**isBondEip**|Boolean|是否已绑弹性公网ip|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|Bad request|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

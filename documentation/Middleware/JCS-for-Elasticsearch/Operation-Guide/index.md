@@ -53,6 +53,6 @@
 
 ![sdsd](../../../../image/Elasticsearch/Index/Index-management-task-delete.png)
 
-2. 在删除确认框中
+2. 在删除确认框中，单击 **确定** 按钮删除索引任务。
 
 ![sdsd](../../../../image/Elasticsearch/Index/Index-management-task-delete-1.png)
