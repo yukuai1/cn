@@ -78,5 +78,3 @@ https://bastion.jdcloud-api.com/v1/regions/{regionId}/instances
 
 
 
-
-
