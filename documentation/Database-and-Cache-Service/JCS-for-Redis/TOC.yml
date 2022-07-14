@@ -115,8 +115,16 @@
             href: Operation-Guide/Monitoring/Alarm-Rules.md   
           - name: 节点异常监控
             href: Operation-Guide/Monitoring/Node-Notice.md    
-      - name: 数据迁移
-        href: Operation-Guide/Data-Migration.md   
+  - name: 数据迁移
+    items:
+      - name: 数据迁移工具介绍
+        href: Data-Migration/Data-Migration.md
+      - name: 云Redis实例间单向同步
+        href: Data-Migration/MigrationDoc-1.md
+      - name: 从自建Redis迁移到云Redis
+        href: Data-Migration/MigrationDoc-2.md
+      - name: 迁移的监控报警配置
+        href: Data-Migration/Migration-Alarm-Rules.md
   - name: 最佳实践
     items:
       - name: JedisPool 连接池优化
@@ -124,7 +132,7 @@
       - name: “京东到家”上云实践
         href: Best-Practices/Doc-1.md
       - name: Redis迁移解决方案
-        href: Best-Practices/Doc-2.md      
+        href: Best-Practices/Doc-2.md 
   - name: 性能测试
     items:
       - name: 测试环境
