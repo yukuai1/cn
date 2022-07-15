@@ -5,12 +5,15 @@ items:
     items:
       - name: 产品概述
         href: Introduction/Product-Overview.md
+      - name: 基础架构
+        href: Introduction/Basic-Infrastructure.md        
       - name: 产品功能
         href: Introduction/Features.md
-items:
   - name: 接入文档
     items: 
       - name: MCDN SDK iOS版手册
         href: Access-Document/SDK-iOS.md  
       - name: MCDN SDK Android版手册
         href: Access-Document/SDK-Android.md
+  - name: FAQ
+    href: FAQ/FAQ.md
