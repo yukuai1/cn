@@ -1,14 +1,14 @@
-# describeAnalysisTime
+# describeBigKeyAnalysisTime
 
 
 ## 描述
-获取自动缓存分析时间
+获取大key自动缓存分析时间
 
 ## 请求方式
 GET
 
 ## 请求地址
-https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstanceId}/analysisTime
+https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstanceId}/bigKeyAutoAnalysisTime
 
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -22,7 +22,7 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describeanalysistime#result)|结果|
+|**result**|[Result](describebigkeyanalysistime#result)|结果|
 |**requestId**|String|本次请求ID|
 
 ### <div id="result">Result</div>
@@ -34,31 +34,3 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |HTTP状态码|错误码|描述|
 |---|---|---|
 |**200**||OK|
-
-## 请求示例
-GET
-```
-@Test
-public void testGetInstanceAnalysisTime() {
-  // 1. 设置请求参数
-  DescribeAnalysisTimeRequest request = new DescribeAnalysisTimeRequest();
-  request.regionId("cn-north-1").cacheInstanceId("redis-1234");
-
-  // 2. 发起请求
-  DescribeAnalysisTimeResponse response = redisClient.describeAnalysisTime(request);
-
-  // 3. 处理响应结果
-  System.out.println(new Gson().toJson(response));
-}
-
-```
-
-## 返回示例
-```
-{
-    "requestId": "c3o559jq7qbwwfm9qngbsr7jm99h5mcb", 
-    "result": {
-        "time": "-"
-    }
-}
-```

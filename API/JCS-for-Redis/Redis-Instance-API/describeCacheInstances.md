@@ -22,6 +22,7 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance
 |**filters**|[Filter[]](describecacheinstances#filter)|False| |过滤属性：<br>cacheInstanceId - 实例Id，精确匹配，可选择多个<br>cacheInstanceName - 实例名称，模糊匹配<br>cacheInstanceStatus - 实例状态，精确匹配，可选择多个(running：运行中，error：错误，creating：创建中，changing：变配中，configuring：参数修改中，restoring：备份恢复中，deleting：删除中)<br>redisVersion - redis引擎版本，精确匹配，可选择2.8和4.0<br>instanceType - 实例类型，精确匹配（redis表示主从版，redis_cluster表示集群版）<br>chargeMode - 计费类型，精确匹配（prepaid_by_duration表示包年包月预付费，postpaid_by_duration表示按配置后付费）<br>|
 |**sorts**|[Sort[]](describecacheinstances#sort)|False| |排序属性：<br>createTime - 按创建时间排序(asc表示按时间正序，desc表示按时间倒序)<br>|
 |**tagFilters**|[TagFilter[]](describecacheinstances#tagfilter)|False| |标签的过滤条件|
+|**resourceGroupIds**|String[]|False| | |
 
 ### <div id="tagfilter">TagFilter</div>
 |名称|类型|是否必需|默认值|描述|
@@ -58,7 +59,7 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance
 |**cacheInstanceName**|String|实例名称|
 |**cacheInstanceClass**|String|规格代码，2.8、4.0标准版是实例规格，4.0自定义分片集群版实例表示单分片规格|
 |**cacheInstanceMemoryMB**|Integer|实例的总内存（MB），表示用户购买的可使用内存|
-|**cacheInstanceStatus**|String|实例状态：creating表示创建中，running表示运行中，error表示错误，changing表示变更规格中，deleting表示删除中，configuring表示修改参数中，restoring表示备份恢复中|
+|**cacheInstanceStatus**|String|实例状态：creating表示创建中，running表示运行中，error表示错误，changing表示变更规格中，deleting表示删除中，configuring表示修改参数中，restoring表示备份恢复中，upgrading表示升级中|
 |**cacheInstanceDescription**|String|实例描述|
 |**createTime**|String|创建时间（ISO 8601标准的UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ）|
 |**azId**|[AzId](describecacheinstances#azid)|az信息|
@@ -70,11 +71,23 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance
 |**instanceVersion**|String|实例的详细版本号，形如x.x-x.x|
 |**auth**|Boolean|连接实例时，是否需要密码认证，false表示无密码|
 |**redisVersion**|String|创建实例时选择的引擎版本：目前支持2.8和4.0|
-|**cacheInstanceType**|String|实例类型：master-slave表示主从版，cluster表示集群版|
+|**cacheInstanceType**|String|实例类型：master-slave（标准版）、cluster（代理集群版）、native-cluster（cluster集群版）|
 |**ipv6On**|Integer|是否支持IPv6，0表示不支持（只能用IPv4），1表示支持|
 |**tags**|[Tag[]](describecacheinstances#tag)|标签信息|
+|**resourceGroupId**|String|实例所属资源组ID|
 |**shardNumber**|Integer|实例分片数，标准版固定为1，自定义分片集群版实例分片数由用户创建时选择，其他实例为固定分片数|
 |**memoryMBPerShard**|Integer|单分片内存大小（MB）|
+|**otherDomains**|[InstanceDomain[]](describecacheinstances#instancedomain)|实例其他访问域名列表|
+|**slaveAppendonly**|String|从节点aof开关|
+|**databaseNum**|String|db数量|
+|**maxmemoryPolicy**|String|淘汰策略|
+|**replicaNumber**|Integer|副本数，含主副本|
+|**enableSmartProxy**|Integer|实例是否开启SmartProxy，当架构类型为native-cluster时才有效，1表示开启，0表示不开启|
+|**cpuArchType**|String|cpu架构类型:arm64、amd64|
+### <div id="instancedomain">InstanceDomain</div>
+|名称|类型|描述|
+|---|---|---|
+|**domainName**|String|域名|
 ### <div id="tag">Tag</div>
 |名称|类型|描述|
 |---|---|---|
@@ -91,13 +104,15 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance
 ### <div id="azid">AzId</div>
 |名称|类型|描述|
 |---|---|---|
-|**master**|String|缓存Redis主实例所在区域的可用区ID|
-|**slave**|String|缓存Redis从实例所在区域的可用区ID|
+|**azSpecifyType**|String|AZ指定方式，SpecifyByReplicaGroup表示按副本组指定，SpecifyByCluster表示按整个集群指定|
+|**azsForCluster**|String[]|为集群指定的AZ范围，按集群指定AZ时生效|
+|**master**|String|缓存Redis主实例所在区域的可用区ID，按副本组指定AZ时生效|
+|**slave**|String|缓存Redis从实例所在区域的可用区ID，按副本组指定AZ时生效|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|
 
 ## 请求示例
 GET

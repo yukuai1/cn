@@ -31,10 +31,16 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/availableResource
 ### <div id="availableresource">AvailableResource</div>
 |名称|类型|描述|
 |---|---|---|
-|**architectureType**|String|架构类型，目前支持：master-slave（标准版）、cluster（基于代理的集群版）|
+|**architectureType**|String|架构类型，目前支持：master-slave（标准版）、cluster（代理集群版）、native-cluster（cluster集群版）|
 |**architectureName**|String|架构类型名|
 |**recommended**|Boolean|是否推荐|
 |**soldOut**|Boolean|是否售罄|
+|**supportedMaxReplicas**|Integer|支持的最大副本数|
+|**supportedMinReplicas**|Integer|支持的最小副本数|
+|**supportedAzSpecifyType**|String[]|支持的AZ指定方式：SpecifyByReplicaGroup表示按副本组指定，SpecifyByCluster表示按整个集群指定|
+|**minAzLimitForCluster**|Integer|按集群指定AZ时，需要指定的最小AZ个数|
+|**supportedExposeType**|String[]|支持的外部访问方式：NodePort、LoadBalancer|
+|**supportSmartProxy**|Boolean|是否支持SmartProxy|
 |**availableEngineVersions**|[AvailableEngineVersion[]](describeavailableresource#availableengineversion)|引擎版本列表|
 ### <div id="availableengineversion">AvailableEngineVersion</div>
 |名称|类型|描述|
@@ -42,7 +48,16 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/availableResource
 |**version**|String|redis引擎主从版本号，目前支持：2.8、4.0|
 |**recommended**|Boolean|是否推荐|
 |**soldOut**|Boolean|是否售罄|
+|**availableCPUArchs**|[AvailableCPUArch[]](describeavailableresource#availablecpuarch)|售卖CPU架构列表|
+### <div id="availablecpuarch">AvailableCPUArch</div>
+|名称|类型|描述|
+|---|---|---|
+|**cpuArchInfo**|[CpuArchInfo](describeavailableresource#cpuarchinfo)|CPU架构详情|
+|**soldOut**|Boolean|是否售罄|
 |**availableMemorySpecs**|[AvailableMemorySpec[]](describeavailableresource#availablememoryspec)|售卖内存规格列表|
+|**shardNumberMin**|Integer|支持最小分片数|
+|**shardNumberMax**|Integer|支持最大分片数|
+|**maxMemoryMB**|Integer|支持的最大内存规格|
 ### <div id="availablememoryspec">AvailableMemorySpec</div>
 |名称|类型|描述|
 |---|---|---|
@@ -71,8 +86,13 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/availableResource
 |**azId**|String|逻辑可用区id|
 |**azName**|String|逻辑可用区名|
 |**soldOut**|Boolean|是否售罄|
+### <div id="cpuarchinfo">CpuArchInfo</div>
+|名称|类型|描述|
+|---|---|---|
+|**cpuType**|String|CPU架构类型|
+|**cpuName**|String|CPU架构显示名称|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|
