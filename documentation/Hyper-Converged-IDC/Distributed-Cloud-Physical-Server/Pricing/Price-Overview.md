@@ -7,17 +7,17 @@
 分布式云物理服务器支持包年包月和按配置计费类型。<br/>
 <table>
     <tr>
-        <td colspan="2"><B>实例规格类型</B></td> 
-        <td ><B>实例规格</B></td> 
-	<td ><B>节点</B></td> 
+        <td ><B>节点</B></td>
+	<td colspan="2"><B>实例规格类型</B></td> 
+        <td ><B>实例规格</B></td>  
 	<td ><B>包月价格（元/月）</B></td>
 	<td ><B>按配置价格（元/小时）</B></td>
     </tr>
     <tr>   
-        <td >计算型</td>	  
+        <td  rowspan="4">华东-济南</td>
+	<td >计算型</td>	  
 	<td >边缘计算效能型Ⅰ(二代)</td>
 	<td >edcps.c2.perf1</td>
-	<td  rowspan="4">华东-济南</td>
 	<td >6000</td>
 	<td >21</td>
        </tr>
@@ -50,8 +50,8 @@
 
 <table>
    <tr>
-       <td rowspan="2"><B>线路</B></td>
        <td rowspan="2"><B>节点</B></td>
+       <td rowspan="2"><B>线路</B></td>
        <td rowspan="2"><B>计费项</B></td>
        <td rowspan="2"><B>带宽值</B></td>
        <td ><B>包月价格</B></td>
@@ -63,8 +63,8 @@
      
    </tr>
    <tr>
-      <td rowspan="12">联通</td>
       <td rowspan="12">华东-济南<br/>
+      <td rowspan="12">联通</td>
       <td rowspan="6">带宽</td>
       <td>1Mbps</td>
       <td>20</td>
@@ -114,8 +114,8 @@
 
 <table>
    <tr>
-       <td rowspan="2"><B>线路</B></td>
        <td rowspan="2"><B>节点</B></td>
+       <td rowspan="2"><B>线路</B></td>
        <td rowspan="2"><B>计费项</B></td>
        <td rowspan="2"><B>带宽值</B></td>
        <td ><B>包月价格</B></td>
@@ -127,8 +127,8 @@
      
    </tr>
    <tr>
+      <td rowspan="12">华东-济南<br/>
       <td rowspan="12">联通</td>
-      <td rowspan="12">华东-台州<br/>
       <td rowspan="6">带宽</td>
       <td>1Mbps</td>
       <td>20</td>
