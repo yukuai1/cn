@@ -53,7 +53,7 @@
 
 预期结果是将以上数据分割成两条日志，每条日志的开头匹配年月日。
 
-注：正在表达式相关语法可参考：[正则表达式](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX-Extended_Regular_Expressions)
+注：正在表达式相关语法可参考：[正则表达式](https://www.cnblogs.com/crunchyou/p/4877427.html)
 
 ![](../../../../../image/LogService/operationguide/multilinetext.png)
 

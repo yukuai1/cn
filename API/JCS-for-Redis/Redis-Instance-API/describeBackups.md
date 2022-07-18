@@ -50,10 +50,9 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |**backupDownloadURL**|String|备份文件下载地址（已废弃，调用获取备份文件下载地址接口获取）|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**404**|NOT_FOUND|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|
 
 ## 请求示例
 GET
