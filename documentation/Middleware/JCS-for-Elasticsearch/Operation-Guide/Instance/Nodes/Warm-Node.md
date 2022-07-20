@@ -59,16 +59,59 @@ PUT warm_data_index/_settings
         "index.routing.allocation.require.box_type": "warm"
 }
 ```
+- 也可以去掉冷热数据配置，不受冷热数据标签影响：
+```
+PUT myindex/_settings
+{
+        "index.routing.allocation.require.box_type": null
+}
+```
 
-#### 验证设置的索引
+### 通过索引模板创建冷热索引
+通过设置template，可以通过索引模板将相应的索引存储到指定的冷热数据节点。如下所示，可以在Kibana中，通过模板在创建的时候把 warm_data_index* 的索引，存储在冷数据节点上。
+- **5.x版本**，可使用以下命令创建索引模板：
+```
+PUT _template/test
+{
+    "order": 1,
+    "template": "warm_data_index*",
+    "settings": {
+        "index": {
+            "refresh_interval": "30s",
+            "number_of_shards": "3",
+            "number_of_replicas": "1",
+            "routing.allocation.require.box_type": "warm"
+        }
+    }
+}
+```
+
+- **6.x及以上版本**，可使用以下命令创建索引模板：
+```
+PUT _template/test
+{
+    "order": 1,
+    "index_patterns": "warm_data_index*",
+    "settings": {
+        "index": {
+            "refresh_interval": "30s",
+            "number_of_shards": "3",
+            "number_of_replicas": "1",
+            "routing.allocation.require.box_type": "warm"
+        }
+    }
+}
+```
+
+### 验证设置的索引
 1. 创建测试索引
 ```
 PUT hot_warm_test_index
 {
-      "settings": {
-         "number_of_replicas": 1,
-         "number_of_shards": 3
-      }
+    "settings": {
+        "number_of_replicas": 1,
+        "number_of_shards": 3
+    }
 }
 ```
 2. 查看分片分配，可以看到分片均匀分配在热节点上。
@@ -87,7 +130,7 @@ hot_warm_test_index   1     r      node4
 ```
 PUT hot_warm_test_index/_settings
 {
-        "index.routing.allocation.require.temperature": "warm"
+    "index.routing.allocation.require.temperature": "warm"
 }
 ```
 查看分片分配，分片均分配到冷节点上。</br>
