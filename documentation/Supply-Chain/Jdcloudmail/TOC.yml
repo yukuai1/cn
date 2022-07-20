@@ -6,13 +6,13 @@ items:
     - name: 产品介绍
       href: Introduction/Product-Overview.md 
 
-- name: 产品定价
+- name: 快速入门
   items:
-    - name: 购买说明
+    - name: 购买和使用指引
       href: price/instructions.md      
 
 
-- name: 操作指南
+- name: 后台操作指南
   items:
     - name: 用户管理
       items:
