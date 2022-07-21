@@ -129,8 +129,6 @@
         items: 
         - name: 查看监控信息
           href: Operation-Guide/Monitoring.md 
-        - name: 查看状态信息
-          href: Operation-Guide/status.md
         - name: 创建告警规则
           href: Operation-Guide/Monitor_Rules.md
       - name: 日志查询
