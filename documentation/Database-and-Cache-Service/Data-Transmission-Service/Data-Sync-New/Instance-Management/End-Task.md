@@ -3,7 +3,7 @@
 
 
 ## 操作步骤
-1. 登录[数据传输控制台](https://dts-console-new.jdcloud.com/syncList)。
+1. 登录[数据传输控制台](https://ddts-console.jdcloud.com/syncList)。
 2. 根据任务类型，左侧导航栏切换到数据迁移、数据同步、数控订阅。
 3. 切换到实例所在地域。
 4. 选中目标实例，右侧操作列选择**结束任务**，进入确认弹窗。

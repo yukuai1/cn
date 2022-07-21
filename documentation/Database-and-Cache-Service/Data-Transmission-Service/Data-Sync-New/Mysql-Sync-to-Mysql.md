@@ -32,7 +32,7 @@ GRANT REPLICATION SLAVE,REPLICATION CLIENT ON *.* TO 'dbuser'@'%';
 |注意事项|&bull;DTS的延迟时间是根据同步到目标库的最后一条数据的时间戳和当前时间戳相比较得出，源数据库长时间未执行DML操作可能导致延迟信息不准|
 
 ## 操作步骤
-1. 登录 [数据同步购买页](https://dts-console-new.jdcloud.com/syncCreate),选择所需数据同步链路配置并进行购买。  
+1. 登录 [数据同步购买页](https://ddts-console.jdcloud.com/syncCreate),选择所需数据同步链路配置并进行购买。  
 
   |参数|说明|
   |-|-|
@@ -42,7 +42,7 @@ GRANT REPLICATION SLAVE,REPLICATION CLIENT ON *.* TO 'dbuser'@'%';
   |链路规格|选择需要的链路规格|
   |同步类型|选择需要的同步类型，当前仅支持单向同步|
   
-2. 购买完成后，返回[数据同步列表页](https://dts-console-new.jdcloud.com/syncList),等待链路创建完成后进行任务配置。
+2. 购买完成后，返回[数据同步列表页](https://ddts-console.jdcloud.com/syncList),等待链路创建完成后进行任务配置。
 3. 点击操作列的**配置同步任务**，进入任务配置页面。配置源端目标端的相关信息。
 
    ![配置同步任务](../../image/DTS/Mysql-Sync-to-Mysql-1.png)
