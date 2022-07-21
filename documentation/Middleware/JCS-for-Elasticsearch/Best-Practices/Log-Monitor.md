@@ -1,7 +1,7 @@
-# 配置Elasticsearch日志监控
+# Elasticsearch自定义日志监控
 
-您可以通过京东云提供的日志服务、云监控提供自定义监控服务，配置Elasticsearch的日志监控，完成配置过程后，您可以在日志服务控制台、云监控控制台查看自定义监控图，也可以通过云监控的OpenAPI查询自定义监控的数据。
-在下面的例子中，我们将配置Elasticsearch的日志监控，监控Elasticsearch主日志中的WARN级别日志次数，用户可以通过查看监控图或者调用OpenAPI的方式查询该自定义监控指标的数据。
+您可以通过京东云的日志服务、云监控提供的自定义监控服务，配置Elasticsearch的自定义日志监控，配置完成后，您可以在日志服务或云监控的控制台查看自定义监控图，也可以通过云监控的OpenAPI查询自定义日志监控的数据。
+在下面的例子中，我们将配置Elasticsearch的自定义日志监控，监控 **Elasticsearch主日志中的WARN级别日志次数** ，以及通过查看自定义监控图或者调用OpenAPI的方式查询该自定义日志监控指标的数据。
 
 ## 开通ES集群的日志服务
 1. 登陆 [京东云Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，在集群列表页中，点击集群名称进入集群详情页面。
@@ -12,23 +12,23 @@
 3. 参考 [Elasticsearch日志服务](../Operation-Guide/eslog.md) 开通Elasticsearch日志服务。
 
 ## 配置日志监控
-1. 登陆 [京东云日志服务控制台](https://logs-console.jdcloud.com/)，也可通过在京东云控制台选择【云服务-监控与运维-日志服务】切换至日志服务控制台。
-2. 选择集群所在的区域后，在日志集列表搜索框中，输入上面记录的 **集群ID** 搜索日志集。
+1. 登陆 [京东云日志服务控制台](https://logs-console.jdcloud.com/)，或通过在京东云控制台选择【云服务-监控与运维-日志服务】切换至日志服务控制台。
+2. 选择目标集群所在的区域后，在日志集列表搜索框中，输入上面记录的 **集群ID** 搜索目标集群的Elasticsearch日志集。
 
 ![ES_log_monitor_cfg_1](../../../../image/Elasticsearch/Log_Monitor/ES_log_monitor_cfg_1.png)
 
-3. 点击 日志集名称 进入对应的日志集。选择日志主题**master-log**，展开进入 **master-log -> 日志监控 -> 监控任务列表**。
+3. 点击 日志集名称 进入对应的日志集。选择日志主题 **master-log**，展开进入 【master-log - 日志监控 - 监控任务列表】。
 
 ![ES_log_monitor_cfg_2](../../../../image/Elasticsearch/Log_Monitor/ES_log_monitor_cfg_2.png)
 
-4. 点击 **新建监控任务**，在 **新建监控任务** 页面中：
+4. 点击 **新建监控任务**，在新建监控任务页面中，配置监控任务参数：
 - 配置监控任务名称。
 - 配置统计周期：1min
 - 配置方式：可视化
 - 筛选设置：全文筛选、“WARN”
 - 监控指标设置：日志原文、计数、#metric名称#、count
 
-> #metric名称#：在调用云监控接口获取监控数据时会使用到，建议对所有集群配置同一个metric名称。例如：ES_Log_Exception。
+> **#metric名称#**：在调用云监控接口获取监控数据时会使用到，建议对所有集群配置同一个metric名称。例如：ES_Log_Exception。
 
 ![ES_log_monitor_cfg_3](../../../../image/Elasticsearch/Log_Monitor/ES_log_monitor_cfg_3.png)
 
@@ -41,15 +41,20 @@
 
 ## 查看监控图
 ### 在日志服务控制台查看监控图
-- 可以在日志服务控制台，在对应ES日志集的 **master-log -> 日志监控 -> 监控任务列表** 中，选择目标监控任务右侧的【操作-监控图】，查看对应日志监控任务的监控图。
+- 可以在日志服务控制台，在对应ES日志集的 【master-log - 日志监控 - 监控任务列表】 中，选择目标监控任务右侧的【操作-监控图】，查看对应日志监控任务的监控图。
 
 ![ES_log_monitor_cfg_5](../../../../image/Elasticsearch/Log_Monitor/ES_log_monitor_cfg_5.png)
 
-- 也可以在日志服务控制台，在对应ES日志集的 **master-log -> 日志监控 -> 监控图** 中，选择对应的监控任务（可多选），查看对应日志监控任务的监控图。
+- 也可以在日志服务控制台，在对应ES日志集的【master-log - 日志监控 - 监控图】 中，选择对应的监控任务（可多选），查看对应日志监控任务的监控图。
 
 ![ES_log_monitor_cfg_6](../../../../image/Elasticsearch/Log_Monitor/ES_log_monitor_cfg_6.png)
 
 ### 在云监控控制台查看监控图
+自定义监控图查看、添加报警规则等详细步骤可参考：
+- [查看监控图](../../../../documentation/Management/Monitoring/Operation-Guide/custom-monitoring/chart-view.md)
+- [添加报警规则](../../../../documentation/Management/Monitoring/Operation-Guide/custom-monitoring/create-alarmrule-custom.md)
+</br>
+
 1. 登陆 [京东云云监控控制台](https://cms-console.jdcloud.com/)，也可通过在京东云控制台选择【云服务-监控与运维-云监控】切换至云监控控制台。
 2. 在左侧菜单栏中选择 **自定义监控**。
 3. 选择监控图配置后，可以查看前面日志监控配置的监控图。
