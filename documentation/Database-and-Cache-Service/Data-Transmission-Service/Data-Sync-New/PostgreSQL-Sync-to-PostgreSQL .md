@@ -46,7 +46,7 @@ GRANT SELECT,INSERT,UPDATE,DELETE ON TABLE {table_name} TO {user_name};
 | 注意事项 | 同步过程中源端不能发生高可用切换，源端发生高可用切换将导致同步失败。 |
 
 ## 操作步骤
-1. 登录 [数据同步购买页](https://dts-console-new.jdcloud.com/syncCreate),选择所需数据同步链路配置并进行购买。
+1. 登录 [数据同步购买页](https://ddts-console.jdcloud.com/syncCreate),选择所需数据同步链路配置并进行购买。
 
   |参数|说明|
   |-|-|
@@ -56,7 +56,7 @@ GRANT SELECT,INSERT,UPDATE,DELETE ON TABLE {table_name} TO {user_name};
   |链路规格|选择需要的链路规格|
   |同步类型|选择需要的同步类型，当前仅支持单向同步|
   
-2. 购买完成后，返回[数据同步详情页](https://dts-console-new.jdcloud.com/syncList),等待链路创建完成后进行任务配置。
+2. 购买完成后，返回[数据同步详情页](https://ddts-console.jdcloud.com/syncList),等待链路创建完成后进行任务配置。
 3. 点击操作列的**配置同步任务**，进入任务配置页面。配置源端目标端的相关信息。
 
  场景一：自建数据库或通过专线连接数据库同步到云数据库PostgreSQL。
