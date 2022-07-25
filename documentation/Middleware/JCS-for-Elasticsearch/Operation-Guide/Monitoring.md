@@ -65,7 +65,10 @@
 | write线程池线程队列大小 | jmiss.es.node.write_queue | count | 展示了集群各节点的write线程池线程队列大小，如果队列大小一直很大，请考虑扩展您的集群 | 
 | write线程池reject任务数 | jmiss.es.node.write_rejected | count | 展示了集群各节点单位统计周期（1min）内write线程池reject任务数 | 
 | 节点load_1m | | count| 展示了集群中各节点在1分钟内的负载情况，表示各节点的系统繁忙程度。该指标的正常数值，应该低于对应节点规格的CPU核数。|
-| FullGc次数 | | count | 展示了集群中1分钟内的gc总次数。|
+| FullGc次数 | jmiss.es.node.jvm_gc_old_count | count | 展示了集群中1分钟内的Gc总次数。|
+| FullGc耗时 | jmiss.es.node.jvm_gc_old_time | count | 展示了集群中1分钟内的Gc平均耗时。|
+| YoungGc次数 | jmiss.es.node.jvm_gc_young_count | count | 展示了集群中1分钟内的Young Gc总次数。|
+| YoungGc耗时 | jmiss.es.node.jvm_gc_young_time | count | 展示了集群中1分钟内的Young Gc平均耗时。|
 
 
 
