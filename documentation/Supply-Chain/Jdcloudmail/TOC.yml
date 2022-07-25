@@ -10,9 +10,13 @@ items:
   items:
     - name: 购买和使用指引
       href: price/instructions.md      
+    - name: 域名备案和解析
+      href: price/Configure_domain.md  
+    - name: 用户登录邮箱
+      href: price/visit.md  
 
 
-- name: 后台操作指南
+- name: 后台管理指南
   items:
     - name: 用户管理
       items:
