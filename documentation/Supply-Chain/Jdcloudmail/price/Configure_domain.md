@@ -12,7 +12,7 @@
 
 京东云提供[备案服务](https://record-console.jdcloud.com)，助力您便捷完成备案。
 
-购买正式的邮箱服务1年及以上的版本，可以提交工单获取授权码。
+购买正式的邮箱服务1年及以上的版本，可以提交工单获取授权码，一个正式版邮箱提供一个备案授权码。
 
 
 ![图片名称](https://img1.jcloudcs.com/image/docs/site-21.png)
