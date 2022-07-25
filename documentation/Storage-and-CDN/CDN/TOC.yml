@@ -53,7 +53,7 @@ items:
         href: Operation-Guide/Access-control.md  
       - name: 高级配置
         href: Operation-Guide/Advanced-configuration.md
-      - name: 设Https
+      - name: 设置Https
         href: Operation-Guide/Set-Https.md
       - name: 回源配置
         items:
