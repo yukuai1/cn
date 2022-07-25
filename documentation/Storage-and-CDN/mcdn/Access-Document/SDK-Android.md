@@ -24,13 +24,13 @@ MCDN SDK内部包含精简的HTTP Server，初始化时会在本地开启HTTP服
 
 **2、配置AndroidMainfest.xml**
 
-<uses-permission android:name="android.permission.INTERNET" />
+\<uses-permission android:name="android.permission.INTERNET" />
 
 **3、接口说明**
 
 <table><tr><td>函数名</td><td>参数</td><td>返回值</td><td>功能描述</td></tr><tr><td>Init</td><td>String (申请的app id)
   
-String (申请的app key)</td><td>int (0成功，其他失败)</td><td>初始化SDK，启动本地HTTP服务，应在应用启动时调用</td></tr><tr><td>McdnGenerateUrl</td><td>String (原始播放地址)</td><td>String (重定向的播放地址)</td><td>重写视频请求地址</td></tr><tr><td>GetSourceInfo</td><td>String (原始播放地址)</td><td>String (单源多源流量统计字符串json格式)</td><td>统计字符串(json)</td></tr><tr><td>Release</td><td>无</td><td>无</td><td>停止HTTP服务，释放SDK占用的资源</td></tr></table>
+String (申请的app key)</td><td>int (0成功，其他失败)</td><td>初始化SDK，启动本地HTTP服务，应在应用启动时调用</td></tr><tr><td>McdnGenerateUrl</td><td>String (原始播放地址)</td><td>String (成功返回 重定向播放地址，失败返回null)</td><td>重写资源请求地址</td></tr><tr><td>GetSourceInfo</td><td>String (原始播放地址)</td><td>String (成功返回 单源多源流量统计字符串json格式，失败返回 null)</td><td>统计任务的CDN流量和Peer流量，单位Byte</td></tr><tr><td>Release</td><td>无</td><td>无</td><td>停止HTTP服务，释放SDK占用的资源</td></tr></table>
 
 **4、SDK使用示例**
 
