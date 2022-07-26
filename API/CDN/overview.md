@@ -24,7 +24,6 @@ v1
 |**deleteDomain**|DELETE|删除加速域名|
 |**deleteForbiddenStream**|POST|删除禁播流|
 |**deleteHttpHeader**|PUT|删除httpHeader|
-|**getAllUpperNodeIpList**|GET|获取所有上层节点的ip|
 |**getDomainDetail**|GET|查询加速域名详情|
 |**getDomainList**|GET|查询加速域名接口|
 |**getDomainListByFilter**|POST|通过标签查询加速域名接口|
