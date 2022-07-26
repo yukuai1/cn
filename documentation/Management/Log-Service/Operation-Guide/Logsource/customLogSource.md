@@ -127,6 +127,12 @@
 
 ![](../../../../../image/LogService/operationguide/nodefile.png)
 
+### 2.3 Logback Appender
+
+可使用JDCloud Logback Appender将日志写入到京东云日志服务中，使用方法见[Github-JDCloud_logback_appender](https://github.com/JDCloudLogs/logback-appender)
+
+我们同时提供了高并发写日志的java类库，[配置方式](https://github.com/JDCloudLogs/log-producer)，[代码示例](https://github.com/JDCloudLogs/log-producer-sample)
+
 ## 3. 注意事项
 
 - 当前版本仅支持采集Linux云主机和k8s集群工作负载模式的日志。
