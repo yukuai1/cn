@@ -225,6 +225,8 @@ items:
               href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/getObject-JavaSDK.md                
             - name: 管理对象
               href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/Manage-Object-JavaSDK.md
+            - name: 生成预签名URL
+              href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/Signature-In-URL-1.md
             - name: TransferManager
               href: API-Reference-S3-Compatible/Compatibility-Tools/SDK-Java/TransferManager.md
        - name:  兼容S3  SDK-Python（推荐）
