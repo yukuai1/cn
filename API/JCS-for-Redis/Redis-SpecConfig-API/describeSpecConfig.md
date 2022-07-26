@@ -65,9 +65,9 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/specConfig
 |**ipNumberList**|Integer[]|需要的IP数列表|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|
 
 ## 请求示例
 GET

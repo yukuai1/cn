@@ -85,6 +85,24 @@ items:
           - name: openTable
             herf: Sql/openTable.md
 
+      - name: 视图
+        items:
+          - name: generalAlterView
+            herf: DmsView/generalAlterView.md
+          - name: generalCreateView
+            herf: DmsView/generalCreateView.md
+          - name: generalDropView
+            herf: DmsView/generalDropView.md
+          - name: viewInfo
+            herf: DmsView/viewInfo.md
+
+      - name: 可编程对象操作
+        items:
+          - name: exeProgram
+            herf: DmsProgram/exeProgram.md
+          - name: programList
+            herf: DmsProgram/programList.md
+
       - name: 枚举参数说明
         items:
           - name: 枚举类型定义

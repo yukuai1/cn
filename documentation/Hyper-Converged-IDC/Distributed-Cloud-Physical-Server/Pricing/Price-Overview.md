@@ -7,26 +7,33 @@
 分布式云物理服务器支持包年包月和按配置计费类型。<br/>
 <table>
     <tr>
-        <td colspan="2"><B>实例规格类型</B></td> 
-        <td ><B>实例规格</B></td> 
-	<td ><B>节点</B></td> 
+        <td ><B>节点</B></td>
+	<td colspan="2"><B>实例规格类型</B></td> 
+        <td ><B>实例规格</B></td>  
 	<td ><B>包月价格（元/月）</B></td>
 	<td ><B>按配置价格（元/小时）</B></td>
     </tr>
     <tr>   
-        <td >计算型</td>	  
+        <td  rowspan="4">华东-济南</td>
+	<td >计算型</td>	  
 	<td >边缘计算效能型Ⅰ(二代)</td>
 	<td >edcps.c2.perf1</td>
-	<td  rowspan="3">华东-台州</td>
 	<td >6000</td>
 	<td >21</td>
        </tr>
     <tr>   
 	<td >计算型</td>
-	<td >边缘计算效能型 Ⅱ(二代)</td>
-	<td >edcps.c2.perf2</td>
-	<td >8600</td>
-	<td >30</td>
+	<td >边缘标准计算型Ⅰ</td>
+	<td >edcps.c.normal1</td>
+	<td >4400</td>
+	<td >15</td>
+    </tr>
+    <tr>   
+	<td >计算型</td>
+	<td >边缘标准计算型Ⅱ</td>
+	<td >edcps.c.normal2</td>
+	<td >5800</td>
+	<td >20</td>
     </tr>
     <tr>   
 	<td >存储型</td>
@@ -43,8 +50,8 @@
 
 <table>
    <tr>
-       <td rowspan="2"><B>线路</B></td>
        <td rowspan="2"><B>节点</B></td>
+       <td rowspan="2"><B>线路</B></td>
        <td rowspan="2"><B>计费项</B></td>
        <td rowspan="2"><B>带宽值</B></td>
        <td ><B>包月价格</B></td>
@@ -56,42 +63,42 @@
      
    </tr>
    <tr>
-      <td rowspan="12">电信</td>
-      <td rowspan="12">华东-台州<br/>
+      <td rowspan="12">华东-济南<br/>
+      <td rowspan="12">联通</td>
       <td rowspan="6">带宽</td>
       <td>1Mbps</td>
-      <td>24</td>
-      <td>0.081</td>
+      <td>20</td>
+      <td>0.067</td>
       
    </tr>
    <tr>
       <td>2Mbps</td>
-      <td>49</td>
-      <td>0.162</td>
+      <td>40</td>
+      <td>0.133</td>
       
    </tr>
    <tr>
      <td>3Mbps</td>
-     <td>73</td>
-     <td>0.243</td>
+     <td>60</td>
+     <td>0.200</td>
 	
    </tr>
    <tr>
      <td>4Mbps</td>
-     <td>97</td>
-     <td>0.324</td>
+     <td>80</td>
+     <td>0.267</td>
      
    </tr>
    <tr>
      <td>5Mbps</td>
-     <td>121</td>
-     <td>0.405</td>
+     <td>100</td>
+     <td>0.333</td>
      
    </tr>
    <tr>
      <td>6Mbps及以上，n为带宽值(n>=6)，每Mbps费用</td>
-     <td>n*24.3</td>
-     <td>n*0.081</td>
+     <td>n*20</td>
+     <td>n*0.0067</td>
   </tr>
   <tr>
     <td rowspan="1">额外上行带宽</td>
@@ -107,8 +114,8 @@
 
 <table>
    <tr>
-       <td rowspan="2"><B>线路</B></td>
        <td rowspan="2"><B>节点</B></td>
+       <td rowspan="2"><B>线路</B></td>
        <td rowspan="2"><B>计费项</B></td>
        <td rowspan="2"><B>带宽值</B></td>
        <td ><B>包月价格</B></td>
@@ -120,42 +127,42 @@
      
    </tr>
    <tr>
-      <td rowspan="12">电信</td>
-      <td rowspan="12">华东-台州<br/>
+      <td rowspan="12">华东-济南<br/>
+      <td rowspan="12">联通</td>
       <td rowspan="6">带宽</td>
       <td>1Mbps</td>
-      <td>24</td>
-      <td>0.081</td>
+      <td>20</td>
+      <td>0.067</td>
       
    </tr>
    <tr>
       <td>2Mbps</td>
-      <td>49</td>
-      <td>0.162</td>
+      <td>40</td>
+      <td>0.133</td>
       
    </tr>
    <tr>
      <td>3Mbps</td>
-     <td>73</td>
-     <td>0.243</td>
+     <td>60</td>
+     <td>0.200</td>
 	
    </tr>
    <tr>
      <td>4Mbps</td>
-     <td>97</td>
-     <td>0.324</td>
+     <td>80</td>
+     <td>0.267</td>
      
    </tr>
    <tr>
      <td>5Mbps</td>
-     <td>121</td>
-     <td>0.405</td>
+     <td>100</td>
+     <td>0.333</td>
      
    </tr>
    <tr>
      <td>6Mbps及以上，n为带宽值(n>=6)，每Mbps费用</td>
-     <td>n*24.3</td>
-     <td>n*0.081</td>
+     <td>n*20</td>
+     <td>n*0.067</td>
   </tr>
   <tr>
     <td rowspan="1">额外上行带宽</td>

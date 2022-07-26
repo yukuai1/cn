@@ -31,10 +31,9 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 |**time**|String|-表示为关闭，HH:mm-HH:mm 时区，例如"01:00-02:00 +0800"，表示东八区的1点到2点|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**404**|NOT_FOUND|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|
 
 ## 请求示例
 GET
