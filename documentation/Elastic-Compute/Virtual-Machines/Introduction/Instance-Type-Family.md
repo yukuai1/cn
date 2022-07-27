@@ -764,7 +764,8 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 **规格类型特点：**
 
 * 处理器：
-	* 2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
+	* 第四代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
+	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 * 支持以下类型云硬盘：
 	* 通用型SSD云盘
 	* 性能型SSD云盘
@@ -781,6 +782,7 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 
 实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数
 |:---|:---|:---|:---|:---
+|m.n4.metal|128|1024|1|32
 |g.n2.metal|80|384|8|8
 
 <div id="user-content-14"></div>
