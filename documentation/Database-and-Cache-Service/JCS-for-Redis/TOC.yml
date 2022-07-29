@@ -11,12 +11,14 @@
         href: Introduction/Features.md
       - name: 产品规格
         href: Introduction/Specifications.md
+      - name: 容灾恢复
+        href: Introduction/Benefits.md        
       - name: 基本概念
         href: Introduction/Core-Concepts.md
       - name: 地域及可用区
         href: Introduction/Regions-and-AvailabilityZones.md
-      - name: 产品优势
-        href: Introduction/Benefits.md         
+      - name: 命令支持
+        href: Introduction/Command-Supported.md 
       - name: 限制说明
         href: Introduction/Restrictions.md
       - name: 应用场景 
