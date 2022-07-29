@@ -121,7 +121,7 @@
           href: Operation-Guide/creatsnapshot.md
         - name: 查看快照信息
           href: Operation-Guide/viewsnapshot.md 
-        - name: 快照指定索引
+        - name: 从快照中恢复数据
           href: Operation-Guide/indexsnapshot.md
         - name: 删除快照
           href: Operation-Guide/deletesnapshot.md
