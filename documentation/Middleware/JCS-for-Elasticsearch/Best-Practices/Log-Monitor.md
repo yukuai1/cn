@@ -1,19 +1,19 @@
-# Elasticsearch自定义日志监控
+# Elasticsearch 自定义日志监控
 
-您可以通过京东云的日志服务、云监控提供的自定义监控服务，配置Elasticsearch的自定义日志监控，配置完成后，您可以在日志服务或云监控的控制台查看自定义监控图，也可以通过云监控的OpenAPI查询自定义日志监控的数据。
-在下面的例子中，我们将配置Elasticsearch的自定义日志监控，监控 **Elasticsearch主日志中的WARN级别日志次数** ，以及通过查看自定义监控图或者调用OpenAPI的方式查询该自定义日志监控指标的数据。
+您可以通过京东云的日志服务、云监控提供的自定义监控服务，配置 Elasticsearch 的自定义日志监控，配置完成后，您可以在日志服务或云监控的控制台查看自定义监控图，也可以通过云监控的 OpenAPI 查询自定义日志监控的数据。
+在下面的例子中，我们将配置 Elasticsearch 的自定义日志监控，监控 **Elasticsearch 主日志中的 WARN 级别日志次数** ，以及通过查看自定义监控图或者调用 OpenAPI 的方式查询该自定义日志监控指标的数据。
 
 ## 开通ES集群的日志服务
-1. 登陆 [京东云Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，在集群列表页中，点击集群名称进入集群详情页面。
-2. 在集群详情页面，记录下集群ID（例如本例子中，集群ID为es-ktmwlruuso）
+1. 登陆 [京东云 Elasticsearch 控制台](https://es-console.jdcloud.com/clusters)，在集群列表页中，点击集群名称进入集群详情页面。
+2. 在集群详情页面，记录下集群 ID （例如本例子中，集群 ID 为 es-ktmwlruuso ）
 
 ![ES_log_monitor_on](../../../../image/Elasticsearch/Log_Monitor/ES_log_monitor_on.png)
 
-3. 参考 [Elasticsearch日志服务](../Operation-Guide/eslog.md) 开通Elasticsearch日志服务。
+3. 参考 [ Elasticsearch 日志服务](../Operation-Guide/eslog.md) 开通 Elasticsearch 日志服务。
 
 ## 配置日志监控
 1. 登陆 [京东云日志服务控制台](https://logs-console.jdcloud.com/)，或通过在京东云控制台选择【云服务-监控与运维-日志服务】切换至日志服务控制台。
-2. 选择目标集群所在的区域后，在日志集列表搜索框中，输入上面记录的 **集群ID** 搜索目标集群的Elasticsearch日志集。
+2. 选择目标集群所在的区域后，在日志集列表搜索框中，输入上面记录的 **集群 ID** 搜索目标集群的 Elasticsearch 日志集。
 
 ![ES_log_monitor_cfg_1](../../../../image/Elasticsearch/Log_Monitor/ES_log_monitor_cfg_1.png)
 
@@ -28,7 +28,7 @@
 - 筛选设置：全文筛选、“WARN”
 - 监控指标设置：日志原文、计数、#metric名称#、count
 
-> **#metric名称#**：在调用云监控接口获取监控数据时会使用到，建议对所有集群配置同一个metric名称。例如：ES_Log_Exception。
+> **#metric名称#**：在调用云监控接口获取监控数据时会使用到，建议对所有集群配置同一个 metric 名称。例如：ES_Log_Exception。
 
 ![ES_log_monitor_cfg_3](../../../../image/Elasticsearch/Log_Monitor/ES_log_monitor_cfg_3.png)
 
@@ -41,11 +41,11 @@
 
 ## 查看监控图
 ### 在日志服务控制台查看监控图
-- 可以在日志服务控制台，在对应ES日志集的 【master-log - 日志监控 - 监控任务列表】 中，选择目标监控任务右侧的【操作-监控图】，查看对应日志监控任务的监控图。
+- 可以在日志服务控制台，在对应 Elasticsearch 日志集的 【master-log - 日志监控 - 监控任务列表】 中，选择目标监控任务右侧的【操作-监控图】，查看对应日志监控任务的监控图。
 
 ![ES_log_monitor_cfg_5](../../../../image/Elasticsearch/Log_Monitor/ES_log_monitor_cfg_5.png)
 
-- 也可以在日志服务控制台，在对应ES日志集的【master-log - 日志监控 - 监控图】 中，选择对应的监控任务（可多选），查看对应日志监控任务的监控图。
+- 也可以在日志服务控制台，在对应 Elasticsearch 日志集的【master-log - 日志监控 - 监控图】 中，选择对应的监控任务（可多选），查看对应日志监控任务的监控图。
 
 ![ES_log_monitor_cfg_6](../../../../image/Elasticsearch/Log_Monitor/ES_log_monitor_cfg_6.png)
 
@@ -59,15 +59,15 @@
 2. 在左侧菜单栏中选择 **自定义监控**。
 3. 选择监控图配置后，可以查看前面日志监控配置的监控图。
 - 检索方式：新增检索方式；
-- 地域：选择目标Elasticsearch集群所在的区域；
-- 命名空间：输入logs并点击搜索，在下拉列表中选择 **日志服务（系统）**；
+- 地域：选择目标 Elasticsearch 集群所在的区域；
+- 命名空间：输入 logs 并点击搜索，在下拉列表中选择 **日志服务（系统）**；
 - 监控指标：输入您在日志监控配置中输入的#metric名称#，例如：ES_Log_Exception；
 - 维度：选择日志集、日志主题（可选）、taskId（可选））
 
 ![ES_log_monitor_cfg_7](../../../../image/Elasticsearch/Log_Monitor/ES_log_monitor_cfg_7.png)
 
 ## 调用云监控接口获取监控数据
-您可以通过调用 [云监控describeCustomMetricData 接口](https://docs.jdcloud.com/cn/monitoring/api/describecustommetricdata?content=API)获取配置的日志监控指标的数据，其中：
+您可以通过调用 [云监控 describeCustomMetricData 接口](https://docs.jdcloud.com/cn/monitoring/api/describecustommetricdata?content=API)获取配置的日志监控指标的数据，其中：
 - namespaceUID：logs-metric
 - QueryOption -> metric：输入前面配置的 #metric名称#，例如：ES_Log_Exception；
 
