@@ -75,8 +75,6 @@
           href: Operation-Guide/Instance/Nodes/Dedicated-master-node.md
         - name: 协调节点
           href: Operation-Guide/Instance/Nodes/Coordinating-node.md
-        - name: 冷热数据分离
-          href: Operation-Guide/Instance/Nodes/Warm-Node.md
         - name: 实例生命周期
           href: Operation-Guide/Instance/Manage/Instance-status.md
         - name: 修改实例名称
@@ -191,6 +189,8 @@
        href: Best-Practices/mysqltoes.md
      - name: 第三方Elasticsearch数据迁移
        href: Best-Practices/Ali-to-es.md
+      - name: 第三方Elasticsearch数据迁移
+       href: Best-Practices/Log-Monitor.md
      - name: 性能指标
        items: 
         - name: 性能测试步骤
