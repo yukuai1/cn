@@ -3,17 +3,17 @@
 - 登录京东云官网。选择产品-弹性计算-云主机CVM，点击立即购买进入云主机购买页面。
 - 访问[实例控制台](https://cns-console.jdcloud.com/host/compute/list)，或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏【弹性计算】-【云主机】-【实例】进入实例列表页。点击【创建】按钮，进入云主机购买页面。建议您根据业务情况选择实例所在地域，关于京东云地域详细信息，请参见[地域与可用区](../Introduction/Regions-and-AvailabilityZones.md)。
 ![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0601.jpg)
+### 操作步骤
+京东
 ### 步骤1：基础配置
 基础配置主要包括购买实例的基础需求（计费模式、地域和可用区）和实例的基础资源（实例规格、镜像、存储）。完成基础配置后，点击“下一步，网络配置”。
 1. 选择创建方式：
  * 提供三种创建方式 **自定义创建**、**在高可用组内创建**、**指定宿主机创建**，后两种需要您预先创建好高可用组和专有资源池或专有宿主机，如果是除此使用保持默认选项“自定义创建”即可。
-![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0604.png)
+![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0701.png)
 2. 选择计费模式：
  * 包年包月和按配置计费，包年包月按一个整月进行购买付费，按配置计费按照实际使用的时长（精确至秒）每小时进行扣费。关于两种计费方式的区别，请参见[计费规则](../Pricing/Billing-Rules.md)。
-![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0603.png)
 3. 选择地域与可用区：
  * 在此步骤可以选择实例对应的地域（华北-北京、华南-广州、华东-宿迁及华东-上海）及可用区，请注意“不同地域资源内网不互通，创建之后不可更改”，如果所选地域限额已满，可以通过[提交工单](https://ticket.jdcloud.com/myorder/submit)提升限额。
-![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0602.png)
 4. 选择镜像：
  * 镜像分为云硬盘系统盘镜像及本地盘系统盘镜像，前者仅支持创建系统盘为云硬盘的实例，后者仅支持创建系统盘为本地盘的实例。
 此外，每类镜像都分提供以下镜像类型：**官方镜像**、**私有镜像**、**共享镜像**、**镜像市场镜像**四类镜像，详细区分请参见[镜像概述](../Operation-Guide/Image/Image-Overview.md)。
@@ -64,7 +64,7 @@
   * 若购买包年包月实例，则需要设置购买时长，最短为1个月，最长为3年。若需要更长服务时长请[提交工单](https://ticket.jdcloud.com/myorder/submit)。
   * 购买包年包月实例时，可直接为其及关联资源（云硬盘、弹性公网IP）配置自动续费，自动续费时长默认同购买时长，如后续需要调整可随时前往续费管理控制台调整。
 ![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0614.png)
-
+### 步骤4：确认订单
 ## 相关参考
 
 [地域与可用区](../Introduction/Regions-and-AvailabilityZones.md)
