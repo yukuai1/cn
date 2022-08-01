@@ -119,7 +119,7 @@
           href: Operation-Guide/creatsnapshot.md
         - name: 查看快照信息
           href: Operation-Guide/viewsnapshot.md 
-        - name: 快照指定索引
+        - name: 从快照中恢复数据
           href: Operation-Guide/indexsnapshot.md
         - name: 删除快照
           href: Operation-Guide/deletesnapshot.md
@@ -127,8 +127,6 @@
         items: 
         - name: 查看监控信息
           href: Operation-Guide/Monitoring.md 
-        - name: 查看状态信息
-          href: Operation-Guide/status.md
         - name: 创建告警规则
           href: Operation-Guide/Monitor_Rules.md
       - name: 日志查询
@@ -191,6 +189,8 @@
        href: Best-Practices/mysqltoes.md
      - name: 第三方Elasticsearch数据迁移
        href: Best-Practices/Ali-to-es.md
+     - name: 配置日志监控
+       href: Best-Practices/Log-Monitor.md
      - name: 性能指标
        items: 
         - name: 性能测试步骤

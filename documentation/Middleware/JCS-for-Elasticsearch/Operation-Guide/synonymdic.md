@@ -17,20 +17,20 @@
 2. 在集群管理页，单击**集群名称**进入集群详情页。 
 3. 选择**自定义词库**页签，在**同义词配置**区域，单击**配置同义词词库右侧的按钮**。
 
-   ![](../../../../image/Internet-Middleware/JCS%20for%20Elasticsearch/Synonym_cfg.png)
+   ![](../../../../image/Elasticsearch/Synonym/Synonym_cfg.png)
 
 4. 在弹出的**同义词配置**页面，选择要上传的同义词文件。
 
-   ![](../../../../image/Internet-Middleware/JCS%20for%20Elasticsearch/synonym_upload.png)
+   ![](../../../../image/Elasticsearch/Synonym/synonym_upload.png)
 
 5. 如果选择的同义词文件校验成功（在同义词词库文件名邮件显示**绿色的success**），可单击**保存**。该操作将触发集群滚动重启。
 
-   ![](../../../../image/Internet-Middleware/JCS%20for%20Elasticsearch/synonym_upload_success.png)
+   ![](../../../../image/Elasticsearch/Synonym/synonym_upload_success.png)
 
 ## 同义词文件下载
 说明：如果您需要获取已经上传过的词库文件，可直接单击对应文件的**下载**按钮进行下载。
 
-   ![](../../../../image/Internet-Middleware/JCS%20for%20Elasticsearch/synonym_download.png)
+   ![](../../../../image/Elasticsearch/Synonym/synonym_download.png)
    
 
 ## 使用同义词
