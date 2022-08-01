@@ -102,7 +102,7 @@
 |  HSETNX    |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
 |  HVALS     |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
 |  HSCAN     |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
-|  HSTRLEN   |   -   | -  |  ✓  | ✓   |  受限   | 
+|  HSTRLEN   |   -   | -  |  ✓  | ✓   |   ✓   | 
 
 
 ####  List（列表）
@@ -178,61 +178,83 @@
 
 
 ####  hyperloglog 
-| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
-|:--:|:--:|:--:|:--:|:--:| 
-| PFADD    | ✓ | x  | ✓ |  ✓  | 
-| PFCOUNT  | ✓ | x  | ✓ |  ✓  | 
-| PFMERGE  | ✓ | x  | ✓ |  ✓  | 
+| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0 Proxy 集群版  |  5.0 Cluster 集群版  | 
+|:-- |:--:|:--:|:--:|:--:| :--:| 
+| PFADD    | ✓ | x  | ✓ |  ✓  | ✓  | 
+| PFCOUNT  | ✓ | x  | ✓ |  ✓  | ✓  | 
+| PFMERGE  | ✓ | x  | ✓ |  ✓  | ✓  | 
 
 
 ####  Pub/Sub（发布/订阅）
-| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
-|:--:|:--:|:--:|:--:|:--:| 
-|  PSUBSCRIBE   |   x   | x  |  ✓  | ✓   | 
-|  PUBLISH      |   x   | x  |  ✓  | ✓   | 
-|  PUBSUB       |   x   | x  |  ✓  | ✓   | 
-|  PUNSUBSCRIBE |   x   | x  |  ✓  | ✓   | 
-|  SUBSCRIBE    |   x   | x  |  ✓  | ✓   | 
-|  UNSUBSCRIBE  |   x   | x  |  ✓  | ✓   | 
+| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0 Proxy 集群版  |  5.0 Cluster 集群版  | 
+|:-- |:--:|:--:|:--:|:--:| :--:| 
+|  PSUBSCRIBE   |   x   | x  |  ✓  | ✓   | ✓   | 
+|  PUBLISH      |   x   | x  |  ✓  | ✓   | ✓   | 
+|  PUBSUB       |   x   | x  |  ✓  | ✓   | ✓   | 
+|  PUNSUBSCRIBE |   x   | x  |  ✓  | ✓   | ✓   | 
+|  SUBSCRIBE    |   x   | x  |  ✓  | ✓   | ✓   | 
+|  UNSUBSCRIBE  |   x   | x  |  ✓  | ✓   | ✓   | 
 
 
 #### Transaction（事务）
-| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
-|:--:|:--:|:--:|:--:|:--:| 
-|  DISCARD   |   ✓   | x  |  ✓  | ✓   | 
-|  EXEC      |   ✓   | x  |  ✓  | ✓   | 
-|  MULTI     |   ✓   | x  |  ✓  | ✓   | 
-|  UNWATCH   |   ✓   | x  |  ✓  | ✓   | 
-|  WATCH     |   ✓   | x  |  ✓  | ✓   | 
+| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0 Proxy 集群版  |  5.0 Cluster 集群版  | 
+|:-- |:--:|:--:|:--:|:--:| :--:| 
+|  DISCARD   |   ✓   | x  |  ✓  | ✓   | ✓   | 
+|  EXEC      |   ✓   | x  |  ✓  | ✓   | ✓   |
+|  MULTI     |   ✓   | x  |  ✓  | ✓   | ✓   |
+|  UNWATCH   |   ✓   | x  |  ✓  | ✓   | ✓   |
+|  WATCH     |   ✓   | x  |  ✓  | ✓   | ✓   |
 
 
 #### Connection（连接）
-| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
-|:--:|:--:|:--:|:--:|:--:| 
-|  AUTH   |   ✓   | ✓  |  ✓  | ✓   | 
-|  ECHO   |   ✓   | ✓  |  ✓  | ✓   | 
-|  PING   |   ✓   | ✓  |  ✓  | ✓   | 
-|  QUIT   |   ✓   | ✓  |  ✓  | ✓   | 
-|  SELECT |   ✓   | ✓  |  ✓  | ✓   | 
-|  SWAPDB |   x   | x   |  x  | x   | 
+| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0 Proxy 集群版  |  5.0 Cluster 集群版  | 
+|:-- |:--:|:--:|:--:|:--:| :--:| 
+|  AUTH   |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
+|  ECHO   |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
+|  PING   |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
+|  QUIT   |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
+|  SELECT |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
+|  SWAPDB |   x   | x   |  x  | x   |  x   | 
 
 
 #### Server（服务器）
-| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
-|:--:|:--:|:--:|:--:|:--:| 
-|  FLUSHALL  |   ✓   | ✓  |  ✓  | ✓   | 
-|  FLUSHDB   |   ✓   | ✓  |  ✓  | ✓   | 
-|  DBSIZE    |   x   |  x  |  ✓  | ✓   | 
-|  TIME      |   x   |  x  |  x  | x   | 
-|  INFO      |   ✓   | ✓  |  ✓  | ✓   | 
-|  KEYS      |   ✓   | ✓  |  ✓  | ✓   | 
-|  CLIENT KILL   |   x   | x  |  x     | x     | 
-|  CLIENT LIST   |   x   | x  |  受限  | 受限  | 
-|  CLIENT GETNAME   |   x   | x  |  ✓  | ✓   | 
-|  CLIENT SETNAME   |   x   | x  |  ✓  | ✓   | 
-|  CONFIG GET       |   x   | x  |  ✓  | ✓   | 
-|  MEMORY           |   -  | - |  ✓  | ✓   | 
-|  LATENCY          |   x   |  x  |  ✓  | ✓   | 
+| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0 Proxy 集群版  |  5.0 Cluster 集群版  | 
+|:-- |:--:|:--:|:--:|:--:| :--:| 
+|  FLUSHALL  |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  FLUSHDB   |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  DBSIZE    |   x   |  x  |  ✓  | ✓   |  ✓   | 
+|  TIME      |   x   |  x  |  x  | x   |  ✓   | 
+|  INFO      |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  KEYS      |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  CLIENT KILL   |   x   | x  |  x     | x     | x     |
+|  CLIENT LIST   |   x   | x  |  受限  | 受限  |  ✓   | 
+|  CLIENT GETNAME   |   x   | x  |  ✓  | ✓   |  ✓   | 
+|  CLIENT SETNAME   |   x   | x  |  ✓  | ✓   |  ✓   | 
+|  CONFIG GET       |   x   | x  |  ✓  | ✓   |  ✓   | 
+|  MEMORY           |   -  | - |  ✓  | ✓   |  ✓   | 
+|  LATENCY          |   x   |  x  |  ✓  | ✓   |  ✓   | 
+
+|  CONFIG REWRITE |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  COMMAND INFO   |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+| CONFIG REWRITE   |  ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+| CONFIG RESETSTAT  | ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+| ROLE    |    ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  LASTSAVE  |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  SHUTDOWN  |   x   | x   |  x  | x    | x     |
+|  COMMAND  |    ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  CLIENT LIST  |     ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  MONITOR     |      ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  SLOWLOG     |      ✓   | ✓  |  ✓   |  ✓  |  ✓   | 
+|  CLUSTER KEYSLOT  |  x   |  x  |  x   | x  | ✓     | 
+|  CLUSTER NODES    |  x   |  x  |  x   | x  |  ✓    | 
+|  CLUSTER GETKEYSINSLOT  |  x   |  x   | x  |   | ✓     | 
+|  CLUSTER SLOTS  |   x    |  x    |  x     |  x   | ✓     | 
+|  CLUSTER INFO   |   x    |  x    |  x     |  x   |  ✓    | 
+|  MODULE         |   x    |  x    |  x     |  x   |      | 
+|  LOLWUT         |   x    |  x   |   x   | ✓  |  ✓    | 
+
+
+
 
 **说明：**
 
