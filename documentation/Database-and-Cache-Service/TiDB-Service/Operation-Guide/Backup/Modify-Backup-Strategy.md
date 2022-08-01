@@ -17,5 +17,4 @@ TiDB 可根据设置，定期进行自动的全量备份。 在控制台上可�
 - 选择是否进行增量备份
 - 点击 **确认**。
 
-<!-- ![备份策略1](../../../../../image/TiDB/modify-backup-strategy-1.png) -->
 ![备份策略2](../../../../../image/TiDB/modify-backup-strategy-2.png)
