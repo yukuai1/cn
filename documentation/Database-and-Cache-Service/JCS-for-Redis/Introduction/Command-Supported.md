@@ -86,95 +86,95 @@
 
 
 ####  Hash（哈希表） 
-| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
-|:--:|:--:|:--:|:--:|:--:| 
-|  HDEL      |   ✓   | ✓  |  ✓  | ✓   | 
-|  HEXISTS   |   ✓   | ✓  |  ✓  | ✓   | 
-|  HGET      |   ✓   | ✓  |  ✓  | ✓   | 
-|  HGETALL   |   ✓   | ✓  |  ✓  | ✓   | 
-|  HINCRBY   |   ✓   | ✓  |  ✓  | ✓   | 
-|  HINCRBYFLOAT   |   ✓   | ✓  |  ✓  |  ✓   | 
-|  HKEYS     |   ✓   | ✓  |  ✓  | ✓   | 
-|  HLEN      |   ✓   | ✓  |  ✓  | ✓   | 
-|  HMGET     |   ✓   | ✓  |  ✓  | ✓   | 
-|  HMSET     |   ✓   | ✓  |  ✓  | ✓   | 
-|  HSET      |   ✓   | ✓  |  ✓  | ✓   | 
-|  HSETNX    |   ✓   | ✓  |  ✓  | ✓   | 
-|  HVALS     |   ✓   | ✓  |  ✓  | ✓   | 
-|  HSCAN     |   ✓   | ✓  |  ✓  | ✓   | 
-|  HSTRLEN   |   -   | -  |  ✓  | ✓   | 
+| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0 Proxy 集群版  |  5.0 Cluster 集群版  | 
+|:-- |:--:|:--:|:--:|:--:| :--:| 
+|  HDEL      |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
+|  HEXISTS   |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
+|  HGET      |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
+|  HGETALL   |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
+|  HINCRBY   |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
+|  HINCRBYFLOAT   |   ✓   | ✓  |  ✓  |  ✓   | ✓   | 
+|  HKEYS     |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
+|  HLEN      |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
+|  HMGET     |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
+|  HMSET     |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
+|  HSET      |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
+|  HSETNX    |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
+|  HVALS     |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
+|  HSCAN     |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
+|  HSTRLEN   |   -   | -  |  ✓  | ✓   |  受限   | 
 
 
 ####  List（列表）
-| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
-|:--:|:--:|:--:|:--:|:--:| 
-|  BLPOP   |   -   | -  |  受限  | 受限   | 
-|  BRPOP   |   -   | -  |  受限  | 受限   | 
-|  BRPOPLPUSH |  -   |  -  |  受限  | 受限   | 
-|  LINDEX   |   ✓   | ✓  |  ✓  | ✓   | 
-|  LINSERT  |   ✓   | ✓  |  ✓  | ✓   | 
-|  LLEN     |   ✓   | ✓  |  ✓  | ✓   | 
-|  LPOP     |   ✓   | ✓  |  ✓  | ✓   | 
-|  LPUSH    |   ✓   | ✓  |  ✓  | ✓   | 
-|  LPUSHX   |   ✓   | ✓  |  ✓  | ✓   | 
-|  LRANGE   |   ✓   | ✓  |  ✓  | ✓   | 
-|  LREM     |   ✓   | ✓  |  ✓  | ✓   | 
-|  LSET     |   ✓   | ✓  |  ✓  | ✓   | 
-|  LTRIM    |   ✓   | ✓  |  ✓  | ✓   | 
-|  RPOP     |   ✓   | ✓  |  ✓  | ✓   | 
-|  RPOPLPUSH |   ✓   |  x  |  受限  | 受限   | 
-|  RPUSH    |   ✓   | ✓  |  ✓  | ✓   | 
-|  RPUSHX   |   ✓   | ✓  |  ✓  | ✓   | 
+| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0 Proxy 集群版  |  5.0 Cluster 集群版  | 
+|:-- |:--:|:--:|:--:|:--:| :--:| 
+|  BLPOP   |   -   | -  |  受限  | 受限   |  ✓   | 
+|  BRPOP   |   -   | -  |  受限  | 受限   |  ✓   | 
+|  BRPOPLPUSH |  -   |  -  |  受限  | 受限   |  受限   | 
+|  LINDEX   |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  LINSERT  |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  LLEN     |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  LPOP     |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  LPUSH    |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  LPUSHX   |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  LRANGE   |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  LREM     |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  LSET     |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  LTRIM    |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  RPOP     |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  RPOPLPUSH |   ✓   |  x  |  受限  | 受限   |  受限   | 
+|  RPUSH    |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  RPUSHX   |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
 
 
 ####  Set（集合）
-| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
-|:--:|:--:|:--:|:--:|:--:| 
-|  SADD    |   ✓   | ✓  |  ✓  | ✓   | 
-|  SCARD   |   ✓   | ✓  |  ✓  | ✓   | 
-|  SDIFF   |   ✓   |  x  |  受限  | 受限    | 
-|  SDIFFSTORE   |   ✓   | x  |  受限  | 受限      | 
-|  SINTER  |   ✓   | x  |  受限  | 受限    | 
-|  SINTERSTORE    |   ✓   | x  |  受限  | 受限    | 
-|  SISMEMBER      |   ✓   | ✓  |  ✓  | ✓   | 
-|  SMEMBERS   |   ✓   | ✓  |  ✓  | ✓   | 
-|  SMOVE      |   ✓   | x  |  受限  | 受限    | 
-|  SPOP       |   ✓   | ✓  |  ✓  | ✓   | 
-|  SRANDMEMBER    |   ✓   | ✓  |  ✓  | ✓   | 
-|  SREM       |   ✓   | ✓  |  ✓  | ✓   | 
-|  SUNION     |   ✓   | x  |  受限  | 受限    | 
-|  SUNIONSTORE   |   ✓   | x  |  受限  | 受限    | 
-|  SSCAN      |   ✓   | ✓  |  ✓  | ✓   | 
+| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0 Proxy 集群版  |  5.0 Cluster 集群版  | 
+|:-- |:--:|:--:|:--:|:--:| :--:| 
+|  SADD    |   ✓   | ✓  |  ✓  | ✓   |   ✓   | 
+|  SCARD   |   ✓   | ✓  |  ✓  | ✓   |   ✓   | 
+|  SDIFF   |   ✓   |  x  |  受限  | 受限    |  受限    |   ✓   | 
+|  SDIFFSTORE   |   ✓   | x  |  受限  | 受限      |  受限    |   ✓   | 
+|  SINTER  |   ✓   | x  |  受限  | 受限    |  受限    |   ✓   | 
+|  SINTERSTORE    |   ✓   | x  |  受限  | 受限    |  受限    |   ✓   | 
+|  SISMEMBER      |   ✓   | ✓  |  ✓  | ✓   |   ✓   | 
+|  SMEMBERS   |   ✓   | ✓  |  ✓  | ✓   |   ✓   | 
+|  SMOVE      |   ✓   | x  |  受限  | 受限    |  受限    |   ✓   | 
+|  SPOP       |   ✓   | ✓  |  ✓  | ✓   |   ✓   | 
+|  SRANDMEMBER    |   ✓   | ✓  |  ✓  | ✓   |   ✓   | 
+|  SREM       |   ✓   | ✓  |  ✓  | ✓   |   ✓   | 
+|  SUNION     |   ✓   | x  |  受限  | 受限    |  受限    |   ✓   | 
+|  SUNIONSTORE   |   ✓   | x  |  受限  | 受限    |  受限    |   ✓   | 
+|  SSCAN      |   ✓   | ✓  |  ✓  | ✓   |   ✓   | 
 
 
 ####  Sorted Set（有序集合）
-| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
-|:--:|:--:|:--:|:--:|:--:| 
-|  ZADD     |   ✓   | ✓  |  ✓  | ✓   | 
-|  ZCARD    |   ✓   | ✓  |  ✓  | ✓   | 
-|  ZCOUNT   |   ✓   | ✓  |  ✓  | ✓   | 
-|  ZINCRBY  |   ✓   | ✓  |  ✓  | ✓   | 
-|  ZRANGE   |   ✓   | ✓  |  ✓  | ✓   | 
-|  ZRANGEBYSCORE   |   ✓   | ✓  |  ✓  | ✓   | 
-|  ZRANK    |   ✓   | ✓  |  ✓  | ✓   | 
-|  ZREM     |   ✓   | ✓  |  ✓  | ✓   | 
-|  ZREMRANGEBYRANK  |   ✓   | ✓  |  ✓  | ✓   | 
-|  ZREMRANGEBYSCORE |   ✓   | ✓  |  ✓  | ✓   | 
-|  ZREVRANGE        |   ✓   | ✓  |  ✓  | ✓   | 
-|  ZREVRANGEBYLEX   |   -   | -  |  ✓  | ✓   | 
-|  ZREVRANGEBYSCORE |   ✓   | ✓  |  ✓  | ✓   | 
-|  ZREVRANK      |   ✓   | ✓  |  ✓  | ✓   | 
-|  ZSCORE        |   ✓   | ✓  |  ✓  | ✓   | 
-|  ZUNIONSTORE   |   ✓   | x  |  受限  | 受限    | 
-|  ZINTERSTORE   |   ✓   | x  |  受限  | 受限    | 
-|  ZSCAN         |   ✓   | ✓  |  ✓  | ✓   | 
-|  ZRANGEBYLEX      |   ✓   | ✓  |  ✓  | ✓   | 
-|  ZLEXCOUNT        |   ✓   | ✓  |  ✓  | ✓   | 
-|  ZREMRANGEBYLEX   |   ✓   | ✓  |  ✓  | ✓   | 
-|  ZPOPMAX   |   -   | -  |  -  | -   | 
-|  ZPOPMIN   |   -   | -  |  -  | -   | 
-|  BZPOPMIN  |   -   | -  |  -  | -   | 
-|  BZPOPMAX  |   -   | -  |  -  | -   | 
+| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0 Proxy 集群版  |  5.0 Cluster 集群版  | 
+|:-- |:--:|:--:|:--:|:--:| :--:| 
+|  ZADD     |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  ZCARD    |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  ZCOUNT   |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  ZINCRBY  |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  ZRANGE   |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  ZRANGEBYSCORE   |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  ZRANK    |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  ZREM     |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  ZREMRANGEBYRANK  |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  ZREMRANGEBYSCORE |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  ZREVRANGE        |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  ZREVRANGEBYLEX   |   -   | -  |  ✓  | ✓   |   ✓   | 
+|  ZREVRANGEBYSCORE |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  ZREVRANK      |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  ZSCORE        |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  ZUNIONSTORE   |   ✓   | x  |  受限  | 受限    | 受限    | 
+|  ZINTERSTORE   |   ✓   | x  |  受限  | 受限    | 受限    | 
+|  ZSCAN         |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  ZRANGEBYLEX      |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  ZLEXCOUNT        |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  ZREMRANGEBYLEX   |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+|  ZPOPMAX   |   -   | -  |  -  | -   |  ✓   | 
+|  ZPOPMIN   |   -   | -  |  -  | -   |  ✓   | 
+|  BZPOPMIN  |   -   | -  |  -  | -   |  ✓   | 
+|  BZPOPMAX  |   -   | -  |  -  | -   |  ✓   | 
 
 
 ####  hyperloglog 
