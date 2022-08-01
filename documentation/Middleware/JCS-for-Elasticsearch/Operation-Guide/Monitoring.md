@@ -17,7 +17,6 @@
 ![ES_Monitoring_Node](../../../../image/Elasticsearch/Monitoring/ES_Monitoring_Node.png)
 
 5.单击右上方“设置报警规则”，单击跳转至云监控页面进行报警规则的设置。</br>
-- [创建告警规则](../Operation-Guide/monitor_rules.md)</br>
 
  
 
