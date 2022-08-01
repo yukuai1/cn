@@ -4,9 +4,9 @@
 ## 续费入口
 续费有两个入口供用户进行续费操作：
 
-Redis产品列表页，可对包年包月的Redis实例进行快捷续费操作。下文将介绍该流程，见： [Redis产品列表页]( https://redis-console.jdcloud.com/redis)  
+1.Redis产品列表页，可对包年包月的Redis实例进行快捷续费操作。下文将介绍该流程，见： [Redis产品列表页]( https://redis-console.jdcloud.com/redis)  
 
-管理所有云产品续费的的“续费管理”中，可对资源进行续费、开通自动续费、设为到期不续费等常规续费操作，详见： [续费管理](https://renewal-console.jdcloud.com/renew/redis)   
+2.管理所有云产品续费的的“续费管理”中，可对资源进行续费、开通自动续费、设为到期不续费等常规续费操作，详见： [续费管理](https://renewal-console.jdcloud.com/renew/redis)   
 
 用户可对资源进行手动续费，也可进行自动续费。
 
