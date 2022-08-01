@@ -4,7 +4,7 @@
 
 |  计费方式 |  说明  |
 | :--- | :---  |
-|  按配置计费|  	根据不同规格的实例资源，以小时为单位计费。详情请参见 [后付费计费说明](https://docs.jdcloud.com/cn/billing/postpay)。|  
+|  按配置计费|  	后付费方式，根据不同规格的实例资源，以小时为单位计费。详情请参见 [后付费计费说明](https://docs.jdcloud.com/cn/billing/postpay)。|  
 |  包年包月	|  预付费方式，最低按月支付，详情请参见  [预付费计费说明](https://docs.jdcloud.com/cn/billing/prepay)。|  
 
 
