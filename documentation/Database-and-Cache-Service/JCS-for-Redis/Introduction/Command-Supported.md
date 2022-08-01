@@ -233,7 +233,6 @@
 |  CONFIG GET       |   x   | x  |  ✓  | ✓   |  ✓   | 
 |  MEMORY           |   -  | - |  ✓  | ✓   |  ✓   | 
 |  LATENCY          |   x   |  x  |  ✓  | ✓   |  ✓   | 
-
 |  CONFIG REWRITE |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
 |  COMMAND INFO   |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
 | CONFIG REWRITE   |  ✓   | ✓  |  ✓  | ✓   |  ✓   | 
@@ -247,11 +246,11 @@
 |  SLOWLOG     |      ✓   | ✓  |  ✓   |  ✓  |  ✓   | 
 |  CLUSTER KEYSLOT  |  x   |  x  |  x   | x  | ✓     | 
 |  CLUSTER NODES    |  x   |  x  |  x   | x  |  ✓    | 
-|  CLUSTER GETKEYSINSLOT  |  x   |  x   | x  |   | ✓     | 
-|  CLUSTER SLOTS  |   x    |  x    |  x     |  x   | ✓     | 
-|  CLUSTER INFO   |   x    |  x    |  x     |  x   |  ✓    | 
-|  MODULE         |   x    |  x    |  x     |  x   |      | 
-|  LOLWUT         |   x    |  x   |   x   | ✓  |  ✓    | 
+|  CLUSTER GETKEYSINSLOT   |  x    |  x     | x    | x   | ✓     | 
+|  CLUSTER SLOTS  |   x    |  x    |  x     |  x   | ✓   | 
+|  CLUSTER INFO   |   x    |  x    |  x     |  x   | ✓   | 
+|  MODULE         |   x    |  x    |  x     |  x   | x   | 
+|  LOLWUT         |   x    |  x    |  x     |  ✓   | ✓   | 
 
 
 
@@ -279,27 +278,43 @@
 
 
 #### Scripting（脚本）
-| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
-|:--:|:--:|:--:|:--:|:--:| 
-|  EVAL      |   ✓   | ✓  |  ✓  | ✓   | 
-|  EVALSHA   |   ✓   | x  |  ✓  | ✓   | 
-|  SCRIPT EXISTS   |   ✓   | x  |  ✓  | ✓   | 
-|  SCRIPT FLUSH    |   ✓   | x  |  ✓  | ✓   | 
-|  SCRIPT KILL     |   ✓   | x  |  ✓  | ✓   | 
-|  SCRIPT LOAD     |   ✓   | x  |  ✓  | ✓   | 
-|  SCRIPT DEBUG    |   ✓   | x  |  ✓  | ✓   | 
+| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0 Proxy 集群版  |  5.0 Cluster 集群版  | 
+|:-- |:--:|:--:|:--:|:--:| :--:| 
+|  EVAL      |   ✓   | ✓  |  ✓  | ✓   | ✓   | 
+|  EVALSHA   |   ✓   | x  |  ✓  | ✓   | ✓   | 
+|  SCRIPT EXISTS   |   ✓   | x  |  ✓  | ✓   | ✓   | 
+|  SCRIPT FLUSH    |   ✓   | x  |  ✓  | ✓   | ✓   | 
+|  SCRIPT KILL     |   ✓   | x  |  ✓  | ✓   | ✓   | 
+|  SCRIPT LOAD     |   ✓   | x  |  ✓  | ✓   | ✓   | 
+|  SCRIPT DEBUG    |   ✓   | x  |  ✓  | ✓   | ✓   | 
 
 
 #### Geo（地理位置）
-| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0集群版  | 
-|:--:|:--:|:--:|:--:|:--:| 
-|  GEOADD   |   x   |  x  |  ✓  | ✓   | 
-|  GEOHASH  |   x   |  x  |  ✓  | ✓   | 
-|  GEOPOS   |   x   |  x  |  ✓  | ✓   | 
-|  GEODIST  |   x   |  x  |  ✓  | ✓   | 
-|  GEORADIUS   |   x   |  x  |  ✓  | ✓   | 
-|  GEORADIUSBYMEMBER   |   x   |  x  |  ✓  | ✓   | 
+| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0 Proxy 集群版  |  5.0 Cluster 集群版  | 
+|:-- |:--:|:--:|:--:|:--:| :--:|  
+|  GEOADD   |   x   |  x  |  ✓  | ✓   | ✓   | 
+|  GEOHASH  |   x   |  x  |  ✓  | ✓   | ✓   | 
+|  GEOPOS   |   x   |  x  |  ✓  | ✓   | ✓   | 
+|  GEODIST  |   x   |  x  |  ✓  | ✓   | ✓   | 
+|  GEORADIUS   |   x   |  x  |  ✓  | ✓   | ✓   | 
+|  GEORADIUSBYMEMBER   |   x   |  x  |  ✓  | ✓   | ✓   | 
 
+#### Stream
+| 命令 | 2.8标准版  |  2.8集群版  |  4.0标准版  |  4.0 Proxy 集群版  |  5.0 Cluster 集群版  | 
+|:-- |:--:|:--:|:--:|:--:| :--:|  
+|  XINFO    |   x    |  x    |  x     |  x   | ✓   | 
+|  XADD    |   x    |  x    |  x     |  x   | ✓   | 
+|  XTRIM    |   x    |  x    |  x     |  x   | ✓   | 
+|  XDEL    |   x    |  x    |  x     |  x   | ✓   | 
+|  XRANGE    |   x    |  x    |  x     |  x   | ✓   | 
+|  XREVRANGE    |   x    |  x    |  x     |  x   | ✓   | 
+|  XLEN    |   x    |  x    |  x     |  x   | ✓   | 
+|  XREAD    |   x    |  x    |  x     |  x   | ✓   | 
+|  XGROUP    |   x    |  x    |  x     |  x   | ✓   | 
+|  XREADGROUP    |   x    |  x    |  x     |  x   | ✓   | 
+|  XACK    |   x    |  x    |  x     |  x   | ✓   | 
+|  XCLAIM    |   x    |  x    |  x     |  x   | ✓   | 
+|  XPENDING    |   x    |  x    |  x     |  x   | ✓   | 
 
 
 
