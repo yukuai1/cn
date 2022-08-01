@@ -232,21 +232,21 @@
 |  CLIENT SETNAME   |   x   | x  |  ✓  | ✓   |  ✓   | 
 |  CONFIG GET       |   x   | x  |  ✓  | ✓   |  ✓   | 
 |  MEMORY           |   -  | - |  ✓  | ✓   |  ✓   | 
-|  LATENCY          |   x   |  x  |  ✓  | ✓   |  ✓   | 
+|  LATENCY          |   x   |  x  |  ✓  | ✓   |  受限   | 
 |  CONFIG REWRITE |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
 |  COMMAND INFO   |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
-| CONFIG REWRITE   |  ✓   | ✓  |  ✓  | ✓   |  ✓   | 
-| CONFIG RESETSTAT  | ✓   | ✓  |  ✓  | ✓   |  ✓   | 
+| CONFIG REWRITE   |  ✓   | ✓  |  ✓  | ✓   |  x   | 
+| CONFIG RESETSTAT  | ✓   | ✓  |  ✓  | ✓   |  x   | 
 | ROLE    |    ✓   | ✓  |  ✓  | ✓   |  ✓   | 
 |  LASTSAVE  |   ✓   | ✓  |  ✓  | ✓   |  ✓   | 
 |  SHUTDOWN  |   x   | x   |  x  | x    | x     |
 |  COMMAND  |    ✓   | ✓  |  ✓  | ✓   |  ✓   | 
 |  CLIENT LIST  |     ✓   | ✓  |  ✓  | ✓   |  ✓   | 
 |  MONITOR     |      ✓   | ✓  |  ✓  | ✓   |  ✓   | 
-|  SLOWLOG     |      ✓   | ✓  |  ✓   |  ✓  |  ✓   | 
+|  SLOWLOG     |      ✓   | ✓  |  ✓   |  ✓  |  受限   | 
 |  CLUSTER KEYSLOT  |  x   |  x  |  x   | x  | ✓     | 
 |  CLUSTER NODES    |  x   |  x  |  x   | x  |  ✓    | 
-|  CLUSTER GETKEYSINSLOT   |  x    |  x     | x    | x   | ✓     | 
+|  CLUSTER GETKEYSINSLOT   |  x    |  x     | x    | x   | x     | 
 |  CLUSTER SLOTS  |   x    |  x    |  x     |  x   | ✓   | 
 |  CLUSTER INFO   |   x    |  x    |  x     |  x   | ✓   | 
 |  MODULE         |   x    |  x    |  x     |  x   | x   | 
