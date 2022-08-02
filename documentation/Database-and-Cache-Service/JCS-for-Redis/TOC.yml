@@ -101,12 +101,15 @@
             href: Operation-Guide/Cache-Analysis/Key-Analysis.md     
       - name: 账号与安全
         items:
+          - name: IAM访问控制
+            href: Operation-Guide/User-Manage/IAMRedis.md
+          - name: 白名单设置
+            href: Operation-Guide/User-Manage/Whitelist.md
           - name: 免密和修改密码
             href: Operation-Guide/User-Manage/Change-Password.md
           - name: 账号管理
             href: Operation-Guide/User-Manage/UserManage.md
-          - name: 白名单设置
-            href: Operation-Guide/User-Manage/Whitelist.md
+          
       - name: 监控报警
         items:
           - name: 查看监控信息
@@ -148,7 +151,13 @@
       - name: 测试结果
         href: Performance-Test/Test-result.md
   - name: 常见问题
-    href: FAQ/FAQ.md     
+    items:
+      - name: 测试环境
+        href: FAQ/FAQ1.md 
+      - name: 测试工具
+        href: FAQ/FAQ2.md 
+      - name: 测试命令
+        href: FAQ/FAQ3.md 
   - name: 相关资源      
     items:
        - name: 服务条款
