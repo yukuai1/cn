@@ -18,7 +18,8 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 ## 请求参数
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**backupTime**|String|True| |设置自动备份时间，格式为：HH:mm-HH:mm 时区，例如"01:00-02:00 +0800"，表示东八区的1点到2点,'-'表示关闭自动备份|
+|**autoBackup**|Boolean|False| |是否开启自动备份，true表示开启，false表示关闭|
+|**backupTime**|String|True| |设置自动备份时间，格式为：HH:mm-HH:mm 时区，例如"01:00-02:00 +0800"，表示东八区的1点到2点|
 |**backupPeriod**|String|True| |备份周期，包括：Monday，Tuesday，Wednesday，Thursday，Friday，Saturday，Sunday，多个用逗号分隔|
 
 
@@ -29,9 +30,9 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|
 
 ## 请求示例
 PATCH

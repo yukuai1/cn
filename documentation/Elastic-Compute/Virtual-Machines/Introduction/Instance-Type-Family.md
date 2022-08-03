@@ -79,10 +79,10 @@
 
 * vCPU与内存比为1:4（g.n1.xlarge_m规格除外）
 * 处理器：
-	* 第四代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
-	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+	* 第四代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
+	* 第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
 	* 第二代：
-	  * 2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+	  * 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器 或 2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 	  * 2.6 GHz主频的AMD EPYC ROME 处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持以下类型云硬盘：
@@ -222,7 +222,7 @@ g.n1.8xlarge|32|128|8|4 |	 |
 
 * vCPU与内存比约为1:1
 * 处理器：
-	* 第四代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
+	* 第四代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
 	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
 * 支持以下类型云硬盘：
 	* 通用型SSD云盘
@@ -265,10 +265,10 @@ g.n1.8xlarge|32|128|8|4 |	 |
 
 * vCPU与内存比约为1:2
 * 处理器：
-	* 第四代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
-	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器
+	* 第四代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
+	* 第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器
 	* 第二代：
-	  * 2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+	  * 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器 或 2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器
 	  * 2.6 GHz主频的AMD EPYC ROME 处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持以下类型云硬盘：
@@ -364,10 +364,10 @@ g.n1.8xlarge|32|128|8|4 |	 |
 
 * vCPU与内存比约为1:8
 * 处理器：
-	* 第四代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
-	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器 
+	* 第四代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
+	* 第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器 
 	* 第二代：
-	  * 2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器  或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+	  * 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器 或 2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器
 	  * 2.6 GHz主频的AMD EPYC ROME 处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持以下类型云硬盘：
@@ -575,7 +575,7 @@ g.n1.8xlarge|32|128|8|4 |	 |
 * vCPU与内存比为1:4/1:8
 * 提供低时延高IO的本地存储
 * 处理器：
-	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器 或 2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器
+	* 第三代：第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器
 	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持本地数据盘（临时存储），并支持以下类型云硬盘。请注意 **本地数据盘为临时存储盘，有丢失数据的风险（比如发生迁移或宿主机宕机等情况），不适用于应用层没有数据冗余架构的使用场景， 建议您使用云硬盘存储重要数据。** 
@@ -764,7 +764,8 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 **规格类型特点：**
 
 * 处理器：
-	* 2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
+	* 第四代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
+	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 * 支持以下类型云硬盘：
 	* 通用型SSD云盘
 	* 性能型SSD云盘
@@ -781,6 +782,7 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 
 实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数
 |:---|:---|:---|:---|:---
+|m.n4.metal|128|1024|1|32
 |g.n2.metal|80|384|8|8
 
 <div id="user-content-14"></div>

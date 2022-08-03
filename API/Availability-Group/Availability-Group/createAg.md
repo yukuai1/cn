@@ -20,8 +20,9 @@ https://ag.jdcloud-api.com/v1/regions/{regionId}/availabilityGroups
 |**azs**|String[]|True| |支持的可用区，最少一个|
 |**agName**|String|True| |高可用组名称，只支持中文、数字、大小写字母、英文下划线 “_” 及中划线 “-”，且不能超过 32 字符|
 |**agType**|String|False| |高可用组类型，支持vm|
-|**instanceTemplateId**|String|True| |实例模板的Id|
+|**instanceTemplateId**|String|False| |实例模板的Id，创建strict类型的高可用组时此项为必填项|
 |**description**|String|False| |描述，长度不超过 256 字符|
+|**configurationType**|String|False| |高可用组配置类型。 可选值：<br> `strict`(默认值）：关联模板型 <br> `loose`：自定义配置型|
 
 
 ## 返回参数

@@ -61,6 +61,43 @@ items:
             href: Redis-Instance-API/describeClientList.md
           - name: describeClientIpDetail
             href: Redis-Instance-API/describeClientIpDetail.md
+          - name: createAccount
+            href: Redis-Instance-API/createAccount.md
+          - name: createBigKeyAnalysis
+            href: Redis-Instance-API/createBigKeyAnalysis.md
+          - name: deleteAccount
+            href: Redis-Instance-API/deleteAccount.md
+          - name: describeAccounts
+            href: Redis-Instance-API/describeAccounts.md
+          - name: describeAnalysisThreshold
+            href: Redis-Instance-API/describeAnalysisThreshold.md
+          - name: describeBigKeyAnalysisTime
+            href: Redis-Instance-API/describeBigKeyAnalysisTime.md
+          - name: describeBigKeyDetail
+            href: Redis-Instance-API/describeBigKeyDetail.md
+          - name: describeBigKeyList
+            href: Redis-Instance-API/describeBigKeyList.md
+          - name: describeClearData
+            href: Redis-Instance-API/describeClearData.md
+          - name: describeTaskProgressList
+            href: Redis-Instance-API/describeTaskProgressList.md
+          - name: getDisableCommands
+            href: Redis-Instance-API/getDisableCommands.md
+          - name: modifyAccount
+            href: Redis-Instance-API/modifyAccount.md
+          - name: modifyAnalysisThreshold
+            href: Redis-Instance-API/modifyAnalysisThreshold.md
+          - name: modifyBigKeyAnalysisTime
+            href: Redis-Instance-API/modifyBigKeyAnalysisTime.md
+          - name: setDisableCommands
+            href: Redis-Instance-API/setDisableCommands.md
+          - name: startClearData
+            href: Redis-Instance-API/startClearData.md
+          - name: stopCacheAnalysis
+            href: Redis-Instance-API/stopCacheAnalysis.md
+          - name: stopClearData
+            href: Redis-Instance-API/stopClearData.md
+
       - name: Redis规格API
         items:
           - name: describeInstanceClass

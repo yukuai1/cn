@@ -43,9 +43,9 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/instanceClass
 |**bandwidthMbps**|Integer|内网带宽（MBps）|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|
 
 ## 请求示例
 GET

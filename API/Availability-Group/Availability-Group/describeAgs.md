@@ -51,6 +51,7 @@ https://ag.jdcloud-api.com/v1/regions/{regionId}/availabilityGroups
 |**createTime**|String|创建时间|
 |**count**|Number|可用组中实例的数量|
 |**autoScaling**|Boolean|是否开启自动伸缩|
+|**configurationType**|String|高可用组配置类型|
 
 ## 返回码
 |返回码|描述|
