@@ -9,7 +9,7 @@ A：正常情况下实例规格越大、分片数越多，都会导致创建时�
 
 **Q：缓存Redis支持外网访问吗？**
 
-A：为提升数据访问的安全性，缓存Redis目前仅支持内网云主机访问。可以设置公网代理访问，详情见： 公网连接Redis实例 。
+A：为提升数据访问的安全性，缓存Redis目前仅支持内网云主机访问。可以设置公网代理访问，详情见：[公网连接Redis实例](https://docs.jdcloud.com/cn/jcs-for-redis/connectinstance)  。
 
 **Q：云主机为何访问不了Redis实例？**
 
