@@ -17,9 +17,9 @@ A：建议您可进行如下检查：
 
 1.首先确认该云主机和Redis在同一个VPC中；
 
-2.如是同一VPC内，请按 连接实例 文档检查格式和内容是否正确；
+2.如是同一VPC内，请按 [使用redis-cli连接Redis](https://docs.jdcloud.com/cn/jcs-for-redis/tool-redis-cli)  文档检查格式和内容是否正确；
 
-3、是否开启了Redis白名单功能。
+3.是否开启了Redis白名单功能。
 
 4.如果仍连接不了，请联系客服寻求帮助。
 
