@@ -15,13 +15,21 @@ ELasticsearch主要用于海量数据的存储和检索，若将所有的数据�
 3. 在规格部分选择**启用冷数据节点**，并选择冷数据节点规格。</br>
 4. 进一步设置集群的其他参数，确认创建冷热集群。</br>
 
+![Warm_Node_create](../../../../../../image/Elasticsearch/Nodes/Warm_Node_create.png)
+
 
 ### 将现有集群变更配置为冷热集群</br>
+> 注意：现有集群变更配置为冷热集群时，集群将会滚动重启。请确保在变更配置前，集群的 **状态为正常（绿色）、索引至少包含1个副本、资源使用率不是很高**。
+> - 查看索引副本：登录对应实例的 Kibana 控制台，执行 GET _cat/indices?v 命令，在返回结果中查看对应索引的 rep 值，≥1表示该索引至少包含一个副本。
+> - 查看资源使用率：在集群监控页面查看，例如节点 CPU 使用率为80%左右，节点 HeapMemory 使用率为50%左右，节点负载低于当前数据节点的 CPU 核数。
 1. 访问 [云搜索Elasticsearch 控制台](https://es-console.jdcloud.com/clusters)，或者访问 [京东云控制台](https://console.jdcloud.com/) 选择【云服务】-【互联网中间件】-【云搜索Elasticsearch】进入实例列表页。</br>
 2. 在实例列表页，选择目标集群右侧的【操作-更多-变更配置】。</br>
 3. 在变更配置页，选择**启用冷数据节点**，并选择冷数据节点规格。</br>
 4. 点击变更并确认，等待集群配置变更完成。</br>
+
 </br>
+
+![Warm_Node_create_2](../../../../../../image/Elasticsearch/Nodes/Warm_Node_create_2.png)
 
 > 当您启用了冷数据节点并购买后，系统会在节点启动参数中加入-Enode.attr.box_type参数。
 > - 热数据节点：-Enode.attr.box_type=hot
@@ -34,12 +42,13 @@ ELasticsearch主要用于海量数据的存储和检索，若将所有的数据�
 ```
 GET _cat/nodeattrs?v&h=node,attr,value&s=attr:desc
 
-node        attr        value
-node1     box_type       hot
-node2     box_type       hot
-node3     box_type       warm
-node4     box_type       hot
-node5     box_type       warm
+node            attr           value
+node-0          box_type       hot
+node-1          box_type       hot
+node-2          box_type       hot
+warmnode-0      box_type       warm
+warmnode-1      box_type       warm
+warmnode-2      box_type       warm
 ...
 ```
 
@@ -118,19 +127,19 @@ PUT hot_warm_test_index
 ```
 GET _cat/shards/hot_warm_test_index?v&h=index,shard,prirep,node&s=node
 
-index               shard prirep   node
-hot_warm_test_index   1     p      node1
-hot_warm_test_index   0     r      node1
-hot_warm_test_index   0     p      node2
-hot_warm_test_index   2     r      node2
-hot_warm_test_index   2     p      node4
-hot_warm_test_index   1     r      node4
+index               shard prirep node
+hot_warm_test_index 2     p      node-0
+hot_warm_test_index 1     r      node-0
+hot_warm_test_index 2     r      node-1
+hot_warm_test_index 0     p      node-1
+hot_warm_test_index 1     p      node-2
+hot_warm_test_index 0     r      node-2
 ```
 3. 设置测试索引为冷索引。
 ```
 PUT hot_warm_test_index/_settings
 {
-    "index.routing.allocation.require.temperature": "warm"
+    "index.routing.allocation.require.box_type": "warm"
 }
 ```
 查看分片分配，分片均分配到冷节点上。</br>
@@ -138,10 +147,10 @@ PUT hot_warm_test_index/_settings
 GET _cat/shards/hot_warm_test_index?v&h=index,shard,prirep,node&s=node
 
 index               shard prirep   node
-hot_warm_test_index   1     p      node3
-hot_warm_test_index   0     r      node3
-hot_warm_test_index   2     r      node3
-hot_warm_test_index   0     p      node5
-hot_warm_test_index   2     p      node5
-hot_warm_test_index   1     r      node5
+hot_warm_test_index   1     p      warmnode-0
+hot_warm_test_index   0     r      warmnode-0
+hot_warm_test_index   2     r      warmnode-1
+hot_warm_test_index   0     p      warmnode-1
+hot_warm_test_index   2     p      warmnode-2
+hot_warm_test_index   1     r      warmnode-2
 ```
