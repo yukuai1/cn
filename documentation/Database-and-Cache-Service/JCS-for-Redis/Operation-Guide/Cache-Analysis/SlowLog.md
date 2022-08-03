@@ -4,7 +4,7 @@
 
 ## 控制台慢日志查询
 
-1.	登录[Redis 控制台](https://redis-console.jdcloud.com/redis)，选择目标实例。
+1.	登录 [Redis 控制台](https://redis-console.jdcloud.com/redis)，选择目标实例。
 
 2.	单击实例名称进入实例资源信息页面。
 
