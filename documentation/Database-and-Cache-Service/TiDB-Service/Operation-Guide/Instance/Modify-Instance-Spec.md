@@ -41,10 +41,5 @@ SELECT * FROM information_schema.tiflash_replica WHERE TABLE_SCHEMA = '<db_name>
   - 以下类型的节点在新加时, 可以选择节点的规格和数目；当创建实例已有同类节点时，只能调整节点的数目。
     - TiFlash
     - TiCDC
-
-<!-- ![变更配置1](../../../../../image/TiDB/modify-instance-spec-1.png) -->
-
-<!-- ![变更配置2](../../../../../image/TiDB/modify-instance-spec-2.png) -->
-
 4. 变更信息：显示集群配置变更详细信息
 5. 费用：集群新规格的价格
