@@ -5,7 +5,7 @@
 | 动态名称 | 动态描述  | 发布时间	  | 相关文档   |
 |   :---  |  :---   |  :---  |:---  |
 |  Redis 5.0 Cluster集群版正式上线  |  Redis 5.0 Cluster集群版正式上线     |  2022-07   |  [实例架构](../Introduction/Features.md)        |
-
+|  公测Redis迁移工具RDTS  | 公测Redis迁移工具RDTS    |  2022-07   |  [迁移工具](../Data-Migration/Data-Migration-Overview.md)        |
 
 ## 2022年Q2
 
