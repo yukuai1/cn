@@ -155,7 +155,7 @@ select * from system.disks;
 返回结果如下：
 ```
 ┌─name──┬─path─────────────────┬─free_space─────┬─total_space ────┬─keep_free_space─┐
-│ cold_disk│ /clickhouse/data/data/disks/cold_disk/ │ 18446744073709551615  │ 115312080698 │   0               │
+│ s3│ /clickhouse/data/data/disks/s3/ │ 18446744073709551615  │ 115312080698 │   0               │
 │ default  │ /clickhouse/data/data/                 │ 201663209472          │ 5420040192   │   0               │
 └─────┴────────────────────┴───────────┴───────────┴───────┴─────── ──┘
 ```
@@ -166,5 +166,4 @@ select * from system.disks;
 |path       | 磁盘上的数据存储路径。 |
 | free_space     |当前磁盘剩余可用空间。冷数据盘可用空间不受限制。 |
 | total_space    |当前磁盘总空间。冷数据盘可用空间不受限制。 |
-| used_space  |当前磁盘已经被使用的空间。 |
 | keep_free_space |预留的空闲空间。 |
