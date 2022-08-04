@@ -85,7 +85,7 @@
 ## 2020年Q3
 | 动态名称 | 动态描述  | 发布时间	  | 相关文档   |
 |   :---  |  :---   |  :---  |:---  |
-|   调整命令支持的图表	|   增加2.8/4/0支持命令、不支持的命令集合。	|   2020-09	|    [Redis命令支持](../Getting-Started/Command-Supported.md)	| 
+|   调整命令支持的图表	|   增加2.8/4/0支持命令、不支持的命令集合。	|   2020-09	|    [Redis命令支持](../Introduction/Command-Supported.md)	| 
 |   支持自定义分片  |   	对于集群版4.0的产品，在创建资源/变更配置时，支持用户自定义分片数量。	|   2020-09	|   [创建实例](../Getting-Started/Create-Instance.md)  |   
 |   增加性能测试手册和测试结果	  |  性能测试手册和测试结果。 		  |  2020-08  |  	 [性能测试](../Performance-Test/Test-environment.md)  |  
 |   Redis 2.8 产品暂停支持	|   基于目前架构和资源情况，Redis2.8产品计划未来不再提供支持。如的确有需要使用，请联系客服。 |   2020-08	|   -   | 
@@ -106,11 +106,11 @@
 ## 2019年及之前
 | 动态名称 | 动态描述  | 发布时间	  | 相关文档   |
 |   :---  |  :---   |  :---  |:---  |
-|   开放scan命令 |   开放scan命令，各版本的命令支持情况请参考Redis命令支持页。 		|   2019-11	|     [Redis命令支持](../Getting-Started/Command-Supported.md)    |   
+|   开放scan命令 |   开放scan命令，各版本的命令支持情况请参考Redis命令支持页。 		|   2019-11	|    [Redis命令支持](../Introduction/Command-Supported.md)	   |   
 |   支持事务	|   支持事务，但禁用命令不能放在事务中执行。|   	2019-10	|   -   |   
 |   新增备份恢复	|      新增备份恢复、访问控制等功能。  |   2019-09	|     [备份恢复](../Operation-Guide/Backup-And-Recovery.md)    |   
 |   新增4.0版本	|      redis 4.0版 正式上线。 	  |   2019-08	|   -   |   
-|   支持命令		|  redis 2.8版 丰富监控项，新增Keys、String、Hashes、Lists、Sets、Zset监控组。	|   2019-07	 |   [Redis命令支持](../Getting-Started/Command-Supported.md) |   
+|   支持命令		|  redis 2.8版 丰富监控项，新增Keys、String、Hashes、Lists、Sets、Zset监控组。	|   2019-07	 |   [Redis命令支持](../Introduction/Command-Supported.md)	|   
 |   上线公测|   	redis 4.0版  开放公测。 	|   	2019-01 |  -    |   
 |   新增Web Cli	|   控制台新增Web Cli工具，方便用户在线使用数据库。 		|   2018-11	|      [使用 Web Cli 连接实例](../Getting-Started/Connect-Instances.md)     |   
 |   Redis2.8公测上线|   	Redis2.8公测上线。 	 |   	2017-04	|  - |   
