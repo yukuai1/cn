@@ -22,6 +22,7 @@ items:
           - name: 表操作
             href: Operation-Guide/table-management.md	
           - name: 分布式建表
+            href: Operation-Guide/Distributed-table-creation.md
       - name: 数据导入导出
         items:
           - name: 数据导入
