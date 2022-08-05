@@ -4,7 +4,7 @@
 
 **Q：目缓存Redis兼容哪些版本？**
 
-A：目前兼容 Redis 2.8、Redis 4.0 、Redis5。0协议。但是目前部分命令受限制，详情请参考： 命令支持 。
+A：目前兼容 Redis 2.8、Redis 4.0 、Redis5.0协议。但是目前部分命令受限制，详情请参考：  [命令支持](../Introduction/Command-Supported.md) 。
 
 **Q：目前缓存Redis支持哪些协议？**
 
