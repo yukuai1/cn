@@ -30,24 +30,17 @@
 
 
 ####   控制台 WebCLI 禁用命令说明
-|  禁用命令 |  
-| :--- |
-| discard |
-| dump |
-| exec  |
-| flushall  |
-| flushdb  |
-| keys  |
-| multi  |
-| psubscribe  |
-| publish |
-| pubsub  |
-| punsubscribe  |
-| quit  |
-| subscribe  |
-| unsubscribe  |
-| unwatch  |
-| watch  |
+禁用命令如下：
+|  禁用命令 |    禁用命令 |    禁用命令 |    禁用命令 |  
+| :--- | :--- | :--- | :--- |
+| discard | flushdb  | keys  | multi  |
+| dump | psubscribe  | publish | pubsub  |
+| exec  |punsubscribe  |quit  | subscribe  |
+| flushall  |unsubscribe  | unwatch  | watch  |
+
+
+
+
 
 ###  云原生工具redis-cli
 
