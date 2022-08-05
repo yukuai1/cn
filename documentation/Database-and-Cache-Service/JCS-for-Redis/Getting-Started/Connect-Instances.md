@@ -29,6 +29,25 @@
 ![](../../../../image/Redis/Connect-Instances-1.png)
 
 
+####   控制台 WebCLI 禁用命令说明
+|  禁用命令 |  
+| :--- |
+| discard |
+| dump |
+| exec  |
+| flushall  |
+| flushdb  |
+| keys  |
+| multi  |
+| psubscribe  |
+| publish |
+| pubsub  |
+| punsubscribe  |
+| quit  |
+| subscribe  |
+| unsubscribe  |
+| unwatch  |
+| watch  |
 
 ###  云原生工具redis-cli
 
