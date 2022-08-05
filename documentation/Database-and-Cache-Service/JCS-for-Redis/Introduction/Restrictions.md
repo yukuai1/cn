@@ -23,24 +23,14 @@
 |  DB	|  对于Proxy集群版架构，每个Redis实例可支持用户配置0-256个DB。但数据库命名无法自定义，默认从0-255，所有DB存储的数据总量受限于实例的内存大小，单个DB占用内存按照使用情况自动分配。|  
 
 ##  控制台 WebCLI 禁用命令说明
-|  禁用命令 |  
-| :--- |
-| discard |
-| dump |
-| exec  |
-| flushall  |
-| flushdb  |
-| keys  |
-| multi  |
-| psubscribe  |
-| publish |
-| pubsub  |
-| punsubscribe  |
-| quit  |
-| subscribe  |
-| unsubscribe  |
-| unwatch  |
-| watch  |
+禁用命令如下：
+|  禁用命令 |    禁用命令 |    禁用命令 |    禁用命令 |  
+| :--- | :--- | :--- | :--- |
+| discard | flushdb  | keys  | multi  |
+| dump | psubscribe  | publish | pubsub  |
+| exec  |punsubscribe  |quit  | subscribe  |
+| flushall  |unsubscribe  | unwatch  | watch  |
+
 
 
 
