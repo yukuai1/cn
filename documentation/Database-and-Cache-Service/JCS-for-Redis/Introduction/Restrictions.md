@@ -17,10 +17,27 @@
 
 |  事项 |  说明  |
 | :--- | :---  |
-|  Redis命令支持	|  支持命令见：  [Redis命令支持](../Getting-Started/Command-Supported.md)	|  
+|  Redis命令支持	|  支持命令见：   [Redis命令支持](../Introduction/Command-Supported.md)		|  
 |  禁用高风险命令|  考虑到高风险命令可能带来影响Redis服务性能、危害数据安全，目前控制台默认禁用高风险命令。|  
 |  空闲连接回收机制	|  目前服务端有5分钟空闲连接断开机制。可在参数配置中通过timeout参数进行调整。  |  
 |  DB	|  对于Proxy集群版架构，每个Redis实例可支持用户配置0-256个DB。但数据库命名无法自定义，默认从0-255，所有DB存储的数据总量受限于实例的内存大小，单个DB占用内存按照使用情况自动分配。|  
+
+##  控制台 WebCLI 禁用命令说明
+禁用命令如下：
+|  禁用命令 |    禁用命令 |    禁用命令 |    禁用命令 |  
+| :--- | :--- | :--- | :--- |
+| discard | flushdb  | keys  | multi  |
+| dump | psubscribe  | publish | pubsub  |
+| exec  |punsubscribe  |quit  | subscribe  |
+| flushall  |unsubscribe  | unwatch  | watch  |
+
+
+
+
+
+
+
+
 
 
 
