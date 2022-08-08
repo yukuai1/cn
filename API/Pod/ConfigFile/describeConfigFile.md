@@ -2,7 +2,7 @@
 
 
 ## 描述
-查询单个 ConfigFile 详情.
+查询单个 ConfigFile 详情。
 
 
 ## 请求方式
@@ -45,5 +45,5 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/configFiles/{name}
 
 ## 返回码
 |HTTP状态码|错误码|描述|错误解析
-|---|---|---|
+|---|---|---|---|
 |**200**||OK|
