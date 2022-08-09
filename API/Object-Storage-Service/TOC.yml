@@ -62,6 +62,8 @@
              href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/GET-Bucket-accelerate.md
            - name: Get Bucket InventoryConfiguration
              href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-InventoryConfiguration.md
+           - name: Get Bucket Logging
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Logging.md
            - name: Head Bucket
              href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Head-Bucket-2.md
            - name: List Multipart Uploads
@@ -94,6 +96,8 @@
              href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/PUT-Bucket-accelerate.md
            - name: Put Bucket InventoryConfiguration
              href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-InventoryConfiguration.md
+           - name: Put Bucket Logging
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Logging.md
       - name: 关于Object操作 
         items:
              - name: Abort Multipart Upload
