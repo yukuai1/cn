@@ -16,16 +16,21 @@
 ### 1.Topic管理页面点击“新建”按钮
 
 从控制台左侧菜单中，找到互联网中间件-消息队列 JCQ-Topic管理页面，点击新建
- ![创建topic步骤1](../../../../../image/Internet-Middleware/Message-Queue/创建topic-01.PNG)
+ ![创建topic步骤1](/documentation/Middleware/Message-Queue/image/创建topic-01.jpg)
 
 ### 2.填写完Topic信息，点击“创建”按钮
 
 页面刷新，完成新topic的创建
- ![创建topic步骤2](../../../../../image/Internet-Middleware/Message-Queue/创建topic-03.png)  
-I. topic名称可以按照提示信息输入，不可修改。  
-II. 消息类型分为普通消息和全局顺序消息:  
+ ![创建topic步骤2](/documentation/Middleware/Message-Queue/image/创建topic-02.jpg)  
+
+1. 选择namespace时可以选择用户自己创建的或者是默认的，如果需要新建，则点击新建namespace，在新建窗口完成那namespace名称填写即可。namespace名称不允许重复。namespace名称长度 3-32 个字符，支持字母、数字、连字符(-)、下划线(_)。
+
+2. topic名称可以按照提示信息输入，不可修改。topic名称为全局唯一，如果有相同名称的topic被创建，则无法创建成功。并且topic只能包含字母、数字、连字符(-)、下划线(_)、波形符 (~)或加号 (+)，长度 为3-64 个字符。
+3. 消息类型为普通消息、事务消息、全局顺序消息和分区顺序消息。
 
 - 普通消息：不保证先入先出（FIFO）的顺序消费，包含普通消息和延时消息。
-- 全局顺序消息：消息的生产和消费按照消息的发布顺序进行（FIFO）。  
+- 事务消息：仅topic类型为RocketMQ的支持选择事务消息，能达到分布式事务的最终一致。
+- 全局顺序消息：消息的生产和消费按照消息的发布顺序进行（FIFO）。
+- 分区顺序消息：仅topic类型为RocketMQ的支持选择事务消息，同一个分区下，其消费者在消费消息的时候，严格按照生产者投递到该分区的顺序进行消费。分区顺序消息在保证了一定顺序性的同时，保留了分区机制提升性能。
 
-III. 备注根据需求填写，不可超过255个字节。
+4. 备注根据需求填写，不可超过255个字节。
