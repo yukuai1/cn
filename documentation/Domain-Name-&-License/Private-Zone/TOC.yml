@@ -1,6 +1,8 @@
   name: 内网域名解析
   href: 
   items:
+  - name: 公告	
+    herf: Announce/Announce.md
   - name: 产品简介
     items:
       - name: 产品概述
