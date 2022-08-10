@@ -11,11 +11,11 @@
 ## 操作步骤
 **1. 在topic列表，选择要发送消息的topic--操作--发布消息**
 
-![发送消息步骤1](../../../../../image/Internet-Middleware/Message-Queue/topiclist.PNG)
+![发送消息步骤1](/documentation/Middleware/Message-Queue/image/发送消息-01.jpg)
 
 **2.填写发送消息的内容，单击“发送”**
 
-![发送消息步骤2](../../../../../image/Internet-Middleware/Message-Queue/发送消息-02.png)  
+![发送消息步骤2](/documentation/Middleware/Message-Queue/image/发送消息-02.jpg)  
 
 
 I. 输入Message Body、BusinessID和tag，并且如果想要发送延时消息可以设置消息延迟时间。  
