@@ -18,9 +18,9 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/configFiles
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |ConfigFile 的名称，须确保同地域下唯一。<br>只允许数字、小写字母、及中划线“-”，不超过63个字符。|
-|**data**|[ConfigFileData[]](#configfiledata)|True| |ConfigFile的数据，键值对形式，不超过32对，总长度不超过1MB。|
+|**data**|[ConfigFileData[]](createconfigfile#configfiledata)|True| |ConfigFile的数据，键值对形式，不超过32对，总长度不超过1MB。|
 
-### <div id="ConfigFileData">ConfigFileData</div>
+### <div id="configfiledata">ConfigFileData</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**key**|String|True| |键，不能重复，只允许数字、大小写字母、英文下划线”_”、中划线“-”及点”.”，不超过128个字符。|
