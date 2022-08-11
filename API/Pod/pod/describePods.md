@@ -21,8 +21,8 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |---|---|---|---|---|
 |**pageNumber**|Integer|False| |页码；默认为1|
 |**pageSize**|Integer|False| |分页大小；默认为20；取值范围[10, 100]|
-|**filters**|[Filter[]](describepods#filter)|False| |podId - pod ID，精确匹配，支持多个<br>privateIpAddress - 主网卡IP地址，模糊匹配，支持单个<br>az - 可用区，精确匹配，支持多个<br>vpcId - 私有网络ID，精确匹配，支持多个<br>phase - pod 状态，精确匹配，支持多个<br>name - 实例名称，模糊匹配，支持单个<br>subnetId - 镜像ID，精确匹配，支持多个<br>|
-|**tags**|[TagFilter[]](describepods#tagfilter)|False| |Tag筛选条件|
+|**filters**|[Filter](describepods#filter)|False| |podId - pod ID，精确匹配，支持多个<br>privateIpAddress - 主网卡IP地址，模糊匹配，支持单个<br>az - 可用区，精确匹配，支持多个<br>vpcId - 私有网络ID，精确匹配，支持多个<br>phase - pod 状态，精确匹配，支持多个<br>name - 实例名称，模糊匹配，支持单个<br>subnetId - 镜像ID，精确匹配，支持多个<br>|
+|**tags**|[TagFilter](describepods#tagfilter)|False| |Tag筛选条件|
 
 ### <div id="tagfilter">TagFilter</div>
 |名称|类型|是否必需|默认值|描述|
@@ -45,7 +45,7 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 ### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**pods**|[Pod[]](describepods#pod)| |
+|**pods**|[Pod](describepods#pod)| |
 |**totalCount**|Number| |
 ### <div id="pod">Pod</div>
 |名称|类型|描述|
@@ -63,13 +63,13 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |**privateIpAddress**|String|主网卡主IP地址|
 |**dnsConfig**|[DnsConfig](describepods#dnsconfig)|pod内容器的/etc/resolv.conf配置|
 |**logConfig**|[LogConfig](describepods#logconfig)|容器日志配置信息；默认会在本地分配10MB的存储空间|
-|**hostAliases**|[HostAlias[]](describepods#hostalias)|pod内容器的/etc/hosts配置|
-|**volumes**|[Volume[]](describepods#volume)|属于Pod的volume列表，提供挂载到containers上。|
-|**containers**|[Container[]](describepods#container)|pod内的容器信息|
+|**hostAliases**|[HostAlias](describepods#hostalias)|pod内容器的/etc/hosts配置|
+|**volumes**|[Volume](describepods#volume)|属于Pod的volume列表，提供挂载到containers上。|
+|**containers**|[Containe](describepods#container)|pod内的容器信息|
 |**podStatus**|[PodStatus](describepods#podstatus)|pod状态信息|
 |**elasticIp**|[ElasticIp](describepods#elasticip)|主网卡主IP关联的弹性IP规格|
 |**primaryNetworkInterface**|[NetworkInterfaceAttachment](describepods#networkinterfaceattachment)|主网卡配置信息|
-|**tags**|[Tag[]](describepods#tag)| |
+|**tags**|[Tag](describepods#tag)| |
 |**charge**|[Charge](describepods#charge)|计费配置；如不指定，默认计费类型是后付费-按使用时常付费|
 |**createTime**|String|Pod创建时间|
 ### <div id="charge">Charge</div>
@@ -101,10 +101,10 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |**vpcId**|String|虚拟网络ID|
 |**subnetId**|String|子网ID|
 |**description**|String|描述|
-|**securityGroups**|[SecurityGroupSimple[]](describepods#securitygroupsimple)|安全组列表|
+|**securityGroups**|[SecurityGroupSimple](describepods#securitygroupsimple)|安全组列表|
 |**sanityCheck**|Boolean|源和目标IP地址校验，取值为0或者1|
 |**primaryIp**|[NetworkInterfacePrivateIp](describepods#networkinterfaceprivateip)|网卡主IP|
-|**secondaryIps**|[NetworkInterfacePrivateIp[]](describepods#networkinterfaceprivateip)| |
+|**secondaryIps**|[NetworkInterfacePrivateIp](describepods#networkinterfaceprivateip)| |
 |**ipv6Addresses**|String[]|网卡IPv6地址|
 ### <div id="networkinterfaceprivateip">NetworkInterfacePrivateIp</div>
 |名称|类型|描述|
@@ -129,7 +129,7 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |**reason**|String|（简要）pod处于当前状态的原因|
 |**message**|String|pod处于当前状态原因的详细信息|
 |**podIP**|String|分配给pod的IP地址。至少在集群内是可路由的。未分配则为空。|
-|**conditions**|[PodCondition[]](describepods#podcondition)|目前pod的状态。|
+|**conditions**|[PodCondition](describepods#podcondition)|目前pod的状态。|
 |**startTime**|String|Pod生命周期开始的时间。|
 ### <div id="podcondition">PodCondition</div>
 |名称|类型|描述|
@@ -146,7 +146,7 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |**name**|String|容器名称|
 |**command**|String[]|容器执行的命令。|
 |**args**|String[]|容器执行命令的参数。|
-|**env**|[Env[]](describepods#env)|容器执行的环境变量。|
+|**env**|[Env](describepods#env)|容器执行的环境变量。|
 |**image**|String|容器镜像名称。|
 |**secret**|String|容器镜像仓库认证信息。|
 |**tty**|Boolean|容器是否分配tty。|
@@ -155,7 +155,7 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |**readinessProbe**|[Probe](describepods#probe)|容器服务就绪探针配置|
 |**resources**|[ResourceRequests](describepods#resourcerequests)|容器计算资源配置|
 |**systemDisk**|[CloudDisk](describepods#clouddisk)|容器计算资源配置|
-|**volumeMounts**|[VolumeMount[]](describepods#volumemount)|容器计算资源配置|
+|**volumeMounts**|[VolumeMount](describepods#volumemount)|容器计算资源配置|
 |**containerStatus**|[ContainerStatus](describepods#containerstatus)|容器状态信息|
 ### <div id="containerstatus">ContainerStatus</div>
 |名称|类型|描述|
@@ -253,11 +253,16 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |---|---|---|
 |**name**|String|环境变量名称（ASCII）。|
 |**value**|String|环境变量取值。|
+
 ### <div id="volume">Volume</div>
 |名称|类型|描述|
 |---|---|---|
 |**name**|String|volume名字，在一个Pod唯一。|
-|**jdcloudDisk**|[JDCloudVolumeSource](describepods#jdcloudvolumesource)|提供给Pod的cloud disk.|
+|**jdcloudDisk**|[JDCloudVolumeSource](describepods#jdcloudvolumesource)|提供给Pod的cloud disk。|
+|**cfs**|[CFSVolumeSource](describepods#cfsvolumesource)|提供给Pod的cfs。
+|**configFile**|[ConfigFileVolumeSource](configfilevolumesource)|提供给Pod的configFile。
+
+
 ### <div id="jdcloudvolumesource">JDCloudVolumeSource</div>
 |名称|类型|描述|
 |---|---|---|
@@ -269,6 +274,21 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |**formatVolume**|Boolean|随容器自动创建的新盘，会自动格式化成指定的文件系统类型；挂载已有的盘，默认不会格式化，只会按照指定的fsType去挂载；如果希望格式化，必须设置此字段为true|
 |**iops**|Integer|云盘的 iops 值，目前只有 ssd.io1 类型有效|
 |**autoDelete**|Boolean|是否随pod删除。默认：true|
+
+### <div id="cfsvolumesource">CfsVolumeSource</div>
+|名称|类型|描述|
+|---|---|---|
+|**mountTargetId**|String|文件挂载ID。|
+|**path**|String|子目录。|
+
+### <div id="configfilevolumesource">ConfigFileVolumeSourcec</div>
+|名称|类型|描述|
+|---|---|---|
+|**name**|String|ConfigFile名称。|
+|**fileToPath**|[ConfigFileToPathSpec](createpods#configfiletopathspec)|True| |configFile配置信息。|
+|**name**|String|True||configFile名称。
+
+
 ### <div id="hostalias">HostAlias</div>
 |名称|类型|描述|
 |---|---|---|
