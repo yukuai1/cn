@@ -23,15 +23,15 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/configFiles/{name}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| 响应结果。|
+|**result**|[Result](describeConfigFile#result)| 响应结果。|
 |**requestId**|String|请求ID。 |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**configFile**|[ConfigFile](#configfile)|ConfigFile详情。 |
+|**configFile**|[ConfigFile](describeConfigFile#configfile)|ConfigFile详情。 |
 
-### <div id="ConfigFile">ConfigFile</div>
+### <div id="configFile">ConfigFile</div>
 |名称|类型|描述|
 |---|---|---|
 |**name**|String|ConfigFile名称。|
