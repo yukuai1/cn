@@ -13,12 +13,12 @@
 ## 操作步骤
 ### 1. 进入死信队列页面
 
-![死信队列1](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/Message-Queue/死信队列-01.png)
+![死信队列1](/documentation/Middleware/Message-Queue/image/死信队列.jpg)
 输入topic ID 或者consumer group ID进行搜索
 
 ### 2. 重新发送和全部删除
 
-![死信队列2](https://github.com/jdcloudcom/cn/blob/edit/image/Internet-Middleware/Message-Queue/死信队列-02.png)  
+![死信队列2](/documentation/Middleware/Message-Queue/image/死信队列-01.jpg)  
 对于死信可以选择全部重新发送或者全部删除  
 
 - 全部重新发送，死信将再次进入topic发送给这条订阅关系的订阅者

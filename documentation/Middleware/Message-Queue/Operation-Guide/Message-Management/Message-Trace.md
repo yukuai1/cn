@@ -38,7 +38,7 @@
 2. 选择所要查询消息所在的地域，可选择任一页签，输入信息，进行消息查询。
 3. 选择有问题的消息点击操作中的消息轨迹进行查看状态，来确定问题。
 
-![消息轨迹-01](../../../../../image/Internet-Middleware/Message-Queue/消息轨迹-01.png)
+![消息轨迹-01](/documentation/Middleware/Message-Queue/image/消息轨迹.jpg)
 
 规则：
 

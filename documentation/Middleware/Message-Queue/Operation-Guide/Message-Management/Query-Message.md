@@ -11,7 +11,7 @@
 
 ### 1. 按Business ID查询
 
-![查询3](../../../../../image/Internet-Middleware/Message-Queue/查询-03.png)
+![查询3](/documentation/Middleware/Message-Queue/image/查询-03.jpg)
 输入或选取想要查询的topic名称,输入用户自己定义的Business ID，点击搜索。  
 可以点击某条message的操作，查看消息详情或者消息轨迹。
 
@@ -22,12 +22,12 @@
 
 ### 2. 按Message ID查询
 
-![查询2](../../../../../image/Internet-Middleware/Message-Queue/查询-02.png)
+![查询2](/documentation/Middleware/Message-Queue/image/查询-02.jpg)
 输入或选取想要查询的topic名称,输入Message ID，点击搜索。  
 可以点击某条message的操作，查看消息详情或者消息轨迹。
 
 ### 3. 按时间日期查询
-![查询1](../../../../../image/Internet-Middleware/Message-Queue/查询-01.png)
+![查询1](/documentation/Middleware/Message-Queue/image/查询-01.jpg)
 输入或选取想要查询的Topic名称和时间范围，点击搜索，得到查询结果。  
 可以点击某条message的操作，查看消息详情或者消息轨迹。
 
@@ -36,6 +36,6 @@
 查询列表展示消息的Message ID、Business ID、Tag以及存储时间。进一步可查看消息详情，其中包含消息轨迹。
 #### 消息详情
 查询详情里详细展示了消息的Message Body、User Properties以及消息体大小。
-![查询4](../../../../../image/Internet-Middleware/Message-Queue/查询-04.png)
+![查询4](/documentation/Middleware/Message-Queue/image/查询-04.jpg)
 #### 消息轨迹
 消息轨迹部分可以展示消息的完整生产和消费过程，详情参见[消息轨迹](Message-Trace.md)。
