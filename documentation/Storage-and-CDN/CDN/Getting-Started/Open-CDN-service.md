@@ -1,31 +1,20 @@
 # **开通CDN服务**
 
-方式一：拨打电话：400-623-0183（售前）、400-098-8505转2（售后），由客服为您开通CDN服务。
+通过CDN控制台线上自助开通，开通流程如下：
 
-方式二：通过官网自助开通，流程如下：
+![自助开通流程](https://github.com/jdcloudcom/cn/blob/cdn_20220222_api/image/CDN/自助开通流程.png)
 
-![image.png](https://img1.jcloudcs.com/cms/266a0834-5e5d-47db-9710-d01195b30bf520180117155324.png)
+1、	注册京东云账号并登陆。
 
- 1、       登录[京东云官网](https://www.jdcloud.com/cn/)，点击右上角的“[免费注册](https://user.jdcloud.com/register)”，注册京东云账号
+2、	进入CDN控制台，根据指引完成账号个人/企业实名认证。
 
-![image.png](https://img1.jcloudcs.com/cms/750664a7-65c2-4f36-b443-d1ed4ff865e020180423110225.png)
+![实名认证](https://github.com/jdcloudcom/cn/blob/cdn_20220222_api/image/CDN/实名认证.jpg)
 
-2、       注册完成后，登录[京东云控制台](https://uc.jdcloud.com/login?returnUrl=https%3A%2F%2Fconsole.jcloud.com%2F)
+3、	仔细阅读并确认相关信息与协议，确认无误后勾选已阅读并同意，提交开通CDN权限。
 
-![image.png](https://img1.jcloudcs.com/cms/346e283e-32d4-4c1c-a9a5-e7435452b58320180423110316.png)
+![阅读相关协议](https://github.com/jdcloudcom/cn/blob/cdn_20220222_api/image/CDN/阅读相关协议.jpg)
 
-3、       进入控制台页面，点击右上角【工单】--【提交工单】
+`注意事项：`
 
-![image.png](https://img1.jcloudcs.com/cms/fcc85488-7e97-4046-8623-2c5ea98f0af120180423110423.png)
+开通后默认为线上小时流量计费方式，每小时将按实际消耗、线上官网价格（[计费概述](https://docs.jdcloud.com/cn/cdn/billing-overview)）产生账单并扣费，欠费后将根据欠费停服规则进行停服操作。若需申请免费测试或转为线下结算，请先行联系京东云商务团队，待商务沟通处理完毕后再产生用量消耗。
 
-4、       选择【CDN】，进入提交工单页面
-
-![image.png](https://img1.jcloudcs.com/cms/e2340616-cee7-4ae5-a2cc-10e2cd77684d20180423110513.png)
-
-5、       在工单页面，填报【使用权限申请】工单，如下所示，信息填写完毕点击提交即可
-
-![image.png](https://img1.jcloudcs.com/cms/40c7cf69-7feb-4cea-86a4-2036abd0a89a20180423110737.png)
-
-6、       开通CDN服务后，即可在【CDN】--【域名列表】--【添加域名】，可参考[入门指南](Getting-Started.md)
-
-![image.png](https://img1.jcloudcs.com/cms/1057c887-2b25-4aaf-835c-3e5adf559b1020180423110839.png)
