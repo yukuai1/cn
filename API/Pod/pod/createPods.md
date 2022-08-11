@@ -151,7 +151,7 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |**name**|String|True| |要挂载的云盘，必须使用pod volumeSpec.name。|
 |**mountPath**|String|True| |容器内挂载点，绝对路径，不得重复和嵌套挂载，不得挂载到根目录("/")。长度范围：[1-1024]。|
 |**readOnly**|Boolean|False| |是否以只读方式挂载。默认：读写模式。|
-|**subPath**|String|False| |configFile挂载子目录。|
+|**subPath**|String|False| |ConfigFile挂载子目录。|
 
 ### <div id="clouddiskspec">CloudDiskSpec</div>
 |名称|类型|是否必需|默认值|描述|
@@ -252,7 +252,7 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |---|---|---|---|---|
 |**path**|String|True| |文件目录。|
 |**key**|String|True| |配置文件Key。|
-|**mode**|String|False| |文件目录权限(8进制0000-0777，10进制 0-511)。|
+|**mode**|String|False| |文件目录权限。|
 
 ### <div id="hostaliasspec">HostAliasSpec</div>
 |名称|类型|是否必需|默认值|描述|
