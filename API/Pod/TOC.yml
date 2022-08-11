@@ -47,6 +47,16 @@ items:
       href: Container/execStart.md
     - name: 重置 TTY 大小
       href: Container/resizeTTY.md
+  - name: ConfigFile
+    items:
+    - name: 创建ConfigFile
+      href: ConfigFile/createConfigFile.md
+    - name: 查询ConfigFile
+      href: ConfigFile/describeConfigFile.md
+    - name: 更新ConfigFile
+      href: ConfigFile/updateConfigFile.md
+    - name: 删除ConfigFile
+      href: ConfigFile/deleteConfigFile.md    
   - name: 配额
     items:
     - name: 查询 Pod 配额
