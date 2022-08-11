@@ -29,8 +29,10 @@ items:
       href: Operation-Guide/Account-Risk.md
     - name: 异常登录
       href: Operation-Guide/Abnormal-Logon.md
+    - name: 防勒索
+      href: Operation-Guide/Anti-extortion.md
     - name: 暴力破解
-      href: Operation-Guide/Brute-Force.md
+      href: Operation-Guide/Brute-Force.md    
     - name: 合规基线
       href: Operation-Guide/Compliance-Baseline.md      
     - name: 病毒木马
@@ -43,10 +45,12 @@ items:
       href: Operation-Guide/Suspicious-Operation.md     
     - name: 敏感文件篡改
       href: Operation-Guide/File-Monitoring.md     
-    - name: 安全报表
-      href: Operation-Guide/Security-Report.md  
     - name: 容器安全
       href: Operation-Guide/Security-Configuration.md   
+    - name: 安全报表
+      href: Operation-Guide/Security-Report.md  
+    - name: 日志审计
+      href: Operation-Guide/Log-auditing.md 
     - name: 多云安装
       href: Operation-Guide/MultiCloud-Install.md  
     - name: 系统设置
