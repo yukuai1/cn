@@ -2,7 +2,6 @@
 ## 操作序列
 - 登录京东云官网。选择产品-弹性计算-云主机CVM，点击立即购买进入云主机购买页面。
 - 访问[实例控制台](https://cns-console.jdcloud.com/host/compute/list)，或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏【弹性计算】-【云主机】-【实例】进入实例列表页。点击【创建】按钮，进入云主机购买页面。建议您根据业务情况选择实例所在地域，关于京东云地域详细信息，请参见[地域与可用区](../Introduction/Regions-and-AvailabilityZones.md)。
-![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0601.jpg)
 ### 操作步骤
 步骤1：基础配置
 - 基础配置主要包括购买实例的基础需求（计费模式、地域和可用区）和实例的基础资源（实例规格、镜像、存储）。
