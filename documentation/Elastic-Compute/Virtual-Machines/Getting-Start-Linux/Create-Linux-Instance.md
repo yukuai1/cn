@@ -1,8 +1,8 @@
 # 创建Linux实例
-## 操作序列
-- 登录京东云官网。选择产品-弹性计算-云主机CVM，点击立即购买进入云主机购买页面。
-- 访问[实例控制台](https://cns-console.jdcloud.com/host/compute/list)，或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏【弹性计算】-【云主机】-【实例】进入实例列表页。点击【创建】按钮，进入云主机购买页面。建议您根据业务情况选择实例所在地域，关于京东云地域详细信息，请参见[地域与可用区](../Introduction/Regions-and-AvailabilityZones.md)。
-### 操作步骤
+## 操作入口
+- 1·登录京东云官网。选择产品-弹性计算-云主机CVM，点击立即购买进入云主机购买页面。
+- 2.访问[实例控制台](https://cns-console.jdcloud.com/host/compute/list)，或访问[京东云控制台](https://console.jdcloud.com)点击左侧导航栏【弹性计算】-【云主机】-【实例】进入实例列表页。点击【创建】按钮，进入云主机购买页面。建议您根据业务情况选择实例所在地域，关于京东云地域详细信息，请参见[地域与可用区](../Introduction/Regions-and-AvailabilityZones.md)。
+## 操作步骤
 步骤1：基础配置
 - 基础配置主要包括购买实例的基础需求（计费模式、地域和可用区）和实例的基础资源（实例规格、镜像、存储）。
 
@@ -46,7 +46,6 @@
   * 选择安全组：实例在创建时必须绑定一个安全组，若当前地域下未创建自定义安全组，可以在系统创建的三个默认安全组中选择一个绑定（每个私有网络创建成功之后都会自动创建三个默认安全组），也可以通过快速入口前往安全组页面[创建安全组](http://docs.jdcloud.com/cn/virtual-private-cloud/security-group-configuration)。由于官方镜像系统内防火墙默认关闭，建议绑定仅开放22端口（Linux）或3389端口（Windows）的安全组，实例创建之后再根据访问需求创建新的安全组并绑定。    
 ![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0610.png)
   * IPv6地址配置：如果为实例配置IPv6地址，请选择官方CentOS7.4镜像，并预先完成IPv4/IPv6双栈VPC的创建（详见[私有网络](http://docs.jdcloud.com/cn/virtual-private-cloud/product-overview)和[子网](http://docs.jdcloud.com/cn/virtual-private-cloud/subnet-features)）。然后在实例创建选择相应VPC和子网后，勾选“自动分配IPv6地址”。
-![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0617.png
 2. 配置公网带宽：
   * 带宽计费方式：京东云提供按固定带宽和按使用流量两种带宽计费类型的弹性公网IP，按固定带宽计费按购买时设置的带宽上限值付费，而与实际访问公网所用带宽无关，按使用流量计费则根据您实时访问公网的实际流量计费。
   * 线路：弹性公网IP线路分为：BGP和非BGP，若您需要更快更高效的网络接入请选用BGP。                
