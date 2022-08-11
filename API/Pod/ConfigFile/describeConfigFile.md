@@ -35,9 +35,9 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/configFiles/{name}
 |名称|类型|描述|
 |---|---|---|
 |**name**|String|ConfigFile名称。|
-|**data**|[ConfigFileData[]](#configfiledata)|ConfigFile数据。|
+|**data**|[ConfigFileData[]](describeconfigfile#configfiledata)|ConfigFile数据。|
 
-### <div id="ConfigFileData">ConfigFileData</div>
+### <div id="configfiledata">ConfigFileData</div>
 |名称|类型|描述|
 |---|---|---|
 |**key**|String|键。|
