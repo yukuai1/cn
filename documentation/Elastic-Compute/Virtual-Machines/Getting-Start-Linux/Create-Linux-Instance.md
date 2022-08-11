@@ -26,7 +26,7 @@
 - 提供以下镜像类型：**官方镜像**、**私有镜像**、**共享镜像**、**镜像市场镜像**四类镜像，详细区分请参见[镜像概述](../Operation-Guide/Image/Image-Overview.md)。
  * 对于初次使用京东云的用户可以选择京东云提供的“官方镜像”，您可以根据需要选择对应的系统，并选择合适的版本。
  * 如果您已经创建好自己的实例，并配置好相应的环境，可以将此实例进行制作私有镜像操作，同时基于此镜像批量创建有相同系统及环境配置的主机，还可以将此私有镜像共享给其他京东云用户。 
-![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0605.png)
+![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0811.jpg)
 6. 选择实例规格：
  * 实例的规格支持用户自定义选择，从最小的1核1G（如g.s1.micro）到124C2108GB（如m.e3.31xlarge），用户可以根据不同业务场景选择实例规格及相应配置，详细请参见[实例规格](../Introduction/Instance-Type-Family.md)。
 ![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0606.png)
@@ -54,7 +54,6 @@
 在创建主机过程中可以暂不购买公网IP，完成主机创建后，再进行绑定。弹性公网IP带宽费用与实例费用独立。具体价格信息请查阅[弹性公网IP价格](../../../Networking/Elastic-IP/Pricing/Price-Overview.md)。      
 ![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0611.png)
 ### 步骤3：系统配置
-系统配置包括登录信息、主机名称、实例自定义数据等，用于定制实例在控制台和操作系统内显示的信息或使用方式。
 1. 设置密码、密钥：
   * 对于设置密码，可以选择“立即设置”密码，也可以选择“暂不设置”（系统会以短信和邮件方式发送默认密码），密码除了用于SSH登录实例时的密码，也是控制台通过VNC登录实例的密码。     
   * 对于Linux系统，可以选择SSH密钥登录，通过绑定已经创建的SSH密钥进行更安全的实例登录认证，详细SSH密钥创建及登录帮助，请查阅 [SSH密钥](../Operation-Guide/Key-Pair/KeyPair-Overview.md)。  
