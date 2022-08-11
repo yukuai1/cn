@@ -68,7 +68,7 @@
   * 购买数量受限该地域您云主机、云硬盘、公网IP限额以及所选子网剩余IP数量，若限额不够，可通过[提交工单](https://ticket.jdcloud.com/myorder/submit)提升限额。
   * 若购买包年包月实例，则需要设置购买时长，最短为1个月，最长为3年。若需要更长服务时长请[提交工单](https://ticket.jdcloud.com/myorder/submit)。
   * 购买包年包月实例时，可直接为其及关联资源（云硬盘、弹性公网IP）配置自动续费，自动续费时长默认同购买时长，如后续需要调整可随时前往续费管理控制台调整。
-![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0614.png)
+![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0812.png)
 ## 相关参考
 
 [地域与可用区](../Introduction/Regions-and-AvailabilityZones.md)
