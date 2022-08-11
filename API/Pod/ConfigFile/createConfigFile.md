@@ -42,4 +42,7 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/configFiles
 |---|---|---|---|
 |**200**||OK|
 |**400** |FAILED_PRECONDITION|Conflict configFile name | ConfigFile 名称重复。
-
+|**400** |INVALID_ARGUMENT|Configfile value must be Base64 encoding | ConfigFile 的value值须base64后传入。
+|**400** |INVALID_ARGUMENT|Configfile key is conflict | ConfigFile 的key重复。
+|**500**| INTERNAL| Internal server error|系统内部错误，请稍后重试。如果多次尝试失败，请提交工单。
+|**500**|	UNKNOWN|	Unknown server error	|服务暂时不可用，请稍后重试。如果多次尝试失败，请提交工单。
