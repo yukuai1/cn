@@ -32,7 +32,7 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/configFiles
 |**result**|[Result](createconfigfile#result)| 响应结果。|
 |**requestId**|String| 请求ID。|
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**name**|String|ConfigFile名称。 |
