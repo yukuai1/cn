@@ -4,6 +4,7 @@
 
 以下为当前京东云在售的实例规格类型信息，不同地域可售卖实例类型及规格不完全相同，请以实例创建页面所显示为准。具体在售实例规格类型根据不同应用场景可以分为：
 
+#### x86规格
 * 通用型：[通用共享型](instance-type-family#user-content-1)、[通用标准型](instance-type-family#user-content-2)
 * 计算优化型：[计算优化共享型](instance-type-family#user-content-9)、[计算优化密集型](instance-type-family#user-content-11)、[计算优化标准型](instance-type-family#user-content-3)
 * 内存优化型：[内存优化标准型](instance-type-family#user-content-4)、[内存优化增强型](instance-type-family#user-content-17)
@@ -13,6 +14,12 @@
 * GPU型：[GPU标准型](instance-type-family#user-content-6)、[GPU虚拟化型](instance-type-family#user-content-10)
 * 裸金属：[标准型](instance-type-family#user-content-13)、[存储优化IO型](instance-type-family#user-content-14)、[安全增强内存优化型](instance-type-family#user-content-15)
 
+#### ARM规格
+* 通用型：[通用标准型](instance-type-family#user-content-18)
+* 计算优化型：[计算优化标准型](instance-type-family#user-content-19)
+* 内存优化型：[内存优化标准型](instance-type-family#user-content-20)
+
+## x86规格：
 ## 通用型
 通用型当前提供通用共享型及通用标准型，为您提供均衡的计算及内存资源，可满足大部分业务场景下的需求。其中通用标准型中每一个vCPU都对应一个处理器的超线程核，其vCPU与内存比为1:4。
 
@@ -837,6 +844,99 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 实例规格|vCPU（核）|内存（GiB）|含机密内存（GiB）|网卡数|单网卡队列数
 |:---|:---|:---|:---|:---|:---
 |m.n4ft.metal|128|1024|512|16|32
+
+## ARM规格：
+### 通用标准型
+
+<div id="user-content-18"></div>
+
+**规格类型特点:**
+
+* vCPU与内存比为1:4
+* 处理器：
+	* 2.1 GHz主频的 PHYTIUM S2500 处理器
+* 支持以下类型云硬盘：
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
+* 镜像使用限制：
+	* 仅支持云盘系统盘镜像，目前官方镜像仅支持 OpenEuler 21.09（须工单申请）
+* 适用场景：
+	* 信创相关互联网应用
+	* 各种类型和规模的企业级应用
+
+**实例规格**
+
+实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数
+:---|:---|:---|:---|:---
+|g.n3r.large|2|8|2|2
+|g.n3r.xlarge|4|16|4|4
+|g.n3r.2xlarge|8|32|4|4
+|g.n3r.4xlarge|16|64|8|4
+|g.n3r.8xlarge|32|128|8|4
+|g.n3r.16xlarge|64|256|8|4
+
+### 计算优化标准型
+
+<div id="user-content-19"></div>
+
+**规格类型特点：**
+
+* vCPU与内存比为1:2
+* 处理器：
+	* 2.1 GHz主频的 PHYTIUM S2500 处理器
+* 支持以下类型云硬盘：
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
+* 镜像使用限制：
+	* 仅支持云盘系统盘镜像，目前官方镜像仅支持 OpenEuler 21.09（须工单申请）
+* 适用场景：
+	* 信创相关互联网应用
+	* 各种类型和规模的企业级应用
+
+**实例规格**
+
+实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数
+:---|:---|:---|:---|:---
+|c.n3r.large|2|4|2|2
+|c.n3r.xlarge|4|8|4|4
+|c.n3r.2xlarge|8|16|4|4
+|c.n3r.4xlarge|16|32|8|4
+|c.n3r.8xlarge|32|64|8|4
+|c.n3r.16xlarge|64|128|8|4
+
+## 内存优化型
+<div id="user-content-20"></div>
+
+### 内存优化标准型
+
+**规格类型特点：**
+
+* vCPU与内存比为1:8
+* 处理器：
+	* 2.1 GHz主频的 PHYTIUM S2500 处理器
+* 支持以下类型云硬盘：
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
+* 镜像使用限制：
+	* 仅支持云盘系统盘镜像，目前官方镜像仅支持 OpenEuler 21.09（须工单申请）
+* 适用场景：
+	* 信创相关互联网应用
+	* 各种类型和规模的企业级应用
+
+**实例规格**
+
+实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数
+:---|:---|:---|:---|:---
+|m.n3r.large|2|16|2|2
+|m.n3r.xlarge|4|32|4|4
+|m.n3r.2xlarge|8|64|4|4
+|m.n3r.4xlarge|16|128|8|4
+|m.n3r.8xlarge|32|256|8|4
+|m.n3r.16xlarge|64|512|8|4
+
 
 请注意：
 
