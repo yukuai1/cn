@@ -213,13 +213,13 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |**name**|String|True| |环境变量名称（ASCII）。范围：[1-64]。必须为字母、数字、下划线(_)，正则为`^[a-zA-Z0-9]*$`。|
 |**value**|String|False| |环境变量取值。范围：[0-1024]。|
 
-### <div id="volumespec">VolumeSpec</div>
+### <div id="VolumeSpec">VolumeSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |volume名字，符合DNS-1123 label规范，在一个Pod内唯一。|
-|**jdcloudDisk**|[JDCloudVolumeSourceSpec](createpods#jdcloudvolumesourcespec)|True| |提供给Pod的cloud disk。|
-|**cfs**|[CfsVolumeSourceSpec](createpods#cfsvolumesourcespec)|False||提供给Pod的cfs。
-|**configFile**|[ConfigFileVolumeSourceSpec](createpods#cfconfigfilevolumesourcespec)|False||提供给Pod的configfile。
+|**jdcloudDisk**|[JDCloudVolumeSourceSpec](#jdcloudvolumesourcespec)|True| |提供给Pod的cloud disk。|
+|**cfs**|[CFSVolumeSourceSpec](#cfsvolumesourcespec)|False| |提供给Pod的CFS。|
+|**configFile**|[ConfigFileVolumeSourceSpec](#configfilevolumesourcespec)|False| |提供给Pod的ConfigFile。|
 
 ### <div id="jdcloudvolumesourcespec">JDCloudVolumeSourceSpec</div>
 |名称|类型|是否必需|默认值|描述|
@@ -234,24 +234,24 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |**iops**|Integer|False| |云盘的 iops 值，目前只有 ssd.io1 类型有效。|
 |**autoDelete**|Boolean|False| |是否随pod删除。默认：true。|
 
-### <div id="cfsvolumesourcespec">CfsVolumeSourceSpec</div>
+### <div id="cfsvolumesourcespec">CFSVolumeSourceSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**mountTargetId**|String|True| |共享目录ID。|
-|**path**|String|False| |挂载到共享目录下的子目录。|
+|**mountTargetId**|String|True| |挂载目标 ID。|
+|**path**|String|False| |CFS所在容器内的目录。|
 
-### <div id="cfconfigfilevolumesourcespec">ConfigFileVolumeSourceSpec</div>
+### <div id="ConfigFileVolumeSourceSpec">ConfigFileVolumeSourceSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**defaultMode**|String|False| 0644|默认文件目录权限(8进制0000-0777，10进制 0-511)。|
-|**fileToPath**|[ConfigFileToPathSpec](createpods#configfiletopathspec)|True| |configFile配置信息。|
-|**name**|String|True||configFile名称。
+|**name**|String|False| |configFile名称。|
+|**defaultMode**|String|False| |默认文件目录权限。|
+|**fileToPath**|[ConfigFileToPathSpec](#configfiletopathspec)|False| |提供给Pod的configFile。|
 
 ### <div id="configfiletopathspec">ConfigFileToPathSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**path**|String|True| |文件目录。|
 |**key**|String|True| |配置文件Key。|
+|**path**|String|False| |相关文件路径。|
 |**mode**|String|False| |文件目录权限。|
 
 ### <div id="hostaliasspec">HostAliasSpec</div>
