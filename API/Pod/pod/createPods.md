@@ -217,9 +217,9 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |volume名字，符合DNS-1123 label规范，在一个Pod内唯一。|
-|**jdcloudDisk**|[JDCloudVolumeSourceSpec](#jdcloudvolumesourcespec)|True| |提供给Pod的cloud disk。|
-|**cfs**|[CFSVolumeSourceSpec](#cfsvolumesourcespec)|False| |提供给Pod的CFS。|
-|**configFile**|[ConfigFileVolumeSourceSpec](#configfilevolumesourcespec)|False| |提供给Pod的ConfigFile。|
+|**jdcloudDisk**|[JDCloudVolumeSourceSpec](createpods#jdcloudvolumesourcespec)|True| |提供给Pod的cloud disk。|
+|**cfs**|[CFSVolumeSourceSpec](createpods#cfsvolumesourcespec)|False| |提供给Pod的CFS。|
+|**configFile**|[ConfigFileVolumeSourceSpec](createpods#configfilevolumesourcespec)|False| |提供给Pod的ConfigFile。|
 
 ### <div id="jdcloudvolumesourcespec">JDCloudVolumeSourceSpec</div>
 |名称|类型|是否必需|默认值|描述|
@@ -240,12 +240,12 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |**mountTargetId**|String|True| |挂载目标 ID。|
 |**path**|String|False| |CFS所在容器内的目录。|
 
-### <div id="ConfigFileVolumeSourceSpec">ConfigFileVolumeSourceSpec</div>
+### <div id="configfilevolumesourcespec">ConfigFileVolumeSourceSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|False| |configFile名称。|
 |**defaultMode**|String|False| |默认文件目录权限。|
-|**fileToPath**|[ConfigFileToPathSpec](#configfiletopathspec)|False| |提供给Pod的configFile。|
+|**fileToPath**|[ConfigFileToPathSpec](createpods#configfiletopathspec)|False| |提供给Pod的configFile。|
 
 ### <div id="configfiletopathspec">ConfigFileToPathSpec</div>
 |名称|类型|是否必需|默认值|描述|
