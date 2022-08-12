@@ -189,12 +189,15 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |名称|类型|描述|
 |---|---|---|
 |**startedAt**|String|容器最后一次重启或启动的时间。|
+
 ### <div id="volumemount">VolumeMount</div>
 |名称|类型|描述|
 |---|---|---|
 |**name**|String|挂载的云盘在pod中的名称。|
 |**mountPath**|String|容器内挂载点。|
 |**readOnly**|Boolean|是否以只读方式挂载。|
+|**subPath**|String|configFile挂载子目录。|
+
 ### <div id="clouddisk">CloudDisk</div>
 |名称|类型|描述|
 |---|---|---|
@@ -275,19 +278,25 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |**iops**|Integer|云盘的 iops 值，目前只有 ssd.io1 类型有效|
 |**autoDelete**|Boolean|是否随pod删除。默认：true|
 
-### <div id="cfsvolumesource">CfsVolumeSource</div>
+### <div id="CFSVolumeSource">CFSVolumeSource</div>
 |名称|类型|描述|
 |---|---|---|
-|**mountTargetId**|String|文件挂载ID。|
-|**path**|String|子目录。|
+|**mountTargetId**|String|挂载目标 ID。|
+|**path**|String|云文件系统所在容器内的目录。|
 
-### <div id="configfilevolumesource">ConfigFileVolumeSourcec</div>
+### <div id="configfilevolumesource">ConfigFileVolumeSource</div>
 |名称|类型|描述|
 |---|---|---|
-|**name**|String|ConfigFile名称。|
-|**fileToPath**|[ConfigFileToPathSpec](createpods#configfiletopathspec)|True| |configFile配置信息。|
-|**name**|String|True||configFile名称。
+|**name**|String|configFile名字。|
+|**defaultMode**|String|默认文件目录权限。|
+|**fileToPath**|[ConfigFileToPathSource](#configfiletopathsource)|提供给Pod的configFile。|
 
+### <div id="configfiletopathsource">ConfigFileToPathSource</div>
+|名称|类型|描述|
+|---|---|---|
+|**key**|String|配置文件Key。|
+|**path**|String|相关文件路径。|
+|**mode**|String|文件目录权限。|
 
 ### <div id="hostalias">HostAlias</div>
 |名称|类型|描述|
