@@ -23,15 +23,15 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/configFiles/{name}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](#result)| 响应结果。|
+|**result**|[Result](describeConfigFile#result)| 响应结果。|
 |**requestId**|String|请求ID。 |
 
-### <div id="Result">Result</div>
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**configFile**|[ConfigFile](#configfile)|ConfigFile详情。 |
+|**configFile**|[ConfigFile](describeConfigFile#configfile)|ConfigFile详情。 |
 
-### <div id="ConfigFile">ConfigFile</div>
+### <div id="configFile">ConfigFile</div>
 |名称|类型|描述|
 |---|---|---|
 |**name**|String|ConfigFile名称。|
@@ -47,3 +47,6 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/configFiles/{name}
 |HTTP状态码|错误码|描述|错误解析
 |---|---|---|---|
 |**200**||OK|
+|**404**|NOT_FOUND | ConfigFile xx not found| ConfigFile xx 未找到。
+|**500**| INTERNAL| Internal server error|系统内部错误，请稍后重试。如果多次尝试失败，请提交工单。
+|**500**|	UNKNOWN|	Unknown server error	|服务暂时不可用，请稍后重试。如果多次尝试失败，请提交工单。
