@@ -263,7 +263,7 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |**name**|String|volume名字，在一个Pod唯一。|
 |**jdcloudDisk**|[JDCloudVolumeSource](describepods#jdcloudvolumesource)|提供给Pod的cloud disk。|
 |**cfs**|[CFSVolumeSource](describepods#cfsvolumesource)|提供给Pod的cfs。
-|**configFile**|[ConfigFileVolumeSource](configfilevolumesource)|提供给Pod的configFile。
+|**configFile**|[ConfigFileVolumeSource](describepods#configfilevolumesource)|提供给Pod的configFile。
 
 
 ### <div id="jdcloudvolumesource">JDCloudVolumeSource</div>
@@ -289,7 +289,7 @@ https://pod.jdcloud-api.com/v1/regions/{regionId}/pods
 |---|---|---|
 |**name**|String|configFile名字。|
 |**defaultMode**|String|默认文件目录权限。|
-|**fileToPath**|[ConfigFileToPathSource](#configfiletopathsource)|提供给Pod的configFile。|
+|**fileToPath**|[ConfigFileToPathSource](describepods#configfiletopathsource)|提供给Pod的configFile。|
 
 ### <div id="configfiletopathsource">ConfigFileToPathSource</div>
 |名称|类型|描述|
