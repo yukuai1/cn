@@ -33,7 +33,7 @@
  * 实例的规格支持用户自定义选择，从最小的1核1G（如g.s1.micro）到124C2108GB（如m.e3.31xlarge），用户可以根据不同业务场景选择实例规格及相应配置，详细请参见[实例规格](../Introduction/Instance-Type-Family.md)。
 ![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0606.png)
 7. 配置实例存储：
-  * 云主机系统盘：仅支持使用云硬盘系统盘，容量范围40GB~500GB。iops           
+  * 云主机系统盘：仅支持使用云硬盘系统盘，可选通用型SSD云盘、性能型SSD云盘及容量型HDD云盘，容量范围40GB~500GB。设备名默认/dev/vda，         
   * 云主机数据盘：支持挂载7块云硬盘作数据盘。可选通用型SSD云盘、性能型SSD云盘及容量型HDD云盘。云硬盘挂载到云主机后，需要进入云主机操作系统挂载云硬盘。     
   * 您可以随实例创建指定类型和容量的空盘，也可以基于已有云硬盘快照创建数据盘。关于数据盘设备名分配规则请查阅[设备名分配规则](../Operation-Guide/Storage/Assign-Device-Name.md)。
   * 支持为云主机挂载加密云硬盘（一代实例规格不支持），可在创建空盘时指定云硬盘加密属性，若使用快照创建则云硬盘加密属性从快照侧继承，云硬盘创建后加密属性不可修改。详情请参见[云硬盘加密](../Operation-Guide/Storage/Encryption-of-Cloud-Disk.md)。 
