@@ -1,6 +1,8 @@
 # 创建Namespace
-  在Namespace管理页面可以进行Namespace的创建
-
+ 
+  命名空间是 JCQ的3.0版本引入的RocketMQ 中资源管理概念。用户不同的业务场景都可以通过命名空间做逻辑隔离。不同命名空间之间的 Topic 相互隔离，订阅相互隔离，角色权限相互隔离。
+  
+  在Namespace管理页面可以进行Namespace的创建。
 ## 前提条件
 - 已注册京东云账号，并完成实名认证，且保证账户处于正常状态，没有在黑名单中。如果还没有账号请 [注册](https://accounts.jdcloud.com/p/regPage?source=jdcloud%26ReturnUrl=%2f%2fuc.jdcloud.com%2fpassport%2fcomplete%3freturnUrl%3dhttp%3A%2F%2Fuc.jdcloud.com%2Fredirect%2FloginRouter%3FreturnUrl%3Dhttps%253A%252F%252Fwww.jdcloud.com%252Fhelp%252Fdetail%252F734%252FisCatalog%252F1)，并 [实名认证](https://uc.jdcloud.com/account/certify)。
 - 因为产品的计费类型为按用量计费，请确认您的账户不能处于欠费状态。
