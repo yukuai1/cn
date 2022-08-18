@@ -33,10 +33,15 @@
  * 实例的规格支持用户自定义选择，从最小的1核1G（如g.s1.micro）到124C2108GB（如m.e3.31xlarge），用户可以根据不同业务场景选择实例规格及相应配置，详细请参见[实例规格](../Introduction/Instance-Type-Family.md)。
 ![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0606.png)
 7. 配置实例存储：
-  * 云主机系统盘：仅支持使用云硬盘系统盘，可选通用型SSD云盘、性能型SSD云盘及容量型HDD云盘，容量范围40GB~500GB。设备名默认/dev/vda，         
-  * 云主机数据盘：支持挂载7块云硬盘作数据盘。可选通用型SSD云盘、性能型SSD云盘及容量型HDD云盘。云硬盘挂载到云主机后，需要进入云主机操作系统挂载云硬盘。     
-  * 您可以随实例创建指定类型和容量的空盘，也可以基于已有云硬盘快照创建数据盘。关于数据盘设备名分配规则请查阅[设备名分配规则](../Operation-Guide/Storage/Assign-Device-Name.md)。
-  * 支持为云主机挂载加密云硬盘（一代实例规格不支持），可在创建空盘时指定云硬盘加密属性，若使用快照创建则云硬盘加密属性从快照侧继承，云硬盘创建后加密属性不可修改。详情请参见[云硬盘加密](../Operation-Guide/Storage/Encryption-of-Cloud-Disk.md)。 
+- 系统盘
+  - 仅支持使用云硬盘系统盘，可选通用型SSD云盘、性能型SSD云盘及容量型HDD云盘，容量范围40GB~500GB。设备名默认/dev/vda。         
+- 数据盘
+  - 默认不添加数据盘，最多支持挂载7块云硬盘作数据盘。可选通用型SSD云盘、性能型SSD云盘及容量型HDD云盘，容量范围20GB-16000GB。数据盘挂载到云主机后，需要进入云主机操作系统挂载。 
+![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0609.png)
+  - 存储优化型实例规格自带本地数据盘，数量和容量由具体实例规格确定  
+  - 您可以随实例创建指定类型和容量的云硬盘，也可以基于已有云硬盘快照创建数据盘。关于数据盘设备名分配规则请查阅[设备名分配规则](../Operation-Guide/Storage/Assign-Device-Name.md)。
+
+  * 支持为云主机挂载加密云硬盘（一代实例规格不支持），可在创盘时指定云硬盘加密属性，若使用快照创建则云硬盘加密属性从快照侧继承，云硬盘创建后加密属性不可修改。详情请参见[云硬盘加密](../Operation-Guide/Storage/Encryption-of-Cloud-Disk.md)。 
   * 支持按配置计费且非多点挂载云硬盘设置随实例删除属性，若勾选，会在实例删除时一并删除。
   * 支持单盘粒度指定云盘快照策略，您可根据备份需要为不同云盘指定不同或相同的快照策略，京东云会根据您指定的策略自动定期备份您的云硬盘。详情参见详情请参见[自定义快照策略](https://docs.jdcloud.com/cn/cloud-disk-service/snapshotpolicy)。 
   * 云硬盘费用与实例独立，具体价格信息请查阅[云硬盘价格](http://docs.jdcloud.com/cn/cloud-disk-service/billing-rules)。
