@@ -36,29 +36,28 @@
 - 系统盘
   - 仅支持使用云硬盘系统盘，可选通用型SSD云盘、性能型SSD云盘及容量型HDD云盘，容量范围40GB~500GB。设备名默认/dev/vda。         
 - 数据盘
-  - 默认不添加数据盘，最多支持挂载7块云硬盘作数据盘。可选通用型SSD云盘、性能型SSD云盘及容量型HDD云盘，容量范围20GB-16000GB。数据盘挂载到云主机后，需要进入云主机操作系统挂载。 
+  - 数据盘分为本地数据盘和云盘数据盘。
+  - 仅存储优化型实例规格自带本地数据盘，数量和容量由具体实例规格决定。本地数据盘为临时存储盘，有丢失数据的风险（比如发生迁移或宿主机宕机等情况），不适用于应用层没有数据冗余架构的使用场景。![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0823.png) 
+  - 云盘数据盘默认不挂载，最多支持挂载7块云硬盘作数据盘。可选通用型SSD云盘、性能型SSD云盘及容量型HDD云盘，容量范围20GB-16000GB。数据盘挂载到云主机后，需要进入云主机操作系统挂载。 
 ![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0609.png)
-  - 存储优化型实例规格自带本地数据盘，数量和容量由具体实例规格确定  
   - 您可以随实例创建指定类型和容量的云硬盘，也可以基于已有云硬盘快照创建数据盘。关于数据盘设备名分配规则请查阅[设备名分配规则](../Operation-Guide/Storage/Assign-Device-Name.md)。
-
   * 支持为云主机挂载加密云硬盘（一代实例规格不支持），可在创盘时指定云硬盘加密属性，若使用快照创建则云硬盘加密属性从快照侧继承，云硬盘创建后加密属性不可修改。详情请参见[云硬盘加密](../Operation-Guide/Storage/Encryption-of-Cloud-Disk.md)。 
   * 支持按配置计费且非多点挂载云硬盘设置随实例删除属性，若勾选，会在实例删除时一并删除。
   * 支持单盘粒度指定云盘快照策略，您可根据备份需要为不同云盘指定不同或相同的快照策略，京东云会根据您指定的策略自动定期备份您的云硬盘。详情参见详情请参见[自定义快照策略](https://docs.jdcloud.com/cn/cloud-disk-service/snapshotpolicy)。 
   * 云硬盘费用与实例独立，具体价格信息请查阅[云硬盘价格](http://docs.jdcloud.com/cn/cloud-disk-service/billing-rules)。
-![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0609.png)
 ### 步骤2：网络配置
 1. 配置实例网络：  
   * 选择私有网络及子网：您需先行创建VPC及子网。选择子网后，系统会判断该子网下，还有可以创建的云主机数量，如果暂时没有子网，可以通过快速入口新建子网，并在“云主机网络”进行选择，详细请参见[私有网络](http://docs.jdcloud.com/cn/virtual-private-cloud/product-overview)和[子网](http://docs.jdcloud.com/cn/virtual-private-cloud/subnet-features)。
   * 选择内网IP分配方式：如对内网IP地址没有特殊要求，可以不指定由系统自动在子网可用网段内分配，如需指定请在提示范围内输入，系统会校验IP是否可用。须注意的是，若选择自定义内网IP地址，则无法批量创建实例。
   * 选择安全组：实例在创建时必须绑定一个安全组，若当前地域下未创建自定义安全组，可以在系统创建的三个默认安全组中选择一个绑定（每个私有网络创建成功之后都会自动创建三个默认安全组），也可以通过快速入口前往安全组页面[创建安全组](http://docs.jdcloud.com/cn/virtual-private-cloud/security-group-configuration)。由于官方镜像系统内防火墙默认关闭，建议绑定仅开放22端口（Linux）或3389端口（Windows）的安全组，实例创建之后再根据访问需求创建新的安全组并绑定。    
-![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0610.png)
   * IPv6地址配置：如果为实例配置IPv6地址，请选择官方CentOS7.4镜像，并预先完成IPv4/IPv6双栈VPC的创建（详见[私有网络](http://docs.jdcloud.com/cn/virtual-private-cloud/product-overview)和[子网](http://docs.jdcloud.com/cn/virtual-private-cloud/subnet-features)）。然后在实例创建选择相应VPC和子网后，勾选“自动分配IPv6地址”。
 2. 配置公网带宽：
+- 若您的云主机需公网访问能力，则需为云主机分配公网IP。
   * 带宽计费方式：京东云提供按固定带宽和按使用流量两种带宽计费类型的弹性公网IP，按固定带宽计费按购买时设置的带宽上限值付费，而与实际访问公网所用带宽无关，按使用流量计费则根据您实时访问公网的实际流量计费。
-  * 线路：弹性公网IP线路分为：BGP和非BGP，若您需要更快更高效的网络接入请选用BGP。                
+  * 线路：基于BGP协议三线接入，动态路由，访问稳定。               
   * 带宽范围：1Mbps~200Mbps。
-在创建主机过程中可以暂不购买公网IP，完成主机创建后，再进行绑定。弹性公网IP带宽费用与实例费用独立。具体价格信息请查阅[弹性公网IP价格](../../../Networking/Elastic-IP/Pricing/Price-Overview.md)。      
-![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0611.png)
+- 在创建主机过程中可以暂不购买公网IP，完成主机创建后，再进行绑定。弹性公网IP带宽费用与实例费用独立。具体价格信息请查阅[弹性公网IP价格](../../../Networking/Elastic-IP/Pricing/Price-Overview.md)。      
+![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0824.png)
 ### 步骤3：系统配置
 1. 设置密码、密钥：
   * 对于设置密码，可以选择“立即设置”密码，也可以选择“暂不设置”（系统会以短信和邮件方式发送默认密码），密码除了用于SSH登录实例时的密码，也是控制台通过VNC登录实例的密码。     
