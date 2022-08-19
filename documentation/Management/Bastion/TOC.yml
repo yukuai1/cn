@@ -56,7 +56,6 @@ items:
                  href: Operation-Guide/Administrator/Users/Users.md
                - name: 用户组管理
                  href: Operation-Guide/Administrator/Users/Users-Group.md
-                 renzhengyuan.md
                - name: 认证源管理
                  href: Operation-Guide/Administrator/Users/renzhengyuan.md                                
                - name: 导入京东云IAM子用户
@@ -111,3 +110,8 @@ items:
         href: Best-Practices/Zero-trust.md
       - name: 多云管理
         href: Best-Practices/cloudy.md
+        
+  - name: API参考
+    items:
+      - name: 零信任云堡垒机
+        href: Best-Practices/Zero-trust.md
