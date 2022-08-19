@@ -120,7 +120,7 @@ GRANT REPLICATION SLAVE,REPLICATION CLIENT ON *.* TO 'dbuser'@'%';
    |同步步骤|支持结构同步、全量同步和增量同步。</br> 结构同步：将源端的表结构初始化同步到目标端。</br>全量同步：将源端的数据初始化到目标端。</br>增量同步：将同步期间的增量数据同步至目标库|
    |主键冲突检测|冲突报错：在同步过程中发现表的主键冲突时暂停任务并报错。</br>冲突覆盖：在同步过程中发现表的主键冲突时，忽略冲突覆盖写入。|
    |同步对象|在源列表中勾选需要同步的对象，然后点击“**>**”，移动到目标列表中|
-   |映射名修改|&bull;  如需批量修改同步对象在目标端中的名称，点击目标端上方的**批量修改**按钮，进入批量修改弹窗进行映射名修改。详情查看[库表名批量映射](../Manage-Task-Object/Database-and-Table-Name-mapping.md)</br>&bull; 如需对单一表进行修改，则鼠标悬浮在需要进行修改的表名上，点击 **编辑**按钮，进入编辑弹窗。详情查看[单一库表名映射](../Manage-Task-Object/Database-and-Table-Name-mapping.md)|
+   |映射名修改|&bull;  如需批量修改同步对象在目标端中的名称，点击目标端上方的**批量修改**按钮，进入批量修改弹窗进行映射名修改。详情查看[库表名批量映射](Manage-Task-Object/Database-and-Table-Name-mapping.md)</br>&bull; 如需对单一表进行修改，则鼠标悬浮在需要进行修改的表名上，点击 **编辑**按钮，进入编辑弹窗。详情查看[单一库表名映射](Manage-Task-Object/Database-and-Table-Name-mapping.md)|
 
    
    * 自定义配置
