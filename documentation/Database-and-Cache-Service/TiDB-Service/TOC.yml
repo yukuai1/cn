@@ -89,7 +89,7 @@ items:
             href: Operation-Guide/Replication/Modify-Replication.md
           - name: 暂停继续复制任务
             href: Operation-Guide/Replication/Suspend-Resume-Replication.md
-           - name: 删除复制任务
+          - name: 删除复制任务
             href: Operation-Guide/Replication/Delete-Replication.md           
             
       - name: 安全管理
