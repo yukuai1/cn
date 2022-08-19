@@ -113,5 +113,5 @@ items:
         
   - name: API参考
     items:
-      - name: 零信任云堡垒机
-        href: Best-Practices/Zero-trust.md
+      - name: 实例配置API
+        href: API-purchase/Instance-purchases.md
