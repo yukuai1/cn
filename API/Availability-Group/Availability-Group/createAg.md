@@ -24,7 +24,7 @@ https://ag.jdcloud-api.com/v1/regions/{regionId}/availabilityGroups
 |**agName**|String|True| |高可用组名称，只支持中文、数字、大小写字母、英文下划线 “_” 及中划线 “-”，且不能超过 32 字符|
 |**agType**|String|False| |高可用组类型，支持vm|
 |**instanceTemplateId**|String|False| |实例模板的Id，创建strict类型的高可用组时此项为必填项|
-|**placement**|string|False| |高可用组中资源的放置类型。可选值：<br> `fd`(默认值）：故障域维度打散 <br> `host`：物理机维度打散 <br> `host`：交换机维度打散
+|**placement**|string|False| |高可用组中资源的放置类型。可选值：<br> `fd`(默认值）：故障域维度打散 <br> `host`：物理机维度打散 <br> `switch`：交换机维度打散
 |**description**|String|False| |描述，长度不超过 256 字符|
 |**configurationType**|String|False| |高可用组配置类型。 可选值：<br> `strict`(默认值）：关联模板型 <br> `loose`：自定义配置型|
 
