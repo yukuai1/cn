@@ -24,7 +24,7 @@ chkconfig --level 345 vncserver on
 
 ![](../../../../../image/Elastic-Compute/Virtual-Machine/Linux/Centos%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEvncserver02.png)
 
-2.配置置客户端连接密码，输入以下命令后进行 VNC 密码的设置：
+2.配置客户端连接密码，输入以下命令后进行 VNC 密码的设置：
 ```
 vncserver
 ```

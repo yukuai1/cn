@@ -1,12 +1,32 @@
 # 版本说明
 
+## 2022年Q1
+
+| 动态名称 | 动态描述  | 发布时间	  | 相关文档   |
+|   :---  |  :---   |  :---  |:---  |
+|  开放 timeout 参数配置   |  提供开放 timeout 参数配置，为0表示不开启   |   2022-01    |   [集群参数配置](../Operation-Guide/Instance-Management/Modify-Instancename.md)    |
+
+
+## 2021年Q4
+
+| 动态名称 | 动态描述  | 发布时间	  | 相关文档   |
+|   :---  |  :---   |  :---  |:---  |
+| 提供支持多账号管理和分配只读/读写权限    |  对于Proxy架构的实例， 支持为Redis实例创建多个用户账号，并给账号分配只读/读写权限。  |   2021-12      |   [账号管理](../Operation-Guide/User-Manage/UserManage.md)   |
+| 系统优化  |  系统优化：redis容器支持burst。  |   2021-12   |   -  |
+| 提供命令是否被禁用的配置   |  对于Proxy架构的实例，支持用户可在控制台配置高危命令、普通命令是否禁用，用户可自行开关。  |   2021-11  |   [命令禁用管理](../Operation-Guide/Instance-Management/CommandDisable.md) |
+| 增加可配置的集群参数  |  开放更多集群参数，供用户自定义配置。  |   2021-10   |   [集群参数配置](../Operation-Guide/Instance-Management/Modify-Instancename.md)   |
+
 
 ## 2021年Q3
 
 | 动态名称 | 动态描述  | 发布时间	  | 相关文档   |
 |   :---  |  :---   |  :---  |:---  |
-|   提供failover主从切换监控和通知	|   4.0提供了主从节点的异常监控，并可以在监控报警中，配置failover通知。	|   2021-07	|  [节点异常监控](../Operation-Guide/Monitoring/Node-Notice.md)  |  
-|   提高故障切换速度	|   代理和master节点同时故障时，优先拉起代理节点，更快恢复流量。	|   2021-07  |   -   |   
+|  支持配置副本AOF开关   |  创建实例时和创建成功后，从副本的AOF开关支持用户配置。  |   2021-09   |   [副本持久化](../Operation-Guide/Instance-Management/AOFSwitch.md)    |
+|  优化价格展示方式    | 变配时、创建时，优化价格展示方式。   |  2021-09      |   -  |
+|  支持在创建时自定义 DB数量    |  对于Proxy架构的实例，在创建时支持自定义 DB数量。   |   2021-08   |   -  |
+|  提供一键平滑升级2.8到4.0   | 对于Redis2.8架构的实例，可支持一键升级2.8到4.0升级。   |   2021-08  |  [升级实例版本](../Operation-Guide/Instance-Management/UpgradeInstanceVersion.md)   |
+|  提供failover主从切换监控和通知	|   4.0提供了主从节点的异常监控，并可以在监控报警中，配置failover通知。	|   2021-07	|  [节点异常监控](../Operation-Guide/Monitoring/Node-Notice.md)  |  
+|  提高故障切换速度	|   代理和master节点同时故障时，优先拉起代理节点，更快恢复流量。	|   2021-07  |   -   |   
 
 
 ## 2021年Q2
@@ -16,7 +36,7 @@
 |   批量导出实例列表	|   支持全量、按找分页的方式，批量导出实例列表。  |   	2021-05	|  [批量导出实例列表](../Operation-Guide/Instance-Management/Export-Instance.md)   |   
 |   pipeline使用事务	|   代理支持在pipeline中使用事务相关命令。	|   2021-05 |  -    |   
 |   代理性能优化	|   避免在极端情况下代理程序内存使用率高的问题。	|   2021-05  |  -    |    
-|   优化设置实例密码	|   已设置免密码登录的实例，可在集群详情页，修改密码和免密模式。  |   	2021-04	|  [修改密码](../Operation-Guide/Instance-Management/Change-Password.md)   |   
+|   优化设置实例密码	|   已设置免密码登录的实例，可在集群详情页，修改密码和免密模式。  |   	2021-04	|  [修改密码](../Operation-Guide/User-Manage/Change-Password.md)   |   
 |   增加监控指标	|   分类改为：实例监控、代理节点监控、Redis数据节点监控。每类监控下的指标按照CPU、内存、网络、请求、响应进行了分类并进行了指标补充。 	|   2021-04	|   [实例监控](../Operation-Guide/Monitoring/Monitoring.md)    |   
 
 ## 2021年Q1

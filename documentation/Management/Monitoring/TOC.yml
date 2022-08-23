@@ -122,6 +122,8 @@ items:
       href: Metrics/function.md   
     - name: 弹性公网IP
       href: Metrics/ip.md
+    - name: 共享带宽包
+      href: Metrics/Bwp.md
     - name: 专线服务
       href: Metrics/DirectConnection.md
     - name: NAT网关
@@ -161,7 +163,9 @@ items:
     - name: 分布式事务
       href: Metrics/jdts.md
     - name: 堡垒机
-      href: Metrics/bastion.md 
+      href: Metrics/bastion.md
+    - name: 云物理服务器
+      href: Metrics/cps.md     
 - name: 教程
   items:
   status: 0
