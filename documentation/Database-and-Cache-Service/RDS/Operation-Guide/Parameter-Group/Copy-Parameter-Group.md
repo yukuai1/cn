@@ -14,3 +14,5 @@
 
     ![截图](https://img1.jcloudcs.com/cms/604bf122-ce51-44f0-9835-c0a7fbf3428220180815094448.png)
 
+## 相关API
+拷贝参数组：[copyParameterGroup](https://docs.jdcloud.com/cn/rds/api/copyparametergroup)

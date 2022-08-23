@@ -41,6 +41,17 @@ https://ag.jdcloud-api.com/v1/regions/{regionId}/availabilityGroups/{agId}
 |**createTime**|String|创建时间|
 |**count**|Number|可用组中实例的数量|
 |**autoScaling**|Boolean|是否开启自动伸缩|
+|**configurationType**|String|高可用组配置类型|
+|**placementType**|String|高可用组中资源的放置类型|
+|**instancesQuotas**|[InstancesQuota[]](#instancesquota)|高可用组中实例数量的限制。仅placement为host或switch的高可用组有此限制|
+
+### <div id="InstancesQuota">InstancesQuota</div>
+|名称|类型|描述|
+|---|---|---|
+|**az**|String|可用区|
+|**limit**|Integer|配额上限|
+|**used**|Integer|已用配额|
+
 
 ## 返回码
 |返回码|描述|

@@ -14,11 +14,16 @@
 ### 1. 通过 MySQL 客户端连接 TiDB
 在京东云主机安装 MySQL 客户端后，可进入命令行方式连接 TiDB。 
 
-1. 命令格式：mysql -h域名 -P端口 -u用户名-p密码 。
+1. 命令格式： mysql -u用户名 -p密码 -h 域名 -P 端口 。
 2. 域名：要访问的实例的域名，域名展示在实例的详情页面。
 3. 端口：端口号展示在实例的详情页。
 4. 用户名：实例的用户名，目前只支持 root。 
 5. 密码：用户名 root 对应的密码。
+
+例如：
+   ```SHELL
+    mysql -utestuser -ptestpassword -h tidb-xxxx.jdcloud.com -P 4000
+   ```
 
 ### 2. 使用 MySQL 连接器连接 TiDB  
 官方提供了以下连接器 , TiDB 可以兼容所有这些：

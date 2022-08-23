@@ -28,4 +28,4 @@
 - [创建弹性公网IP](../Elastic-IP-Management/Create-Elastic-IP.md)
 - [绑定资源](../Elastic-IP-Management/Associate-Elastic-IP.md)
 - [查看监控数据](View-Elastic-IP-Monitoring.md)
-- [云监控概述](https://docs.jdcloud.com/cn/monitoring/view-monitoring-cahrt)
+- [云监控概述](https://docs.jdcloud.com/cn/monitoring/product-overview)

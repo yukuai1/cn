@@ -31,9 +31,11 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances
 |**extensionPrivateIp**|String|False| |辅网口内网ip|
 |**keypairId**|String|False| |密钥对id|
 |**interfaceMode**|String|False| |网口模式 单网口:bond,双网口:dual|
-|**filters**|[Filter[]](describeinstances#filter)|False| |instanceId - 分布式云物理服务器ID，精确匹配，支持多个<br/><br>status - 分布式云物理服务器状态，参考分布式云物理服务器状态，精确匹配，支持多个<br>|
+|**includeKeypairSos**|Integer|False| |v2.28.0 keypairIds存在时搜索数据是否包含keypairIdSos|
+|**ipv6Address**|String|False| |主辅网口IPv6地址|
+|**filters**|[Filter[]](#filter)|False| |instanceId - 分布式云物理服务器ID，精确匹配，支持多个<br/><br>status - 分布式云物理服务器状态，参考分布式云物理服务器状态，精确匹配，支持多个<br>|
 
-### <div id="filter">Filter</div>
+### <div id="Filter">Filter</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |过滤条件的名称|
@@ -43,17 +45,17 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describeinstances#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**instances**|[Instance[]](describeinstances#instance)| |
+|**instances**|[Instance[]](#instance)| |
 |**pageNumber**|Integer|页码；默认为1|
 |**pageSize**|Integer|分页大小；默认为20；取值范围[20, 100]|
 |**totalCount**|Integer|查询结果总数|
-### <div id="instance">Instance</div>
+### <div id="Instance">Instance</div>
 |名称|类型|描述|
 |---|---|---|
 |**instanceId**|String|云物理服务器实例ID|
@@ -79,19 +81,28 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances
 |**networkType**|String|网络类型, 如 basic, vpc|
 |**vpcId**|String|私有网络ID|
 |**vpcName**|String|私有网络名称|
+|**vpcIpv4Cidr**|String|私有网络IPv4 CIDR|
+|**vpcIpv6Cidr**|String|私有网络IPv6 CIDR|
 |**subnetId**|String|子网编号|
 |**subnetName**|String|子网名称|
+|**subnetIpv4Cidr**|String|子网IPv4 CIDR|
+|**subnetIpv6Cidr**|String|子网IPv6 CIDR|
 |**privateIp**|String|内网IP|
 |**lineType**|String|外网链路类型, 如 bgp|
 |**elasticIpId**|String|弹性公网IPID|
 |**publicIp**|String|公网IP|
 |**publicIpv6**|String|公网IPv6|
+|**extensionPublicIpv6**|String|辅网口公网ipv6|
 |**keypairId**|String|密钥对id|
 |**interfaceMode**|String|网络接口模式，单网口:bond、双网口:dual|
 |**extensionVpcId**|String|辅网口私有网络ID|
 |**extensionVpcName**|String|辅网口私有网络名称|
+|**extensionVpcIpv4Cidr**|String|辅网口私有网络IPv4 CIDR|
+|**extensionVpcIpv6Cidr**|String|辅网口私有网络IPv6 CIDR|
 |**extensionSubnetId**|String|辅网口子网ID|
 |**extensionSubnetName**|String|辅网口子网名称|
+|**extensionSubnetIpv4Cidr**|String|辅网口子网IPv4 CIDR|
+|**extensionSubnetIpv6Cidr**|String|辅网口子网IPv6 CIDR|
 |**extensionPrivateIp**|String|辅网口手动分配的内网ip|
 |**extensionEnableInternet**|String|辅网口是否启用外网|
 |**extensionElasticIpId**|String|辅网口弹性公网ip id|
@@ -101,8 +112,10 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances
 |**agentStatus**|String|agent状态|
 |**createTime**|String|创建时间|
 |**updateTime**|String|更新时间|
-|**charge**|[Charge](describeinstances#charge)|计费信息|
-### <div id="charge">Charge</div>
+|**ipv6Address**|String|IPv6地址|
+|**extensionIpv6Address**|String|辅网口IPv6地址|
+|**charge**|[Charge](#charge)|计费信息|
+### <div id="Charge">Charge</div>
 |名称|类型|描述|
 |---|---|---|
 |**chargeMode**|String|支付模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration|
@@ -112,10 +125,6 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances
 |**chargeRetireTime**|String|预期释放时间，资源的预期释放时间，预付费/后付费资源均有此值，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|Bad request|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

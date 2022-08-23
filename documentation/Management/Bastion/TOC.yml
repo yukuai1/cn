@@ -56,16 +56,18 @@ items:
                  href: Operation-Guide/Administrator/Users/Users.md
                - name: 用户组管理
                  href: Operation-Guide/Administrator/Users/Users-Group.md
+               - name: 认证源管理
+                 href: Operation-Guide/Administrator/Users/renzhengyuan.md                                
                - name: 导入京东云IAM子用户
                  href: Operation-Guide/Administrator/Users/Create-IAM.md
           - name: 资产
             items:
                 - name: 主机管理
                   href: Operation-Guide/Administrator/Assets/Assets.md
-                - name: 主机组管理
-                  href: Operation-Guide/Administrator/Assets/Assets-Group.md
                 - name: 账户管理
                   href: Operation-Guide/Administrator/Assets/Account.md
+                - name: 跳板机管理
+                  href: Operation-Guide/Administrator/Assets/JumpServer.md
           - name: 权限
             items:
                 - name: 规则管理
@@ -90,9 +92,7 @@ items:
                   href: Operation-Guide/Administrator/Monitoring/Retrieve-Data.md
                 - name: 设置报警
                   href: Operation-Guide/Administrator/Monitoring/Set-Alarm.md
-            
-                  
-                    
+                   
       - name: 运维手册
         items:
           - name: WEB浏览器运维
@@ -103,3 +103,15 @@ items:
             href: Operation-Guide/Operation/SFTP.md
           - name: MAC系统运维
             href: Operation-Guide/Operation/Mac.md
+
+  - name: 最佳实践
+    items:
+      - name: 零信任云堡垒机
+        href: Best-Practices/Zero-trust.md
+      - name: 多云管理
+        href: Best-Practices/cloudy.md
+        
+  - name: API参考
+    items:
+      - name: 实例配置API
+        href: API-purchase/Instance-purchases.md

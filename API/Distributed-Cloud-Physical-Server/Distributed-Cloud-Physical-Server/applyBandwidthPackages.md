@@ -19,17 +19,17 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/bandwidthPackages
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**clientToken**|String|False| |由客户端生成，用于保证请求的幂等性，长度不能超过36个字符；<br/><br>如果多个请求使用了相同的clientToken，只会执行第一个请求，之后的请求直接返回第一个请求的结果<br/><br>|
-|**bandwidthPackageSpec**|[BandwidthPackageSpec](applybandwidthpackages#bandwidthpackagespec)|True| |共享带宽配置|
+|**bandwidthPackageSpec**|[BandwidthPackageSpec](#bandwidthpackagespec)|True| |共享带宽配置|
 
-### <div id="bandwidthpackagespec">BandwidthPackageSpec</div>
+### <div id="BandwidthPackageSpec">BandwidthPackageSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**name**|String|True| |名称|
 |**bandwidth**|Integer|True| |带宽, 范围[1,10240] 单位Mbps|
 |**extraUplinkBandwidth**|Integer|False| |额外上行带宽, 范围[0,10240] 单位Mbps|
 |**count**|Integer|True| |购买数量|
-|**charge**|[ChargeSpec](applybandwidthpackages#chargespec)|True| |计费配置|
-### <div id="chargespec">ChargeSpec</div>
+|**charge**|[ChargeSpec](#chargespec)|True| |计费配置|
+### <div id="ChargeSpec">ChargeSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**chargeMode**|String|False|postpaid_by_duration|计费模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration.请参阅具体产品线帮助文档确认该产品线支持的计费类型|
@@ -41,19 +41,15 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/bandwidthPackages
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](applybandwidthpackages#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**bandwidthPackageIds**|String[]|共享带宽ID|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|Bad request|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

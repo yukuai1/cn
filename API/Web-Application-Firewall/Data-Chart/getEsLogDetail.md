@@ -28,6 +28,7 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/chart:getEsLog
 |**status**|String|False| |状态码，检索字段|
 |**logType**|String[]|False| |日志类型，检索字段，支持类型：""(为空时，默认查询全部日志类型)，"access"(访问日志)，"waf"(wafSDK)，"acl"(自定义规则)，"skip"(白名单)，"deny"(黑名单)，"cc"(CC攻击)，"webcache"(网页防篡改)，"css"(跨站脚本攻击)，"sqli"(SQL注入攻击)，""fileinc"(文件读取/包含攻击)，"cmding"(命令/代码执行攻击)，"sdd"(敏感文件探测)，"malscan"(恶意扫描攻击)，"bckack"(恶意/后门文件攻击)，"xmli"(XML注入攻击)，"dirt"(目录遍历攻击)|
 |**logId**|String|False| |日志Id，检索字段|
+|**request_id**|String|False| |请求Id，检索字段|
 |**start**|Integer|True| |开始时间戳，单位秒，时间间隔要求大于5分钟，小于30天。|
 |**end**|Integer|True| |结束时间戳，单位秒，时间间隔要求大于5分钟，小于30天。|
 |**pageSize**|Integer|True| |每页显示的个数，默认是10。|
@@ -93,7 +94,6 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/chart:getEsLog
 |**antiRiskRaw**|String|指纹采集详细信息|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|BAD_REQUEST|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

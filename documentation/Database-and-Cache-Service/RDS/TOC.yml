@@ -41,8 +41,6 @@
     items:
       - name: 计费概述
         href: Pricing/Billing-Overview.md
-      - name: 计费规则
-        href: Pricing/Billing-Rules.md
       - name: 价格总览
         items:
           - name: MySQL 价格
@@ -57,13 +55,23 @@
             href: Pricing/Price-Overview/PostgreSQL-Price.md            
       - name: 购买流程
         href: Pricing/Purchase-Procedure.md
+      - name: 变配
+        href: Pricing/Change-Procedure.md
       - name: 续费流程
         href: Pricing/Renewal-Procedure.md
+      - name: 查看消费明细
+        href: Pricing/Consumption-details.md
         
   - name: 入门指南
     items:
+      - name: 使用概述
+        href: Getting-Started/Process-Preparation.md
       - name: 创建实例
         href: Getting-Started/Create-RDS-Instance.md
+      - name: 数据库和账号
+        href: Getting-Started/Database-and-Account.md
+      - name: 连接数据库
+        href:  Getting-Started/Connect-RDS.md
       - name: 删除实例
         href: Getting-Started/Delete-RDS-Instance.md
   
@@ -83,12 +91,16 @@
             href: Operation-Guide/Instance/Modify-Instance-Spec.md            
           - name: 主备切换
             href: Operation-Guide/Instance/Failover-Instance.md
+          - name: 版本升级
+            href: Operation-Guide/Instance/Version-Upgrade.md
           - name: 域名切换
             href: Operation-Guide/Instance/Exchanged-DNS.md          
           - name: 迁移可用区
             href: Operation-Guide/Instance/Migrate-AZ.md 
           - name: 配置目录服务
-            href: Operation-Guide/Instance/Modify-AD.md           
+            href: Operation-Guide/Instance/Modify-AD.md   
+          - name: 版本升级
+            href: Operation-Guide/Instance/Version-Upgrade.md         
           - name: 重启实例
             items:
             - name: 重启 MySQL
@@ -101,9 +113,12 @@
               href: Operation-Guide/Instance/Reboot-Instance/SQLServer-Restart-Instance.md
             - name: 重启 PostgreSQL
               href: Operation-Guide/Instance/Reboot-Instance/PostgreSQL-Restart-Instance.md
+          
   
       - name: 只读实例管理
         items:
+        - name: 创建只读简介
+          herf: Operation-Guide/Readonly-Instance-Management/Readonly-Instance.md
         - name: 创建只读实例
           herf: Operation-Guide/Readonly-Instance-Management/Create-Readonly-Instance.md
         - name: 重启只读实例
@@ -163,6 +178,10 @@
   
       - name: 备份管理
         items:
+          - name: 备份收费说明
+            href: Operation-Guide/Backup/Backup-Storage-Billing.md
+          - name: 查看备份空间
+            href: Operation-Guide/Backup/Check-Backup-Space.md
           - name: 快照备份
             href: Operation-Guide/Backup/Snapshot-backup.md
           - name: 创建备份
@@ -211,6 +230,8 @@
               href: Operation-Guide/Backup/Restore-Instance/MariaDB-Backup-Restore.md
             - name: SQL Server 备份恢复
               herf: Operation-Guide/Backup/Restore-Instance/SQLServer-Backup-Restore.md
+              name: PostgreSQL通过控制台下载备份进行恢复
+              herf: Operation-Guide/Backup/Restore-Instance/PG-Backup-download-Restore.md
           - name: 根据备份创建
             items:
             - name: SQL Server 根据备份创建
@@ -243,7 +264,10 @@
             href: Operation-Guide/Backup/Disaster-Recovery-Example.md
           - name: 删除备份
             href: Operation-Guide/Backup/Delete-Backup.md
-            
+          - name: 逻辑备份PostgreSQL数据
+            href: Operation-Guide/Backup/PG_dump.md
+          - name: 实例级别全量备份
+            href: Operation-Guide/Backup/PG_basebackup.md
       - name: Binlog 管理
         items:
         - name: 文件管理
@@ -438,6 +462,8 @@
         href: Best-Practices/Restore-Backup-To-Self-Built-Database/Restore-Backup-To-Self-Built-Percona-Database.md
       - name: 将备份恢复到自建 MariaDB 
         href: Best-Practices/Restore-Backup-To-Self-Built-Database/Restore-Backup-To-Self-Built-MariaDB-Database.md
+      - name: 将备份恢复到自建 PostgreSQL 
+        href: Best-Practices/Restore-Backup-To-Self-Built-Database/Restore-Backup-To-Self-Built-PostgreSQL-Database.md
     - name: 连接数据库实例
       items:
       - name: 连接实例

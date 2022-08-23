@@ -11,7 +11,6 @@ items:
         href: Introduction/Features.md
       - name: 应用场景
         href: Introduction/Application-Scenarios.md
-      
   - name: 操作指南
     items:
       - name: 登录数据库
@@ -19,10 +18,19 @@ items:
       - name: SQL查询
         href: Operation-Guide/sql-console.md
       - name: 表管理
-        href: Operation-Guide/table-management.md
+        items:
+          - name: 表操作
+            href: Operation-Guide/table-management.md	
+          - name: 分布式建表
+            href: Operation-Guide/Distributed-table-creation.md
       - name: 数据导入导出
         items:
           - name: 数据导入
             href: Operation-Guide/data-import.md
           - name: 数据导出
             href: Operation-Guide/data-export.md
+      - name: 可编程对象管理
+        items:
+          - name: 视图管理
+            href: Operation-Guide/view-management.md
+       

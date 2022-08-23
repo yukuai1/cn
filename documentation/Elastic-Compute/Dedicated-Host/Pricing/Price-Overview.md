@@ -30,7 +30,7 @@
    </tr>
    <tr>
       <td>内存型</td>
-      <td>g2.c76</td>
+      <td>m2.c76</td>
       <td>76</td>
       <td>700</td>
       <td>12538</td>

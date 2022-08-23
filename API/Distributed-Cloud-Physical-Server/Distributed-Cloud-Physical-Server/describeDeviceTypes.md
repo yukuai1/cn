@@ -23,14 +23,14 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/deviceTypes
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describedevicetypes#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**deviceTypes**|[DeviceType[]](describedevicetypes#devicetype)| |
-### <div id="devicetype">DeviceType</div>
+|**deviceTypes**|[DeviceType[]](#devicetype)| |
+### <div id="DeviceType">DeviceType</div>
 |名称|类型|描述|
 |---|---|---|
 |**deviceType**|String|实例类型, 如 edcps.c.normal1|
@@ -54,10 +54,6 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/deviceTypes
 |**isSoldOut**|Boolean|售罄状态|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|Bad request|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

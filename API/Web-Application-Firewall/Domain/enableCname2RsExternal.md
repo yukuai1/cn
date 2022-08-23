@@ -27,7 +27,6 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |**wafInstanceId**|String|False| |实例id，代表要设置的WAF实例|
 |**domain**|String|True| |域名|
 |**enable**|Integer|False| |是否使能 0表示否|
-|**isGm**|Integer|False| |是否国密|
 
 ## 返回参数
 |名称|类型|描述|
@@ -36,7 +35,6 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|BAD_REQUEST|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

@@ -28,7 +28,7 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |**wafInstanceId**|String|True| |WAF实例id|
 |**domain**|String|True| |域名|
 |**ruleName**|String|True| |规则名称|
-|**matchAction**|String|True| |匹配动作, forbidden redirect verify@jscookie verify@captcha notice|
+|**matchAction**|String|True| |匹配动作, 拦截:forbidden,redirect 人机识别:verify@jscookie,verify@captcha,verify@rdtcookie 观察:notice|
 |**redirection**|String|True| |跳转地址，matchAction为redirect时必须为当前实例下的域名的url，forbidden时为自定义页面名称|
 |**conditions**|[ConditionIdSet[]](setwafrule#conditionidset)|True| |条件集|
 ### <div id="conditionidset">ConditionIdSet</div>
@@ -44,7 +44,6 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|BAD_REQUEST|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

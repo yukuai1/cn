@@ -89,6 +89,8 @@ items:
       items:
         - name: 日志监控配置
           href: Operation-Guide/LogMonitor/MonitorConfig.md
+    - name: 日志消费
+      href: Operation-Guide/LogConsume/LogConsume.md
 - name: 最佳实践
   items:
     - name: 日志采集——应用安全网关日志采集

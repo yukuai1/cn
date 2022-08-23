@@ -5,7 +5,7 @@
 
 修改实例模板属性。
 
-详细操作说明请参考帮助文档：[实例模板](https://docs.jdcloud.com/cn/virtual-machines/instance-template-overview)
+详细操作说明请参考帮助文档：[修改实例模板](https://docs.jdcloud.com/cn/virtual-machines/modify-instance-template)
 
 ## 接口说明
 - 名称、描述、实例模板配置信息至少要传一项。

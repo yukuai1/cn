@@ -4,6 +4,7 @@
 
 以下为当前京东云在售的实例规格类型信息，不同地域可售卖实例类型及规格不完全相同，请以实例创建页面所显示为准。具体在售实例规格类型根据不同应用场景可以分为：
 
+#### x86规格
 * 通用型：[通用共享型](instance-type-family#user-content-1)、[通用标准型](instance-type-family#user-content-2)
 * 计算优化型：[计算优化共享型](instance-type-family#user-content-9)、[计算优化密集型](instance-type-family#user-content-11)、[计算优化标准型](instance-type-family#user-content-3)
 * 内存优化型：[内存优化标准型](instance-type-family#user-content-4)、[内存优化增强型](instance-type-family#user-content-17)
@@ -13,6 +14,12 @@
 * GPU型：[GPU标准型](instance-type-family#user-content-6)、[GPU虚拟化型](instance-type-family#user-content-10)
 * 裸金属：[标准型](instance-type-family#user-content-13)、[存储优化IO型](instance-type-family#user-content-14)、[安全增强内存优化型](instance-type-family#user-content-15)
 
+#### ARM规格
+* 通用型：[通用标准型](instance-type-family#user-content-18)
+* 计算优化型：[计算优化标准型](instance-type-family#user-content-19)
+* 内存优化型：[内存优化标准型](instance-type-family#user-content-20)
+
+## x86规格：
 ## 通用型
 通用型当前提供通用共享型及通用标准型，为您提供均衡的计算及内存资源，可满足大部分业务场景下的需求。其中通用标准型中每一个vCPU都对应一个处理器的超线程核，其vCPU与内存比为1:4。
 
@@ -26,7 +33,9 @@
 **规格类型特点：**
 
 * vCPU与内存比为1:1、1:2或1:4，提供多种处理器内存配比。
-* 处理器： 
+* 处理器：
+        
+	* 第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器  
 	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持以下类型云硬盘：
@@ -39,6 +48,17 @@
 	* 测试环境
 
 **实例规格**
+
+第三代
+
+实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数
+:---|:---|:---|:---|:---
+|g.s3.micro|1|1|2|1
+|g.s3.small|1|2|2|1
+|g.s3.medium|1|4|2|1
+|g.s3.large|2|8|2|2
+|g.s3.xlarge|4|16|4|4
+|g.s3.2xlarge|8|32|4|4
 
 第二代
 
@@ -66,10 +86,10 @@
 
 * vCPU与内存比为1:4（g.n1.xlarge_m规格除外）
 * 处理器：
-	* 第四代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
-	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+	* 第四代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
+	* 第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
 	* 第二代：
-	  * 2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+	  * 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器 或 2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 	  * 2.6 GHz主频的AMD EPYC ROME 处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持以下类型云硬盘：
@@ -168,7 +188,10 @@ g.n1.8xlarge|32|128|8|4 |	 |
 **规格类型特点：**
 
 * vCPU与内存比约为1:2
-* 处理器：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器
+* 处理器：
+        
+	* 第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器 
+	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 * 支持以下类型云硬盘：
 	* 通用型SSD云盘
 	* 性能型SSD云盘
@@ -181,6 +204,16 @@ g.n1.8xlarge|32|128|8|4 |	 |
 	* 小规模批量计算
 
 **实例规格**
+
+第三代
+
+实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡对列数
+:---|:---|:---|:---|:---
+|c.s3.large|2|4|2|2
+|c.s3.xlarge|4|8|4|4
+|c.s3.2xlarge|8|16|4|4
+
+第二代
 
 实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡对列数
 :---|:---|:---|:---|:---
@@ -196,7 +229,7 @@ g.n1.8xlarge|32|128|8|4 |	 |
 
 * vCPU与内存比约为1:1
 * 处理器：
-	* 第四代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
+	* 第四代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
 	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
 * 支持以下类型云硬盘：
 	* 通用型SSD云盘
@@ -239,10 +272,10 @@ g.n1.8xlarge|32|128|8|4 |	 |
 
 * vCPU与内存比约为1:2
 * 处理器：
-	* 第四代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
-	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器
+	* 第四代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
+	* 第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器
 	* 第二代：
-	  * 2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+	  * 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器 或 2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器
 	  * 2.6 GHz主频的AMD EPYC ROME 处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持以下类型云硬盘：
@@ -338,10 +371,10 @@ g.n1.8xlarge|32|128|8|4 |	 |
 
 * vCPU与内存比约为1:8
 * 处理器：
-	* 第四代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
-	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器 
+	* 第四代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
+	* 第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器 
 	* 第二代：
-	  * 2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器  或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+	  * 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器 或 2.4 GHz主频的Intel Xeon Gold 6148 （Skylake）处理器
 	  * 2.6 GHz主频的AMD EPYC ROME 处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持以下类型云硬盘：
@@ -443,12 +476,12 @@ g.n1.8xlarge|32|128|8|4 |	 |
 实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数
 |:---|:---|:---|:---|:---
 |m.e3.large|2|34|2|2
-|m.e3.xlarge|4|67|4|4
-|m.e3.2xlarge|8|135|4|4
-|m.e3.4xlarge|16|270|8|4
-|m.e3.xlarge|32|542|8|4
-|m.e3.xlarge|64|1085|8|4
-|m.e3.xlarge|124|2120|8|4
+|m.e3.xlarge|4|68|4|4
+|m.e3.2xlarge|8|136|4|4
+|m.e3.4xlarge|16|272|8|4
+|m.e3.8xlarge|32|544|8|4
+|m.e3.16xlarge|64|1088|8|4
+|m.e3.31xlarge|124|2108|8|4
 
 
 
@@ -546,10 +579,10 @@ g.n1.8xlarge|32|128|8|4 |	 |
 
 **规格类型特点：**
 
-* vCPU与内存比为1:4
+* vCPU与内存比为1:4/1:8
 * 提供低时延高IO的本地存储
 * 处理器：
-	* 第三代：2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器  
+	* 第三代：第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器 或 2.6 GHz主频的Intel Xeon Gold 6267（Cascade Lake）处理器
 	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器
 * 支持本地数据盘（临时存储），并支持以下类型云硬盘。请注意 **本地数据盘为临时存储盘，有丢失数据的风险（比如发生迁移或宿主机宕机等情况），不适用于应用层没有数据冗余架构的使用场景， 建议您使用云硬盘存储重要数据。** 
@@ -575,6 +608,12 @@ g.n1.8xlarge|32|128|8|4 |	 |
 |s.i3.12xlarge|48|192|6 x 1862 NVMe SSD|8|4
 |s.i3.16xlarge|64|256|8 x 1862 NVMe SSD|8|4
 |s.i3.22xlarge|88|352|8 x 1862 NVMe SSD|8|4
+|s.i3m.4xlarge|16|54|1 x 3725 NVMe SSD|8|4
+|s.i3m.8xlarge|32|108|2 x 3725 NVMe SSD|8|4
+|s.i3m.12xlarge|48|162|3 x 3725 NVMe SSD|8|4
+|s.i3m.16xlarge|64|216|4 x 3725 NVMe SSD|8|4
+|s.i3m.24xlarge|96|324|6 x 3725 NVMe SSD|8|4
+|s.i3m.32xlarge|128|432|8 x 3725 NVMe SSD|8|4
 
 
 第一代：
@@ -638,14 +677,14 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 
 **规格类型特点：**
 
-* vCPU与内存比接近1:4
+* vCPU与内存比接近1:4或1:8
 * 异构计算
 * GPU：
-	* Nvidia Tesla P40 
-	* Nvidia Tesla V100
+	*  第三代：* Nvidia Tesla A100（显存80 GiB）
+	*  第一代：Nvidia Tesla P40 或 Nvidia Tesla V100（显存16 GiB）
 * 处理器：
-	* 2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器（P40）
-	* 2.2 GHz主频的Intel Xeon E5-2650 v4（Broadwell）处理器（V100）
+	* 第三代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器
+	* 第一代：2.1 GHz主频的Intel Xeon E5-2683 v4（Broadwell）处理器（P40）或 2.2 GHz主频的Intel Xeon E5-2650 v4（Broadwell）处理器（V100）
 * 支持本地数据盘（临时存储），并支持以下类型云硬盘。请注意 **本地数据盘为临时存储盘，有丢失数据的风险（比如发生迁移或宿主机宕机等情况），不适用于应用层没有数据冗余架构的使用场景， 建议您使用云硬盘存储重要数据。** 
 	* 通用型SSD云盘
 	* 性能型SSD云盘
@@ -656,6 +695,15 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 	* 图形渲染 
 
 **实例规格**
+
+第三代：
+
+实例规格|vCPU（核）|内存（GiB）|GPU    |网卡数|单网卡队列数
+:---|:---|:---|:---|:---|:---
+|p.n3a100.7large|14|120|1 x Nvidia Tesla A100|8|4
+|p.n3a100.15large|30|240|2  x Nvidia Tesla A100|8|4
+|p.n3a100.31large|62|480|4  x Nvidia Tesla A100|8|4
+|p.n3a100.31xlarge|124|972|8  x Nvidia Tesla A100|8|4
 
 第一代：
 
@@ -723,7 +771,8 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 **规格类型特点：**
 
 * 处理器：
-	* 2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
+	* 第四代：2.6 GHz主频的Intel Xeon Platinum 8338C（Icelake）处理器，基于京刚架构将虚拟化和管理开销卸载至自研专用硬件，大幅提升存储网络性能
+	* 第二代：2.4 GHz主频的Intel Xeon Gold 6148（Skylake）处理器
 * 支持以下类型云硬盘：
 	* 通用型SSD云盘
 	* 性能型SSD云盘
@@ -740,6 +789,7 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 
 实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数
 |:---|:---|:---|:---|:---
+|m.n4.metal|128|1024|1|32
 |g.n2.metal|80|384|8|8
 
 <div id="user-content-14"></div>
@@ -794,6 +844,99 @@ GPU型当前提供GPU标准型和GPU虚拟化型。GPU虚拟化型规格目前�
 实例规格|vCPU（核）|内存（GiB）|含机密内存（GiB）|网卡数|单网卡队列数
 |:---|:---|:---|:---|:---|:---
 |m.n4ft.metal|128|1024|512|16|32
+
+## ARM规格：
+### 通用标准型
+
+<div id="user-content-18"></div>
+
+**规格类型特点:**
+
+* vCPU与内存比为1:4
+* 处理器：
+	* 2.1 GHz主频的 PHYTIUM S2500 处理器
+* 支持以下类型云硬盘：
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
+* 镜像使用限制：
+	* 仅支持云盘系统盘镜像，目前官方镜像仅支持 OpenEuler 21.09（须工单申请）
+* 适用场景：
+	* 信创相关互联网应用
+	* 各种类型和规模的企业级应用
+
+**实例规格**
+
+实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数
+:---|:---|:---|:---|:---
+|g.n3r.large|2|8|2|2
+|g.n3r.xlarge|4|16|4|4
+|g.n3r.2xlarge|8|32|4|4
+|g.n3r.4xlarge|16|64|8|4
+|g.n3r.8xlarge|32|128|8|4
+|g.n3r.16xlarge|64|256|8|4
+
+### 计算优化标准型
+
+<div id="user-content-19"></div>
+
+**规格类型特点：**
+
+* vCPU与内存比为1:2
+* 处理器：
+	* 2.1 GHz主频的 PHYTIUM S2500 处理器
+* 支持以下类型云硬盘：
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
+* 镜像使用限制：
+	* 仅支持云盘系统盘镜像，目前官方镜像仅支持 OpenEuler 21.09（须工单申请）
+* 适用场景：
+	* 信创相关互联网应用
+	* 各种类型和规模的企业级应用
+
+**实例规格**
+
+实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数
+:---|:---|:---|:---|:---
+|c.n3r.large|2|4|2|2
+|c.n3r.xlarge|4|8|4|4
+|c.n3r.2xlarge|8|16|4|4
+|c.n3r.4xlarge|16|32|8|4
+|c.n3r.8xlarge|32|64|8|4
+|c.n3r.16xlarge|64|128|8|4
+
+## 内存优化型
+<div id="user-content-20"></div>
+
+### 内存优化标准型
+
+**规格类型特点：**
+
+* vCPU与内存比为1:8
+* 处理器：
+	* 2.1 GHz主频的 PHYTIUM S2500 处理器
+* 支持以下类型云硬盘：
+	* 通用型SSD云盘
+	* 性能型SSD云盘
+	* 容量型HDD云盘
+* 镜像使用限制：
+	* 仅支持云盘系统盘镜像，目前官方镜像仅支持 OpenEuler 21.09（须工单申请）
+* 适用场景：
+	* 信创相关互联网应用
+	* 各种类型和规模的企业级应用
+
+**实例规格**
+
+实例规格|vCPU（核）|内存（GiB）|网卡数|单网卡队列数
+:---|:---|:---|:---|:---
+|m.n3r.large|2|16|2|2
+|m.n3r.xlarge|4|32|4|4
+|m.n3r.2xlarge|8|64|4|4
+|m.n3r.4xlarge|16|128|8|4
+|m.n3r.8xlarge|32|256|8|4
+|m.n3r.16xlarge|64|512|8|4
+
 
 请注意：
 

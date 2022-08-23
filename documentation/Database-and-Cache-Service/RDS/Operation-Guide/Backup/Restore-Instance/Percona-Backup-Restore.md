@@ -7,7 +7,11 @@
 ## 操作步骤
 1. 登录 [云数据库 RDS 控制台](https://rds-console.jdcloud.com/database)。
 2. 选择需要根据备份恢复的目标实例，点击目标实例的名称，进入到实例详情页。
-3. 点击 **备份管理** 标签，选择目标备份文件，点击操作列 **根据备份恢复** 按钮点击，弹出框参数说明如下：
+3. 点击 **备份管理** 标签，选择目标备份文件，点击操作列 **备份覆盖恢复** 按钮点击，弹出框参数说明如下：
     * 点击 **确认** 按钮，完成创建备份的操作。
-    * 点击 **取消** 按钮，放弃创建备份的操作。
-    ![截图](../../../../../../image/RDS/restore-rds-instance.png)
+    * 点击 **取消** 按钮，放弃创建备份的操作。  
+    
+    ![截图](../../../../image/RDS/restore-rds-instance.png)
+    
+## 相关API
+备份覆盖恢复：[restoreInstance](https://docs.jdcloud.com/cn/rds/api/restoreinstance)

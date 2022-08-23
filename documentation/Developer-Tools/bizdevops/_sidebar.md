@@ -7,6 +7,7 @@
   * [使用限制](/Introduction/Restrictions.md)
   * [应用场景](/Introduction/Application-Scenarios.md)
 * [入门指南（暂时没有）]()
+  
   * [xxxxx](/Getting-Started/)
 * [操作指南]()
   * [平台管理]()
@@ -39,7 +40,12 @@
     * [其他](/Operation-Guide/coding/others.md)
     * [Issue](/Operation-Guide/coding/issue.md)
   * [部署发布](/Operation-Guide/deploy/deploy.md)
-    * [应用管理](/Operation-Guide/deploy/app.md)
+
+    - 应用管理
+      - [应用管理](/Operation-Guide/deploy/app.md)
+      - [包部署的应用](/Operation-Guide/deploy/app-package.md)
+      - [镜像部署的应用](/Operation-Guide/deploy/app-image.md)
+
     * [集群管理](/Operation-Guide/deploy/clusters.md)
     * [系统管理](/Operation-Guide/deploy/system.md)
     * [变更管理](/Operation-Guide/deploy/process.md)
@@ -49,9 +55,12 @@
     * [流水线模版](/Operation-Guide/pipeline/pipeline_template.md)
     * [其他](/Operation-Guide/pipeline/pipeline_others.md)
 * [最佳实践（暂时没有）]()
+  
   * [xxxxx](/Best-Practices/)
 * [FAQ]()
+  
   * [FAQ](/FAQ/FAQ.md)
 * [相关资源]()
+  
   * [发布历史](/Related-Resources/Document-History.md)
 

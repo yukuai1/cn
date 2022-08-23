@@ -24,27 +24,26 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/os
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describeos#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**oss**|[Os[]](describeos#os)| |
-### <div id="os">Os</div>
+|**oss**|[Os[]](#os)| |
+### <div id="Os">Os</div>
 |名称|类型|描述|
 |---|---|---|
 |**osTypeId**|String|操作系统系统类型ID|
 |**osName**|String|操作系统系统名称, 如 Ubuntu 16.04(x86_64)|
 |**osType**|String|操作系统类型, 如 ubuntu/centos|
 |**osVersion**|String|操作系统版本, 如 14.04/16.04|
-|**deviceType**|String|实例类型, 如 edcps.c.normal1|
+|**deviceType**|String|实例类型, 如 cps.c.normal|
+|**format**|String|镜像类型, 如 qcow2/tar|
+|**source**|String|common,customize|
+|**sourceName**|String|通用镜像,定制镜像|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|Bad request|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

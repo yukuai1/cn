@@ -27,10 +27,6 @@ https://vod.jdcloud-api.com/v1/veditProjects/{projectId}
 |返回码|描述|
 |---|---|
 |**200**|OK|
-|**401**|Authentication failed|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
 
 ## 请求示例
 DELETE

@@ -39,7 +39,7 @@
 | client-output-buffer pubsub | 订阅客户端输出缓冲区大小  | 134217728 33554432 60  | \d+\s+\d+\s+\d+   | 
 | @no-auth-ignore |  实例没有密码时，即使客户端发送了密码，也返回OK | no  | yes/no  | 
 | @cluster-compat-enable | 主从版是否兼容cluster语法，集群版没有效果  | yes  |yes/no  | 
-| timeout |当客户端连接闲置时间达到该指定值时，将关闭连接，单位为秒（s），为0表示不开启 | 300  | 0~100000  | 
+| timeout |当客户端连接闲置时间达到该指定值时，将关闭连接，单位为秒（s），为0表示不开启。在实际运行中，为了提高性能，Redis不一定会精确地按照timeout的值规定的时间来断开符合条件的空闲连接，会有0~20秒的延迟。 | 300  | 0~100000  | 
 
 ####     notify-keyspace-events参数说明
 | 字符  |  参数说明  | 

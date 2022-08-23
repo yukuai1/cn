@@ -1,4 +1,4 @@
-  name: 星链低代码Serverless
+  name: 星链函数服务
   href: 
   items:
   - name: 产品简介
@@ -19,7 +19,7 @@
         href: Pricing/Billing-Overview.md
   - name: 入门指南
     items:
-      - name: 登录京东云-星链低代码Serverless
+      - name: 登录京东云-星链函数服务
         href: Getting-Started/Getting-started.md
       - name: 新建团队
         href: Getting-Started/Create-Team.md

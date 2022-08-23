@@ -26,10 +26,9 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance/{cacheInstance
 
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**409**|STATE|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|
 
 ## 请求示例
 POST
