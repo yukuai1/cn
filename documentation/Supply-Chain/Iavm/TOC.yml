@@ -1,0 +1,68 @@
+name: 轻量云主机
+href: 
+items:
+- name: 产品简介
+  items:
+    - name: 产品介绍
+      href: Introduction/Product-Overview.md 
+    - name: 产品优势
+      href: Introduction/advantages.md
+    - name: 应用场景
+      href: Introduction/scenario.md 
+    - name: 镜像说明
+      href: Introduction/image.md 
+    - name: 网络连通性
+      href: Introduction/network.md 
+      
+- name: 产品定价
+  items:
+    - name: 计费说明
+      href: price/price.md    
+    - name: 购买流程
+      href: price/buy.md  
+    - name: 续费流程
+      href: price/renew.md  
+
+
+- name: 快速入门
+  items:
+    - name: 用户管理
+      items:
+        - name: 人员部门管理
+          href: Operation-guide/User-Management/managerment.md      
+        - name: 别名
+          href: Operation-guide/User-Management/alias.md 
+        - name: 导入邮件账户
+          href: Operation-guide/User-Management/Import-User.md
+        - name: 操作日志
+          href: Operation-guide/User-Management/Operation_log.md
+    - name: 系统设置
+      items:
+        - name: 邮箱搬家
+          href: Operation-guide/System-settings/Mail_move.md     
+        - name: 转发
+
+
+- name: 操作指南
+  items:
+    - name: 计费说明
+      href: price/price.md    
+    - name: 购买流程
+      href: price/buy.md  
+    - name: 续费流程
+      href: price/renew.md  
+
+
+- name: 最佳实践
+  items:
+    - name: 计费说明
+      href: price/price.md    
+    - name: 购买流程
+      href: price/buy.md  
+    - name: 续费流程
+      href: price/renew.md  
+      
+- name: 常见问题
+  items:
+    - name: FAQ
+      href: problem/faq.md    
