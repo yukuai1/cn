@@ -75,7 +75,7 @@
            - name: Put Bucket
              href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-2.md
            - name: Put Bucket ACL
-             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bukcet-acl-2.md        
+             href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-acl-2.md        
            - name: Put Bucket cors
              href: API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Cors-2.md 
            - name: Put Bucket encryption
