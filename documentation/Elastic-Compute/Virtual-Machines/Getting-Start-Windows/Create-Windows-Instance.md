@@ -28,7 +28,7 @@
 - 提供以下镜像类型：**官方镜像**、**私有镜像**、**共享镜像**、**镜像市场镜像**四类镜像，详细区分请参见[镜像概述](../Operation-Guide/Image/Image-Overview.md)。
  * 对于初次使用京东云的用户可以选择京东云提供的“官方镜像”，您可以根据需要选择对应的系统，并选择合适的版本。
  * 如果您已经创建好自己的实例，并配置好相应的环境，可以将此实例进行制作私有镜像操作，同时基于此镜像批量创建有相同系统及环境配置的主机，还可以将此私有镜像共享给其他京东云用户。 
-![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0911.jpg)
+![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0911.png)
 6. 选择实例规格：
  * 实例的规格支持用户自定义选择，从最小的1核1G（如g.s1.micro）到124C2108GB（如m.e3.31xlarge）。实例规格列表展示了实例规格对应的配置信息，包含CPU核数、内存以及价格和处理器信息。用户可以根据不同业务场景选择实例规格及相应配置，详情请参见[实例规格](../Introduction/Instance-Type-Family.md)。
 ![sdsd](../../../../image/Elastic-Compute/Virtual-Machine/0902.png)
