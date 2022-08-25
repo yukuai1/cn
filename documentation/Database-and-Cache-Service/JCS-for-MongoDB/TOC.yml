@@ -4,48 +4,72 @@
   - name: 产品简介
     items:
       - name: 产品概述
-        href: Introduction/Product-Overview.md
+        href: Introduction/Product-Summarization.md
       - name: 核心概念
-        href: Introduction/Core-Concepts.md
-      - name: 基础架构
-        href: Introduction/Basic-Infrastructure.md
+        href: Introduction/Core-Conception.md
+      - name: 业务架构
+        href: Introduction/Product-Architecture.md
       - name: 产品优势
-        href: Introduction/Benefits.md
-      - name: 产品功能
-        href: Introduction/Features.md
+        href: Introduction/Product-Advantages.md
       - name: 产品规格
-        href: Introduction/Specifications.md
-      - name: 限制说明
-        href: Introduction/Restrictions.md
+        href: Introduction/Product-Specifications.md
       - name: 应用场景 
         href: Introduction/Application-Scenarios.md    
   - name: 产品定价
     items:
       - name: 计费概述
-        href: Pricing/Billing-Overview.md
-      - name: 计费规则
-        href: Pricing/Billing-Rules.md
-      - name: 价格总览
-        href: Pricing/Price-Overview.md
-      - name: 购买流程
-        href: Pricing/Purchase-Process.md 
+        href: Pricing/Billing-overall.md
+      - name: 实例价格
+        href: Pricing/Price-Of-Instance.md 
       - name: 续费流程
         href: Pricing/Renew-Process.md
-  - name: 入门指南
+  - name: 快速入门
     items:
-      - name: 创建实例
-        href: Getting-Started/Create-Instance.md
+      - name: 快速入门概览
+        href: Getting-Started/Getting-Strated-Summarization.md
+      - name: 副本集快速入门
+        items:
+          - name: 创建副本集实例
+            href: Getting-Started/Getting-Strated-Replica/Create-ReplicaSet-Instance.md
+          - name: 内网连接副本集实例
+            href: Getting-Started/Getting-Strated-Replica/Connect-ReplicaSet-Intranet.md
+          - name: 外网连接副本集实例
+            href: Getting-Started/Getting-Strated-Replica/Connect-ReplicaSet-Internet.md
+      - name: 分片集群快速入门
+        items:
+          - name: 创建分片集群实例
+            href: Getting-Started/Get-Strated-Shard/Create-Sharding-Instance.md
+          - name: 内网连接副本集实例
+            href: Getting-Started/Get-Strated-Shard/Connect-Sharding-Intranet.md
+          - name: 外网连接副本集实例
+            href: Getting-Started/Get-Strated-Shard/Connect-Sharding-Internet.md
+      - name: 修改密码
+        href: Getting-Started/Reset-Password.md
       - name: 设置白名单
-        href: Getting-Started/Set-Whitelist.md
-      - name: 连接实例
-        href: Getting-Started/Connect-Instance.md
+        href: Getting-Started/Set-WhiteList.md
       - name: 导入数据
         href: Getting-Started/Import-Data.md
       - name: 导出数据
         href: Getting-Started/Export-Data.md
   - name: 操作指南
     items:
+      - name: 操作指南概览
+        href: Operation-Guide/Operation-Guide-Summarization.md
+      - name: 数据库账号管理
+        href: Operation-Guide/Managment-Database-Account.md
       - name: 实例管理
+        items:
+          - name: 变更配置
+            href: Operation-Guide/
+          - name: 变更节点数
+            href: Operation-Guide/Instance-Management/Modify-Replication-Factor.md
+          - name: 重启实例
+            href: Operation-Guide/Instance-Management/Restart-Instance.md
+          - name: 续费实例
+            href: Operation-Guide/Instance-Management/Renewal-Instructions.md      
+          - name: 删除实例
+            href: Operation-Guide/Instance-Management/Delete-Instance.md
+      - name: 节点管理
         items:
           - name: 变更配置
             href: Operation-Guide/Instance-Management/Modify-Instance-Spec.md

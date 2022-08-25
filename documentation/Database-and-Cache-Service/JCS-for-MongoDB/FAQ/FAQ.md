@@ -18,10 +18,9 @@ A：京东云云数据库MongoDB完全兼容MongoDB官方协议，使用方法�
 
 A：oplog是实例存储空间的5%，暂不支持调整大小。
 
-   
 **Q：为什么看到监控里，MongoDB内存占用比很高？**
 
-A：MongoDB使用的是内存映射存储引擎，它会把磁盘IO操作转换成内存操作，如果是读操作，内存中的数据起到缓存的作用，如果是写操作，内存还可以把随机的写操作转换成顺序的写操作，可以大幅度提升性能，用户不用担心内存占用比例较高的问题。如果内存容量已成为性能瓶颈请升级实例配置，操作方式请参见“[变更实例配置](../Operation-Guide/Instance-Management/Modify-Instance-Spec.md)”。
+A：MongoDB使用的是内存映射存储引擎，它会把磁盘IO操作转换成内存操作，如果是读操作，内存中的数据起到缓存的作用，如果是写操作，内存还可以把随机的写操作转换成顺序的写操作，可以大幅度提升性能，用户不用担心内存占用比例较高的问题。如果内存容量已成为性能瓶颈请升级实例配置，您可以[变更副本集配置](../Operation-Guide/Manage-Node/ReplicaSet/Change-ReplicaSet-Specifications.md)或者[变更分片集群配置](../Operation-Guide/Manage-Node/Shard/Change-Shard-Specification.md)。
 
 **Q：目前使用的是本地 MongoDB 4.0版，如果转到云上使用3.6版，需要注意什么？**
 

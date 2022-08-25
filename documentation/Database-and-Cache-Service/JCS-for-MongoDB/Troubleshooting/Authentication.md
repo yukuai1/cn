@@ -4,7 +4,7 @@
 
 我在登录 MongoDB 数据库时，账号密码输入都正确，但提示鉴权失败。
 
-![](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/mongo-030.png)
+![](../../../../image/mongodb/mongo-030.png)
 
 ## 问题处理
 
