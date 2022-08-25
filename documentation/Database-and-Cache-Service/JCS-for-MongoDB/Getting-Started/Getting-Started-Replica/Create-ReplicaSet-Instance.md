@@ -39,6 +39,6 @@
 
 ## 相关API接口
 
-| 接口名称                                                     | 接口描述       |      |
-| ------------------------------------------------------------ | -------------- | ---- |
-| [createInstance](../../../../../API/JCS-for-MongoDB/Instance-Management/createInstance.md) | 创建副本集实例 |      |
+| 接口名称                                                     | 接口描述       |
+| ------------------------------------------------------------ | -------------- |
+| [createInstance](../../../../../API/JCS-for-MongoDB/Instance-Management/createInstance.md) | 创建副本集实例 |

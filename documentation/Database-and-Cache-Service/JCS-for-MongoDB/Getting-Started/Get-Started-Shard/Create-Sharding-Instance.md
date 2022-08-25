@@ -48,6 +48,6 @@
 
 ## 相关API接口
 
-| 接口名称                                                     | 功能描述         |      |
-| ------------------------------------------------------------ | ---------------- | ---- |
-| [createShardingInstance](../../../../../API/JCS-for-MongoDB/Instance-Management/createShardingInstance.md) | 创建分片集群实例 |      |
+| 接口名称                                                     | 功能描述         |
+| ------------------------------------------------------------ | ---------------- |
+| [createShardingInstance](../../../../../API/JCS-for-MongoDB/Instance-Management/createShardingInstance.md) | 创建分片集群实例 |
