@@ -17,7 +17,7 @@
 
 1. 请登录[MongoDB控制台](https://mongodb-console.jdcloud.com/mongodb)，并在控制台界面找到**创建**按钮，点击即可进入创建页面；
 
-   ![img](../../../../../image/mongodb/createReplicaSet.png)
+   ![image](../../../../../image/mongodb/createReplicaSet.png)
 
    
 
