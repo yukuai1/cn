@@ -17,7 +17,7 @@
 
 1. 请登录[MongoDB控制台](https://mongodb-console.jdcloud.com/mongodb)，并在控制台界面找到**创建**按钮，点击即可进入创建页面；
 
-   ![image](../../../../../image/mongodb/createReplicaSet.png)
+![image](../../../../../image/mongodb/createReplicaSet.png)
 
    
 
@@ -50,5 +50,5 @@
 
 | 接口名称                                                     | 功能描述         |
 | ------------------------------------------------------------ | ---------------- |
-| [createShardingInstance](../../../../../API/JCS-for-MongoDB/Instance-Management/createShardingInstance.md) | 创建分片集群实例 |
-| [createShardingInstance](../../../../../API/JCS-for-MongoDB/Instance-Management/createShardingInstance.md) |创建分片集群实例|
+| [createShardingInstance](../../../../../API/JCS-for-MongoDB/Instance-Management/createShardingInstance.md) |           创建分片集群实例 |
+| [createShardingInstance](../../../../../API/JCS-for-MongoDB/Instance-Management/createShardingInstance.md) |            创建分片集群实例|
