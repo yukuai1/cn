@@ -48,12 +48,7 @@
 
 ## 相关API接口
 
-<<<<<<< HEAD
 | 接口名称                                                     | 功能描述         |
 | ------------------------------------------------------------ | ---------------- |
 | [createShardingInstance](../../../../../API/JCS-for-MongoDB/Instance-Management/createShardingInstance.md) | 创建分片集群实例 |
-=======
-| 接口名称                                                     | 功能描述         |      |
-| ------------------------------------------------------------ | ---------------- | ---- |
-| [createShardingInstance](../../../../../API/JCS-for-MongoDB/Instance-Management/createShardingInstance.md) | 创建分片集群实例 |      |
->>>>>>> 4c3dc9871aaf2a83ee90cafb4e172eb35b893a9b
+| [createShardingInstance](../../../../../API/JCS-for-MongoDB/Instance-Management/createShardingInstance.md) |创建分片集群实例|
