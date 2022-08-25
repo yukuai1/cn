@@ -59,60 +59,64 @@
         href: Operation-Guide/Managment-Database-Account.md
       - name: 实例管理
         items:
-          - name: 变更配置
-            href: Operation-Guide/
-          - name: 变更节点数
-            href: Operation-Guide/Instance-Management/Modify-Replication-Factor.md
+          - name: 创建实例
+            href: Operation-Guide/Manage-Instance/Creat-Instance.md
+          - name: 查看实例信息
+            href: Operation-Guide/Manage-Instance/View-Instance-Details.md
           - name: 重启实例
-            href: Operation-Guide/Instance-Management/Restart-Instance.md
-          - name: 续费实例
-            href: Operation-Guide/Instance-Management/Renewal-Instructions.md      
+            items:
+              - name: 重启副本集实例
+                href: Operation-Guide/Reboot-Instance/Reboot-ReplicaSet.md
+              - name: 重启分片集群节点
+                href: Operation-Guide/Reboot-Instance/Reboot-Sharding.md
           - name: 删除实例
-            href: Operation-Guide/Instance-Management/Delete-Instance.md
+            href: Operation-Guide/Manage-Instance/Delete-instance.md 
+          - name: 配置实例标签
+            href: Operation-Guide/Manage-Instance/Configure-Instance-Lable.md  
+          - name: 续费实例
+            href: Operation-Guide/Manage-Instance/Renew-Instance.md
+          - name: 按配置转包年包月
+            href: Operation-Guide/Manage-Instance/Change-billing-Mode.md
       - name: 节点管理
         items:
-          - name: 变更配置
-            href: Operation-Guide/Instance-Management/Modify-Instance-Spec.md
-          - name: 变更节点数
-            href: Operation-Guide/Instance-Management/Modify-Replication-Factor.md
-          - name: 重启实例
-            href: Operation-Guide/Instance-Management/Restart-Instance.md
-          - name: 续费实例
-            href: Operation-Guide/Instance-Management/Renewal-Instructions.md      
-          - name: 删除实例
-            href: Operation-Guide/Instance-Management/Delete-Instance.md
-      - name: 账号管理
+          - name: 副本集节点管理
+            items: 
+              - name: 变更副本集节点数
+                href: Operation-Guide/Manage-Node/ReplicaSet/Change-ReplicaSet-Number.md
+              - name: 变更副本集节点配置
+                href: Operation-Guide/Manage-Node/ReplicaSet/Change-ReplicaSet-Specifications.md
+          - name: 分片集群节点管理
+            items:
+              - name: 变更Mongos节点数
+                href: Operation-Guide/Manage-Node/Shard/Add-Mongos.md
+              - name: 变更Shard节点数
+                href: Operation-Guide/Manage-Node/Shard/Add-Shard.md
+              - name: 变更Mongos节点配置
+                href: Operation-Guide/Change-Mongos-Specifications.md
+              - name: 变更Shard节点配置
+                href: Operation-Guide/Change-Shard-Specifications.md
+      - name: 管理数据库备份
         items:
-          - name: 创建账号
-            href: Operation-Guide/Account-Management/Create-MongoDB-Account.md
-          - name: 修改密码
-            href: Operation-Guide/Account-Management/Reset-Password.md
-      - name: 连接管理
+          - name: 数据库备份概述
+            href: Operation-Guide/Database-backup-managment/Database-Backup-managment-Summarization.md
+          - name: 自动备份
+            href: Operation-Guide/Database-backup-managment/Auto-Backup.md
+          - name: 手动备份
+            href: Operation-Guide/Database-backup-managment/Manual-Backup.md
+          - name: 跨地域备份同步
+            href: Operation-Guide/Database-backup-managment/Cross-Regional-Backup-Synchronization.md
+          - name: 下载备份
+            href: Operation-Guide/Database-backup-managment/Download-Backup.md
+      - name: 恢复实例备份
         items:
-          - name: 外网访问
-            href: Operation-Guide/Connection-Management/Internet-access.md
-          - name: 节点域名管理
-            href: Operation-Guide/Connection-Management/Node-Domain-Management.md
-      - name: 备份管理
-        items:
-          - name: 设置自动备份
-            href: Operation-Guide/Backup/Modify-Backup-Policy.md        
-          - name: 手动创建备份
-            href: Operation-Guide/Backup/Create-Backup.md       
-          - name: 下载备份文件
-            href: Operation-Guide/Backup/Download-Bckup.md    
-          - name: 恢复数据
-            href: Operation-Guide/Backup/Restore-Instance.md       
+          - name: 根据时间节点创建实例
+            href: Operation-Guide/Restore-Backup/ReplicaSet/Create-Instance-by-Point-In-Time.md
           - name: 根据备份创建实例
-            href: Operation-Guide/Backup/Create-Instance-by-Backup.md      
-          - name: 根据时间点创建实例          
-            href: Operation-Guide/Backup/Create-Instance-by-Point-in-Time.md      
-      - name: 跨地域备份同步服务
-        items:
-          - name: 创建跨地域备份同步服务
-            href: Operation-Guide/Across-Region-Backup-Sync/Create-Backup-Sync.md  
-          - name: 根据备份数据创建实例
-            href: Operation-Guide/Across-Region-Backup-Sync/Create-Instance-by-Backup-Sync.md
+            href: Operation-Guide/Restore-Backup/Create-Instance-by-Backup.md
+          - name: 根据跨地域备份创建实例
+            href: Operation-Guide/Restore-Backup/Create-Instace-By-Synchronization-Backup.md
+          - name: 根据备份恢复实例
+            href: Operation-Guide/Restore-Backup/Restore-Instance-By-Backup.md
       - name: 监控报警
         items:
           - name: 查看监控信息
