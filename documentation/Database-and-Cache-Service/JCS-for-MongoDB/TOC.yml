@@ -94,7 +94,7 @@
               - name: 变更Mongos节点配置
                 href: Operation-Guide/Change-Mongos-Specifications.md
               - name: 变更Shard节点配置
-                href: Operation-Guide/Change-Shard-Specifications.md
+                href: Operation-Guide/Change-Shard-Specification.md
       - name: 管理数据库备份
         items:
           - name: 数据库备份概述
