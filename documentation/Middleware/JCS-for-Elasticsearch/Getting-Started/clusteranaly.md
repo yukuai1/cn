@@ -1,19 +1,29 @@
 ## 分析集群
 
+### 前提条件
+1. 已创建云搜索 Elasticsearch 集群，可参考 [创建集群](../Getting-Started/Create-ES.md)。</br>
+
+### 登录 Kibana
+1. 登录 [云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，进入集群管理页面。</br>
+2. 点击集群列表中目标集群右侧的【**操作-kibana**】 按钮进入 kibana 可视化界面，通过导航栏的【Dev Tools】进入开发者工具。</br>
+
 ### 集群状态查看
 ```
 GET _cluster/health
 ```
-响应如下时表示访问成功：
+
+</br>
+
+获取集群状态成功，返回结果如下：
 ```
 {
-  "cluster_name" : "test",
+  "cluster_name" : "ES_Demo_Instance_Wushan",
   "status" : "green",
   "timed_out" : false,
-  "number_of_nodes" : 5,
-  "number_of_data_nodes" : 3,
-  "active_primary_shards" : 11,
-  "active_shards" : 22,
+  "number_of_nodes" : 6,
+  "number_of_data_nodes" : 6,
+  "active_primary_shards" : 64,
+  "active_shards" : 128,
   "relocating_shards" : 0,
   "initializing_shards" : 0,
   "unassigned_shards" : 0,
@@ -29,6 +39,9 @@ GET _cluster/health
 ```
 GET _cat/nodes
 ```
+
+</br>
+
 响应如下时表示访问成功：
 ```
 172.16.0.48 5 79 0 0.20 0.32 0.32 mdi * node-1
@@ -43,6 +56,9 @@ GET _cat/nodes
 ```
 GET _cat/indices?v
 ```
+
+</br>
+
 响应如下时表示访问成功：
 ```
 health status index      uuid                   pri rep docs.count docs.deleted store.size pri.store.size
@@ -54,6 +70,9 @@ green  open   index1     Spc2nVIaS32ImKyieUYb5w   5   1          2            0 
 ```
 GET _cat/shards
 ```
+
+</br>
+
 响应如下时表示访问成功：
 ```
 .kibana_1  0 p STARTED 1 3.7kb 172.16.0.50 node-2
