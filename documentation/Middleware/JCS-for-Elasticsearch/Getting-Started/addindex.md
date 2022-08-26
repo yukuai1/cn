@@ -66,7 +66,8 @@ PUT /product_info
 
 > 注意：官方Elasticsearch 7.0及以上版本将移除映射中的type类型定义，之前版本会继续支持。如果在7.0及以上版本中使用了type，会出现"type": "mapper_parsing_exception"的错误提示。详细信息及解决方案，请参见 [Removal of mapping types](https://www.elastic.co/guide/en/elasticsearch/reference/7.3/removal-of-types.html?spm=a2c4g.11186623.0.0.60a75d78iF1OeF#_what_are_mapping_types)。
 </br>
-响应如下时，代表索引创建成功：
+
+索引创建成功后，返回结果如下：
 
 ```
 {
