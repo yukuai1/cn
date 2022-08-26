@@ -28,7 +28,9 @@ POST product_info/_doc/
 }
 ```
 
-响应如下时，表示创建成功。
+</br>
+
+创建成功后，返回结果如下。
 ```
 {
   "_index" : "product_info",
@@ -74,7 +76,9 @@ POST product_info/_doc/_bulk
 {"productName": "产品D","productType": "第三方","describe": "第三方类产品D"}
 ```
 
-响应如下时，表示创建成功。
+</br>
+
+创建成功后，返回结果如下。
 ```
 {
   "took" : 27,
