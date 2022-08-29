@@ -77,7 +77,7 @@
 ```
 
 ### 4、为服务角色授权策略<br>
-返回角色管理列表，找到第2步中创建的服务角色```image-export```，点击操作中的 **授权**。
+返回角色管理列表，找到第2步中创建的服务角色`image-export`，点击操作中的 **授权**。
 ![](https://img1.jcloudcs.com/cn/image/vm/image-export-image7.png)  
 
 在授权弹窗中查找并选中第3步中创建的策略“image-export-policy”，点击确定完成授权。可进入角色详情页确认授权是否成功。
@@ -112,13 +112,10 @@ jdc vm export-image --region-id cn-east-2 --image-id img-xxxxxxx --role-name ima
 | clientToken	 | string    | 否   | 用户导出镜像的幂等性保证。如传参值与某次的clientToken相同，则认为是同一个请求，将返回相同的请求结果。长度不能超过64个字符。
 
 ## 查看导出进度
-成功提交导出镜像请求后，可通过镜像[任务管理控制台](https://cns-console.jdcloud.com/compute/imageTask/list)或任务查询接口查看导出进展。
-* OpenAPI文档见：[查询镜像任务](https://docs.jdcloud.com/cn/virtual-machines/api/imagetasks?content=API)<br>
-  * CLI指令示意：
+成功提交导出镜像请求后，可通过镜像[任务管理控制台](https://cns-console.jdcloud.com/compute/imageTask/list)查看导出进展、关联信息资源等。
 
-```
-jdc vm image-tasks --region-id cn-east-2 --task-action ExportImage --input-json '{"taskIds":[xxx]}'
-```
+![image](https://user-images.githubusercontent.com/88134774/164971648-e0dc4a6d-12f1-4703-a641-074bd11b4573.png)
+
 
 
 ## 相关参考
@@ -128,7 +125,7 @@ jdc vm image-tasks --region-id cn-east-2 --task-action ExportImage --input-json 
 
 [创建OSS存储空间](https://docs.jdcloud.com/cn/object-storage-service/create-bucket-2)
 
-[服务角色](https://docs.jdcloud.com/cn/iam/role)
+[服务角色](https://docs.jdcloud.com/cn/iam/role-overview)
 
 [镜像导出OpenAPI](https://docs.jdcloud.com/cn/virtual-machines/api/exportimage?content=API)
 

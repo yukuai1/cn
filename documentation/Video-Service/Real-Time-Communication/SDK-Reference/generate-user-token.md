@@ -28,24 +28,27 @@
 | ---------- | -------- | ------------ | --------------- | ------------------------------------------------------------ |
 | appId      | String   | 32<img width=250/>           | 是 <img width=250/>              | 应用ID，通过控制台创建。                                     |
 | appKey     | String   | 64(字符)    | 是              | 应用KEY，通过控制台查看。                                    |
-| roomId     | String   |              |                 | 房间ID                                                       |
-| userId     | String   | 64           | 是              | 您的唯一标识，AppServer生成。同一个UserId的用户在其他端登录，先入会的端会被后入会的端踢出房间。 由字母[a-zA-Z]和数字[0-9]组成，不包含特殊字符，最大64字节。例如：2b9be4b25c2d38c409c376ffd2372be1。 |
-| nonce      | String   | 1000         | 是              | 令牌随机码，建议由AppServe生成需要加上前缀AK-，以标识采用应用鉴权私钥（AppKey）方案。格式推荐您用UUID，由字母[a-zA-Z]和数字[0-9]组成，不包含特殊字符，最大64字节。例如：AK-2b9be4b25c2d38c409c376ffd2372be1。 |
-| timestamp  | Long     |              | 是              | 过期时间戳，13位到毫秒级Unix时间格式，AppServer所运行的服务器需保持时间同步。例如：当前时间戳为1560415794000（2019-06-13 16:49:54）令牌2天后过期，timestamp设置为1560588594000（2019-06-15 16:49:54）。 |
+| roomId     | String   | 64           | 是              | 用户指定房间ID (userRoomId)                                                      |
+| userId     | String   | 64           | 是              | 您的唯一标识，AppServer生成。同一个UserId的用户在其他端登录，先入会的端会被后入会的端踢出房间。   由字母[a-zA-Z]和数字[0-9]组成，不包含特殊字符，最大64字节。例如：2b9be4b25c2d38c409c376ffd2372be1。 |
+| nonce      | String   | 64         | 是              | 令牌随机码，建议由AppServe生成。     需要加上前缀AK-，以标识采用应用鉴权私钥（AppKey）方案。格式推荐您用UUID，由字母[a-zA-Z]和数字[0-9]组成，不包含特殊字符，最大64字节。例如：AK-2b9be4b25c2d38c409c376ffd2372be1。 |
+| timestamp  | Long     | 13          | 是              | 过期时间戳，13位到毫秒级。     Unix时间格式，AppServer所运行的服务器需保持时间同步。例如：当前时间戳为1560415794000（2019-06-13 16:49:54）令牌2天后过期，timestamp设置为1560588594000（2019-06-15 16:49:54）。 |
+
 
 ### 计算结果示例
 
 ```
 String appId="192bc3400174019265a7b1ad1ea7c6c7";
-String appKey="SadW4EIcFmhmA7ixgK39MNegUFj0LnAkYEPlxlykexVezqsXS2Q1VOMed88ES4GxTP0Jiqv3pR/bCNE1lcrpA==";
+String appKey="SadW4EIcFmhmA7ixgK39MNegUFj0LnAkYEPlxlykexVezqsXS2Q1VOMed88ES4GxTP0Jiqv3pR";
 String roomId="60";
-String userId="2b9be4b25c2d38c409c376ffd2372be1";
-String nonce ="AK-2b9be4b25c2d38c409c376ffd2372be1";
-Long timestamp=4762379647000l;
+String userId="a1555463c361e7036a274a8b44e2919";
+String nonce ="AK-a1555463c361e7036a274a8b44e2919";
+Long timestamp=7923514036000l;
 String token=MacUtil.hmacSha256(appId,appKey,roomId,userId,nonce,timestamp);
 System.out.println(token);
+
+
 //输出token结果
-N203UkQwM3pLdExvYURNcy9lWWhkNnJhS0FMWTlRdTh4bE9wTkcyR2ZIUT0_
+RmwzcUJkZnBjWHFUbUFKcFN5YTUwVUpPOERBTzk3REhyeUsrY21rWjhTND0_
 ```
 
 ### Java算法示例：

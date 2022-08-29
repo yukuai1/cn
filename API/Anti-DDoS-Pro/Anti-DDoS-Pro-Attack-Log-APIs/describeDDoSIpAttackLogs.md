@@ -3,6 +3,11 @@
 
 ## 描述
 查询高防IP的 DDoS 攻击日志, 仅BGP实例返回的是IP级别的攻击记录, 非BGP实例返回的仍是实例级别的攻击记录(serviceIp 字段为空)
+参数 serviceIp 优先级大于 instanceId.
+- 指定 serviceIp 参数时, 忽略 instanceId 参数, 查询 ip 相关攻击记录.
+- 未指定 serviceIp 时, 查询 instanceId 指定实例相关攻击记录.
+- serviceIp 和 instanceId 均未指定时, 查询用户所有攻击记录
+
 
 ## 请求方式
 GET
@@ -22,6 +27,7 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/attacklog:describeDDoSIpAtt
 |**startTime**|String|True| |开始时间, 只能查询最近 90 天以内的数据, UTC 时间, 格式: yyyy-MM-dd'T'HH:mm:ssZ|
 |**endTime**|String|False|当前时间|查询的结束时间, UTC 时间, 格式: yyyy-MM-dd'T'HH:mm:ssZ|
 |**instanceId**|String[]|False| |高防实例 ID|
+|**serviceIp**|String[]|False| |高防IP列表. <br>- 使用 <a href='http://docs.jdcloud.com/anti-ddos-pro/api/describeServiceIpList'>describeServiceIpList</a> 接口查询实例的高防 IP|
 
 
 ## 返回参数

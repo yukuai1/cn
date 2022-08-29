@@ -7,16 +7,18 @@
     items:
       - name: 产品概述
         href: Introduction/Product-Overview.md
-      - name: 核心概念
-        href: Introduction/Core-Concepts.md
-      - name: 地域及可用区
-        href: Introduction/Regions-and-AvailabilityZones.md
-      - name: 产品优势
-        href: Introduction/Benefits.md
-      - name: 产品功能
+      - name: 实例架构
         href: Introduction/Features.md
       - name: 产品规格
         href: Introduction/Specifications.md
+      - name: 容灾恢复
+        href: Introduction/Benefits.md        
+      - name: 基本概念
+        href: Introduction/Core-Concepts.md
+      - name: 地域及可用区
+        href: Introduction/Regions-and-AvailabilityZones.md
+      - name: 命令支持
+        href: Introduction/Command-Supported.md 
       - name: 限制说明
         href: Introduction/Restrictions.md
       - name: 应用场景 
@@ -39,8 +41,6 @@
         href: Getting-Started/Create-Instance.md
       - name: 连接实例
         href: Getting-Started/Connect-Instances.md
-      - name: 命令支持
-        href: Getting-Started/Command-Supported.md
       - name: Redis Proxy特性说明
         href: Getting-Started/Proxy-Info.md
   - name: 操作指南
@@ -53,22 +53,26 @@
             href: Operation-Guide/Instance-Management/LifeCycle.md
           - name: 变更配置
             href: Operation-Guide/Instance-Management/Change-Configuration.md
-          - name: 释放实例
-            href: Operation-Guide/Instance-Management/Release-Instance.md
-          - name: 免密和修改密码
-            href: Operation-Guide/Instance-Management/Change-Password.md
-          - name: 参数修改
-            href: Operation-Guide/Instance-Management/Modify-Instancename.md      
+          - name: 删除实例
+            href: Operation-Guide/Instance-Management/Release-Instance.md          
           - name: 标签管理
             href: Operation-Guide/Instance-Management/TagManage.md
+          - name: 数据清除
+            href: Operation-Guide/Instance-Management/CleanData.md
           - name: 导出实例列表
             href: Operation-Guide/Instance-Management/Export-Instance.md
           - name: 客户端IP列表
             href: Operation-Guide/Instance-Management/ClientIPList.md
+          - name: AOF持久化
+            href: Operation-Guide/Instance-Management/AOFSwitch.md   
+          - name: 参数配置
+            href: Operation-Guide/Instance-Management/Modify-Instancename.md
+          - name: 命令禁用管理
+            href: Operation-Guide/Instance-Management/CommandDisable.md  
           - name: 备份恢复
-            href: Operation-Guide/Backup-And-Recovery.md
-          - name: 白名单设置
-            href: Operation-Guide/Whitelist.md
+            href: Operation-Guide/Backup-And-Recovery.md   
+          - name: 升级实例版本
+            href: Operation-Guide/Instance-Management/UpgradeInstanceVersion.md     
       - name: 连接实例
         items:
           - name: 公网连接Redis实例
@@ -95,6 +99,17 @@
             href: Operation-Guide/Cache-Analysis/Cache-Analysis.md
           - name: 热key大key
             href: Operation-Guide/Cache-Analysis/Key-Analysis.md     
+      - name: 账号与安全
+        items:
+          - name: IAM访问控制
+            href: Operation-Guide/User-Manage/IAMRedis.md
+          - name: 白名单设置
+            href: Operation-Guide/User-Manage/Whitelist.md
+          - name: 免密和修改密码
+            href: Operation-Guide/User-Manage/Change-Password.md
+          - name: 账号管理
+            href: Operation-Guide/User-Manage/UserManage.md
+          
       - name: 监控报警
         items:
           - name: 查看监控信息
@@ -105,8 +120,18 @@
             href: Operation-Guide/Monitoring/Alarm-Rules.md   
           - name: 节点异常监控
             href: Operation-Guide/Monitoring/Node-Notice.md    
-      - name: 数据迁移
-        href: Operation-Guide/Data-Migration.md   
+  - name: 数据迁移
+    items:
+      - name: 数据迁移工具介绍
+        href: Data-Migration/Data-Migration-Overview.md
+      - name: 使用云上工具RDTS进行迁移
+        href: Data-Migration/MigrationDoc-1.md
+      - name: 从自建Redis迁移到云Redis
+        href: Data-Migration/MigrationDoc-2.md
+      - name: 使用开源工具迁移介绍
+        href: Data-Migration/MigrationDoc-3.md
+      - name: 迁移的监控报警配置
+        href: Data-Migration/Migration-Alarm-Rules.md
   - name: 最佳实践
     items:
       - name: JedisPool 连接池优化
@@ -114,7 +139,7 @@
       - name: “京东到家”上云实践
         href: Best-Practices/Doc-1.md
       - name: Redis迁移解决方案
-        href: Best-Practices/Doc-2.md      
+        href: Best-Practices/Doc-2.md 
   - name: 性能测试
     items:
       - name: 测试环境
@@ -126,8 +151,15 @@
       - name: 测试结果
         href: Performance-Test/Test-result.md
   - name: 常见问题
-    href: FAQ/FAQ.md     
+    items:
+      - name: 购买和计费
+        href: FAQ/FAQ1.md 
+      - name: 账号与安全
+        href: FAQ/FAQ2.md 
+      - name: 使用云缓存
+        href: FAQ/FAQ3.md 
   - name: 相关资源      
     items:
        - name: 服务条款
          href: Related-Resources/Product-Service-Agreement.md
+ 

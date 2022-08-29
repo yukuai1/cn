@@ -42,7 +42,7 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |**pageIndex**|Integer|页码|
 |**pageSize**|Integer|页大小|
 |**totalCount**|Integer|配置总数|
-|**list**|[StdBotRules](listbotstdrules#stdbotrules)|已知类型bot规则|
+|**list**|[StdBotRules[]](listbotstdrules#stdbotrules)|已知类型bot规则|
 ### <div id="stdbotrules">StdBotRules</div>
 |名称|类型|描述|
 |---|---|---|
@@ -53,11 +53,10 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 ### <div id="denyactioncfg">DenyActionCfg</div>
 |名称|类型|描述|
 |---|---|---|
-|**atOp**|Integer|黑名单匹配动作类型 1-4 分别表示forbidden@1 redirect@2 verify@captcha3 verify@jscookie4 5-告警(自定义bot增加)，6-302cookie(自定义bot增加)|
-|**atVal**|String|黑名单匹配动作内容 当atOp为3/4时，atVal为空，atOp=1时，atVal为自定义页面,atOp=2时，atVal为跳转url。|
+|**atOp**|Integer|黑名单匹配动作类型 观察 5:notice 人机识别 3:verify@captcha, 4:verify@jscookie, 6:verify@rdtcookie 拦截 1:forbidden@, 2:redirect@ 动态防护 7:cc动态防护(仅cc安全防护支持)|
+|**atVal**|String|黑名单匹配动作内容 当atOp为3-7时，atVal为空，atOp=1时，atVal为自定义页面,atOp=2时，atVal为跳转url。|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|BAD_REQUEST|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

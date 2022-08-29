@@ -22,14 +22,14 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describeinstance#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-|**instance**|[Instance](describeinstance#instance)| |
-### <div id="instance">Instance</div>
+|**instance**|[Instance](#instance)| |
+### <div id="Instance">Instance</div>
 |名称|类型|描述|
 |---|---|---|
 |**instanceId**|String|云物理服务器实例ID|
@@ -55,19 +55,28 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |**networkType**|String|网络类型, 如 basic, vpc|
 |**vpcId**|String|私有网络ID|
 |**vpcName**|String|私有网络名称|
+|**vpcIpv4Cidr**|String|私有网络IPv4 CIDR|
+|**vpcIpv6Cidr**|String|私有网络IPv6 CIDR|
 |**subnetId**|String|子网编号|
 |**subnetName**|String|子网名称|
+|**subnetIpv4Cidr**|String|子网IPv4 CIDR|
+|**subnetIpv6Cidr**|String|子网IPv6 CIDR|
 |**privateIp**|String|内网IP|
 |**lineType**|String|外网链路类型, 如 bgp|
 |**elasticIpId**|String|弹性公网IPID|
 |**publicIp**|String|公网IP|
 |**publicIpv6**|String|公网IPv6|
+|**extensionPublicIpv6**|String|辅网口公网ipv6|
 |**keypairId**|String|密钥对id|
 |**interfaceMode**|String|网络接口模式，单网口:bond、双网口:dual|
 |**extensionVpcId**|String|辅网口私有网络ID|
 |**extensionVpcName**|String|辅网口私有网络名称|
+|**extensionVpcIpv4Cidr**|String|辅网口私有网络IPv4 CIDR|
+|**extensionVpcIpv6Cidr**|String|辅网口私有网络IPv6 CIDR|
 |**extensionSubnetId**|String|辅网口子网ID|
 |**extensionSubnetName**|String|辅网口子网名称|
+|**extensionSubnetIpv4Cidr**|String|辅网口子网IPv4 CIDR|
+|**extensionSubnetIpv6Cidr**|String|辅网口子网IPv6 CIDR|
 |**extensionPrivateIp**|String|辅网口手动分配的内网ip|
 |**extensionEnableInternet**|String|辅网口是否启用外网|
 |**extensionElasticIpId**|String|辅网口弹性公网ip id|
@@ -77,8 +86,10 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |**agentStatus**|String|agent状态|
 |**createTime**|String|创建时间|
 |**updateTime**|String|更新时间|
-|**charge**|[Charge](describeinstance#charge)|计费信息|
-### <div id="charge">Charge</div>
+|**ipv6Address**|String|IPv6地址|
+|**extensionIpv6Address**|String|辅网口IPv6地址|
+|**charge**|[Charge](#charge)|计费信息|
+### <div id="Charge">Charge</div>
 |名称|类型|描述|
 |---|---|---|
 |**chargeMode**|String|支付模式，取值为：prepaid_by_duration，postpaid_by_usage或postpaid_by_duration，prepaid_by_duration表示预付费，postpaid_by_usage表示按用量后付费，postpaid_by_duration表示按配置后付费，默认为postpaid_by_duration|
@@ -88,10 +99,6 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}
 |**chargeRetireTime**|String|预期释放时间，资源的预期释放时间，预付费/后付费资源均有此值，遵循ISO8601标准，使用UTC时间，格式为：YYYY-MM-DDTHH:mm:ssZ|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|Bad request|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

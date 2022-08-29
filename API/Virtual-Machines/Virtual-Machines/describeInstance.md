@@ -224,7 +224,6 @@ GET
                     "diskId": "vol-u8r2****c1", 
                     "diskSizeGB": 40, 
                     "diskType": "ssd.gp1", 
-                    "encrypt": false, 
                     "encrypted": false, 
                     "iops": 2000, 
                     "multiAttachable": false, 

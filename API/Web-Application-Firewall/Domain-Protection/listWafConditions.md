@@ -44,7 +44,7 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |**pageIndex**|Integer|页码|
 |**pageSize**|Integer|页大小|
 |**totalCount**|Integer|配置总数|
-|**list**|[ListWafConditionCfg](listwafconditions#listwafconditioncfg)|网站waf自定义防护条件配置|
+|**list**|[ListWafConditionCfg[]](listwafconditions#listwafconditioncfg)|网站waf自定义防护条件配置|
 ### <div id="listwafconditioncfg">ListWafConditionCfg</div>
 |名称|类型|描述|
 |---|---|---|
@@ -55,7 +55,6 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |**updateTime**|Integer|更新时间，s|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|BAD_REQUEST|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

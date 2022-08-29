@@ -12,3 +12,4 @@
 |PD 节点| Placement Driver ，简称 PD，是整个集群的管理模块，负责存储集群的元信息，对 TiKV 集群进行调度和负载均衡，并分配全局唯一且递增的事务 ID。推荐3使用3个PD节点|
 |TiFlash 节点|TiFlash 是 TiKV 的列式存储，可为分析型的场景提供加速。如果无数据分析需求，可不创建TiFlash节点|
 |Monitor 节点|用于收集和处理TiDB 实例中的各种监控信息以及其他一些临时的job|
+|TiCDC 节点|通过拉取上游 TiKV 的数据变更日志，TiCDC 可以将数据解析为有序的行级变更数据输出到下游的MySQL，TiDB或者Kafka。|

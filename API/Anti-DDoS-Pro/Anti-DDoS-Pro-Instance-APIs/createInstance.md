@@ -66,7 +66,7 @@ https://ipanti.jdcloud-api.com/v1/regions/{regionId}/instances
 |名称|类型|描述|
 |---|---|---|
 |**code**|Integer|0: 新购或升级实例失败, 1: 新购或升级实例成功|
-|**message**|String|新购或升级成功时为 订单 id, 创建实例失败时给出具体原因|
+|**message**|String|新购或升级成功时为计费资源ID, 创建实例失败时给出具体原因|
 
 ## 返回码
 |返回码|描述|

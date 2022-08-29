@@ -24,8 +24,8 @@ https://billing.jdcloud-api.com/v1/regions/{regionId}/billDetail:list
 |**billingType**|Integer|False| |计费类型 1、按配置 2、按用量 3、包年包月 4、按次|
 |**resourceIds**|String[]|False| |资源单id列表,最多支持传入500个|
 |**tags**|Map[]|False| |标签|
-|**pageIndex**|Integer|False| |pageIndex 分页 从1开始,java客户端调用默认值1，其它客户端必传|
-|**pageSize**|Integer|False| |pageSize 每页查询数据条数，最多支持1000条,java客户端调用默认值10，其它客户端必传|
+|**pageIndex**|Integer|True| |pageIndex 分页 从1开始,java客户端调用默认值1，其它客户端必传|
+|**pageSize**|Integer|True| |pageSize 每页查询数据条数，最多支持200条,java客户端调用默认值10，其它客户端必传|
 
 
 ## 返回参数

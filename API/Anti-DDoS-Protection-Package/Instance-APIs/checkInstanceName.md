@@ -20,22 +20,22 @@ https://antipro.jdcloud-api.com/v1/checkInstanceName
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|Result| |
+|**result**|[Result](checkinstancename#result)| |
 |**requestId**|String| |
-|**error**|Error| |
+|**error**|[Error](checkinstancename#error)| |
 
-### Error
+### <div id="error">Error</div>
 |名称|类型|描述|
 |---|---|---|
-|**err**|Err| |
-### Err
+|**err**|[Err](checkinstancename#err)| |
+### <div id="err">Err</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Long|同http code|
 |**details**|Object| |
 |**message**|String| |
 |**status**|String|具体错误|
-### Result
+### <div id="result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**code**|Integer|检测结果 code, 0: 不可用, 1: 可用|

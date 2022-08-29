@@ -43,6 +43,15 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance
 |**ipv6On**|Integer|False| |是否支持IPv6，0或空表示不支持，1表示支持IPv6，注意不是所有区域都支持IPv6，且必须保证VPC支持IPv6|
 |**shardNumber**|Integer|False| |分片数，自定义分片规格集群版实例必须有，且大于1。每种分片规格支持的分片数可调用describeSpecConfig接口获取|
 |**userTags**|[Tag[]](createcacheinstance#tag)|False| |用户普通标签|
+|**resourceGroupId**|String|False| |缓存Redis实例所属的资源组ID|
+|**dbNum**|Integer|False| |db数量，默认为16，参数范围为16~256|
+|**slaveAppendonly**|String|False| |slave节点是否开启持久化|
+|**maxmemoryPolicy**|String|False| |内存淘汰策略|
+|**cacheInstanceType**|String|False| |缓存Redis实例类型，目前支持：master-slave（标准版）、cluster（代理集群版）、native-cluster（cluster集群版）|
+|**replicaNumber**|Integer|False| |副本数，含主副本|
+|**enableSmartProxy**|Integer|False| |实例是否开启SmartProxy，当架构类型为native-cluster时才有效，1表示开启，0表示不开启|
+|**port**|Integer|False| |缓存Redis实例访问端口|
+|**cpuArchType**|String|False| |cpu架构类型:arm64、amd64|
 ### <div id="tag">Tag</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
@@ -51,8 +60,10 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance
 ### <div id="azidspec">AzIdSpec</div>
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
-|**master**|String|True| |缓存Redis主实例所在的可用区ID|
-|**slave**|String|True| |缓存Redis从实例所在的可用区ID|
+|**azSpecifyType**|String|False| |AZ指定方式，SpecifyByReplicaGroup表示按副本组指定，SpecifyByCluster表示按整个集群指定|
+|**azsForCluster**|String[]|False| |为集群指定的AZ范围，按集群指定AZ时生效|
+|**master**|String|True| |缓存Redis主实例所在的可用区ID，按副本组指定AZ时生效|
+|**slave**|String|True| |缓存Redis从实例所在的可用区ID，按副本组指定AZ时生效|
 
 ## 返回参数
 |名称|类型|描述|
@@ -68,9 +79,9 @@ https://redis.jdcloud-api.com/v1/regions/{regionId}/cacheInstance
 |**buyId**|String|购买ID|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|
 
 ## 请求示例
 POST

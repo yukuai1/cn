@@ -34,7 +34,7 @@
 * 当您的专有宿主机欠费后，会向您发送资源欠费通知，请您务必注意查看通知并及时充值，以免造成不必要的损失，详细请参考到期&欠费提醒；
 * 从停止服务时刻起您的专有宿主机和专有宿主机上的数据保留7天，7天后会向您发送资源释通知，资源回收后数据无法找回；
 * 当您补缴欠费金额后，资源将自动恢复使用并重新开始计费。若续费后专有宿主机上云主机未恢复成运行状态，请您手动[启动云主机](https://docs.jdcloud.com/cn/virtual-machines/start-instance)；
-* 如您不想继续使用按配置计费的专有宿主机，请及时[删除专有宿主机](../Operation-Guide/Instance/Delete-Dedicated-Host.md)。
+* 如您不想继续使用按配置计费的专有宿主机，请及时[删除专有宿主机](../Operation-Guide/Delete-DH.md)。
 
 
 ## 功能限制
@@ -43,8 +43,7 @@
 功能|按配置计费|包年包月计费            
 :---|:---|:---
 续费|不支持|支持<br>您在专有宿主机到期前手动续费或对专有宿主机开通自动续费功能。详细信息请参考续费。
-随时释放专有宿主机|支持。您只需将专有宿主机上所有云主机删除后即可操作释放实例，详细请参考删除专有宿主机。若您不再需要该专有宿主机，还请尽快删除以免产生不必要的费用。|不支持。专有宿主机到期后7天内若未进行续费则自动专有宿主机实例。              
-绑定弹性公网IP|支持|支持            
+随时释放专有宿主机|支持。您只需将专有宿主机上所有云主机删除后即可操作释放实例，详细请参考删除专有宿主机。若您不再需要该专有宿主机，还请尽快删除以免产生不必要的费用。|不支持。专有宿主机到期后7天内若未进行续费则自动专有宿主机实例。           
 转换计费模式|支持将按配置计费实例转换为包年包月计费|不支持  
 创建所有专有宿主机规格|支持|支持   
 
@@ -57,11 +56,11 @@
 
 [续费](Renew-Process.md)
 
-[启动云主机](../Operation-Guide/Instance/Start-Instance.md)
+[启动云主机](https://docs.jdcloud.com/cn/virtual-machines/start-instance)
 
-[删除云主机](../Operation-Guide/Instance/Stop-Instance.md)
+[删除云主机](https://docs.jdcloud.com/cn/virtual-machines/start-instance)
 
-[删除专有宿主机](../Operation-Guide/Instance/Delete-Dedicated-Host.md)
+[删除专有宿主机](../Operation-Guide/Delete-DH.md)
 
 
 

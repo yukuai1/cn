@@ -14,14 +14,14 @@
 
 ## 操作说明
 1. 安装环境依赖，见注意事项DB。
-2. 下载备份的解压工具，[点击下载](http://jddb-common-public.oss.cn-north-1.jcloudcs.com/general_mysql_backup_extract_tool.zip)，并解压，工具名 `mysql_backup_extract.py`，使用示例如下
+2. 下载备份的解压工具，[点击下载](https://jddb-common-public.oss.cn-north-1.jcloudcs.com/general_mysql_backup_extract_tool.zip)，并解压，工具名 `mysql_backup_extract.py`，使用示例如下
     
     ```Python
      # 增加解压工具文件可执行权限
-    chmod mysql_backup_extract.py +x
+     chmod mysql_backup_extract.py +x
     
      # 查看帮助手册
-    ./mysql_backup_extract.py -h
+     python mysql_backup_extract.py -h
      
      # 解压云数据库 Percona 实例的备份数据
      python mysql_backup_extract.py  -v 5.7 -f ./backup.xbstream
@@ -37,7 +37,7 @@
 
 4. 解压备份数据，解压后的文件会保存在当前目录的子目录 tmp_snapshot 中，假设当前目录为 $HOME。
 
-    ```python
+    ```Python
      python mysql_backup_extract.py -v 5.7 -f <自定义备份文件名>.xbstream
     
      -v 参数可以不指定，默认：5.7，具体 -v 后面可以跟什么变量可以通过 -h 查看帮助手册得知。
@@ -51,22 +51,23 @@
     |MySQL 8.0|mysql-8.cnf|
     |MariaDB|mariadb-10.2.cnf|
     |Percona|percona-7.cnf|  
-  
-    ```python
-    xtrabackup --defaults-file=$HOME/percona-7.cnf --parallel=1 --prepare --target-dir=$HOME/tmp_snapshot
+
+
+    ```Python
+     xtrabackup --defaults-file=$HOME/percona-7.cnf --parallel=1 --prepare --target-dir=$HOME/tmp_snapshot
     ```   
     
     当看到 ***innobackupex completed OK!*** 时， 表明执行成功，你就可以继续下一步操作了。
 
 6. 修改文件属主，并确定文件所属为 MySQL 用户
 
-   ```python
+   ```Python
    chown -R mysql:mysql $HOME/tmp_snapshot
    ```
 
 7. 启动 Percona 进程。
 
-   ```python
+   ```Python
    mysqld_safe --defaults-file=$HOME/percona-7.cnf --user=mysql --datadir=$HOME/tmp_snapshot &
    ```
 

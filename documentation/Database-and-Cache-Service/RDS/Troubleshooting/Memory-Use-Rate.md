@@ -13,6 +13,14 @@
 
 innodb_buffer_pool 缓存的是云数据库 MySQL/Percona 实例的数据和索引信息。
 
+下表为不同规格实例的innodb_buffer_pool最大内存占用率
+| 内存规格 | 内存占用率 |
+| ------- | -------|
+| ≤2GB | 50%|
+| ≤8GB | 60%|
+| ≤16GB | 65%|
+| ＞16GB | 75%|
+
 ## Session 内存
 客户端和云数据库 MySQL/Percona 实例建立连接的时候，云数据库 MySQL/Percona 实例针对每一个连接会分配一个 session 内存。
 

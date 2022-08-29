@@ -39,11 +39,12 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |**domain**|String|域名|
 |**disableWaf**|Integer|waf状态 1表示关闭waf|
 |**aclConf**|[AclConf](getdomainanticonfig#aclconf)|网站waf防护配置|
-|**antispiderConf**|[EnableConf](getdomainanticonfig#enableconf)|网站防爬虫防护配置|
+|**antispiderConf**|[SpiderConf](getdomainanticonfig#spiderconf)|网站防爬虫防护配置|
 |**ccConf**|[CcConf](getdomainanticonfig#ccconf)|网站cc防护配置|
 |**denyConf**|[DenyConf](getdomainanticonfig#denyconf)|网站黑名单防护配置|
 |**intSemConf**|[IntSemConf](getdomainanticonfig#intsemconf)|网站智能语义引擎防护配置|
 |**ipbanConf**|[IpbanConf](getdomainanticonfig#ipbanconf)|网站恶意ip防护配置|
+|**ipbanUsrConf**|[IpbanUsrConf](getdomainanticonfig#ipbanusrconf)|网站恶意ip自定义防护配置|
 |**ratelimitConf**|[RatelimitConf](getdomainanticonfig#ratelimitconf)|网站限速规则防护配置|
 |**threatinfoConf**|[EnableConf](getdomainanticonfig#enableconf)|网站威胁情报防护配置|
 |**userDefPageConf**|[UserDefPageConf](getdomainanticonfig#userdefpageconf)|网站自定义页面配置|
@@ -56,7 +57,19 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |**statusConf**|[StatusConf](getdomainanticonfig#statusconf)|状态码修改配置|
 |**uriRewriteConf**|[UriRewriteConf](getdomainanticonfig#urirewriteconf)|网站uri重写规则配置|
 |**proxycacheConf**|[EnableConf](getdomainanticonfig#enableconf)|proxy缓存配置|
-|**riskConf**|[EnableConf](getdomainanticonfig#enableconf)|risk配置|
+|**riskConf**|[RiskConf](getdomainanticonfig#riskconf)|risk配置|
+|**botConf**|[BotConf](getdomainanticonfig#botconf)|bot配置|
+### <div id="botconf">BotConf</div>
+|名称|类型|描述|
+|---|---|---|
+|**enable**|Integer|已知类型bot。1-使能 0-禁止|
+|**enableUserDefine**|Integer|自定义类型bot。1-使能 0-禁止|
+|**enableThreatIp**|Integer|bot IDC开关。1-使能 0-禁止|
+### <div id="riskconf">RiskConf</div>
+|名称|类型|描述|
+|---|---|---|
+|**enable**|Integer|数据风控。1-使能 0-禁止|
+|**enableAccount**|Integer|账户安全。1-使能 0-禁止|
 ### <div id="enableconf">EnableConf</div>
 |名称|类型|描述|
 |---|---|---|
@@ -103,7 +116,8 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |---|---|---|
 |**enable**|Integer|是否使能 0表示否|
 |**wafMode**|Integer|0表示防护，1表示预警|
-|**wafLevel**|Integer|0表示宽松，1表示正常，2表示严格|
+|**wafLevel**|Integer|0表示宽松，1表示正常，2表示严格, 3表示自定义|
+|**usrPolicy**|Long|自定义规则集Id|
 |**redirection**|String|自定义页面名称|
 ### <div id="userdefpageconf">UserDefPageConf</div>
 |名称|类型|描述|
@@ -114,13 +128,25 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |---|---|---|
 |**enable**|Integer|是否使能 0表示否|
 |**rateLimitNum**|Integer|条数|
+### <div id="ipbanusrconf">IpbanUsrConf</div>
+|名称|类型|描述|
+|---|---|---|
+|**enable**|Integer|是否使能 0表示否|
+|**ipbanTime**|Integer|封禁时间，秒|
+|**detectTime**|Integer|检测时间，秒|
+|**threshold**|Integer|封禁阈值|
+|**action**|[DenyActionCfg](getdomainanticonfig#denyactioncfg)|动作配置|
+### <div id="denyactioncfg">DenyActionCfg</div>
+|名称|类型|描述|
+|---|---|---|
+|**atOp**|Integer|黑名单匹配动作类型 观察 5:notice 人机识别 3:verify@captcha, 4:verify@jscookie, 6:verify@rdtcookie 拦截 1:forbidden@, 2:redirect@ 动态防护 7:cc动态防护(仅cc安全防护支持)|
+|**atVal**|String|黑名单匹配动作内容 当atOp为3-7时，atVal为空，atOp=1时，atVal为自定义页面,atOp=2时，atVal为跳转url。|
 ### <div id="ipbanconf">IpbanConf</div>
 |名称|类型|描述|
 |---|---|---|
 |**enable**|Integer|是否使能 0表示否|
-|**banTime**|Integer|封禁时间，秒|
-|**detectTime**|Integer|检测时间，秒|
-|**threshold**|Integer|封禁阈值|
+|**ipbanMode**|Integer|防护模式|
+|**action**|[DenyActionCfg](getdomainanticonfig#denyactioncfg)|动作配置|
 ### <div id="intsemconf">IntSemConf</div>
 |名称|类型|描述|
 |---|---|---|
@@ -135,10 +161,16 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |名称|类型|描述|
 |---|---|---|
 |**enable**|Integer|是否使能 0表示否|
-|**ccMode**|Integer|0表示正常，1表示攻击紧急|
-|**qps**|Integer|qps配置|
+|**ccMode**|Integer|防护模式|
 |**enableUserDefine**|Integer|是否支持自定义cc，0表示否|
 |**rulesCount**|Integer|cc自定义规则个数|
+|**action**|[DenyActionCfg](getdomainanticonfig#denyactioncfg)|动作配置，默认为告警，支持1，2，3和5四种类型动作|
+### <div id="spiderconf">SpiderConf</div>
+|名称|类型|描述|
+|---|---|---|
+|**enable**|Integer|是否使能 0表示否|
+|**spiderMode**|Integer|防护模式|
+|**action**|[DenyActionCfg](getdomainanticonfig#denyactioncfg)|动作配置，默认为告警，支持1，2，5四种类型动作|
 ### <div id="aclconf">AclConf</div>
 |名称|类型|描述|
 |---|---|---|
@@ -146,7 +178,6 @@ https://waf.jdcloud-api.com/v1/regions/{regionId}/wafInstanceIds/{wafInstanceId}
 |**aclRuleNum**|Integer|acl规则个数|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|BAD_REQUEST|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

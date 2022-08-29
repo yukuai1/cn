@@ -19,24 +19,22 @@ https://edcps.jdcloud-api.com/v1/regions/{regionId}/instances/{instanceId}/avail
 |名称|类型|是否必需|默认值|描述|
 |---|---|---|---|---|
 |**subnetId**|String|True| |主网口或者辅网口的子网id|
+|**channel**|String|True| |查询可用目标内网IP地址的渠道；eip：绑定EIP时调此接口；vmsg：添加虚拟服务组时调此接口|
+|**ipType**|String|True| |ipv4 or ipv6|
 
 
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-|**result**|[Result](describeavailableprivateip#result)| |
+|**result**|[Result](#result)| |
 |**requestId**|String| |
 
-### <div id="result">Result</div>
+### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 |**availablePrivateIps**|String[]|可用私有IP集合|
 
 ## 返回码
-|返回码|描述|
-|---|---|
-|**200**|OK|
-|**400**|Bad request|
-|**404**|Not found|
-|**500**|Internal server error|
-|**503**|Service unavailable|
+|HTTP状态码|错误码|描述|
+|---|---|---|
+|**200**||OK|

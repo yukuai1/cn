@@ -1,0 +1,39 @@
+name: 数据库自治服务 SmartDBA
+href:
+items:
+  - name: 产品简介
+    items:
+      - name: 产品概述
+        href: Introduction/Product-Overview.md
+      - name: 产品优势
+        href: Introduction/Benefits.md
+      - name: 产品功能
+        href: Introduction/Features.md
+      - name: 应用场景
+        href: Introduction/Application-Scenarios.md
+  - name: 操作指南
+    items:
+      - name: 实例快速接入
+        href: Operation-Guide/instance-access.md
+      - name: 实例会话
+        href: Operation-Guide/conversation.md 
+      - name: 性能趋势
+        href: Operation-Guide/performance-trend.md
+      - name: 空间分析
+        href: Operation-Guide/space-analysis.md
+      - name: 实时性能
+        href: Operation-Guide/real-time-performance.md
+      - name: 一键诊断
+        href: Operation-Guide/click-diagnosis.md
+      - name: 锁分析
+        href: Operation-Guide/lock-analysis.md
+      - name: 巡检评分
+        href: Operation-Guide/patrol-scoring.md
+      - name: 慢查询
+        href: Operation-Guide/slow-query.md
+      - name: 表诊断
+        href: Operation-Guide/table-diagnosis.md
+      - name: 监控大盘
+        href: Operation-Guide/monitor-market.md
+      - name: 查看告警
+        href: Operation-Guide/alarm-general-view.md

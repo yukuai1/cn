@@ -34,11 +34,11 @@ items:
   - name: 入门指南
     items:
       - name: 创建实例
-        href: Getting-Started/Create-Instance.md
+        href: Getting-Started/Create-Instance1.md
       - name: 连接实例
-        href: Getting-Started/Connect-Instance.md
+        href: Getting-Started/Connect-Instance1.md
       - name: 监控实例
-        href: Getting-Started/TiDB-Monitor.md
+        href: Getting-Started/TiDB-Monitor1.md
 
   - name: 操作指南
     items:
@@ -56,9 +56,11 @@ items:
             href: Operation-Guide/Instance/Modify-Instance-Spec.md
           - name: 节点重启  
             href: Operation-Guide/Instance/Reboot-Node.md
-          - name: 小版本升级  
+          - name: 版本升级  
             href: Operation-Guide/Instance/Upgrade-Engine-Version.md            
-
+          - name: 节点信息  
+            href: Operation-Guide/Instance/Node-Info.md  
+            
       - name: 账户管理
         items:
           - name: 创建账号
@@ -76,6 +78,19 @@ items:
             href: Operation-Guide/Backup/Delete-Backup.md
           - name: 设置备份策略
             href: Operation-Guide/Backup/Modify-Backup-Strategy.md
+            
+      - name: 数据复制
+        items:
+          - name: 数据复制介绍
+            href: Operation-Guide/Replication/Replication-Overview.md
+          - name: 创建复制任务
+            href: Operation-Guide/Replication/Create-Replication.md
+          - name: 修改复制任务
+            href: Operation-Guide/Replication/Modify-Replication.md
+          - name: 暂停继续复制任务
+            href: Operation-Guide/Replication/Suspend-Resume-Replication.md
+          - name: 删除复制任务
+            href: Operation-Guide/Replication/Delete-Replication.md           
             
       - name: 安全管理
         href: Operation-Guide/Security/Set-Whitelist.md            

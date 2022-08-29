@@ -47,6 +47,12 @@
             href: Operation-Guide/Topic-Management/Subscribe.md
           - name: 删除和管理topic
             href: Operation-Guide/Topic-Management/Delete-And-Manage-Topic.md
+      - name: namespace管理
+        items:
+          - name: 创建namespace
+            href: Operation-Guide/Namespace/Create-Namespace.md
+          - name: 删除和管理namespace
+            href: Operation-Guide/Namespace/Delete-Namespace.md
       - name: 消息管理
         items:
           - name: 生产者

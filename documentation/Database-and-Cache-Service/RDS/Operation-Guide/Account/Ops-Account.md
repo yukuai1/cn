@@ -8,23 +8,22 @@
 * 运维账号适用于MySQL、Percona、mariaDB
 
 ## 开启运维账号
-1. 登录 [云数据库 RDS 控制台](https://rds-console.jdcloud.com/database)。
+1. 登录 [云数据库 RDS 控制台](https://rds-console.jdcloud.com/rds/database)。
 2. 选择需要开启运维账号的目标实例，进入实例详情页。
 3. 选择 **账号管理** 标签，打开账号管理页面，点击 **开启运维账号** 按钮，在弹框中设置运维账号到期时间:
     * 账号有效期默认为24小时，可根据实际需求调整；
 
-    ![开启运维账号](../../../../../image/RDS/MySQL-Create-OPS-Account.png)
+    ![开启运维账号](../../../image/RDS/MySQL-Create-OPS-Account.png)
 
 4. 单击 **确定** 按钮，开启运维账号，返回到账号管理页面。
+>说明：运维账号默认授予了PROCESS、SELECT权限，如需调整请参考下方修改运维账号操作。
 
-    ![开启运维账号](../../../../../image/RDS/Create-OPS-Account.png)
-
-## 修改运维账号有效期
+## 修改运维账号
 1. 登录 [云数据库 RDS 控制台](https://rds-console.jdcloud.com/database)。
 2. 选择需要修改运维账号有效期的目标实例，点击目标实例，进入实例详情页。
-3. 选择 **账号管理** 标签，打开账号管理页面，点击 **修改** 按钮，在弹框中重新设置运维账号到期时间。
+3. 选择 **账号管理** 标签，打开账号管理页面，点击 **修改** 按钮，在弹框中重新设置运维账号到期时间以及运维账号的权限。
 
-    ![修改运维账号](../../../../../image/RDS/Reset-OPS-Account.png)
+    ![修改运维账号](../../../image/RDS/Reset-OPS-Account.png)
 
 4. 单击 **确定** 按钮，运维账号有效期被重新设置，返回到账号管理页面。
 
@@ -32,9 +31,7 @@
 1. 登录 [云数据库 RDS 控制台](https://rds-console.jdcloud.com/database)。
 2. 选择需要关闭运维账号的目标实例，进入实例详情页。
 3. 选择 **账号管理** 标签，打开账号管理页面，点击 **关闭运维账号** 按钮，进入开二次确认弹窗。
-
-    ![关闭运维账号](../../../../../image/RDS/Delete-OPS-Account.png)
-
 4. 单击 **确定** 按钮，关闭运维账号，返回到账号管理页面。
+
 
 
