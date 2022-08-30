@@ -385,6 +385,8 @@ items:
                  href: JCloud-Openapi-For-CDN/stopDomain.md
                - name: deleteDomain
                  href: JCloud-Openapi-For-CDN/deleteDomain.md
+               - name: batchIpBlackList
+                 href: JCloud-Openapi-For-CDN/batchIpBlackList.md            
           - name: 统计数据查询
             items:
                - name: queryLiveStatisticsAreaDataGroupBy
