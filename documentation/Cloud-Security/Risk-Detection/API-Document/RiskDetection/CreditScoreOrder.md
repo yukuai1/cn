@@ -51,14 +51,14 @@ https://bri.jdcloud-api.com/v1/creditScore:check
 |名称|类型|描述|
 |---|---|---|
 
-|**result**|[Result](#result)|API请求成功或者部分成功时返回数据|
+|**result**|Result|API请求成功或者部分成功时返回数据|
 
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
 
-|**data**|[CreditResult[]](#creditresult)|结果数组|
+|**data**|CreditResult|结果数组|
 
 ### <div id="CreditResult">CreditResult</div>
 |名称|类型|描述|
@@ -70,7 +70,7 @@ https://bri.jdcloud-api.com/v1/creditScore:check
 |**content**|String|对应请求的内容|
 |**resourceType**|String|数据类型，ip-IP，phone-手机，addr-地址，card-身份，pin-账户，eid-设备，signup-注册，login-登录，marketing-营销，order-订单|
 
-|**scoreDetail**|[CreditScoreDetail](#creditscoredetail)|评分数据|
+|**scoreDetail**|CreditScoreDetail|评分数据|
 
 ### <div id="CreditScoreDetail">CreditScoreDetail</div>
 |名称|类型|描述|
