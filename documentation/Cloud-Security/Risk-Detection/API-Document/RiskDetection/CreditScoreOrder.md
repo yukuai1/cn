@@ -50,14 +50,12 @@ https://bri.jdcloud-api.com/v1/creditScore:check
 ## 返回参数
 |名称|类型|描述|
 |---|---|---|
-
 |**result**|Result|API请求成功或者部分成功时返回数据|
 
 
 ### <div id="Result">Result</div>
 |名称|类型|描述|
 |---|---|---|
-
 |**data**|CreditResult|结果数组|
 
 ### <div id="CreditResult">CreditResult</div>
@@ -69,7 +67,6 @@ https://bri.jdcloud-api.com/v1/creditScore:check
 |**inBWList**|String|是否命中黑白名单，black-在黑名单中 white-在白名单中 none-不在任何名单中|
 |**content**|String|对应请求的内容|
 |**resourceType**|String|数据类型，ip-IP，phone-手机，addr-地址，card-身份，pin-账户，eid-设备，signup-注册，login-登录，marketing-营销，order-订单|
-
 |**scoreDetail**|CreditScoreDetail|评分数据|
 
 ### <div id="CreditScoreDetail">CreditScoreDetail</div>
