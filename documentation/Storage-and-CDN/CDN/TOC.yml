@@ -376,7 +376,9 @@ items:
                - name: deleteForbiddenInfo
                  href: JCloud-Openapi-For-CDN/deleteForbiddenInfo.md
                - name: createForbiddenInfo
-                 href: JCloud-Openapi-For-CDN/createForbiddenInfo.md                 
+                 href: JCloud-Openapi-For-CDN/createForbiddenInfo.md
+               - name: batchIpBlackList
+                 href: JCloud-Openapi-For-CDN/batchIpBlackList.md
           - name: 停止删除域名
             items:
                - name: startDomain
@@ -384,9 +386,7 @@ items:
                - name: stopDomain
                  href: JCloud-Openapi-For-CDN/stopDomain.md
                - name: deleteDomain
-                 href: JCloud-Openapi-For-CDN/deleteDomain.md
-               - name: batchIpBlackList
-                 href: JCloud-Openapi-For-CDN/batchIpBlackList.md            
+                 href: JCloud-Openapi-For-CDN/deleteDomain.md            
           - name: 统计数据查询
             items:
                - name: queryLiveStatisticsAreaDataGroupBy
