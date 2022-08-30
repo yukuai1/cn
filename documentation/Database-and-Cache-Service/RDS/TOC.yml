@@ -420,10 +420,24 @@
         items:
         - name: PostgreSQL支持扩展
           href: Operation-Guide/PostgreSQL-Extension/PostgreSQL-Extension.md         
-        - name: 使用s3_fdw插件将数据流转到OSS
+        - name: 读写外部数据文本文件（s3_fdw）
           href: Operation-Guide/PostgreSQL-Extension/S3_fdw.md
-        
-            
+        - name: 时序数据库（TimescaleDB）
+          href: Operation-Guide/PostgreSQL-Extension/timescaleDB.md
+        - name: 跨库操作（dblink、postgres_fdw）
+          href: Operation-Guide/PostgreSQL-Extension/dblink.md
+        - name: 字符串相似性判断（fuzzystrmatch）
+          href: Operation-Guide/PostgreSQL-Extension/fuzzystrmatch.md
+        - name: 定制执行计划（pg_hint_plan）
+          href: Operation-Guide/PostgreSQL-Extension/pg_hint_plan.md
+        - name: 清理表空间（pg_repack）
+          href: Operation-Guide/PostgreSQL-Extension/pg_repack.md
+        - name: 审计日志（pgAudit）
+          href: Operation-Guide/PostgreSQL-Extension/pgAudit.md
+        - name: UUID生成器（UUID-OSSP）
+          href: Operation-Guide/PostgreSQL-Extension/uuid.md
+
+
   - name: 最佳实践
     items:
     - name: 数据迁移
