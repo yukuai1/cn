@@ -22,7 +22,7 @@
 
 1. 登录[MongoDB控制台](https://mongodb-console.jdcloud.com/mongodb)；
 
-2. 在实例列表页筛选目标实例，在操作列点击更多，下拉菜单中点击编辑标签；
+2. 在实例列表页筛选目标实例，在操作列点击**更多**，下拉菜单中点击**编辑标签**；
 
    ![img](../../../../../image/mongodb/configureLable.png)
 
