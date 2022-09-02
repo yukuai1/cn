@@ -24,32 +24,14 @@ items:
       href: price/renew.md  
 
 
-- name: 快速入门
-  items:
-    - name: 用户管理
-      items:
-        - name: 人员部门管理
-          href: Operation-guide/User-Management/managerment.md      
-        - name: 别名
-          href: Operation-guide/User-Management/alias.md 
-        - name: 导入邮件账户
-          href: Operation-guide/User-Management/Import-User.md
-        - name: 操作日志
-          href: Operation-guide/User-Management/Operation_log.md
-    - name: 系统设置
-      items:
-        - name: 邮箱搬家
-          href: Operation-guide/System-settings/Mail_move.md     
-        - name: 转发
-
 
 - name: 操作指南
   items:
-    - name: 计费说明
-      href: price/price.md    
-    - name: 购买流程
-      href: price/buy.md  
-    - name: 续费流程
+    - name: 登录主机
+      href: opereation/price.md    
+    - name: 重装系统
+      href: opereation/buy.md  
+    - name: 重置
       href: price/renew.md  
 
 
