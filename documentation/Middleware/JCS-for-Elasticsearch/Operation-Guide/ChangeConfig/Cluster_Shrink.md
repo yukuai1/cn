@@ -71,5 +71,9 @@
 | 协调节点 | 支持降配已购买的协调节点的规格。 详细信息，请参考 [协调节点](../../Operation-Guide/Instance/Nodes/Coordinating-node.md)|
 | 冷数据节点 | 支持降配**节点规格**。详细信息，请参考 [冷数据节点](../../Operation-Guide/Instance/Nodes/Warm-Node.md)。|
 
+</br>
+
+![Cluster_nodes_shrink_1](../../../../../image/Elasticsearch/ChangeCfg/Cluster_nodes_shrink_1.png)
+
 4. 确认变更配置后，点击 **变更** 按钮。
 5. 在订单确认页，确认订单新和应付金额后，选中 **已阅读并同意《云搜索Elasticsearch服务条款》**，点击 **立即支付**。支付完成后，集群会重启，重启成功后即可完成集群降配。
