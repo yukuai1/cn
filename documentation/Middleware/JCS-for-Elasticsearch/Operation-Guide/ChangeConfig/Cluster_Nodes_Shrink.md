@@ -57,7 +57,7 @@
 
 </br>
 
-![Cluster_expansion_1](../../../../../image/Elasticsearch/ChangeCfg/Cluster_expansion_1.png)
+![Cluster_nodes_shrink_1](../../../../../image/Elasticsearch/ChangeCfg/Cluster_nodes_shrink_1.png)
 
 4. 确认变更配置后，点击 **变更** 按钮。
 5. 在订单确认页，确认订单新和应付金额后，选中 **已阅读并同意《云搜索Elasticsearch服务条款》**，点击 **立即支付**。支付完成后，集群会重启，重启成功后即可完成集群降配。
