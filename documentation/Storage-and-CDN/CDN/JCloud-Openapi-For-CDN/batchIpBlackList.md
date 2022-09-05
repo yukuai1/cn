@@ -32,3 +32,4 @@ https://cdn.jdcloud-api.com/v1/batchIpBlackList
 |---|---|
 |**200**|OK|
 |**404**|NOT_FOUND|
+
