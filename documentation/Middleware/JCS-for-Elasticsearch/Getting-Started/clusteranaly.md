@@ -1,19 +1,29 @@
 ## 分析集群
 
+### 前提条件
+1. 已创建云搜索 Elasticsearch 集群，可参考 [创建集群](../Getting-Started/Create-ES.md)。</br>
+
+### 登录 Kibana
+1. 登录 [云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，进入集群管理页面。</br>
+2. 点击集群列表中目标集群右侧的【**操作-kibana**】 按钮进入 kibana 可视化界面，通过导航栏的【Dev Tools】进入开发者工具。</br>
+
 ### 集群状态查看
 ```
 GET _cluster/health
 ```
-响应如下时表示访问成功：
+
+</br>
+
+获取集群状态成功，返回结果如下：
 ```
 {
-  "cluster_name" : "test",
+  "cluster_name" : "ES_Demo_Instance_Wushan",
   "status" : "green",
   "timed_out" : false,
-  "number_of_nodes" : 5,
-  "number_of_data_nodes" : 3,
-  "active_primary_shards" : 11,
-  "active_shards" : 22,
+  "number_of_nodes" : 6,
+  "number_of_data_nodes" : 6,
+  "active_primary_shards" : 64,
+  "active_shards" : 128,
   "relocating_shards" : 0,
   "initializing_shards" : 0,
   "unassigned_shards" : 0,
@@ -27,56 +37,66 @@ GET _cluster/health
 ```
 ### 节点状态查看
 ```
-GET _cat/nodes
+GET _cat/nodes?v&s=name
 ```
+
+</br>
+
 响应如下时表示访问成功：
 ```
-172.16.0.48 5 79 0 0.20 0.32 0.32 mdi * node-1
-172.16.0.46 7 61 0 0.26 0.24 0.22 mdi - node-0
-172.16.0.47 4 65 0 1.65 1.38 1.24 i   - coordinating-1
-172.16.0.50 8 89 3 3.43 3.31 3.35 mdi - node-2
-172.16.0.49 3 17 1 1.20 1.27 1.19 i   - coordinating-0
+ip           heap.percent ram.percent cpu load_1m load_5m load_15m node.role master name
+10.123.32.22           23          61   2    1.99    1.49     1.64 dim       *      node-0
+10.123.32.23           30          66   2    3.53    3.62     3.74 dim       -      node-1
+10.123.32.24           35          83   6    3.87    3.54     3.24 dim       -      node-2
 ```
 
 ### 索引状态查看
 
 ```
-GET _cat/indices?v
+GET _cat/indices?v&s=index
 ```
+
+</br>
+
 响应如下时表示访问成功：
 ```
-health status index      uuid                   pri rep docs.count docs.deleted store.size pri.store.size
-green  open   .kibana_1  ZcZjajoZTiWPCQajEHqWbQ   1   1          1            0      7.4kb          3.7kb
-green  open   blog_index vicsOsZITQe-euiuoQGH6A   5   1          6            0     43.4kb         21.7kb
-green  open   index1     Spc2nVIaS32ImKyieUYb5w   5   1          2            0     13.8kb          6.9kb
+health status index                        uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+green  open   .kibana_1                    8394P6u9QomPS6LuuAhFww   1   1        117            1    221.6kb        110.8kb
+green  open   hot_warm_test_index          ncx-1sPFROaGAcYzfJuosA   3   1          0            0      1.2kb           624b
+green  open   kibana_sample_data_ecommerce sSmZu2rCQQGTvyexmOlxrA   1   1       4675            0      9.6mb          4.8mb
+green  open   logs-20220824                fUT4ZByjRX-g7vmjZj2Ymw   4   1          0            0      1.6kb           832b
+green  open   logs-20220825                qTSdlGKYQ5eRS7HueKmCGw   4   1          0            0      1.6kb           832b
+green  open   logs-20220826                YJWGd5jiRdOsNsYR0YQHQA   4   1          0            0      1.6kb           832b
+green  open   product_info                 zcqtEHY6TH2ba3XNNasjBQ   5   1          5            0     33.5kb         16.7kb
+green  open   sample_index                 Neu6FIS3Rf-5gZGp6x_xiA   1   1          2            0     15.1kb          7.5kb
+green  open   template_05_20220717         eby-U1MUQzy3BPGzG0L1oA   1   1          0            0       416b           208b
+green  open   template_05_20220819         d-L1fBOgTRiaVwzZ1ea11w   1   1          0            0       416b           208b
+green  open   template_05_20220820         x-nkb1s7RnaIOCZ-aPKz4A   1   1          0            0       416b           208b
 ```
+
 ### 分片状态查看
 ```
 GET _cat/shards
 ```
+
+</br>
+
 响应如下时表示访问成功：
 ```
-.kibana_1  0 p STARTED 1 3.7kb 172.16.0.50 node-2
-.kibana_1  0 r STARTED 1 3.7kb 172.16.0.48 node-1
-index1     1 p STARTED 0  261b 172.16.0.50 node-2
-index1     1 r STARTED 0  261b 172.16.0.46 node-0
-index1     4 p STARTED 0  261b 172.16.0.50 node-2
-index1     4 r STARTED 0  261b 172.16.0.48 node-1
-index1     3 r STARTED 1 3.5kb 172.16.0.50 node-2
-index1     3 p STARTED 1 3.5kb 172.16.0.46 node-0
-index1     2 p STARTED 0  261b 172.16.0.48 node-1
-index1     2 r STARTED 0  261b 172.16.0.46 node-0
-index1     0 r STARTED 1 2.6kb 172.16.0.48 node-1
-index1     0 p STARTED 1 2.6kb 172.16.0.46 node-0
-blog_index 1 r STARTED 2 8.3kb 172.16.0.50 node-2
-blog_index 1 p STARTED 2 8.3kb 172.16.0.48 node-1
-blog_index 4 p STARTED 1 4.3kb 172.16.0.48 node-1
-blog_index 4 r STARTED 1 4.3kb 172.16.0.46 node-0
-blog_index 3 p STARTED 0  261b 172.16.0.50 node-2
-blog_index 3 r STARTED 0  261b 172.16.0.46 node-0
-blog_index 2 r STARTED 0  261b 172.16.0.50 node-2
-blog_index 2 p STARTED 0  261b 172.16.0.46 node-0
-blog_index 0 p STARTED 3 8.5kb 172.16.0.48 node-1
-blog_index 0 r STARTED 3 8.5kb 172.16.0.46 node-0
-
+index                        shard prirep state   docs  store ip           node
+.kibana_1                    0     p      STARTED  117 88.2kb 10.123.32.23 node-1
+.kibana_1                    0     r      STARTED  117 88.2kb 10.123.32.24 node-2
+kibana_sample_data_ecommerce 0     p      STARTED 4675  4.8mb 10.123.32.23 node-1
+kibana_sample_data_ecommerce 0     r      STARTED 4675  4.8mb 10.123.32.24 node-2
+logs-20220711                1     r      STARTED    0   208b 10.123.32.24 node-2
+logs-20220711                1     p      STARTED    0   208b 10.123.32.22 node-0
+logs-20220711                3     r      STARTED    0   208b 10.123.32.23 node-1
+logs-20220711                3     p      STARTED    0   208b 10.123.32.24 node-2
+logs-20220711                2     p      STARTED    0   208b 10.123.32.24 node-2
+logs-20220711                2     r      STARTED    0   208b 10.123.32.22 node-0
+logs-20220711                0     r      STARTED    0   208b 10.123.32.23 node-1
+template_05_20220717         0     r      STARTED    0   208b 10.123.32.23 node-1
+template_05_20220717         0     p      STARTED    0   208b 10.123.32.24 node-2
+template_05_20220819         0     r      STARTED    0   208b 10.123.32.24 node-2
+template_05_20220819         0     p      STARTED    0   208b 10.123.32.22 node-0
 ```

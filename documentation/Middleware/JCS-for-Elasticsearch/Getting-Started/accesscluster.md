@@ -2,12 +2,12 @@
 云搜索Elasticsearch支持通过Kibana、京东云云主机或客户端方式访问集群。
 
 ### 通过kibana访问
-1. 登录[云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，[创建云搜索Elasticsearch集群](../Getting-Started/Create-ES.md)。</br>
-2. 点击【操作-kibana】进入kibana可视化界面，通过导航栏的【Dev Tools】进入开发者工具，[访问云搜索Elasticsearch集群](../Getting-Started/dataview.md)。</br>
+1. 登录 [云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，进入集群管理页面。</br>
+2. 点击集群列表中目标集群右侧的【**操作-kibana**】 按钮进入 kibana 可视化界面，通过导航栏的【Dev Tools】进入开发者工具。</br>
 
 ### 通过京东云云主机访问
-1. 登录[云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，[创建云搜索Elasticsearch集群](../Getting-Started/Create-ES.md)，点击集群名称进入详情页面获取**内网访问域名**。</br>
-2. 登录[云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，创建和云搜索Elasticsearch集群具有相同私有网络和子网的云主机，并[获取公网IP](https://docs.jdcloud.com/cn/virtual-machines/associate-elastic-ip)。</br>
+1. 登录 [云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，点击集群名称进入详情页面获取**内网访问域名**。</br>
+2. 登录 [云主机控制台](https://cns-console.jdcloud.com/host/compute/list)，创建和云搜索Elasticsearch集群具有相同私有网络和子网的云主机，并[获取公网IP](https://docs.jdcloud.com/cn/virtual-machines/associate-elastic-ip)。</br>
 3. 在本地通过SSH登录云主机，用curl命令访问云搜索Elasticsearch实例的9200端口。指令格式说明如下：</br>
 ```
 ssh 用户名@公网IP
@@ -17,8 +17,7 @@ curl -XGET 内网域名/_cat
 ```
 响应如下时表示访问成功：
 ```
-{
-  =^.^=
+=^.^=
 /_cat/allocation
 /_cat/shards
 /_cat/shards/{index}
@@ -33,8 +32,19 @@ curl -XGET 内网域名/_cat
 /_cat/count/{index}
 /_cat/recovery
 /_cat/recovery/{index}
-}
-
+/_cat/health
+/_cat/pending_tasks
+/_cat/aliases
+/_cat/aliases/{alias}
+/_cat/thread_pool
+/_cat/thread_pool/{thread_pools}
+/_cat/plugins
+/_cat/fielddata
+/_cat/fielddata/{fields}
+/_cat/nodeattrs
+/_cat/repositories
+/_cat/snapshots/{repository}
+/_cat/templates
 ```
 
 
@@ -51,7 +61,7 @@ ES 官方推荐使用 Java REST 客户端连接集群并进行数据操作。Jav
 
 
 如下为7.5.2版本Java High Level REST Client方式访问示例，其他版本的使用方法请参考 [Java High Level REST Client](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.5/java-rest-high.html)。 </br>
-1. 登录[云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，[创建云搜索Elasticsearch集群](../Getting-Started/Create-ES.md)，点击集群名称进入详情页面获取**内网访问域名**。</br>
+1. 登录[云搜索Elasticsearch控制台](https://es-console.jdcloud.com/clusters)，点击集群名称进入详情页面获取**内网访问域名**。</br>
 2. 创建Java Maven工程，并将如下的pom依赖添加到Java工程的pom.xml文件中。</br>
 
 ```
