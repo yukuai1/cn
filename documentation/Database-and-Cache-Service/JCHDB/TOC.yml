@@ -131,3 +131,10 @@ items:
         href: DevelopmentGuide/DatabaseEngine.md
       - name: SQL语法
         href: DevelopmentGuide/SQLGrammar.md
+
+  - name: 性能测试指南
+    items:
+      - name: Performance
+        href: Performance/performanceTest.md   
+
+
