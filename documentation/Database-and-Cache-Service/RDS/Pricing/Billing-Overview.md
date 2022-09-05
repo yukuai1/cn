@@ -4,11 +4,11 @@
 
 | 计费项                 | 计费方式及价格                                               |
 | ---------------------- | ------------------------------------------------------------ |
-| 实例（主备、灾备实例） | <ul><li>计费方式：提供包年包月或按配置计费，具体信息请查看[计费方式](billing-overview#pricing)。</li><li>价格：购买实例的价格与所选地域、规格、存储等配置相关，具体价格信息请查看[实例收费标准](billing-overview#charge)。</li> |
-| 只读实例               | <ul><li>计费方式：提供包年包月或按配置计费。</li><li>价格：具体价格信息请查看[实例收费标准](billing-overview#charge)。</li> |
+| 实例规格 | RDS实例的主实例和备实例的规格费用。<ul><li>计费方式：提供包年包月或按配置计费，具体信息请查看[计费方式](billing-overview#pricing)。</li><li>价格：购买实例的价格与所选地域、规格、存储等配置相关，具体价格信息请查看[实例收费标准](billing-overview#charge)。</li> |
+| 只读实例（可选）               | <ul><li>计费方式：按配置计费。</li><li>价格：具体价格信息请查看[实例收费标准](billing-overview#charge)。</li> |
 | 存储空间               | <ul><li>计费方式：提供包年包月或按配置计费。</li><li>价格：存储空间的价格与所选存储类型相关，具体价格信息请前往[购买页面](https://rds-console.jdcloud.com/rds/create?regionId=cn-north-1)查看。</li> |
-| 根据备份创建新的实例   | <ul><li>计费方式：提供包年包月或按配置计费。</li><li>价格：与新购一个实例收费相同，具体价格信息请查看[实例收费标准](billing-overview#charge)。</li> |
-| 备份空间               | MySQL、percona、MariaDB的备份空间于2022年8月10日开始计费。详情参见[备份空间收费说明](https://docs.jdcloud.com/cn/rds/backup-storage-billing)                            |
+| 根据备份创建新的实例（可选）   | <ul><li>计费方式：提供包年包月或按配置计费。</li><li>价格：与新购一个实例收费相同，具体价格信息请查看[实例收费标准](billing-overview#charge)。</li> |
+| 备份空间（可选）               | MySQL、percona、MariaDB的备份空间于2022年8月10日开始计费。详情参见[备份空间收费说明](https://docs.jdcloud.com/cn/rds/backup-storage-billing)                            |
 | SQL审计                | 暂不收费                                                     |
 | 数据库代理             | 暂不收费                                                     |
 
