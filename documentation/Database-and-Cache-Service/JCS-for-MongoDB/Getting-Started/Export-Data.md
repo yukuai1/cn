@@ -11,11 +11,11 @@
 
 3. 在“实例详情”页面，点击 **备份与恢复** ，查看备份数据。
 
-    ![查看备份](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/mongo-010.png)
+    ![查看备份](../../../../image/mongodb/downloadBackup.png)
 
 4. 选择要下载的备份，在操作项中，点击 **下载** ，打开下载弹窗。
 
-    ![查看备份](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/mongo-009.png)
+    ![查看备份](../../../../image/mongodb/mongo-009.png)
 
 5. 下载备份文件到本地。
 

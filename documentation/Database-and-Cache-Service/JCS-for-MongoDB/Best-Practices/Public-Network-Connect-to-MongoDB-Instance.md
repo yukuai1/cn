@@ -23,26 +23,26 @@
 1. 本地电脑安装SecureCRT，以SSH2协议远程连接到有公网IP的云主机。
    
     - 选择 **Connection**，填写名称、选择协议为SSH2。
-  
-      ![](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/mongo-031.png)
+    
+      ![](../../../../image/mongodb/mongo-031.png)
 
     - 选择 **SSH2**，填写作为代理的主机信息。
-   
+     
       Hostname：填写云主机的公网IP。
 
       Port：可默认22。
       
       Username：填写云主机的登录用户名，默认为“root”。
       
-      ![](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/mongo-032.png)
+      ![](../../../../image/mongodb/mongo-032.png)
 
 1. 设置端口转发规则。
     - 选择 **Port Forwarding**，点击 **Add**。
 
-      ![](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/mongo-033.png)
+      ![](../../../../image/mongodb/mongo-033.png)
 
     - 填写端口转发相关信息。
-   
+     
       Name：填写名称
 
       Port：填写本地的监听端口，大于1024小于65535即可，如填写27019。
@@ -51,7 +51,7 @@
       
       填写云数据库MongoDB的端口，为27017。
       
-      ![](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/mongo-034.png)
+      ![](../../../../image/mongodb/mongo-034.png)
 
 1. 保存设置，并连接云主机。
 1. 本地连接 MongoDB 实例。
@@ -84,8 +84,7 @@
     - 连接地址：填云主机的公网IP。
     - 端口：监听端口，如上文的27019。
     - 账号、密码：云数据库MongoDB设置的账号密码信息。
-   
+
 ### 相关参考
 
-- [连接实例](../Getting-Started/Connect-Instance.md)
 - [云主机无法连接 MongoDB 实例?](..//Troubleshooting/Connect-Failed.md)

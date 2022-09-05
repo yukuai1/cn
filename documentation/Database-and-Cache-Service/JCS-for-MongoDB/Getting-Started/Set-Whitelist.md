@@ -1,55 +1,39 @@
 # 设置白名单
 
-云数据库 MongoDB 支持设置白名单功能，您可以通过白名单精确控制访问源。
+云数据库MongoDB支持设置白名单功能，您可以通过白名单精确控制访问源。
 
-MongoDB 实例创建完成后，默认会将 当前实例所在VPC的CIDR加入到白名单，即对当前VPC内的IP无限制。
-
-另外，如果当前实例所在VPC支持IPv6，则默认仅添加IPv6 CIDR。
+MongoDB实例创建完成后，默认会将当前实例所在VPC的CIDR加入到白名单，即对当前VPC内的IP无限制。此外，如果当前实例所在VOC支持IPv6，则默认仅添加IPv6 CIDR。
 
 
-
-## 使用限制
-- 每个 MongoDB 实例目前允许最多添加45个IP地址或IP段。
 
 ## 前提条件
-- MongoDB 实例状态为运行，且计费状态正常。
+
+- 已经购买京东云MongoDB数据库并且实例已处于运行中状态。
+
+
 
 ## 操作步骤
-1. 登录 [MongoDB 控制台](https://mongodb-console.jdcloud.com/mongodb)。
-2. 在“实例列表”页面，选择目标实例，点击 **实例名称** ，进入实例详情页面。
-3. 在“实例详情”页面，点击 **数据安全性**，进入白名单设置页面。
 
-    ![白名单](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/mongo-008.png)
-   
-4. 点击 **设置白名单** ，打开设置弹窗。	
+1. 登录[MongoDB控制台](https://mongodb-console.jdcloud.com/mongodb)；
 
-    您可以手动填写IP或IP段，也可以直接加载云主机内网IP。
-   
-    - 手动填写
-      
-      ![手动填写](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/mongo-004.png)
+2. 在**实例列表**页面选择目标实例，点击实例名称可进入**实例详情**页面；
 
-      在文本框中输入允许访问的IP或IP段，多个IP(或IP段)用英文逗号或换行隔开。例如：
-      - 指定IP地址：192.168.0.1 允许192.168.0.1的IP地址访问。
-      - 指定IP段：192.168.0.0/24 允许192.168.0.1到192.168.0.255的IP地址访问。
-      - 多个IP设置，用英文逗号或换行隔开，如192.168.0.1,192.168.0.0/24。
-      - 如不做限制可输入“0.0.0.0/0”（IPv4）或“::/0”（IPv6）。
-    
-    - 加载云主机内网IP
-    
-      ![加载内网IP](https://github.com/jdcloudcom/cn/blob/master/image/mongodb/mongo-005.png)
-    
-      - 点击弹窗左下角 **加载云主机内网IP**，进入"IP选择弹窗"。
-      - 弹窗左侧展示当前与该 MongoDB 实例处于同一VPC内的云主机IP，您可以借助全选按钮和搜索框实现快速选择。选中的IP会展示在右侧预览区，如当前云主机支持IPv6，则仅添加IPv6。
-      - 完成选择，点击 **确定** 。
-      - 选择的云主机内网IP将自动加载到文本框中。
-    
-5. 编辑完成，点击 **确定**，完成设置。
-6. 白名单设置完成后，在1分钟内生效，您可在白名单设置页面查看当前设置的IP，并可根据业务变化随时调整设置。
-		
-		
-## 相关参考
-- [连接实例](Connect-Instance.md)
-- [修改密码](../Operation-Guide/Account-Management/Reset-Password.md)
-- [导入数据](Import-Data.md)
-- [变更配置](../Operation-Guide/Instance-Management/Modify-Instance-Spec.md)
+3. 在实例详情页面上方导航栏中点击**安全管理**；
+
+   ![img](../../../../image/mongodb/setWhiteList.png)
+
+4. 进入安全管理页面点击设置白名单，弹窗字段说明和规则如下：
+
+| 功能             | 功能描述                                                     | 限制条件                     |
+| ---------------- | ------------------------------------------------------------ | ---------------------------- |
+| 手动添加白名单   | 支持添加单个IP地址支持以0.0.0.0/0（IPv4）、::/0（IPv6）代表允许所有IP访问支持以CIDR模式设置白名单支持一次键入多个IP地址/CIDR，不同IP间使用,分隔 | 最多支持45个白名单IP或者IP段 |
+| 加载云主机内网IP | 支持将同一账号、同一VPC下的云主机IP加入白名单若云主机IP地址为IPv6地址，则仅添加IPv6地址进白名单 |                              |
+
+
+
+## 相关API
+
+| 接口名称                                                     | 接口描述           |
+| ------------------------------------------------------------ | ------------------ |
+| [describeSecurityIps](../../../../API/JCS-for-MongoDB/Security-Management/describeSecurityIps.md) | 查询实例访问白名单 |
+| [modifySecurityIps](../../../../API/JCS-for-MongoDB/Security-Management/modifySecurityIps.md) | 修改实例访问       |
