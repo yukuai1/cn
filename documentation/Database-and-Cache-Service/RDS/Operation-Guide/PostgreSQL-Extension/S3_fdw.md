@@ -1,4 +1,5 @@
-# 使用s3_fdw插件将数据流转到OSS
+# 读写外部数据文本文件（s3_fdw）
+
 ## 使用说明
 京东云RDS-PostgreSQL支持通过s3_fdw插件将OSS中的数据加载到PostgreSQL数据库中，也支持将PostgreSQL数据库中的数据写入OSS中。
 
