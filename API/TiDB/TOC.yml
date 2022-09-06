@@ -43,6 +43,16 @@ items:
       href: Instance-Management/rebootPod.md  
     - name: upgradeEngineVersion
       href: Instance-Management/upgradeEngineVersion.md
+    - name: enableInternetAccess
+      href: Instance-Management/enableInternetAccess.md
+    - name: disableInternetAccess
+      href: Instance-Management/disableInternetAccess.md
+    - name: describeSSL
+      href: Instance-Management/describeSSL.md
+    - name: enableSSL
+      href: Instance-Management/enableSSL.md
+    - name: disableSSL
+      href: Instance-Management/disableSSL.md      
 - name: 账号管理
   items:
     - name: createAccount
@@ -77,6 +87,20 @@ items:
       href: Data-Migration/describeDataMigration.md
     - name: verifyFilefromOSS
       href: Data-Migration/verifyFilefromOSS.md
+- name: 数据复制
+  items:
+    - name: createReplication
+      href: Data-Migration/createReplication.md
+    - name: describeReplications
+      href: Data-Migration/describeReplications.md
+    - name: deleteReplication
+      href: Data-Migration/deleteReplication.md     
+    - name: modifyReplication
+      href: Data-Migration/modifyReplication.md
+    - name: resumeReplication
+      href: Data-Migration/resumeReplication.md
+    - name: stopReplication
+      href: Data-Migration/stopReplication.md       
 - name: 其他
   items:
     - name: describeAvailableZones
