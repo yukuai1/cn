@@ -11,8 +11,7 @@
 - [查看实例详情](./Manage-Instance/View-Instance-Details.md)
 - [实例创建](./Manage-Instance/Create-Instance.md)
 - [实例删除](./Manage-Instance/Delete-Instance.md)
-- [实例重启](./Manage-Instance/Reboot-Instance/Reboog-ReplicaSet.md)
-- [实例名称修改](./Manage-Instance/)
+- [实例重启](./Manage-Instance/Reboot-Instance/Reboot-ReplicaSet.md)
 - [实例标签配置](./Manage-Instance/Configure-Instance-Lable.md)
 - [实例续费](./Manage-Instance/Renew-Instance.md)
 - [按配置转包年包月](./Manage-Instance/Change-billing-Mode.md)
@@ -23,7 +22,7 @@
 
 - [节点数变更](./Manage-Node/ReplicaSet/Change-ReplicaSet-Number.md)
 
-- [节点配置变更](./Manage-Node/ReplicaSet/Specifications.md)
+- [节点配置变更](./Manage-Node/ReplicaSet/Change-ReplicaSet-Specifications.md)
 
 ### 分片集群
 
@@ -53,7 +52,7 @@
 
 - [根据时间点创建实例](./Restore-Backup/ReplicaSet/Create-Instance-By-Point-In-Time.md)
 
-- [根据跨地域备份文件创建实例](/Restore-Backup/ReplicaSet/Create-Instace-By-Synchronization-Backup.md)
+- [根据跨地域备份文件创建实例](./Restore-Backup/ReplicaSet/Create-Instance-By-Synchronization-Backup.md)
 
 - [根据备份恢复实例](./Restore-Backup/ReplicaSet/Restore-Instance-By-Backup.md)
 

@@ -66,13 +66,13 @@
 - 快速上手
   - [创建副本集实例](../Getting-Started/Getting-Started-Replica/Create-ReplicaSet-Instance.md)
   - [创建分片集群实例](../Getting-Started/Get-Started-Shard/Create-Sharding-Instance.md)
-  - [设置白名单](../Getting-Started/Set-WhiteList.md)
+  - [设置白名单](../Getting-Started/Set-Whitelist.md)
 - 数据迁移
   - [将数据导入到云](../Getting-Started/Import-Data.md)
   - [从云导出数据](../Getting-Started/Export-Data.md)
 - 备份与恢复
   - [设置自动备份策略](../Operation-Guide/Database-backup-managment/Auto-Backup.md)
-  - [手动创建备份](../Operation-Guide/Backup/Create-Backup.md)
+  - [手动创建备份](../Operation-Guide/Database-backup-managment/Manual-Backup.md)
   - [数据恢复](../Operation-Guide/Restore-Backup/ReplicaSet/Restore-Instance-By-Backup.md)
 - 运维管理
   - [查看监控信息](../Operation-Guide/Monitoring/Monitoring.md)
