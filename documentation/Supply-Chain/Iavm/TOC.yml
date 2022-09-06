@@ -20,28 +20,24 @@ items:
       href: price/price.md    
 
 
-
-
 - name: 操作指南
   items:
+    - name: 开通实例
+      href: opereation/open.md    
+    - name: 访问应用
+      href: opereation/application.md 
+    - name: 网站备案
+      href: price/Configure_domain.md 
     - name: 登录主机
-      href: opereation/price.md    
+      href: price/login.md  
     - name: 重装系统
-      href: opereation/buy.md  
-    - name: 重置
-      href: price/renew.md  
+      href: price/reinstall.md  
+    - name: 备份数据
+      href: price/make.md  
 
-
-- name: 最佳实践
-  items:
-    - name: 计费说明
-      href: price/price.md    
-    - name: 购买流程
-      href: price/buy.md  
-    - name: 续费流程
-      href: price/renew.md  
+      
       
 - name: 常见问题
   items:
     - name: FAQ
-      href: problem/faq.md    
+      href: questions.md   
