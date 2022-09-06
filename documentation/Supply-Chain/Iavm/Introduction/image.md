@@ -25,14 +25,16 @@
 | Ghost博客系统 |Ghost 是一款设计简约、主题精致的个人博客系统，Ghost支持多用户创建和编辑，支持Markdown格式撰写文章，编辑的内容可即时预览。该镜像是镜像基于CentOS 7.6 操作系统 | 
 | 零代码开发平台 | 明道云零代码开发平台可以进行低代码或无代码搭建个性化的CRM、ERP、OA、项目管理、进销存等企业信息化系统，还可以管理生产、销售、采购、人事等所有企业活动 | 
 | ASP.NET	 | ASP.NET是使用.NET 构建的轻量级Web应用框架，可以构建应用、网页和网站服务。该镜像是镜像基于WindowsServer2019操作系统 | 
-| 协同办公-工具箱 | 协同办公-工具箱包含禅道项目管理、ONLYOFFICE Document Server 文档编辑/预览服务器、网盘系统【Nextcloud 在线文件管理/云存储系统】、百科软件搭建知识库、Superset数据可视化5个工具。 | 
+| 协同办公-工具箱 | 协同办公-工具箱包含禅道项目管理、ONLYOFFICE Document Server 文档编辑/预览服务器、网盘系统【Nextcloud 在线文件管理/云存储系统】、百科软件搭建知识库、Superset数据可视化5个工具 | 
 
 
 ## 系统镜像
 
 | 镜像名称 | 镜像版本 | 说明 |
 | :-----:| :----: | :----: |
-| CentOS | 轻量应用场景，适用于网站搭建、知识库、博客等低负载场景 | 适用全业务场景 |
+| CentOS | CentOS 是一个基于Red Hat Linux 发行的稳定版本 |
+| Ubuntu | Ubuntu是一个以桌面应用为主的Linux操作系统 |
+| Windows Server | Windows Server是基于的Windows 的服务器操作系统 |
 
 
 ## 自定义镜像
