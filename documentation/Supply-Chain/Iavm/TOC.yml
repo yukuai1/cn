@@ -23,17 +23,17 @@ items:
 - name: 操作指南
   items:
     - name: 开通实例
-      href: opereation/open.md    
+      href: operation/open.md    
     - name: 访问应用
-      href: opereation/application.md 
+      href: operation/application.md 
     - name: 网站备案
-      href: price/Configure_domain.md 
+      href: operation/Configure_domain.md 
     - name: 登录主机
-      href: price/login.md  
+      href: operation/login.md  
     - name: 重装系统
-      href: price/reinstall.md  
+      href: operation/reinstall.md  
     - name: 备份数据
-      href: price/make.md  
+      href: operation/make.md  
 
       
       
