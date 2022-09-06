@@ -2,7 +2,7 @@
 
 如果您需要进行环境的配置或者安装软件等操作，可以直接登录云主机。
 
-![图片名称](https://img1.jcloudcs.com/image/docs/7.png)
+![图片名称](https://img1.jcloudcs.com/image/step0906/7.png)
 
 
 点击登录会展示vnc登录页面，输入主机的账户和密码进行登录。
@@ -13,4 +13,4 @@
 
 如果忘记了初始化密码，您可以进行重置密码，新密码将在重启主机后生效。
 
-![图片名称](https://img1.jcloudcs.com/image/docs/9.png)
+![图片名称](https://img1.jcloudcs.com/image/step0906/8.png)
