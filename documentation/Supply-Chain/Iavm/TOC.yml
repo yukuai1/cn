@@ -18,10 +18,7 @@ items:
   items:
     - name: 计费说明
       href: price/price.md    
-    - name: 购买流程
-      href: price/buy.md  
-    - name: 续费流程
-      href: price/renew.md  
+
 
 
 
