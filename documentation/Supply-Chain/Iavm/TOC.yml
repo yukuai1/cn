@@ -1,0 +1,43 @@
+name: 轻量云主机
+href: 
+items:
+- name: 产品简介
+  items:
+    - name: 产品介绍
+      href: Introduction/Product-Overview.md 
+    - name: 产品优势
+      href: Introduction/advantages.md
+    - name: 应用场景
+      href: Introduction/scenario.md 
+    - name: 镜像说明
+      href: Introduction/image.md 
+    - name: 网络连通性
+      href: Introduction/network.md 
+      
+- name: 产品定价
+  items:
+    - name: 计费说明
+      href: price/price.md    
+
+
+- name: 操作指南
+  items:
+    - name: 开通实例
+      href: opereation/open.md    
+    - name: 访问应用
+      href: opereation/application.md 
+    - name: 网站备案
+      href: price/Configure_domain.md 
+    - name: 登录主机
+      href: price/login.md  
+    - name: 重装系统
+      href: price/reinstall.md  
+    - name: 备份数据
+      href: price/make.md  
+
+      
+      
+- name: 常见问题
+  items:
+    - name: FAQ
+      href: questions.md   
