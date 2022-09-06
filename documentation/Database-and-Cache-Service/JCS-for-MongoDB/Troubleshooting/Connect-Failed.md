@@ -13,7 +13,11 @@
 
 1. 确认 MongoDB 实例的连接地址是否正确。
 
-    在 MongoDB控制台找到该实例，在实例详情页查看 MongoDB 连接地址。请参考：[连接实例](../Getting-Started/Connect-Instance.md)
+    在 MongoDB控制台找到该实例，在实例详情页查看 MongoDB 连接地址。
+
+    副本集请参考：[内网连接副本集实例](../Getting-Started/Getting-Started-Replica/Connect-ReplicaSet-Intranet.md)
+
+    分片集群请参考：[内网连接分片集群实例](../Getting-Started/Getting-Started-Shard/Connect-Sharding-Intranet.md)
 
 1. 确认用于连接的云主机是否与 MongoDB 实例是否在同一个VPC。
 

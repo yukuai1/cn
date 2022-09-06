@@ -115,7 +115,7 @@
         })
         ```
         
-          [rs.initiate()用法](https://docs.mongodb.com/master/reference/method/rs.initiate/#rs.initiate)
+          [rs.initiate()用法](https://www.mongodb.com/docs/upcoming/reference/method/rs.initiate/#rs.initiate)
         
          6）向副本集中添加新的成员（请确保新添加成员--dbpath目录下数据为空）
         

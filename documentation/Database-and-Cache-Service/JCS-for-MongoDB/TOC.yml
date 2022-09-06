@@ -26,27 +26,27 @@
   - name: 快速入门
     items:
       - name: 快速入门概览
-        href: Getting-Started/Getting-Strated-Summarization.md
+        href: Getting-Started/Getting-Started-Summarization.md
       - name: 副本集快速入门
         items:
           - name: 创建副本集实例
-            href: Getting-Started/Getting-Strated-Replica/Create-ReplicaSet-Instance.md
+            href: Getting-Started/Getting-Started-Replica/Create-ReplicaSet-Instance.md
           - name: 内网连接副本集实例
-            href: Getting-Started/Getting-Strated-Replica/Connect-ReplicaSet-Intranet.md
+            href: Getting-Started/Getting-Started-Replica/Connect-ReplicaSet-Intranet.md
           - name: 外网连接副本集实例
-            href: Getting-Started/Getting-Strated-Replica/Connect-ReplicaSet-Internet.md
+            href: Getting-Started/Getting-Started-Replica/Connect-ReplicaSet-Internet.md
       - name: 分片集群快速入门
         items:
           - name: 创建分片集群实例
-            href: Getting-Started/Get-Strated-Shard/Create-Sharding-Instance.md
+            href: Getting-Started/Get-Started-Shard/Create-Sharding-Instance.md
           - name: 内网连接副本集实例
-            href: Getting-Started/Get-Strated-Shard/Connect-Sharding-Intranet.md
+            href: Getting-Started/Get-Started-Shard/Connect-Sharding-Intranet.md
           - name: 外网连接副本集实例
-            href: Getting-Started/Get-Strated-Shard/Connect-Sharding-Internet.md
+            href: Getting-Started/Get-Started-Shard/Connect-Sharding-Internet.md
       - name: 修改密码
         href: Getting-Started/Reset-Password.md
       - name: 设置白名单
-        href: Getting-Started/Set-WhiteList.md
+        href: Getting-Started/Set-Whitelist.md
       - name: 导入数据
         href: Getting-Started/Import-Data.md
       - name: 导出数据
@@ -60,17 +60,17 @@
       - name: 实例管理
         items:
           - name: 创建实例
-            href: Operation-Guide/Manage-Instance/Creat-Instance.md
+            href: Operation-Guide/Manage-Instance/Create-Instance.md
           - name: 查看实例信息
             href: Operation-Guide/Manage-Instance/View-Instance-Details.md
           - name: 重启实例
             items:
               - name: 重启副本集实例
-                href: Operation-Guide/Reboot-Instance/Reboot-ReplicaSet.md
+                href: Operation-Guide/Manage-Instance/Reboot-Instance/Reboot-ReplicaSet.md
               - name: 重启分片集群节点
-                href: Operation-Guide/Reboot-Instance/Reboot-Sharding.md
+                href: Operation-Guide/Manage-Instance/Reboot-Instance/Reboot-Sharding.md
           - name: 删除实例
-            href: Operation-Guide/Manage-Instance/Delete-instance.md 
+            href: Operation-Guide/Manage-Instance/Delete-Instance.md 
           - name: 配置实例标签
             href: Operation-Guide/Manage-Instance/Configure-Instance-Lable.md  
           - name: 续费实例
@@ -92,9 +92,9 @@
               - name: 变更Shard节点数
                 href: Operation-Guide/Manage-Node/Shard/Add-Shard.md
               - name: 变更Mongos节点配置
-                href: Operation-Guide/Change-Mongos-Specifications.md
+                href: Operation-Guide/Manage-Node/Shard/Change-Mongos-Specifications.md
               - name: 变更Shard节点配置
-                href: Operation-Guide/Change-Shard-Specification.md
+                href: Operation-Guide/Manage-Node/Shard/Change-Shard-Specification.md
       - name: 管理数据库备份
         items:
           - name: 数据库备份概述
@@ -110,13 +110,13 @@
       - name: 恢复实例备份
         items:
           - name: 根据时间节点创建实例
-            href: Operation-Guide/Restore-Backup/ReplicaSet/Create-Instance-by-Point-In-Time.md
+            href: Operation-Guide/Restore-Backup/ReplicaSet/Create-Instance-By-Point-In-Time.md
           - name: 根据备份创建实例
-            href: Operation-Guide/Restore-Backup/Create-Instance-by-Backup.md
+            href: Operation-Guide/Restore-Backup/ReplicaSet/Create-Instance-By-Backup.md
           - name: 根据跨地域备份创建实例
-            href: Operation-Guide/Restore-Backup/Create-Instace-By-Synchronization-Backup.md
+            href: Operation-Guide/Restore-Backup/ReplicaSet/Create-Instance-By-Synchronization-Backup.md
           - name: 根据备份恢复实例
-            href: Operation-Guide/Restore-Backup/Restore-Instance-By-Backup.md
+            href: Operation-Guide/Restore-Backup/ReplicaSet/Restore-Instance-By-Backup.md
       - name: 监控报警
         items:
           - name: 查看监控信息

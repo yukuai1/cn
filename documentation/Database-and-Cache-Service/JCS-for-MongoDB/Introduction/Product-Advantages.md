@@ -42,7 +42,7 @@
 
 - [创建副本集实例](../Getting-Started/Getting-Started-Replica/Create-ReplicaSet-Instance.md)
 - [创建分片集群实例](../Getting-Started/Get-Started-Shard/Create-Sharding-Instance.md)
-- [产品概述](../Introduction/Product-Summrization)
-- [产品规格](../Introduction/Product-Specifications.md)
+- [产品概述](./Product-Summarization.md)
+- [产品规格](./Product-Specifications.md)
 - [实例价格](../Pricing/Price-Of-Instance.md)
 - [查看监控信息](../Operation-Guide/Monitoring/Monitoring.md)
