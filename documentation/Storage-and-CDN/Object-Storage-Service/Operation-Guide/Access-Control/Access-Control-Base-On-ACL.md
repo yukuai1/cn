@@ -15,6 +15,6 @@ Bucket ACL的权限设定和读取方法如下：
 -   控制台：[创建 Bucket时设置ACL](https://docs.jdcloud.com/cn/object-storage-service/create-bucket-1)、
 [修改Bucket ACL](../Manage-Bucket/Set-Bucket-Policy-2.md)
 
--   API：[PutBucketACL](../../../../../API/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-acl-2.md)、
-[GetBucketACL](../../../../../API/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/GET-Bucket-acl-2.md)
+-   API：[PutBucketACL](../../../../../API/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Acl-2.md)、
+[GetBucketACL](../../../../../API/Object-Storage-Service/API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Get-Bucket-Acl-2.md)
 

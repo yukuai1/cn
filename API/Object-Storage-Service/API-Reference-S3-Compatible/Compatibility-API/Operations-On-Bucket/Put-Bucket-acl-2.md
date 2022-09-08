@@ -1,4 +1,4 @@
-# Put Bucket acl
+# Put Bucket Acl
 
 ## 描述
 该操作可指定Bucket的访问控制列表（acl）。
