@@ -31,9 +31,9 @@
 ### 2. 建表
 请根据分析型云数据库ClickHouse集群的规格下载正确的建表语句脚本并执行。
 
-* [单副本集群的建表语句](../../../../image/JCHDB/ontime_one_replicate.sql)
+* [单副本集群的建表语句](../../../../../image/JCHDB/ontime_one_replicate.sql)
 
-* [双副本集群的建表语句](../../../../image/JCHDB/ontime_two_replicate.sql)
+* [双副本集群的建表语句](../../../../../image/JCHDB/ontime_two_replicate.sql)
 
 ### 3.下载On Time数据
 
