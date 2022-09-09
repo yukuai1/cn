@@ -2,9 +2,9 @@
 
 
 ## 简介
-对象存储API，主要包含查询Bucket列表，创建Bucket, 删除Bucket，查询Bucket是否存在；镜像回源API，主要包含添加镜像回源配置，获取镜像回源配置和删除镜像回源配置；历史数据同步API，主要包含创建和停止历史数据同步任务、查询同步任务和同步列表。更多API见：https://docs.jdcloud.com/cn/object-storage-service/compatibility-api-overview
+对象存储API，主要包含查询Bucket列表，创建Bucket, 删除Bucket，查询Bucket是否存在；镜像回源API，主要包含添加镜像回源配置，获取镜像回源配置和删除镜像回源配置；历史数据同步API，主要包含创建和停止历史数据同步任务、查询同步任务和同步列表。更多API见：https://docs.jdcloud.com/cn/object-storage-service/api/introduction-2?content=API
 
-注：以下OpenAPI接口不支持IAM子用户访问，如需使用子用户访问，请使用[兼容S3 API](https://docs.jdcloud.com/cn/object-storage-service/compatibility-api-overview)。
+注：以下OpenAPI接口不支持IAM子用户访问，如需使用子用户访问，请使用[兼容S3 API](https://docs.jdcloud.com/cn/object-storage-service/api/compatibility-api-overview?content=API)。
 
 ### 版本
 v1
