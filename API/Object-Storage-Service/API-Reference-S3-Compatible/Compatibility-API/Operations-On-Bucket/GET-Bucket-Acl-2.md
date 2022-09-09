@@ -1,4 +1,4 @@
-# GET Bucket acl
+# Get Bucket Acl
 
 ## 描述
 该操作可列出指定Bucket，仅Bukcet的Owner可操作。

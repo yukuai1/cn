@@ -96,6 +96,67 @@ items:
           - name: viewInfo
             herf: DmsView/viewInfo.md
 
+      - name: 事件
+        items:
+          - name: generalCreateEvent
+            herf: DmsEvent/generalCreateEvent.md
+          - name: generalAlterEvent
+            herf: DmsEvent/generalAlterEvent.md
+          - name: generalDropEvent
+            herf: DmsEvent/generalDropEvent.md
+          - name: eventInfo
+            herf: DmsView/eventInfo.md
+
+      - name: 函数
+        items:
+          - name: generalCreateFunction
+            herf: DmsFunction/generalCreateFunction.md
+          - name: generalAlterFunction
+            herf: DmsFunction/generalAlterFunction.md
+          - name: generalDropFunction
+            herf: DmsFunction/generalDropFunction.md
+          - name: functionList
+            herf: DmsFunction/functionList.md
+          - name: functionInfo
+            herf: DmsFunction/functionInfo.md
+          - name: functionInvoke
+            herf: DmsFunction/functionInvoke.md
+
+      - name: 表SQL
+        items:
+          - name: generalCreateTableSql
+            herf: GeneralSql/generalCreateTableSql.md
+          - name: generalAlterTableSql
+            herf: GeneralSql/generalAlterTableSql.md
+
+      - name: 存储过程
+        items:
+          - name: generalCreateProcedure
+            herf: DmsProcedure/generalCreateProcedure.md
+          - name: generalAlterProcedure
+            herf: DmsProcedure/generalAlterProcedure.md
+          - name: generalDropProcedure
+            herf: DmsProcedure/generalDropProcedure.md
+          - name: procedureList
+            herf: DmsProcedure/procedureList.md
+          - name: procedureInfo
+            herf: DmsProcedure/procedureInfo.md
+          - name: procedureInvoke
+            herf: DmsProcedure/procedureInvoke.md
+
+      - name: 触发器
+        items:
+          - name: generalCreateTrigger
+            herf: DmsTrigger/generalCreateTrigger.md
+          - name: generalAlterTrigger
+            herf: DmsTrigger/generalAlterTrigger.md
+          - name: generalDropTrigger
+            herf: DmsTrigger/generalDropTrigger.md
+          - name: triggerList
+            herf: DmsTrigger/triggerList.md
+          - name: triggerInfo
+            herf: DmsTrigger/triggerInfo.md
+
       - name: 可编程对象操作
         items:
           - name: exeProgram
