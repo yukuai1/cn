@@ -47,7 +47,7 @@ s3browser是一种易于使用管理S3的客户端。京东云OSS兼容 Amazon�
 
 * Account Name：显示名称，一般填自己的用户名即可；
 * Account Type: S3 Compatible Storage；
-* REST Endpoint:填写京东云[兼容S3的服务域名](https://docs.jdcloud.com/cn/object-storage-service/regions-and-endpoints)；
+* REST Endpoint:填写京东云[兼容S3的服务域名](https://docs.jdcloud.com/cn/object-storage-service/api/regions-and-endpoints?content=API)；
 * Signature Version: 选择Version 4；
 * Access Key ID: 京东云的AK；
 * Secret Access Key: 京东云的SK；
