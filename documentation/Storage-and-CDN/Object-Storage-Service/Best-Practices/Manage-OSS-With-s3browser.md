@@ -73,7 +73,7 @@ s3browser是一种易于使用管理S3的客户端。京东云OSS兼容 Amazon�
 
 **说明**
 
-* 存储空间名称全局唯一，如果该名称已经被其他用户占用，将不能创建成功，请您根据[OSS命名规范](https://docs.jdcloud.com/cn/object-storage-service/put-bucket-2)，输入恰当的能够标识自身业务的名称。
+* 存储空间名称全局唯一，如果该名称已经被其他用户占用，将不能创建成功，请您根据[OSS命名规范](https://docs.jdcloud.com/cn/object-storage-service/api/put-bucket-2?content=API)，输入恰当的能够标识自身业务的名称。
 * 存储空间创建时默认ACL 为私有读写，您可以根据自己的需求，在创建后更改空间访问权限。参见[【设置存储空间的Acl】](Manage-OSS-With-s3browser#user-content-4)
 与[【设置Bucket policy】](Manage-OSS-With-s3browser#user-content-5)。
 
@@ -130,7 +130,7 @@ s3browser是一种易于使用管理S3的客户端。京东云OSS兼容 Amazon�
 **说明：**
 
 -  暂不支持 **所有请求重定向** 。
--  详见[静态网站托管设置](https://docs.jdcloud.com/cn/object-storage-service/set-bucket-website-2),API请参考[put bucket website](https://docs.jdcloud.com/cn/object-storage-service/put-bucket-website-2)。
+-  详见[静态网站托管设置](https://docs.jdcloud.com/cn/object-storage-service/set-bucket-website-2),API请参考[put bucket website](https://docs.jdcloud.com/cn/object-storage-service/api/put-bucket-website-2?content=API)。
 
 
 ##### 操作步骤
@@ -169,7 +169,7 @@ OSS 存储空间的删除目前必须满足以下条件：
 
 **说明：**
 
-您可以使用CORS搭建web 应用，使用javaScript 和HTML5直接访问OSS中资源。详见[跨域访问设置](https://docs.jdcloud.com/cn/object-storage-service/set-bucket-cors-2),API请参考[put bucket cors](http://docs.jdcloud.com/cn/object-storage-service/put-bucket-website-2)。
+您可以使用CORS搭建web 应用，使用javaScript 和HTML5直接访问OSS中资源。详见[跨域访问设置](https://docs.jdcloud.com/cn/object-storage-service/set-bucket-cors-2),API请参考[put bucket cors](https://docs.jdcloud.com/cn/object-storage-service/api/put-bucket-cors-2?content=API)。
 
 ##### 操作步骤
 
@@ -187,7 +187,7 @@ OSS 存储空间的删除目前必须满足以下条件：
 
 **说明：**
 
-* 可自动删除过期的Object，从而使Bucket在使用中便于维护且能降低成本。详见[生命周期管理](https://docs.jdcloud.com/cn/object-storage-service/lifecycle),API请参考[put bucket lifecycle](../API-Reference-S3-Compatible/Compatibility-API/Operations-On-Bucket/Put-Bucket-Lifecycle.md)。
+* 可自动删除过期的Object，从而使Bucket在使用中便于维护且能降低成本。详见[生命周期管理](https://docs.jdcloud.com/cn/object-storage-service/lifecycle),API请参考[put bucket lifecycle](https://docs.jdcloud.com/cn/object-storage-service/api/put-bucket-lifecycle?content=API)。
 * 目前仅支持删除对象，暂不支持 **转化存储类型与未合成分片过期自动删除** 。
 
 
