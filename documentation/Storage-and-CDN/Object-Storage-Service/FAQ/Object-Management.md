@@ -35,7 +35,7 @@ OSS会默认匹配上传文件的后缀名，按照文件类型的对照表，�
 
 - 1.API/SDK:
 
-使用[Put Object Copy](https://docs.jdcloud.com/object-storage-service/put-object-copy-2) 修改Content-Type；
+使用[Put Object Copy](https://docs.jdcloud.com/cn/object-storage-service/api/put-object-copy-2?content=API) 修改Content-Type；
 
 - 2.控制台：
 
@@ -61,7 +61,7 @@ OSS会默认匹配上传文件的后缀名，按照文件类型的对照表，�
 
 您可以通过[OSS控制台](https://oss-console.jdcloud.com/space)对象的管理元数据功能，将对象自定义Headers中的Content-Disposition参数值设为attachment。控制台操作指南请参见 [管理元数据](https://docs.jdcloud.com/object-storage-service/user-defined-metadata)。
 
-也可以通过设置Post Object接口中请求参数Content-Disposition的值为attachment来实现浏览器中弹出下载文件，参考文档请参见[Post Object](https://docs.jdcloud.com/cn/object-storage-service/post-object-2)。
+也可以通过设置Post Object接口中请求参数Content-Disposition的值为attachment来实现浏览器中弹出下载文件，参考文档请参见[Post Object](https://docs.jdcloud.com/cn/object-storage-service/api/post-object-2?content=API)。
 
 <div id="user-content-5"></div>
 
