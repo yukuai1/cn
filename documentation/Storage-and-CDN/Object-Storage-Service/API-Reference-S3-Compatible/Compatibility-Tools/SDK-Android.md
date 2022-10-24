@@ -97,4 +97,4 @@ SignerFactory.registerSigner("JdAWSS3V4Signer", JdAWSS3V4Signer.class);
 ```
 ## Demo下载
 
-[点击下载](http://s3-sdk-demo.oss.cn-north-1.jcloudcs.com/android-sdk/s3-android-demo.zip)
+[点击下载](https://s3-sdk-demo.oss.cn-north-1.jcloudcs.com/android-sdk/s3-android-demo.zip)
