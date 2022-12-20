@@ -7,7 +7,7 @@
 <table>
  <tr>
   <td colspan="2">计费项</td> 
-  <td>标准型存储单价</td>
+  <td>标准存储（多AZ）单价</td>
   <td>低频存储单价</td>
   <td>归档存储单价</td>
   <td>低冗余型存储单价</td>
