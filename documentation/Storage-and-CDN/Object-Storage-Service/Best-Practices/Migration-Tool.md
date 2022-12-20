@@ -46,7 +46,7 @@ Osstransfer工具可以将本地、其它对象存储的数据迁移到OSS，它
 |名称|说明|默认值|
 |:-|:-|:-|
 |jobType|job的类型，分别为listObject，transfer。|listObject|
-|sourceType| 数据来源的类型，分别为urlfile,diskfile，s3file（AWS S3、腾讯云COS、百度BOS、华为 OBS、京东云 OSS）aliyunfile,disklistfile（本地文件列表）。 |s3file|
+|sourceType| 数据来源的类型，分别为urlfile，diskfile，s3file（AWS S3、腾讯云COS、百度BOS、华为 OBS、京东云 OSS）aliyunfile。 |s3file|
 |urlType|当sourceType为urlfile时，如果文件列表并非迁移工具生成且只有url信息，则需要配置urlType为onlyUrl。| 无|
 |filePath|被读取文件的地址。当sourceType 为 urlfile ，diskfile时，filePath 为必填项。|无|
 |urlFilePrefix|当文件列表为url时，我们则获取用户的key值为url地址的一部分，则需要用户配置切割url的数量。|无，如配置，建议最少设置为7，即http://的长度|

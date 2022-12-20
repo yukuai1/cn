@@ -9,7 +9,7 @@
 ```
 <dependency>
     <groupId>com.amazonaws</groupId>
-    <artifactId>aws-java-sdk</artifactId>
+    <artifactId>aws-java-sdk-s3</artifactId>
     <version>1.11.490</version>
 </dependency>
 ```
