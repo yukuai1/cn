@@ -47,7 +47,7 @@ IAM policy 中 Action 支持列表如下：
 |oss:ListBucket|列出该Bucket内的Objcet|GET Bucket (List Objects), HEAD Bucket|Bucket 级别操作 |
 |oss:DeleteBucket|删除该Bucket|DELETE Bucket|Bucket 级别操作 |
 |oss:ListBucketMultipartUploads|罗列出Bucket中所有执行中的Multipart Upload事件|ListMultipartUploads|Bucket 级别操作 |
-|oss:* |OSS支持的所有操作，包括Service 级别操作，Bucket 级别操作，Object 级别操作|对应全部API 列表参见[API参考](https://docs.jdcloud.com/cn/object-storage-service/compatibility-api-overview)|所有级别操作 |
+|oss:* |OSS支持的所有操作，包括Service 级别操作，Bucket 级别操作，Object 级别操作|对应全部API 列表参见[API参考](https://docs.jdcloud.com/cn/object-storage-service/api/compatibility-api-overview?content=API)|所有级别操作 |
 
 示例：
 

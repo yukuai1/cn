@@ -1,12 +1,11 @@
 #  对象存储类型介绍
-OSS提供标准存储、低频存储、归档存储、低冗余存储四种存储类型，全面覆盖从热到冷的各种数据存储场景。
+OSS提供标准存储、低频存储、归档存储，三种存储类型，全面覆盖从热到冷的各种数据存储场景。
 
 **说明**：各存储类型的定价信息请参见[价格总览](https://docs.jdcloud.com/cn/object-storage-service/price-overview),具体的计费方式请参见[计费规则](https://docs.jdcloud.com/cn/object-storage-service/billing-rules)。
 
 * [标准存储](StorageClass-Overview#user-content-1)
 * [低频存储](StorageClass-Overview#user-content-2)
 * [归档存储](StorageClass-Overview#user-content-3)
-* [低冗余存储](StorageClass-Overview#user-content-4)
 
 
 ### 标准存储（STANDARD）
@@ -24,11 +23,6 @@ OSS低频存储类型适合长期保存不经常访问的数据（平均每月�
 <div id="user-content-3"></div>
 OSS归档存储类型在存储类型中单价最低，适合需要长期保存（建议半年以上）的归档数据，在数据的存储周期内极少被访问；数据取回时，需要根据您选择的取回模式，等待几分钟到几小时。归档存储类型适合需要长期保存的档案数据、操作日志、影视素材等。归档存储类型的Object有最短存储时间，存储时间短于60天的Object提前删除会产生一定费用。归档类型存储Object有最小计量空间，Object大小低于48KB，会按照48KB计算存储空间，数据获取会产生数据取回费用。
 
-
-### 低冗余存储（REDUCED_REDUNDANCY）
-
-<div id="user-content-4"></div>
-OSS低冗余存储类型需要用户能够承受数据丢失，不推荐使用。
 
 
 
